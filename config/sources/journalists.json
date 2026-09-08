@@ -1,0 +1,106 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-09-08T11:19:20Z",
+  "journalists": [
+    {
+      "id": "fabrizio-romano",
+      "name": "Fabrizio Romano",
+      "type": "journalist",
+      "category": "transfer_specialist",
+      "credibilityScore": 92,
+      "verified": true,
+      "enabled": true,
+      "specialty": "transfers",
+      "website": "https://www.fabrizioromano.com",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@FabrizioRomano", "verified": true },
+        { "platform": "instagram", "handle": "@fabrizioromano", "verified": true }
+      ],
+      "dataTypes": ["transfers", "transfer_rumours"],
+      "refreshIntervalMinutes": 5,
+      "priority": 2,
+      "notes": "Renowned transfer specialist. High accuracy rate but still requires verification for official confirmation.",
+      "historicalAccuracy": 0.92
+    },
+    {
+      "id": "david-ornstein",
+      "name": "David Ornstein",
+      "type": "journalist",
+      "category": "football_correspondent",
+      "credibilityScore": 95,
+      "verified": true,
+      "enabled": true,
+      "specialty": "premier_league",
+      "publication": "The Athletic",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@David_Ornstein", "verified": true }
+      ],
+      "dataTypes": ["transfers", "club_news", "premier_league"],
+      "refreshIntervalMinutes": 10,
+      "priority": 2,
+      "notes": "The Athletic's football correspondent. Highly reliable for Premier League news.",
+      "historicalAccuracy": 0.95
+    },
+    {
+      "id": "kaveh-solhekol",
+      "name": "Kaveh Solhekol",
+      "type": "journalist",
+      "category": "football_correspondent",
+      "credibilityScore": 88,
+      "verified": true,
+      "enabled": true,
+      "specialty": "transfers",
+      "publication": "Sky Sports",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@SkyKaveh", "verified": true }
+      ],
+      "dataTypes": ["transfers", "transfer_rumours"],
+      "refreshIntervalMinutes": 15,
+      "priority": 2,
+      "historicalAccuracy": 0.88
+    },
+    {
+      "id": "matt-law",
+      "name": "Matt Law",
+      "type": "journalist",
+      "category": "football_correspondent",
+      "credibilityScore": 87,
+      "verified": true,
+      "enabled": true,
+      "specialty": "chelsea",
+      "publication": "The Telegraph",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@Matt_Law_DT", "verified": true }
+      ],
+      "dataTypes": ["transfers", "club_news"],
+      "refreshIntervalMinutes": 20,
+      "priority": 2,
+      "historicalAccuracy": 0.87
+    },
+    {
+      "id": "simon-stone",
+      "name": "Simon Stone",
+      "type": "journalist",
+      "category": "football_correspondent",
+      "credibilityScore": 90,
+      "verified": true,
+      "enabled": true,
+      "specialty": "manchester_united",
+      "publication": "BBC Sport",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@sistoney67", "verified": true }
+      ],
+      "dataTypes": ["transfers", "club_news"],
+      "refreshIntervalMinutes": 20,
+      "priority": 2,
+      "historicalAccuracy": 0.90
+    }
+  ],
+  "confidenceFactors": {
+    "verifiedAccount": 5,
+    "establishedPublication": 10,
+    "historicalAccuracy": 15,
+    "multipleSources": 20,
+    "officialConfirmation": 100
+  }
+}

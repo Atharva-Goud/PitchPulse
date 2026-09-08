@@ -1,0 +1,143 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-09-08T11:19:20Z",
+  "clubs": [
+    {
+      "id": "arsenal-official",
+      "name": "Arsenal FC",
+      "type": "official",
+      "category": "club",
+      "credibilityScore": 100,
+      "verified": true,
+      "enabled": true,
+      "teamId": "arsenal",
+      "website": "https://www.arsenal.com",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@Arsenal", "verified": true },
+        { "platform": "instagram", "handle": "@arsenal", "verified": true }
+      ],
+      "dataTypes": ["club_news", "transfers", "match_reports", "squad_announcements"],
+      "refreshIntervalMinutes": 15,
+      "priority": 1
+    },
+    {
+      "id": "manchester-city-official",
+      "name": "Manchester City FC",
+      "type": "official",
+      "category": "club",
+      "credibilityScore": 100,
+      "verified": true,
+      "enabled": true,
+      "teamId": "manchester-city",
+      "website": "https://www.mancity.com",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@ManCity", "verified": true }
+      ],
+      "dataTypes": ["club_news", "transfers", "match_reports"],
+      "refreshIntervalMinutes": 15,
+      "priority": 1
+    },
+    {
+      "id": "liverpool-official",
+      "name": "Liverpool FC",
+      "type": "official",
+      "category": "club",
+      "credibilityScore": 100,
+      "verified": true,
+      "enabled": true,
+      "teamId": "liverpool",
+      "website": "https://www.liverpoolfc.com",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@LFC", "verified": true }
+      ],
+      "dataTypes": ["club_news", "transfers", "match_reports"],
+      "refreshIntervalMinutes": 15,
+      "priority": 1
+    },
+    {
+      "id": "chelsea-official",
+      "name": "Chelsea FC",
+      "type": "official",
+      "category": "club",
+      "credibilityScore": 100,
+      "verified": true,
+      "enabled": true,
+      "teamId": "chelsea",
+      "website": "https://www.chelseafc.com",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@ChelseaFC", "verified": true }
+      ],
+      "dataTypes": ["club_news", "transfers", "match_reports"],
+      "refreshIntervalMinutes": 15,
+      "priority": 1
+    },
+    {
+      "id": "real-madrid-official",
+      "name": "Real Madrid CF",
+      "type": "official",
+      "category": "club",
+      "credibilityScore": 100,
+      "verified": true,
+      "enabled": true,
+      "teamId": "real-madrid",
+      "website": "https://www.realmadrid.com",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@realmadriden", "verified": true }
+      ],
+      "dataTypes": ["club_news", "transfers", "match_reports"],
+      "refreshIntervalMinutes": 15,
+      "priority": 1
+    },
+    {
+      "id": "barcelona-official",
+      "name": "FC Barcelona",
+      "type": "official",
+      "category": "club",
+      "credibilityScore": 100,
+      "verified": true,
+      "enabled": true,
+      "teamId": "barcelona",
+      "website": "https://www.fcbarcelona.com",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@FCBarcelona", "verified": true }
+      ],
+      "dataTypes": ["club_news", "transfers", "match_reports"],
+      "refreshIntervalMinutes": 15,
+      "priority": 1
+    },
+    {
+      "id": "bayern-munich-official",
+      "name": "FC Bayern Munich",
+      "type": "official",
+      "category": "club",
+      "credibilityScore": 100,
+      "verified": true,
+      "enabled": true,
+      "teamId": "bayern-munich",
+      "website": "https://fcbayern.com",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@FCBayernEN", "verified": true }
+      ],
+      "dataTypes": ["club_news", "transfers", "match_reports"],
+      "refreshIntervalMinutes": 15,
+      "priority": 1
+    },
+    {
+      "id": "psg-official",
+      "name": "Paris Saint-Germain",
+      "type": "official",
+      "category": "club",
+      "credibilityScore": 100,
+      "verified": true,
+      "enabled": true,
+      "teamId": "psg",
+      "website": "https://en.psg.fr",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@PSG_English", "verified": true }
+      ],
+      "dataTypes": ["club_news", "transfers", "match_reports"],
+      "refreshIntervalMinutes": 15,
+      "priority": 1
+    }
+  ]
+}

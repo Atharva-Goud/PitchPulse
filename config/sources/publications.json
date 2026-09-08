@@ -1,0 +1,111 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-09-08T11:19:20Z",
+  "publications": [
+    {
+      "id": "bbc-sport",
+      "name": "BBC Sport",
+      "type": "publication",
+      "category": "mainstream",
+      "credibilityScore": 92,
+      "verified": true,
+      "enabled": true,
+      "website": "https://www.bbc.co.uk/sport/football",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@BBCSport", "verified": true }
+      ],
+      "dataTypes": ["news", "match_reports", "transfers"],
+      "refreshIntervalMinutes": 30,
+      "priority": 3,
+      "contentPolicy": "link_only",
+      "notes": "Established public broadcaster. Link to original articles only."
+    },
+    {
+      "id": "the-athletic",
+      "name": "The Athletic",
+      "type": "publication",
+      "category": "subscription",
+      "credibilityScore": 90,
+      "verified": true,
+      "enabled": true,
+      "website": "https://theathletic.com/football",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@TheAthleticFC", "verified": true }
+      ],
+      "dataTypes": ["news", "analysis", "transfers"],
+      "refreshIntervalMinutes": 30,
+      "priority": 3,
+      "contentPolicy": "link_only",
+      "notes": "High-quality sports journalism. Subscription-based content."
+    },
+    {
+      "id": "sky-sports",
+      "name": "Sky Sports",
+      "type": "publication",
+      "category": "mainstream",
+      "credibilityScore": 88,
+      "verified": true,
+      "enabled": true,
+      "website": "https://www.skysports.com/football",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@SkyFootball", "verified": true }
+      ],
+      "dataTypes": ["news", "match_reports", "transfers"],
+      "refreshIntervalMinutes": 30,
+      "priority": 3,
+      "contentPolicy": "link_only"
+    },
+    {
+      "id": "espn-fc",
+      "name": "ESPN FC",
+      "type": "publication",
+      "category": "mainstream",
+      "credibilityScore": 85,
+      "verified": true,
+      "enabled": true,
+      "website": "https://www.espn.com/soccer",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@ESPNFC", "verified": true }
+      ],
+      "dataTypes": ["news", "match_reports", "transfers"],
+      "refreshIntervalMinutes": 30,
+      "priority": 3,
+      "contentPolicy": "link_only"
+    },
+    {
+      "id": "guardian-sport",
+      "name": "The Guardian - Sport",
+      "type": "publication",
+      "category": "mainstream",
+      "credibilityScore": 88,
+      "verified": true,
+      "enabled": true,
+      "website": "https://www.theguardian.com/football",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@guardian_sport", "verified": true }
+      ],
+      "dataTypes": ["news", "analysis"],
+      "refreshIntervalMinutes": 30,
+      "priority": 3,
+      "contentPolicy": "link_only"
+    },
+    {
+      "id": "reuters-sports",
+      "name": "Reuters Sports",
+      "type": "publication",
+      "category": "wire_service",
+      "credibilityScore": 95,
+      "verified": true,
+      "enabled": true,
+      "website": "https://www.reuters.com/sports/soccer",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@ReutersSports", "verified": true }
+      ],
+      "dataTypes": ["news", "official_announcements"],
+      "refreshIntervalMinutes": 30,
+      "priority": 3,
+      "contentPolicy": "link_only",
+      "notes": "Wire service. Very high credibility for official announcements."
+    }
+  ]
+}

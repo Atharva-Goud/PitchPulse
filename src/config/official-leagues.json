@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-09-08T11:19:20Z",
+  "sources": [
+    {
+      "id": "premier-league-official",
+      "name": "Premier League",
+      "type": "official",
+      "category": "league",
+      "credibilityScore": 100,
+      "verified": true,
+      "enabled": true,
+      "website": "https://www.premierleague.com",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@premierleague", "verified": true },
+        { "platform": "instagram", "handle": "@premierleague", "verified": true }
+      ],
+      "dataTypes": ["fixtures", "results", "standings", "official_news"],
+      "refreshIntervalMinutes": 10,
+      "priority": 1
+    },
+    {
+      "id": "uefa-official",
+      "name": "UEFA",
+      "type": "official",
+      "category": "competition",
+      "credibilityScore": 100,
+      "verified": true,
+      "enabled": true,
+      "website": "https://www.uefa.com",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@UEFA", "verified": true }
+      ],
+      "dataTypes": ["fixtures", "results", "standings", "official_news"],
+      "refreshIntervalMinutes": 15,
+      "priority": 1
+    },
+    {
+      "id": "fifa-official",
+      "name": "FIFA",
+      "type": "official",
+      "category": "governing_body",
+      "credibilityScore": 100,
+      "verified": true,
+      "enabled": true,
+      "website": "https://www.fifa.com",
+      "socialAccounts": [
+        { "platform": "twitter", "handle": "@FIFAcom", "verified": true }
+      ],
+      "dataTypes": ["international_fixtures", "official_news"],
+      "refreshIntervalMinutes": 30,
+      "priority": 1
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "trending-001",
+    "title": "Messi wins record 8th Ballon d'Or after World Cup triumph",
+    "summary": "Lionel Messi has been crowned the world's best player for the eighth time following Argentina's World Cup victory in Qatar.",
+    "source": "France Football",
+    "sourceUrl": "https://francefootball.fr/ballon-or/messi-2026",
+    "image": "https://images.unsplash.com/photo-1587382338103-3c0c4641b75c?w=800&h=450&fit=crop",
+    "category": "International Football",
+    "publishedAt": "2026-09-06T18:00:00Z",
+    "relatedTeams": ["inter-miami", "argentina"],
+    "relatedPlayers": ["lionel-messi"]
+  },
+  {
+    "id": "trending-002",
+    "title": "Arsenal vs Manchester City: Title showdown preview",
+    "summary": "The two title contenders meet at the Emirates in what could be a season-defining match in the Premier League title race.",
+    "source": "BBC Sport",
+    "sourceUrl": "https://bbc.com/sport/football/arsenal-city-preview",
+    "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
+    "category": "Premier League",
+    "publishedAt": "2026-09-06T15:30:00Z",
+    "relatedTeams": ["arsenal", "manchester-city"],
+    "relatedPlayers": []
+  },
+  {
+    "id": "trending-003",
+    "title": "Transfer Deadline Day: All the done deals and rumours",
+    "summary": "Live updates from the final day of the summer transfer window as clubs scramble to complete their business.",
+    "source": "Sky Sports",
+    "sourceUrl": "https://skysports.com/transfer-deadline-day-live",
+    "image": "https://images.unsplash.com/photo-1607311206758-3520f88c19a6?w=800&h=450&fit=crop",
+    "category": "Transfers",
+    "publishedAt": "2026-09-06T10:00:00Z",
+    "relatedTeams": [],
+    "relatedPlayers": []
+  },
+  {
+    "id": "trending-004",
+    "title": "Champions League group stage draw: Group of Death confirmed",
+    "summary": "Real Madrid, PSG, AC Milan, and Borussia Dortmund drawn together in a blockbuster Group F.",
+    "source": "UEFA",
+    "sourceUrl": "https://uefa.com/championsleague/draw",
+    "image": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&h=450&fit=crop",
+    "category": "Champions League",
+    "publishedAt": "2026-09-05T19:00:00Z",
+    "relatedTeams": ["real-madrid", "psg", "ac-milan", "borussia-dortmund"],
+    "relatedPlayers": []
+  },
+  {
+    "id": "trending-005",
+    "title": "Ronaldo scores 900th career goal in Al-Nassr victory",
+    "summary": "The Portuguese legend reached the incredible milestone with a stunning free-kick in the Saudi Pro League.",
+    "source": "ESPN",
+    "sourceUrl": "https://espn.com/football/ronaldo-900-goals",
+    "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&h=450&fit=crop",
+    "category": "International Football",
+    "publishedAt": "2026-09-05T17:45:00Z",
+    "relatedTeams": ["al-nassr", "portugal"],
+    "relatedPlayers": ["cristiano-ronaldo"]
+  }
+]

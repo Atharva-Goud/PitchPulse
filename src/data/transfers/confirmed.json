@@ -1,0 +1,266 @@
+[
+  {
+    "id": "confirmed-001",
+    "player": {
+      "id": "player-009",
+      "name": "Declan Rice",
+      "position": "Defensive Midfielder",
+      "age": 24,
+      "nationality": "England",
+      "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=400&fit=crop&crop=face",
+      "currentTeamId": "arsenal"
+    },
+    "fromClub": {
+      "id": "west-ham",
+      "name": "West Ham United",
+      "shortName": "WHU",
+      "logo": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=100&h=100&fit=crop",
+      "country": "England",
+      "league": "Premier League"
+    },
+    "toClub": {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "shortName": "ARS",
+      "logo": "https://images.unsplash.com/photo-1607311206758-3520f88c19a6?w=100&h=100&fit=crop",
+      "country": "England",
+      "league": "Premier League"
+    },
+    "status": "Completed",
+    "fee": 105000000,
+    "source": "Arsenal Official",
+    "reliability": 100,
+    "updatedAt": "2026-07-15T10:00:00Z"
+  },
+  {
+    "id": "confirmed-002",
+    "player": {
+      "id": "player-010",
+      "name": "Kai Havertz",
+      "position": "Forward",
+      "age": 24,
+      "nationality": "Germany",
+      "image": "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=400&h=400&fit=crop&crop=face",
+      "currentTeamId": "arsenal"
+    },
+    "fromClub": {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "shortName": "CHE",
+      "logo": "https://images.unsplash.com/photo-1607311206758-3520f88c19a6?w=100&h=100&fit=crop",
+      "country": "England",
+      "league": "Premier League"
+    },
+    "toClub": {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "shortName": "ARS",
+      "logo": "https://images.unsplash.com/photo-1607311206758-3520f88c19a6?w=100&h=100&fit=crop",
+      "country": "England",
+      "league": "Premier League"
+    },
+    "status": "Completed",
+    "fee": 65000000,
+    "source": "Arsenal Official",
+    "reliability": 100,
+    "updatedAt": "2026-06-28T14:00:00Z"
+  },
+  {
+    "id": "confirmed-003",
+    "player": {
+      "id": "player-011",
+      "name": "Jurrien Timber",
+      "position": "Centre-Back",
+      "age": 22,
+      "nationality": "Netherlands",
+      "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop&crop=face",
+      "currentTeamId": "arsenal"
+    },
+    "fromClub": {
+      "id": "ajax",
+      "name": "Ajax",
+      "shortName": "AJA",
+      "logo": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=100&h=100&fit=crop",
+      "country": "Netherlands",
+      "league": "Eredivisie"
+    },
+    "toClub": {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "shortName": "ARS",
+      "logo": "https://images.unsplash.com/photo-1607311206758-3520f88c19a6?w=100&h=100&fit=crop",
+      "country": "England",
+      "league": "Premier League"
+    },
+    "status": "Completed",
+    "fee": 40000000,
+    "source": "Arsenal Official",
+    "reliability": 100,
+    "updatedAt": "2026-07-14T12:00:00Z"
+  },
+  {
+    "id": "confirmed-004",
+    "player": {
+      "id": "player-012",
+      "name": "Christopher Nkunku",
+      "position": "Forward",
+      "age": 25,
+      "nationality": "France",
+      "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=400&h=400&fit=crop&crop=face",
+      "currentTeamId": "chelsea"
+    },
+    "fromClub": {
+      "id": "rb-leipzig",
+      "name": "RB Leipzig",
+      "shortName": "RBL",
+      "logo": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=100&h=100&fit=crop",
+      "country": "Germany",
+      "league": "Bundesliga"
+    },
+    "toClub": {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "shortName": "CHE",
+      "logo": "https://images.unsplash.com/photo-1607311206758-3520f88c19a6?w=100&h=100&fit=crop",
+      "country": "England",
+      "league": "Premier League"
+    },
+    "status": "Completed",
+    "fee": 52000000,
+    "source": "Chelsea Official",
+    "reliability": 100,
+    "updatedAt": "2026-06-20T16:00:00Z"
+  },
+  {
+    "id": "confirmed-005",
+    "player": {
+      "id": "player-013",
+      "name": "Nicolas Jackson",
+      "position": "Striker",
+      "age": 22,
+      "nationality": "Senegal",
+      "image": "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=400&h=400&fit=crop&crop=face",
+      "currentTeamId": "chelsea"
+    },
+    "fromClub": {
+      "id": "villarreal",
+      "name": "Villarreal",
+      "shortName": "VIL",
+      "logo": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=100&h=100&fit=crop",
+      "country": "Spain",
+      "league": "La Liga"
+    },
+    "toClub": {
+      "id": "chelsea",
+      "name": "Chelsea",
+      "shortName": "CHE",
+      "logo": "https://images.unsplash.com/photo-1607311206758-3520f88c19a6?w=100&h=100&fit=crop",
+      "country": "England",
+      "league": "Premier League"
+    },
+    "status": "Completed",
+    "fee": 35000000,
+    "source": "Chelsea Official",
+    "reliability": 100,
+    "updatedAt": "2026-07-01T11:00:00Z"
+  },
+  {
+    "id": "confirmed-006",
+    "player": {
+      "id": "player-014",
+      "name": "Sandro Tonali",
+      "position": "Midfielder",
+      "age": 23,
+      "nationality": "Italy",
+      "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=400&fit=crop&crop=face",
+      "currentTeamId": "newcastle"
+    },
+    "fromClub": {
+      "id": "ac-milan",
+      "name": "AC Milan",
+      "shortName": "MIL",
+      "logo": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=100&h=100&fit=crop",
+      "country": "Italy",
+      "league": "Serie A"
+    },
+    "toClub": {
+      "id": "newcastle",
+      "name": "Newcastle United",
+      "shortName": "NEW",
+      "logo": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=100&h=100&fit=crop",
+      "country": "England",
+      "league": "Premier League"
+    },
+    "status": "Completed",
+    "fee": 64000000,
+    "source": "Newcastle Official",
+    "reliability": 100,
+    "updatedAt": "2026-07-03T10:00:00Z"
+  },
+  {
+    "id": "confirmed-007",
+    "player": {
+      "id": "player-015",
+      "name": "Dominik Szoboszlai",
+      "position": "Midfielder",
+      "age": 22,
+      "nationality": "Hungary",
+      "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=400&fit=crop&crop=face",
+      "currentTeamId": "liverpool"
+    },
+    "fromClub": {
+      "id": "rb-leipzig",
+      "name": "RB Leipzig",
+      "shortName": "RBL",
+      "logo": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=100&h=100&fit=crop",
+      "country": "Germany",
+      "league": "Bundesliga"
+    },
+    "toClub": {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "shortName": "LIV",
+      "logo": "https://images.unsplash.com/photo-1607311206758-3520f88c19a6?w=100&h=100&fit=crop",
+      "country": "England",
+      "league": "Premier League"
+    },
+    "status": "Completed",
+    "fee": 60000000,
+    "source": "Liverpool Official",
+    "reliability": 100,
+    "updatedAt": "2026-07-02T14:00:00Z"
+  },
+  {
+    "id": "confirmed-008",
+    "player": {
+      "id": "player-016",
+      "name": "Alexis Mac Allister",
+      "position": "Midfielder",
+      "age": 24,
+      "nationality": "Argentina",
+      "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=400&h=400&fit=crop&crop=face",
+      "currentTeamId": "liverpool"
+    },
+    "fromClub": {
+      "id": "brighton",
+      "name": "Brighton & Hove Albion",
+      "shortName": "BHA",
+      "logo": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=100&h=100&fit=crop",
+      "country": "England",
+      "league": "Premier League"
+    },
+    "toClub": {
+      "id": "liverpool",
+      "name": "Liverpool",
+      "shortName": "LIV",
+      "logo": "https://images.unsplash.com/photo-1607311206758-3520f88c19a6?w=100&h=100&fit=crop",
+      "country": "England",
+      "league": "Premier League"
+    },
+    "status": "Completed",
+    "fee": 35000000,
+    "source": "Liverpool Official",
+    "reliability": 100,
+    "updatedAt": "2026-06-08T12:00:00Z"
+  }
+]

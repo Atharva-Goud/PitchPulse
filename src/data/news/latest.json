@@ -1,0 +1,122 @@
+[
+  {
+    "id": "news-001",
+    "title": "Arsenal close in on Rice deal as West Ham set £100m asking price",
+    "summary": "The Gunners are preparing an improved bid for the England international after seeing their initial offer rejected by the Hammers.",
+    "source": "The Athletic",
+    "sourceUrl": "https://theathletic.com/football/news/arsenal-rice-bid",
+    "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&h=450&fit=crop",
+    "category": "Transfers",
+    "publishedAt": "2026-09-08T10:30:00Z",
+    "relatedTeams": ["arsenal", "west-ham"],
+    "relatedPlayers": ["declan-rice"]
+  },
+  {
+    "id": "news-002",
+    "title": "Manchester City confirm Haaland contract extension until 2029",
+    "summary": "Erling Haaland has signed a new long-term deal at the Etihad Stadium, keeping him at the club for the next five years.",
+    "source": "BBC Sport",
+    "sourceUrl": "https://bbc.com/sport/football/haaland-extension",
+    "image": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=800&h=450&fit=crop",
+    "category": "Premier League",
+    "publishedAt": "2026-09-08T09:15:00Z",
+    "relatedTeams": ["manchester-city"],
+    "relatedPlayers": ["erling-haaland"]
+  },
+  {
+    "id": "news-003",
+    "title": "Real Madrid suffer Champions League blow as Vinicius ruled out for six weeks",
+    "summary": "The Brazilian winger picked up a hamstring injury in training and will miss the crucial group stage matches against Napoli and Braga.",
+    "source": "Marca",
+    "sourceUrl": "https://marca.com/futbol/real-madrid/vinicius-injury",
+    "image": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&h=450&fit=crop",
+    "category": "Champions League",
+    "publishedAt": "2026-09-08T08:45:00Z",
+    "relatedTeams": ["real-madrid"],
+    "relatedPlayers": ["vinicius-junior"]
+  },
+  {
+    "id": "news-004",
+    "title": "Barcelona eye Premier League defender as Araujo replacement",
+    "summary": "Xavi's side are monitoring a £50m rated centre-back with the Uruguayan's future still uncertain amid interest from Bayern Munich.",
+    "source": "Sport",
+    "sourceUrl": "https://sport.es/futbol/barcelona/defender-target",
+    "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=450&fit=crop",
+    "category": "Transfers",
+    "publishedAt": "2026-09-08T07:20:00Z",
+    "relatedTeams": ["barcelona", "bayern-munich"],
+    "relatedPlayers": ["ronald-araujo"]
+  },
+  {
+    "id": "news-005",
+    "title": "Liverpool thrash Manchester United 4-0 at Anfield in dominant display",
+    "summary": "Salah, Nunez, and Diaz all scored as the Reds produced a masterclass performance to go top of the Premier League table.",
+    "source": "Sky Sports",
+    "sourceUrl": "https://skysports.com/football/liverpool-man-utd-report",
+    "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
+    "category": "Premier League",
+    "publishedAt": "2026-09-07T22:00:00Z",
+    "relatedTeams": ["liverpool", "manchester-united"],
+    "relatedPlayers": ["mohamed-salah", "darwin-nunez", "luis-diaz"]
+  },
+  {
+    "id": "news-006",
+    "title": "Inter Milan secure Serie A title with five games to spare",
+    "summary": "Lautaro Martinez's brace against AC Milan in the Derby della Madonnina sealed the Scudetto for Simone Inzaghi's side.",
+    "source": "Gazzetta dello Sport",
+    "sourceUrl": "https://gazzetta.it/calcio/inter-scudetto",
+    "image": "https://images.unsplash.com/photo-1459865264687-595d652de67e?w=800&h=450&fit=crop",
+    "category": "Serie A",
+    "publishedAt": "2026-09-07T20:30:00Z",
+    "relatedTeams": ["inter-milan", "ac-milan"],
+    "relatedPlayers": ["lautaro-martinez"]
+  },
+  {
+    "id": "news-007",
+    "title": "Kane breaks Bundesliga scoring record in Bayern's 6-0 win",
+    "summary": "Harry Kane became the fastest player to reach 30 goals in a single Bundesliga season as Bayern Munich crushed Darmstadt.",
+    "source": "Kicker",
+    "sourceUrl": "https://kicker.de/bundesliga/kane-record",
+    "image": "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=800&h=450&fit=crop",
+    "category": "Bundesliga",
+    "publishedAt": "2026-09-07T18:45:00Z",
+    "relatedTeams": ["bayern-munich"],
+    "relatedPlayers": ["harry-kane"]
+  },
+  {
+    "id": "news-008",
+    "title": "Mbappe confirms PSG departure at end of season",
+    "summary": "The French superstar has informed the club he will not renew his contract and will leave on a free transfer next summer.",
+    "source": "L'Equipe",
+    "sourceUrl": "https://lequipe.fr/football/mbappe-psg-departure",
+    "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&h=450&fit=crop",
+    "category": "Transfers",
+    "publishedAt": "2026-09-07T16:00:00Z",
+    "relatedTeams": ["psg"],
+    "relatedPlayers": ["kylian-mbappe"]
+  },
+  {
+    "id": "news-009",
+    "title": "England Euro 2024 squad announced: Rashford and Sancho omitted",
+    "summary": "Gareth Southgate has named his 26-man squad for the tournament in Germany, with several high-profile exclusions.",
+    "source": "The Guardian",
+    "sourceUrl": "https://theguardian.com/football/england-euro-squad",
+    "image": "https://images.unsplash.com/photo-1461896836934-2d39d0a94f4d?w=800&h=450&fit=crop",
+    "category": "International Football",
+    "publishedAt": "2026-09-07T14:00:00Z",
+    "relatedTeams": ["england"],
+    "relatedPlayers": []
+  },
+  {
+    "id": "news-010",
+    "title": "Chelsea complete signing of Brighton midfielder Caicedo for £115m",
+    "summary": "The Ecuador international becomes the most expensive signing in Premier League history after lengthy negotiations.",
+    "source": "Fabrizio Romano",
+    "sourceUrl": "https://fabrizioromano.com/chelsea-caicedo-done-deal",
+    "image": "https://images.unsplash.com/photo-1607311206758-3520f88c19a6?w=800&h=450&fit=crop",
+    "category": "Transfers",
+    "publishedAt": "2026-09-07T12:30:00Z",
+    "relatedTeams": ["chelsea", "brighton"],
+    "relatedPlayers": ["moises-caicedo"]
+  }
+]
