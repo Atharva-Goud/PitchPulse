@@ -3,14 +3,24 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Clock, ExternalLink } from 'lucide-react';
-import { NewsArticle } from '@/types';
+import { NewsArticle, SourceObject } from '@/types';
 
 interface Props {
   article: NewsArticle;
   variant?: 'default' | 'featured' | 'compact';
 }
 
+function getSourceName(source: string | SourceObject): string {
+  return typeof source === 'string' ? source : source.name;
+}
+
+function getSourceUrl(source: string | SourceObject): string {
+  return typeof source === 'string' ? '' : (source.url || '');
+}
+
 export default function NewsCard({ article, variant = 'default' }: Props) {
+  const sourceName = getSourceName(article.source);
+  const sourceUrl = article.sourceUrl;
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     const now = new Date();
@@ -63,7 +73,7 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
             {article.title}
           </h3>
           <div className="flex items-center gap-2 mt-1 text-xs text-slate-400">
-            <span>{article.source}</span>
+            <span>{sourceName}</span>
             <span>·</span>
             <span>{formatDate(article.publishedAt)}</span>
           </div>
@@ -100,7 +110,7 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
               <Clock className="h-3 w-3" />
               {formatDate(article.publishedAt)}
             </span>
-            <span className="text-xs text-slate-400">{article.source}</span>
+<span className="text-xs text-slate-400">{sourceName}</span>
           </div>
           <Link
             href={article.sourceUrl}
@@ -168,7 +178,7 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
         <p className="mt-2 text-sm text-slate-300 line-clamp-2">{article.summary}</p>
 
         <div className="mt-3 flex items-center justify-between">
-          <span className="text-xs text-slate-400">{article.source}</span>
+          <span className="text-xs text-slate-400">{sourceName}</span>
           <Link
             href={article.sourceUrl}
             target="_blank"

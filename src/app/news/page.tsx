@@ -138,9 +138,9 @@ export default function NewsPage() {
                       <h4 className="text-sm font-medium text-white line-clamp-2 group-hover:text-emerald-400 transition-colors">
                         {article.title}
                       </h4>
-                      <div className="flex items-center gap-2 mt-1 text-xs text-slate-400">
-                        <span>{article.source}</span>
-                        <span>·</span>
+<div className="flex items-center gap-2 mt-1 text-xs text-slate-400">
+  <span>{typeof article.source === 'string' ? article.source : article.source.name}</span>
+  <span>·</span>
                         <span className="flex items-center gap-1">
                           <Clock className="h-3 w-3" />
                           {new Date(article.publishedAt).toLocaleDateString('en-GB', {

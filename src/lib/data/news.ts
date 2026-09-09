@@ -33,6 +33,6 @@ export async function searchNews(query: string): Promise<NewsArticle[]> {
     article =>
       article.title.toLowerCase().includes(lowerQuery) ||
       article.summary.toLowerCase().includes(lowerQuery) ||
-      article.source.toLowerCase().includes(lowerQuery)
+      (typeof article.source === 'string' ? article.source : article.source.name).toLowerCase().includes(lowerQuery)
   );
 }

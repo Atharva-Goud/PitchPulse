@@ -29,18 +29,44 @@ export interface Competition {
   type: 'league' | 'cup' | 'international';
 }
 
+export interface SourceObject {
+  name: string;
+  type?: string;
+  url?: string;
+  credibilityScore?: number;
+}
+
 export interface NewsArticle {
   id: string;
   title: string;
   summary: string;
   content?: string;
-  source: string;
+  source: string | SourceObject;
   sourceUrl: string;
   image: string;
   category: NewsCategory;
   publishedAt: string;
   relatedTeams?: string[];
   relatedPlayers?: string[];
+  sourceName?: string;
+  originalUrl?: string;
+  discoveredAt?: string;
+  lastVerifiedAt?: string;
+  dataStatus?: 'FRESH' | 'STALE' | 'ERROR' | 'UNKNOWN' | 'UNVERIFIED';
+  freshness?: {
+    status: string;
+    ageMinutes: number;
+    publishedAt: string;
+    lastUpdated: string;
+  };
+  verification?: {
+    level: string;
+    sources: any[];
+    confidenceScore: number;
+    confidenceReasons: string[];
+    confirmedBy: string[];
+    verificationCount: number;
+  };
 }
 
 export type NewsCategory = 

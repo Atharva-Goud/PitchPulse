@@ -1,62 +1,520 @@
 [
   {
-    "id": "trending-001",
-    "title": "Messi wins record 8th Ballon d'Or after World Cup triumph",
-    "summary": "Lionel Messi has been crowned the world's best player for the eighth time following Argentina's World Cup victory in Qatar.",
-    "source": "France Football",
-    "sourceUrl": "https://francefootball.fr/ballon-or/messi-2026",
-    "image": "https://images.unsplash.com/photo-1587382338103-3c0c4641b75c?w=800&h=450&fit=crop",
-    "category": "International Football",
-    "publishedAt": "2026-09-06T18:00:00Z",
-    "relatedTeams": ["inter-miami", "argentina"],
-    "relatedPlayers": ["lionel-messi"]
-  },
-  {
-    "id": "trending-002",
-    "title": "Arsenal vs Manchester City: Title showdown preview",
-    "summary": "The two title contenders meet at the Emirates in what could be a season-defining match in the Premier League title race.",
-    "source": "BBC Sport",
-    "sourceUrl": "https://bbc.com/sport/football/arsenal-city-preview",
+    "id": "news-mttti690-0zvg5u",
+    "title": "Where Estevao fits into Chelsea's all-star attack",
+    "summary": "A look at where Estevao Willian could feature for Chelsea this season after the reminder of his quality in his cameo against Arsenal.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cm2mlk4p4x5o?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cm2mlk4p4x5o?at_medium=RSS&at_campaign=rss",
     "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
     "category": "Premier League",
-    "publishedAt": "2026-09-06T15:30:00Z",
-    "relatedTeams": ["arsenal", "manchester-city"],
-    "relatedPlayers": []
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cm2mlk4p4x5o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-09T07:00:16.000Z",
+    "discoveredAt": "2026-09-09T08:09:32.298Z",
+    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 69,
+      "publishedAt": "2026-09-09T07:00:16.000Z",
+      "lastUpdated": "2026-09-09T08:09:32.298Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cm2mlk4p4x5o?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-09T07:00:16.000Z",
+          "discoveredAt": "2026-09-09T08:09:32.298Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "arsenal",
+      "chelsea"
+    ]
   },
   {
-    "id": "trending-003",
-    "title": "Transfer Deadline Day: All the done deals and rumours",
-    "summary": "Live updates from the final day of the summer transfer window as clubs scramble to complete their business.",
-    "source": "Sky Sports",
-    "sourceUrl": "https://skysports.com/transfer-deadline-day-live",
-    "image": "https://images.unsplash.com/photo-1607311206758-3520f88c19a6?w=800&h=450&fit=crop",
-    "category": "Transfers",
-    "publishedAt": "2026-09-06T10:00:00Z",
-    "relatedTeams": [],
-    "relatedPlayers": []
+    "id": "news-mttti690-8p5whb",
+    "title": "In the middle again - but Mourinho says Alexander-Arnold 'not a midfielder'",
+    "summary": "Trent Alexander-Arnold started in midfield for Real Madrid's win over Inter - but Jose Mourinho says it is not his best position.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c980lgdrlzno?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c980lgdrlzno?at_medium=RSS&at_campaign=rss",
+    "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c980lgdrlzno?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-08T23:14:36.000Z",
+    "discoveredAt": "2026-09-09T08:09:32.298Z",
+    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 534,
+      "publishedAt": "2026-09-08T23:14:36.000Z",
+      "lastUpdated": "2026-09-09T08:09:32.298Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c980lgdrlzno?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-08T23:14:36.000Z",
+          "discoveredAt": "2026-09-09T08:09:32.298Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "real-madrid",
+      "inter-milan"
+    ]
   },
   {
-    "id": "trending-004",
-    "title": "Champions League group stage draw: Group of Death confirmed",
-    "summary": "Real Madrid, PSG, AC Milan, and Borussia Dortmund drawn together in a blockbuster Group F.",
-    "source": "UEFA",
-    "sourceUrl": "https://uefa.com/championsleague/draw",
-    "image": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&h=450&fit=crop",
+    "id": "news-mttti690-z52f4t",
+    "title": "Liverpool monitoring Thiaw - Wednesday's gossip",
+    "summary": "Germany defender Malick Thiaw is being looked at by Liverpool, Manchester United, Fulham want to lock down Calvin Bassey and James Rodriguez is in Serie B talks.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ckg0jrdvxnvo?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ckg0jrdvxnvo?at_medium=RSS&at_campaign=rss",
+    "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/ckg0jrdvxnvo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-08T20:45:07.000Z",
+    "discoveredAt": "2026-09-09T08:09:32.298Z",
+    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 684,
+      "publishedAt": "2026-09-08T20:45:07.000Z",
+      "lastUpdated": "2026-09-09T08:09:32.298Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/ckg0jrdvxnvo?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-08T20:45:07.000Z",
+          "discoveredAt": "2026-09-09T08:09:32.298Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mttti690-1lwrdz",
+    "title": "Winning ugly: Mourinho's Real Madrid still have a long way to go",
+    "summary": "Real Madrid were fortunate to defeat Inter Milan, showing how much work remains for Jose Mourinho if they are to win the Champions League.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49872329/despite-victory-real-madrid-long-way-go-mourinho-uefa-champions-league",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49872329/despite-victory-real-madrid-long-way-go-mourinho-uefa-champions-league",
+    "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
     "category": "Champions League",
-    "publishedAt": "2026-09-05T19:00:00Z",
-    "relatedTeams": ["real-madrid", "psg", "ac-milan", "borussia-dortmund"],
-    "relatedPlayers": []
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49872329/despite-victory-real-madrid-long-way-go-mourinho-uefa-champions-league",
+    "publishedAt": "2026-09-09T08:04:24.000Z",
+    "discoveredAt": "2026-09-09T08:09:32.298Z",
+    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 5,
+      "publishedAt": "2026-09-09T08:04:24.000Z",
+      "lastUpdated": "2026-09-09T08:09:32.298Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49872329/despite-victory-real-madrid-long-way-go-mourinho-uefa-champions-league",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-09T08:04:24.000Z",
+          "discoveredAt": "2026-09-09T08:09:32.298Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "real-madrid",
+      "inter-milan",
+      "ac-milan"
+    ]
   },
   {
-    "id": "trending-005",
-    "title": "Ronaldo scores 900th career goal in Al-Nassr victory",
-    "summary": "The Portuguese legend reached the incredible milestone with a stunning free-kick in the Saudi Pro League.",
-    "source": "ESPN",
-    "sourceUrl": "https://espn.com/football/ronaldo-900-goals",
-    "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&h=450&fit=crop",
+    "id": "news-mttti690-ke7obh",
+    "title": "Arsenal show Chelsea, Premier League who's boss; Inter the team to beat in Serie A",
+    "summary": "Arsenal looked rattled against Chelsea thanks to an early goal, but Mikel Arteta's side quickly showed why it's the team to beat in England. Plus, Inter prove they are Serie A's top team. Gab Marcotti recaps the weekend.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49854825/arsenal-beat-chelsea-premier-league-analysis-gab-marcotti-inter-milan-napoli-serie-a",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49854825/arsenal-beat-chelsea-premier-league-analysis-gab-marcotti-inter-milan-napoli-serie-a",
+    "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49854825/arsenal-beat-chelsea-premier-league-analysis-gab-marcotti-inter-milan-napoli-serie-a",
+    "publishedAt": "2026-09-08T10:44:00.000Z",
+    "discoveredAt": "2026-09-09T08:09:32.298Z",
+    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 1285,
+      "publishedAt": "2026-09-08T10:44:00.000Z",
+      "lastUpdated": "2026-09-09T08:09:32.298Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49854825/arsenal-beat-chelsea-premier-league-analysis-gab-marcotti-inter-milan-napoli-serie-a",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-08T10:44:00.000Z",
+          "discoveredAt": "2026-09-09T08:09:32.298Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "arsenal",
+      "chelsea",
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-mttti690-vadn6v",
+    "title": "Championship roundup: West Ham go top after Bowen double sinks Bolton",
+    "summary": "England forward scores twice in 3-2 victory\n\nSouthampton 3-1 Swansea; Watford 2-1 Preston\n\nCaptain Jarrod Bowen scored twice as West Ham’s 3-2 win over Bolton took them top of the Championship on goal difference. The England international opened the scoring after 13 minutes and earned his side a fir",
+    "source": {
+      "name": "The Guardian Football",
+      "type": "publication",
+      "url": "https://www.theguardian.com/football/2026/sep/08/championship-roundup-west-ham-go-top-after-bowen-double-sinks-bolton",
+      "credibilityScore": 88
+    },
+    "sourceName": "The Guardian Football",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/08/championship-roundup-west-ham-go-top-after-bowen-double-sinks-bolton",
+    "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
     "category": "International Football",
-    "publishedAt": "2026-09-05T17:45:00Z",
-    "relatedTeams": ["al-nassr", "portugal"],
-    "relatedPlayers": ["cristiano-ronaldo"]
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/08/championship-roundup-west-ham-go-top-after-bowen-double-sinks-bolton",
+    "publishedAt": "2026-09-08T21:40:32.000Z",
+    "discoveredAt": "2026-09-09T08:09:32.298Z",
+    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 629,
+      "publishedAt": "2026-09-08T21:40:32.000Z",
+      "lastUpdated": "2026-09-09T08:09:32.298Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "guardian-sport",
+          "name": "The Guardian Football",
+          "type": "publication",
+          "url": "https://www.theguardian.com/football/2026/sep/08/championship-roundup-west-ham-go-top-after-bowen-double-sinks-bolton",
+          "credibilityScore": 88,
+          "publishedAt": "2026-09-08T21:40:32.000Z",
+          "discoveredAt": "2026-09-09T08:09:32.298Z"
+        }
+      ],
+      "confidenceScore": 88,
+      "confidenceReasons": [
+        "Reported by The Guardian Football",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "inter-milan",
+      "west-ham"
+    ]
+  },
+  {
+    "id": "news-mttti690-21nlb9",
+    "title": "Real Madrid somehow cling on to beat Inter on José Mourinho’s big night",
+    "summary": "Sometimes football is silly, sometimes it doesn’t make much sense, and sometimes it’s fun for it. On a night when there were 37 shots and the goalkeepers shared 13 occasionally absurd saves between them, José Mourinho’s current side beat his former team Inter on his Champions League return to Real M",
+    "source": {
+      "name": "The Guardian Football",
+      "type": "publication",
+      "url": "https://www.theguardian.com/football/2026/sep/08/real-madrid-inter-champions-league-match-report",
+      "credibilityScore": 88
+    },
+    "sourceName": "The Guardian Football",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/08/real-madrid-inter-champions-league-match-report",
+    "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
+    "category": "Champions League",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/08/real-madrid-inter-champions-league-match-report",
+    "publishedAt": "2026-09-08T21:18:12.000Z",
+    "discoveredAt": "2026-09-09T08:09:32.298Z",
+    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 651,
+      "publishedAt": "2026-09-08T21:18:12.000Z",
+      "lastUpdated": "2026-09-09T08:09:32.298Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "guardian-sport",
+          "name": "The Guardian Football",
+          "type": "publication",
+          "url": "https://www.theguardian.com/football/2026/sep/08/real-madrid-inter-champions-league-match-report",
+          "credibilityScore": 88,
+          "publishedAt": "2026-09-08T21:18:12.000Z",
+          "discoveredAt": "2026-09-09T08:09:32.298Z"
+        }
+      ],
+      "confidenceScore": 88,
+      "confidenceReasons": [
+        "Reported by The Guardian Football",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "real-madrid",
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-mttti690-uhf690",
+    "title": "Air traffic chaos delays Arsenal flight to Naples for Champions League",
+    "summary": "Team arriving late at their hotel in southern Italy\n\nJurriën Timber in squad for first time since May\n\nArsenal’s preparations for their opening Champions League game against Napoli have been disrupted after they were caught up in the travel chaos that affected airports across the UK.\nMikel Arteta wa",
+    "source": {
+      "name": "The Guardian Football",
+      "type": "publication",
+      "url": "https://www.theguardian.com/football/2026/sep/08/air-traffic-chaos-delays-arsenal-flight-to-naples-for-champions-league",
+      "credibilityScore": 88
+    },
+    "sourceName": "The Guardian Football",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/08/air-traffic-chaos-delays-arsenal-flight-to-naples-for-champions-league",
+    "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
+    "category": "Champions League",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/08/air-traffic-chaos-delays-arsenal-flight-to-naples-for-champions-league",
+    "publishedAt": "2026-09-08T18:38:24.000Z",
+    "discoveredAt": "2026-09-09T08:09:32.298Z",
+    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 811,
+      "publishedAt": "2026-09-08T18:38:24.000Z",
+      "lastUpdated": "2026-09-09T08:09:32.298Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "guardian-sport",
+          "name": "The Guardian Football",
+          "type": "publication",
+          "url": "https://www.theguardian.com/football/2026/sep/08/air-traffic-chaos-delays-arsenal-flight-to-naples-for-champions-league",
+          "credibilityScore": 88,
+          "publishedAt": "2026-09-08T18:38:24.000Z",
+          "discoveredAt": "2026-09-09T08:09:32.298Z"
+        }
+      ],
+      "confidenceScore": 88,
+      "confidenceReasons": [
+        "Reported by The Guardian Football",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "arsenal",
+      "napoli"
+    ]
+  },
+  {
+    "id": "news-mttti690-ga5k8m",
+    "title": "Newcastle admit they started planning for Eddie Howe’s exit at start of year",
+    "summary": "Sporting director disappointed to lose Bruno Guimarães\n\nManchester United target Lewis Hall agrees new contract\n\nNewcastle’s sporting director, Ross Wilson, has revealed he began planning at the start of this year for Eddie Howe’s departure.\nHowe stepped down as manager in late July and the club tur",
+    "source": {
+      "name": "The Guardian Football",
+      "type": "publication",
+      "url": "https://www.theguardian.com/football/2026/sep/08/eddie-howe-newcastle-exit-timing-matthias-jaissle-bruno-guimaraes-ross-wilson",
+      "credibilityScore": 88
+    },
+    "sourceName": "The Guardian Football",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/08/eddie-howe-newcastle-exit-timing-matthias-jaissle-bruno-guimaraes-ross-wilson",
+    "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
+    "category": "Transfers",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/08/eddie-howe-newcastle-exit-timing-matthias-jaissle-bruno-guimaraes-ross-wilson",
+    "publishedAt": "2026-09-08T16:36:26.000Z",
+    "discoveredAt": "2026-09-09T08:09:32.298Z",
+    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 933,
+      "publishedAt": "2026-09-08T16:36:26.000Z",
+      "lastUpdated": "2026-09-09T08:09:32.298Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "guardian-sport",
+          "name": "The Guardian Football",
+          "type": "publication",
+          "url": "https://www.theguardian.com/football/2026/sep/08/eddie-howe-newcastle-exit-timing-matthias-jaissle-bruno-guimaraes-ross-wilson",
+          "credibilityScore": 88,
+          "publishedAt": "2026-09-08T16:36:26.000Z",
+          "discoveredAt": "2026-09-09T08:09:32.298Z"
+        }
+      ],
+      "confidenceScore": 88,
+      "confidenceReasons": [
+        "Reported by The Guardian Football",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "newcastle"
+    ]
+  },
+  {
+    "id": "news-mttti690-95j25y",
+    "title": "‘Safety, security and service’: behind the scenes with police at Arsenal v Chelsea",
+    "summary": "Facial recognition and spotters part of operation at Emirates that involved a dozen incidents and two arrests\nThe concourses are silent when, deep in the Emirates Stadium’s bowels, Chief Inspector Pete Dearden’s briefing begins. Arsenal’s 4.30pm kick-off against Chelsea is still hours away but the f",
+    "source": {
+      "name": "The Guardian Football",
+      "type": "publication",
+      "url": "https://www.theguardian.com/football/2026/sep/07/safety-security-and-service-behind-the-scenes-with-police-at-arsenal-v-chelsea",
+      "credibilityScore": 88
+    },
+    "sourceName": "The Guardian Football",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/07/safety-security-and-service-behind-the-scenes-with-police-at-arsenal-v-chelsea",
+    "image": "https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop",
+    "category": "Premier League",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/07/safety-security-and-service-behind-the-scenes-with-police-at-arsenal-v-chelsea",
+    "publishedAt": "2026-09-07T18:00:14.000Z",
+    "discoveredAt": "2026-09-09T08:09:32.298Z",
+    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 2289,
+      "publishedAt": "2026-09-07T18:00:14.000Z",
+      "lastUpdated": "2026-09-09T08:09:32.298Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "guardian-sport",
+          "name": "The Guardian Football",
+          "type": "publication",
+          "url": "https://www.theguardian.com/football/2026/sep/07/safety-security-and-service-behind-the-scenes-with-police-at-arsenal-v-chelsea",
+          "credibilityScore": 88,
+          "publishedAt": "2026-09-07T18:00:14.000Z",
+          "discoveredAt": "2026-09-09T08:09:32.298Z"
+        }
+      ],
+      "confidenceScore": 88,
+      "confidenceReasons": [
+        "Reported by The Guardian Football",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "arsenal",
+      "chelsea"
+    ]
   }
 ]

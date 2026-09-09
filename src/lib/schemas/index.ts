@@ -31,12 +31,19 @@ export const CompetitionSchema = z.object({
   type: z.enum(['league', 'cup', 'international']),
 });
 
+export const SourceObjectSchema = z.object({
+  name: z.string(),
+  type: z.string().optional(),
+  url: z.string().url().optional(),
+  credibilityScore: z.number().optional(),
+});
+
 export const NewsArticleSchema = z.object({
   id: z.string(),
   title: z.string(),
   summary: z.string(),
   content: z.string().optional(),
-  source: z.string(),
+  source: z.union([z.string(), SourceObjectSchema]),
   sourceUrl: z.string().url(),
   image: z.string().url(),
   category: z.enum([
@@ -52,6 +59,25 @@ export const NewsArticleSchema = z.object({
   publishedAt: z.string().datetime(),
   relatedTeams: z.array(z.string()).optional(),
   relatedPlayers: z.array(z.string()).optional(),
+  sourceName: z.string().optional(),
+  originalUrl: z.string().url().optional(),
+  discoveredAt: z.string().datetime().optional(),
+  lastVerifiedAt: z.string().datetime().optional(),
+  dataStatus: z.enum(['FRESH', 'STALE', 'ERROR', 'UNKNOWN', 'UNVERIFIED']).optional(),
+  freshness: z.object({
+    status: z.string(),
+    ageMinutes: z.number(),
+    publishedAt: z.string(),
+    lastUpdated: z.string(),
+  }).optional(),
+  verification: z.object({
+    level: z.string(),
+    sources: z.array(z.any()),
+    confidenceScore: z.number(),
+    confidenceReasons: z.array(z.string()),
+    confirmedBy: z.array(z.string()),
+    verificationCount: z.number(),
+  }).optional(),
 });
 
 export const TransferSchema = z.object({
