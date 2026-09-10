@@ -50,7 +50,7 @@ export default function Header() {
                 <img
                   src="/assets/Footballer-logo.svg"
                   alt="PitchPulse"
-                  className="h-8 w-8 flex-shrink-0"
+                  className="h-10 w-10 flex-shrink-0"
                 />
                 <span className="text-xl font-bold tracking-tight text-white">
                   PITCH<span className="text-emerald-400">INTEL</span>
