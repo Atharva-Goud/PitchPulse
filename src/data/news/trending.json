@@ -1,6 +1,6 @@
 [
   {
-    "id": "news-mtvmhl6b-3uym2r",
+    "id": "news-mtvpdori-t146eb",
     "title": "Can you make a case for Chelsea being stripped of 2016-17 title?",
     "summary": "Does Mauricio Pochettino have a case that Tottenham should be retrospectively crowned Premier League champions?",
     "source": {
@@ -15,14 +15,14 @@
     "category": "Premier League",
     "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c0re0n84yz7o?at_medium=RSS&at_campaign=rss",
     "publishedAt": "2026-09-10T13:55:43.000Z",
-    "discoveredAt": "2026-09-10T14:28:39.823Z",
-    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "discoveredAt": "2026-09-10T15:49:36.339Z",
+    "lastVerifiedAt": "2026-09-10T15:49:36.339Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 32,
+      "ageMinutes": 113,
       "publishedAt": "2026-09-10T13:55:43.000Z",
-      "lastUpdated": "2026-09-10T14:28:39.823Z"
+      "lastUpdated": "2026-09-10T15:49:36.339Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -34,7 +34,7 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c0re0n84yz7o?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
           "publishedAt": "2026-09-10T13:55:43.000Z",
-          "discoveredAt": "2026-09-10T14:28:39.823Z"
+          "discoveredAt": "2026-09-10T15:49:36.339Z"
         }
       ],
       "confidenceScore": 92,
@@ -53,7 +53,111 @@
     ]
   },
   {
-    "id": "news-mtvmhl6b-hsidcy",
+    "id": "news-mtvpdori-8rewz9",
+    "title": "Jaissle questions booking compared to rival managers",
+    "summary": "Newcastle United head coach Matthias Jaissle has questioned why he was booked for his touchline behaviour after he felt some other animated managers were not.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cp80j2x85xyo?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cp80j2x85xyo?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cp80j2x85xyo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T15:38:44.000Z",
+    "discoveredAt": "2026-09-10T15:49:36.339Z",
+    "lastVerifiedAt": "2026-09-10T15:49:36.339Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 10,
+      "publishedAt": "2026-09-10T15:38:44.000Z",
+      "lastUpdated": "2026-09-10T15:49:36.339Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cp80j2x85xyo?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-10T15:38:44.000Z",
+          "discoveredAt": "2026-09-10T15:49:36.339Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "newcastle"
+    ]
+  },
+  {
+    "id": "news-mtvpdori-zd205h",
+    "title": "Gordon a better fit for Barca than Rashford - Deco",
+    "summary": "Barcelona sporting director Deco says Anthony Gordon's style was a better fit for Hansi Flick's side than Marcus Rashford's as the club strengthened their squad this summer.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/clyl7njnk46o?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/clyl7njnk46o?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/clyl7njnk46o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T15:30:53.000Z",
+    "discoveredAt": "2026-09-10T15:49:36.339Z",
+    "lastVerifiedAt": "2026-09-10T15:49:36.339Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 18,
+      "publishedAt": "2026-09-10T15:30:53.000Z",
+      "lastUpdated": "2026-09-10T15:49:36.339Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/clyl7njnk46o?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-10T15:30:53.000Z",
+          "discoveredAt": "2026-09-10T15:49:36.339Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "barcelona"
+    ]
+  },
+  {
+    "id": "news-mtvpdori-o0ypjw",
     "title": "Arsenal close to finalising new contract for Arteta",
     "summary": "Mikel Arteta is believed to be close to finalising a new contract with Premier League champions Arsenal.",
     "source": {
@@ -68,14 +172,14 @@
     "category": "Transfers",
     "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cgrvq2xp8dwo?at_medium=RSS&at_campaign=rss",
     "publishedAt": "2026-09-10T14:16:06.000Z",
-    "discoveredAt": "2026-09-10T14:28:39.823Z",
-    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "discoveredAt": "2026-09-10T15:49:36.339Z",
+    "lastVerifiedAt": "2026-09-10T15:49:36.339Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 12,
+      "ageMinutes": 93,
       "publishedAt": "2026-09-10T14:16:06.000Z",
-      "lastUpdated": "2026-09-10T14:28:39.823Z"
+      "lastUpdated": "2026-09-10T15:49:36.339Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -87,7 +191,7 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cgrvq2xp8dwo?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
           "publishedAt": "2026-09-10T14:16:06.000Z",
-          "discoveredAt": "2026-09-10T14:28:39.823Z"
+          "discoveredAt": "2026-09-10T15:49:36.339Z"
         }
       ],
       "confidenceScore": 92,
@@ -105,7 +209,7 @@
     ]
   },
   {
-    "id": "news-mtvmhl6b-3d6msr",
+    "id": "news-mtvpdori-ns99me",
     "title": "Spurs should be awarded 2016-17 title - Pochettino",
     "summary": "Mauricio Pochettino believes Chelsea should be stripped of the Premier League title for 2016-17, when his Tottenham team finished runners-up.",
     "source": {
@@ -120,14 +224,14 @@
     "category": "Premier League",
     "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c783ndd7ge2o?at_medium=RSS&at_campaign=rss",
     "publishedAt": "2026-09-10T08:08:21.000Z",
-    "discoveredAt": "2026-09-10T14:28:39.823Z",
-    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "discoveredAt": "2026-09-10T15:49:36.339Z",
+    "lastVerifiedAt": "2026-09-10T15:49:36.339Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 380,
+      "ageMinutes": 461,
       "publishedAt": "2026-09-10T08:08:21.000Z",
-      "lastUpdated": "2026-09-10T14:28:39.823Z"
+      "lastUpdated": "2026-09-10T15:49:36.339Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -139,7 +243,7 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c783ndd7ge2o?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
           "publishedAt": "2026-09-10T08:08:21.000Z",
-          "discoveredAt": "2026-09-10T14:28:39.823Z"
+          "discoveredAt": "2026-09-10T15:49:36.339Z"
         }
       ],
       "confidenceScore": 92,
@@ -158,7 +262,7 @@
     ]
   },
   {
-    "id": "news-mtvmhl6b-64tppk",
+    "id": "news-mtvpdori-v4aca6",
     "title": "Poch: 16-17 title should be Spurs', not Chelsea's",
     "summary": "Mauricio Pochettino has claimed Tottenham should be awarded the Premier League title from the 2016-17 campaign.",
     "source": {
@@ -173,14 +277,14 @@
     "category": "Premier League",
     "originalUrl": "https://www.espn.com/soccer/story/_/id/49889093/mauricio-pochettino-strip-chelsea-2016-17-premier-league-title-award-tottenham",
     "publishedAt": "2026-09-10T13:45:56.000Z",
-    "discoveredAt": "2026-09-10T14:28:39.823Z",
-    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "discoveredAt": "2026-09-10T15:49:36.339Z",
+    "lastVerifiedAt": "2026-09-10T15:49:36.339Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 42,
+      "ageMinutes": 123,
       "publishedAt": "2026-09-10T13:45:56.000Z",
-      "lastUpdated": "2026-09-10T14:28:39.823Z"
+      "lastUpdated": "2026-09-10T15:49:36.339Z"
     },
     "verification": {
       "level": "single_source",
@@ -192,7 +296,7 @@
           "url": "https://www.espn.com/soccer/story/_/id/49889093/mauricio-pochettino-strip-chelsea-2016-17-premier-league-title-award-tottenham",
           "credibilityScore": 85,
           "publishedAt": "2026-09-10T13:45:56.000Z",
-          "discoveredAt": "2026-09-10T14:28:39.823Z"
+          "discoveredAt": "2026-09-10T15:49:36.339Z"
         }
       ],
       "confidenceScore": 85,
@@ -209,7 +313,7 @@
     ]
   },
   {
-    "id": "news-mtvmhl6b-okich0",
+    "id": "news-mtvpdori-aw34jl",
     "title": "Transfer rumors, news: Man United, Tottenham eye Club Brugge striker",
     "summary": "Club Brugge striker Nicolo Tresoldi has emerged as a potential target for both Manchester United and Tottenham. Transfer Talk has the latest.",
     "source": {
@@ -224,14 +328,14 @@
     "category": "Transfers",
     "originalUrl": "https://www.espn.com/soccer/story/_/id/49889462/transfer-rumors-news-man-united-tottenham-eye-club-brugge-striker",
     "publishedAt": "2026-09-10T13:37:53.000Z",
-    "discoveredAt": "2026-09-10T14:28:39.823Z",
-    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "discoveredAt": "2026-09-10T15:49:36.339Z",
+    "lastVerifiedAt": "2026-09-10T15:49:36.339Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 50,
+      "ageMinutes": 131,
       "publishedAt": "2026-09-10T13:37:53.000Z",
-      "lastUpdated": "2026-09-10T14:28:39.823Z"
+      "lastUpdated": "2026-09-10T15:49:36.339Z"
     },
     "verification": {
       "level": "single_source",
@@ -243,7 +347,7 @@
           "url": "https://www.espn.com/soccer/story/_/id/49889462/transfer-rumors-news-man-united-tottenham-eye-club-brugge-striker",
           "credibilityScore": 85,
           "publishedAt": "2026-09-10T13:37:53.000Z",
-          "discoveredAt": "2026-09-10T14:28:39.823Z"
+          "discoveredAt": "2026-09-10T15:49:36.339Z"
         }
       ],
       "confidenceScore": 85,
@@ -260,7 +364,7 @@
     ]
   },
   {
-    "id": "news-mtvmhl6b-07qe06",
+    "id": "news-mtvpdori-2zhxm1",
     "title": "Newcastle still open to Hall sale - Thursday's gossip",
     "summary": "Lewis Hall could still leave Newcastle despite new contract, Yasin Ayari close to committing to Brighton but Kaoru Mitoma set for exit, and Chelsea to go back for Manu Kone in midfielder search.",
     "source": {
@@ -275,14 +379,14 @@
     "category": "Transfers",
     "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cvgy303wwpno?at_medium=RSS&at_campaign=rss",
     "publishedAt": "2026-09-09T22:32:51.000Z",
-    "discoveredAt": "2026-09-10T14:28:39.823Z",
-    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "discoveredAt": "2026-09-10T15:49:36.339Z",
+    "lastVerifiedAt": "2026-09-10T15:49:36.339Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 955,
+      "ageMinutes": 1036,
       "publishedAt": "2026-09-09T22:32:51.000Z",
-      "lastUpdated": "2026-09-10T14:28:39.823Z"
+      "lastUpdated": "2026-09-10T15:49:36.339Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -294,7 +398,7 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cvgy303wwpno?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
           "publishedAt": "2026-09-09T22:32:51.000Z",
-          "discoveredAt": "2026-09-10T14:28:39.823Z"
+          "discoveredAt": "2026-09-10T15:49:36.339Z"
         }
       ],
       "confidenceScore": 92,
@@ -314,7 +418,7 @@
     ]
   },
   {
-    "id": "news-mtvmhl6b-bc54e3",
+    "id": "news-mtvpdori-osw4t7",
     "title": "From winning £725 on a game show to facing Man Utd in Europe",
     "summary": "Lithuanian coach Valdas Dambrauskas cut his teeth in English football, and now returns in the Champions League with Sabah.",
     "source": {
@@ -329,14 +433,14 @@
     "category": "Champions League",
     "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cvgy8w548yyo?at_medium=RSS&at_campaign=rss",
     "publishedAt": "2026-09-10T09:40:39.000Z",
-    "discoveredAt": "2026-09-10T14:28:39.823Z",
-    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "discoveredAt": "2026-09-10T15:49:36.339Z",
+    "lastVerifiedAt": "2026-09-10T15:49:36.339Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 288,
+      "ageMinutes": 368,
       "publishedAt": "2026-09-10T09:40:39.000Z",
-      "lastUpdated": "2026-09-10T14:28:39.823Z"
+      "lastUpdated": "2026-09-10T15:49:36.339Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -348,7 +452,7 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cvgy8w548yyo?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
           "publishedAt": "2026-09-10T09:40:39.000Z",
-          "discoveredAt": "2026-09-10T14:28:39.823Z"
+          "discoveredAt": "2026-09-10T15:49:36.339Z"
         }
       ],
       "confidenceScore": 92,
@@ -366,133 +470,29 @@
     ]
   },
   {
-    "id": "news-mtvmhl6b-orayyw",
-    "title": "Mbappe and Valverde strike as Real Madrid edge Inter Milan",
-    "summary": "Kylian Mbappe and Federico Valverde were both on the scoresheet as Real Madrid opened their Champions League campaign with a 2-1 win over Inter Milan.",
+    "id": "news-mtvpdori-gi6tit",
+    "title": "Why have the Premier League announced Christmas fixtures early?",
+    "summary": "BBC Sport's Ask Me Anything team explain why this season's Christmas fixtures have been announced more than a month earlier than scheduled",
     "source": {
       "name": "BBC Sport Football",
       "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/videos/c0j3zyy32e4o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cvgy4wg703go?at_medium=RSS&at_campaign=rss",
       "credibilityScore": 92
     },
     "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c0j3zyy32e4o?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Champions League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/videos/c0j3zyy32e4o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-09T21:00:06.000Z",
-    "discoveredAt": "2026-09-10T14:28:39.823Z",
-    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 1048,
-      "publishedAt": "2026-09-09T21:00:06.000Z",
-      "lastUpdated": "2026-09-10T14:28:39.823Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/videos/c0j3zyy32e4o?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-09T21:00:06.000Z",
-          "discoveredAt": "2026-09-10T14:28:39.823Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "real-madrid",
-      "inter-milan",
-      "ac-milan"
-    ]
-  },
-  {
-    "id": "news-mtvmhl6b-4b7r8e",
-    "title": "Why Kai Havertz’s dummy was perhaps more pleasing than a Lionel Messi waltz | Max Rushden",
-    "summary": "The Arsenal striker reminded us grace can exist in the non-stop pace of football with his involuntary noise-provoking act\nDuring Covid, when sport was back but behind closed doors, I hosted a number of strange online shows to fill the void of real life. The highlight was chatting to Darren Gough abo",
-    "source": {
-      "name": "The Guardian Football",
-      "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/10/kai-havertz-arsenal-max-rushden-comment",
-      "credibilityScore": 88
-    },
-    "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/10/kai-havertz-arsenal-max-rushden-comment",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cvgy4wg703go?at_medium=RSS&at_campaign=rss",
     "image": null,
     "category": "Premier League",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/10/kai-havertz-arsenal-max-rushden-comment",
-    "publishedAt": "2026-09-10T13:00:36.000Z",
-    "discoveredAt": "2026-09-10T14:28:39.823Z",
-    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cvgy4wg703go?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T15:30:57.000Z",
+    "discoveredAt": "2026-09-10T15:49:36.339Z",
+    "lastVerifiedAt": "2026-09-10T15:49:36.339Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 88,
-      "publishedAt": "2026-09-10T13:00:36.000Z",
-      "lastUpdated": "2026-09-10T14:28:39.823Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "guardian-sport",
-          "name": "The Guardian Football",
-          "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/10/kai-havertz-arsenal-max-rushden-comment",
-          "credibilityScore": 88,
-          "publishedAt": "2026-09-10T13:00:36.000Z",
-          "discoveredAt": "2026-09-10T14:28:39.823Z"
-        }
-      ],
-      "confidenceScore": 88,
-      "confidenceReasons": [
-        "Reported by The Guardian Football",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "arsenal"
-    ]
-  },
-  {
-    "id": "news-mtvmhl6b-n22xd3",
-    "title": "Barca's Rodri apologises over Valencia 'weak' comments",
-    "summary": "Barcelona midfielder Rodri says he has apologised to the entire Valencia squad after television cameras appeared to catch him describing the La Liga strugglers as \"very weak\".",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cvgyrx8gd71o?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cvgyrx8gd71o?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "La Liga",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cvgyrx8gd71o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-10T07:27:34.000Z",
-    "discoveredAt": "2026-09-10T14:28:39.823Z",
-    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 421,
-      "publishedAt": "2026-09-10T07:27:34.000Z",
-      "lastUpdated": "2026-09-10T14:28:39.823Z"
+      "ageMinutes": 18,
+      "publishedAt": "2026-09-10T15:30:57.000Z",
+      "lastUpdated": "2026-09-10T15:49:36.339Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -501,10 +501,10 @@
           "id": "bbc-sport",
           "name": "BBC Sport Football",
           "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cvgyrx8gd71o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cvgy4wg703go?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
-          "publishedAt": "2026-09-10T07:27:34.000Z",
-          "discoveredAt": "2026-09-10T14:28:39.823Z"
+          "publishedAt": "2026-09-10T15:30:57.000Z",
+          "discoveredAt": "2026-09-10T15:49:36.339Z"
         }
       ],
       "confidenceScore": 92,
@@ -517,8 +517,6 @@
       ],
       "verificationCount": 1
     },
-    "relatedTeams": [
-      "barcelona"
-    ]
+    "relatedTeams": []
   }
 ]
