@@ -47,7 +47,11 @@ export default function Header() {
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               <Link href="/" className="flex items-center gap-2">
-                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-emerald-400 to-cyan-500" />
+                <img
+                  src="/assets/Footballer-logo.svg"
+                  alt="PitchPulse"
+                  className="h-8 w-8 flex-shrink-0"
+                />
                 <span className="text-xl font-bold tracking-tight text-white">
                   PITCH<span className="text-emerald-400">INTEL</span>
                 </span>
