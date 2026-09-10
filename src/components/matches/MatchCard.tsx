@@ -63,21 +63,23 @@ export default function MatchCard({ match, variant = 'default' }: Props) {
 
   return (
     <div className="relative rounded-xl overflow-hidden bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-colors">
-      <div className="flex items-center gap-3 p-4 pb-16">
+      {isStale(match.kickoff) && (
+        <div className="px-4 pt-3">
+          <span className="px-2 py-0.5 rounded text-xs bg-amber-500/20 text-amber-400">
+            Historical
+          </span>
+        </div>
+      )}
+      <div className="flex flex-nowrap items-center gap-3 p-4 pb-16">
         <div className="flex items-center gap-2 min-w-0">
           <span className="text-sm font-medium text-white truncate">{match.homeTeam.shortName}</span>
-          {match.competition && (
-            <span className="text-xs text-slate-500 uppercase tracking-wider truncate">
-              {match.competition.shortName}
-            </span>
-          )}
         </div>
 
-        <div className="text-4xl font-bold text-white flex-shrink-0">
+        <div className="text-2xl font-bold text-white flex-shrink-0 tabular-nums">
           {match.homeScore}
         </div>
 
-        <div className="flex items-center gap-2 text-4xl font-bold text-white flex-shrink-0">
+        <div className="flex items-center gap-2 text-2xl font-bold text-white flex-shrink-0 tabular-nums">
           {match.awayScore}
         </div>
 
@@ -94,22 +96,14 @@ export default function MatchCard({ match, variant = 'default' }: Props) {
         </div>
       )}
 
-      {isStale(match.kickoff) && (
-        <div className="absolute top-2 left-2">
-          <span className="px-2 py-0.5 rounded text-xs bg-amber-500/20 text-amber-400">
-            Historical
-          </span>
-        </div>
-      )}
-
       <div className="absolute bottom-0 left-0 w-full h-12 px-4 py-2">
-        <div className="flex items-center justify-between text-sm text-slate-400">
+        <div className="flex items-center justify-between text-xs text-slate-400">
           <div>
-            <span className="text-emerald-400 text-xs">{formatTime(match.kickoff)}</span>
+            <span className="text-emerald-400">{formatTime(match.kickoff)}</span>
             <span className="text-slate-500"> {formatDate(match.kickoff)}</span>
           </div>
-          <span className="text-emerald-400 text-xs">
-            {match.competition?.name || ''}
+          <span className="text-emerald-400 truncate ml-2">
+            {match.competition?.shortName || match.competition?.name || ''}
           </span>
         </div>
       </div>
