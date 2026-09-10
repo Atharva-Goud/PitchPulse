@@ -40,12 +40,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <body className="min-h-screen bg-background text-foreground flex flex-col">
+      <body className="min-h-screen flex flex-col">
+        <div className="fixed inset-0 bg-slate-950" aria-hidden="true" />
         <BeamsBackground />
         <div className="relative z-10 flex flex-col min-h-screen">
           <Header />
           <main className="flex-1">{children}</main>
-          <footer className="border-t border-white/10 bg-slate-950/50 py-8 px-4">
+          <footer className="border-t border-white/10 bg-slate-950/80 py-8 px-4 backdrop-blur-sm">
             <div className="mx-auto max-w-7xl text-center text-sm text-slate-500">
               <p>PITCHINTEL — Football intelligence. All in one place.</p>
               <p className="mt-1">Data sourced from public APIs and official sources.</p>
