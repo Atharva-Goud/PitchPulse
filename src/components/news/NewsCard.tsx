@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Clock, ExternalLink } from 'lucide-react';
 import { NewsArticle, SourceObject } from '@/types';
-import { resolveImageUrl } from '@/lib/utils/image';
+import { resolveImageUrl, localNewsImage } from '@/lib/utils/image';
 import FallbackImage from '@/components/ui/Image';
 
 interface Props {
@@ -19,9 +19,20 @@ function getSourceUrl(source: string | SourceObject): string {
   return typeof source === 'string' ? '' : (source.url || '');
 }
 
+/**
+ * Prefer the source image, but fall back to a local sample image when the
+ * article has none. The fallback is deterministic per article id so the same
+ * article always maps to the same photo.
+ */
+function resolveArticleImage(article: NewsArticle): string | null {
+  const sourceUrl = resolveImageUrl(article);
+  if (sourceUrl) return sourceUrl;
+  return localNewsImage(article.id);
+}
+
 export default function NewsCard({ article, variant = 'default' }: Props) {
   const sourceName = getSourceName(article.source);
-  const imageUrl = resolveImageUrl(article);
+  const imageUrl = resolveArticleImage(article);
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     const now = new Date();

@@ -1,6 +1,9 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
+  // Hide the on-screen dev indicator (bottom-left route badge) shown during
+  // development. Compile/runtime errors still surface normally.
+  devIndicators: false,
   images: {
     remotePatterns: [
       {

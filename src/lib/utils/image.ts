@@ -7,7 +7,23 @@
  * the original data.
  */
 
+import { LOCAL_NEWS_IMAGE_COUNT, LOCAL_NEWS_IMAGES } from '@/lib/constants/news-image-count';
+
 type ImageLike = { image?: string | null; imageUrl?: string | null; thumbnail?: string | null; urlToImage?: string | null } | null | undefined;
+
+/**
+ * Deterministically pick a local sample image for an article id, so the same
+ * article always maps to the same photo across syncs. Returns null when no
+ * sample images are present.
+ */
+export function localNewsImage(articleId: string): string | null {
+  if (LOCAL_NEWS_IMAGE_COUNT <= 0) return null;
+  let hash = 0;
+  for (let i = 0; i < articleId.length; i++) {
+    hash = (hash * 31 + articleId.charCodeAt(i)) | 0;
+  }
+  return LOCAL_NEWS_IMAGES[Math.abs(hash) % LOCAL_NEWS_IMAGE_COUNT];
+}
 
 /**
  * Resolve the best available image URL from an object that may expose

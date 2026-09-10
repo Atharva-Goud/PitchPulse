@@ -2,6 +2,7 @@ import { writeFile, mkdir, readFile } from 'fs/promises';
 import { join } from 'path';
 import { fetchAllNewsFeeds, FetchedNewsItem } from './fetchers/rss-news';
 import { fetchFromNewsAPI } from './fetchers/newsapi';
+import { updateNewsImageCount } from './update-news-image-count';
 
 export interface SyncResult {
   itemsFound: number;
@@ -36,6 +37,11 @@ export async function syncNews(): Promise<SyncResult> {
   const latest = sorted.slice(0, 30);
   const trending = getTrending(sorted);
 
+  // Keep the local sample-image count in sync with whatever is in
+  // public/assets/news so articles without a source image still render a
+  // relevant photo instead of a broken-image icon.
+  await updateNewsImageCount().catch((e: unknown) => errors.push(`image count: ${e}`));
+
   const latestOutput = latest.map(item => mapToOutput(item, timestamp));
   const trendingOutput = trending.map(item => mapToOutput(item, timestamp));
 
@@ -66,13 +72,26 @@ function deduplicateNews(items: FetchedNewsItem[]): FetchedNewsItem[] {
   });
 }
 
+/**
+ * Weighted trending score. Source credibility and team relevance are the
+ * base signals, but an article with a usable image is strongly preferred for
+ * the trending rail (it is the only place images are shown), and recency
+ * keeps stale stories from crowding out fresh ones.
+ */
+function trendingScore(item: FetchedNewsItem): number {
+  const ageHours = (Date.now() - new Date(item.publishedAt).getTime()) / 3600000;
+  const recency = Math.max(0, 1 - ageHours / 48);
+  return (
+    item.sourceCredibility +
+    item.relatedTeams.length * 5 +
+    (item.image ? 40 : 0) +
+    recency * 40
+  );
+}
+
 function getTrending(items: FetchedNewsItem[]): FetchedNewsItem[] {
   return [...items]
-    .sort((a, b) => {
-      const scoreA = a.sourceCredibility + (a.relatedTeams.length * 5);
-      const scoreB = b.sourceCredibility + (b.relatedTeams.length * 5);
-      return scoreB - scoreA;
-    })
+    .sort((a, b) => trendingScore(b) - trendingScore(a))
     .slice(0, 10);
 }
 

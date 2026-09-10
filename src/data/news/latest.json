@@ -1,28 +1,28 @@
 [
   {
-    "id": "news-mttti690-lcykc9",
-    "title": "Transfer rumors, news: Man United blow as Hall agrees new Newcastle deal",
-    "summary": "Manchester United target Lewis Hall has reportedly agreed a new contract with Newcastle United. Transfer Talk has the latest.",
+    "id": "news-mtvmhl6a-qj5s5w",
+    "title": "Is Erling Haaland the Premier League's only global superstar?",
+    "summary": "The Premier League was once a league of superstars, but after a summer of clubs signing depth over singular talent, Haaland is now the biggest star left, though it hasn't dampened the league's popularity or power one bit.",
     "source": {
       "name": "ESPN FC",
       "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49876963/transfer-rumors-news-man-united-blow-hall-agrees-new-newcastle-deal",
+      "url": "https://www.espn.com/soccer/story/_/id/49880797/premier-league-erling-haaland-manchester-city-instagram-summer-transfers-world-cup-norway",
       "credibilityScore": 85
     },
     "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49876963/transfer-rumors-news-man-united-blow-hall-agrees-new-newcastle-deal",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49880797/premier-league-erling-haaland-manchester-city-instagram-summer-transfers-world-cup-norway",
     "image": null,
     "category": "Transfers",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49876963/transfer-rumors-news-man-united-blow-hall-agrees-new-newcastle-deal",
-    "publishedAt": "2026-09-09T08:57:19.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49880797/premier-league-erling-haaland-manchester-city-instagram-summer-transfers-world-cup-norway",
+    "publishedAt": "2026-09-10T15:24:43.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": -48,
-      "publishedAt": "2026-09-09T08:57:19.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
+      "ageMinutes": -57,
+      "publishedAt": "2026-09-10T15:24:43.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
     },
     "verification": {
       "level": "single_source",
@@ -31,10 +31,10 @@
           "id": "espn-fc",
           "name": "ESPN FC",
           "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49876963/transfer-rumors-news-man-united-blow-hall-agrees-new-newcastle-deal",
+          "url": "https://www.espn.com/soccer/story/_/id/49880797/premier-league-erling-haaland-manchester-city-instagram-summer-transfers-world-cup-norway",
           "credibilityScore": 85,
-          "publishedAt": "2026-09-09T08:57:19.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
+          "publishedAt": "2026-09-10T15:24:43.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
         }
       ],
       "confidenceScore": 85,
@@ -45,541 +45,137 @@
       "confirmedBy": [],
       "verificationCount": 1
     },
-    "relatedTeams": [
-      "manchester-united",
-      "newcastle"
-    ]
+    "relatedTeams": []
   },
   {
-    "id": "news-mttti690-m1i5s8",
-    "title": "Putellas to Bayern; Paralluelo to Arsenal: Women's transfers we wish we'd seen",
-    "summary": "There were plenty of big transfer moves in women's soccer this summer, but which players would have been a better fit elsewhere?",
+    "id": "news-mtvmhl6a-ztu6nj",
+    "title": "Arsenal close to finalising new contract for Arteta",
+    "summary": "Mikel Arteta is believed to be close to finalising a new contract with Premier League champions Arsenal.",
     "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49850495/putellas-bayern-paralluelo-arsenal-women-transfers-wish-seen",
-      "credibilityScore": 85
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cgrvq2xp8dwo?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
     },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49850495/putellas-bayern-paralluelo-arsenal-women-transfers-wish-seen",
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cgrvq2xp8dwo?at_medium=RSS&at_campaign=rss",
     "image": null,
     "category": "Transfers",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49850495/putellas-bayern-paralluelo-arsenal-women-transfers-wish-seen",
-    "publishedAt": "2026-09-09T08:57:19.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cgrvq2xp8dwo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T14:16:06.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": -48,
-      "publishedAt": "2026-09-09T08:57:19.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
+      "ageMinutes": 12,
+      "publishedAt": "2026-09-10T14:16:06.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
     },
     "verification": {
-      "level": "single_source",
+      "level": "trusted_journalist",
       "sources": [
         {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49850495/putellas-bayern-paralluelo-arsenal-women-transfers-wish-seen",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-09T08:57:19.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cgrvq2xp8dwo?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-10T14:16:06.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
         }
       ],
-      "confidenceScore": 85,
+      "confidenceScore": 92,
       "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
+        "Reported by BBC Sport Football",
+        "High source credibility"
       ],
-      "confirmedBy": [],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
       "verificationCount": 1
     },
     "relatedTeams": [
-      "arsenal",
-      "bayern-munich"
+      "arsenal"
     ]
   },
   {
-    "id": "news-mttti690-mcd53c",
-    "title": "Winning ugly: Mourinho's Real Madrid still have a long way to go",
-    "summary": "Real Madrid were fortunate to defeat Inter Milan, showing how much work remains for Jose Mourinho if they are to win the Champions League.",
+    "id": "news-mtvmhl6a-oecltn",
+    "title": "Can you make a case for Chelsea being stripped of 2016-17 title?",
+    "summary": "Does Mauricio Pochettino have a case that Tottenham should be retrospectively crowned Premier League champions?",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c0re0n84yz7o?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c0re0n84yz7o?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c0re0n84yz7o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T13:55:43.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 32,
+      "publishedAt": "2026-09-10T13:55:43.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c0re0n84yz7o?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-10T13:55:43.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "chelsea",
+      "tottenham"
+    ]
+  },
+  {
+    "id": "news-mtvmhl6a-81nd30",
+    "title": "French FA withdraw support for Gianni Infantino",
+    "summary": "The French Football Federation (FFF) has withdrawn support for Gianni Infantino's bid to be re-elected as FIFA president next year.",
     "source": {
       "name": "ESPN FC",
       "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49872329/despite-victory-real-madrid-long-way-go-mourinho-uefa-champions-league",
+      "url": "https://www.espn.com/soccer/story/_/id/49891231/french-football-federation-withdraws-support-fifa-president-gianni-infantino",
       "credibilityScore": 85
     },
     "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49872329/despite-victory-real-madrid-long-way-go-mourinho-uefa-champions-league",
-    "image": null,
-    "category": "Champions League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49872329/despite-victory-real-madrid-long-way-go-mourinho-uefa-champions-league",
-    "publishedAt": "2026-09-09T08:04:24.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 5,
-      "publishedAt": "2026-09-09T08:04:24.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49872329/despite-victory-real-madrid-long-way-go-mourinho-uefa-champions-league",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-09T08:04:24.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "real-madrid",
-      "inter-milan",
-      "ac-milan"
-    ]
-  },
-  {
-    "id": "news-mttti690-ls5qk6",
-    "title": "Where Estevao fits into Chelsea's all-star attack",
-    "summary": "A look at where Estevao Willian could feature for Chelsea this season after the reminder of his quality in his cameo against Arsenal.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cm2mlk4p4x5o?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cm2mlk4p4x5o?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cm2mlk4p4x5o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-09T07:00:16.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 69,
-      "publishedAt": "2026-09-09T07:00:16.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cm2mlk4p4x5o?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-09T07:00:16.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "arsenal",
-      "chelsea"
-    ]
-  },
-  {
-    "id": "news-mttti690-3w6kqf",
-    "title": "Dani Olmo: ‘Winning the World Cup changes you, it changes your life’",
-    "summary": "One of Barcelona’s eight World Cup winners reflects on how Spain’s triumph is inspiring them in the Champions League\nDani Olmo nods towards his right arm. “Look: goosebumps,” he says. The Spain midfielder is sitting in a back room at Barcelona’s Joan Gamper training ground trying to pinpoint the mom",
-    "source": {
-      "name": "The Guardian Football",
-      "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/09/dani-olmo-spain-world-cup-barcelona-champions-league",
-      "credibilityScore": 88
-    },
-    "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/09/dani-olmo-spain-world-cup-barcelona-champions-league",
-    "image": null,
-    "category": "Champions League",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/09/dani-olmo-spain-world-cup-barcelona-champions-league",
-    "publishedAt": "2026-09-09T07:00:02.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 69,
-      "publishedAt": "2026-09-09T07:00:02.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "guardian-sport",
-          "name": "The Guardian Football",
-          "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/09/dani-olmo-spain-world-cup-barcelona-champions-league",
-          "credibilityScore": 88,
-          "publishedAt": "2026-09-09T07:00:02.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 88,
-      "confidenceReasons": [
-        "Reported by The Guardian Football",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "barcelona"
-    ]
-  },
-  {
-    "id": "news-mttti690-8l3ogx",
-    "title": "Football’s most damaging red cards: a brief history of collapses and turnarounds | The Knowledge",
-    "summary": "Plus: clubs with multiple £100m players on their books and more trophy-laden footballers\n\nMail us with your all of your questions and answers\n\n“The Saturday before last, Clyde were winning 3-0 at The Spartans after an hour when Logan Dunachie was sent off. Twenty-eight minutes later, the score was 3",
-    "source": {
-      "name": "The Guardian Football",
-      "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/09/footballs-most-damaging-red-cards-a-brief-history-of-collapses-and-turnarounds",
-      "credibilityScore": 88
-    },
-    "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/09/footballs-most-damaging-red-cards-a-brief-history-of-collapses-and-turnarounds",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/09/footballs-most-damaging-red-cards-a-brief-history-of-collapses-and-turnarounds",
-    "publishedAt": "2026-09-09T07:00:02.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 69,
-      "publishedAt": "2026-09-09T07:00:02.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "guardian-sport",
-          "name": "The Guardian Football",
-          "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/09/footballs-most-damaging-red-cards-a-brief-history-of-collapses-and-turnarounds",
-          "credibilityScore": 88,
-          "publishedAt": "2026-09-09T07:00:02.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 88,
-      "confidenceReasons": [
-        "Reported by The Guardian Football",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mttti690-efpuc2",
-    "title": "Scottish Football Podcast",
-    "summary": "Rangers need a striker, Celtic keep rolling, and St Mirren dream big.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sounds/play/p0p8nyfk?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0p8nyfk?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sounds/play/p0p8nyfk?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-09T07:00:00.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 69,
-      "publishedAt": "2026-09-09T07:00:00.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sounds/play/p0p8nyfk?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-09T07:00:00.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mttti690-bqhzep",
-    "title": "Rangers target Ferguson would cost £15m in January - gossip",
-    "summary": "Bologna and Scotland midfielder Lewis Ferguson would reportedly cost a pretty penny in January, while Dutch investors resume Morton rescue talks.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c24jzrm6qldo?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c24jzrm6qldo?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c24jzrm6qldo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-09T06:57:47.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 71,
-      "publishedAt": "2026-09-09T06:57:47.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c24jzrm6qldo?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-09T06:57:47.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mttti690-ev35gd",
-    "title": "Where do PSG rank among Europe's greatest dynasties? ",
-    "summary": "Paris St-Germain are eyeing a third successive Champions League crown, but where do they rank against Europe's most dominant clubs?",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cy9z0xz8ql1o?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cy9z0xz8ql1o?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Champions League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cy9z0xz8ql1o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-09T05:30:53.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 158,
-      "publishedAt": "2026-09-09T05:30:53.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cy9z0xz8ql1o?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-09T05:30:53.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "psg"
-    ]
-  },
-  {
-    "id": "news-mttti690-ur3sfy",
-    "title": "Flex your football brain with our daily quizzes",
-    "summary": "Test your ball knowledge with today's Who Am I?, Five in Five and Brainteaser.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cy5zy1z6y4eo?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cy5zy1z6y4eo?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cy5zy1z6y4eo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-09T05:19:23.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 170,
-      "publishedAt": "2026-09-09T05:19:23.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cy5zy1z6y4eo?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-09T05:19:23.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mttti690-773xi3",
-    "title": "Haaland can single-handedly keep City on top -- and the club is doomed if he ever stops",
-    "summary": "Erling Haaland scored twice for Man City and it's clear his club would be in trouble without him.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49872237/haaland-historic-goals-man-city-champions-league-win-porto-prove-necessity",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49872237/haaland-historic-goals-man-city-champions-league-win-porto-prove-necessity",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49872237/haaland-historic-goals-man-city-champions-league-win-porto-prove-necessity",
-    "publishedAt": "2026-09-09T05:06:56.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 182,
-      "publishedAt": "2026-09-09T05:06:56.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49872237/haaland-historic-goals-man-city-champions-league-win-porto-prove-necessity",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-09T05:06:56.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city"
-    ]
-  },
-  {
-    "id": "news-mttti690-aqep0i",
-    "title": "Mac Allister 'very sad' over no new Liverpool deal",
-    "summary": "Liverpool midfielder Alexis Mac Allister has said he was left \"very, very, sad\" after he was not offered a new contract at the club.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49868479/liverpool-alexis-mac-allister-very-very-sad-not-being-offered-new-contract",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49868479/liverpool-alexis-mac-allister-very-very-sad-not-being-offered-new-contract",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49891231/french-football-federation-withdraws-support-fifa-president-gianni-infantino",
     "image": null,
     "category": "Transfers",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49868479/liverpool-alexis-mac-allister-very-very-sad-not-being-offered-new-contract",
-    "publishedAt": "2026-09-09T04:33:30.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49891231/french-football-federation-withdraws-support-fifa-president-gianni-infantino",
+    "publishedAt": "2026-09-10T13:45:56.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 216,
-      "publishedAt": "2026-09-09T04:33:30.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
+      "ageMinutes": 42,
+      "publishedAt": "2026-09-10T13:45:56.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
     },
     "verification": {
       "level": "single_source",
@@ -588,10 +184,58 @@
           "id": "espn-fc",
           "name": "ESPN FC",
           "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49868479/liverpool-alexis-mac-allister-very-very-sad-not-being-offered-new-contract",
+          "url": "https://www.espn.com/soccer/story/_/id/49891231/french-football-federation-withdraws-support-fifa-president-gianni-infantino",
           "credibilityScore": 85,
-          "publishedAt": "2026-09-09T04:33:30.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
+          "publishedAt": "2026-09-10T13:45:56.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6a-79102z",
+    "title": "Mac Allister addresses Liverpool contract woe after stunner",
+    "summary": "A day after revealing his disappointment over the lack of a new contract offer by Liverpool, Alexis Mac Allister delivered the perfect response with the winning goal in a 2-1 victory against Atlético Madrid in the Champions League on Wednesday.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49884948/alexis-mac-allister-liverpool-contract-atletico-madrid",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49884948/alexis-mac-allister-liverpool-contract-atletico-madrid",
+    "image": null,
+    "category": "Transfers",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49884948/alexis-mac-allister-liverpool-contract-atletico-madrid",
+    "publishedAt": "2026-09-10T13:45:56.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 42,
+      "publishedAt": "2026-09-10T13:45:56.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49884948/alexis-mac-allister-liverpool-contract-atletico-madrid",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-10T13:45:56.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
         }
       ],
       "confidenceScore": 85,
@@ -607,228 +251,29 @@
     ]
   },
   {
-    "id": "news-mttti690-20uvvy",
-    "title": "Kylian scores, Ethan sent off in Mbappé bros' eventful night",
-    "summary": "The Mbappés quickly made a mark for their clubs in the Champions League on Tuesday, before little brother Ethan playing for Lille got a red card for elbowing an opponent in the face.",
+    "id": "news-mtvmhl6a-o7bp6d",
+    "title": "Chelsea score 6 in second-half rally to stun Leeds",
+    "summary": "Chelsea scored four times in 12 second-half minutes as Leeds suffered a Carabao Cup collapse to lose 6-3 in the third round at Stamford Bridge.",
     "source": {
       "name": "ESPN FC",
       "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49871988/kylian-ethan-mbappe-champions-league-goal-red-card-real-madrid-lille",
+      "url": "https://www.espn.com/soccer/report/_/gameId/401914256",
       "credibilityScore": 85
     },
     "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49871988/kylian-ethan-mbappe-champions-league-goal-red-card-real-madrid-lille",
-    "image": null,
-    "category": "Champions League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49871988/kylian-ethan-mbappe-champions-league-goal-red-card-real-madrid-lille",
-    "publishedAt": "2026-09-09T04:33:29.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 216,
-      "publishedAt": "2026-09-09T04:33:29.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49871988/kylian-ethan-mbappe-champions-league-goal-red-card-real-madrid-lille",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-09T04:33:29.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mttti690-vzn5m5",
-    "title": "'Beast' Haaland equals Agüero's City UCL record",
-    "summary": "Enzo Fernández described Erling Haaland as an \"animal\" after the new Manchester City midfielder's teammate scored twice on the opening night of the Champions League.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49872690/erling-haaland-man-city-champions-league-record-aguero-enzo-fernandez",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49872690/erling-haaland-man-city-champions-league-record-aguero-enzo-fernandez",
-    "image": null,
-    "category": "Champions League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49872690/erling-haaland-man-city-champions-league-record-aguero-enzo-fernandez",
-    "publishedAt": "2026-09-09T04:33:29.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 216,
-      "publishedAt": "2026-09-09T04:33:29.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49872690/erling-haaland-man-city-champions-league-record-aguero-enzo-fernandez",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-09T04:33:29.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city"
-    ]
-  },
-  {
-    "id": "news-mttti690-m42mmw",
-    "title": "Mou defends Vini Jr. amid jeers: Not 'at his best'",
-    "summary": "José Mourinho admitted Vinícius Júnior \"isn't at his best,\" but praised the star forward's work rate after he was whistled once again by fans at the Bernabéu during Real Madrid's 2-1 Champions League win over Inter on Tuesday.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49872956/mourinho-defends-vinicius-madrid-jeers",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49872956/mourinho-defends-vinicius-madrid-jeers",
-    "image": null,
-    "category": "Champions League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49872956/mourinho-defends-vinicius-madrid-jeers",
-    "publishedAt": "2026-09-09T04:33:29.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 216,
-      "publishedAt": "2026-09-09T04:33:29.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49872956/mourinho-defends-vinicius-madrid-jeers",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-09T04:33:29.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "real-madrid",
-      "inter-milan"
-    ]
-  },
-  {
-    "id": "news-mttti690-v9hf6a",
-    "title": "Dortmund teen Karetsas hospitalised after health issue in UCL game",
-    "summary": "Borussia Dortmund teenage star Konstantinos Karetsas was taken to hospital for treatment after slumping to the turf 25 minutes into his Champions League debut Tuesday.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49872625/borussia-dortmund-teenager-konstantinos-karetsas-hospitalised-slumping-turf-champions-league-villarreal",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49872625/borussia-dortmund-teenager-konstantinos-karetsas-hospitalised-slumping-turf-champions-league-villarreal",
-    "image": null,
-    "category": "Champions League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49872625/borussia-dortmund-teenager-konstantinos-karetsas-hospitalised-slumping-turf-champions-league-villarreal",
-    "publishedAt": "2026-09-09T04:33:29.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 216,
-      "publishedAt": "2026-09-09T04:33:29.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49872625/borussia-dortmund-teenager-konstantinos-karetsas-hospitalised-slumping-turf-champions-league-villarreal",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-09T04:33:29.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "borussia-dortmund"
-    ]
-  },
-  {
-    "id": "news-mttti690-7uj5qq",
-    "title": "Wrexham held at home by struggling Burnley",
-    "summary": "Wrexham's wait for a home win goes on after they were held to a 1-1 draw by winless Burnley, who sit one place off the bottom of the Sky Bet Championship.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/report/_/gameId/401880269",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/report/_/gameId/401880269",
+    "sourceUrl": "https://www.espn.com/soccer/report/_/gameId/401914256",
     "image": null,
     "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/report/_/gameId/401880269",
-    "publishedAt": "2026-09-09T04:33:29.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "originalUrl": "https://www.espn.com/soccer/report/_/gameId/401914256",
+    "publishedAt": "2026-09-10T13:45:56.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 216,
-      "publishedAt": "2026-09-09T04:33:29.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
+      "ageMinutes": 42,
+      "publishedAt": "2026-09-10T13:45:56.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
     },
     "verification": {
       "level": "single_source",
@@ -837,10 +282,10 @@
           "id": "espn-fc",
           "name": "ESPN FC",
           "type": "publication",
-          "url": "https://www.espn.com/soccer/report/_/gameId/401880269",
+          "url": "https://www.espn.com/soccer/report/_/gameId/401914256",
           "credibilityScore": 85,
-          "publishedAt": "2026-09-09T04:33:29.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
+          "publishedAt": "2026-09-10T13:45:56.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
         }
       ],
       "confidenceScore": 85,
@@ -851,80 +296,34 @@
       "confirmedBy": [],
       "verificationCount": 1
     },
-    "relatedTeams": []
+    "relatedTeams": [
+      "chelsea"
+    ]
   },
   {
-    "id": "news-mttti690-u8rakk",
-    "title": "Socceroos' Volpato fined for positive cocaine test",
-    "summary": "Cristian Volpato's immediate availability for the Socceroos rests in the hands of Football Australia after NSW Police confirmed the World Cup star had tested positive for cocaine on a secondary test.",
+    "id": "news-mtvmhl6a-ud5em4",
+    "title": "Barça's Deco: Gordon a better fit than Rashford",
+    "summary": "Barcelona sporting director Deco said the club signed Anthony Gordon over Marcus Rashford because he fits the team's style of play better.",
     "source": {
       "name": "ESPN FC",
       "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49874388/socceroos-sassuolo-star-volpato-fined-positive-cocaine-test",
+      "url": "https://www.espn.com/soccer/story/_/id/49890559/barcelona-deco-anthony-gordon-better-fit-marcus-rashford",
       "credibilityScore": 85
     },
     "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49874388/socceroos-sassuolo-star-volpato-fined-positive-cocaine-test",
-    "image": null,
-    "category": "International Football",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49874388/socceroos-sassuolo-star-volpato-fined-positive-cocaine-test",
-    "publishedAt": "2026-09-09T04:33:29.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 216,
-      "publishedAt": "2026-09-09T04:33:29.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49874388/socceroos-sassuolo-star-volpato-fined-positive-cocaine-test",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-09T04:33:29.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mttti690-3ngrb5",
-    "title": "Source: Messi agrees to buy second club in Spain",
-    "summary": "Inter Miami CF forward Lionel Messi has reached a preliminary agreement to take over Spanish second division side Eldense, a source confirmed to ESPN.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49872068/lionel-messi-agrees-buy-second-club-spain",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49872068/lionel-messi-agrees-buy-second-club-spain",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49890559/barcelona-deco-anthony-gordon-better-fit-marcus-rashford",
     "image": null,
     "category": "Transfers",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49872068/lionel-messi-agrees-buy-second-club-spain",
-    "publishedAt": "2026-09-09T04:33:29.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49890559/barcelona-deco-anthony-gordon-better-fit-marcus-rashford",
+    "publishedAt": "2026-09-10T13:45:56.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 216,
-      "publishedAt": "2026-09-09T04:33:29.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
+      "ageMinutes": 42,
+      "publishedAt": "2026-09-10T13:45:56.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
     },
     "verification": {
       "level": "single_source",
@@ -933,10 +332,60 @@
           "id": "espn-fc",
           "name": "ESPN FC",
           "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49872068/lionel-messi-agrees-buy-second-club-spain",
+          "url": "https://www.espn.com/soccer/story/_/id/49890559/barcelona-deco-anthony-gordon-better-fit-marcus-rashford",
           "credibilityScore": 85,
-          "publishedAt": "2026-09-09T04:33:29.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
+          "publishedAt": "2026-09-10T13:45:56.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "barcelona"
+    ]
+  },
+  {
+    "id": "news-mtvmhl6a-1bacsq",
+    "title": "Miami rallies for draw after Lewandowski goal in front of record Fire crowd",
+    "summary": "Inter Miami and Lionel Messi rallied from a goal down at Soldier Field in Chicago for a 1-1 draw against Robert Lewandowski and the Fire in front of 63,094 fans, besting the club's home attendance record set last season in the same matchup.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49887607/miami-rallies-draw-lewandowski-goal-record-fire-crowd",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49887607/miami-rallies-draw-lewandowski-goal-record-fire-crowd",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49887607/miami-rallies-draw-lewandowski-goal-record-fire-crowd",
+    "publishedAt": "2026-09-10T13:45:56.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 42,
+      "publishedAt": "2026-09-10T13:45:56.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49887607/miami-rallies-draw-lewandowski-goal-record-fire-crowd",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-10T13:45:56.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
         }
       ],
       "confidenceScore": 85,
@@ -952,29 +401,29 @@
     ]
   },
   {
-    "id": "news-mttti690-f1uiey",
-    "title": "📝Ranked: The Top 50 PL transfers by true cost",
-    "summary": "There's how much a transfer costs vs. what a club can afford to pay. We've ranked the *actual* 50 most expensive transfers of the 2026 summer window.",
+    "id": "news-mtvmhl6a-ff7zcc",
+    "title": "Poch: 16-17 title should be Spurs', not Chelsea's",
+    "summary": "Mauricio Pochettino has claimed Tottenham should be awarded the Premier League title from the 2016-17 campaign.",
     "source": {
       "name": "ESPN FC",
       "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49817274/ranked-top-50-most-expensive-premier-league-transfers-summer-true-cost",
+      "url": "https://www.espn.com/soccer/story/_/id/49889093/mauricio-pochettino-strip-chelsea-2016-17-premier-league-title-award-tottenham",
       "credibilityScore": 85
     },
     "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49817274/ranked-top-50-most-expensive-premier-league-transfers-summer-true-cost",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49889093/mauricio-pochettino-strip-chelsea-2016-17-premier-league-title-award-tottenham",
     "image": null,
-    "category": "Transfers",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49817274/ranked-top-50-most-expensive-premier-league-transfers-summer-true-cost",
-    "publishedAt": "2026-09-09T04:33:29.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49889093/mauricio-pochettino-strip-chelsea-2016-17-premier-league-title-award-tottenham",
+    "publishedAt": "2026-09-10T13:45:56.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 216,
-      "publishedAt": "2026-09-09T04:33:29.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
+      "ageMinutes": 42,
+      "publishedAt": "2026-09-10T13:45:56.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
     },
     "verification": {
       "level": "single_source",
@@ -983,10 +432,61 @@
           "id": "espn-fc",
           "name": "ESPN FC",
           "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49817274/ranked-top-50-most-expensive-premier-league-transfers-summer-true-cost",
+          "url": "https://www.espn.com/soccer/story/_/id/49889093/mauricio-pochettino-strip-chelsea-2016-17-premier-league-title-award-tottenham",
           "credibilityScore": 85,
-          "publishedAt": "2026-09-09T04:33:29.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
+          "publishedAt": "2026-09-10T13:45:56.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "chelsea",
+      "tottenham"
+    ]
+  },
+  {
+    "id": "news-mtvmhl6b-6izo98",
+    "title": "Ancelotti names new-look Brazil squad after World Cup failure",
+    "summary": "Carlo Ancelotti started his complete overhaul of Brazil's national team on Wednesday by announcing a squad with few of the players he took to the World Cup three months ago and several young talents.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49883226/brazil-squad-carlo-ancelotti-australia-india-world-cup",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49883226/brazil-squad-carlo-ancelotti-australia-india-world-cup",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49883226/brazil-squad-carlo-ancelotti-australia-india-world-cup",
+    "publishedAt": "2026-09-10T13:45:56.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 42,
+      "publishedAt": "2026-09-10T13:45:56.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49883226/brazil-squad-carlo-ancelotti-australia-india-world-cup",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-10T13:45:56.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
         }
       ],
       "confidenceScore": 85,
@@ -1000,29 +500,418 @@
     "relatedTeams": []
   },
   {
-    "id": "news-mttti690-x848ht",
-    "title": "Cristian Volpato’s Socceroos fate uncertain after second sample confirms positive cocaine test",
-    "summary": "Football Australia has power to suspend him from national team\n\nStriker has maintained his innocence over failed drugs test \n\nCristian Volpato’s immediate availability for the Socceroos rests in the hands of Football Australia after NSW Police confirmed the World Cup star had tested positive for coc",
+    "id": "news-mtvmhl6b-8ch1b8",
+    "title": "Sources: Castellanos to join Tigres after Portland Thorns exit",
+    "summary": "Deyna Castellanos is set to sign with Liga MX Femenil powerhouse Tigres after reaching an agreement to terminate her contract with the Portland Thorns.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49887789/sources-tigres-sign-former-portland-thorns-midfielder-deyna-castellanos",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49887789/sources-tigres-sign-former-portland-thorns-midfielder-deyna-castellanos",
+    "image": null,
+    "category": "Transfers",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49887789/sources-tigres-sign-former-portland-thorns-midfielder-deyna-castellanos",
+    "publishedAt": "2026-09-10T13:45:56.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 42,
+      "publishedAt": "2026-09-10T13:45:56.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49887789/sources-tigres-sign-former-portland-thorns-midfielder-deyna-castellanos",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-10T13:45:56.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-ec6w5u",
+    "title": "⭐ Everyone who is nominated for 2026 Ballon d'Or",
+    "summary": "The 2026 Ballon d'Or short lists are out. Here's who could win the biggest individual prizes in men's and women's soccer.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49867974/2026-ballon-dor-full-mens-women-shortlists-host-city-change-vozinha-more",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49867974/2026-ballon-dor-full-mens-women-shortlists-host-city-change-vozinha-more",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49867974/2026-ballon-dor-full-mens-women-shortlists-host-city-change-vozinha-more",
+    "publishedAt": "2026-09-10T13:45:56.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 42,
+      "publishedAt": "2026-09-10T13:45:56.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49867974/2026-ballon-dor-full-mens-women-shortlists-host-city-change-vozinha-more",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-10T13:45:56.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-8tt5d7",
+    "title": "NWSL's Racing Louisville can't survive in its current form: Is sale, relocation or folding next?",
+    "summary": "Racing Louisville has few fans, its best players want to leave, and there's no improvement in sight. Is an exit from the NWSL next?",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49883605/nwsl-racing-louisville-future-look-new-ownership-relocation-city-folding",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49883605/nwsl-racing-louisville-future-look-new-ownership-relocation-city-folding",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49883605/nwsl-racing-louisville-future-look-new-ownership-relocation-city-folding",
+    "publishedAt": "2026-09-10T13:41:55.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 46,
+      "publishedAt": "2026-09-10T13:41:55.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49883605/nwsl-racing-louisville-future-look-new-ownership-relocation-city-folding",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-10T13:41:55.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-ge7swp",
+    "title": "NWSL Power Rankings: Washington leaps to top spot",
+    "summary": "With Gotham and San Diego each suffering defeats, Washington is the new leader in our rankings.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49859415/nwsl-power-rankings-washington-spirit-leap-top-spot-gotham-fc-san-diego-wave-slip-up",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49859415/nwsl-power-rankings-washington-spirit-leap-top-spot-gotham-fc-san-diego-wave-slip-up",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49859415/nwsl-power-rankings-washington-spirit-leap-top-spot-gotham-fc-san-diego-wave-slip-up",
+    "publishedAt": "2026-09-10T13:41:55.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 46,
+      "publishedAt": "2026-09-10T13:41:55.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49859415/nwsl-power-rankings-washington-spirit-leap-top-spot-gotham-fc-san-diego-wave-slip-up",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-10T13:41:55.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-97v8pe",
+    "title": "Transfer rumors, news: Man United, Tottenham eye Club Brugge striker",
+    "summary": "Club Brugge striker Nicolo Tresoldi has emerged as a potential target for both Manchester United and Tottenham. Transfer Talk has the latest.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49889462/transfer-rumors-news-man-united-tottenham-eye-club-brugge-striker",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49889462/transfer-rumors-news-man-united-tottenham-eye-club-brugge-striker",
+    "image": null,
+    "category": "Transfers",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49889462/transfer-rumors-news-man-united-tottenham-eye-club-brugge-striker",
+    "publishedAt": "2026-09-10T13:37:53.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 50,
+      "publishedAt": "2026-09-10T13:37:53.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49889462/transfer-rumors-news-man-united-tottenham-eye-club-brugge-striker",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-10T13:37:53.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "tottenham"
+    ]
+  },
+  {
+    "id": "news-mtvmhl6b-o871jc",
+    "title": "Man United's Champions League return: What does success look like?",
+    "summary": "null",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49862659/man-uniteds-champions-league-return-does-success-look-like",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49862659/man-uniteds-champions-league-return-does-success-look-like",
+    "image": null,
+    "category": "Champions League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49862659/man-uniteds-champions-league-return-does-success-look-like",
+    "publishedAt": "2026-09-10T13:37:34.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 51,
+      "publishedAt": "2026-09-10T13:37:34.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49862659/man-uniteds-champions-league-return-does-success-look-like",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-10T13:37:34.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-c5l22b",
+    "title": "A TV quiz show and first pink kit: Meet Champions League debutants Sabah",
+    "summary": "Sabah, a club near the Iranian border that didn't exist a decade ago, with a coach who owes his career to a Lithuanian quiz show, are in this season Champions League. How did they make it?",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49742966/who-champions-league-debutants-sabah-fk-heres-need-know",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49742966/who-champions-league-debutants-sabah-fk-heres-need-know",
+    "image": null,
+    "category": "Champions League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49742966/who-champions-league-debutants-sabah-fk-heres-need-know",
+    "publishedAt": "2026-09-10T13:37:34.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 51,
+      "publishedAt": "2026-09-10T13:37:34.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49742966/who-champions-league-debutants-sabah-fk-heres-need-know",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-10T13:37:34.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-hy4cqk",
+    "title": "France wants to transform Fifa after withdrawing Infantino support",
+    "summary": "French football leaders have proposed to seek ways to transform how Fifa is run after the country's football body became the latest to withdraw support for Gianni Infantino's presidency.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c70d1k6k2pjo?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c70d1k6k2pjo?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c70d1k6k2pjo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T13:04:31.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 84,
+      "publishedAt": "2026-09-10T13:04:31.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c70d1k6k2pjo?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-10T13:04:31.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-83o3q7",
+    "title": "Why Kai Havertz’s dummy was perhaps more pleasing than a Lionel Messi waltz | Max Rushden",
+    "summary": "The Arsenal striker reminded us grace can exist in the non-stop pace of football with his involuntary noise-provoking act\nDuring Covid, when sport was back but behind closed doors, I hosted a number of strange online shows to fill the void of real life. The highlight was chatting to Darren Gough abo",
     "source": {
       "name": "The Guardian Football",
       "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/09/cristian-volpato-cocaine-positive-test-socceroos-australia-ntwnfb",
+      "url": "https://www.theguardian.com/football/2026/sep/10/kai-havertz-arsenal-max-rushden-comment",
       "credibilityScore": 88
     },
     "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/09/cristian-volpato-cocaine-positive-test-socceroos-australia-ntwnfb",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/10/kai-havertz-arsenal-max-rushden-comment",
     "image": null,
-    "category": "International Football",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/09/cristian-volpato-cocaine-positive-test-socceroos-australia-ntwnfb",
-    "publishedAt": "2026-09-09T04:08:35.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "category": "Premier League",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/10/kai-havertz-arsenal-max-rushden-comment",
+    "publishedAt": "2026-09-10T13:00:36.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 240,
-      "publishedAt": "2026-09-09T04:08:35.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
+      "ageMinutes": 88,
+      "publishedAt": "2026-09-10T13:00:36.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
     },
     "verification": {
       "level": "single_source",
@@ -1031,10 +920,258 @@
           "id": "guardian-sport",
           "name": "The Guardian Football",
           "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/09/cristian-volpato-cocaine-positive-test-socceroos-australia-ntwnfb",
+          "url": "https://www.theguardian.com/football/2026/sep/10/kai-havertz-arsenal-max-rushden-comment",
           "credibilityScore": 88,
-          "publishedAt": "2026-09-09T04:08:35.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
+          "publishedAt": "2026-09-10T13:00:36.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 88,
+      "confidenceReasons": [
+        "Reported by The Guardian Football",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "arsenal"
+    ]
+  },
+  {
+    "id": "news-mtvmhl6b-xg9axt",
+    "title": "SV Elversberg's ascent to the Bundesliga is amazing. Just don't call it a fairytale",
+    "summary": "SV Elversberg don't like \"fairytale\" comparisons even though their rise to Germany's top division, beating Bayer Leverkusen already this season, feels like a dream. It's all about staying true to who they are and where they're from.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/49869072/sv-elversberg-german-bundesliga-tom-hamilton-dfb-pokal-bayer-leverkusen-bayern-munich",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49869072/sv-elversberg-german-bundesliga-tom-hamilton-dfb-pokal-bayer-leverkusen-bayern-munich",
+    "image": null,
+    "category": "Transfers",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49869072/sv-elversberg-german-bundesliga-tom-hamilton-dfb-pokal-bayer-leverkusen-bayern-munich",
+    "publishedAt": "2026-09-10T12:26:50.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 121,
+      "publishedAt": "2026-09-10T12:26:50.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/49869072/sv-elversberg-german-bundesliga-tom-hamilton-dfb-pokal-bayer-leverkusen-bayern-munich",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-10T12:26:50.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-fj2l1c",
+    "title": "Martindale insists Livingston mission is short-term",
+    "summary": "David Martindale admits to missing coaching but is \"crystal clear\" that his return to the Livingston dugout is only temporary.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c4gjz33q271o?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c4gjz33q271o?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c4gjz33q271o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T12:13:03.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 135,
+      "publishedAt": "2026-09-10T12:13:03.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c4gjz33q271o?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-10T12:13:03.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-sk32x7",
+    "title": "'Get a life' - non-league club condemn man impersonating manager",
+    "summary": "Gainsborough Trinity condemn a person who has been approaching players while falsely claiming to be their manager.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c0re0gevpnxo?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c0re0gevpnxo?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c0re0gevpnxo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T11:06:31.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 202,
+      "publishedAt": "2026-09-10T11:06:31.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c0re0gevpnxo?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-10T11:06:31.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-ohcxy2",
+    "title": "How to follow the Premier League on the BBC this weekend",
+    "summary": "Our Ask Me Anything team explains how to follow matches from week three of the Premier League season on the BBC this weekend.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cp30ggvqj0do?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cp30ggvqj0do?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cp30ggvqj0do?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T10:58:42.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 209,
+      "publishedAt": "2026-09-10T10:58:42.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cp30ggvqj0do?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-10T10:58:42.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-5ykd6z",
+    "title": "‘Football saved Dad’s life’: meet the coach of the England women’s Parkinson’s team",
+    "summary": "It began with getting her dad into walking football after his diagnosis – now Gemma Darvill is taking a national team on tour to Canada\nWhen Gemma Darvill’s dad, Les, was diagnosed with Parkinson’s disease aged 58, joining a walking football team stopped him from confining himself to his own home, a",
+    "source": {
+      "name": "The Guardian Football",
+      "type": "publication",
+      "url": "https://www.theguardian.com/football/2026/sep/10/football-saved-dads-life-meet-the-coach-of-the-england-womens-parkinsons-team",
+      "credibilityScore": 88
+    },
+    "sourceName": "The Guardian Football",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/10/football-saved-dads-life-meet-the-coach-of-the-england-womens-parkinsons-team",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/10/football-saved-dads-life-meet-the-coach-of-the-england-womens-parkinsons-team",
+    "publishedAt": "2026-09-10T10:53:38.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 215,
+      "publishedAt": "2026-09-10T10:53:38.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "guardian-sport",
+          "name": "The Guardian Football",
+          "type": "publication",
+          "url": "https://www.theguardian.com/football/2026/sep/10/football-saved-dads-life-meet-the-coach-of-the-england-womens-parkinsons-team",
+          "credibilityScore": 88,
+          "publishedAt": "2026-09-10T10:53:38.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
         }
       ],
       "confidenceScore": 88,
@@ -1048,175 +1185,29 @@
     "relatedTeams": []
   },
   {
-    "id": "news-mttti690-ypbi8i",
-    "title": "Full men's, women's shortlists, host city change, more",
-    "summary": "The 2026 Ballon d'Or shortlists are out. Here's who could win the biggest individual prizes in men's and women's soccer.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49867974/2026-ballon-dor-full-mens-women-shortlists-host-city-change-vozinha-more",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49867974/2026-ballon-dor-full-mens-women-shortlists-host-city-change-vozinha-more",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49867974/2026-ballon-dor-full-mens-women-shortlists-host-city-change-vozinha-more",
-    "publishedAt": "2026-09-09T03:33:44.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 275,
-      "publishedAt": "2026-09-09T03:33:44.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49867974/2026-ballon-dor-full-mens-women-shortlists-host-city-change-vozinha-more",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-09T03:33:44.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mttti690-nugvh4",
-    "title": "Champions League Power Rankings before MD1: Who's No. 1?",
-    "summary": "It's time for the UEFA Champions League! Before each matchday, our panel of experts and voters will rank the top 10 teams in the field to give you a sense of the contenders and pretenders. Where does your club rank?",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49826219/champions-league-power-rankings-md1-no-1-psg-arsenal-barcelona-bayern-munich",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49826219/champions-league-power-rankings-md1-no-1-psg-arsenal-barcelona-bayern-munich",
-    "image": null,
-    "category": "Champions League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49826219/champions-league-power-rankings-md1-no-1-psg-arsenal-barcelona-bayern-munich",
-    "publishedAt": "2026-09-09T01:34:53.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 394,
-      "publishedAt": "2026-09-09T01:34:53.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49826219/champions-league-power-rankings-md1-no-1-psg-arsenal-barcelona-bayern-munich",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-09T01:34:53.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mttti690-lvunzv",
-    "title": "Can Mourinho lead Real Madrid to UCL glory and prove how special he really is?",
-    "summary": "Jose Mourinho's career nosedived after he left Real Madrid in 2013. Can he return to glory?",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49857747/can-mourinho-lead-real-madrid-champions-league-glory-prove-how-special-is",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49857747/can-mourinho-lead-real-madrid-champions-league-glory-prove-how-special-is",
-    "image": null,
-    "category": "Champions League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49857747/can-mourinho-lead-real-madrid-champions-league-glory-prove-how-special-is",
-    "publishedAt": "2026-09-09T01:34:53.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 394,
-      "publishedAt": "2026-09-09T01:34:53.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49857747/can-mourinho-lead-real-madrid-champions-league-glory-prove-how-special-is",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-09T01:34:53.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "real-madrid"
-    ]
-  },
-  {
-    "id": "news-mttti690-h41pl5",
-    "title": "In the middle again - but Mourinho says Alexander-Arnold 'not a midfielder'",
-    "summary": "Trent Alexander-Arnold started in midfield for Real Madrid's win over Inter - but Jose Mourinho says it is not his best position.",
+    "id": "news-mtvmhl6b-dry3m3",
+    "title": "Why are there Champions League games on Thursday?",
+    "summary": "Our Ask Me Anything team look at why some Champions League games are taking place on Thursday.",
     "source": {
       "name": "BBC Sport Football",
       "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c980lgdrlzno?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c7847dy555zo?at_medium=RSS&at_campaign=rss",
       "credibilityScore": 92
     },
     "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c980lgdrlzno?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c7847dy555zo?at_medium=RSS&at_campaign=rss",
     "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c980lgdrlzno?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-08T23:14:36.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "category": "Champions League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c7847dy555zo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T10:21:26.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 534,
-      "publishedAt": "2026-09-08T23:14:36.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
+      "ageMinutes": 247,
+      "publishedAt": "2026-09-10T10:21:26.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -1225,10 +1216,160 @@
           "id": "bbc-sport",
           "name": "BBC Sport Football",
           "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c980lgdrlzno?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c7847dy555zo?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
-          "publishedAt": "2026-09-08T23:14:36.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
+          "publishedAt": "2026-09-10T10:21:26.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-cd86mj",
+    "title": "Mousinho 'furious' over account of Bielik incident",
+    "summary": "Portsmouth boss John Mousinho is \"absolutely furious\" at the position he says he was put in over an incident involving Cardiff's Krystian Bielik and a fan.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c20l7z07zz7o?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c20l7z07zz7o?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c20l7z07zz7o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T10:10:05.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 258,
+      "publishedAt": "2026-09-10T10:10:05.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c20l7z07zz7o?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-10T10:10:05.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mtvmhl6b-szkqyv",
+    "title": "Saloons, school and specialty coffee: NWSL players enjoy new era of side hustles",
+    "summary": "Five years ago, stars in the league packed Amazon boxes or drove for DoorDash to make ends meet on meager salaries. A new CBA opened doors for off-field pursuits in line with their passions\nOn a cold winter night in Ketchum, Idaho, Chicago Stars midfielder Bea Franklin was pulling off a different so",
+    "source": {
+      "name": "The Guardian Football",
+      "type": "publication",
+      "url": "https://www.theguardian.com/football/2026/sep/10/nwsl-players-side-hustles",
+      "credibilityScore": 88
+    },
+    "sourceName": "The Guardian Football",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/10/nwsl-players-side-hustles",
+    "image": null,
+    "category": "Transfers",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/10/nwsl-players-side-hustles",
+    "publishedAt": "2026-09-10T10:00:24.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 268,
+      "publishedAt": "2026-09-10T10:00:24.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "guardian-sport",
+          "name": "The Guardian Football",
+          "type": "publication",
+          "url": "https://www.theguardian.com/football/2026/sep/10/nwsl-players-side-hustles",
+          "credibilityScore": 88,
+          "publishedAt": "2026-09-10T10:00:24.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
+        }
+      ],
+      "confidenceScore": 88,
+      "confidenceReasons": [
+        "Reported by The Guardian Football",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-mtvmhl6b-fjwsfy",
+    "title": "From winning £725 on a game show to facing Man Utd in Europe",
+    "summary": "Lithuanian coach Valdas Dambrauskas cut his teeth in English football, and now returns in the Champions League with Sabah.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cvgy8w548yyo?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cvgy8w548yyo?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Champions League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cvgy8w548yyo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-10T09:40:39.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 288,
+      "publishedAt": "2026-09-10T09:40:39.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cvgy8w548yyo?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-10T09:40:39.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
         }
       ],
       "confidenceScore": 92,
@@ -1242,12 +1383,11 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "real-madrid",
-      "inter-milan"
+      "manchester-united"
     ]
   },
   {
-    "id": "news-mttti690-ys76y9",
+    "id": "news-mtvmhl6b-82gvif",
     "title": "MLS Power Rankings: Griezmann catapults Orlando into the playoff picture",
     "summary": "With eight goal contributions in eight games since joining the Lions, Antoine Griezmann has turned around Orlando's season.",
     "source": {
@@ -1261,15 +1401,15 @@
     "image": null,
     "category": "Premier League",
     "originalUrl": "https://www.espn.com/soccer/story/_/id/49852959/mls-power-rankings-griezmann-catapults-orlando-playoff-picture",
-    "publishedAt": "2026-09-08T23:01:14.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "publishedAt": "2026-09-10T09:13:51.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 548,
-      "publishedAt": "2026-09-08T23:01:14.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
+      "ageMinutes": 314,
+      "publishedAt": "2026-09-10T09:13:51.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
     },
     "verification": {
       "level": "single_source",
@@ -1280,8 +1420,8 @@
           "type": "publication",
           "url": "https://www.espn.com/soccer/story/_/id/49852959/mls-power-rankings-griezmann-catapults-orlando-playoff-picture",
           "credibilityScore": 85,
-          "publishedAt": "2026-09-08T23:01:14.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
+          "publishedAt": "2026-09-10T09:13:51.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
         }
       ],
       "confidenceScore": 85,
@@ -1295,29 +1435,29 @@
     "relatedTeams": []
   },
   {
-    "id": "news-mttti690-bzt179",
-    "title": "NWSL Power Rankings: Washington leaps to top spot as Gotham, San Diego slip up",
-    "summary": "With Gotham and San Diego each suffering defeats, Washington is the new leader in our rankings.",
+    "id": "news-mtvmhl6b-2gtn9y",
+    "title": "UCL talking points: Mourinho's blueprint to win the Champions League",
+    "summary": "Kylian Mbappé up front and Thibaut Courtois in goal; does Jose Mourinho really need any more than that? Weighing in on all the moments that mattered from Matchday 1 so far.",
     "source": {
       "name": "ESPN FC",
       "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49859415/nwsl-power-rankings-washington-spirit-leap-top-spot-gotham-fc-san-diego-wave-slip-up",
+      "url": "https://www.espn.com/soccer/story/_/id/49883635/ucl-talking-points-mourinhos-blueprint-win-champions-league",
       "credibilityScore": 85
     },
     "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49859415/nwsl-power-rankings-washington-spirit-leap-top-spot-gotham-fc-san-diego-wave-slip-up",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49883635/ucl-talking-points-mourinhos-blueprint-win-champions-league",
     "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49859415/nwsl-power-rankings-washington-spirit-leap-top-spot-gotham-fc-san-diego-wave-slip-up",
-    "publishedAt": "2026-09-08T23:01:14.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
+    "category": "Champions League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/49883635/ucl-talking-points-mourinhos-blueprint-win-champions-league",
+    "publishedAt": "2026-09-10T09:03:59.000Z",
+    "discoveredAt": "2026-09-10T14:28:39.823Z",
+    "lastVerifiedAt": "2026-09-10T14:28:39.823Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 548,
-      "publishedAt": "2026-09-08T23:01:14.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
+      "ageMinutes": 324,
+      "publishedAt": "2026-09-10T09:03:59.000Z",
+      "lastUpdated": "2026-09-10T14:28:39.823Z"
     },
     "verification": {
       "level": "single_source",
@@ -1326,10 +1466,10 @@
           "id": "espn-fc",
           "name": "ESPN FC",
           "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49859415/nwsl-power-rankings-washington-spirit-leap-top-spot-gotham-fc-san-diego-wave-slip-up",
+          "url": "https://www.espn.com/soccer/story/_/id/49883635/ucl-talking-points-mourinhos-blueprint-win-champions-league",
           "credibilityScore": 85,
-          "publishedAt": "2026-09-08T23:01:14.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
+          "publishedAt": "2026-09-10T09:03:59.000Z",
+          "discoveredAt": "2026-09-10T14:28:39.823Z"
         }
       ],
       "confidenceScore": 85,
@@ -1341,160 +1481,5 @@
       "verificationCount": 1
     },
     "relatedTeams": []
-  },
-  {
-    "id": "news-mttti690-tgp8c9",
-    "title": "West Ham go top of Championship - are they ready to leave past behind?",
-    "summary": "Three wins in a row, top of the table, unity at the club - are West Ham ready to leave the past behind on and off the pitch?",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cp80znxj2dmo?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cp80znxj2dmo?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cp80znxj2dmo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-08T22:38:58.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 570,
-      "publishedAt": "2026-09-08T22:38:58.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cp80znxj2dmo?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-08T22:38:58.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "west-ham"
-    ]
-  },
-  {
-    "id": "news-mttti690-8pletv",
-    "title": "Bouaddi impresses on first start - have Man City found 'a gem'?",
-    "summary": "Ayyoub Bouaddi belies his age with a mature Champions League performance on his first Manchester City start to showcase why the club were so intent on signing the 18-year-old.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cy0zq59gr21o?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cy0zq59gr21o?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Transfers",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cy0zq59gr21o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-08T22:09:47.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 599,
-      "publishedAt": "2026-09-08T22:09:47.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cy0zq59gr21o?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-08T22:09:47.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city"
-    ]
-  },
-  {
-    "id": "news-mttti690-56gkws",
-    "title": "Championship roundup: West Ham go top after Bowen double sinks Bolton",
-    "summary": "England forward scores twice in 3-2 victory\n\nSouthampton 3-1 Swansea; Watford 2-1 Preston\n\nCaptain Jarrod Bowen scored twice as West Ham’s 3-2 win over Bolton took them top of the Championship on goal difference. The England international opened the scoring after 13 minutes and earned his side a fir",
-    "source": {
-      "name": "The Guardian Football",
-      "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/08/championship-roundup-west-ham-go-top-after-bowen-double-sinks-bolton",
-      "credibilityScore": 88
-    },
-    "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/08/championship-roundup-west-ham-go-top-after-bowen-double-sinks-bolton",
-    "image": null,
-    "category": "International Football",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/08/championship-roundup-west-ham-go-top-after-bowen-double-sinks-bolton",
-    "publishedAt": "2026-09-08T21:40:32.000Z",
-    "discoveredAt": "2026-09-09T08:09:32.298Z",
-    "lastVerifiedAt": "2026-09-09T08:09:32.298Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 629,
-      "publishedAt": "2026-09-08T21:40:32.000Z",
-      "lastUpdated": "2026-09-09T08:09:32.298Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "guardian-sport",
-          "name": "The Guardian Football",
-          "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/08/championship-roundup-west-ham-go-top-after-bowen-double-sinks-bolton",
-          "credibilityScore": 88,
-          "publishedAt": "2026-09-08T21:40:32.000Z",
-          "discoveredAt": "2026-09-09T08:09:32.298Z"
-        }
-      ],
-      "confidenceScore": 88,
-      "confidenceReasons": [
-        "Reported by The Guardian Football",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "inter-milan",
-      "west-ham"
-    ]
   }
 ]
