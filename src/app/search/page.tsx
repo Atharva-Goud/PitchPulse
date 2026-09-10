@@ -3,11 +3,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { Search, X, Filter, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { globalSearch } from '@/lib/data/search';
 import { SearchResult } from '@/types';
 import LoadingState from '@/components/ui/LoadingState';
 import EmptyState from '@/components/ui/EmptyState';
+import FallbackImage from '@/components/ui/Image';
+import TeamLogo from '@/components/ui/TeamLogo';
+import { resolveTeamLogo } from '@/lib/utils/teams';
 
 export default function SearchPage() {
   const [query, setQuery] = useState('');
@@ -70,6 +72,33 @@ export default function SearchPage() {
 
   const getExternal = (type: string) => {
     return type === 'news';
+  };
+
+  const getLogoSrc = (item: any): string | null => {
+    if (item.logo) return resolveTeamLogo(item);
+    if (item.image) return resolveTeamLogo(item);
+    return null;
+  };
+
+  const renderLogo = (item: any) => {
+    const logo = getLogoSrc(item);
+    if (logo) {
+      return (
+        <div className="relative h-10 w-10 rounded-lg overflow-hidden bg-slate-800 flex-shrink-0">
+          <FallbackImage src={logo} alt={item.name || item.title || ''} className="absolute inset-0" />
+        </div>
+      );
+    }
+    if (item.name) {
+      return (
+        <div className="relative h-10 w-10 rounded-lg overflow-hidden bg-slate-800 flex-shrink-0 flex items-center justify-center">
+          <span className="text-xs font-bold text-slate-300">
+            {item.name.split(' ').map((w: string) => w[0]).slice(0, 2).join('').toUpperCase()}
+          </span>
+        </div>
+      );
+    }
+    return null;
   };
 
   if (query && !loading && results.length === 0) {
@@ -188,16 +217,7 @@ export default function SearchPage() {
                           rel={getExternal(group.type) ? 'noopener noreferrer' : undefined}
                           className="flex items-center gap-3 py-2 hover:bg-white/5 rounded-lg transition-colors"
                         >
-                          {(item.logo || item.image) && (
-                            <div className="relative h-10 w-10 rounded-lg overflow-hidden bg-slate-800 flex-shrink-0">
-                              <Image
-                                src={item.logo || item.image}
-                                alt={item.name || item.title || ''}
-                                fill
-                                className="object-cover"
-                              />
-                            </div>
-                          )}
+                          {renderLogo(item)}
                           <div className="flex-1 min-w-0">
                             <div className="font-medium text-white truncate">
                               {item.name || item.title}

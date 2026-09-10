@@ -3,19 +3,20 @@
 import { Search } from 'lucide-react';
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { globalSearch } from '@/lib/data';
+import FallbackImage from '@/components/ui/Image';
+import { resolveTeamLogo } from '@/lib/utils/teams';
 
 interface SearchResult {
   type: string;
   items: Array<{
     id: string;
-    name?: string;
-    title?: string;
-    logo?: string;
-    image?: string;
-    shortName?: string;
-    summary?: string;
+    name?: string | null;
+    title?: string | null;
+    logo?: string | null;
+    image?: string | null;
+    shortName?: string | null;
+    summary?: string | null;
   }>;
 }
 
@@ -80,6 +81,27 @@ export default function SearchModal({ isOpen, onClose }: Props) {
 
   if (!isOpen) return null;
 
+  const renderLogo = (item: any) => {
+    const logo = resolveTeamLogo(item);
+    if (logo) {
+      return (
+        <div className="relative h-10 w-10 rounded-lg overflow-hidden bg-slate-800 flex-shrink-0">
+          <FallbackImage src={logo} alt={item.name || item.title || ''} className="absolute inset-0" />
+        </div>
+      );
+    }
+    if (item.name) {
+      return (
+        <div className="relative h-10 w-10 rounded-lg overflow-hidden bg-slate-800 flex-shrink-0 flex items-center justify-center">
+          <span className="text-xs font-bold text-slate-300">
+            {item.name.split(' ').map((w: string) => w[0]).slice(0, 2).join('').toUpperCase()}
+          </span>
+        </div>
+      );
+    }
+    return null;
+  };
+
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto">
       <div className="fixed inset-0 bg-black/80 backdrop-blur-sm" onClick={onClose} />
@@ -121,16 +143,7 @@ export default function SearchModal({ isOpen, onClose }: Props) {
                       onClick={onClose}
                       className="flex items-center gap-3 px-4 py-3 hover:bg-white/5 transition-colors"
                     >
-                      {(item.logo || item.image) && (
-                        <div className="relative h-10 w-10 rounded-lg overflow-hidden bg-slate-800 flex-shrink-0">
-                          <Image
-                            src={item.logo || item.image || ''}
-                            alt={item.name || item.title || ''}
-                            fill
-                            className="object-cover"
-                          />
-                        </div>
-                      )}
+                      {renderLogo(item)}
                       <div className="flex-1 min-w-0">
                         <div className="text-white font-medium truncate">
                           {item.name || item.title}

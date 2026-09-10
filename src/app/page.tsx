@@ -1,12 +1,13 @@
 'use client';
 
-import Image from 'next/image';
 import SectionHeader from '@/components/ui/SectionHeader';
 import NewsCard from '@/components/news/NewsCard';
 import MatchCard from '@/components/matches/MatchCard';
 import TransferCard from '@/components/transfers/TransferCard';
 import EmptyState from '@/components/ui/EmptyState';
 import LoadingState from '@/components/ui/LoadingState';
+import FallbackImage from '@/components/ui/Image';
+import TeamLogo from '@/components/ui/TeamLogo';
 import { getLatestNews, getTrendingNews } from '@/lib/data/news';
 import { getLiveMatches, getUpcomingMatches, getRecentResults } from '@/lib/data/matches';
 import { getTransferRumours, getConfirmedTransfers } from '@/lib/data/transfers';
@@ -213,16 +214,11 @@ export default function HomePage() {
               <Link
                 key={competition.id}
                 href={`/fixtures?competition=${competition.id}`}
-                className="group p-4 rounded-xl bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-all"
+                className="group p-4 rounded-lg bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-colors"
               >
                 <div className="flex flex-col items-center gap-3 text-center">
-                  <div className="relative h-12 w-12 rounded-lg overflow-hidden bg-slate-800">
-                    <Image
-                      src={competition.logo}
-                      alt={competition.name}
-                      fill
-                      className="object-contain p-2"
-                    />
+                  <div className="relative h-12 w-12 flex-shrink-0">
+                    <FallbackImage src={competition.logo} alt={competition.name} className="absolute inset-0" />
                   </div>
                   <div>
                     <h3 className="text-sm font-medium text-white group-hover:text-emerald-400 transition-colors">
@@ -243,17 +239,10 @@ export default function HomePage() {
               <Link
                 key={team.id}
                 href={`/teams/${team.id}`}
-                className="group p-4 rounded-xl bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-all"
+                className="group p-4 rounded-lg bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-colors"
               >
                 <div className="flex flex-col items-center gap-3 text-center">
-                  <div className="relative h-14 w-14 rounded-xl overflow-hidden bg-slate-800">
-                    <Image
-                      src={team.logo}
-                      alt={team.name}
-                      fill
-                      className="object-contain p-2 group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
+                  <TeamLogo team={team} size="lg" />
                   <div>
                     <h3 className="text-sm font-medium text-white group-hover:text-emerald-400 transition-colors">
                       {team.shortName}

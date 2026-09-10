@@ -1,14 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import { MapPin, Calendar, Users, Trophy, ChevronRight, ExternalLink } from 'lucide-react';
+import Link from 'next/link';
 import MatchCard from '@/components/matches/MatchCard';
 import NewsCard from '@/components/news/NewsCard';
 import TransferCard from '@/components/transfers/TransferCard';
 import EmptyState from '@/components/ui/EmptyState';
 import LoadingState from '@/components/ui/LoadingState';
+import TeamLogo from '@/components/ui/TeamLogo';
 import { getTeamById, getTeamsByLeague } from '@/lib/data/teams';
 import { getMatchesByTeam } from '@/lib/data/matches';
 import { searchNews } from '@/lib/data/news';
@@ -90,14 +90,9 @@ export default function TeamPage({ params }: Props) {
         
         <div className="relative mx-auto max-w-7xl px-4 py-12">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <div className="relative h-32 w-32 rounded-2xl overflow-hidden bg-slate-800 border-2 border-emerald-500/30">
-              <Image
-                src={team.logo}
-                alt={team.name}
-                fill
-                className="object-contain p-4"
-              />
-            </div>
+<div className="relative h-32 w-32 flex-shrink-0">
+            <TeamLogo team={team} size="xl" />
+          </div>
             <div className="flex-1">
               <div className="flex items-center gap-2 text-sm text-slate-400 mb-1">
                 <Link href="/teams" className="hover:text-white transition-colors">Teams</Link>

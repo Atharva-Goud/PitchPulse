@@ -92,7 +92,7 @@ function mapToOutput(item: FetchedNewsItem, timestamp: string) {
     },
     sourceName: item.source,
     sourceUrl: item.sourceUrl,
-    image: item.image || 'https://images.unsplash.com/photo-1552664456-8f3e851c8d16?w=800&h=450&fit=crop',
+    image: item.image || null,
     category: categoryString,
     originalUrl: item.sourceUrl,
     publishedAt: item.publishedAt,

@@ -2,7 +2,7 @@ export interface Team {
   id: string;
   name: string;
   shortName: string;
-  logo: string;
+  logo: string | null;
   country: string;
   league: string;
   founded?: number;
@@ -16,7 +16,7 @@ export interface Player {
   position: string;
   age: number;
   nationality: string;
-  image: string;
+  image: string | null;
   currentTeamId: string;
 }
 
@@ -24,7 +24,7 @@ export interface Competition {
   id: string;
   name: string;
   shortName: string;
-  logo: string;
+  logo: string | null;
   country: string;
   type: 'league' | 'cup' | 'international';
 }
@@ -43,7 +43,7 @@ export interface NewsArticle {
   content?: string;
   source: string | SourceObject;
   sourceUrl: string;
-  image: string;
+  image: string | null;
   category: NewsCategory;
   publishedAt: string;
   relatedTeams?: string[];

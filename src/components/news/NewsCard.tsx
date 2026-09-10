@@ -1,9 +1,10 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { Clock, ExternalLink } from 'lucide-react';
 import { NewsArticle, SourceObject } from '@/types';
+import { resolveImageUrl } from '@/lib/utils/image';
+import FallbackImage from '@/components/ui/Image';
 
 interface Props {
   article: NewsArticle;
@@ -20,7 +21,7 @@ function getSourceUrl(source: string | SourceObject): string {
 
 export default function NewsCard({ article, variant = 'default' }: Props) {
   const sourceName = getSourceName(article.source);
-  const sourceUrl = article.sourceUrl;
+  const imageUrl = resolveImageUrl(article);
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     const now = new Date();
@@ -49,6 +50,8 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
 
   const categoryClass = categoryColors[article.category] || 'bg-slate-500/20 text-slate-400';
 
+  const imageContainerClass = 'relative overflow-hidden bg-slate-800';
+
   if (variant === 'compact') {
     return (
       <Link
@@ -57,13 +60,8 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
         rel="noopener noreferrer"
         className="flex gap-3 p-3 hover:bg-white/5 rounded-lg transition-colors group"
       >
-        <div className="relative h-20 w-28 rounded-lg overflow-hidden flex-shrink-0 bg-slate-800">
-          <Image
-            src={article.image}
-            alt={article.title}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
-          />
+        <div className="relative h-20 w-28 rounded-lg flex-shrink-0">
+          <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" />
         </div>
         <div className="flex-1 min-w-0">
           <span className={`text-xs px-2 py-0.5 rounded ${categoryClass}`}>
@@ -86,14 +84,8 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
     return (
       <article className="relative group rounded-2xl overflow-hidden bg-slate-900 border border-white/10">
         <Link href={article.sourceUrl} target="_blank" rel="noopener noreferrer">
-          <div className="relative aspect-video overflow-hidden">
-            <Image
-              src={article.image}
-              alt={article.title}
-              fill
-              className="object-cover group-hover:scale-105 transition-transform duration-500"
-              sizes="100vw"
-            />
+          <div className="relative aspect-video">
+            <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/50 to-transparent" />
           </div>
         </Link>
@@ -110,7 +102,7 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
               <Clock className="h-3 w-3" />
               {formatDate(article.publishedAt)}
             </span>
-<span className="text-xs text-slate-400">{sourceName}</span>
+            <span className="text-xs text-slate-400">{sourceName}</span>
           </div>
           <Link
             href={article.sourceUrl}
@@ -142,14 +134,8 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
   return (
     <article className="group rounded-xl overflow-hidden bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-colors">
       <Link href={article.sourceUrl} target="_blank" rel="noopener noreferrer" className="block">
-        <div className="relative aspect-[16/10] overflow-hidden">
-          <Image
-            src={article.image}
-            alt={article.title}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
+        <div className="relative aspect-[16/10]">
+          <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" />
         </div>
       </Link>
 

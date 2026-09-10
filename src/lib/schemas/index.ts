@@ -4,7 +4,7 @@ export const TeamSchema = z.object({
   id: z.string(),
   name: z.string(),
   shortName: z.string(),
-  logo: z.string(),
+  logo: z.string().nullable(),
   country: z.string(),
   league: z.string(),
   founded: z.number().optional(),
@@ -18,7 +18,7 @@ export const PlayerSchema = z.object({
   position: z.string(),
   age: z.number(),
   nationality: z.string(),
-  image: z.string(),
+  image: z.string().nullable(),
   currentTeamId: z.string(),
 });
 
@@ -26,7 +26,7 @@ export const CompetitionSchema = z.object({
   id: z.string(),
   name: z.string(),
   shortName: z.string(),
-  logo: z.string(),
+  logo: z.string().nullable(),
   country: z.string(),
   type: z.enum(['league', 'cup', 'international']),
 });
@@ -45,7 +45,7 @@ export const NewsArticleSchema = z.object({
   content: z.string().optional(),
   source: z.union([z.string(), SourceObjectSchema]),
   sourceUrl: z.string().url(),
-  image: z.string().url(),
+  image: z.string().url().nullable(),
   category: z.enum([
     'Transfers',
     'Premier League',

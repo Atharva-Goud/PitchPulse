@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import { ChevronRight, Calendar, Trophy, Filter, X } from 'lucide-react';
-import Image from 'next/image';
+import { Calendar, Trophy, Filter, X } from 'lucide-react';
 import Link from 'next/link';
 import MatchCard from '@/components/matches/MatchCard';
 import EmptyState from '@/components/ui/EmptyState';

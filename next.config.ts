@@ -5,7 +5,51 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'images.unsplash.com',
+        hostname: '*.bbci.co.uk',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.espn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.theguardian.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.skysports.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.football-data.org',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.transfermarkt.de',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.whatsapp.net',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.cdn.reddit.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.reuters.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.bbc.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.independent.co.uk',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.telegraph.co.uk',
       },
     ],
   },
