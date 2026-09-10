@@ -293,6 +293,16 @@ export default function HomePage() {
           )}
         </section>
 
+        <div className="mx-auto max-w-2xl py-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-white tracking-tight">Football Quiz</h2>
+            <p className="mt-2 text-sm text-slate-400">
+              Test your football knowledge with 5 questions from our pool.
+            </p>
+          </div>
+          <FootballQuiz />
+        </div>
+
         <section>
           <SectionHeader title="Featured Competitions" href="/matches" actionLabel="All competitions" />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
@@ -340,16 +350,6 @@ export default function HomePage() {
             ))}
           </div>
         </section>
-      </div>
-
-      <div className="mx-auto max-w-7xl px-4 py-16">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-white tracking-tight">Football Quiz</h2>
-          <p className="mt-3 text-slate-400 max-w-2xl mx-auto">
-            Test your football knowledge with 5 questions from our pool.
-          </p>
-        </div>
-        <FootballQuiz />
       </div>
     </div>
   );
