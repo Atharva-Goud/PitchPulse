@@ -1,6 +1,6 @@
 import { writeFile, mkdir, readFile } from 'fs/promises';
 import { join } from 'path';
-import { fetchLiveMatches, fetchUpcomingMatches, fetchRecentResults, FootballMatch } from './fetchers/football-api';
+import { fetchLiveMatches, fetchUpcomingMatches, fetchRecentResults, FootballMatch, getApiRequestCount, resetApiRequestCount, clearFixturesCache } from './fetchers/football-api';
 
 export interface SyncResult {
   itemsFound: number;
@@ -22,6 +22,8 @@ const LEAGUE_IDS = {
 };
 
 export async function syncMatches(mode: 'live' | 'upcoming' | 'results' | 'all' = 'all'): Promise<SyncResult> {
+  resetApiRequestCount();
+  clearFixturesCache();
   const errors: string[] = [];
   const timestamp = new Date().toISOString();
   const dataDir = join(process.cwd(), 'src', 'data', 'matches');
@@ -52,6 +54,8 @@ export async function syncMatches(mode: 'live' | 'upcoming' | 'results' | 'all' 
     await atomicallyWrite(join(dataDir, 'results.json'), output, errors);
     console.log(`✅ Results: ${results.length}`);
   }
+
+  console.log(`ℹ️  Football API requests used this run: ${getApiRequestCount()}`);
 
   return {
     itemsFound: 0,

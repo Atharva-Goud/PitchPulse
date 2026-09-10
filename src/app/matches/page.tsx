@@ -1,12 +1,21 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Radio, Calendar, Trophy, Filter } from 'lucide-react';
+import { Radio, Calendar, Trophy, Filter, Clock } from 'lucide-react';
 import MatchCard from '@/components/matches/MatchCard';
 import EmptyState from '@/components/ui/EmptyState';
 import LoadingState from '@/components/ui/LoadingState';
 import { getLiveMatches, getUpcomingMatches, getRecentResults } from '@/lib/data/matches';
 import { Match } from '@/types';
+
+function freshnessLabel(updatedAt?: string): string {
+  if (!updatedAt) return '';
+  const diffMs = Date.now() - new Date(updatedAt).getTime();
+  const diffMin = Math.floor(diffMs / 60000);
+  if (diffMin < 1) return 'just updated';
+  if (diffMin < 60) return `${diffMin}m ago`;
+  return `${Math.floor(diffMin / 60)}h ago`;
+}
 
 export default function MatchesPage() {
   const [loading, setLoading] = useState(true);
@@ -100,14 +109,23 @@ export default function MatchesPage() {
               <span className="text-sm text-red-400 font-medium">
                 {live.length} match{live.length !== 1 ? 'es' : ''} currently live
               </span>
+              <span className="text-xs text-slate-500 ml-auto flex items-center gap-1">
+                <Clock className="h-3 w-3" />
+                Updated {freshnessLabel(live[0]?.lastUpdated)}
+              </span>
             </div>
           </div>
         )}
 
         {displayedMatches.length === 0 ? (
-          <EmptyState 
-            type="matches" 
+          <EmptyState
+            type="matches"
             message={activeTab === 'live' ? 'No live matches at the moment' : `No ${activeTab} matches`}
+            reason={activeTab === 'live'
+              ? 'No fixtures are currently in progress.'
+              : activeTab === 'upcoming'
+                ? 'The free football data plan only covers past seasons, so no upcoming fixtures are available right now.'
+                : 'The free football data plan only covers past seasons, so no recent results are available right now.'}
           />
         ) : activeTab === 'live' ? (
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

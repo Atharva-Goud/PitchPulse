@@ -16,6 +16,13 @@ const statusConfig: Record<MatchStatus, { label: string; color: string }> = {
   CANCELLED: { label: 'Cancelled', color: 'text-red-400' },
 };
 
+function isStale(kickoff: string): boolean {
+  // The free football data plan only covers seasons 2022-2024, so any
+  // fixture older than 6 months is historical data, not a recent result.
+  const ageMs = Date.now() - new Date(kickoff).getTime();
+  return ageMs > 6 * 30 * 24 * 60 * 60 * 1000;
+}
+
 export default function MatchCard({ match, variant = 'default' }: Props) {
   const formatTime = (dateString: string) => {
     const date = new Date(dateString);
@@ -83,6 +90,14 @@ export default function MatchCard({ match, variant = 'default' }: Props) {
         <div className="absolute top-2 right-2">
           <span className="px-2 py-0.5 rounded text-xs text-red-500 animate-pulse">
             LIVE
+          </span>
+        </div>
+      )}
+
+      {isStale(match.kickoff) && (
+        <div className="absolute top-2 left-2">
+          <span className="px-2 py-0.5 rounded text-xs bg-amber-500/20 text-amber-400">
+            Historical
           </span>
         </div>
       )}

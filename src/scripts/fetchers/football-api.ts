@@ -1,5 +1,15 @@
 import { config } from '../../config/app-config';
 
+// Track API usage so sync runs don't silently burn through the daily
+// request budget (free plan: 100 req/day).
+let requestCount = 0;
+export function getApiRequestCount(): number {
+  return requestCount;
+}
+export function resetApiRequestCount(): void {
+  requestCount = 0;
+}
+
 export interface FootballMatch {
   id: number;
   homeTeam: { id: number; name: string; logo: string };
@@ -26,6 +36,7 @@ export interface FootballStanding {
 }
 
 async function apiFetch(endpoint: string, params: Record<string, string> = {}): Promise<any> {
+  requestCount++;
   if (!config.football.apiKey || config.football.apiKey === 'your_api_key_here') {
     console.warn('Football API key not configured. Using mock data.');
     return { response: [] };
@@ -48,6 +59,19 @@ async function apiFetch(endpoint: string, params: Record<string, string> = {}): 
   return res.json();
 }
 
+// The free API plan only exposes seasons 2022-2024, and date-range queries
+// return 0 results on it. So we fetch the full season for each league and
+// filter by date client-side instead.
+const FREE_PLAN_SEASONS = [2024, 2023, 2022];
+const LEAGUE_IDS = {
+  premierLeague: 39,
+  laLiga: 140,
+  bundesliga: 78,
+  serieA: 135,
+  ligue1: 61,
+  championsLeague: 2,
+};
+
 export async function fetchLiveMatches(): Promise<FootballMatch[]> {
   try {
     const data = await apiFetch('/fixtures', { live: 'all' });
@@ -60,13 +84,12 @@ export async function fetchLiveMatches(): Promise<FootballMatch[]> {
 
 export async function fetchUpcomingMatches(leagueId?: number, days: number = 7): Promise<FootballMatch[]> {
   try {
-    const dateFrom = new Date().toISOString().split('T')[0];
-    const dateTo = new Date(Date.now() + days * 86400000).toISOString().split('T')[0];
-    const params: Record<string, string> = { dateFrom, dateTo };
-    if (leagueId) params.league = String(leagueId);
-
-    const data = await apiFetch('/fixtures', params);
-    return (data.response || []).map(normalizeMatch);
+    const dateTo = Date.now() + days * 86400000;
+    const matches = await fetchFixturesBySeason(leagueId);
+    return matches
+      .filter(m => new Date(m.kickoff).getTime() > Date.now())
+      .filter(m => new Date(m.kickoff).getTime() <= dateTo)
+      .sort((a, b) => new Date(a.kickoff).getTime() - new Date(b.kickoff).getTime());
   } catch (error) {
     console.error('Failed to fetch upcoming matches:', error);
     return [];
@@ -75,17 +98,56 @@ export async function fetchUpcomingMatches(leagueId?: number, days: number = 7):
 
 export async function fetchRecentResults(leagueId?: number, days: number = 3): Promise<FootballMatch[]> {
   try {
-    const dateTo = new Date().toISOString().split('T')[0];
-    const dateFrom = new Date(Date.now() - days * 86400000).toISOString().split('T')[0];
-    const params: Record<string, string> = { dateFrom, dateTo };
-    if (leagueId) params.league = String(leagueId);
-
-    const data = await apiFetch('/fixtures', params);
-    return (data.response || []).map(normalizeMatch);
+    const dateFrom = Date.now() - days * 86400000;
+    const matches = await fetchFixturesBySeason(leagueId);
+    return matches
+      .filter(m => new Date(m.kickoff).getTime() >= dateFrom)
+      .filter(m => new Date(m.kickoff).getTime() <= Date.now())
+      .sort((a, b) => new Date(b.kickoff).getTime() - new Date(a.kickoff).getTime());
   } catch (error) {
     console.error('Failed to fetch recent results:', error);
     return [];
   }
+}
+
+/**
+ * Fetch fixtures for the given league across all free-plan seasons.
+ * Returns matches already normalized to FootballMatch.
+ *
+ * Results are cached in-memory for the lifetime of the process so that
+ * upcoming + results syncs share one 36-request fetch instead of each
+ * re-querying the API.
+ */
+let fixturesCache: { matches: FootballMatch[]; ts: number } | null = null;
+const CACHE_TTL_MS = 5 * 60 * 1000;
+
+async function fetchFixturesBySeason(leagueId?: number): Promise<FootballMatch[]> {
+  const now = Date.now();
+  if (fixturesCache && now - fixturesCache.ts < CACHE_TTL_MS) {
+    return fixturesCache.matches;
+  }
+
+  const ids = leagueId ? [leagueId] : Object.values(LEAGUE_IDS);
+  const matches: FootballMatch[] = [];
+
+  for (const id of ids) {
+    for (const season of FREE_PLAN_SEASONS) {
+      try {
+        const data = await apiFetch('/fixtures', { league: String(id), season: String(season) });
+        const batch = (data.response || []).map(normalizeMatch);
+        matches.push(...batch);
+      } catch (e) {
+        // Skip seasons the plan doesn't cover for this league.
+      }
+    }
+  }
+
+  fixturesCache = { matches, ts: now };
+  return matches;
+}
+
+export function clearFixturesCache(): void {
+  fixturesCache = null;
 }
 
 export async function fetchStandings(leagueId: number, season: number = new Date().getFullYear()): Promise<FootballStanding[]> {

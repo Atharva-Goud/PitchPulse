@@ -1,10 +1,11 @@
 'use client';
 
-import { Search, FileText, User, Trophy, AlertTriangle } from 'lucide-react';
+import { Search, FileText, User, Trophy } from 'lucide-react';
 
 interface Props {
   type?: 'news' | 'transfers' | 'matches' | 'teams' | 'search';
   message?: string;
+  reason?: string;
   action?: React.ReactNode;
 }
 
@@ -16,7 +17,7 @@ const typeConfig = {
   search: { icon: Search, title: 'No results found', description: 'Try a different search term.' },
 };
 
-export default function EmptyState({ type = 'news', message, action }: Props) {
+export default function EmptyState({ type = 'news', message, reason, action }: Props) {
   const config = typeConfig[type];
   const Icon = config.icon;
 
@@ -26,7 +27,7 @@ export default function EmptyState({ type = 'news', message, action }: Props) {
         <Icon className="h-8 w-8" />
       </div>
       <h3 className="text-lg font-medium text-white mb-2">{message || config.title}</h3>
-      <p className="text-slate-400 max-w-sm mb-6">{config.description}</p>
+      <p className="text-slate-400 max-w-sm mb-6">{reason || config.description}</p>
       {action}
     </div>
   );

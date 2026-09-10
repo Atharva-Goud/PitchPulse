@@ -39,6 +39,13 @@ const statusConfig: Record<TransferStatus, { color: string; bgColor: string; ico
   },
 };
 
+// Transfer data is static (no live feed), so anything older than 30 days
+// is historical, not current. Label it so it isn't mistaken for fresh news.
+function isStaleTransfer(updatedAt: string): boolean {
+  const ageMs = Date.now() - new Date(updatedAt).getTime();
+  return ageMs > 30 * 24 * 60 * 60 * 1000;
+}
+
 export default function TransferCard({ transfer, variant = 'default' }: Props) {
   const formatFee = (fee: number | null) => {
     if (!fee) return 'Undisclosed';
@@ -97,6 +104,12 @@ export default function TransferCard({ transfer, variant = 'default' }: Props) {
               {statusConfigItem.icon}
               {status}
             </span>
+            {isStaleTransfer(transfer.updatedAt) && (
+              <span className="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs bg-slate-700/60 text-slate-400">
+                <Clock className="h-3 w-3" />
+                Historical
+              </span>
+            )}
           </div>
 
           {transfer.fee !== null && (

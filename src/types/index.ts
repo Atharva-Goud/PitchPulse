@@ -110,6 +110,16 @@ export interface Match {
   venue?: string;
   referee?: string;
   matchday?: number;
+  lastUpdated?: string;
+  freshness?: {
+    status: string;
+    ageMinutes: number;
+    lastUpdated: string;
+  };
+  source?: {
+    provider: string;
+    type: string;
+  };
 }
 
 export type MatchStatus = 

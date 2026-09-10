@@ -164,7 +164,11 @@ export default function FixturesPage() {
         </div>
 
         {Object.keys(groupedMatches).length === 0 ? (
-          <EmptyState type="matches" />
+          <EmptyState
+            type="matches"
+            message="No fixtures match your filters"
+            reason="The free football data plan only covers past seasons (2022-2024), so today/tomorrow/this-week filters may return nothing. Try 'All Dates'."
+          />
         ) : (
           <div className="space-y-8">
             {Object.entries(groupedMatches).map(([compName, dates]) => (

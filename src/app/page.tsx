@@ -171,7 +171,11 @@ export default function HomePage() {
         <section>
           <SectionHeader title="Upcoming Matches" href="/fixtures" actionLabel="All fixtures" />
           {upcomingMatches.length === 0 ? (
-            <EmptyState type="matches" />
+            <EmptyState
+              type="matches"
+              message="No upcoming fixtures"
+              reason="The free football data plan only covers past seasons, so no upcoming fixtures are available right now."
+            />
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {upcomingMatches.slice(0, 6).map((match) => (
@@ -184,7 +188,11 @@ export default function HomePage() {
         <section>
           <SectionHeader title="Recent Results" />
           {recentResults.length === 0 ? (
-            <EmptyState type="matches" message="No recent results" />
+            <EmptyState
+              type="matches"
+              message="No recent results"
+              reason="The free football data plan only covers past seasons, so no recent results are available right now."
+            />
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {recentResults.slice(0, 6).map((match) => (

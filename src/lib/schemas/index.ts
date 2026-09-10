@@ -104,6 +104,16 @@ export const MatchSchema = z.object({
   venue: z.string().optional(),
   referee: z.string().optional(),
   matchday: z.number().optional(),
+  lastUpdated: z.string().datetime().optional(),
+  freshness: z.object({
+    status: z.string(),
+    ageMinutes: z.number(),
+    lastUpdated: z.string(),
+  }).optional(),
+  source: z.object({
+    provider: z.string(),
+    type: z.string(),
+  }).optional(),
 });
 
 export type Team = z.infer<typeof TeamSchema>;
