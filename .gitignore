@@ -7,3 +7,5 @@ node_modules/
 next-env.d.ts
 *.probe.ts
 clear-cache.ts
+build.log
+tsc.log
