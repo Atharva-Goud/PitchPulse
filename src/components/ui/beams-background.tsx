@@ -18,11 +18,11 @@ interface BeamsBackgroundProps {
  * the dark design language. Respects `prefers-reduced-motion`.
  */
 export function BeamsBackground({
-  beamCount = 10,
+  beamCount = 8,
   beamColor = '16, 185, 129',
-  speed = 0.6,
+  speed = 0.4,
   className = '',
-  opacity = 1,
+  opacity = 0.85,
 }: BeamsBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -74,11 +74,11 @@ export function BeamsBackground({
         if (beam.y < -beam.length) beam.y = height + beam.length;
         if (beam.y > height + beam.length) beam.y = -beam.length;
 
-        const alpha = (0.7 + 0.3 * Math.sin(beam.phase)) * opacity;
+        const alpha = (0.45 + 0.25 * Math.sin(beam.phase)) * opacity;
         const color = `rgba(${beamColor}, ${alpha})`;
 
         ctx.shadowColor = color;
-        ctx.shadowBlur = 40;
+        ctx.shadowBlur = 12;
         ctx.strokeStyle = color;
         ctx.lineWidth = beam.thickness;
         ctx.beginPath();
