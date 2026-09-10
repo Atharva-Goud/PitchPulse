@@ -1,8 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import { Trophy, ChevronRight, RotateCcw, Play } from 'lucide-react';
-import { QuizQuestion, pickQuizQuestions, getPerformanceMessage } from '@/components/quiz/quizData';
+import { Trophy, ChevronRight, RotateCcw, Play, Star } from 'lucide-react';
+import {
+  QuizQuestion,
+  pickQuizQuestions,
+  getScoreClassification,
+  getRandomRoast,
+} from '@/components/quiz/quizData';
 
 const TOTAL = 5;
 
@@ -28,7 +33,7 @@ export default function FootballQuiz({ className = '' }: FootballQuizProps) {
   };
 
   const handleAnswer = (index: number) => {
-    if (selected !== null) return; // locked after first selection
+    if (selected !== null) return;
     setSelected(index);
     if (index === questions[current].answer) {
       setScore(s => s + 1);
@@ -55,7 +60,13 @@ export default function FootballQuiz({ className = '' }: FootballQuizProps) {
 
   const q = questions[current];
   const isCorrect = selected === q?.answer;
-  const pct = Math.round((score / TOTAL) * 100);
+  const progress = questions.length ? ((current + 1) / questions.length) * 100 : 0;
+
+  const difficultyColor: Record<string, string> = {
+    medium: 'text-emerald-400',
+    hard: 'text-amber-400',
+    expert: 'text-rose-400',
+  };
 
   return (
     <section
@@ -66,9 +77,9 @@ export default function FootballQuiz({ className = '' }: FootballQuizProps) {
           <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-emerald-500/15 text-emerald-400">
             <Trophy className="h-6 w-6" />
           </div>
-          <h2 className="text-2xl font-bold text-white tracking-tight">Football Quiz</h2>
+          <h2 className="text-2xl font-bold text-white tracking-tight">Do You Actually Know Ball?</h2>
           <p className="mt-2 text-sm text-slate-400">
-            Test your football knowledge with 5 questions from our pool.
+            5 random questions from our 30-question pool. Prove you are not a fraud.
           </p>
           <button
             onClick={startQuiz}
@@ -88,9 +99,20 @@ export default function FootballQuiz({ className = '' }: FootballQuizProps) {
             <div className="text-5xl font-bold text-white">
               {score}<span className="text-2xl text-slate-500"> / {TOTAL}</span>
             </div>
-            <div className="mt-2 text-emerald-400 font-medium">{pct}%</div>
           </div>
-          <p className="mt-4 text-slate-400">{getPerformanceMessage(score, TOTAL)}</p>
+
+          {(() => {
+            const c = getScoreClassification(score, TOTAL);
+            return (
+              <div className="mt-4 inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2">
+                <span className="text-xl">{c.emoji}</span>
+                <span className="font-bold tracking-wide text-white">{c.title}</span>
+              </div>
+            );
+          })()}
+
+          <p className="mt-4 text-slate-400">{getRandomRoast(score)}</p>
+
           <button
             onClick={retry}
             className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/15 text-white font-medium rounded-lg transition-colors border border-white/20"
@@ -101,15 +123,31 @@ export default function FootballQuiz({ className = '' }: FootballQuizProps) {
         </div>
       ) : (
         <div>
-          <div className="flex items-center justify-between text-xs font-medium text-slate-500 mb-6">
+          <div className="flex items-center justify-between text-xs font-medium text-slate-500 mb-2">
             <span>Question {current + 1} of {TOTAL}</span>
             <span>Score {score}</span>
           </div>
+          <div className="h-1.5 w-full rounded-full bg-white/5 mb-6 overflow-hidden">
+            <div
+              className="h-full bg-emerald-500 transition-all duration-300"
+              style={{ width: `${progress}%` }}
+            />
+          </div>
 
-          <h3 className="text-lg font-semibold text-white mb-5">{q.question}</h3>
+          <div className="flex items-center gap-2 mb-4">
+            <Star className={`h-4 w-4 ${difficultyColor[q?.difficulty ?? 'medium']}`} />
+            <span className={`text-xs font-semibold uppercase tracking-wide ${difficultyColor[q?.difficulty ?? 'medium']}`}>
+              {q?.difficulty}
+            </span>
+            {q?.label && (
+              <span className="ml-auto text-xs text-slate-500 italic">{q.label}</span>
+            )}
+          </div>
+
+          <h3 className="text-lg font-semibold text-white mb-5">{q?.question}</h3>
 
           <div className="space-y-3">
-            {q.options.map((option, index) => {
+            {q?.options.map((option, index) => {
               const isThisCorrect = index === q.answer;
               const isThisSelected = index === selected;
               let stateClass = 'border-white/10 bg-slate-950/40 hover:border-white/25 hover:bg-white/5';
@@ -145,7 +183,7 @@ export default function FootballQuiz({ className = '' }: FootballQuizProps) {
           {selected !== null && (
             <div className={`mt-5 rounded-lg border px-4 py-3 text-sm ${isCorrect ? 'border-emerald-500/30 bg-emerald-500/5 text-emerald-200' : 'border-red-500/30 bg-red-500/5 text-red-200'}`}>
               <span className="font-semibold">{isCorrect ? 'Correct!' : 'Incorrect.'}</span>{' '}
-              {q.explanation}
+              {q?.explanation}
             </div>
           )}
 
