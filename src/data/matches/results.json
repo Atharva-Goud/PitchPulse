@@ -4,7 +4,7 @@
     "competition": {
       "id": "league-78",
       "name": "Bundesliga",
-      "shortName": "B",
+      "shortName": "Bundesliga",
       "logo": "https://media.api-sports.io/football/leagues/78.png",
       "country": "Germany",
       "type": "league"
@@ -12,7 +12,7 @@
     "homeTeam": {
       "id": "team-1660",
       "name": "SV Elversberg",
-      "shortName": "SV ",
+      "shortName": "SV",
       "logo": "https://media.api-sports.io/football/teams/1660.png",
       "country": "Unknown",
       "league": "Bundesliga"
@@ -20,7 +20,7 @@
     "awayTeam": {
       "id": "team-180",
       "name": "1. FC Heidenheim",
-      "shortName": "1. ",
+      "shortName": "FC",
       "logo": "https://media.api-sports.io/football/teams/180.png",
       "country": "Unknown",
       "league": "Bundesliga"
@@ -34,9 +34,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -47,7 +47,7 @@
     "competition": {
       "id": "league-140",
       "name": "La Liga",
-      "shortName": "LL",
+      "shortName": "La Liga",
       "logo": "https://media.api-sports.io/football/leagues/140.png",
       "country": "Spain",
       "type": "league"
@@ -77,9 +77,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -90,7 +90,7 @@
     "competition": {
       "id": "league-39",
       "name": "Premier League",
-      "shortName": "PL",
+      "shortName": "Premier League",
       "logo": "https://media.api-sports.io/football/leagues/39.png",
       "country": "England",
       "type": "league"
@@ -120,9 +120,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -133,7 +133,7 @@
     "competition": {
       "id": "league-39",
       "name": "Premier League",
-      "shortName": "PL",
+      "shortName": "Premier League",
       "logo": "https://media.api-sports.io/football/leagues/39.png",
       "country": "England",
       "type": "league"
@@ -163,9 +163,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -176,7 +176,7 @@
     "competition": {
       "id": "league-39",
       "name": "Premier League",
-      "shortName": "PL",
+      "shortName": "Premier League",
       "logo": "https://media.api-sports.io/football/leagues/39.png",
       "country": "England",
       "type": "league"
@@ -206,9 +206,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -219,7 +219,7 @@
     "competition": {
       "id": "league-39",
       "name": "Premier League",
-      "shortName": "PL",
+      "shortName": "Premier League",
       "logo": "https://media.api-sports.io/football/leagues/39.png",
       "country": "England",
       "type": "league"
@@ -249,9 +249,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -262,7 +262,7 @@
     "competition": {
       "id": "league-39",
       "name": "Premier League",
-      "shortName": "PL",
+      "shortName": "Premier League",
       "logo": "https://media.api-sports.io/football/leagues/39.png",
       "country": "England",
       "type": "league"
@@ -292,9 +292,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -305,7 +305,7 @@
     "competition": {
       "id": "league-39",
       "name": "Premier League",
-      "shortName": "PL",
+      "shortName": "Premier League",
       "logo": "https://media.api-sports.io/football/leagues/39.png",
       "country": "England",
       "type": "league"
@@ -335,9 +335,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -348,7 +348,7 @@
     "competition": {
       "id": "league-39",
       "name": "Premier League",
-      "shortName": "PL",
+      "shortName": "Premier League",
       "logo": "https://media.api-sports.io/football/leagues/39.png",
       "country": "England",
       "type": "league"
@@ -378,9 +378,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -391,7 +391,7 @@
     "competition": {
       "id": "league-39",
       "name": "Premier League",
-      "shortName": "PL",
+      "shortName": "Premier League",
       "logo": "https://media.api-sports.io/football/leagues/39.png",
       "country": "England",
       "type": "league"
@@ -421,9 +421,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -434,7 +434,7 @@
     "competition": {
       "id": "league-39",
       "name": "Premier League",
-      "shortName": "PL",
+      "shortName": "Premier League",
       "logo": "https://media.api-sports.io/football/leagues/39.png",
       "country": "England",
       "type": "league"
@@ -464,9 +464,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -477,7 +477,7 @@
     "competition": {
       "id": "league-39",
       "name": "Premier League",
-      "shortName": "PL",
+      "shortName": "Premier League",
       "logo": "https://media.api-sports.io/football/leagues/39.png",
       "country": "England",
       "type": "league"
@@ -507,9 +507,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -520,7 +520,7 @@
     "competition": {
       "id": "league-140",
       "name": "La Liga",
-      "shortName": "LL",
+      "shortName": "La Liga",
       "logo": "https://media.api-sports.io/football/leagues/140.png",
       "country": "Spain",
       "type": "league"
@@ -550,9 +550,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -563,7 +563,7 @@
     "competition": {
       "id": "league-140",
       "name": "La Liga",
-      "shortName": "LL",
+      "shortName": "La Liga",
       "logo": "https://media.api-sports.io/football/leagues/140.png",
       "country": "Spain",
       "type": "league"
@@ -593,9 +593,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -606,7 +606,7 @@
     "competition": {
       "id": "league-140",
       "name": "La Liga",
-      "shortName": "LL",
+      "shortName": "La Liga",
       "logo": "https://media.api-sports.io/football/leagues/140.png",
       "country": "Spain",
       "type": "league"
@@ -636,9 +636,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -649,7 +649,7 @@
     "competition": {
       "id": "league-140",
       "name": "La Liga",
-      "shortName": "LL",
+      "shortName": "La Liga",
       "logo": "https://media.api-sports.io/football/leagues/140.png",
       "country": "Spain",
       "type": "league"
@@ -679,9 +679,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -692,7 +692,7 @@
     "competition": {
       "id": "league-140",
       "name": "La Liga",
-      "shortName": "LL",
+      "shortName": "La Liga",
       "logo": "https://media.api-sports.io/football/leagues/140.png",
       "country": "Spain",
       "type": "league"
@@ -722,9 +722,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -735,7 +735,7 @@
     "competition": {
       "id": "league-140",
       "name": "La Liga",
-      "shortName": "LL",
+      "shortName": "La Liga",
       "logo": "https://media.api-sports.io/football/leagues/140.png",
       "country": "Spain",
       "type": "league"
@@ -765,9 +765,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -778,7 +778,7 @@
     "competition": {
       "id": "league-140",
       "name": "La Liga",
-      "shortName": "LL",
+      "shortName": "La Liga",
       "logo": "https://media.api-sports.io/football/leagues/140.png",
       "country": "Spain",
       "type": "league"
@@ -808,9 +808,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -821,7 +821,7 @@
     "competition": {
       "id": "league-140",
       "name": "La Liga",
-      "shortName": "LL",
+      "shortName": "La Liga",
       "logo": "https://media.api-sports.io/football/leagues/140.png",
       "country": "Spain",
       "type": "league"
@@ -851,9 +851,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"

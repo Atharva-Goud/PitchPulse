@@ -63,26 +63,26 @@ export default function MatchCard({ match, variant = 'default' }: Props) {
 
   return (
     <div className="relative rounded-xl overflow-hidden bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-colors">
-      <div className="flex items-center gap-3 p-4">
-        <div className="flex items-center gap-2">
-          <span className="text-sm font-medium text-white">{match.homeTeam.shortName}</span>
+      <div className="flex items-center gap-3 p-4 pb-16">
+        <div className="flex items-center gap-2 min-w-0">
+          <span className="text-sm font-medium text-white truncate">{match.homeTeam.shortName}</span>
           {match.competition && (
-            <span className="text-xs text-slate-500 uppercase tracking-wider">
+            <span className="text-xs text-slate-500 uppercase tracking-wider truncate">
               {match.competition.shortName}
             </span>
           )}
         </div>
 
-        <div className="text-4xl font-bold text-white">
+        <div className="text-4xl font-bold text-white flex-shrink-0">
           {match.homeScore}
         </div>
 
-        <div className="flex items-center gap-2 text-4xl font-bold text-white">
+        <div className="flex items-center gap-2 text-4xl font-bold text-white flex-shrink-0">
           {match.awayScore}
         </div>
 
-        <div className="flex items-center gap-2">
-          <span className="text-sm font-medium text-white">{match.awayTeam.shortName}</span>
+        <div className="flex items-center gap-2 min-w-0">
+          <span className="text-sm font-medium text-white truncate">{match.awayTeam.shortName}</span>
         </div>
       </div>
 

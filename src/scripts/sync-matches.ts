@@ -36,23 +36,35 @@ export async function syncMatches(mode: 'live' | 'upcoming' | 'results' | 'all' 
 
   if (mode === 'live' || mode === 'all') {
     const live = await fetchLiveMatches();
-    const output = live.map(m => normalizeMatch(m, timestamp));
-    await atomicallyWrite(join(dataDir, 'live.json'), output, errors);
-    console.log(`✅ Live matches: ${live.length}`);
+    if (live.length > 0) {
+      const output = live.map(m => normalizeMatch(m, timestamp));
+      await atomicallyWrite(join(dataDir, 'live.json'), output, errors);
+      console.log(`✅ Live matches: ${live.length}`);
+    } else {
+      console.warn('⚠️  Live fetch returned 0 matches — keeping existing live.json');
+    }
   }
 
   if (mode === 'upcoming' || mode === 'all') {
     const upcoming = await fetchUpcomingMatches();
-    const output = upcoming.map(m => normalizeMatch(m, timestamp));
-    await atomicallyWrite(join(dataDir, 'upcoming.json'), output, errors);
-    console.log(`✅ Upcoming matches: ${upcoming.length}`);
+    if (upcoming.length > 0) {
+      const output = upcoming.map(m => normalizeMatch(m, timestamp));
+      await atomicallyWrite(join(dataDir, 'upcoming.json'), output, errors);
+      console.log(`✅ Upcoming matches: ${upcoming.length}`);
+    } else {
+      console.warn('⚠️  Upcoming fetch returned 0 matches — keeping existing upcoming.json');
+    }
   }
 
   if (mode === 'results' || mode === 'all') {
     const results = await fetchRecentResults();
-    const output = results.map(m => normalizeMatch(m, timestamp));
-    await atomicallyWrite(join(dataDir, 'results.json'), output, errors);
-    console.log(`✅ Results: ${results.length}`);
+    if (results.length > 0) {
+      const output = results.map(m => normalizeMatch(m, timestamp));
+      await atomicallyWrite(join(dataDir, 'results.json'), output, errors);
+      console.log(`✅ Results: ${results.length}`);
+    } else {
+      console.warn('⚠️  Results fetch returned 0 matches — keeping existing results.json');
+    }
   }
 
   console.log(`ℹ️  Football API requests used this run: ${getApiRequestCount()}`);
@@ -87,7 +99,7 @@ function normalizeMatch(match: FootballMatch, timestamp: string): any {
     competition: {
       id: match.league.id ? `league-${match.league.id}` : 'premier-league',
       name: match.league.name,
-      shortName: match.league.name.split(' ').map(w => w[0]).join('').substring(0, 4).toUpperCase(),
+      shortName: competitionShortName(match.league.name, match.league.id),
       logo: match.league.logo || '',
       country: match.league.country,
       type: match.league.id === 2 ? 'cup' : 'league',
@@ -95,7 +107,7 @@ function normalizeMatch(match: FootballMatch, timestamp: string): any {
     homeTeam: {
       id: `team-${match.homeTeam.id}`,
       name: match.homeTeam.name,
-      shortName: match.homeTeam.name.substring(0, 3).toUpperCase(),
+      shortName: teamShortName(match.homeTeam.name),
       logo: match.homeTeam.logo || '',
       country: 'Unknown',
       league: match.league.name,
@@ -103,7 +115,7 @@ function normalizeMatch(match: FootballMatch, timestamp: string): any {
     awayTeam: {
       id: `team-${match.awayTeam.id}`,
       name: match.awayTeam.name,
-      shortName: match.awayTeam.name.substring(0, 3).toUpperCase(),
+      shortName: teamShortName(match.awayTeam.name),
       logo: match.awayTeam.logo || '',
       country: 'Unknown',
       league: match.league.name,
@@ -125,6 +137,30 @@ function normalizeMatch(match: FootballMatch, timestamp: string): any {
       type: 'football_api',
     },
   };
+}
+
+const COMPETITION_SHORT_NAMES: Record<number, string> = {
+  39: 'Premier League',
+  140: 'La Liga',
+  78: 'Bundesliga',
+  135: 'Serie A',
+  61: 'Ligue 1',
+  2: 'Champions League',
+};
+
+function competitionShortName(name: string, id: number): string {
+  return COMPETITION_SHORT_NAMES[id] || name;
+}
+
+function teamShortName(name: string): string {
+  // Drop leading ordinals like "1. ", drop dots/commas, then take the
+  // first alphabetic token and abbreviate sensibly.
+  const cleaned = name.replace(/^\d+\.\s*/, '').replace(/[.,]/g, ' ');
+  const tokens = cleaned.split(/\s+/).filter(Boolean);
+  if (tokens.length === 0) return name.substring(0, 3).toUpperCase();
+  const first = tokens[0];
+  if (first.length <= 3) return first.toUpperCase();
+  return first.substring(0, 3).toUpperCase();
 }
 
 async function atomicallyWrite(path: string, data: any[], errors: string[]): Promise<void> {

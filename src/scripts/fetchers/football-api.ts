@@ -45,18 +45,36 @@ async function apiFetch(endpoint: string, params: Record<string, string> = {}): 
   const url = new URL(`${config.football.baseUrl}${endpoint}`);
   Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
 
-  const res = await fetch(url.toString(), {
-    headers: {
-      'x-rapidapi-key': config.football.apiKey,
-      'x-rapidapi-host': config.football.apiHost,
-    },
-  });
+  const maxAttempts = 3;
+  let lastError: Error | null = null;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      const res = await fetch(url.toString(), {
+        headers: {
+          'x-rapidapi-key': config.football.apiKey,
+          'x-rapidapi-host': config.football.apiHost,
+        },
+      });
 
-  if (!res.ok) {
-    throw new Error(`API error: ${res.status} ${res.statusText}`);
+      if (res.status === 429 || res.status >= 500) {
+        throw new Error(`API error: ${res.status} ${res.statusText}`);
+      }
+
+      if (!res.ok) {
+        throw new Error(`API error: ${res.status} ${res.statusText}`);
+      }
+
+      return res.json();
+    } catch (error) {
+      lastError = error as Error;
+      if (attempt < maxAttempts) {
+        const delay = Math.min(1000 * Math.pow(2, attempt - 1), 4000);
+        await new Promise(r => setTimeout(r, delay));
+      }
+    }
   }
 
-  return res.json();
+  throw lastError || new Error('API request failed');
 }
 
 // The free API plan only exposes seasons 2022-2024, and date-range queries

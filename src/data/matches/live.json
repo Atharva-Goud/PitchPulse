@@ -1,51 +1,10 @@
 [
   {
-    "id": "match-1534849",
-    "competition": {
-      "id": "league-388",
-      "name": "1. Division",
-      "shortName": "1D",
-      "logo": "https://media.api-sports.io/football/leagues/388.png",
-      "country": "Kazakhstan",
-      "type": "league"
-    },
-    "homeTeam": {
-      "id": "team-4546",
-      "name": "Aktobe Jas",
-      "shortName": "AKT",
-      "logo": "https://media.api-sports.io/football/teams/4546.png",
-      "country": "Unknown",
-      "league": "1. Division"
-    },
-    "awayTeam": {
-      "id": "team-21502",
-      "name": "Turan Turkistan",
-      "shortName": "TUR",
-      "logo": "https://media.api-sports.io/football/teams/21502.png",
-      "country": "Unknown",
-      "league": "1. Division"
-    },
-    "homeScore": 1,
-    "awayScore": 2,
-    "status": "LIVE",
-    "kickoff": "2026-09-10T12:00:00+00:00",
-    "freshness": {
-      "status": "fresh",
-      "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
-    },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
-    "source": {
-      "provider": "API-Football",
-      "type": "football_api"
-    }
-  },
-  {
     "id": "match-1630437",
     "competition": {
       "id": "league-418",
       "name": "Birinci Dasta",
-      "shortName": "BD",
+      "shortName": "Birinci Dasta",
       "logo": "https://media.api-sports.io/football/leagues/418.png",
       "country": "Azerbaijan",
       "type": "league"
@@ -66,7 +25,7 @@
       "country": "Unknown",
       "league": "Birinci Dasta"
     },
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "LIVE",
     "kickoff": "2026-09-10T12:30:00+00:00",
@@ -74,9 +33,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -87,7 +46,7 @@
     "competition": {
       "id": "league-418",
       "name": "Birinci Dasta",
-      "shortName": "BD",
+      "shortName": "Birinci Dasta",
       "logo": "https://media.api-sports.io/football/leagues/418.png",
       "country": "Azerbaijan",
       "type": "league"
@@ -115,9 +74,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -128,7 +87,7 @@
     "competition": {
       "id": "league-340",
       "name": "V.League 1",
-      "shortName": "V1",
+      "shortName": "V.League 1",
       "logo": "https://media.api-sports.io/football/leagues/340.png",
       "country": "Vietnam",
       "type": "league"
@@ -157,9 +116,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -170,7 +129,7 @@
     "competition": {
       "id": "league-335",
       "name": "Cup",
-      "shortName": "C",
+      "shortName": "Cup",
       "logo": "https://media.api-sports.io/football/leagues/335.png",
       "country": "Ukraine",
       "type": "league"
@@ -198,135 +157,9 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
-    "source": {
-      "provider": "API-Football",
-      "type": "football_api"
-    }
-  },
-  {
-    "id": "match-1637323",
-    "competition": {
-      "id": "league-14",
-      "name": "UEFA Youth League",
-      "shortName": "UYL",
-      "logo": "https://media.api-sports.io/football/leagues/14.png",
-      "country": "World",
-      "type": "league"
-    },
-    "homeTeam": {
-      "id": "team-7965",
-      "name": "PSV U19",
-      "shortName": "PSV",
-      "logo": "https://media.api-sports.io/football/teams/7965.png",
-      "country": "Unknown",
-      "league": "UEFA Youth League"
-    },
-    "awayTeam": {
-      "id": "team-7929",
-      "name": "Shakhtar Donetsk U19",
-      "shortName": "SHA",
-      "logo": "https://media.api-sports.io/football/teams/7929.png",
-      "country": "Unknown",
-      "league": "UEFA Youth League"
-    },
-    "homeScore": 1,
-    "awayScore": 0,
-    "status": "LIVE",
-    "kickoff": "2026-09-10T12:00:00+00:00",
-    "venue": "De Herdgang",
-    "referee": "M. Grotta",
-    "freshness": {
-      "status": "fresh",
-      "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
-    },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
-    "source": {
-      "provider": "API-Football",
-      "type": "football_api"
-    }
-  },
-  {
-    "id": "match-1637324",
-    "competition": {
-      "id": "league-14",
-      "name": "UEFA Youth League",
-      "shortName": "UYL",
-      "logo": "https://media.api-sports.io/football/leagues/14.png",
-      "country": "World",
-      "type": "league"
-    },
-    "homeTeam": {
-      "id": "team-7933",
-      "name": "Slavia Praha U19",
-      "shortName": "SLA",
-      "logo": "https://media.api-sports.io/football/teams/7933.png",
-      "country": "Unknown",
-      "league": "UEFA Youth League"
-    },
-    "awayTeam": {
-      "id": "team-22372",
-      "name": "Lens U19",
-      "shortName": "LEN",
-      "logo": "https://media.api-sports.io/football/teams/22372.png",
-      "country": "Unknown",
-      "league": "UEFA Youth League"
-    },
-    "homeScore": 1,
-    "awayScore": 0,
-    "status": "LIVE",
-    "kickoff": "2026-09-10T12:00:00+00:00",
-    "referee": "J. Karlsen",
-    "freshness": {
-      "status": "fresh",
-      "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
-    },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
-    "source": {
-      "provider": "API-Football",
-      "type": "football_api"
-    }
-  },
-  {
-    "id": "match-1534852",
-    "competition": {
-      "id": "league-388",
-      "name": "1. Division",
-      "shortName": "1D",
-      "logo": "https://media.api-sports.io/football/leagues/388.png",
-      "country": "Kazakhstan",
-      "type": "league"
-    },
-    "homeTeam": {
-      "id": "team-4556",
-      "name": "Sport Academy Kairat",
-      "shortName": "SPO",
-      "logo": "https://media.api-sports.io/football/teams/4556.png",
-      "country": "Unknown",
-      "league": "1. Division"
-    },
-    "awayTeam": {
-      "id": "team-4548",
-      "name": "Astana II",
-      "shortName": "AST",
-      "logo": "https://media.api-sports.io/football/teams/4548.png",
-      "country": "Unknown",
-      "league": "1. Division"
-    },
-    "homeScore": 1,
-    "awayScore": 2,
-    "status": "LIVE",
-    "kickoff": "2026-09-10T11:00:00+00:00",
-    "freshness": {
-      "status": "fresh",
-      "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
-    },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -337,7 +170,7 @@
     "competition": {
       "id": "league-388",
       "name": "1. Division",
-      "shortName": "1D",
+      "shortName": "1. Division",
       "logo": "https://media.api-sports.io/football/leagues/388.png",
       "country": "Kazakhstan",
       "type": "league"
@@ -365,52 +198,135 @@
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
     }
   },
   {
-    "id": "match-1637321",
+    "id": "match-1534849",
+    "competition": {
+      "id": "league-388",
+      "name": "1. Division",
+      "shortName": "1. Division",
+      "logo": "https://media.api-sports.io/football/leagues/388.png",
+      "country": "Kazakhstan",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-4546",
+      "name": "Aktobe Jas",
+      "shortName": "AKT",
+      "logo": "https://media.api-sports.io/football/teams/4546.png",
+      "country": "Unknown",
+      "league": "1. Division"
+    },
+    "awayTeam": {
+      "id": "team-21502",
+      "name": "Turan Turkistan",
+      "shortName": "TUR",
+      "logo": "https://media.api-sports.io/football/teams/21502.png",
+      "country": "Unknown",
+      "league": "1. Division"
+    },
+    "homeScore": 1,
+    "awayScore": 3,
+    "status": "HALFTIME",
+    "kickoff": "2026-09-10T12:00:00+00:00",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
+    },
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1637323",
     "competition": {
       "id": "league-14",
       "name": "UEFA Youth League",
-      "shortName": "UYL",
+      "shortName": "UEFA Youth League",
       "logo": "https://media.api-sports.io/football/leagues/14.png",
       "country": "World",
       "type": "league"
     },
     "homeTeam": {
-      "id": "team-28245",
-      "name": "Fenerbahce U19",
-      "shortName": "FEN",
-      "logo": "https://media.api-sports.io/football/teams/28245.png",
+      "id": "team-7965",
+      "name": "PSV U19",
+      "shortName": "PSV",
+      "logo": "https://media.api-sports.io/football/teams/7965.png",
       "country": "Unknown",
       "league": "UEFA Youth League"
     },
     "awayTeam": {
-      "id": "team-7966",
-      "name": "Roma U19",
-      "shortName": "ROM",
-      "logo": "https://media.api-sports.io/football/teams/7966.png",
+      "id": "team-7929",
+      "name": "Shakhtar Donetsk U19",
+      "shortName": "SHA",
+      "logo": "https://media.api-sports.io/football/teams/7929.png",
       "country": "Unknown",
       "league": "UEFA Youth League"
     },
-    "homeScore": 2,
-    "awayScore": 2,
-    "status": "LIVE",
-    "kickoff": "2026-09-10T11:00:00+00:00",
-    "venue": "Pendik Stadyumu",
-    "referee": "K. Roucek",
+    "homeScore": 1,
+    "awayScore": 0,
+    "status": "HALFTIME",
+    "kickoff": "2026-09-10T12:00:00+00:00",
+    "venue": "De Herdgang",
+    "referee": "M. Grotta",
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:38:52.469Z"
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
     },
-    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1637324",
+    "competition": {
+      "id": "league-14",
+      "name": "UEFA Youth League",
+      "shortName": "UEFA Youth League",
+      "logo": "https://media.api-sports.io/football/leagues/14.png",
+      "country": "World",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-7933",
+      "name": "Slavia Praha U19",
+      "shortName": "SLA",
+      "logo": "https://media.api-sports.io/football/teams/7933.png",
+      "country": "Unknown",
+      "league": "UEFA Youth League"
+    },
+    "awayTeam": {
+      "id": "team-22372",
+      "name": "Lens U19",
+      "shortName": "LEN",
+      "logo": "https://media.api-sports.io/football/teams/22372.png",
+      "country": "Unknown",
+      "league": "UEFA Youth League"
+    },
+    "homeScore": 1,
+    "awayScore": 0,
+    "status": "HALFTIME",
+    "kickoff": "2026-09-10T12:00:00+00:00",
+    "referee": "J. Karlsen",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:56:03.404Z"
+    },
+    "lastUpdated": "2026-09-10T12:56:03.404Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
