@@ -10,6 +10,7 @@ import EmptyState from '@/components/ui/EmptyState';
 import LoadingState from '@/components/ui/LoadingState';
 import FallbackImage from '@/components/ui/Image';
 import TeamLogo from '@/components/ui/TeamLogo';
+import FootballQuiz from '@/components/quiz/FootballQuiz';
 import { getLatestNews, getTrendingNews } from '@/lib/data/news';
 import { getLiveMatches, getUpcomingMatches, getRecentResults } from '@/lib/data/matches';
 import { getTransferRumours, getConfirmedTransfers } from '@/lib/data/transfers';
@@ -339,6 +340,16 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+      </div>
+
+      <div className="mx-auto max-w-7xl px-4 py-16">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-white tracking-tight">Football Quiz</h2>
+          <p className="mt-3 text-slate-400 max-w-2xl mx-auto">
+            Test your football knowledge with 5 questions from our pool.
+          </p>
+        </div>
+        <FootballQuiz />
       </div>
     </div>
   );
