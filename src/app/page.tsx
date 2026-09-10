@@ -4,6 +4,7 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import NewsCard from '@/components/news/NewsCard';
 import MatchCard from '@/components/matches/MatchCard';
 import TransferCard from '@/components/transfers/TransferCard';
+import ContainerScroll from '@/components/home/ContainerScroll';
 import EmptyState from '@/components/ui/EmptyState';
 import LoadingState from '@/components/ui/LoadingState';
 import FallbackImage from '@/components/ui/Image';
@@ -85,40 +86,63 @@ export default function HomePage() {
 
   const featuredCompetitions = competitions.slice(0, 6);
 
+  const heroTitle = (
+    <div className="max-w-2xl">
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+        Football intelligence.
+        <span className="block text-emerald-400">All in one place.</span>
+      </h1>
+      <p className="mt-6 text-lg text-slate-400">
+        Stay ahead with real-time scores, breaking transfer news, and comprehensive match analysis from leagues around the world.
+      </p>
+      <div className="mt-8 flex flex-wrap gap-3">
+        <Link
+          href="/news"
+          className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-lg transition-colors"
+        >
+          Latest News
+        </Link>
+        <Link
+          href="/transfers"
+          className="px-6 py-3 bg-white/10 hover:bg-white/15 text-white font-medium rounded-lg transition-colors border border-white/20"
+        >
+          Transfer Centre
+        </Link>
+      </div>
+    </div>
+  );
+
+  const heroPreview = (
+    <div className="grid gap-6 md:grid-cols-2">
+      <div className="rounded-xl border border-white/10 bg-slate-900 p-6">
+        <div className="mb-4 flex items-center justify-between">
+          <span className="text-xs font-medium uppercase tracking-wide text-emerald-400">
+            Live Now
+          </span>
+          <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
+        </div>
+        {liveMatches[0] ? (
+          <MatchCard match={liveMatches[0]} variant="live" />
+        ) : (
+          <div className="py-8 text-center text-sm text-slate-500">No live matches</div>
+        )}
+      </div>
+      <div className="rounded-xl border border-white/10 bg-slate-900 p-6">
+        <div className="mb-4 text-xs font-medium uppercase tracking-wide text-emerald-400">
+          Latest News
+        </div>
+        <div className="space-y-3">
+          {news.slice(0, 3).map((article) => (
+            <NewsCard key={article.id} article={article} variant="compact" />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-950">
-      <section className="relative overflow-hidden border-b border-white/10 bg-gradient-to-b from-slate-950 via-slate-900/50 to-slate-950">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl" />
-        </div>
-        
-        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:py-24">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-              Football intelligence.
-              <span className="block text-emerald-400">All in one place.</span>
-            </h1>
-            <p className="mt-6 text-lg text-slate-400">
-              Stay ahead with real-time scores, breaking transfer news, and comprehensive match analysis from leagues around the world.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href="/news"
-                className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-lg transition-colors"
-              >
-                Latest News
-              </Link>
-              <Link
-                href="/transfers"
-                className="px-6 py-3 bg-white/10 hover:bg-white/15 text-white font-medium rounded-lg transition-colors border border-white/20"
-              >
-                Transfer Centre
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContainerScroll titleComponent={heroTitle}>{heroPreview}</ContainerScroll>
 
       <div className="mx-auto max-w-7xl px-4 py-12 space-y-12">
         {liveMatches.length > 0 && (
