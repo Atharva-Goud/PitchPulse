@@ -174,7 +174,7 @@ export default function HomePage() {
             <EmptyState
               type="matches"
               message="No upcoming fixtures"
-              reason="The free football data plan only covers past seasons, so no upcoming fixtures are available right now."
+              reason="The free football data plan only covers seasons 2022-2024, and the 2024 season ended in May 2025. No future fixtures exist in the available data yet."
             />
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -191,7 +191,7 @@ export default function HomePage() {
             <EmptyState
               type="matches"
               message="No recent results"
-              reason="The free football data plan only covers past seasons, so no recent results are available right now."
+              reason="The free football data plan only covers seasons 2022-2024, so results shown are from the 2024 season (ended May 2025)."
             />
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -4,3 +4,4 @@ node_modules/
 .env.local
 *.tsbuildinfo
 .kilo/
+next-env.d.ts

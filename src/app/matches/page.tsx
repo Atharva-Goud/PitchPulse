@@ -124,8 +124,8 @@ export default function MatchesPage() {
             reason={activeTab === 'live'
               ? 'No fixtures are currently in progress.'
               : activeTab === 'upcoming'
-                ? 'The free football data plan only covers past seasons, so no upcoming fixtures are available right now.'
-                : 'The free football data plan only covers past seasons, so no recent results are available right now.'}
+                ? 'The free football data plan only covers seasons 2022-2024, and the 2024 season ended in May 2025. No future fixtures exist in the available data yet.'
+                : 'The free football data plan only covers seasons 2022-2024, so results shown are from the 2024 season (ended May 2025).'}
           />
         ) : activeTab === 'live' ? (
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

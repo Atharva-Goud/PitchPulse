@@ -1,1 +1,862 @@
-[]
+[
+  {
+    "id": "match-1375863",
+    "competition": {
+      "id": "league-78",
+      "name": "Bundesliga",
+      "shortName": "B",
+      "logo": "https://media.api-sports.io/football/leagues/78.png",
+      "country": "Germany",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-1660",
+      "name": "SV Elversberg",
+      "shortName": "SV ",
+      "logo": "https://media.api-sports.io/football/teams/1660.png",
+      "country": "Unknown",
+      "league": "Bundesliga"
+    },
+    "awayTeam": {
+      "id": "team-180",
+      "name": "1. FC Heidenheim",
+      "shortName": "1. ",
+      "logo": "https://media.api-sports.io/football/teams/180.png",
+      "country": "Unknown",
+      "league": "Bundesliga"
+    },
+    "homeScore": 1,
+    "awayScore": 2,
+    "status": "FINISHED",
+    "kickoff": "2025-05-26T18:30:00+00:00",
+    "venue": "URSAPHARM-Arena an der Kaiserlinde",
+    "referee": "S. Stegemann",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208827",
+    "competition": {
+      "id": "league-140",
+      "name": "La Liga",
+      "shortName": "LL",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "country": "Spain",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-531",
+      "name": "Athletic Club",
+      "shortName": "ATH",
+      "logo": "https://media.api-sports.io/football/teams/531.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "awayTeam": {
+      "id": "team-529",
+      "name": "Barcelona",
+      "shortName": "BAR",
+      "logo": "https://media.api-sports.io/football/teams/529.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "homeScore": 0,
+    "awayScore": 3,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T19:00:00+00:00",
+    "venue": "San Mamés Barria",
+    "referee": "Pablo González",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208397",
+    "competition": {
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "PL",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-33",
+      "name": "Manchester United",
+      "shortName": "MAN",
+      "logo": "https://media.api-sports.io/football/teams/33.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "awayTeam": {
+      "id": "team-66",
+      "name": "Aston Villa",
+      "shortName": "AST",
+      "logo": "https://media.api-sports.io/football/teams/66.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "homeScore": 2,
+    "awayScore": 0,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T15:00:00+00:00",
+    "venue": "Old Trafford",
+    "referee": "T. Bramall",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208398",
+    "competition": {
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "PL",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-34",
+      "name": "Newcastle",
+      "shortName": "NEW",
+      "logo": "https://media.api-sports.io/football/teams/34.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "awayTeam": {
+      "id": "team-45",
+      "name": "Everton",
+      "shortName": "EVE",
+      "logo": "https://media.api-sports.io/football/teams/45.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "homeScore": 0,
+    "awayScore": 1,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T15:00:00+00:00",
+    "venue": "St. James' Park",
+    "referee": "T. Harrington",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208393",
+    "competition": {
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "PL",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-35",
+      "name": "Bournemouth",
+      "shortName": "BOU",
+      "logo": "https://media.api-sports.io/football/teams/35.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "awayTeam": {
+      "id": "team-46",
+      "name": "Leicester",
+      "shortName": "LEI",
+      "logo": "https://media.api-sports.io/football/teams/46.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "homeScore": 2,
+    "awayScore": 0,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T15:00:00+00:00",
+    "venue": "Vitality Stadium",
+    "referee": "L. Smith",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208394",
+    "competition": {
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "PL",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-36",
+      "name": "Fulham",
+      "shortName": "FUL",
+      "logo": "https://media.api-sports.io/football/teams/36.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "awayTeam": {
+      "id": "team-50",
+      "name": "Manchester City",
+      "shortName": "MAN",
+      "logo": "https://media.api-sports.io/football/teams/50.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "homeScore": 0,
+    "awayScore": 2,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T15:00:00+00:00",
+    "venue": "Craven Cottage",
+    "referee": "A. Madley",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208402",
+    "competition": {
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "PL",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-39",
+      "name": "Wolves",
+      "shortName": "WOL",
+      "logo": "https://media.api-sports.io/football/teams/39.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "awayTeam": {
+      "id": "team-55",
+      "name": "Brentford",
+      "shortName": "BRE",
+      "logo": "https://media.api-sports.io/football/teams/55.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T15:00:00+00:00",
+    "venue": "Molineux Stadium",
+    "referee": "C. Pawson",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208396",
+    "competition": {
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "PL",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-40",
+      "name": "Liverpool",
+      "shortName": "LIV",
+      "logo": "https://media.api-sports.io/football/teams/40.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "awayTeam": {
+      "id": "team-52",
+      "name": "Crystal Palace",
+      "shortName": "CRY",
+      "logo": "https://media.api-sports.io/football/teams/52.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T15:00:00+00:00",
+    "venue": "Anfield",
+    "referee": "D. England",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208400",
+    "competition": {
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "PL",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-41",
+      "name": "Southampton",
+      "shortName": "SOU",
+      "logo": "https://media.api-sports.io/football/teams/41.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "awayTeam": {
+      "id": "team-42",
+      "name": "Arsenal",
+      "shortName": "ARS",
+      "logo": "https://media.api-sports.io/football/teams/42.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "homeScore": 1,
+    "awayScore": 2,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T15:00:00+00:00",
+    "venue": "St. Mary's Stadium",
+    "referee": "D. Bond",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208401",
+    "competition": {
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "PL",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-47",
+      "name": "Tottenham",
+      "shortName": "TOT",
+      "logo": "https://media.api-sports.io/football/teams/47.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "awayTeam": {
+      "id": "team-51",
+      "name": "Brighton",
+      "shortName": "BRI",
+      "logo": "https://media.api-sports.io/football/teams/51.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "homeScore": 1,
+    "awayScore": 4,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T15:00:00+00:00",
+    "venue": "Tottenham Hotspur Stadium",
+    "referee": "R. Jones",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208395",
+    "competition": {
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "PL",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-57",
+      "name": "Ipswich",
+      "shortName": "IPS",
+      "logo": "https://media.api-sports.io/football/teams/57.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "awayTeam": {
+      "id": "team-48",
+      "name": "West Ham",
+      "shortName": "WES",
+      "logo": "https://media.api-sports.io/football/teams/48.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "homeScore": 1,
+    "awayScore": 3,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T15:00:00+00:00",
+    "venue": "Portman Road",
+    "referee": "T. Robinson",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208399",
+    "competition": {
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "PL",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-65",
+      "name": "Nottingham Forest",
+      "shortName": "NOT",
+      "logo": "https://media.api-sports.io/football/teams/65.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "awayTeam": {
+      "id": "team-49",
+      "name": "Chelsea",
+      "shortName": "CHE",
+      "logo": "https://media.api-sports.io/football/teams/49.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "homeScore": 0,
+    "awayScore": 1,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T15:00:00+00:00",
+    "venue": "The City Ground",
+    "referee": "A. Taylor",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208835",
+    "competition": {
+      "id": "league-140",
+      "name": "La Liga",
+      "shortName": "LL",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "country": "Spain",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-533",
+      "name": "Villarreal",
+      "shortName": "VIL",
+      "logo": "https://media.api-sports.io/football/teams/533.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "awayTeam": {
+      "id": "team-536",
+      "name": "Sevilla",
+      "shortName": "SEV",
+      "logo": "https://media.api-sports.io/football/teams/536.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "homeScore": 4,
+    "awayScore": 2,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T14:15:00+00:00",
+    "venue": "Estadio de la Cerámica",
+    "referee": "Javier Alberola",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208832",
+    "competition": {
+      "id": "league-140",
+      "name": "La Liga",
+      "shortName": "LL",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "country": "Spain",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-547",
+      "name": "Girona",
+      "shortName": "GIR",
+      "logo": "https://media.api-sports.io/football/teams/547.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "awayTeam": {
+      "id": "team-530",
+      "name": "Atletico Madrid",
+      "shortName": "ATL",
+      "logo": "https://media.api-sports.io/football/teams/530.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "homeScore": 0,
+    "awayScore": 4,
+    "status": "FINISHED",
+    "kickoff": "2025-05-25T12:00:00+00:00",
+    "venue": "Estadi Municipal de Montilivi",
+    "referee": "Gil Manzano",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208830",
+    "competition": {
+      "id": "league-140",
+      "name": "La Liga",
+      "shortName": "LL",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "country": "Spain",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-542",
+      "name": "Alaves",
+      "shortName": "ALA",
+      "logo": "https://media.api-sports.io/football/teams/542.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "awayTeam": {
+      "id": "team-727",
+      "name": "Osasuna",
+      "shortName": "OSA",
+      "logo": "https://media.api-sports.io/football/teams/727.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "FINISHED",
+    "kickoff": "2025-05-24T19:00:00+00:00",
+    "venue": "Estadio de Mendizorroza",
+    "referee": "Guillermo Cuadra",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208833",
+    "competition": {
+      "id": "league-140",
+      "name": "La Liga",
+      "shortName": "LL",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "country": "Spain",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-546",
+      "name": "Getafe",
+      "shortName": "GET",
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "awayTeam": {
+      "id": "team-538",
+      "name": "Celta Vigo",
+      "shortName": "CEL",
+      "logo": "https://media.api-sports.io/football/teams/538.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "homeScore": 1,
+    "awayScore": 2,
+    "status": "FINISHED",
+    "kickoff": "2025-05-24T19:00:00+00:00",
+    "venue": "Estadio Coliseum",
+    "referee": "Juan Martínez",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208834",
+    "competition": {
+      "id": "league-140",
+      "name": "La Liga",
+      "shortName": "LL",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "country": "Spain",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-728",
+      "name": "Rayo Vallecano",
+      "shortName": "RAY",
+      "logo": "https://media.api-sports.io/football/teams/728.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "awayTeam": {
+      "id": "team-798",
+      "name": "Mallorca",
+      "shortName": "MAL",
+      "logo": "https://media.api-sports.io/football/teams/798.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "homeScore": 0,
+    "awayScore": 0,
+    "status": "FINISHED",
+    "kickoff": "2025-05-24T19:00:00+00:00",
+    "venue": "Estadio de Vallecas",
+    "referee": "Ricardo De Burgos",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208831",
+    "competition": {
+      "id": "league-140",
+      "name": "La Liga",
+      "shortName": "LL",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "country": "Spain",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-537",
+      "name": "Leganes",
+      "shortName": "LEG",
+      "logo": "https://media.api-sports.io/football/teams/537.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "awayTeam": {
+      "id": "team-720",
+      "name": "Valladolid",
+      "shortName": "VAL",
+      "logo": "https://media.api-sports.io/football/teams/720.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "homeScore": 3,
+    "awayScore": 0,
+    "status": "FINISHED",
+    "kickoff": "2025-05-24T16:30:00+00:00",
+    "venue": "Estadio Municipal de Butarque",
+    "referee": "César Soto",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1212947",
+    "competition": {
+      "id": "league-140",
+      "name": "La Liga",
+      "shortName": "LL",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "country": "Spain",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-540",
+      "name": "Espanyol",
+      "shortName": "ESP",
+      "logo": "https://media.api-sports.io/football/teams/540.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "awayTeam": {
+      "id": "team-534",
+      "name": "Las Palmas",
+      "shortName": "LAS",
+      "logo": "https://media.api-sports.io/football/teams/534.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "homeScore": 2,
+    "awayScore": 0,
+    "status": "FINISHED",
+    "kickoff": "2025-05-24T16:30:00+00:00",
+    "venue": "RCDE Stadium",
+    "referee": "Alejandro Muñiz",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-1208829",
+    "competition": {
+      "id": "league-140",
+      "name": "La Liga",
+      "shortName": "LL",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "country": "Spain",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-541",
+      "name": "Real Madrid",
+      "shortName": "REA",
+      "logo": "https://media.api-sports.io/football/teams/541.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "awayTeam": {
+      "id": "team-548",
+      "name": "Real Sociedad",
+      "shortName": "REA",
+      "logo": "https://media.api-sports.io/football/teams/548.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "homeScore": 2,
+    "awayScore": 0,
+    "status": "FINISHED",
+    "kickoff": "2025-05-24T14:15:00+00:00",
+    "venue": "Estadio Santiago Bernabéu",
+    "referee": "Mario Melero",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-09-10T12:38:52.469Z"
+    },
+    "lastUpdated": "2026-09-10T12:38:52.469Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  }
+]

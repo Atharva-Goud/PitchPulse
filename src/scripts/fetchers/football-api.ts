@@ -96,14 +96,13 @@ export async function fetchUpcomingMatches(leagueId?: number, days: number = 7):
   }
 }
 
-export async function fetchRecentResults(leagueId?: number, days: number = 3): Promise<FootballMatch[]> {
+export async function fetchRecentResults(leagueId?: number, limit: number = 20): Promise<FootballMatch[]> {
   try {
-    const dateFrom = Date.now() - days * 86400000;
     const matches = await fetchFixturesBySeason(leagueId);
     return matches
-      .filter(m => new Date(m.kickoff).getTime() >= dateFrom)
       .filter(m => new Date(m.kickoff).getTime() <= Date.now())
-      .sort((a, b) => new Date(b.kickoff).getTime() - new Date(a.kickoff).getTime());
+      .sort((a, b) => new Date(b.kickoff).getTime() - new Date(a.kickoff).getTime())
+      .slice(0, limit);
   } catch (error) {
     console.error('Failed to fetch recent results:', error);
     return [];
