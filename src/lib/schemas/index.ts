@@ -100,7 +100,7 @@ export const MatchSchema = z.object({
   homeScore: z.number().nullable(),
   awayScore: z.number().nullable(),
   status: z.enum(['SCHEDULED', 'LIVE', 'HALFTIME', 'FINISHED', 'POSTPONED', 'CANCELLED']),
-  kickoff: z.string().datetime(),
+  kickoff: z.string().datetime({ offset: true }),
   venue: z.string().optional(),
   referee: z.string().optional(),
   matchday: z.number().optional(),
