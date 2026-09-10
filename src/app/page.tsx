@@ -1,6 +1,7 @@
 'use client';
 
 import SectionHeader from '@/components/ui/SectionHeader';
+import { GlowCard } from '@/components/ui/spotlight-card';
 import NewsCard from '@/components/news/NewsCard';
 import MatchCard from '@/components/matches/MatchCard';
 import TransferCard from '@/components/transfers/TransferCard';
@@ -143,6 +144,58 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-950">
       <ContainerScroll titleComponent={heroTitle}>{heroPreview}</ContainerScroll>
+
+      <section className="mx-auto max-w-7xl px-4 py-16">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-white tracking-tight">
+            Everything you need to stay ahead
+          </h2>
+          <p className="mt-3 text-slate-400 max-w-2xl mx-auto">
+            Real-time scores, breaking transfers, and deep match analysis from leagues around the world.
+          </p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-3">
+          <GlowCard className="p-6">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/15 text-emerald-400">
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white">Live Scores</h3>
+            </div>
+            <p className="text-sm text-slate-400">
+              Follow every goal, card, and substitution as it happens from leagues around the world.
+            </p>
+          </GlowCard>
+          <GlowCard className="p-6">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/15 text-emerald-400">
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-2a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white">Transfer Centre</h3>
+            </div>
+            <p className="text-sm text-slate-400">
+              Track rumours, confirmations, and completed deals with reliability scoring and source context.
+            </p>
+          </GlowCard>
+          <GlowCard className="p-6">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/15 text-emerald-400">
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white">Match Analysis</h3>
+            </div>
+            <p className="text-sm text-slate-400">
+              Deep dive into fixtures, head-to-head records, and form trends before kickoff.
+            </p>
+          </GlowCard>
+        </div>
+      </section>
 
       <div className="mx-auto max-w-7xl px-4 py-12 space-y-12">
         {liveMatches.length > 0 && (
