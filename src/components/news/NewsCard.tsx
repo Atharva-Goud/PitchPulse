@@ -71,8 +71,8 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
         rel="noopener noreferrer"
         className="flex gap-3 p-3 hover:bg-white/5 rounded-lg transition-colors group"
       >
-        <div className="relative h-20 w-28 rounded-lg flex-shrink-0">
-          <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" />
+        <div className="relative h-20 w-28 rounded-lg flex-shrink-0 overflow-hidden">
+          <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" fill sizes="112px" />
         </div>
         <div className="flex-1 min-w-0">
           <span className={`text-xs px-2 py-0.5 rounded ${categoryClass}`}>
@@ -95,8 +95,8 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
     return (
       <article className="relative group rounded-2xl overflow-hidden bg-slate-900 border border-white/10">
         <Link href={article.sourceUrl} target="_blank" rel="noopener noreferrer">
-          <div className="relative aspect-video">
-            <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" />
+          <div className="relative aspect-video overflow-hidden">
+            <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" fill sizes="(max-width: 768px) 100vw, 50vw" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/50 to-transparent" />
           </div>
         </Link>
@@ -145,8 +145,8 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
   return (
     <article className="group rounded-xl overflow-hidden bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-colors">
       <Link href={article.sourceUrl} target="_blank" rel="noopener noreferrer" className="block">
-        <div className="relative aspect-[16/10]">
-          <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" />
+        <div className="relative aspect-[16/10] overflow-hidden">
+          <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" fill sizes="(max-width: 1024px) 50vw, 33vw" />
         </div>
       </Link>
 
