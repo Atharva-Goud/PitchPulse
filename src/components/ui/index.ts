@@ -7,3 +7,4 @@ export { default as ErrorState } from './ErrorState';
 export { default as SectionHeader } from './SectionHeader';
 export { GlowCard } from './spotlight-card';
 export { BeamsBackground } from './beams-background';
+export { Component as LiquidGlass } from './liquid-glass';

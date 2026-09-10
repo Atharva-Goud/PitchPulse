@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Search, Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Component as LiquidGlass } from '@/components/ui/liquid-glass';
 import SearchModal from '@/components/search/SearchModal';
 
 const navItems = [
@@ -18,10 +19,30 @@ export default function Header() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setScrolled(window.scrollY > 8);
+        ticking = false;
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/95 backdrop-blur">
+      <LiquidGlass
+        as="header"
+        active={scrolled}
+        className="sticky top-0 z-50"
+      >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
@@ -70,7 +91,7 @@ export default function Header() {
         </div>
 
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-white/10 bg-slate-950">
+          <div className="md:hidden border-t border-white/10">
             <nav className="px-4 py-3 space-y-1">
               {navItems.map(item => (
                 <Link
@@ -89,7 +110,7 @@ export default function Header() {
             </nav>
           </div>
         )}
-      </header>
+      </LiquidGlass>
 
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
