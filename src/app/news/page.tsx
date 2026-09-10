@@ -50,7 +50,7 @@ export default function NewsPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-950">
+      <div className="min-h-screen">
         <div className="mx-auto max-w-7xl px-4 py-12">
           <LoadingState variant="card" count={6} />
         </div>
@@ -59,7 +59,7 @@ export default function NewsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-950">
+    <div className="min-h-screen">
       <div className="mx-auto max-w-7xl px-4 py-12">
         <div className="mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">Football News</h1>
@@ -175,3 +175,4 @@ export default function NewsPage() {
     </div>
   );
 }
+

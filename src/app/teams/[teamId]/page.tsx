@@ -62,7 +62,7 @@ export default function TeamPage({ params }: Props) {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-950">
+      <div className="min-h-screen">
         <div className="mx-auto max-w-7xl px-4 py-12">
           <LoadingState variant="card" count={3} />
         </div>
@@ -72,7 +72,7 @@ export default function TeamPage({ params }: Props) {
 
   if (!team) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-950 flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <EmptyState type="teams" message="Team not found" />
       </div>
     );
@@ -82,7 +82,7 @@ export default function TeamPage({ params }: Props) {
   const recentResults = matches.filter(m => m.status === 'FINISHED').slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-950">
+    <div className="min-h-screen">
       <div className="relative overflow-hidden border-b border-white/10 bg-gradient-to-b from-slate-900/50 to-slate-950">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/30 rounded-full blur-3xl" />

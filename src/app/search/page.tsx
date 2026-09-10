@@ -103,14 +103,14 @@ export default function SearchPage() {
 
   if (query && !loading && results.length === 0) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-950 flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <EmptyState type="search" message={`No results for "${query}"`} />
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-950">
+    <div className="min-h-screen">
       <div className="mx-auto max-w-3xl px-4 py-12">
         <div className="mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">Search</h1>

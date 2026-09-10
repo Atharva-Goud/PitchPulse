@@ -77,7 +77,7 @@ export default function HomePage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-950">
+<div className="min-h-screen">
         <div className="mx-auto max-w-7xl px-4 py-12">
           <LoadingState variant="card" count={6} />
         </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-950">
+    <div className="min-h-screen">
       <ContainerScroll titleComponent={heroTitle}>{heroPreview}</ContainerScroll>
 
       <section className="mx-auto max-w-7xl px-4 py-16">
