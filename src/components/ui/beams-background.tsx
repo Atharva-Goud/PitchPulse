@@ -18,11 +18,11 @@ interface BeamsBackgroundProps {
  * the dark design language. Respects `prefers-reduced-motion`.
  */
 export function BeamsBackground({
-  beamCount = 6,
+  beamCount = 10,
   beamColor = '16, 185, 129',
-  speed = 0.4,
+  speed = 0.6,
   className = '',
-  opacity = 0.5,
+  opacity = 1,
 }: BeamsBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -52,15 +52,16 @@ export function BeamsBackground({
     const beams: Beam[] = Array.from({ length: beamCount }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
-      length: 80 + Math.random() * 160,
+      length: 120 + Math.random() * 240,
       speedX: (Math.random() - 0.5) * speed,
       speedY: (Math.random() - 0.5) * speed,
-      thickness: 1 + Math.random() * 1.5,
+      thickness: 2 + Math.random() * 2.5,
       phase: Math.random() * Math.PI * 2,
     }));
 
     const draw = () => {
       ctx.clearRect(0, 0, width, height);
+      ctx.globalCompositeOperation = 'lighter';
 
       for (const beam of beams) {
         beam.x += beam.speedX;
@@ -73,24 +74,21 @@ export function BeamsBackground({
         if (beam.y < -beam.length) beam.y = height + beam.length;
         if (beam.y > height + beam.length) beam.y = -beam.length;
 
-        const alpha = (0.15 + 0.35 * (0.5 + 0.5 * Math.sin(beam.phase))) * opacity;
-        const grad = ctx.createLinearGradient(
-          beam.x,
-          beam.y,
-          beam.x + beam.length * 0.7,
-          beam.y + beam.length * 0.7
-        );
-        grad.addColorStop(0, `rgba(${beamColor}, 0)`);
-        grad.addColorStop(0.5, `rgba(${beamColor}, ${alpha})`);
-        grad.addColorStop(1, `rgba(${beamColor}, 0)`);
+        const alpha = (0.7 + 0.3 * Math.sin(beam.phase)) * opacity;
+        const color = `rgba(${beamColor}, ${alpha})`;
 
-        ctx.strokeStyle = grad;
+        ctx.shadowColor = color;
+        ctx.shadowBlur = 40;
+        ctx.strokeStyle = color;
         ctx.lineWidth = beam.thickness;
         ctx.beginPath();
         ctx.moveTo(beam.x, beam.y);
         ctx.lineTo(beam.x + beam.length, beam.y + beam.length);
         ctx.stroke();
       }
+
+      ctx.globalCompositeOperation = 'source-over';
+      ctx.shadowBlur = 0;
 
       animationId = requestAnimationFrame(draw);
     };
