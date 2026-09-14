@@ -1,8 +1,9 @@
-import { writeFile, mkdir, readFile } from 'fs/promises';
+import { writeFile, mkdir } from 'fs/promises';
 import { join } from 'path';
 import { fetchAllNewsFeeds, FetchedNewsItem } from './fetchers/rss-news';
 import { fetchFromNewsAPI } from './fetchers/newsapi';
 import { updateNewsImageCount } from './update-news-image-count';
+import { calculateFreshness } from '../lib/engine/freshness';
 
 export interface SyncResult {
   itemsFound: number;
@@ -10,6 +11,85 @@ export interface SyncResult {
   duplicatesRemoved: number;
   errors: string[];
   timestamp: string;
+}
+
+export interface SyncedNewsArticle {
+  id: string;
+  title: string;
+  summary: string;
+  source: {
+    name: string;
+    type: string;
+    url: string;
+    credibilityScore: number;
+  };
+  sourceName: string;
+  sourceUrl: string;
+  image: string | null;
+  category: string;
+  originalUrl: string;
+  publishedAt: string;
+  discoveredAt: string;
+  lastVerifiedAt: string;
+  dataStatus: string;
+  freshness: {
+    status: string;
+    ageMinutes: number;
+    label: string;
+    publishedAt: string;
+    lastUpdated: string;
+  };
+  verification: {
+    level: string;
+    sources: Array<{
+      id: string;
+      name: string;
+      type: string;
+      url: string;
+      credibilityScore: number;
+      publishedAt: string;
+      discoveredAt: string;
+    }>;
+    confidenceScore: number;
+    confidenceReasons: string[];
+    confirmedBy: string[];
+    verificationCount: number;
+  };
+  relatedTeams: string[];
+}
+
+export interface BuildNewsOutput {
+  latest: SyncedNewsArticle[];
+  trending: SyncedNewsArticle[];
+  unique: FetchedNewsItem[];
+  itemsFound: number;
+}
+
+/**
+ * Build the latest + trending article lists in memory.
+ *
+ * This is separated from writeOutput() so the same logic can be reused by
+ * the server-side news refresh (which must never block the request on a
+ * full disk write) and by the manual sync script.
+ */
+export function buildNewsOutput(
+  allItems: FetchedNewsItem[],
+  timestamp: string
+): BuildNewsOutput {
+  const unique = deduplicateNews(allItems);
+  const sorted = unique.sort((a, b) =>
+    new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+
+  const latest = sorted.slice(0, 30);
+  const trending = getTrending(sorted);
+
+  return {
+    latest: latest.map(item => mapToOutput(item, timestamp)),
+    trending: trending.map(item => mapToOutput(item, timestamp)),
+    unique,
+    itemsFound: allItems.length,
+  };
 }
 
 export async function syncNews(): Promise<SyncResult> {
@@ -29,32 +109,23 @@ export async function syncNews(): Promise<SyncResult> {
   ]);
 
   const allItems = [...rssItems, ...newsApiItems];
-  const unique = deduplicateNews(allItems);
-  const sorted = unique.sort((a, b) =>
-    new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-  );
-
-  const latest = sorted.slice(0, 30);
-  const trending = getTrending(sorted);
+  const { latest, trending, unique, itemsFound } = buildNewsOutput(allItems, timestamp);
 
   // Keep the local sample-image count in sync with whatever is in
   // public/assets/news so articles without a source image still render a
   // relevant photo instead of a broken-image icon.
   await updateNewsImageCount().catch((e: unknown) => errors.push(`image count: ${e}`));
 
-  const latestOutput = latest.map(item => mapToOutput(item, timestamp));
-  const trendingOutput = trending.map(item => mapToOutput(item, timestamp));
-
   try {
-    await writeFile(join(dataDir, 'latest.json'), JSON.stringify(latestOutput, null, 2), 'utf-8');
-    await writeFile(join(dataDir, 'trending.json'), JSON.stringify(trendingOutput, null, 2), 'utf-8');
-    console.log(`✅ Wrote ${latestOutput.length} latest + ${trendingOutput.length} trending articles`);
+    await writeFile(join(dataDir, 'latest.json'), JSON.stringify(latest, null, 2), 'utf-8');
+    await writeFile(join(dataDir, 'trending.json'), JSON.stringify(trending, null, 2), 'utf-8');
+    console.log(`✅ Wrote ${latest.length} latest + ${trending.length} trending articles`);
   } catch (e) {
     errors.push(`Failed to write output: ${e}`);
   }
 
   return {
-    itemsFound: allItems.length,
+    itemsFound,
     itemsAdded: unique.length,
     duplicatesRemoved: allItems.length - unique.length,
     errors,
@@ -95,9 +166,13 @@ function getTrending(items: FetchedNewsItem[]): FetchedNewsItem[] {
     .slice(0, 10);
 }
 
-function mapToOutput(item: FetchedNewsItem, timestamp: string) {
+function mapToOutput(item: FetchedNewsItem, timestamp: string): SyncedNewsArticle {
   const isSourceVerified = item.sourceCredibility >= 70;
-  const categoryString = item.category === 'Transfers' ? 'Transfers' : item.category;
+
+  // Compute freshness from the article's real publication time. This is the
+  // single source of truth for how "fresh" an article is — never hard-code
+  // 'breaking' regardless of age.
+  const freshness = calculateFreshness(item.publishedAt, timestamp);
 
   return {
     id: `news-${Date.now().toString(36)}-${Math.random().toString(36).substr(2, 6)}`,
@@ -112,15 +187,16 @@ function mapToOutput(item: FetchedNewsItem, timestamp: string) {
     sourceName: item.source,
     sourceUrl: item.sourceUrl,
     image: item.image || null,
-    category: categoryString,
+    category: item.category === 'Transfers' ? 'Transfers' : item.category,
     originalUrl: item.sourceUrl,
     publishedAt: item.publishedAt,
     discoveredAt: timestamp,
     lastVerifiedAt: timestamp,
     dataStatus: isSourceVerified ? 'FRESH' : 'UNVERIFIED',
     freshness: {
-      status: 'breaking',
-      ageMinutes: Math.floor((Date.now() - new Date(item.publishedAt).getTime()) / 60000),
+      status: freshness.status,
+      ageMinutes: freshness.ageMinutes,
+      label: freshness.label,
       publishedAt: item.publishedAt,
       lastUpdated: timestamp,
     },

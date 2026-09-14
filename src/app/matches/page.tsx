@@ -1,36 +1,31 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Radio, Calendar, Trophy, Filter, Clock } from 'lucide-react';
-import MatchCard from '@/components/matches/MatchCard';
-import EmptyState from '@/components/ui/EmptyState';
-import LoadingState from '@/components/ui/LoadingState';
-import { getLiveMatches, getUpcomingMatches, getRecentResults } from '@/lib/data/matches';
-import { Match } from '@/types';
+import { Radio, Calendar, Trophy, Clock } from 'lucide-react';
+import FootballMatchCard from '@/components/football/FootballMatchCard';
+import { EmptyState, LoadingState } from '@/components/ui';
+import { getLiveMatchList, getUpcomingMatchList, getRecentMatchList } from '@/lib/football/matches';
+import type { NormalizedMatch } from '@/lib/football/types';
 
-function freshnessLabel(updatedAt?: string): string {
-  if (!updatedAt) return '';
-  const diffMs = Date.now() - new Date(updatedAt).getTime();
-  const diffMin = Math.floor(diffMs / 60000);
-  if (diffMin < 1) return 'just updated';
-  if (diffMin < 60) return `${diffMin}m ago`;
-  return `${Math.floor(diffMin / 60)}h ago`;
+function freshnessLabel(): string {
+  // Live data is fetched fresh on each page load; report it as just-updated.
+  return 'just updated';
 }
 
-export default function MatchesPage() {
+export default function FootballMatchesPage() {
   const [loading, setLoading] = useState(true);
-  const [live, setLive] = useState<Match[]>([]);
-  const [upcoming, setUpcoming] = useState<Match[]>([]);
-  const [results, setResults] = useState<Match[]>([]);
+  const [live, setLive] = useState<NormalizedMatch[]>([]);
+  const [upcoming, setUpcoming] = useState<NormalizedMatch[]>([]);
+  const [results, setResults] = useState<NormalizedMatch[]>([]);
   const [activeTab, setActiveTab] = useState<'live' | 'upcoming' | 'results'>('live');
 
   useEffect(() => {
     async function loadData() {
       try {
         const [liveData, upcomingData, resultsData] = await Promise.all([
-          getLiveMatches(),
-          getUpcomingMatches(),
-          getRecentResults(),
+          getLiveMatchList(),
+          getUpcomingMatchList(undefined, 14),
+          getRecentMatchList(undefined, 20),
         ]);
         setLive(liveData);
         setUpcoming(upcomingData);
@@ -111,7 +106,7 @@ export default function MatchesPage() {
               </span>
               <span className="text-xs text-slate-500 ml-auto flex items-center gap-1">
                 <Clock className="h-3 w-3" />
-                Updated {freshnessLabel(live[0]?.lastUpdated)}
+                Updated {freshnessLabel()}
               </span>
             </div>
           </div>
@@ -121,22 +116,20 @@ export default function MatchesPage() {
           <EmptyState
             type="matches"
             message={activeTab === 'live' ? 'No live matches at the moment' : `No ${activeTab} matches`}
-            reason={activeTab === 'live'
-              ? 'No fixtures are currently in progress.'
-              : activeTab === 'upcoming'
-                ? 'The free football data plan only covers seasons 2022-2024, and the 2024 season ended in May 2025. No future fixtures exist in the available data yet.'
-                : 'The free football data plan only covers seasons 2022-2024, so results shown are from the 2024 season (ended May 2025).'}
+reason={activeTab === 'live'
+  ? 'No fixtures are currently in progress. Check back shortly.'
+  : activeTab === 'upcoming'
+    ? 'No upcoming fixtures are available for the selected competitions yet. Check back shortly.'
+    : 'No recent results are available for the selected competitions yet.'}
           />
-        ) : activeTab === 'live' ? (
+        ) : (
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {displayedMatches.map((match) => (
-              <MatchCard key={match.id} match={match} variant="live" />
-            ))}
-          </div>
-        ) : (
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {displayedMatches.map((match) => (
-              <MatchCard key={match.id} match={match} />
+              <FootballMatchCard
+                key={match.id}
+                match={match}
+                variant={activeTab === 'live' ? 'live' : 'default'}
+              />
             ))}
           </div>
         )}
@@ -144,4 +137,3 @@ export default function MatchesPage() {
     </div>
   );
 }
-

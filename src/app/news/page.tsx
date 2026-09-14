@@ -1,12 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Filter, TrendingUp, Clock, ExternalLink } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 import NewsCard from '@/components/news/NewsCard';
 import EmptyState from '@/components/ui/EmptyState';
 import LoadingState from '@/components/ui/LoadingState';
-import { getLatestNews, getTrendingNews, getNewsByCategory } from '@/lib/data/news';
+import { useNewsRefresh } from '@/hooks/useNewsRefresh';
+import { getLatestNewsSnapshot, getTrendingNewsSnapshot } from '@/lib/data/news';
 import { NewsArticle, NewsCategory } from '@/types';
 
 const categories: NewsCategory[] = [
@@ -21,38 +22,20 @@ const categories: NewsCategory[] = [
 ];
 
 export default function NewsPage() {
-  const [loading, setLoading] = useState(true);
-  const [news, setNews] = useState<NewsArticle[]>([]);
-  const [trending, setTrending] = useState<NewsArticle[]>([]);
+  const initialLatest = getLatestNewsSnapshot();
+  const initialTrending = getTrendingNewsSnapshot();
+  const { latest: news, trending, refreshing } = useNewsRefresh(initialLatest, initialTrending);
   const [selectedCategory, setSelectedCategory] = useState<NewsCategory | null>(null);
-
-  useEffect(() => {
-    async function loadData() {
-      try {
-        const [latestNews, trendingNews] = await Promise.all([
-          getLatestNews(),
-          getTrendingNews(),
-        ]);
-        setNews(latestNews);
-        setTrending(trendingNews);
-      } catch (error) {
-        console.error('Error loading news:', error);
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadData();
-  }, []);
 
   const filteredNews = selectedCategory
     ? news.filter((article) => article.category === selectedCategory)
     : news;
 
-  if (loading) {
+  if (news.length === 0 && !refreshing) {
     return (
       <div className="min-h-screen">
         <div className="mx-auto max-w-7xl px-4 py-12">
-          <LoadingState variant="card" count={6} />
+          <EmptyState type="news" message="No articles found" />
         </div>
       </div>
     );
@@ -63,7 +46,10 @@ export default function NewsPage() {
       <div className="mx-auto max-w-7xl px-4 py-12">
         <div className="mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">Football News</h1>
-          <p className="text-slate-400">Stay updated with the latest football news from around the world</p>
+          <p className="text-slate-400">
+            Stay updated with the latest football news from around the world
+            {refreshing ? ' · refreshing' : ''}
+          </p>
         </div>
 
         <div className="grid gap-12 lg:grid-cols-[1fr_300px]">
@@ -100,8 +86,8 @@ export default function NewsPage() {
               </div>
             </div>
 
-            <SectionHeader 
-              title={selectedCategory || 'All News'} 
+            <SectionHeader
+              title={selectedCategory || 'All News'}
               description={`${filteredNews.length} articles`}
             />
 
@@ -138,9 +124,9 @@ export default function NewsPage() {
                       <h4 className="text-sm font-medium text-white line-clamp-2 group-hover:text-emerald-400 transition-colors">
                         {article.title}
                       </h4>
-<div className="flex items-center gap-2 mt-1 text-xs text-slate-400">
-  <span>{typeof article.source === 'string' ? article.source : article.source.name}</span>
-  <span>·</span>
+                      <div className="flex items-center gap-2 mt-1 text-xs text-slate-400">
+                        <span>{typeof article.source === 'string' ? article.source : article.source.name}</span>
+                        <span>·</span>
                         <span className="flex items-center gap-1">
                           <Clock className="h-3 w-3" />
                           {new Date(article.publishedAt).toLocaleDateString('en-GB', {
@@ -175,4 +161,3 @@ export default function NewsPage() {
     </div>
   );
 }
-

@@ -3,7 +3,6 @@
 import SectionHeader from '@/components/ui/SectionHeader';
 import { GlowCard } from '@/components/ui/spotlight-card';
 import NewsCard from '@/components/news/NewsCard';
-import MatchCard from '@/components/matches/MatchCard';
 import TransferCard from '@/components/transfers/TransferCard';
 import ContainerScroll from '@/components/home/ContainerScroll';
 import EmptyState from '@/components/ui/EmptyState';
@@ -11,26 +10,33 @@ import LoadingState from '@/components/ui/LoadingState';
 import FallbackImage from '@/components/ui/Image';
 import TeamLogo from '@/components/ui/TeamLogo';
 import FootballQuiz from '@/components/quiz/FootballQuiz';
-import { getLatestNews, getTrendingNews } from '@/lib/data/news';
-import { getLiveMatches, getUpcomingMatches, getRecentResults } from '@/lib/data/matches';
+import FootballMatchCard from '@/components/football/FootballMatchCard';
 import { getTransferRumours, getConfirmedTransfers } from '@/lib/data/transfers';
 import { getAllCompetitions } from '@/lib/data/competitions';
 import { getAllTeams } from '@/lib/data/teams';
-import { NewsArticle, Match, Transfer, Competition, Team } from '@/types';
+import { getLiveMatchList, getUpcomingMatchList, getRecentMatchList } from '@/lib/football/matches';
+import { NewsArticle, Transfer, Competition, Team } from '@/types';
+import type { NormalizedMatch } from '@/lib/football/types';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useNewsRefresh } from '@/hooks/useNewsRefresh';
+import { getLatestNewsSnapshot, getTrendingNewsSnapshot } from '@/lib/data/news';
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
   const [news, setNews] = useState<NewsArticle[]>([]);
   const [trending, setTrending] = useState<NewsArticle[]>([]);
-  const [liveMatches, setLiveMatches] = useState<Match[]>([]);
-  const [upcomingMatches, setUpcomingMatches] = useState<Match[]>([]);
-  const [recentResults, setRecentResults] = useState<Match[]>([]);
+  const [liveMatches, setLiveMatches] = useState<NormalizedMatch[]>([]);
+  const [upcomingMatches, setUpcomingMatches] = useState<NormalizedMatch[]>([]);
+  const [recentResults, setRecentResults] = useState<NormalizedMatch[]>([]);
   const [transferRumours, setTransferRumours] = useState<Transfer[]>([]);
   const [confirmedTransfers, setConfirmedTransfers] = useState<Transfer[]>([]);
   const [competitions, setCompetitions] = useState<Competition[]>([]);
   const [teams, setTeams] = useState<Team[]>([]);
+
+  const initialLatest = getLatestNewsSnapshot();
+  const initialTrending = getTrendingNewsSnapshot();
+  const refresh = useNewsRefresh(initialLatest, initialTrending);
 
   useEffect(() => {
     async function loadData() {
@@ -46,11 +52,11 @@ export default function HomePage() {
           comps,
           allTeams,
         ] = await Promise.all([
-          getLatestNews(),
-          getTrendingNews(),
-          getLiveMatches(),
-          getUpcomingMatches(),
-          getRecentResults(),
+          Promise.resolve(refresh.latest),
+          Promise.resolve(refresh.trending),
+          getLiveMatchList(),
+          getUpcomingMatchList(undefined, 30),
+          getRecentMatchList(undefined, 30),
           getTransferRumours(),
           getConfirmedTransfers(),
           getAllCompetitions(),
@@ -74,7 +80,8 @@ export default function HomePage() {
     }
 
     loadData();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [refresh.latest, refresh.trending]);
 
   if (loading) {
     return (
@@ -124,7 +131,7 @@ export default function HomePage() {
           <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
         </div>
         {liveMatches[0] ? (
-          <MatchCard match={liveMatches[0]} variant="live" />
+          <FootballMatchCard match={liveMatches[0]} variant="live" />
         ) : (
           <div className="py-8 text-center text-sm text-slate-500">No live matches</div>
         )}
@@ -203,9 +210,9 @@ export default function HomePage() {
           <section>
             <SectionHeader title="Live Matches" href="/matches" actionLabel="All matches" />
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {liveMatches.slice(0, 3).map((match) => (
-                <MatchCard key={match.id} match={match} variant="live" />
-              ))}
+{liveMatches.slice(0, 3).map((match) => (
+              <FootballMatchCard key={match.id} match={match} variant="live" />
+            ))}
             </div>
           </section>
         )}
@@ -252,12 +259,12 @@ export default function HomePage() {
             <EmptyState
               type="matches"
               message="No upcoming fixtures"
-              reason="The free football data plan only covers seasons 2022-2024, and the 2024 season ended in May 2025. No future fixtures exist in the available data yet."
+              reason="No upcoming fixtures are available for the selected competitions yet. Check back shortly."
             />
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {upcomingMatches.slice(0, 6).map((match) => (
-                <MatchCard key={match.id} match={match} />
+                <FootballMatchCard key={match.id} match={match} />
               ))}
             </div>
           )}
@@ -274,7 +281,7 @@ export default function HomePage() {
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {recentResults.slice(0, 6).map((match) => (
-                <MatchCard key={match.id} match={match} />
+                <FootballMatchCard key={match.id} match={match} />
               ))}
             </div>
           )}

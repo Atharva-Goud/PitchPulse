@@ -6,6 +6,7 @@ node_modules/
 .kilo/
 next-env.d.ts
 *.probe.ts
+*.mts
 clear-cache.ts
 build.log
 tsc.log

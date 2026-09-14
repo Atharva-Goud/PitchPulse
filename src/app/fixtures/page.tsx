@@ -1,37 +1,36 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import { Calendar, Trophy, Filter, X } from 'lucide-react';
+import { Calendar, Trophy, Radio, Filter, X } from 'lucide-react';
 import Link from 'next/link';
-import MatchCard from '@/components/matches/MatchCard';
-import EmptyState from '@/components/ui/EmptyState';
-import LoadingState from '@/components/ui/LoadingState';
-import { getAllMatches } from '@/lib/data/matches';
-import { getAllCompetitions } from '@/lib/data/competitions';
-import { getAllTeams } from '@/lib/data/teams';
-import { Match, Competition, Team } from '@/types';
+import FootballMatchCard from '@/components/football/FootballMatchCard';
+import { getCompetitionConfig, getAllCompetitions, type CompetitionConfig } from '@/lib/football/competitions';
+import { getUpcomingMatchList, getRecentMatchList, type CompetitionKey } from '@/lib/football/matches';
 import { format } from 'date-fns';
+import type { NormalizedMatch } from '@/lib/football/types';
+import { EmptyState, LoadingState, SectionHeader } from '@/components/ui';
 
-export default function FixturesPage() {
+type DateFilter = 'all' | 'today' | 'tomorrow' | 'week';
+
+export default function FootballFixturesPage() {
   const [loading, setLoading] = useState(true);
-  const [matches, setMatches] = useState<Match[]>([]);
-  const [competitions, setCompetitions] = useState<Competition[]>([]);
-  const [teams, setTeams] = useState<Team[]>([]);
-  const [selectedCompetition, setSelectedCompetition] = useState<string>('all');
-  const [selectedTeam, setSelectedTeam] = useState<string>('all');
-  const [selectedDate, setSelectedDate] = useState<'all' | 'today' | 'tomorrow' | 'week'>('all');
+  const [matches, setMatches] = useState<NormalizedMatch[]>([]);
+  const [competitions, setCompetitions] = useState<CompetitionConfig[]>([]);
+  const [selectedCompetition, setSelectedCompetition] = useState<CompetitionKey | 'all'>('all');
+  const [selectedDate, setSelectedDate] = useState<DateFilter>('all');
 
   useEffect(() => {
     async function loadData() {
       try {
-        const [matchesData, competitionsData, teamsData] = await Promise.all([
-          getAllMatches(),
-          getAllCompetitions(),
-          getAllTeams(),
+        setLoading(true);
+        const [comps, data] = await Promise.all([
+          Promise.resolve(getAllCompetitions()),
+          selectedCompetition === 'all'
+            ? getUpcomingMatchList(undefined, 30)
+            : getUpcomingMatchList(selectedCompetition, 30),
         ]);
-        setMatches(matchesData);
-        setCompetitions(competitionsData);
-        setTeams(teamsData);
+        setCompetitions(comps);
+        setMatches(data);
       } catch (error) {
         console.error('Error loading fixtures:', error);
       } finally {
@@ -39,18 +38,15 @@ export default function FixturesPage() {
       }
     }
     loadData();
-  }, []);
+  }, [selectedCompetition]);
 
   const filteredMatches = useMemo(() => {
     return matches.filter((match) => {
-      if (selectedCompetition !== 'all' && match.competition.id !== selectedCompetition) return false;
-      if (selectedTeam !== 'all' && match.homeTeam.id !== selectedTeam && match.awayTeam.id !== selectedTeam) return false;
-      
       if (selectedDate !== 'all') {
         const matchDate = new Date(match.kickoff);
         const today = new Date();
         today.setHours(0, 0, 0, 0);
-        
+
         if (selectedDate === 'today') {
           return matchDate.toDateString() === today.toDateString();
         }
@@ -67,24 +63,24 @@ export default function FixturesPage() {
       }
       return true;
     });
-  }, [matches, selectedCompetition, selectedTeam, selectedDate]);
+  }, [matches, selectedDate]);
 
   const groupedMatches = useMemo(() => {
-    const groups: Record<string, Record<string, Match[]>> = {};
-    
+    const groups: Record<string, Record<string, NormalizedMatch[]>> = {};
+
     filteredMatches.forEach((match) => {
-      const compName = match.competition.name;
+      const compName = match.league.name;
       const matchDate = format(new Date(match.kickoff), 'EEEE, MMMM d, yyyy');
-      
+
       if (!groups[compName]) groups[compName] = {};
       if (!groups[compName][matchDate]) groups[compName][matchDate] = [];
       groups[compName][matchDate].push(match);
     });
-    
+
     return groups;
   }, [filteredMatches]);
 
-  const hasFilters = selectedCompetition !== 'all' || selectedTeam !== 'all' || selectedDate !== 'all';
+  const hasFilters = selectedCompetition !== 'all' || selectedDate !== 'all';
 
   if (loading) {
     return (
@@ -101,7 +97,7 @@ export default function FixturesPage() {
       <div className="mx-auto max-w-7xl px-4 py-12">
         <div className="mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">Fixtures</h1>
-          <p className="text-slate-400">Browse fixtures by competition, team, or date</p>
+          <p className="text-slate-400">Upcoming football fixtures powered by API-Football</p>
         </div>
 
         <div className="mb-8 flex flex-col lg:flex-row lg:items-end gap-4">
@@ -109,28 +105,13 @@ export default function FixturesPage() {
             <label className="block text-sm font-medium text-slate-400 mb-2">Competition</label>
             <select
               value={selectedCompetition}
-              onChange={(e) => setSelectedCompetition(e.target.value)}
+              onChange={(e) => setSelectedCompetition(e.target.value as CompetitionKey | 'all')}
               className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-white/10 text-white focus:outline-none focus:border-emerald-500"
             >
               <option value="all">All Competitions</option>
               {competitions.map((comp) => (
-                <option key={comp.id} value={comp.id}>
+                <option key={comp.key} value={comp.key}>
                   {comp.name}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className="flex-1">
-            <label className="block text-sm font-medium text-slate-400 mb-2">Team</label>
-            <select
-              value={selectedTeam}
-              onChange={(e) => setSelectedTeam(e.target.value)}
-              className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-white/10 text-white focus:outline-none focus:border-emerald-500"
-            >
-              <option value="all">All Teams</option>
-              {teams.map((team) => (
-                <option key={team.id} value={team.id}>
-                  {team.name}
                 </option>
               ))}
             </select>
@@ -139,7 +120,7 @@ export default function FixturesPage() {
             <label className="block text-sm font-medium text-slate-400 mb-2">Date Range</label>
             <select
               value={selectedDate}
-              onChange={(e) => setSelectedDate(e.target.value as 'all' | 'today' | 'tomorrow' | 'week')}
+              onChange={(e) => setSelectedDate(e.target.value as DateFilter)}
               className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-white/10 text-white focus:outline-none focus:border-emerald-500"
             >
               <option value="all">All Dates</option>
@@ -152,7 +133,6 @@ export default function FixturesPage() {
             <button
               onClick={() => {
                 setSelectedCompetition('all');
-                setSelectedTeam('all');
                 setSelectedDate('all');
               }}
               className="flex items-center gap-2 px-4 py-3 rounded-lg bg-slate-800 border border-white/10 text-slate-300 hover:bg-slate-700 hover:text-white transition-colors h-fit lg:h-[47px]"
@@ -167,7 +147,7 @@ export default function FixturesPage() {
           <EmptyState
             type="matches"
             message="No fixtures match your filters"
-            reason="The free football data plan only covers past seasons (2022-2024), so today/tomorrow/this-week filters may return nothing. Try 'All Dates'."
+            reason="Standings and fixtures are sourced live from the football data API. Try 'All Dates' or a different competition."
           />
         ) : (
           <div className="space-y-8">
@@ -187,7 +167,7 @@ export default function FixturesPage() {
                     </div>
                     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                       {compMatches.map((match) => (
-                        <MatchCard key={match.id} match={match} />
+                        <FootballMatchCard key={match.id} match={match} variant="default" />
                       ))}
                     </div>
                   </div>

@@ -1,3 +1,12 @@
+/**
+ * News data access.
+ *
+ * Reads the latest + trending news from the static JSON snapshots. The
+ * server-side refresh happens in the /api/news route (which is the only place
+ * that touches the Node-only sync pipeline), so this module stays safely
+ * importable by client components.
+ */
+
 import { NewsArticle } from '@/types';
 import { NewsArticleSchema, validateData } from '@/lib/schemas';
 import latestNews from '@/data/news/latest.json';
@@ -35,4 +44,13 @@ export async function searchNews(query: string): Promise<NewsArticle[]> {
       article.summary.toLowerCase().includes(lowerQuery) ||
       (typeof article.source === 'string' ? article.source : article.source.name).toLowerCase().includes(lowerQuery)
   );
+}
+
+/** Raw snapshot access for components that need the unvalidated shape. */
+export function getLatestNewsSnapshot(): NewsArticle[] {
+  return validateData(NewsArticleSchema, latestNews);
+}
+
+export function getTrendingNewsSnapshot(): NewsArticle[] {
+  return validateData(NewsArticleSchema, trendingNews);
 }
