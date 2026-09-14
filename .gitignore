@@ -4,6 +4,7 @@ node_modules/
 .env.local
 *.tsbuildinfo
 .kilo/
+.kilocode/
 next-env.d.ts
 *.probe.ts
 *.mts

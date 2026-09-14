@@ -3,9 +3,13 @@
  *
  * Wraps the worldcup26.ir /{league}/standings endpoint and normalizes the
  * response into a simple, sortable table model.
+ *
+ * League discovery is driven entirely by the API: fetchAvailableLeagues()
+ * calls /leagues?kind=club&available=true and returns the slugs the server
+ * actually exposes. Nothing about which leagues exist is hard-coded here.
  */
 
-import { fetchStandings, COMPETITIONS, type CompetitionKey } from '@/lib/football/api';
+import { fetchStandings, fetchAvailableLeagues, type ApiLeague, type ApiStanding } from '@/lib/football/api';
 
 export interface StandingRow {
   rank: number;
@@ -31,12 +35,16 @@ function statValue(stats: any[], name: string): number {
   return Number.isFinite(n) ? n : 0;
 }
 
-export async function getStandings(
-  competition: CompetitionKey,
+/**
+ * Fetch and normalize standings for a single league slug (e.g. 'eng.1').
+ * Returns an empty array when the API has no data for that league — the
+ * caller is responsible for distinguishing "no data" from "API failure".
+ */
+export async function getStandingsBySlug(
+  leagueSlug: string,
   season?: number
 ): Promise<StandingRow[]> {
-  const league = COMPETITIONS[competition];
-  const raw = await fetchStandings(league);
+  const raw = await fetchStandings(leagueSlug);
 
   return raw
     .map(s => {
@@ -68,9 +76,32 @@ export async function getStandings(
     .sort((a, b) => a.rank - b.rank);
 }
 
+/** Backwards-compatible alias used by the existing match pages. */
+export async function getStandings(
+  competition: string,
+  season?: number
+): Promise<StandingRow[]> {
+  return getStandingsBySlug(competition, season);
+}
+
+/**
+ * Discover the leagues the API actually exposes. The result is the single
+ * source of truth for the league selector — no display names or slugs are
+ * hard-coded in the UI.
+ */
+export async function getAvailableLeagues(): Promise<ApiLeague[]> {
+  return fetchAvailableLeagues();
+}
+
+/**
+ * Seasons the worldcup26.ir API exposes for club competitions.
+ *
+ * The standings response itself carries a `season` field, so callers can
+ * fall back to that when the league metadata does not provide one.
+ */
 export async function getAvailableSeasons(): Promise<number[]> {
   // worldcup26.ir exposes the current season (2026-27) for club competitions.
   return [2026];
 }
 
-export { COMPETITIONS, type CompetitionKey };
+export type { ApiLeague, ApiStanding };

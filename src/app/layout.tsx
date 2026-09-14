@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
+import AppShell from '@/components/layout/AppShell';
 import { BeamsBackground } from '@/components/ui/beams-background';
 
 const geistSans = Geist({
@@ -43,16 +44,18 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <div className="fixed inset-0 bg-slate-950" aria-hidden="true" />
         <BeamsBackground />
-        <div className="relative z-10 flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <footer className="border-t border-white/10 bg-slate-950/80 py-8 px-4 backdrop-blur-sm">
-            <div className="mx-auto max-w-7xl text-center text-sm text-slate-500">
-              <p>PITCHINTEL — Football intelligence. All in one place.</p>
-              <p className="mt-1">Data sourced from public APIs and official sources.</p>
-            </div>
-          </footer>
-        </div>
+        <AppShell>
+          <div className="relative z-10 flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <footer className="border-t border-white/10 bg-slate-950/80 py-8 px-4 backdrop-blur-sm">
+              <div className="mx-auto max-w-7xl text-center text-sm text-slate-500">
+                <p>PITCHINTEL — Football intelligence. All in one place.</p>
+                <p className="mt-1">Data sourced from public APIs and official sources.</p>
+              </div>
+            </footer>
+          </div>
+        </AppShell>
       </body>
     </html>
   );

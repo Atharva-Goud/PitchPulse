@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Search, Menu, X } from 'lucide-react';
+import { Search, Menu, X, Trophy } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Component as LiquidGlass } from '@/components/ui/liquid-glass';
 import SearchModal from '@/components/search/SearchModal';
@@ -13,6 +13,7 @@ const navItems = [
   { href: '/transfers', label: 'Transfers' },
   { href: '/matches', label: 'Matches' },
   { href: '/fixtures', label: 'Fixtures' },
+  { href: '/standings', label: 'Standings', icon: Trophy },
 ];
 
 export default function Header() {
@@ -58,19 +59,23 @@ export default function Header() {
               </Link>
 
               <nav className="ml-10 hidden md:flex items-center gap-1">
-                {navItems.map(item => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
-                      pathname === item.href
-                        ? 'bg-white/10 text-white'
-                        : 'text-slate-400 hover:text-white hover:bg-white/5'
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+                {navItems.map(item => {
+                  const Icon = item.icon;
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors flex items-center gap-1.5 ${
+                        pathname === item.href
+                          ? 'bg-white/10 text-white'
+                          : 'text-slate-400 hover:text-white hover:bg-white/5'
+                      }`}
+                    >
+                      {Icon && <Icon className="h-4 w-4" />}
+                      {item.label}
+                    </Link>
+                  );
+                })}
               </nav>
             </div>
 
@@ -97,20 +102,24 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden border-t border-white/10">
             <nav className="px-4 py-3 space-y-1">
-              {navItems.map(item => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`block px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
-                    pathname === item.href
-                      ? 'bg-white/10 text-white'
-                      : 'text-slate-400 hover:text-white hover:bg-white/5'
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {navItems.map(item => {
+                const Icon = item.icon;
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`block px-4 py-3 text-sm font-medium rounded-lg transition-colors flex items-center gap-2 ${
+                      pathname === item.href
+                        ? 'bg-white/10 text-white'
+                        : 'text-slate-400 hover:text-white hover:bg-white/5'
+                    }`}
+                  >
+                    {Icon && <Icon className="h-4 w-4" />}
+                    {item.label}
+                  </Link>
+                );
+              })}
             </nav>
           </div>
         )}

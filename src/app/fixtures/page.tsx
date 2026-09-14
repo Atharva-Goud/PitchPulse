@@ -70,11 +70,19 @@ export default function FootballFixturesPage() {
 
     filteredMatches.forEach((match) => {
       const compName = match.league.name;
-      const matchDate = format(new Date(match.kickoff), 'EEEE, MMMM d, yyyy');
+      const matchDate = format(new Date(match.kickoff), 'yyyy-MM-dd');
 
       if (!groups[compName]) groups[compName] = {};
       if (!groups[compName][matchDate]) groups[compName][matchDate] = [];
       groups[compName][matchDate].push(match);
+    });
+
+    Object.values(groups).forEach((dates) => {
+      Object.values(dates).forEach((matches) => {
+        matches.sort(
+          (a, b) => new Date(a.kickoff).getTime() - new Date(b.kickoff).getTime()
+        );
+      });
     });
 
     return groups;
@@ -151,29 +159,43 @@ export default function FootballFixturesPage() {
           />
         ) : (
           <div className="space-y-8">
-            {Object.entries(groupedMatches).map(([compName, dates]) => (
-              <section key={compName}>
-                <div className="mb-4 p-3 rounded-lg bg-slate-900/50 border border-white/10">
-                  <h3 className="font-semibold text-white capitalize">{compName}</h3>
-                </div>
-                {Object.entries(dates).map(([date, compMatches]) => (
-                  <div key={date} className="mb-6">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="h-0.5 flex-1 bg-white/10" />
-                      <span className="px-3 py-1 text-sm font-medium text-slate-300 bg-slate-800 rounded-lg">
-                        {date}
-                      </span>
-                      <div className="h-0.5 flex-1 bg-white/10" />
-                    </div>
-                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                      {compMatches.map((match) => (
-                        <FootballMatchCard key={match.id} match={match} variant="default" />
-                      ))}
-                    </div>
+            {Object.entries(groupedMatches).map(([compName, dates]) => {
+              const sortedDates = Object.keys(dates).sort(
+                (a, b) => new Date(a).getTime() - new Date(b).getTime()
+              );
+              return (
+                <section key={compName}>
+                  <div className="mb-4 p-3 rounded-lg bg-slate-900/50 border border-white/10">
+                    <h3 className="font-semibold text-white capitalize">{compName}</h3>
                   </div>
-                ))}
-              </section>
-            ))}
+                  {sortedDates.map((dateKey) => {
+                    const dateObj = new Date(dateKey);
+                    const dateLabel = format(dateObj, 'EEEE, MMMM d').toUpperCase();
+                    return (
+                      <div key={dateKey} className="mb-6">
+                        <div className="flex items-center gap-3 mb-4">
+                          <div className="h-0.5 flex-1 bg-white/10" />
+                          <span className="px-3 py-1 text-sm font-semibold text-white bg-slate-800 rounded-lg tracking-wide">
+                            {dateLabel}
+                          </span>
+                          <div className="h-0.5 flex-1 bg-white/10" />
+                        </div>
+                        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                          {dates[dateKey].map((match) => (
+                            <FootballMatchCard
+                              key={match.id}
+                              match={match}
+                              variant="default"
+                              hideFooter
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </section>
+              );
+            })}
           </div>
         )}
       </div>

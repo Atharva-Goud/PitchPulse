@@ -100,7 +100,7 @@ export type ApiStanding = {
 
 export type ApiPlay = {
   id: string;
-  type: { id: string; text: string };
+  type: { id: string; text: string; type?: string };
   text: string;
   alternativeText: string;
   awayScore: number | null;
@@ -111,10 +111,7 @@ export type ApiPlay = {
   valid: boolean;
   scoringPlay: boolean;
   scoreValue: number;
-  substitution: {
-    in?: { id: string; displayName: string };
-    out?: { id: string; displayName: string };
-  } | null;
+  substitution: boolean;
   wallclock: string | null;
   redCard: boolean;
   yellowCard: boolean;
@@ -122,7 +119,7 @@ export type ApiPlay = {
   ownGoal: boolean;
   shootout: boolean;
   modified: string | null;
-  team: { id: string } | null;
+  team: { source_id?: string; side?: string; name?: string } | null;
   athletesInvolved: Array<{
     id: string;
     displayName: string;
@@ -290,7 +287,7 @@ export function normalizeApiPlay(raw: any): ApiPlay {
     valid: !!raw.valid,
     scoringPlay: !!raw.scoringPlay,
     scoreValue: num(raw.scoreValue) || 0,
-    substitution: raw.substitution || null,
+    substitution: !!raw.substitution,
     wallclock: raw.wallclock || null,
     redCard: !!raw.redCard,
     yellowCard: !!raw.yellowCard,
@@ -306,8 +303,11 @@ export function normalizeApiPlay(raw: any): ApiPlay {
 export function normalizeApiEvent(raw: any, homeTeamId?: string, awayTeamId?: string): ApiEvent {
   const clock = raw.clock || {};
   const rawTeamId = raw.team?.id || null;
+  const rawTeamSide = raw.team?.side || null;
   let team: 'home' | 'away' | null = null;
-  if (rawTeamId) {
+  if (rawTeamSide === 'home') team = 'home';
+  else if (rawTeamSide === 'away') team = 'away';
+  else if (rawTeamId) {
     if (homeTeamId && String(rawTeamId) === String(homeTeamId)) team = 'home';
     else if (awayTeamId && String(rawTeamId) === String(awayTeamId)) team = 'away';
   }
@@ -316,7 +316,7 @@ export function normalizeApiEvent(raw: any, homeTeamId?: string, awayTeamId?: st
     : null;
   return {
     minute: num(clock.value),
-    displayMinute: clock.displayValue || '',
+    displayMinute: clock.displayValue || (num(clock.value) != null ? String(num(clock.value)) : ''),
     type: raw.type?.text || raw.text || 'Event',
     team,
     player,
@@ -418,6 +418,15 @@ export async function fetchLeagues(kind: 'club' | 'all' = 'club'): Promise<ApiLe
   }
 }
 
+/**
+ * Fetch the available leagues from the API and return them as a slug → league
+ * map. This is the single source of truth for which competitions can be
+ * displayed — nothing is hard-coded here.
+ */
+export async function fetchAvailableLeagues(): Promise<ApiLeague[]> {
+  return fetchLeagues('club');
+}
+
 export async function fetchFixtures(
   league: string,
   status: 'all' | 'scheduled' | 'live' | 'finished' = 'all'
@@ -434,10 +443,14 @@ export async function fetchFixtures(
 export async function fetchStandings(league: string): Promise<ApiStanding[]> {
   try {
     const data = await apiFetch('/' + league + '/standings');
+    // Response shape: { season, children: [{ standings: { entries: [...] } }] }
     const groups = data.children || [];
     const rows: ApiStanding[] = [];
     for (const g of groups) {
-      for (const s of g.standings || []) {
+      const entries = g.standings && Array.isArray(g.standings.entries)
+        ? g.standings.entries
+        : Array.isArray(g.standings) ? g.standings : [];
+      for (const s of entries) {
         rows.push(normalizeApiStanding(s));
       }
     }
@@ -516,6 +529,9 @@ export async function fetchMatchStatistics(
  * The /events/{eventId}/plays endpoint returns a full play-by-play feed
  * (hundreds of passes, touches, etc.). The summary's keyEvents array is the
  * curated list of match-defining moments, which is what the UI should show.
+ *
+ * The plays feed uses seconds on the clock; we convert to a minute display
+ * (e.g. 874 -> 14'34") so the timeline reads naturally.
  */
 export async function fetchMatchKeyEvents(
   league: string,
@@ -525,10 +541,33 @@ export async function fetchMatchKeyEvents(
     const summary = await fetchMatchSummary(league, eventId);
     if (!summary) return [];
     const keyEvents = summary.keyEvents || [];
+    if (keyEvents.length === 0) return [];
+
+    // Resolve team ids from the fixture so events attribute to the right side.
     const fixture = await fetchFixtureById(league, eventId);
-    const homeId = fixture?.home?.id;
-    const awayId = fixture?.away?.id;
-    return keyEvents.map(e => normalizeApiEvent(e, homeId, awayId));
+    const comp: any = (fixture?.competitions && fixture.competitions[0]) || {};
+    const competitors = comp.competitors || [];
+    const homeId = competitors.find((c: any) => c.homeAway === 'home')?.id;
+    const awayId = competitors.find((c: any) => c.homeAway === 'away')?.id;
+
+    return keyEvents.map(e => {
+      const clock = e.clock || {};
+      const seconds = num(clock.value);
+      const minute = seconds != null ? Math.floor(seconds / 60) : null;
+      const extra = seconds != null ? seconds % 60 : null;
+      return {
+        minute,
+        displayMinute: clock.displayValue || (minute != null && extra != null ? `${minute}'${String(extra).padStart(2, '0')}` : (minute != null ? `${minute}'` : '')),
+        type: e.type?.text || 'Event',
+        team: e.team?.id
+          ? (e.team.id === homeId ? 'home' : e.team.id === awayId ? 'away' : null)
+          : null,
+        player: e.athletesInvolved && e.athletesInvolved[0]
+          ? e.athletesInvolved[0].displayName
+          : null,
+        assist: null,
+      };
+    });
   } catch (error) {
     console.error('football-api: failed to fetch key events:', error);
     return [];
@@ -552,15 +591,26 @@ export async function fetchFixtureById(
   }
 }
 
+/**
+ * Fetch the play-by-play event timeline for a match.
+ *
+ * The plays feed is paginated (up to 14 pages of 100 items for a full match).
+ * We fetch every page and keep only the match-defining moments: goals,
+ * cards, substitutions, penalties and VAR. Passes, touches and clearances are
+ * filtered out so the timeline stays readable.
+ */
 export async function fetchMatchEvents(
   league: string,
   eventId: string
 ): Promise<ApiEvent[]> {
   try {
-    const plays = await fetchMatchPlays(league, eventId, true);
+    const plays = await fetchMatchPlaysAllPages(league, eventId);
     const fixture = await fetchFixtureById(league, eventId);
-    const homeId = fixture?.home?.id;
-    const awayId = fixture?.away?.id;
+    const comp: any = (fixture?.competitions && fixture.competitions[0]) || {};
+    const competitors = comp.competitors || [];
+    const homeId = competitors.find((c: any) => c.homeAway === 'home')?.id;
+    const awayId = competitors.find((c: any) => c.homeAway === 'away')?.id;
+
     return plays
       .filter(p => {
         const t = (p.type?.text || '').toLowerCase();
@@ -570,14 +620,51 @@ export async function fetchMatchEvents(
           t.includes('red') ||
           t.includes('substitution') ||
           t.includes('penalty') ||
-          t.includes('var')
+          t.includes('var') ||
+          t.includes('card')
         );
       })
-      .map(p => normalizeApiEvent(p, homeId, awayId));
+      .map(p => {
+        const seconds = num(p.clock?.value);
+        const minute = seconds != null ? Math.floor(seconds / 60) : null;
+        const extra = seconds != null ? seconds % 60 : null;
+        return {
+          minute,
+          displayMinute: p.clock?.displayValue || (minute != null && extra != null ? `${minute}'${String(extra).padStart(2, '0')}` : (minute != null ? `${minute}'` : '')),
+          type: p.type?.text || p.text || 'Event',
+          team: p.team?.side === 'home' ? 'home' : p.team?.side === 'away' ? 'away' : null,
+          player: p.athletesInvolved && p.athletesInvolved[0]
+            ? p.athletesInvolved[0].displayName
+            : null,
+          assist: null,
+        };
+      });
   } catch (error) {
     console.error('football-api: failed to fetch events:', error);
     return [];
   }
+}
+
+/** Fetch every page of the plays feed so the full timeline is available. */
+async function fetchMatchPlaysAllPages(
+  league: string,
+  eventId: string
+): Promise<ApiPlay[]> {
+  const first = await apiFetch('/' + league + '/events/' + eventId + '/plays', {
+    importantOnly: 'true',
+  });
+  const pageCount: number = first.pageCount || 1;
+  if (pageCount <= 1) return first.items || [];
+
+  const rest = await Promise.all(
+    Array.from({ length: pageCount - 1 }, (_, i) =>
+      apiFetch('/' + league + '/events/' + eventId + '/plays', {
+        importantOnly: 'true',
+        pageIndex: String(i + 2),
+      })
+    )
+  );
+  return [...(first.items || []), ...rest.map((r: any) => r.items || [])].flat();
 }
 
 /**

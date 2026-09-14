@@ -6,6 +6,7 @@ import { getMatchWithLeague, getRawFixtureById } from '@/lib/football/matches';
 import { getCompetitionConfig, getCompetitionKeyFromSlug } from '@/lib/football/competitions';
 import {
   fetchMatchKeyEvents,
+  fetchMatchEvents,
   fetchMatchStatistics,
   type ApiEvent,
   type CompetitionKey,
@@ -61,12 +62,13 @@ export default function MatchDetailClient({ params }: MatchDetailClientProps) {
         // Load events + statistics in parallel. These are best-effort: if the
         // API doesn't provide them for this fixture we show a clean empty
         // state rather than an error.
-        const [rawFixture, keyEvents, stats] = await Promise.all([
+        const [rawFixture, keyEvents, matchEvents, stats] = await Promise.all([
           getRawFixtureById(matchId!),
           fetchMatchKeyEvents(result.league, matchId!),
+          fetchMatchEvents(result.league, matchId!),
           fetchMatchStatistics(result.league, matchId!),
         ]);
-        setEvents(keyEvents);
+        setEvents(matchEvents.length > 0 ? matchEvents : keyEvents);
         setStatistics(stats);
       } catch (err) {
         console.error('Error loading match:', err);

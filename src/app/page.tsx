@@ -196,11 +196,20 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-white">Match Analysis</h3>
+              <h3 className="text-lg font-semibold text-white">League Standings</h3>
             </div>
-            <p className="text-sm text-slate-400">
-              Deep dive into fixtures, head-to-head records, and form trends before kickoff.
+            <p className="text-sm text-slate-400 mb-4">
+              Full tables, form trends, and top-of-table insights from leagues around the world.
             </p>
+            <Link
+              href="/standings"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors"
+            >
+              View standings
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
           </GlowCard>
         </div>
       </section>
