@@ -12,8 +12,11 @@ multiple sources into a single dark-themed dashboard.
   image fall back to a deterministic local sample photo.
 - **Matches / Match Centre** — Live matches, upcoming fixtures, and recent
   results, each rendered with scores, status, and competition context.
-- **Fixtures** — Browse fixtures grouped by competition and date, with
-  filters for competition, team, and date range (today / tomorrow / week).
+  Match data is fetched at runtime from the football data API.
+- **Standings** — League tables with standings, form trends, and
+  insights, filterable by league and season.
+- **Fixtures** — Browse fixtures grouped by kickoff date, with
+  filters for competition and team.
 - **Transfers / Transfer Centre** — Rumours and confirmed deals, each with
   a reliability score, source, fee, and status (Rumour, Advanced,
   Negotiating, Confirmed, Completed).
@@ -37,55 +40,72 @@ multiple sources into a single dark-themed dashboard.
 - **lucide-react** — icons
 - **rss-parser** — RSS feed parsing during sync
 - **dotenv** — environment variable loading for sync scripts
+- **worldcup26.ir** — football data API (live matches, fixtures, standings, teams)
 
 ## Architecture
 
-The app has three layers:
+The app uses two data strategies:
 
-1. **Data sources** (`src/scripts/fetchers/`) — `football-api.ts` calls the
-   API-Football REST API for live/upcoming/results matches; `rss-news.ts`
-   parses RSS feeds from BBC Sport, ESPN, and The Guardian; `newsapi.ts`
-   queries NewsAPI. All three are only ever executed by the sync scripts —
-   they never ship to the browser.
-2. **Data layer** (`src/data/*.json` + `src/lib/data/`) — Sync scripts
-   fetch, deduplicate, validate (Zod), and normalise data into static JSON
-   files under `src/data/`. The React app imports those JSON files
+1. **Runtime API** (`src/lib/football/`) — Football data (matches, fixtures,
+   standings) is fetched at runtime from the worldcup26.ir REST API
+   via `src/lib/football/api.ts`. This layer is used by the Matches,
+   Fixtures, and Standings pages. Data is normalised into a shared
+   `NormalizedMatch` shape in `src/lib/football/types.ts`.
+2. **Static data** (`src/scripts/fetchers/` → `src/data/*.json` → `src/lib/data/`)
+   — News, transfers, teams, and competitions are fetched by sync scripts
+   (`src/scripts/`), deduplicated, validated (Zod), and stored as static
+   JSON files under `src/data/`. The React app imports those JSON files
    directly; `src/lib/data/*.ts` exposes async accessor functions that run
    `validateData(schema, json)` on every read, so malformed entries are
    silently dropped rather than crashing the UI.
-3. **Frontend** (`src/app/`, `src/components/`) — Client components read
-   data through the accessor functions and render it with shared UI
-   primitives (`src/components/ui/`).
 
 The sync scripts (`src/scripts/`) are run manually via `tsx` outside
 Next.js. They are not part of the production build.
 
 ## Data Flow
 
-1. **Fetch** — `syncNews()` pulls RSS + NewsAPI articles; `syncMatches()`
-   pulls live/upcoming/results from API-Football (seasons 2022-2024 only,
-   filtered client-side because the free plan rejects date-range
-   queries).
+**Football data** (matches, fixtures, standings) is fetched at runtime:
+
+1. **Fetch** — `src/lib/football/api.ts` calls the worldcup26.ir REST
+   endpoints (`/leagues`, `/{league}/fixtures`, `/{league}/standings`, etc.)
+   directly from the browser. No API key required.
+2. **Normalise** — Raw API responses are normalised in
+   `src/lib/football/matches.ts` and `src/lib/football/types.ts` into
+   the `NormalizedMatch` shape, with home/away teams, kickoff time,
+   scores, and status mapped consistently.
+3. **Display** — Pages and components consume the normalised data
+   directly, with loading, empty, and error states.
+
+**Static data** (news, transfers, teams, competitions) follows the
+sync-pipeline approach:
+
+1. **Fetch** — `syncNews()` pulls RSS + NewsAPI articles; transfer and
+   team data come from static JSON committed to the repo.
 2. **Process** — Articles are deduplicated by normalised title, scored for
    trending (credibility + team relevance + image bonus + 48-hour recency),
-   and mapped to the `NewsArticle` schema. Matches are normalised from the
-   API's nested fixture/team/league structure into the flat `Match`
-   schema. Transfers come from static JSON (`rumours.json`, `confirmed.json`).
+   and mapped to the `NewsArticle` schema.
 3. **Store** — Results are written atomically (write to `.tmp`, then
    `rename`) into `src/data/news/{latest,trending}.json`,
-   `src/data/matches/{live,upcoming,results}.json`,
    `src/data/transfers/{rumours,confirmed}.json`, `src/data/teams/teams.json`,
-   and `src/data/competitions/competitions.json`.
+   `src/data/competitions/competitions.json`, and
+   `src/data/news/{latest,trending}.json`.
 4. **Display** — The app imports the JSON at build time; accessor functions
    validate on read; pages render with loading, empty, and error states.
 
 ```mermaid
 flowchart LR
-  A["API-Football / RSS / NewsAPI"] --> B["Sync scripts (tsx)"]
-  B --> C["Validate & dedupe (Zod)"]
-  C --> D["Static JSON (src/data/)"]
-  D --> E["Accessor functions (src/lib/data/)"]
-  E --> F["Next.js pages & components"]
+    subgraph Static["Static Data Pipeline"]
+        A["RSS / NewsAPI"] --> B["Sync scripts tsx"]
+        B --> C["Validate & dedupe Zod"]
+        C --> D["Static JSON src/data/"]
+        D --> E["Accessors src/lib/data/"]
+    end
+    subgraph Runtime["Runtime API Pipeline"]
+        F["worldcup26.ir"] --> G["lib/football/api.ts"]
+        G --> H["Normalise lib/football/types.ts"]
+        H --> I["Pages & components"]
+    end
+    E --> J["News / Transfers / Teams Pages"]
 ```
 
 ## Project Structure
@@ -101,25 +121,45 @@ flowchart LR
 │   │   ├── page.tsx        # Homepage
 │   │   ├── news/page.tsx
 │   │   ├── matches/page.tsx
+│   │   ├── matches/[id]/page.tsx  # Match detail
 │   │   ├── fixtures/page.tsx
+│   │   ├── standings/page.tsx
 │   │   ├── transfers/page.tsx
 │   │   ├── search/page.tsx
-│   │   └── teams/[teamId]/page.tsx
+│   │   ├── teams/[teamId]/page.tsx
+│   │   └── api/standings/route.ts
 │   ├── components/
 │   │   ├── layout/Header.tsx
+│   │   ├── layout/AppShell.tsx
+│   │   ├── layout/GlobalLoader.tsx
 │   │   ├── home/ContainerScroll.tsx
-│   │   ├── matches/MatchCard.tsx
+│   │   ├── football/FootballMatchCard.tsx
+│   │   ├── football/MatchDetailClient.tsx
+│   │   ├── football/MatchEvents.tsx
+│   │   ├── football/MatchStatistics.tsx
+│   │   ├── football/MatchInsights.tsx
+│   │   ├── football/StandingsTable.tsx
+│   │   ├── football/StandingsInsights.tsx
+│   │   ├── football/TeamLogo.tsx
 │   │   ├── news/NewsCard.tsx
 │   │   ├── transfers/TransferCard.tsx
 │   │   ├── teams/TeamCard.tsx
 │   │   ├── search/SearchModal.tsx
+│   │   ├── quiz/FootballQuiz.tsx
 │   │   └── ui/             # Image, TeamLogo, BeamsBackground,
 │   │                         # GlowCard, SectionHeader, EmptyState,
 │   │                         # LoadingState, ErrorState, SourceBadge,
-│   │                         # DisclaimerBadge, DataFreshnessIndicator
+│   │                         # DisclaimerBadge, DataFreshnessIndicator,
+│   │                         # LiquidGlass
 │   ├── data/               # Generated static JSON (see Data/JSON structure)
 │   ├── lib/
 │   │   ├── data/           # Async accessors over src/data/*.json
+│   │   ├── football/       # Runtime API client (worldcup26.ir)
+│   │   │   ├── api.ts      # HTTP wrapper + types
+│   │   │   ├── matches.ts    # Normalised match lists
+│   │   │   ├── standings.ts  # Standings accessors
+│   │   │   ├── competitions.ts
+│   │   │   └── types.ts      # Shared NormalizedMatch, etc.
 │   │   ├── engine/         # Credibility, freshness, dedup, stale-data,
 │   │   │                     # source registry
 │   │   ├── schemas/        # Zod schemas + validateData / validateSingle
@@ -147,7 +187,9 @@ flowchart LR
 | `/` | `src/app/page.tsx` | Homepage: scroll-reveal hero, live match + latest news preview, feature cards, and sections for live matches, latest news, transfers, upcoming matches, recent results, trending stories, competitions, and popular teams |
 | `/news` | `src/app/news/page.tsx` | Latest news grid with category filter chips, plus a trending sidebar and quick links |
 | `/matches` | `src/app/matches/page.tsx` | Match Centre with Live / Upcoming / Results tabs |
-| `/fixtures` | `src/app/fixtures/page.tsx` | Fixtures grouped by competition and date, with competition/team/date-range filters |
+| `/matches/[id]` | `src/app/matches/[id]/page.tsx` | Match detail page with live event feed |
+| `/fixtures` | `src/app/fixtures/page.tsx` | Fixtures grouped by kickoff date, with competition/team filters |
+| `/standings` | `src/app/standings/page.tsx` | League standings tables, filterable by league and season |
 | `/transfers` | `src/app/transfers/page.tsx` | Transfer Centre with Rumours / Confirmed tabs and a status filter |
 | `/search` | `src/app/search/page.tsx` | Debounced global search across teams, news, and transfers |
 | `/teams/[teamId]` | `src/app/teams/[teamId]/page.tsx` | Team detail page (upcoming matches, recent results, news, transfer activity, team info) |
@@ -160,8 +202,12 @@ same `globalSearch` query.
 - `NewsCard` (`src/components/news/NewsCard.tsx`) â€” three variants
   (`default`, `featured`, `compact`). `resolveArticleImage()` prefers the
   source image, then falls back to `localNewsImage(article.id)`.
-- `MatchCard` (`src/components/matches/MatchCard.tsx`) â€” `default`, `live`,
-  and `compact` variants; tags historical matches (older than 6 months).
+- `FootballMatchCard` (`src/components/football/FootballMatchCard.tsx`) â€”
+  `default`, `live`, and `compact` variants; tags historical
+  matches (older than 6 months). Used on the homepage, fixtures,
+  and match detail pages.
+- `MatchCard` (`src/components/matches/MatchCard.tsx`) â€” `default`,
+  `live`, and `compact` variants; used on team detail pages.
 - `TransferCard` (`src/components/transfers/TransferCard.tsx`) â€”
   `default` and `compact` variants; tags transfers older than 30 days as
   historical.
@@ -194,24 +240,29 @@ All data lives under `src/data/` and is regenerated by the sync scripts.
 |---|---|
 | `src/data/news/latest.json` | 30 most recent articles, newest first |
 | `src/data/news/trending.json` | 10 top trending articles by weighted score |
-| `src/data/matches/live.json` | 8 currently live matches |
-| `src/data/matches/upcoming.json` | Upcoming fixtures (currently 0 â€” free plan has no future fixtures) |
-| `src/data/matches/results.json` | 20 most recent results |
+| `src/data/matches/live.json` | Live matches from API-Football |
+| `src/data/matches/upcoming.json` | Upcoming fixtures from API-Football |
+| `src/data/matches/results.json` | Recent results from API-Football |
 | `src/data/teams/teams.json` | 23 teams |
 | `src/data/competitions/competitions.json` | 10 competitions |
 | `src/data/transfers/rumours.json` | 8 transfer rumours |
 | `src/data/transfers/confirmed.json` | 8 confirmed transfers |
 
-Core shapes (see `src/types/index.ts` and `src/lib/schemas/index.ts`):
+Core shapes (see `src/types/index.ts`, `src/lib/schemas/index.ts`,
+and `src/lib/football/types.ts`):
 
 - `NewsArticle` â€” `id`, `title`, `summary`, `source` (string or
   `{name, type, url, credibilityScore}`), `sourceUrl`, `image` (nullable),
   `category`, `publishedAt`, plus optional `freshness`, `verification`,
   `relatedTeams`, `relatedPlayers`, `dataStatus`.
-- `Match` â€” `id`, `competition`, `homeTeam`, `awayTeam`, `homeScore`,
-  `awayScore`, `status` (`SCHEDULED | LIVE | HALFTIME | FINISHED | POSTPONED |
-  CANCELLED`), `kickoff` (ISO datetime with offset), optional `venue`,
-  `referee`, `matchday`, `lastUpdated`, `freshness`, `source`.
+- `Match` â€” static match shape written by `sync-matches.ts`
+  from API-Football data.
+- `NormalizedMatch` (`src/lib/football/types.ts`) â€” runtime
+  shape used by the Match Centre, Fixtures, and Standings pages;
+  normalised from worldcup26.ir API responses via
+  `src/lib/football/matches.ts`.
+- `StandingRow` (`src/lib/football/standings.ts`) â€” a single
+  row in a league standings table.
 - `Transfer` â€” `id`, `player`, `fromClub`, `toClub` (nullable), `status`
   (`Rumour | Advanced | Negotiating | Confirmed | Completed`), `fee`
   (nullable), `source`, `reliability` (0-100), `updatedAt`.
@@ -222,12 +273,13 @@ Core shapes (see `src/types/index.ts` and `src/lib/schemas/index.ts`):
 
 ## Data Sources
 
-- **Matches** â€” API-Football (`v3.football.api-sports.io`, free tier:
-  100 req/day, seasons 2022-2024). League IDs: Premier League 39, La Liga
-  140, Bundesliga 78, Serie A 135, Ligue 1 61, Champions League 2.
-- **News** â€” RSS feeds (BBC Sport, ESPN FC, The Guardian) via
+- **Matches, Fixtures, Standings** — worldcup26.ir (`worldcup26.ir/get/soccer/*`),
+  public API, no key required, CORS-enabled. Endpoints: `/leagues`,
+  `/{league}/fixtures`, `/{league}/standings`, `/{league}/clubs`,
+  `/{league}/clubs/{clubId}`. Rate-limited with exponential backoff retry.
+- **News** — RSS feeds (BBC Sport, ESPN FC, The Guardian) via
   `rss-parser`, plus NewsAPI (`newsapi.org/v2/everything`).
-- **Transfers / Teams / Competitions** â€” Static JSON committed to the repo
+- **Transfers / Teams / Competitions** — Static JSON committed to the repo
   (no live fetcher wired into sync yet).
 
 Source credibility is tracked in `config/sources/*.json` (publications,
@@ -241,8 +293,6 @@ real values â€” `.env` and `.env.local` are gitignored.
 
 | Variable | Purpose | Example |
 |---|---|---|
-| `FOOTBALL_API_KEY` | API-Football RapidAPI key | `your_api_key_here` |
-| `FOOTBALL_API_HOST` | API host (already includes version) | `api-football-v1.p.rapidapi.com` |
 | `NEWS_API_KEY` | NewsAPI key | `your_newsapi_key_here` |
 
 The app itself never reads these at runtime â€” they are only consumed by
@@ -274,9 +324,9 @@ npx tsc --noEmit   # standalone type check
 | `npm run build` | `next build` â€” production build |
 | `npm run start` | `next start` â€” production server |
 | `npm run lint` | `eslint` |
-| `npm run sync` | `tsx src/scripts/run-sync.ts` â€” sync news **and** matches |
+| `npm run sync` | `tsx src/scripts/run-sync.ts` â€” sync news **and** matches (API-Football) |
 | `npm run sync:news` | `tsx src/scripts/run-sync.ts news` â€” sync news only |
-| `npm run sync:matches` | `tsx src/scripts/run-sync.ts matches` â€” sync matches only |
+| `npm run sync:matches` | `tsx src/scripts/run-sync.ts matches` â€” sync match JSON from API-Football
 ## How Data is Updated
 
 Run a sync from the project root:
@@ -319,32 +369,30 @@ To deploy:
 2. In the Vercel dashboard, **Import Project** â†’ select
    `Atharva-Goud/PitchPulse`.
 3. Vercel auto-detects `next.config.ts` as Next.js, runs `npm install`
-   and `npm run build`, and deploys. No environment variables are needed at
-   runtime â€” the app only reads local JSON.
+   and `npm run build`, and deploys. No environment variables are needed â€”
+   football data is fetched at runtime from worldcup26.ir (no API key),
+   and static data (news, transfers, teams) ships as bundled JSON.
 
 ## Known Limitations
 
-- **No upcoming fixtures** â€” the free API-Football plan only covers seasons
-  2022-2024, and the 2024 season ended in May 2025. Future fixtures cannot
-  be populated until a paid plan or a different data source is added. The
-  UI shows an explanatory empty state in that case.
-- **Intermittent empty API responses** â€” the API can return 0 results,
-  likely due to rate limiting. The fetcher retries with exponential
-  backoff (up to 3 attempts), and the sync guards against overwriting
-  existing JSON when a fetch returns nothing, so a bad run does not wipe
-  good data.
-- **Transfer data is static** â€” `rumours.json` and `confirmed.json` are
+- **Rate limiting** — The worldcup26.ir public endpoint enforces a
+  fair-use cap. When exceeded it returns HTTP 429; the client
+  retries with exponential backoff.
+- **Intermittent empty API responses** — The API can return 0 results,
+  likely due to rate limiting. The client retries with exponential
+  backoff (up to 3 attempts).
+- **Transfer data is static** — `rumours.json` and `confirmed.json` are
   hand-maintained; there is no live transfer feed wired into sync yet (the
   `scrapers/` templates exist but are not called).
-- **No player data on team pages** â€” team pages show matches, news, and
+- **No player data on team pages** — team pages show matches, news, and
   transfers, but not squad/player details.
-- **News deduplication is title-based** â€” near-duplicate headlines with
+- **News deduplication is title-based** — near-duplicate headlines with
   different wording are not merged.
 
 ## Potential Future Improvements
 
-- Paid API-Football plan (or a different provider) to restore upcoming
-  fixtures and live match coverage beyond 2024.
+- Add more data from the worldcup26.ir API (club squads, event
+  plays, coach data).
 - Wire the `scrapers/` templates (Transfermarkt, Fabrizio Romano, etc.) into
   the sync pipeline for live transfer data.
 - Add a dedicated `/teams` index page (currently teams are only reachable
