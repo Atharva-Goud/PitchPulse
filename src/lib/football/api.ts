@@ -359,6 +359,9 @@ async function apiFetch(endpoint: string, params: Record<string, string> = {}): 
   const url = new URL(FOOTBALL_API_BASE + endpoint);
   Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
   const key = cacheKey(url.toString());
+  if (typeof window !== 'undefined') {
+    console.log('[apiFetch]', url.toString());
+  }
   const cached = cache.get(key);
   if (cached && Date.now() < cached.expires) {
     return cached.data;
@@ -419,12 +422,33 @@ export async function fetchLeagues(kind: 'club' | 'all' = 'club'): Promise<ApiLe
 }
 
 /**
+ * Fetch the available leagues from the API with full raw data including coverage.
+ */
+export async function fetchAvailableLeaguesRaw(): Promise<Array<ApiLeague & { coverage: any }>> {
+  try {
+    const data = await apiFetch('/leagues', { kind: 'club', available: 'true' });
+    return (data.leagues || []).map((l: any) => ({
+      id: String(l.id || ''),
+      name: l.name || 'Unknown',
+      slug: l.slug || '',
+      country: l.country || '',
+      logo: l.logo || '',
+      coverage: l.coverage || {},
+    }));
+  } catch (error) {
+    console.error('football-api: failed to fetch leagues:', error);
+    return [];
+  }
+}
+
+/**
  * Fetch the available leagues from the API and return them as a slug → league
  * map. This is the single source of truth for which competitions can be
  * displayed — nothing is hard-coded here.
  */
 export async function fetchAvailableLeagues(): Promise<ApiLeague[]> {
-  return fetchLeagues('club');
+  const leagues = await fetchAvailableLeaguesRaw();
+  return leagues.map(({ coverage, ...l }) => l);
 }
 
 export async function fetchFixtures(

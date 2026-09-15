@@ -9,7 +9,7 @@
  * actually exposes. Nothing about which leagues exist is hard-coded here.
  */
 
-import { fetchStandings, fetchAvailableLeagues, fetchFixtures, fetchAllFixtures, type ApiLeague, type ApiStanding, type ApiFixture } from '@/lib/football/api';
+import { fetchStandings, fetchAvailableLeagues, fetchFixtures, type ApiLeague, type ApiStanding, type ApiFixture } from '@/lib/football/api';
 
 export interface TeamRecord {
   played: number;
@@ -128,7 +128,7 @@ export async function getStandingsBySlug(
 ): Promise<StandingRow[]> {
   const [rawStandings, fixtures] = await Promise.all([
     fetchStandings(leagueSlug),
-    fetchAllFixtures(leagueSlug),
+    fetchFixtures(leagueSlug, 'finished'),
   ]);
 
   const standingsWithRecords = rawStandings

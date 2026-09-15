@@ -3,10 +3,11 @@ import { NextResponse } from 'next/server';
 /**
  * Leagues metadata endpoint.
  *
- * Returns the leagues the football API actually exposes, together with the
- * current leader (top team in standings) for each. Discovery + leader probing
- * happen once on the server and are cached for the lifetime of the process,
- * so the client never has to fire 20+ parallel standings/fixtures requests.
+ * Returns the leagues the football API actually exposes, together with basic
+ * metadata (team count, hasStandings). Discovery happens once on the server
+ * and is cached for the lifetime of the process. We avoid probing standings
+ * for every league to prevent 429 errors - the API coverage field tells us
+ * which leagues have data.
  */
 
 export const revalidate = 0;
@@ -25,9 +26,14 @@ export interface LeagueWithLeader {
 let cache: LeagueWithLeader[] | null = null;
 let inFlight: Promise<LeagueWithLeader[]> | null = null;
 
-async function discoverLeaguesWithLeaders(): Promise<LeagueWithLeader[]> {
-  const { fetchAvailableLeagues, fetchStandings } = await import('@/lib/football/api');
-  const leagues = await fetchAvailableLeagues();
+async function discoverLeagues(): Promise<LeagueWithLeader[]> {
+  const { fetchAvailableLeaguesRaw } = await import('@/lib/football/api');
+  const leagues = await fetchAvailableLeaguesRaw();
+
+  // Major league slugs where we want to show the leader
+  const majorLeagues = new Set(['eng.1', 'esp.1', 'ger.1', 'ita.1', 'fra.1', 'ned.1', 'por.1', 'sco.1']);
+
+  const { fetchStandings } = await import('@/lib/football/api');
 
   function statValue(stats: Array<{ name: string; abbreviation: string; displayValue: string }>, name: string): number {
     const s = stats.find((x) => x.name === name);
@@ -39,21 +45,26 @@ async function discoverLeaguesWithLeaders(): Promise<LeagueWithLeader[]> {
   const results = await Promise.all(
     leagues.map(async (l) => {
       let leader: LeagueWithLeader['leader'] = null;
-      let teamCount = 0;
-      try {
-        const rows = await fetchStandings(l.slug);
-        teamCount = rows.length;
-        if (rows.length > 0) {
-          const first = rows[0];
-          leader = {
-            name: first.team.name,
-            logo: first.team.logo,
-            points: statValue(first.stats, 'points'),
-            goalDifference: statValue(first.stats, 'pointDifferential'),
-          };
+      // Use coverage data from the leagues API to avoid extra requests
+      const teamCount = l.coverage?.clubs ?? 0;
+      const hasStandings = (l.coverage?.standingsGroups ?? 0) > 0 && (l.coverage?.hasData ?? false);
+
+      // Only fetch leader for major leagues that have standings
+      if (hasStandings && majorLeagues.has(l.slug)) {
+        try {
+          const rows = await fetchStandings(l.slug);
+          if (rows.length > 0) {
+            const first = rows[0];
+            leader = {
+              name: first.team.name,
+              logo: first.team.logo,
+              points: statValue(first.stats, 'points'),
+              goalDifference: statValue(first.stats, 'pointDifferential'),
+            };
+          }
+        } catch {
+          // Ignore leader fetch errors
         }
-      } catch {
-        // No standings data for this league
       }
       return { ...l, leader, teamCount };
     })
@@ -75,7 +86,7 @@ export async function GET() {
     }
   }
 
-  inFlight = discoverLeaguesWithLeaders();
+  inFlight = discoverLeagues();
   try {
     cache = await inFlight;
     return NextResponse.json(cache);

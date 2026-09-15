@@ -23,9 +23,13 @@ multiple sources into a single dark-themed dashboard.
 - **Teams** — Per-team pages showing the club's league, country, stadium,
   capacity, upcoming matches, recent results, related news, and transfer
   activity.
+- **Leagues** — League overview with standings leaders, fixture snapshots,
+  and quick navigation to standings/fixtures per competition.
 - **Search** — Global search across teams, news, and transfers, with a
   debounced input, expandable result groups, and a keyboard-accessible
   modal (opened from the header).
+- **Quiz** — 30-question Football Knowledge Test with difficulty tiers,
+  progress tracking, and instant feedback.
 - **Homepage** — Scroll-reveal hero, live match + latest news preview,
   feature cards, and sections for live matches, latest news, transfers,
   upcoming matches, recent results, trending stories, competitions, and
@@ -40,6 +44,7 @@ multiple sources into a single dark-themed dashboard.
 - **lucide-react** — icons
 - **rss-parser** — RSS feed parsing during sync
 - **dotenv** — environment variable loading for sync scripts
+- **express** / **cors** — local API proxy server (`local-api-server.js`)
 - **worldcup26.ir** — football data API (live matches, fixtures, standings, teams)
 
 ## Architecture
@@ -49,8 +54,9 @@ The app uses two data strategies:
 1. **Runtime API** (`src/lib/football/`) — Football data (matches, fixtures,
    standings) is fetched at runtime from the worldcup26.ir REST API
    via `src/lib/football/api.ts`. This layer is used by the Matches,
-   Fixtures, and Standings pages. Data is normalised into a shared
+   Fixtures, Standings, and Leagues pages. Data is normalised into a shared
    `NormalizedMatch` shape in `src/lib/football/types.ts`.
+
 2. **Static data** (`src/scripts/fetchers/` → `src/data/*.json` → `src/lib/data/`)
    — News, transfers, teams, and competitions are fetched by sync scripts
    (`src/scripts/`), deduplicated, validated (Zod), and stored as static
@@ -62,19 +68,37 @@ The app uses two data strategies:
 The sync scripts (`src/scripts/`) are run manually via `tsx` outside
 Next.js. They are not part of the production build.
 
+**Local API Proxy** — A lightweight Express server (`local-api-server.js`)
+proxies requests from `http://localhost:3050` to `worldcup26.ir`,
+adding CORS headers and avoiding direct browser-to-external-API calls.
+The Next.js app reads `NEXT_PUBLIC_FOOTBALL_API_URL` (default
+`http://localhost:3050`) so the same code works locally and in production.
+
+The `/api/leagues` server-side route fetches all leagues + their leaders
+(standings only, no fixtures) in one cached call, eliminating the
+80–120 API requests that previously triggered 429 Too Many Requests
+on the Leagues page.
+
 ## Data Flow
 
 **Football data** (matches, fixtures, standings) is fetched at runtime:
 
 1. **Fetch** — `src/lib/football/api.ts` calls the worldcup26.ir REST
    endpoints (`/leagues`, `/{league}/fixtures`, `/{league}/standings`, etc.)
-   directly from the browser. No API key required.
-2. **Normalise** — Raw API responses are normalised in
+   via the local proxy at `http://localhost:3050`. No API key required.
+2. **Cache** — In-memory 30s TTL cache in `api.ts` deduplicates
+   concurrent requests across components.
+3. **Normalise** — Raw API responses are normalised in
    `src/lib/football/matches.ts` and `src/lib/football/types.ts` into
    the `NormalizedMatch` shape, with home/away teams, kickoff time,
    scores, and status mapped consistently.
-3. **Display** — Pages and components consume the normalised data
+4. **Display** — Pages and components consume the normalised data
    directly, with loading, empty, and error states.
+
+**Leagues page optimisation** — The server-side `/api/leagues` route
+fetches the league list once, then fetches standings for each league
+in parallel on the server (bypassing client-side rate limits), caches
+the combined payload, and returns a single JSON response to the client.
 
 **Static data** (news, transfers, teams, competitions) follows the
 sync-pipeline approach:
@@ -87,8 +111,7 @@ sync-pipeline approach:
 3. **Store** — Results are written atomically (write to `.tmp`, then
    `rename`) into `src/data/news/{latest,trending}.json`,
    `src/data/transfers/{rumours,confirmed}.json`, `src/data/teams/teams.json`,
-   `src/data/competitions/competitions.json`, and
-   `src/data/news/{latest,trending}.json`.
+   `src/data/competitions/competitions.json`.
 4. **Display** — The app imports the JSON at build time; accessor functions
    validate on read; pages render with loading, empty, and error states.
 
