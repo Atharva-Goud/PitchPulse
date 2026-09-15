@@ -13,16 +13,16 @@ interface BeamsBackgroundProps {
 /**
  * A canvas-based animated background of drifting light beams.
  *
- * Subtle, full-screen, pointer-safe: beams drift diagonally at low opacity
- * behind the page content. Defaults to PitchPulse's emerald accent to match
+ * Full-screen, pointer-safe: beams drift diagonally at visible opacity
+ * behind the page content. Uses PitchPulse's brand rose to match
  * the dark design language. Respects `prefers-reduced-motion`.
  */
 export function BeamsBackground({
-  beamCount = 8,
-  beamColor = '16, 185, 129',
-  speed = 0.4,
+  beamCount = 10,
+  beamColor = '225, 29, 72',
+  speed = 0.5,
   className = '',
-  opacity = 0.85,
+  opacity = 1.0,
 }: BeamsBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -52,10 +52,10 @@ export function BeamsBackground({
     const beams: Beam[] = Array.from({ length: beamCount }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
-      length: 120 + Math.random() * 240,
+      length: 150 + Math.random() * 300,
       speedX: (Math.random() - 0.5) * speed,
       speedY: (Math.random() - 0.5) * speed,
-      thickness: 2 + Math.random() * 2.5,
+      thickness: 2 + Math.random() * 3,
       phase: Math.random() * Math.PI * 2,
     }));
 
@@ -66,7 +66,7 @@ export function BeamsBackground({
       for (const beam of beams) {
         beam.x += beam.speedX;
         beam.y += beam.speedY;
-        beam.phase += 0.01;
+        beam.phase += 0.008;
 
         // Wrap around edges
         if (beam.x < -beam.length) beam.x = width + beam.length;
@@ -74,11 +74,11 @@ export function BeamsBackground({
         if (beam.y < -beam.length) beam.y = height + beam.length;
         if (beam.y > height + beam.length) beam.y = -beam.length;
 
-        const alpha = (0.45 + 0.25 * Math.sin(beam.phase)) * opacity;
+        const alpha = (0.5 + 0.3 * Math.sin(beam.phase)) * opacity;
         const color = `rgba(${beamColor}, ${alpha})`;
 
         ctx.shadowColor = color;
-        ctx.shadowBlur = 12;
+        ctx.shadowBlur = 16;
         ctx.strokeStyle = color;
         ctx.lineWidth = beam.thickness;
         ctx.beginPath();

@@ -71,7 +71,7 @@ export default function GlobalLoader({ ready }: { ready: boolean }) {
               }
             />
             <motion.p
-              className="mt-5 text-xs font-medium tracking-[0.35em] text-slate-500"
+              className="mt-5 text-xs font-medium tracking-[0.35em] text-[var(--text-muted)]"
               initial={{ opacity: 0, y: 6 }}
               animate={{ opacity: 1, y: 0 }}
               transition={
@@ -80,7 +80,7 @@ export default function GlobalLoader({ ready }: { ready: boolean }) {
                   : { delay: 0.5, duration: 0.5, ease: 'easeOut' }
               }
             >
-              PITCHINTEL
+              PITCHPULSE
             </motion.p>
           </div>
         </motion.div>

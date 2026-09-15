@@ -9,7 +9,16 @@
  * actually exposes. Nothing about which leagues exist is hard-coded here.
  */
 
-import { fetchStandings, fetchAvailableLeagues, type ApiLeague, type ApiStanding } from '@/lib/football/api';
+import { fetchStandings, fetchAvailableLeagues, fetchFixtures, fetchAllFixtures, type ApiLeague, type ApiStanding, type ApiFixture } from '@/lib/football/api';
+
+export interface TeamRecord {
+  played: number;
+  won: number;
+  draw: number;
+  lost: number;
+  goalsFor: number;
+  goalsAgainst: number;
+}
 
 export interface StandingRow {
   rank: number;
@@ -25,6 +34,9 @@ export interface StandingRow {
   goalDifference: number;
   points: number;
   form: string;
+  rankChange: number;
+  homeRecord: TeamRecord;
+  awayRecord: TeamRecord;
   note: { color: string; description: string; rank: number } | null;
 }
 
@@ -36,6 +48,76 @@ function statValue(stats: any[], name: string): number {
 }
 
 /**
+ * Calculate home/away records and recent form from fixtures.
+ */
+function calculateRecordsAndForm(
+  teamId: string,
+  fixtures: ApiFixture[]
+): { homeRecord: TeamRecord; awayRecord: TeamRecord; form: string } {
+  const homeRecord: TeamRecord = { played: 0, won: 0, draw: 0, lost: 0, goalsFor: 0, goalsAgainst: 0 };
+  const awayRecord: TeamRecord = { played: 0, won: 0, draw: 0, lost: 0, goalsFor: 0, goalsAgainst: 0 };
+  const recentResults: Array<{ date: number; result: 'W' | 'D' | 'L' }> = [];
+
+  for (const fixture of fixtures) {
+    const comp = fixture.competitions?.[0];
+    if (!comp) continue;
+    
+    const competitors = comp.competitors || [];
+    const homeCompetitor = competitors.find((c: any) => c.homeAway === 'home');
+    const awayCompetitor = competitors.find((c: any) => c.homeAway === 'away');
+    
+    if (!homeCompetitor || !awayCompetitor) continue;
+
+    const isHome = homeCompetitor.team.id === teamId;
+    const isAway = awayCompetitor.team.id === teamId;
+    
+    if (!isHome && !isAway) continue;
+
+    const status = fixture.status?.state;
+    const completed = fixture.status?.completed || status === 'post';
+    
+    if (!completed) continue;
+
+    const homeScore = homeCompetitor.score ? Number(homeCompetitor.score) : 0;
+    const awayScore = awayCompetitor.score ? Number(awayCompetitor.score) : 0;
+
+    let result: 'W' | 'D' | 'L';
+    if (homeScore > awayScore) {
+      result = isHome ? 'W' : 'L';
+    } else if (homeScore < awayScore) {
+      result = isHome ? 'L' : 'W';
+    } else {
+      result = 'D';
+    }
+
+    const matchDate = new Date(fixture.date).getTime();
+    recentResults.push({ date: matchDate, result });
+
+    if (isHome) {
+      homeRecord.played++;
+      homeRecord.goalsFor += homeScore;
+      homeRecord.goalsAgainst += awayScore;
+      if (result === 'W') homeRecord.won++;
+      else if (result === 'D') homeRecord.draw++;
+      else homeRecord.lost++;
+    } else {
+      awayRecord.played++;
+      awayRecord.goalsFor += awayScore;
+      awayRecord.goalsAgainst += homeScore;
+      if (result === 'W') awayRecord.won++;
+      else if (result === 'D') awayRecord.draw++;
+      else awayRecord.lost++;
+    }
+  }
+
+  // Sort by date descending (most recent first) and take last 5
+  recentResults.sort((a, b) => b.date - a.date);
+  const form = recentResults.slice(0, 5).map(r => r.result).join(' ');
+
+  return { homeRecord, awayRecord, form };
+}
+
+/**
  * Fetch and normalize standings for a single league slug (e.g. 'eng.1').
  * Returns an empty array when the API has no data for that league — the
  * caller is responsible for distinguishing "no data" from "API failure".
@@ -44,9 +126,12 @@ export async function getStandingsBySlug(
   leagueSlug: string,
   season?: number
 ): Promise<StandingRow[]> {
-  const raw = await fetchStandings(leagueSlug);
+  const [rawStandings, fixtures] = await Promise.all([
+    fetchStandings(leagueSlug),
+    fetchAllFixtures(leagueSlug),
+  ]);
 
-  return raw
+  const standingsWithRecords = rawStandings
     .map(s => {
       const stats = s.stats || [];
       const played = statValue(stats, 'gamesPlayed');
@@ -56,6 +141,10 @@ export async function getStandingsBySlug(
       const pointsFor = statValue(stats, 'pointsFor');
       const pointsAgainst = statValue(stats, 'pointsAgainst');
       const points = statValue(stats, 'points');
+      const rankChange = statValue(stats, 'rankChange');
+      
+      const { homeRecord, awayRecord, form } = calculateRecordsAndForm(s.team.id, fixtures);
+
       return {
         rank: statValue(stats, 'rank') || s.rank || 0,
         teamId: s.team.id,
@@ -69,11 +158,16 @@ export async function getStandingsBySlug(
         goalsAgainst: pointsAgainst,
         goalDifference: statValue(stats, 'pointDifferential'),
         points,
-        form: '',
+        form,
+        rankChange,
+        homeRecord,
+        awayRecord,
         note: s.note,
       };
     })
     .sort((a, b) => a.rank - b.rank);
+
+  return standingsWithRecords;
 }
 
 /** Backwards-compatible alias used by the existing match pages. */

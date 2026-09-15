@@ -8,3 +8,7 @@ export { default as SectionHeader } from './SectionHeader';
 export { GlowCard } from './spotlight-card';
 export { BeamsBackground } from './beams-background';
 export { Component as LiquidGlass } from './liquid-glass';
+
+/* ---- Shared UI primitives (Phase 1 design foundation) ---- */
+export { Button, Badge, Card } from './primitives';
+export type { ButtonProps, BadgeProps, CardProps } from './primitives';

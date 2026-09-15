@@ -7,17 +7,13 @@ import { resolve } from 'path';
 // reads .env.local, so load it explicitly here to keep the sync scripts
 // (run via tsx outside Next) consistent with the app.
 for (const file of ['.env.local', '.env']) {
-  const path = resolve(process.cwd(), file);
+  const path = resolve(/*turbopackIgnore: true*/ process.cwd(), file);
   if (existsSync(path)) loadEnv({ path });
 }
 
 export const config = {
   football: {
-    apiKey: process.env.FOOTBALL_API_KEY || '',
-    apiHost: process.env.FOOTBALL_API_HOST || 'api-football-v1.p.rapidapi.com',
-    // The host already includes the version segment (e.g.
-    // v3.football.api-sports.io), so the base URL must NOT add /v3 again.
-    baseUrl: `https://${process.env.FOOTBALL_API_HOST || 'api-football-v1.p.rapidapi.com'}`,
+    baseUrl: process.env.NEXT_PUBLIC_FOOTBALL_API_URL || 'https://worldcup26.ir/get/soccer',
   },
   news: {
     apiKey: process.env.NEWS_API_KEY || '',

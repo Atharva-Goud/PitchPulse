@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import {
   Goal,
   Square,
@@ -11,6 +11,8 @@ import {
   Shield,
   Flag,
   Info,
+  ChevronUp,
+  ChevronDown,
 } from 'lucide-react';
 
 export type MatchEventType = 'goal' | 'goal_own' | 'yellow' | 'red' | 'substitution' | 'penalty' | 'var' | 'other';
@@ -29,6 +31,7 @@ interface MatchEventsProps {
   events: MatchEvent[];
   homeTeam?: string;
   awayTeam?: string;
+  liveMode?: boolean;
 }
 
 function classifyEvent(type: string, team: 'home' | 'away' | null): MatchEventType {
@@ -73,22 +76,24 @@ function eventLabel(type: MatchEventType, rawType: string): string {
     case 'yellow': return 'Yellow Card';
     case 'red': return 'Red Card';
     case 'penalty': return 'Penalty';
-    case 'var': return 'VAR';
+    case 'var': return 'VAR Review';
     case 'substitution': return 'Substitution';
     default: return 'Event';
   }
 }
 
-export default function MatchEvents({ events, homeTeam, awayTeam }: MatchEventsProps) {
+export default function MatchEvents({ events, homeTeam, awayTeam, liveMode = false }: MatchEventsProps) {
+  const [sortAsc, setSortAsc] = useState(!liveMode); // Default: chronological for finished, reverse for live
+
   const sorted = useMemo(() => {
     return [...events]
-      .map(e => ({
+      .map((e) => ({
         ...e,
         _type: classifyEvent(e.type, e.team),
         _minute: e.minute ?? 0,
       }))
-      .sort((a, b) => a._minute - b._minute || a.type.localeCompare(b.type));
-  }, [events]);
+      .sort((a, b) => (sortAsc ? 1 : -1) * (a._minute - b._minute || a.type.localeCompare(b.type)));
+  }, [events, sortAsc]);
 
   if (sorted.length === 0) {
     return (
@@ -105,9 +110,19 @@ export default function MatchEvents({ events, homeTeam, awayTeam }: MatchEventsP
 
   return (
     <div className="rounded-xl border border-white/10 bg-slate-900/60 overflow-hidden">
-      <div className="px-6 py-4 border-b border-white/10">
-        <h3 className="text-lg font-semibold text-white">Match Events</h3>
-        <p className="text-xs text-slate-400 mt-0.5">Key moments from the match</p>
+      <div className="px-6 py-4 border-b border-white/10 flex items-center justify-between">
+        <div>
+          <h3 className="text-lg font-semibold text-white">Match Events</h3>
+          <p className="text-xs text-slate-400 mt-0.5">Key moments from the match</p>
+        </div>
+        <button
+          onClick={() => setSortAsc(!sortAsc)}
+          className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-white transition-colors px-2 py-1 rounded hover:bg-white/5"
+          aria-label={sortAsc ? 'Sort newest first' : 'Sort oldest first'}
+        >
+          {sortAsc ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
+          <span className="hidden sm:inline">{sortAsc ? 'Oldest first' : 'Newest first'}</span>
+        </button>
       </div>
       <div className="divide-y divide-white/5">
         {sorted.map((event, index) => {

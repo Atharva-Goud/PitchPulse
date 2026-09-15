@@ -46,7 +46,7 @@ export default function LoadingState({
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" role="status" aria-label="Loading">
       {Array.from({ length: count }).map((_, i) => (
-        <div key={i} className="rounded-xl bg-slate-900 border border-white/10 overflow-hidden">
+        <div key={i} className="rounded-xl card-base overflow-hidden">
           <div 
             className="aspect-[16/10] bg-slate-800 animate-pulse" 
             style={{ height: height || '200px' }}

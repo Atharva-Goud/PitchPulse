@@ -69,7 +69,7 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
         href={article.sourceUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex gap-3 p-3 hover:bg-white/5 rounded-lg transition-colors group"
+        className="flex gap-3 p-3 rounded-lg hover:bg-white/5 transition-colors group"
       >
         <div className="relative h-20 w-28 rounded-lg flex-shrink-0 overflow-hidden">
           <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" fill sizes="112px" />
@@ -93,7 +93,7 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
 
   if (variant === 'featured') {
     return (
-      <article className="relative group rounded-2xl overflow-hidden bg-slate-900 border border-white/10">
+      <article className="relative group rounded-2xl overflow-hidden card-base card-hover">
         <Link href={article.sourceUrl} target="_blank" rel="noopener noreferrer">
           <div className="relative aspect-video overflow-hidden">
             <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" fill sizes="(max-width: 768px) 100vw, 50vw" />
@@ -110,7 +110,7 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
         <div className="absolute bottom-0 left-0 right-0 p-6">
           <div className="flex items-center gap-3 mb-3">
             <span className="text-xs text-slate-400 flex items-center gap-1">
-              <Clock className="h-3 w-3" />
+              <Clock className="h-3 w-3" aria-hidden="true" />
               {formatDate(article.publishedAt)}
             </span>
             <span className="text-xs text-slate-400">{sourceName}</span>
@@ -134,7 +134,7 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
               className="flex items-center gap-1 hover:text-emerald-400 transition-colors"
             >
               Read more
-              <ExternalLink className="h-3.5 w-3.5" />
+              <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
             </Link>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
   }
 
   return (
-    <article className="group rounded-xl overflow-hidden bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-colors">
+    <article className="group rounded-xl overflow-hidden card-base card-hover">
       <Link href={article.sourceUrl} target="_blank" rel="noopener noreferrer" className="block">
         <div className="relative aspect-[16/10] overflow-hidden">
           <FallbackImage src={imageUrl} alt={article.title} className="absolute inset-0" fill sizes="(max-width: 1024px) 50vw, 33vw" />
@@ -156,7 +156,7 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
             {article.category}
           </span>
           <span className="text-xs text-slate-400 flex items-center gap-1">
-            <Clock className="h-3 w-3" />
+            <Clock className="h-3 w-3" aria-hidden="true" />
             {formatDate(article.publishedAt)}
           </span>
         </div>
@@ -182,7 +182,7 @@ export default function NewsCard({ article, variant = 'default' }: Props) {
             rel="noopener noreferrer"
             className="flex items-center gap-1 text-xs text-slate-400 hover:text-emerald-400 transition-colors"
           >
-            <ExternalLink className="h-3.5 w-3.5" />
+            <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
           </Link>
         </div>
       </div>

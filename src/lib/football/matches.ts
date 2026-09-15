@@ -172,4 +172,29 @@ export async function getMatchesByCompetition(
   return raw.map(f => normalizeApiFixture(toNormalizable(f)));
 }
 
+/**
+ * Fetch recent finished matches for a specific team to show form.
+ * Searches across all competitions since team IDs are global.
+ */
+export async function getRecentMatchesByTeam(
+  teamId: string,
+  limit: number = 5
+): Promise<NormalizedMatch[]> {
+  const leagues = Object.values(COMPETITIONS);
+  const results: NormalizedMatch[] = [];
+
+  for (const l of leagues) {
+    const raw = await fetchFixtures(l, 'all');
+    const teamMatches = raw
+      .map(f => normalizeApiFixture(toNormalizable(f)))
+      .filter(isFinished)
+      .filter(m => m.homeTeam.id === teamId || m.awayTeam.id === teamId);
+    results.push(...teamMatches);
+  }
+
+  return results
+    .sort((a, b) => new Date(b.kickoff).getTime() - new Date(a.kickoff).getTime())
+    .slice(0, limit);
+}
+
 export { COMPETITIONS, type CompetitionKey };

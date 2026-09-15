@@ -1,9 +1,16 @@
 import { Competition } from '@/types';
-import { CompetitionSchema, validateData } from '@/lib/schemas';
-import competitionsData from '@/data/competitions/competitions.json';
+import { fetchAvailableLeagues } from '@/lib/football/api';
 
 export async function getAllCompetitions(): Promise<Competition[]> {
-  return validateData(CompetitionSchema, competitionsData);
+  const leagues = await fetchAvailableLeagues();
+  return leagues.map(l => ({
+    id: l.slug || l.id,
+    name: l.name,
+    shortName: (l.slug || l.id).split('.')[0],
+    logo: l.logo || null,
+    country: l.country || '',
+    type: 'league' as const,
+  }));
 }
 
 export async function getCompetitionById(id: string): Promise<Competition | null> {

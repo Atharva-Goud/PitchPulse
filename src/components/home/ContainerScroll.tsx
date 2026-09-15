@@ -52,7 +52,7 @@ const ContainerScrollInternal = ({ titleComponent, children }: ContainerScrollPr
 const Header = ({ translate, titleComponent }: { translate: MotionValue<number>; titleComponent: string | React.ReactNode }) => (
   <motion.div
     style={{ translateY: translate }}
-    className="div max-w-5xl mx-auto text-center"
+    className="max-w-5xl mx-auto text-center"
   >
     {titleComponent}
   </motion.div>
@@ -76,9 +76,9 @@ const Card = ({
       boxShadow:
         '0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003',
     }}
-    className="max-w-5xl mt-28 md:mt-36 mx-auto h-[30rem] md:h-[40rem] w-full border-4 border-white/10 p-2 md:p-6 bg-slate-950 rounded-[30px] shadow-2xl"
+    className="max-w-5xl mt-28 md:mt-36 mx-auto h-[30rem] md:h-[40rem] w-full border border-[var(--border-default)] p-2 md:p-6 bg-[var(--surface-0)] rounded-2xl shadow-2xl"
   >
-    <div className="h-full w-full overflow-hidden rounded-2xl bg-slate-950 border border-white/10 md:rounded-2xl md:p-4">
+    <div className="h-full w-full overflow-hidden rounded-xl bg-[var(--surface-0)] border border-[var(--border-default)] md:p-4">
       {children}
     </div>
   </motion.div>

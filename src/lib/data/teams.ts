@@ -1,9 +1,16 @@
 import { Team } from '@/types';
-import { TeamSchema, validateData } from '@/lib/schemas';
-import teamsData from '@/data/teams/teams.json';
+import { fetchAllClubs } from '@/lib/football/api';
 
 export async function getAllTeams(): Promise<Team[]> {
-  return validateData(TeamSchema, teamsData);
+  const clubs = await fetchAllClubs();
+  return clubs.map(c => ({
+    id: c.id,
+    name: c.name,
+    shortName: c.abbreviation || c.name.slice(0, 3).toUpperCase(),
+    logo: c.logo || null,
+    country: '',
+    league: '',
+  }));
 }
 
 export async function getTeamById(id: string): Promise<Team | null> {

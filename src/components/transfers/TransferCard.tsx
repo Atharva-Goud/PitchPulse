@@ -75,7 +75,7 @@ export default function TransferCard({ transfer, variant = 'default' }: Props) {
   const toLogo = transfer.toClub;
 
   return (
-    <div className="rounded-xl overflow-hidden bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-colors">
+    <div className="rounded-xl overflow-hidden card-base card-hover">
       <div className="flex items-center gap-4 p-4">
         {playerImage && (
           <div className="relative h-16 w-16 flex-shrink-0 rounded-lg overflow-hidden bg-slate-800">
@@ -94,19 +94,19 @@ export default function TransferCard({ transfer, variant = 'default' }: Props) {
           <div className="mt-2 flex items-center gap-2">
             <TeamLogo team={fromLogo} size="sm" />
             <span className="text-xs text-slate-400">{fromLogo?.shortName || fromLogo?.name}</span>
-            <ArrowRight className="h-4 w-4 text-slate-500" />
+            <ArrowRight className="h-4 w-4 text-slate-500" aria-hidden="true" />
             <TeamLogo team={toLogo} size="sm" />
             <span className="text-xs text-slate-400">{toLogo?.shortName || toLogo?.name}</span>
           </div>
 
           <div className="mt-2">
-            <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs ${statusConfigItem.bgColor} ${statusConfigItem.color}`}>
+            <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs ${statusConfigItem.bgColor} ${statusConfigItem.color} border`}>
               {statusConfigItem.icon}
               {status}
             </span>
             {isStaleTransfer(transfer.updatedAt) && (
               <span className="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs bg-slate-700/60 text-slate-400">
-                <Clock className="h-3 w-3" />
+                <Clock className="h-3 w-3" aria-hidden="true" />
                 Historical
               </span>
             )}

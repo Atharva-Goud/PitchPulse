@@ -15,7 +15,7 @@
  * it returns HTTP 429; we retry with exponential backoff.
  */
 
-export const FOOTBALL_API_BASE = (process.env.FOOTBALL_API_BASE || 'https://worldcup26.ir') + '/get/soccer';
+export const FOOTBALL_API_BASE = process.env.NEXT_PUBLIC_FOOTBALL_API_URL || 'http://localhost:3050';
 
 export type ApiTeam = {
   id: string;
@@ -440,6 +440,35 @@ export async function fetchFixtures(
   }
 }
 
+/**
+ * Fetch all fixtures for a league across all pages (handles pagination).
+ */
+export async function fetchAllFixtures(league: string): Promise<ApiFixture[]> {
+  try {
+    const firstPageData = await apiFetch('/' + league + '/fixtures', { status: 'all', pageIndex: '1' });
+    const firstPageEvents = (firstPageData.events || []).map(normalizeApiFixture);
+    const pageCount = firstPageData.pageCount || 1;
+    
+    const allFixtures = [...firstPageEvents];
+    
+    for (let pageIndex = 2; pageIndex <= pageCount; pageIndex++) {
+      try {
+        const data = await apiFetch('/' + league + '/fixtures', { status: 'all', pageIndex: String(pageIndex) });
+        const events = (data.events || []).map(normalizeApiFixture);
+        if (events.length === 0) break;
+        allFixtures.push(...events);
+      } catch {
+        break;
+      }
+    }
+    
+    return allFixtures;
+  } catch (error) {
+    console.error('football-api: failed to fetch all fixtures:', error);
+    return [];
+  }
+}
+
 export async function fetchStandings(league: string): Promise<ApiStanding[]> {
   try {
     const data = await apiFetch('/' + league + '/standings');
@@ -690,3 +719,36 @@ export function getLeagueSlug(key: CompetitionKey): string {
 
 /** Seasons the worldcup26.ir API exposes for club competitions. */
 export const SUPPORTED_SEASONS = [2026] as const;
+
+export type ApiClub = {
+  id: string;
+  name: string;
+  logo: string;
+  abbreviation?: string;
+};
+
+export async function fetchClubs(league: string): Promise<ApiClub[]> {
+  try {
+    const data = await apiFetch('/' + league + '/clubs');
+    const clubs = data.clubs || data || [];
+    return (Array.isArray(clubs) ? clubs : []).map((c: any) => ({
+      id: String(c.id || c.slug || ''),
+      name: c.name || 'Unknown',
+      logo: c.logo || '',
+      abbreviation: c.abbreviation,
+    }));
+  } catch (error) {
+    console.error('football-api: failed to fetch clubs:', error);
+    return [];
+  }
+}
+
+export async function fetchAllClubs(): Promise<ApiClub[]> {
+  const leagues = Object.values(COMPETITIONS);
+  const results: ApiClub[] = [];
+  for (const l of leagues) {
+    const clubs = await fetchClubs(l);
+    results.push(...clubs);
+  }
+  return results;
+}

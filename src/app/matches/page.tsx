@@ -1,14 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Radio, Calendar, Trophy, Clock } from 'lucide-react';
-import FootballMatchCard from '@/components/football/FootballMatchCard';
+import { useState, useEffect, useMemo } from 'react';
+import { Radio, Calendar, Trophy, Clock, Zap } from 'lucide-react';
+import MatchCard from '@/components/football/MatchCard';
 import { EmptyState, LoadingState } from '@/components/ui';
 import { getLiveMatchList, getUpcomingMatchList, getRecentMatchList } from '@/lib/football/matches';
 import type { NormalizedMatch } from '@/lib/football/types';
 
 function freshnessLabel(): string {
-  // Live data is fetched fresh on each page load; report it as just-updated.
   return 'just updated';
 }
 
@@ -39,10 +38,21 @@ export default function FootballMatchesPage() {
     loadData();
   }, []);
 
+  // Group live matches by competition for better organization
+  const groupedLive = useMemo(() => {
+    const groups: Record<string, NormalizedMatch[]> = {};
+    live.forEach((match) => {
+      const compName = match.league.name;
+      if (!groups[compName]) groups[compName] = [];
+      groups[compName].push(match);
+    });
+    return groups;
+  }, [live]);
+
   if (loading) {
     return (
       <div className="min-h-screen">
-        <div className="mx-auto max-w-7xl px-4 py-12">
+        <div className="container-page py-12">
           <LoadingState variant="card" count={6} />
         </div>
       </div>
@@ -59,31 +69,49 @@ export default function FootballMatchesPage() {
 
   return (
     <div className="min-h-screen">
-      <div className="mx-auto max-w-7xl px-4 py-12">
+      <div className="container-page py-12">
         <div className="mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">Match Centre</h1>
-          <p className="text-slate-400">Live scores, fixtures, and results from around the world</p>
+          <h1 className="text-4xl font-bold text-white mb-2">Match Centre</h1>
+          <p className="text-[var(--text-secondary)]">Live scores, fixtures, and results from around the world</p>
         </div>
 
+        {/* Tabs with live indicator */}
         <div className="mb-8">
-          <div className="flex rounded-xl bg-slate-900 p-1.5 border border-white/10 overflow-x-auto">
+          <div className="flex rounded-xl bg-[var(--surface-2)] p-1.5 border border-[var(--border-default)] overflow-x-auto">
             {tabs.map((tab) => {
               const Icon = tab.icon;
+              const isActive = activeTab === tab.id;
+              const isLiveTab = tab.id === 'live';
               return (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium transition-colors whitespace-nowrap ${
-                    activeTab === tab.id
-                      ? 'bg-emerald-500 text-white'
-                      : 'text-slate-300 hover:text-white hover:bg-slate-800'
+                  className={`flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium transition-colors whitespace-nowrap min-h-[48px] relative ${
+                    isActive
+                      ? isLiveTab
+                        ? 'bg-red-500/20 text-red-400 border border-red-500/30'
+                        : 'bg-emerald-500 text-white'
+                      : isLiveTab
+                      ? 'text-red-400 hover:bg-red-500/10'
+                      : 'text-[var(--text-secondary)] hover:text-white hover:bg-[var(--surface-3)]'
                   }`}
+                  aria-pressed={isActive}
                 >
-                  <Icon className="h-4 w-4" />
+                  {isLiveTab && (
+                    <span className="relative flex h-2 w-2 ml-1" aria-hidden="true">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                    </span>
+                  )}
+                  <Icon className="h-4 w-4" aria-hidden="true" />
                   {tab.label}
                   {tab.count > 0 && (
                     <span className={`px-2 py-0.5 rounded-full text-xs ${
-                      activeTab === tab.id ? 'bg-white/20' : 'bg-slate-700'
+                      isActive
+                        ? isLiveTab
+                          ? 'bg-red-500/30'
+                          : 'bg-white/20'
+                        : 'bg-[var(--surface-3)]'
                     }`}>
                       {tab.count}
                     </span>
@@ -94,18 +122,21 @@ export default function FootballMatchesPage() {
           </div>
         </div>
 
+        {/* Live matches banner */}
         {activeTab === 'live' && live.length > 0 && (
           <div className="mb-6 p-4 rounded-xl bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20">
-            <div className="flex items-center gap-2">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-              </span>
-              <span className="text-sm text-red-400 font-medium">
-                {live.length} match{live.length !== 1 ? 'es' : ''} currently live
-              </span>
-              <span className="text-xs text-slate-500 ml-auto flex items-center gap-1">
-                <Clock className="h-3 w-3" />
+            <div className="flex items-center justify-between gap-4 flex-wrap">
+              <div className="flex items-center gap-2">
+                <span className="relative flex h-3 w-3" aria-hidden="true">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                </span>
+                <span className="text-sm text-red-400 font-medium">
+                  {live.length} match{live.length !== 1 ? 'es' : ''} currently live
+                </span>
+              </div>
+              <span className="text-xs text-[var(--text-muted)] flex items-center gap-1">
+                <Clock className="h-3 w-3" aria-hidden="true" />
                 Updated {freshnessLabel()}
               </span>
             </div>
@@ -116,21 +147,45 @@ export default function FootballMatchesPage() {
           <EmptyState
             type="matches"
             message={activeTab === 'live' ? 'No live matches at the moment' : `No ${activeTab} matches`}
-reason={activeTab === 'live'
-  ? 'No fixtures are currently in progress. Check back shortly.'
-  : activeTab === 'upcoming'
-    ? 'No upcoming fixtures are available for the selected competitions yet. Check back shortly.'
-    : 'No recent results are available for the selected competitions yet.'}
+            reason={activeTab === 'live'
+              ? 'No fixtures are currently in progress. Check back shortly.'
+              : activeTab === 'upcoming'
+                ? 'No upcoming fixtures are available for the selected competitions yet. Check back shortly.'
+                : 'No recent results are available for the selected competitions yet.'}
           />
         ) : (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {displayedMatches.map((match) => (
-              <FootballMatchCard
-                key={match.id}
-                match={match}
-                variant={activeTab === 'live' ? 'live' : 'default'}
-              />
-            ))}
+          <div className="space-y-8">
+            {activeTab === 'live' && Object.keys(groupedLive).length > 0 ? (
+              // Live matches grouped by competition
+              Object.entries(groupedLive).map(([compName, matches]) => (
+                <section key={compName} className="animate-in">
+                  <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                    <Trophy className="h-5 w-5 text-emerald-400" />
+                    {compName}
+                  </h3>
+                  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {matches.map((match) => (
+                      <MatchCard
+                        key={match.id}
+                        match={match}
+                        variant="live"
+                      />
+                    ))}
+                  </div>
+                </section>
+              ))
+            ) : (
+              // Upcoming/Results - simple grid
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {displayedMatches.map((match) => (
+                  <MatchCard
+                    key={match.id}
+                    match={match}
+                    variant={activeTab === 'live' ? 'live' : 'default'}
+                  />
+                ))}
+              </div>
+            )}
           </div>
         )}
       </div>

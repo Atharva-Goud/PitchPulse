@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Radio, Clock } from 'lucide-react';
+import { Clock } from 'lucide-react';
 import TeamLogo from '@/components/football/TeamLogo';
 import {
   formatKickoffTime,
@@ -19,23 +19,25 @@ interface Props {
   onClick?: (match: NormalizedMatch) => void;
   className?: string;
   hideFooter?: boolean;
+  hideLeague?: boolean;
 }
 
-const statusBgColors: Record<string, string> = {
-  LIVE: 'bg-red-500/10 border-red-500/20 text-red-500',
-  HALFTIME: 'bg-amber-400/10 border-amber-400/20 text-amber-400',
-  FINISHED: 'bg-slate-700/50 border-white/10 text-slate-400',
-  SCHEDULED: 'bg-emerald-500/10 border-emerald-500/20 text-emerald-500',
-  POSTPONED: 'bg-amber-400/10 border-amber-400/20 text-amber-400',
-  CANCELLED: 'bg-red-400/10 border-red-400/20 text-red-400',
+const statusBadgeVariant: Record<string, 'live' | 'finished' | 'upcoming' | 'warning'> = {
+  LIVE: 'live',
+  HALFTIME: 'warning',
+  FINISHED: 'finished',
+  SCHEDULED: 'upcoming',
+  POSTPONED: 'warning',
+  CANCELLED: 'warning',
 };
 
-export default function FootballMatchCard({
+export default function MatchCard({
   match,
   variant = 'default',
   onClick,
   className = '',
   hideFooter = false,
+  hideLeague = false,
 }: Props) {
   const router = useRouter();
   const live = isLive(match);
@@ -51,19 +53,17 @@ export default function FootballMatchCard({
     }
   };
 
-  const getStatusLabel = () => {
+  const statusVariant = statusBadgeVariant[match.status] || 'upcoming';
+  const statusLabel = (() => {
     if (live) {
       if (match.status === 'HALFTIME') return 'HT';
-      return `LIVE ${match.statusDisplayClock || match.statusClock ? `${match.statusDisplayClock || match.statusClock}'` : ''}`.trim();
+      const clock = match.statusDisplayClock || (match.statusClock != null ? `${match.statusClock}'` : '');
+      return `LIVE${clock ? ` ${clock}` : ''}`;
     }
     if (finished) return 'FT';
     if (scheduled) return 'UPCOMING';
     return match.statusLabel;
-  };
-
-  const getStatusBadgeClass = () => {
-    return statusBgColors[match.status] || statusBgColors.SCHEDULED;
-  };
+  })();
 
   if (variant === 'compact') {
     return (
@@ -71,7 +71,7 @@ export default function FootballMatchCard({
         onClick={handleClick}
         className={`w-full flex items-center gap-3 p-2 rounded-lg hover:bg-white/5 transition-colors text-left ${className}`}
       >
-        <div className="text-xs text-slate-400 w-14 tabular-nums">
+        <div className="text-xs text-[var(--text-muted)] w-14 tabular-nums">
           {live ? time : formatKickoffTime(match.kickoff)}
         </div>
         <div className="flex-1 flex items-center justify-between gap-2 min-w-0">
@@ -87,7 +87,6 @@ export default function FootballMatchCard({
             <TeamLogo team={match.awayTeam} size="xs" />
           </div>
         </div>
-        {live && <Radio className="h-3 w-3 text-red-500 animate-pulse flex-shrink-0" />}
       </button>
     );
   }
@@ -95,19 +94,21 @@ export default function FootballMatchCard({
   return (
     <button
       onClick={handleClick}
-      className={`relative w-full rounded-xl overflow-hidden bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-colors text-left focus:outline-none focus:ring-2 focus:ring-emerald-500/50 ${className}`}
+      className={`relative w-full rounded-xl overflow-hidden card-base card-hover focus:outline-none focus:ring-2 focus:ring-emerald-500/50 ${className}`}
     >
       {/* Status badge at top */}
       <div className="px-4 py-3 border-b border-white/5">
         <div className="flex items-center justify-between">
-          <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold ${getStatusBadgeClass()} border`}>
+          <span
+            className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border badge-${statusVariant}`}
+          >
             {live && (
-              <span className="relative flex h-1.5 w-1.5">
+              <span className="relative flex h-1.5 w-1.5" aria-hidden="true">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-red-500"></span>
               </span>
             )}
-            {getStatusLabel()}
+            {statusLabel}
           </span>
         </div>
       </div>
@@ -131,25 +132,25 @@ export default function FootballMatchCard({
                   <span className="text-xl sm:text-2xl font-bold text-white tabular-nums w-8 text-right">
                     {match.homeScore ?? '-'}
                   </span>
-                  <span className="text-slate-500 text-sm font-medium px-2">—</span>
+                  <span className="text-[var(--text-disabled)] text-sm font-medium px-2">—</span>
                   <span className="text-xl sm:text-2xl font-bold text-white tabular-nums w-8 text-left">
                     {match.awayScore ?? '-'}
                   </span>
                 </div>
                 {live && (
                   <span className="text-xs text-red-500 font-medium flex items-center gap-1">
-                    <Radio className="h-3 w-3 animate-pulse" />
+                    <Clock className="h-3 w-3 animate-pulse" aria-hidden="true" />
                     {time}
                   </span>
                 )}
                 {finished && (
-                  <span className="text-xs text-slate-500 font-medium">Full Time</span>
+                  <span className="text-xs text-[var(--text-muted)] font-medium">Full Time</span>
                 )}
               </>
             ) : (
               <>
-                <span className="text-xs font-medium text-slate-500 uppercase tracking-wider">vs</span>
-                <span className="text-xs text-slate-500 font-medium tabular-nums">
+                <span className="text-xs font-medium text-[var(--text-disabled)] uppercase tracking-wider">vs</span>
+                <span className="text-xs text-[var(--text-muted)] font-medium tabular-nums">
                   {formatKickoffTime(match.kickoff)}
                 </span>
               </>
@@ -165,32 +166,36 @@ export default function FootballMatchCard({
           </div>
         </div>
 
-        {/* Date/Time info for non-live matches */}
-        {!live && !hideFooter && (
-          <div className="mt-4 pt-3 border-t border-white/5 flex items-center justify-center gap-3 text-xs">
-            <span className="flex items-center gap-1 text-slate-400">
-              <Clock className="h-3 w-3" />
-              {formatKickoffDate(match.kickoff)} · {formatKickoffTime(match.kickoff)}
-            </span>
-            <span className="text-emerald-400 truncate max-w-[150px]">{match.league.name}</span>
+        {/* Match details footer - only for finished/live matches */}
+        {(finished || live) && !hideFooter && (
+          <div className="mt-4 pt-3 border-t border-white/5">
+            <div className="flex items-center justify-between text-xs">
+              <span className="text-[var(--text-secondary)]">Match details</span>
+              <span className="text-emerald-400 font-medium flex items-center gap-1">
+                View
+                <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        )}
+
+        {/* Upcoming match time indicator - compact, only when not hidden */}
+        {scheduled && !hideFooter && (
+          <div className="mt-4 pt-3 border-t border-white/5">
+            <div className="flex items-center justify-center gap-2 text-xs text-[var(--text-secondary)]">
+              <span className="flex items-center gap-1">
+                <Clock className="h-3 w-3" aria-hidden="true" />
+                {formatKickoffDate(match.kickoff).toUpperCase()} · {formatKickoffTime(match.kickoff)}
+              </span>
+              {!hideLeague && match.league?.name && (
+                <span className="text-emerald-400 truncate max-w-[150px]">{match.league.name}</span>
+              )}
+            </div>
           </div>
         )}
       </div>
-
-      {/* Footer for finished/live matches */}
-      {(finished || live) && !hideFooter && (
-        <div className="px-4 py-3 border-t border-white/5 bg-slate-900/40">
-          <div className="flex items-center justify-between text-xs">
-            <span className="text-slate-400">Match details</span>
-            <span className="text-emerald-400 font-medium flex items-center gap-1">
-              View
-              <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-          </div>
-        </div>
-      )}
     </button>
   );
 }

@@ -14,11 +14,11 @@ export default function ErrorState({ message = 'Something went wrong', onRetry }
         <AlertTriangle className="h-8 w-8" />
       </div>
       <h3 className="text-lg font-medium text-white mb-2">Failed to load data</h3>
-      <p className="text-slate-400 max-w-sm mb-6">{message}</p>
+      <p className="text-[var(--text-secondary)] max-w-sm mb-6">{message}</p>
       {onRetry && (
         <button
           onClick={onRetry}
-          className="flex items-center gap-2 px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-lg transition-colors"
+          className="btn-primary"
         >
           <RefreshCw className="h-4 w-4" />
           Try again

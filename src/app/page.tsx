@@ -2,6 +2,7 @@
 
 import SectionHeader from '@/components/ui/SectionHeader';
 import { GlowCard } from '@/components/ui/spotlight-card';
+import { Badge } from '@/components/ui';
 import NewsCard from '@/components/news/NewsCard';
 import TransferCard from '@/components/transfers/TransferCard';
 import ContainerScroll from '@/components/home/ContainerScroll';
@@ -10,7 +11,7 @@ import LoadingState from '@/components/ui/LoadingState';
 import FallbackImage from '@/components/ui/Image';
 import TeamLogo from '@/components/ui/TeamLogo';
 import FootballQuiz from '@/components/quiz/FootballQuiz';
-import FootballMatchCard from '@/components/football/FootballMatchCard';
+import MatchCard from '@/components/football/MatchCard';
 import { getTransferRumours, getConfirmedTransfers } from '@/lib/data/transfers';
 import { getAllCompetitions } from '@/lib/data/competitions';
 import { getAllTeams } from '@/lib/data/teams';
@@ -21,6 +22,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useNewsRefresh } from '@/hooks/useNewsRefresh';
 import { getLatestNewsSnapshot, getTrendingNewsSnapshot } from '@/lib/data/news';
+import { format } from 'date-fns';
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -85,8 +87,8 @@ export default function HomePage() {
 
   if (loading) {
     return (
-<div className="min-h-screen">
-        <div className="mx-auto max-w-7xl px-4 py-12">
+      <div className="min-h-screen">
+        <div className="container-page py-12">
           <LoadingState variant="card" count={6} />
         </div>
       </div>
@@ -95,57 +97,132 @@ export default function HomePage() {
 
   const featuredCompetitions = competitions.slice(0, 6);
 
+  // Group upcoming matches by date for "Today" and "This Week"
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const tomorrow = new Date(today);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const weekEnd = new Date(today);
+  weekEnd.setDate(weekEnd.getDate() + 7);
+
+  const todaysMatches = upcomingMatches.filter(m => {
+    const matchDate = new Date(m.kickoff);
+    matchDate.setHours(0, 0, 0, 0);
+    return matchDate.getTime() === today.getTime();
+  }).slice(0, 6);
+
+  const thisWeeksMatches = upcomingMatches.filter(m => {
+    const matchDate = new Date(m.kickoff);
+    matchDate.setHours(0, 0, 0, 0);
+    return matchDate > today && matchDate <= weekEnd;
+  }).slice(0, 6);
+
+  const laterMatches = upcomingMatches.filter(m => {
+    const matchDate = new Date(m.kickoff);
+    matchDate.setHours(0, 0, 0, 0);
+    return matchDate > weekEnd;
+  }).slice(0, 4);
+
   const heroTitle = (
-    <div className="max-w-2xl">
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+    <div className="max-w-3xl">
+      <div className="flex items-center gap-3 mb-6 animate-in stagger-1">
+        <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--primary)]/15 border border-[var(--primary)]/30 text-[var(--primary)] text-sm font-medium">
+          {liveMatches.length > 0 ? (
+            <>
+              <span className="relative flex h-2 w-2" aria-hidden="true">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
+              </span>
+              <span>{liveMatches.length} Live Now</span>
+            </>
+          ) : (
+            <>
+              <span className="h-2 w-2 rounded-full bg-[var(--text-muted)]" aria-hidden="true" />
+              <span>No Live Matches</span>
+            </>
+          )}
+        </div>
+        {todaysMatches.length > 0 && (
+          <span className="px-3 py-1 rounded-full bg-[var(--accent)]/15 border border-[var(--accent)]/30 text-[var(--accent)] text-sm font-medium">
+            {todaysMatches.length} Today
+          </span>
+        )}
+      </div>
+      <h1 className="text-display-lg animate-in stagger-2">
         Football intelligence.
-        <span className="block text-emerald-400">All in one place.</span>
+        <span className="block text-gradient-brand">All in one place.</span>
       </h1>
-      <p className="mt-6 text-lg text-slate-400">
-        Stay ahead with real-time scores, breaking transfer news, and comprehensive match analysis from leagues around the world.
+      <p className="mt-6 text-lg text-[var(--text-secondary)] animate-in stagger-3">
+        Real-time scores, breaking transfers, and deep match analysis from leagues worldwide.
       </p>
-      <div className="mt-8 flex flex-wrap gap-3">
-        <Link
-          href="/news"
-          className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-lg transition-colors"
-        >
-          Latest News
+      <div className="mt-8 flex flex-wrap gap-3 animate-in stagger-4">
+        <Link href="/matches" className="btn-primary">
+          Live Centre
         </Link>
-        <Link
-          href="/transfers"
-          className="px-6 py-3 bg-white/10 hover:bg-white/15 text-white font-medium rounded-lg transition-colors border border-white/20"
-        >
-          Transfer Centre
+        <Link href="/fixtures" className="btn-secondary">
+          Fixtures
+        </Link>
+        <Link href="/standings" className="btn-accent">
+          Standings
         </Link>
       </div>
     </div>
   );
 
   const heroPreview = (
-    <div className="grid gap-6 md:grid-cols-2">
-      <div className="rounded-xl border border-white/10 bg-slate-900 p-6">
+    <div className="grid gap-6 md:grid-cols-2 animate-in stagger-5">
+      <div className="rounded-xl border border-[var(--border-default)] bg-[var(--surface-2)]/80 p-6 backdrop-blur-sm card-elevated">
         <div className="mb-4 flex items-center justify-between">
-          <span className="text-xs font-medium uppercase tracking-wide text-emerald-400">
-            Live Now
-          </span>
-          <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
+          <span className="text-label">Live Now</span>
+          <Badge variant="live" dot>
+            {liveMatches.length} live
+          </Badge>
         </div>
         {liveMatches[0] ? (
-          <FootballMatchCard match={liveMatches[0]} variant="live" />
+          <MatchCard match={liveMatches[0]} variant="live" />
         ) : (
-          <div className="py-8 text-center text-sm text-slate-500">No live matches</div>
+          <div className="py-12 text-center">
+            <div className="h-12 w-12 mx-auto mb-4 rounded-full bg-[var(--surface-3)] flex items-center justify-center text-[var(--text-muted)]">
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p className="text-sm text-[var(--text-muted)]">No live matches at the moment</p>
+            <Link href="/fixtures" className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] hover:text-[var(--accent-light)] transition-colors">
+              View upcoming fixtures
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+          </div>
         )}
       </div>
-      <div className="rounded-xl border border-white/10 bg-slate-900 p-6">
-        <div className="mb-4 text-xs font-medium uppercase tracking-wide text-emerald-400">
-          Latest News
+      <div className="rounded-xl border border-[var(--border-default)] bg-[var(--surface-2)]/80 p-6 backdrop-blur-sm card-elevated">
+        <div className="mb-4 flex items-center justify-between">
+          <span className="text-label">Latest News</span>
+          <Link href="/news" className="text-xs font-medium text-[var(--accent)] hover:text-[var(--accent-light)] transition-colors">
+            All news
+          </Link>
         </div>
         <div className="space-y-3">
-          {news.slice(0, 3).map((article) => (
-            <NewsCard key={article.id} article={article} variant="compact" />
+          {news.slice(0, 3).map((article, index) => (
+            <div key={article.id} className="animate-in" style={{ animationDelay: `${0.1 + index * 0.05}s` }}>
+              <NewsCard article={article} variant="compact" />
+            </div>
           ))}
         </div>
       </div>
+    </div>
+  );
+
+  // Helper to render match grid with stagger
+  const MatchGrid = ({ matches, variant = 'default', maxCols = 3, className = '' }: { matches: NormalizedMatch[]; variant?: 'default' | 'live' | 'compact'; maxCols?: number; className?: string }) => (
+    <div className={`grid gap-4 sm:grid-cols-2 lg:grid-cols-${maxCols} ${className}`}>
+      {matches.map((match, index) => (
+        <div key={match.id} className="animate-in" style={{ animationDelay: `${index * 0.05}s` }}>
+          <MatchCard match={match} variant={variant} />
+        </div>
+      ))}
     </div>
   );
 
@@ -153,217 +230,176 @@ export default function HomePage() {
     <div className="min-h-screen">
       <ContainerScroll titleComponent={heroTitle}>{heroPreview}</ContainerScroll>
 
-      <section className="mx-auto max-w-7xl px-4 py-16">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold text-white tracking-tight">
-            Everything you need to stay ahead
-          </h2>
-          <p className="mt-3 text-slate-400 max-w-2xl mx-auto">
-            Real-time scores, breaking transfers, and deep match analysis from leagues around the world.
-          </p>
-        </div>
-        <div className="grid gap-6 md:grid-cols-3">
-          <GlowCard className="p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/15 text-emerald-400">
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-white">Live Scores</h3>
-            </div>
-            <p className="text-sm text-slate-400">
-              Follow every goal, card, and substitution as it happens from leagues around the world.
-            </p>
-          </GlowCard>
-          <GlowCard className="p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/15 text-emerald-400">
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-2a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-white">Transfer Centre</h3>
-            </div>
-            <p className="text-sm text-slate-400">
-              Track rumours, confirmations, and completed deals with reliability scoring and source context.
-            </p>
-          </GlowCard>
-          <GlowCard className="p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/15 text-emerald-400">
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-white">League Standings</h3>
-            </div>
-            <p className="text-sm text-slate-400 mb-4">
-              Full tables, form trends, and top-of-table insights from leagues around the world.
-            </p>
-            <Link
-              href="/standings"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors"
-            >
-              View standings
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-          </GlowCard>
-        </div>
-      </section>
-
-      <div className="mx-auto max-w-7xl px-4 py-12 space-y-12">
+      <div className="container-page py-12 space-y-12">
+        {/* 1. Live Matches - most prominent when live */}
         {liveMatches.length > 0 && (
-          <section>
-            <SectionHeader title="Live Matches" href="/matches" actionLabel="All matches" />
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-{liveMatches.slice(0, 3).map((match) => (
-              <FootballMatchCard key={match.id} match={match} variant="live" />
-            ))}
+          <section className="animate-in stagger-1">
+            <SectionHeader title="Live Now" href="/matches" actionLabel="All live matches" />
+            <MatchGrid matches={liveMatches.slice(0, 3)} variant="live" maxCols={3} />
+          </section>
+        )}
+
+        {/* 2. Today's Matches - high priority */}
+        {todaysMatches.length > 0 && (
+          <section className="animate-in stagger-2">
+            <SectionHeader title="Today's Matches" href="/fixtures" actionLabel="All fixtures" />
+            <MatchGrid matches={todaysMatches} variant="default" maxCols={3} />
+          </section>
+        )}
+
+        {/* 3. This Week's Fixtures */}
+        {(thisWeeksMatches.length > 0 || laterMatches.length > 0) && (
+          <section className="animate-in stagger-3">
+            <SectionHeader title="Upcoming Fixtures" href="/fixtures" actionLabel="All fixtures" />
+            <div className="space-y-8">
+              {thisWeeksMatches.length > 0 && (
+                <div>
+                  <h4 className="text-label mb-4 flex items-center gap-2">
+                    <span className="px-2 py-0.5 rounded bg-[var(--accent)]/15 text-[var(--accent)] text-xs font-semibold">This Week</span>
+                    {thisWeeksMatches.length} matches
+                  </h4>
+                  <MatchGrid matches={thisWeeksMatches} variant="default" maxCols={3} />
+                </div>
+              )}
+              {laterMatches.length > 0 && (
+                <div>
+                  <h4 className="text-label mb-4 flex items-center gap-2">
+                    <span className="px-2 py-0.5 rounded bg-[var(--text-muted)]/15 text-[var(--text-muted)] text-xs font-semibold">Later</span>
+                    {laterMatches.length} matches
+                  </h4>
+                  <MatchGrid matches={laterMatches} variant="default" maxCols={2} />
+                </div>
+              )}
             </div>
           </section>
         )}
 
-        <section>
+        {/* 4. League Standings - with top teams preview */}
+        <section className="animate-in stagger-4">
+          <SectionHeader title="League Standings" href="/standings" actionLabel="View all tables" />
+          {competitions.length === 0 ? (
+            <EmptyState type="matches" message="No competitions available" />
+          ) : (
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+              {featuredCompetitions.map((competition, index) => (
+                <Link
+                  key={competition.id}
+                  href={`/standings?competition=${competition.id}`}
+                  className="group p-4 rounded-xl border border-[var(--border-default)] bg-[var(--surface-2)]/70 backdrop-blur-sm card-hover animate-in"
+                  style={{ animationDelay: `${index * 0.03}s` }}
+                >
+                  <div className="flex flex-col items-center gap-3 text-center">
+                    <div className="relative h-12 w-12 flex-shrink-0">
+                      <FallbackImage src={competition.logo} alt={competition.name} className="absolute inset-0" />
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-semibold text-white group-hover:text-[var(--primary)] transition-colors">
+                        {competition.shortName}
+                      </h3>
+                      <p className="text-xs text-[var(--text-muted)] mt-0.5">{competition.country}</p>
+                    </div>
+                    <span className="text-xs text-[var(--text-muted)] uppercase tracking-wide">
+                      Table
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+        </section>
+
+        {/* 5. Latest News - featured + compact */}
+        <section className="animate-in stagger-5">
           <SectionHeader title="Latest News" href="/news" actionLabel="All news" />
           {news.length === 0 ? (
             <EmptyState type="news" />
           ) : (
             <div className="grid gap-6 lg:grid-cols-2">
-              <div className="lg:row-span-2">
+              <div className="lg:row-span-2 animate-in stagger-1">
                 {news[0] && <NewsCard article={news[0]} variant="featured" />}
               </div>
               <div className="space-y-4">
-                {news.slice(1, 5).map((article) => (
-                  <NewsCard key={article.id} article={article} variant="compact" />
+                {news.slice(1, 5).map((article, index) => (
+                  <div key={article.id} className="animate-in" style={{ animationDelay: `${0.1 + index * 0.05}s` }}>
+                    <NewsCard article={article} variant="compact" />
+                  </div>
                 ))}
               </div>
             </div>
           )}
         </section>
 
-        <section>
-          <SectionHeader 
-            title="Transfer Centre" 
+        {/* 6. Transfer Centre - rumours + confirmed */}
+        <section className="animate-in stagger-6">
+          <SectionHeader
+            title="Transfer Centre"
             description="Latest moves and rumours"
-            href="/transfers" 
-            actionLabel="All transfers" 
+            href="/transfers"
+            actionLabel="All transfers"
           />
           {transferRumours.length === 0 && confirmedTransfers.length === 0 ? (
             <EmptyState type="transfers" />
           ) : (
             <div className="grid gap-6 md:grid-cols-2">
-              {transferRumours.slice(0, 4).map((transfer) => (
-                <TransferCard key={transfer.id} transfer={transfer} variant="compact" />
+              {[
+                ...transferRumours.slice(0, 3),
+                ...confirmedTransfers.slice(0, 1),
+              ].map((transfer, index) => (
+                <div key={transfer.id} className="animate-in" style={{ animationDelay: `${index * 0.05}s` }}>
+                  <TransferCard transfer={transfer} variant="compact" />
+                </div>
               ))}
             </div>
           )}
         </section>
 
-        <section>
-          <SectionHeader title="Upcoming Matches" href="/fixtures" actionLabel="All fixtures" />
-          {upcomingMatches.length === 0 ? (
-            <EmptyState
-              type="matches"
-              message="No upcoming fixtures"
-              reason="No upcoming fixtures are available for the selected competitions yet. Check back shortly."
-            />
-          ) : (
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {upcomingMatches.slice(0, 6).map((match) => (
-                <FootballMatchCard key={match.id} match={match} />
-              ))}
-            </div>
-          )}
-        </section>
-
-        <section>
-          <SectionHeader title="Recent Results" />
+        {/* 7. Recent Results */}
+        <section className="animate-in stagger-7">
+          <SectionHeader title="Recent Results" href="/matches" actionLabel="All results" />
           {recentResults.length === 0 ? (
             <EmptyState
               type="matches"
               message="No recent results"
-              reason="The free football data plan only covers seasons 2022-2024, so results shown are from the 2024 season (ended May 2025)."
+              reason="The free football data plan covers limited historical seasons."
             />
           ) : (
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {recentResults.slice(0, 6).map((match) => (
-                <FootballMatchCard key={match.id} match={match} />
-              ))}
-            </div>
+            <MatchGrid matches={recentResults.slice(0, 6)} variant="default" maxCols={3} />
           )}
         </section>
 
-        <section>
-          <SectionHeader title="Trending Stories" />
+        {/* 8. Trending Stories */}
+        <section className="animate-in stagger-8">
+          <SectionHeader title="Trending Stories" href="/news" actionLabel="All news" />
           {trending.length === 0 ? (
             <EmptyState type="news" message="No trending stories" />
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {trending.map((article) => (
-                <NewsCard key={article.id} article={article} />
+              {trending.map((article, index) => (
+                <div key={article.id} className="animate-in" style={{ animationDelay: `${index * 0.05}s` }}>
+                  <NewsCard article={article} />
+                </div>
               ))}
             </div>
           )}
         </section>
 
-        <div className="mx-auto max-w-2xl py-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-white tracking-tight">Football Quiz</h2>
-            <p className="mt-2 text-sm text-slate-400">
-              Test your football knowledge with 5 questions from our pool.
-            </p>
-          </div>
-          <FootballQuiz />
-        </div>
-
-        <section>
-          <SectionHeader title="Featured Competitions" href="/matches" actionLabel="All competitions" />
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
-            {featuredCompetitions.map((competition) => (
-              <Link
-                key={competition.id}
-                href={`/fixtures?competition=${competition.id}`}
-                className="group p-4 rounded-lg bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-colors"
-              >
-                <div className="flex flex-col items-center gap-3 text-center">
-                  <div className="relative h-12 w-12 flex-shrink-0">
-                    <FallbackImage src={competition.logo} alt={competition.name} className="absolute inset-0" />
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-medium text-white group-hover:text-emerald-400 transition-colors">
-                      {competition.shortName}
-                    </h3>
-                    <p className="text-xs text-slate-400 mt-0.5">{competition.country}</p>
-                  </div>
+        {/* 9. Football Quiz - less prominent */}
+        <section className="animate-in stagger-8">
+          <div className="mx-auto max-w-2xl">
+            <div className="rounded-2xl border border-[var(--border-default)] bg-gradient-to-r from-[var(--surface-2)]/80 to-[var(--surface-3)]/80 p-6 md:p-8 backdrop-blur-sm">
+              <div className="text-center mb-6">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--primary)]/15 text-[var(--primary)] mb-4">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
                 </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section>
-          <SectionHeader title="Popular Teams" href="/search" actionLabel="Search teams" />
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
-            {teams.slice(0, 12).map((team) => (
-              <Link
-                key={team.id}
-                href={`/teams/${team.id}`}
-                className="group p-4 rounded-lg bg-slate-900 border border-white/10 hover:border-emerald-500/30 transition-colors"
-              >
-                <div className="flex flex-col items-center gap-3 text-center">
-                  <TeamLogo team={team} size="lg" />
-                  <div>
-                    <h3 className="text-sm font-medium text-white group-hover:text-emerald-400 transition-colors">
-                      {team.shortName}
-                    </h3>
-                    <p className="text-xs text-slate-400 mt-0.5">{team.league}</p>
-                  </div>
-                </div>
-              </Link>
-            ))}
+                <h2 className="text-xl font-bold text-white">Football Quiz</h2>
+                <p className="mt-2 text-sm text-[var(--text-secondary)]">
+                  Test your knowledge with 5 questions from our pool.
+                </p>
+              </div>
+              <FootballQuiz />
+            </div>
           </div>
         </section>
       </div>

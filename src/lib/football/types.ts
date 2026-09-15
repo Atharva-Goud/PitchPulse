@@ -126,6 +126,45 @@ export function isScheduled(m: NormalizedMatch): boolean {
   return m.status === 'SCHEDULED';
 }
 
+/**
+ * Convert the JSON-backed `Match` type (used by the team/news data layer)
+ * into the NormalizedMatch shape consumed by the unified match card.
+ *
+ * This keeps the legacy data layer and the live football API layer on one
+ * component without duplicating rendering logic.
+ */
+export function normalizeLegacyMatch(m: {
+  id: string;
+  homeTeam: { id: string; name: string; logo?: string | null; shortName?: string };
+  awayTeam: { id: string; name: string; logo?: string | null; shortName?: string };
+  homeScore: number | null;
+  awayScore: number | null;
+  status: LiveStatus;
+  kickoff: string;
+  venue?: string | null;
+  referee?: string | null;
+  league?: { id: string; name: string; logo?: string | null; country?: string };
+  competition?: { id: string; name: string; logo?: string | null; country?: string };
+}): NormalizedMatch {
+  const league = m.league ?? m.competition ?? { id: '', name: '', logo: '', country: '' };
+  return {
+    id: m.id,
+    homeTeam: { id: m.homeTeam.id, name: m.homeTeam.name, logo: m.homeTeam.logo ?? '', abbreviation: m.homeTeam.shortName },
+    awayTeam: { id: m.awayTeam.id, name: m.awayTeam.name, logo: m.awayTeam.logo ?? '', abbreviation: m.awayTeam.shortName },
+    homeScore: m.homeScore,
+    awayScore: m.awayScore,
+    status: m.status,
+    statusLabel: statusLabel(m.status),
+    statusElapsed: null,
+    statusClock: null,
+    statusDisplayClock: null,
+    league: { id: league.id, name: league.name, logo: league.logo ?? '', country: league.country ?? '' },
+    kickoff: m.kickoff,
+    venue: m.venue ?? null,
+    referee: m.referee ?? null,
+  };
+}
+
 export function formatKickoffTime(kickoff: string): string {
   const date = new Date(kickoff);
   if (isNaN(date.getTime())) return '';
