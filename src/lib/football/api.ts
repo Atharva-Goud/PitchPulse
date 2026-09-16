@@ -15,7 +15,7 @@
  * it returns HTTP 429; we retry with exponential backoff.
  */
 
-export const FOOTBALL_API_BASE = process.env.NEXT_PUBLIC_FOOTBALL_API_URL || 'http://localhost:3050';
+export const FOOTBALL_API_BASE = process.env.NEXT_PUBLIC_FOOTBALL_API_URL || 'https://worldcup26.ir/get/soccer';
 
 if (typeof window !== 'undefined') {
   console.log('[api.ts] FOOTBALL_API_BASE:', FOOTBALL_API_BASE);
@@ -490,7 +490,7 @@ export async function fetchAvailableLeaguesRaw(): Promise<Array<ApiLeague & { co
       console.error('[fetchAvailableLeaguesRaw] error:', error);
     }
     console.error('football-api: failed to fetch leagues:', error);
-    throw error;
+    return [];
   }
 }
 
@@ -799,12 +799,17 @@ export function getLeagueSlug(key: CompetitionKey): string {
  * Uses cached data from fetchAvailableLeaguesRaw.
  */
 export async function getAllLeagueSlugs(): Promise<string[]> {
-  const leagues = await fetchAvailableLeaguesRaw();
-  const slugs = leagues.map(l => l.slug).filter(Boolean);
-  if (typeof window !== 'undefined') {
-    console.log('[getAllLeagueSlugs] fetched', slugs.length, 'leagues:', slugs);
+  try {
+    const leagues = await fetchAvailableLeaguesRaw();
+    const slugs = leagues.map(l => l.slug).filter(Boolean);
+    if (typeof window !== 'undefined') {
+      console.log('[getAllLeagueSlugs] fetched', slugs.length, 'leagues:', slugs);
+    }
+    return slugs;
+  } catch (error) {
+    console.error('football-api: failed to get all league slugs:', error);
+    return [];
   }
-  return slugs;
 }
 
 /**
