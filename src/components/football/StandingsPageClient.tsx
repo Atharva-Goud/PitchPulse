@@ -4,16 +4,10 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { LoadingState, EmptyState, ErrorState } from '@/components/ui';
-import { getStandingsBySlug, getAvailableSeasons } from '@/lib/football/standings';
+import { getStandingsBySlug } from '@/lib/football/standings';
 import StandingsTable from '@/components/football/StandingsTable';
 import StandingsInsights from '@/components/football/StandingsInsights';
 import { ChevronRight, Trophy } from 'lucide-react';
-
-interface LeagueOption {
-  slug: string;
-  name: string;
-  country: string;
-}
 
 interface LeagueMeta {
   slug: string;
@@ -22,57 +16,41 @@ interface LeagueMeta {
   hasStandings: boolean;
 }
 
-export default function FootballStandingsClient() {
-  const [loading, setLoading] = useState(true);
+interface LeagueOption {
+  slug: string;
+  name: string;
+  country: string;
+}
+
+interface StandingsPageClientProps {
+  initialData: {
+    leagues: LeagueMeta[];
+    availableSeasons: number[];
+  };
+  initialLeague: string;
+  initialSeason: number;
+  initialStandings: import('@/lib/football/standings').StandingRow[];
+}
+
+export default function FootballStandingsClient({ initialData, initialLeague, initialSeason, initialStandings }: StandingsPageClientProps) {
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [leagues, setLeagues] = useState<LeagueOption[]>([]);
-  const [selectedSlug, setSelectedSlug] = useState<string>('');
-  const [availableSeasons, setAvailableSeasons] = useState<number[]>([]);
-  const [selectedSeason, setSelectedSeason] = useState<number | null>(null);
-  const [standings, setStandings] = useState<import('@/lib/football/standings').StandingRow[]>([]);
+  const [selectedSlug, setSelectedSlug] = useState<string>(initialLeague);
+  const [availableSeasons, setAvailableSeasons] = useState<number[]>(initialData.availableSeasons);
+  const [selectedSeason, setSelectedSeason] = useState<number>(initialSeason);
+  const [standings, setStandings] = useState<import('@/lib/football/standings').StandingRow[]>(initialStandings);
   const [tableLoading, setTableLoading] = useState(false);
   const searchParams = useSearchParams();
-  const urlLeague = searchParams?.get('league');
   const router = useRouter();
 
   // Initial load: discover leagues + seasons from the server.
   useEffect(() => {
-    let cancelled = false;
-    async function loadMeta() {
-      try {
-        setError(null);
-        const [metaRes, seasons] = await Promise.all([
-          fetch('/api/standings'),
-          getAvailableSeasons(),
-        ]);
-        if (!metaRes.ok) throw new Error('league discovery failed');
-        const meta: LeagueMeta[] = await metaRes.json();
-
-        // Only keep leagues that actually expose standings data.
-        const withData = meta
-          .filter(l => l.hasStandings)
-          .map(l => ({ slug: l.slug, name: l.name, country: l.country }));
-        if (cancelled) return;
-        setLeagues(withData);
-        setAvailableSeasons(seasons);
-        const defaultSeason = seasons[0] ?? 2026;
-        setSelectedSeason(defaultSeason);
-        // Prefer URL league, then first available
-        if (urlLeague && withData.some(l => l.slug === urlLeague)) {
-          setSelectedSlug(urlLeague);
-        } else if (withData.length > 0) {
-          setSelectedSlug(withData[0].slug);
-        }
-      } catch (err) {
-        console.error('Error loading leagues:', err);
-        if (!cancelled) setError('Unable to load standings. Please try again.');
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    }
-    loadMeta();
-    return () => { cancelled = true; };
-  }, [urlLeague]);
+    const withData = initialData.leagues
+      .filter(l => l.hasStandings)
+      .map(l => ({ slug: l.slug, name: l.name, country: l.country }));
+    setLeagues(withData);
+  }, [initialData.leagues]);
 
   // Fetch standings whenever the selected league or season changes.
   useEffect(() => {
@@ -81,7 +59,8 @@ export default function FootballStandingsClient() {
     async function loadStandings() {
       try {
         setTableLoading(true);
-        const data = await getStandingsBySlug(selectedSlug, selectedSeason ?? undefined);
+        setError(null);
+        const data = await getStandingsBySlug(selectedSlug, selectedSeason);
         if (cancelled) return;
         setStandings(data);
       } catch (err) {
@@ -94,26 +73,6 @@ export default function FootballStandingsClient() {
     loadStandings();
     return () => { cancelled = true; };
   }, [selectedSlug, selectedSeason]);
-
-  if (loading) {
-    return (
-      <div className="min-h-screen">
-        <div className="mx-auto max-w-7xl px-4 py-12">
-          <LoadingState variant="table" count={10} />
-        </div>
-      </div>
-    );
-  }
-
-  if (error && leagues.length === 0) {
-    return (
-      <div className="min-h-screen">
-        <div className="mx-auto max-w-7xl px-4 py-12">
-          <ErrorState message={error} onRetry={() => router.refresh()} />
-        </div>
-      </div>
-    );
-  }
 
   const selectedLeague = leagues.find(l => l.slug === selectedSlug);
 
@@ -163,7 +122,7 @@ export default function FootballStandingsClient() {
           <div className="flex-1 min-w-[200px]">
             <label className="block text-sm font-medium text-slate-400 mb-2">Season</label>
             <select
-              value={selectedSeason ?? undefined}
+              value={selectedSeason}
               onChange={(e) => setSelectedSeason(Number(e.target.value))}
               className="w-full px-4 py-3 rounded-lg bg-slate-800 border border-white/10 text-white focus:outline-none focus:border-emerald-500"
             >

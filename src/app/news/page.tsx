@@ -1,163 +1,44 @@
-'use client';
-
-import { useState } from 'react';
-import { Filter, TrendingUp, Clock, ExternalLink } from 'lucide-react';
-import SectionHeader from '@/components/ui/SectionHeader';
-import NewsCard from '@/components/news/NewsCard';
-import EmptyState from '@/components/ui/EmptyState';
-import LoadingState from '@/components/ui/LoadingState';
-import { useNewsRefresh } from '@/hooks/useNewsRefresh';
+import { Suspense } from 'react';
 import { getLatestNewsSnapshot, getTrendingNewsSnapshot } from '@/lib/data/news';
-import { NewsArticle, NewsCategory } from '@/types';
+import NewsPageClient from '@/components/news/NewsPageClient';
+import type { NewsArticle, NewsCategory } from '@/types';
 
-const categories: NewsCategory[] = [
-  'Transfers',
-  'Premier League',
-  'Champions League',
-  'La Liga',
-  'Serie A',
-  'Bundesliga',
-  'Ligue 1',
-  'International Football',
-];
+export const dynamic = 'force-dynamic';
 
-export default function NewsPage() {
-  const initialLatest = getLatestNewsSnapshot();
-  const initialTrending = getTrendingNewsSnapshot();
-  const { latest: news, trending, refreshing } = useNewsRefresh(initialLatest, initialTrending);
-  const [selectedCategory, setSelectedCategory] = useState<NewsCategory | null>(null);
+interface NewsPageData {
+  latest: NewsArticle[];
+  trending: NewsArticle[];
+  categories: NewsCategory[];
+}
 
-  const filteredNews = selectedCategory
-    ? news.filter((article) => article.category === selectedCategory)
-    : news;
+async function getNewsPageData(): Promise<NewsPageData> {
+  const categories: NewsCategory[] = [
+    'Transfers',
+    'Premier League',
+    'Champions League',
+    'La Liga',
+    'Serie A',
+    'Bundesliga',
+    'Ligue 1',
+    'International Football',
+  ];
 
-  if (news.length === 0 && !refreshing) {
-    return (
-      <div className="min-h-screen">
-        <div className="mx-auto max-w-7xl px-4 py-12">
-          <EmptyState type="news" message="No articles found" />
-        </div>
-      </div>
-    );
-  }
+  const [latest, trending] = await Promise.all([
+    getLatestNewsSnapshot(),
+    getTrendingNewsSnapshot(),
+  ]);
+
+  return { latest, trending, categories };
+}
+
+export default async function NewsPage() {
+  const data = await getNewsPageData();
 
   return (
     <div className="min-h-screen">
-      <div className="mx-auto max-w-7xl px-4 py-12">
-        <div className="mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">Football News</h1>
-          <p className="text-slate-400">
-            Stay updated with the latest football news from around the world
-            {refreshing ? ' · refreshing' : ''}
-          </p>
-        </div>
-
-        <div className="grid gap-12 lg:grid-cols-[1fr_300px]">
-          <div>
-            <div className="mb-8">
-              <div className="flex items-center gap-2 mb-4">
-                <Filter className="h-4 w-4 text-slate-400" />
-                <span className="text-sm font-medium text-slate-400">Filter by category</span>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <button
-                  onClick={() => setSelectedCategory(null)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    selectedCategory === null
-                      ? 'bg-emerald-500 text-white'
-                      : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
-                  }`}
-                >
-                  All
-                </button>
-                {categories.map((category) => (
-                  <button
-                    key={category}
-                    onClick={() => setSelectedCategory(category)}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      selectedCategory === category
-                        ? 'bg-emerald-500 text-white'
-                        : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
-                    }`}
-                  >
-                    {category}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <SectionHeader
-              title={selectedCategory || 'All News'}
-              description={`${filteredNews.length} articles`}
-            />
-
-            {filteredNews.length === 0 ? (
-              <EmptyState type="news" message="No articles found" />
-            ) : (
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
-                {filteredNews.map((article) => (
-                  <NewsCard key={article.id} article={article} />
-                ))}
-              </div>
-            )}
-          </div>
-
-          <aside className="space-y-8">
-            <div className="rounded-xl bg-slate-900 border border-white/10 p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <TrendingUp className="h-5 w-5 text-emerald-400" />
-                <h3 className="font-semibold text-white">Trending</h3>
-              </div>
-              <div className="space-y-4">
-                {trending.slice(0, 5).map((article, index) => (
-                  <a
-                    key={article.id}
-                    href={article.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex gap-3"
-                  >
-                    <span className="text-2xl font-bold text-slate-600 w-8 flex-shrink-0">
-                      {index + 1}
-                    </span>
-                    <div className="flex-1 min-w-0">
-                      <h4 className="text-sm font-medium text-white line-clamp-2 group-hover:text-emerald-400 transition-colors">
-                        {article.title}
-                      </h4>
-                      <div className="flex items-center gap-2 mt-1 text-xs text-slate-400">
-                        <span>{typeof article.source === 'string' ? article.source : article.source.name}</span>
-                        <span>·</span>
-                        <span className="flex items-center gap-1">
-                          <Clock className="h-3 w-3" />
-                          {new Date(article.publishedAt).toLocaleDateString('en-GB', {
-                            day: 'numeric',
-                            month: 'short',
-                          })}
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-xl bg-slate-900 border border-white/10 p-6">
-              <h3 className="font-semibold text-white mb-4">Quick Links</h3>
-              <div className="space-y-2">
-                {categories.slice(0, 4).map((category) => (
-                  <button
-                    key={category}
-                    onClick={() => setSelectedCategory(category)}
-                    className="w-full text-left px-3 py-2 rounded-lg text-sm text-slate-300 hover:bg-slate-800 hover:text-white transition-colors"
-                  >
-                    {category}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </aside>
-        </div>
-      </div>
+      <Suspense fallback={<div className="mx-auto max-w-7xl px-4 py-12"><div className="h-96 bg-slate-900/50 rounded-xl animate-pulse" /></div>}>
+        <NewsPageClient initialData={data} />
+      </Suspense>
     </div>
   );
 }

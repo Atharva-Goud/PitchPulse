@@ -21,6 +21,30 @@ if (typeof window !== 'undefined') {
   console.log('[api.ts] FOOTBALL_API_BASE:', FOOTBALL_API_BASE);
 }
 
+// Global semaphore to limit concurrent API requests and avoid 429 rate limits
+const MAX_CONCURRENT_REQUESTS = 1;
+let activeRequests = 0;
+const requestQueue: Array<() => void> = [];
+
+async function acquireSlot(): Promise<void> {
+  if (activeRequests < MAX_CONCURRENT_REQUESTS) {
+    activeRequests++;
+    return;
+  }
+  return new Promise(resolve => {
+    requestQueue.push(() => {
+      activeRequests++;
+      resolve();
+    });
+  });
+}
+
+function releaseSlot(): void {
+  activeRequests--;
+  const next = requestQueue.shift();
+  if (next) next();
+}
+
 export type ApiTeam = {
   id: string;
   name: string;
@@ -374,46 +398,52 @@ async function apiFetch(endpoint: string, params: Record<string, string> = {}): 
     return cached.data;
   }
 
-  const maxAttempts = 3;
-  let lastError: Error | null = null;
-  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
-    try {
-      const res = await fetch(url.toString(), {
-        headers: { Accept: 'application/json' },
-      });
+  await acquireSlot();
+  try {
+    const maxAttempts = 3;
+    let lastError: Error | null = null;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      try {
+        const res = await fetch(url.toString(), {
+          headers: { Accept: 'application/json' },
+        });
 
-      if (typeof window !== 'undefined') {
-        console.log('[apiFetch] response:', res.status, res.statusText, res.headers.get('content-type'));
-      }
+        if (typeof window !== 'undefined') {
+          console.log('[apiFetch] response:', res.status, res.statusText, res.headers.get('content-type'));
+        }
 
-      if (res.status === 429 || res.status >= 500) {
-        throw new Error('API error: ' + res.status + ' ' + res.statusText);
-      }
-      if (!res.ok) {
-        const text = await res.text().catch(() => '');
-        throw new Error('API error: ' + res.status + ' ' + res.statusText + ' ' + text.slice(0, 200));
-      }
-      const data = await res.json();
-      if (typeof window !== 'undefined') {
-        console.log('[apiFetch] data keys:', Object.keys(data));
-      }
-      if (data && typeof data === 'object' && data.error) {
-        throw new Error('API error: ' + (data.error.message || JSON.stringify(data.error)));
-      }
-      cache.set(key, { data, expires: Date.now() + CACHE_TTL });
-      return data;
-    } catch (error) {
-      lastError = error as Error;
-      if (typeof window !== 'undefined') {
-        console.error('[apiFetch] attempt', attempt, 'failed:', error);
-      }
-      if (attempt < maxAttempts) {
-        const delay = Math.min(1000 * Math.pow(2, attempt - 1), 4000);
-        await new Promise(r => setTimeout(r, delay));
+        if (res.status === 429 || res.status >= 500) {
+          throw new Error('API error: ' + res.status + ' ' + res.statusText);
+        }
+        if (!res.ok) {
+          const text = await res.text().catch(() => '');
+          throw new Error('API error: ' + res.status + ' ' + res.statusText + ' ' + text.slice(0, 200));
+        }
+        const data = await res.json();
+        if (typeof window !== 'undefined') {
+          console.log('[apiFetch] data keys:', Object.keys(data));
+        }
+        if (data && typeof data === 'object' && data.error) {
+          throw new Error('API error: ' + (data.error.message || JSON.stringify(data.error)));
+        }
+        cache.set(key, { data, expires: Date.now() + CACHE_TTL });
+        return data;
+      } catch (error) {
+        lastError = error as Error;
+        if (typeof window !== 'undefined') {
+          console.error('[apiFetch] attempt', attempt, 'failed:', error);
+        }
+        if (attempt < maxAttempts) {
+          // Increase base delay to 3s to avoid hitting rate limits
+          const delay = Math.min(3000 * Math.pow(2, attempt - 1), 10000);
+          await new Promise(r => setTimeout(r, delay));
+        }
       }
     }
+    throw lastError || new Error('API request failed');
+  } finally {
+    releaseSlot();
   }
-  throw lastError || new Error('API request failed');
 }
 
 /**
@@ -775,6 +805,15 @@ export async function getAllLeagueSlugs(): Promise<string[]> {
     console.log('[getAllLeagueSlugs] fetched', slugs.length, 'leagues:', slugs);
   }
   return slugs;
+}
+
+/**
+ * Get major league slugs for default match fetching.
+ * Returns a curated list of top leagues to avoid API rate limits.
+ * Use getAllLeagueSlugs() when you need all leagues.
+ */
+export async function getMajorLeagueSlugs(): Promise<string[]> {
+  return Object.values(COMPETITIONS);
 }
 
 /** Seasons the worldcup26.ir API exposes for club competitions. */

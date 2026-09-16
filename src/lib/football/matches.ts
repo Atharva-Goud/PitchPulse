@@ -11,6 +11,7 @@ import {
   fetchFixtures,
   COMPETITIONS,
   getAllLeagueSlugs,
+  getMajorLeagueSlugs,
   type CompetitionKey,
   type ApiFixture,
 } from '@/lib/football/api';
@@ -74,7 +75,7 @@ export async function getLiveMatchList(
     const league = COMPETITIONS[competition];
     leagues = league ? [league] : [];
   } else {
-    leagues = await getAllLeagueSlugs();
+    leagues = await getMajorLeagueSlugs();
   }
   if (typeof window !== 'undefined') {
     console.log('[getLiveMatchList] querying', leagues.length, 'leagues:', leagues);
@@ -97,7 +98,7 @@ export async function getUpcomingMatchList(
     const league = COMPETITIONS[competition];
     leagues = league ? [league] : [];
   } else {
-    leagues = await getAllLeagueSlugs();
+    leagues = await getMajorLeagueSlugs();
   }
   if (typeof window !== 'undefined') {
     console.log('[getUpcomingMatchList] querying', leagues.length, 'leagues:', leagues);
@@ -134,7 +135,7 @@ export async function getRecentMatchList(
     const league = COMPETITIONS[competition];
     leagues = league ? [league] : [];
   } else {
-    leagues = await getAllLeagueSlugs();
+    leagues = await getMajorLeagueSlugs();
   }
   if (typeof window !== 'undefined') {
     console.log('[getRecentMatchList] querying', leagues.length, 'leagues:', leagues);
