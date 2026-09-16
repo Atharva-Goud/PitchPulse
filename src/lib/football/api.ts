@@ -17,6 +17,10 @@
 
 export const FOOTBALL_API_BASE = process.env.NEXT_PUBLIC_FOOTBALL_API_URL || 'http://localhost:3050';
 
+if (typeof window !== 'undefined') {
+  console.log('[api.ts] FOOTBALL_API_BASE:', FOOTBALL_API_BASE);
+}
+
 export type ApiTeam = {
   id: string;
   name: string;
@@ -364,6 +368,9 @@ async function apiFetch(endpoint: string, params: Record<string, string> = {}): 
   }
   const cached = cache.get(key);
   if (cached && Date.now() < cached.expires) {
+    if (typeof window !== 'undefined') {
+      console.log('[apiFetch] cache hit:', url.toString());
+    }
     return cached.data;
   }
 
@@ -375,6 +382,10 @@ async function apiFetch(endpoint: string, params: Record<string, string> = {}): 
         headers: { Accept: 'application/json' },
       });
 
+      if (typeof window !== 'undefined') {
+        console.log('[apiFetch] response:', res.status, res.statusText, res.headers.get('content-type'));
+      }
+
       if (res.status === 429 || res.status >= 500) {
         throw new Error('API error: ' + res.status + ' ' + res.statusText);
       }
@@ -383,6 +394,9 @@ async function apiFetch(endpoint: string, params: Record<string, string> = {}): 
         throw new Error('API error: ' + res.status + ' ' + res.statusText + ' ' + text.slice(0, 200));
       }
       const data = await res.json();
+      if (typeof window !== 'undefined') {
+        console.log('[apiFetch] data keys:', Object.keys(data));
+      }
       if (data && typeof data === 'object' && data.error) {
         throw new Error('API error: ' + (data.error.message || JSON.stringify(data.error)));
       }
@@ -390,6 +404,9 @@ async function apiFetch(endpoint: string, params: Record<string, string> = {}): 
       return data;
     } catch (error) {
       lastError = error as Error;
+      if (typeof window !== 'undefined') {
+        console.error('[apiFetch] attempt', attempt, 'failed:', error);
+      }
       if (attempt < maxAttempts) {
         const delay = Math.min(1000 * Math.pow(2, attempt - 1), 4000);
         await new Promise(r => setTimeout(r, delay));
@@ -427,6 +444,9 @@ export async function fetchLeagues(kind: 'club' | 'all' = 'club'): Promise<ApiLe
 export async function fetchAvailableLeaguesRaw(): Promise<Array<ApiLeague & { coverage: any }>> {
   try {
     const data = await apiFetch('/leagues', { kind: 'club', available: 'true' });
+    if (typeof window !== 'undefined') {
+      console.log('[fetchAvailableLeaguesRaw] data:', data);
+    }
     return (data.leagues || []).map((l: any) => ({
       id: String(l.id || ''),
       name: l.name || 'Unknown',
@@ -436,8 +456,11 @@ export async function fetchAvailableLeaguesRaw(): Promise<Array<ApiLeague & { co
       coverage: l.coverage || {},
     }));
   } catch (error) {
+    if (typeof window !== 'undefined') {
+      console.error('[fetchAvailableLeaguesRaw] error:', error);
+    }
     console.error('football-api: failed to fetch leagues:', error);
-    return [];
+    throw error;
   }
 }
 
@@ -739,6 +762,19 @@ export type CompetitionKey = keyof typeof COMPETITIONS;
 
 export function getLeagueSlug(key: CompetitionKey): string {
   return COMPETITIONS[key];
+}
+
+/**
+ * Get all available league slugs from the API.
+ * Uses cached data from fetchAvailableLeaguesRaw.
+ */
+export async function getAllLeagueSlugs(): Promise<string[]> {
+  const leagues = await fetchAvailableLeaguesRaw();
+  const slugs = leagues.map(l => l.slug).filter(Boolean);
+  if (typeof window !== 'undefined') {
+    console.log('[getAllLeagueSlugs] fetched', slugs.length, 'leagues:', slugs);
+  }
+  return slugs;
 }
 
 /** Seasons the worldcup26.ir API exposes for club competitions. */

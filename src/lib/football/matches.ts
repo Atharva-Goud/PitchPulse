@@ -10,6 +10,7 @@
 import {
   fetchFixtures,
   COMPETITIONS,
+  getAllLeagueSlugs,
   type CompetitionKey,
   type ApiFixture,
 } from '@/lib/football/api';
@@ -68,8 +69,16 @@ function toNormalizable(f: ApiFixture): {
 export async function getLiveMatchList(
   competition?: CompetitionKey
 ): Promise<NormalizedMatch[]> {
-  const league = competition ? COMPETITIONS[competition] : undefined;
-  const leagues = league ? [league] : Object.values(COMPETITIONS);
+  let leagues: string[];
+  if (competition) {
+    const league = COMPETITIONS[competition];
+    leagues = league ? [league] : [];
+  } else {
+    leagues = await getAllLeagueSlugs();
+  }
+  if (typeof window !== 'undefined') {
+    console.log('[getLiveMatchList] querying', leagues.length, 'leagues:', leagues);
+  }
 
   const results: NormalizedMatch[] = [];
   for (const l of leagues) {
@@ -83,8 +92,16 @@ export async function getUpcomingMatchList(
   competition?: CompetitionKey,
   days: number = 14
 ): Promise<NormalizedMatch[]> {
-  const league = competition ? COMPETITIONS[competition] : undefined;
-  const leagues = league ? [league] : Object.values(COMPETITIONS);
+  let leagues: string[];
+  if (competition) {
+    const league = COMPETITIONS[competition];
+    leagues = league ? [league] : [];
+  } else {
+    leagues = await getAllLeagueSlugs();
+  }
+  if (typeof window !== 'undefined') {
+    console.log('[getUpcomingMatchList] querying', leagues.length, 'leagues:', leagues);
+  }
 
   const now = Date.now();
   const horizon = now + days * 24 * 60 * 60 * 1000;
@@ -112,8 +129,16 @@ export async function getRecentMatchList(
   competition?: CompetitionKey,
   limit: number = 20
 ): Promise<NormalizedMatch[]> {
-  const league = competition ? COMPETITIONS[competition] : undefined;
-  const leagues = league ? [league] : Object.values(COMPETITIONS);
+  let leagues: string[];
+  if (competition) {
+    const league = COMPETITIONS[competition];
+    leagues = league ? [league] : [];
+  } else {
+    leagues = await getAllLeagueSlugs();
+  }
+  if (typeof window !== 'undefined') {
+    console.log('[getRecentMatchList] querying', leagues.length, 'leagues:', leagues);
+  }
 
   const results: NormalizedMatch[] = [];
   for (const l of leagues) {
@@ -139,7 +164,7 @@ export async function getMatchById(id: string): Promise<NormalizedMatch | null> 
 export async function getMatchWithLeague(
   id: string
 ): Promise<{ match: NormalizedMatch; league: string } | null> {
-  const leagues = Object.values(COMPETITIONS);
+  const leagues = await getAllLeagueSlugs();
   for (const l of leagues) {
     const raw = await fetchFixtures(l, 'all');
     const match = raw.find(m => m.id === id);
@@ -155,7 +180,7 @@ export async function getMatchWithLeague(
 export async function getRawFixtureById(
   id: string
 ): Promise<{ fixture: ApiFixture; league: string } | null> {
-  const leagues = Object.values(COMPETITIONS);
+  const leagues = await getAllLeagueSlugs();
   for (const l of leagues) {
     const raw = await fetchFixtures(l, 'all');
     const match = raw.find(m => m.id === id);
@@ -180,7 +205,7 @@ export async function getRecentMatchesByTeam(
   teamId: string,
   limit: number = 5
 ): Promise<NormalizedMatch[]> {
-  const leagues = Object.values(COMPETITIONS);
+  const leagues = await getAllLeagueSlugs();
   const results: NormalizedMatch[] = [];
 
   for (const l of leagues) {

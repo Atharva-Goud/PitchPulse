@@ -42,6 +42,7 @@ export default function HomePage() {
 
   useEffect(() => {
     async function loadData() {
+      console.log('[HomePage] loadData started');
       try {
         const [
           latestNews,
@@ -181,20 +182,7 @@ export default function HomePage() {
         {liveMatches[0] ? (
           <MatchCard match={liveMatches[0]} variant="live" />
         ) : (
-          <div className="py-12 text-center">
-            <div className="h-12 w-12 mx-auto mb-4 rounded-full bg-[var(--surface-3)] flex items-center justify-center text-[var(--text-muted)]">
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <p className="text-sm text-[var(--text-muted)]">No live matches at the moment</p>
-            <Link href="/fixtures" className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] hover:text-[var(--accent-light)] transition-colors">
-              View upcoming fixtures
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-          </div>
+          <EmptyState type="matches" message="No live matches at the moment" />
         )}
       </div>
       <div className="rounded-xl border border-[var(--border-default)] bg-[var(--surface-2)]/80 p-6 backdrop-blur-sm card-elevated">
@@ -360,7 +348,7 @@ export default function HomePage() {
             <EmptyState
               type="matches"
               message="No recent results"
-              reason="The free football data plan covers limited historical seasons."
+              reason="No completed matches found for the selected competitions."
             />
           ) : (
             <MatchGrid matches={recentResults.slice(0, 6)} variant="default" maxCols={3} />
