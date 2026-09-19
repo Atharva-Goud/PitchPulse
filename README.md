@@ -45,7 +45,7 @@ User Interface
 
 2. **Static Data** (`src/scripts/` → `src/data/*.json` → `src/lib/data/`) — News, transfers, teams, competitions synced via scripts, validated with Zod, stored as JSON. App imports JSON at build time; accessors validate on read.
 
-**Local Development:** An Express proxy (`local-api-server.js`) runs on port 3050, forwarding to worldcup26.ir with CORS headers. The app uses `NEXT_PUBLIC_FOOTBALL_API_URL` (defaults to `http://localhost:3050` locally, `https://worldcup26.ir/get/soccer` in production).
+**Local Development:** An optional Express proxy (`local-api-server.js`) runs on port 3050, forwarding to worldcup26.ir with CORS headers. By default the app connects directly to worldcup26.ir; set `NEXT_PUBLIC_FOOTBALL_API_URL=http://localhost:3050` in `.env.local` to route through the proxy instead.
 
 ## Project Structure
 
@@ -118,18 +118,18 @@ cp .env.local.example .env.local
 # Run development server (http://localhost:3000)
 npm run dev
 
-# Start local API proxy (port 3050) in separate terminal
-node local-api-server.js
+# Optional: start local API proxy (port 3050) in a separate terminal
+# node local-api-server.js
 ```
 
 ## Environment Variables
 
 | Variable | Purpose | Required |
 |----------|---------|----------|
-| `NEXT_PUBLIC_FOOTBALL_API_URL` | Football API base URL | No (defaults to localhost:3050 dev, worldcup26.ir prod) |
+| `NEXT_PUBLIC_FOOTBALL_API_URL` | Football API base URL | No (defaults to `https://worldcup26.ir/get/soccer`; set to `http://localhost:3050` for local proxy) |
 | `NEWS_API_KEY` | NewsAPI key for news sync | No (sync only) |
 
-**Local:** `.env.local` sets `NEXT_PUBLIC_FOOTBALL_API_URL=http://localhost:3050`
+**Local:** `.env.local.example` includes `NEXT_PUBLIC_FOOTBALL_API_URL=https://worldcup26.ir/get/soccer`. Optionally override to `http://localhost:3050` if running the local proxy.
 **Production:** Set `NEXT_PUBLIC_FOOTBALL_API_URL=https://worldcup26.ir/get/soccer` (or your deployed proxy)
 
 Never commit real API keys. `.env.local` is gitignored.
