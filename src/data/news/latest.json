@@ -1,873 +1,29 @@
 [
   {
-    "id": "news-mu0q0fhd-g8dx19",
-    "title": "Can Leicester rise again a decade after Premier League, Champions League glory days?",
-    "summary": "Leicester have endured a sad descent to English soccer's third tier, barely a decade after their stunning Premier League win and Champions League debut. Is there a way out?",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49915665/leicester-city-premier-league-champions-uefa-champions-league-decade-league-one-decline",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49915665/leicester-city-premier-league-champions-uefa-champions-league-decade-league-one-decline",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49915665/leicester-city-premier-league-champions-uefa-champions-league-decade-league-one-decline",
-    "publishedAt": "2026-09-14T02:08:55.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 117,
-      "publishedAt": "2026-09-14T02:08:55.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49915665/leicester-city-premier-league-champions-uefa-champions-league-decade-league-one-decline",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T02:08:55.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mu0q0fhd-lbo4y8",
-    "title": "Chelsea have woken up, and that's ominous for the WSL",
-    "summary": "Chelsea dropped points on the opening weekend but a 5-0 rout of Manchester United proved they are back on track.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49925482/chelsea-woken-ominous-wsl-manchester-united",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49925482/chelsea-woken-ominous-wsl-manchester-united",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49925482/chelsea-woken-ominous-wsl-manchester-united",
-    "publishedAt": "2026-09-14T02:08:06.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 118,
-      "publishedAt": "2026-09-14T02:08:06.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49925482/chelsea-woken-ominous-wsl-manchester-united",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T02:08:06.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "chelsea"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-deprcn",
-    "title": "Maresca fine with Foden red, Bruno should have been sent off too",
-    "summary": "Manchester City manager Enzo Maresca backed referee Michael Oliver's decision to send off Phil Foden in his team's 1-0 win against Manchester United, but said that Reds captain Bruno Fernandes should also have been shown a red card.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49930019/maresca-fine-foden-red-bruno-sent-off",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49930019/maresca-fine-foden-red-bruno-sent-off",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49930019/maresca-fine-foden-red-bruno-sent-off",
-    "publishedAt": "2026-09-14T00:35:16.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 210,
-      "publishedAt": "2026-09-14T00:35:16.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49930019/maresca-fine-foden-red-bruno-sent-off",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T00:35:16.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "manchester-united",
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-v1xcjb",
-    "title": "David flashes 'calm finishing' to score first goal for Atlético",
-    "summary": "Diego Simeone praised Jonathan David's \"calm finishing\" and said he brings \"something different\" to the team after the Canada forward scored his first goal for Atlético Madrid in a 3-0 win at Real Sociedad on Sunday.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49933881/david-scores-first-atletico-goal",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49933881/david-scores-first-atletico-goal",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49933881/david-scores-first-atletico-goal",
-    "publishedAt": "2026-09-14T00:35:16.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 210,
-      "publishedAt": "2026-09-14T00:35:16.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49933881/david-scores-first-atletico-goal",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T00:35:16.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "real-sociedad"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-uy8ne0",
-    "title": "NWSL's Dash fire coach Gautrat, director Kilgore",
-    "summary": "The Houston Dash have fired head coach Fabrice Gautrat and technical director Twila Kilgore, the team announced on Sunday.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49931083/nwsl-houston-dash-fire-manager-gautrat-director-kilgore",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49931083/nwsl-houston-dash-fire-manager-gautrat-director-kilgore",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49931083/nwsl-houston-dash-fire-manager-gautrat-director-kilgore",
-    "publishedAt": "2026-09-14T00:35:16.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 210,
-      "publishedAt": "2026-09-14T00:35:16.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49931083/nwsl-houston-dash-fire-manager-gautrat-director-kilgore",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T00:35:16.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mu0q0fhd-cp3rmu",
-    "title": "🤯 Did Tom Brady's Birmingham have the worst miss ever?",
-    "summary": "Birmingham's Luis Vázquez put the ball over the bar from close range on Saturday, but is it the worst miss ever?",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49925262/is-miss-tom-brady-birmingham-luis-vazquez-worst-ever-seen-not-even-close",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49925262/is-miss-tom-brady-birmingham-luis-vazquez-worst-ever-seen-not-even-close",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49925262/is-miss-tom-brady-birmingham-luis-vazquez-worst-ever-seen-not-even-close",
-    "publishedAt": "2026-09-14T00:35:16.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 210,
-      "publishedAt": "2026-09-14T00:35:16.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49925262/is-miss-tom-brady-birmingham-luis-vazquez-worst-ever-seen-not-even-close",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T00:35:16.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mu0q0fhd-akoz09",
-    "title": "Premier League refs admit VAR 'error' on Haaland derby winner",
-    "summary": "Pro Ref, the Premier League referees' body, has apologized to Manchester United after admitting the VAR awarded Erling Haaland's winning goal in Manchester City's 1-0 win by \"error.\"",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49932067/premier-league-referees-body-apologises-man-united-derby-offside-controversy",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49932067/premier-league-referees-body-apologises-man-united-derby-offside-controversy",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49932067/premier-league-referees-body-apologises-man-united-derby-offside-controversy",
-    "publishedAt": "2026-09-14T00:35:15.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 210,
-      "publishedAt": "2026-09-14T00:35:15.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49932067/premier-league-referees-body-apologises-man-united-derby-offside-controversy",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T00:35:15.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "manchester-united"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-t4d35d",
-    "title": "Ronaldo calls for liftetime bans after Neves taunted by Jota chants",
-    "summary": "Cristiano Ronaldo has called on the Saudi Pro League to issue lifetime stadium bans to any supporter found to have been involved in the taunting of Ruben Neves.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49927013/cristiano-ronaldo-calls-life-bans-ruben-neves-taunted-diogo-jota-chants-saudi-pro-league",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49927013/cristiano-ronaldo-calls-life-bans-ruben-neves-taunted-diogo-jota-chants-saudi-pro-league",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49927013/cristiano-ronaldo-calls-life-bans-ruben-neves-taunted-diogo-jota-chants-saudi-pro-league",
-    "publishedAt": "2026-09-14T00:35:15.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 210,
-      "publishedAt": "2026-09-14T00:35:15.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49927013/cristiano-ronaldo-calls-life-bans-ruben-neves-taunted-diogo-jota-chants-saudi-pro-league",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T00:35:15.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mu0q0fhd-98skel",
-    "title": "Rodman jets from Spirit loss to US Open to watch Shelton",
-    "summary": "Trinity Rodman made it from the soccer pitch to the tennis court in time to watch boyfriend Ben Shelton in the US Open final.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/tennis/story/_/id/49934084/trinity-rodman-makes-soccer-game-watch-boyfriend-ben-shelton-us-open-final",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/tennis/story/_/id/49934084/trinity-rodman-makes-soccer-game-watch-boyfriend-ben-shelton-us-open-final",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/tennis/story/_/id/49934084/trinity-rodman-makes-soccer-game-watch-boyfriend-ben-shelton-us-open-final",
-    "publishedAt": "2026-09-14T00:35:15.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 210,
-      "publishedAt": "2026-09-14T00:35:15.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/tennis/story/_/id/49934084/trinity-rodman-makes-soccer-game-watch-boyfriend-ben-shelton-us-open-final",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T00:35:15.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mu0q0fhd-fpdr18",
-    "title": "Yamal brace helps free-scoring Barça beat Levante",
-    "summary": "Lamine Yamal fired a double as Barcelona won 4-2 at Levante to extend their 100% start in LaLiga this season to five matches and move three points clear at the top.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/report/_/gameId/401882883",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/report/_/gameId/401882883",
-    "image": null,
-    "category": "Transfers",
-    "originalUrl": "https://www.espn.com/soccer/report/_/gameId/401882883",
-    "publishedAt": "2026-09-14T00:35:15.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 210,
-      "publishedAt": "2026-09-14T00:35:15.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/report/_/gameId/401882883",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T00:35:15.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "barcelona"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-wgj04i",
-    "title": "Kane winner sees Bayern Munich beat Elversberg",
-    "summary": "Harry Kane scored the winner for Bayern Munich to claim a 2-1 win over SV Elversberg in the Bundesliga on Sunday.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/report/_/gameId/401884791",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/report/_/gameId/401884791",
-    "image": null,
-    "category": "Bundesliga",
-    "originalUrl": "https://www.espn.com/soccer/report/_/gameId/401884791",
-    "publishedAt": "2026-09-14T00:35:15.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 210,
-      "publishedAt": "2026-09-14T00:35:15.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/report/_/gameId/401884791",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T00:35:15.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "bayern-munich"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-hj3a3a",
-    "title": "'Why not have go?!' - Dunk's wonder goal against Coventry",
-    "summary": "Match of the Day pundits Danny Murphy and Wayne Rooney take a look at Lewis Dunk's incredible long-range strike in Brighton's 5-0 win against Coventry, praising the defender for his technique.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/videos/cvgyree8zpro?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cvgyree8zpro?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/videos/cvgyree8zpro?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T22:59:21.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 306,
-      "publishedAt": "2026-09-13T22:59:21.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/videos/cvgyree8zpro?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-13T22:59:21.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "brighton"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-ppalwl",
-    "title": "Getting goal decision so wrong is 'baffling' - Rooney",
-    "summary": "Match of the Day pundits Wayne Rooney and Danny Murphy finds it \"baffling\" that Erling Haaland's winning goal in the Manchester derby was not ruled out by VAR, but think Phil Foden's red card was the correct decision.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/videos/c9w4755n70wo?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c9w4755n70wo?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/videos/c9w4755n70wo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T22:59:17.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 306,
-      "publishedAt": "2026-09-13T22:59:17.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/videos/c9w4755n70wo?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-13T22:59:17.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mu0q0fhd-e7j5nc",
-    "title": "Liverpool ratings: Barcola, Wirtz, Gravenberch struggle in Fulham draw",
-    "summary": "Liverpool were held to a 0-0 draw with struggling Fulham at Anfield, as a host of top players failed to perform.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49912330/liverpool-ratings-barcola-wirtz-gravenberch-struggle-fulham-draw",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49912330/liverpool-ratings-barcola-wirtz-gravenberch-struggle-fulham-draw",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49912330/liverpool-ratings-barcola-wirtz-gravenberch-struggle-fulham-draw",
-    "publishedAt": "2026-09-13T22:50:43.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 315,
-      "publishedAt": "2026-09-13T22:50:43.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49912330/liverpool-ratings-barcola-wirtz-gravenberch-struggle-fulham-draw",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-13T22:50:43.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-nwy7o7",
-    "title": "In-form Hull show why Chelsea fans are in for a rough ride this season",
-    "summary": "Chelsea have a star-studded attack which has saved them many times already this season, but their defense was exposed again vs. an impressive Hull City.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49912334/in-form-hull-show-why-chelsea-fans-a-rough-ride-season",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49912334/in-form-hull-show-why-chelsea-fans-a-rough-ride-season",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49912334/in-form-hull-show-why-chelsea-fans-a-rough-ride-season",
-    "publishedAt": "2026-09-13T22:50:42.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 315,
-      "publishedAt": "2026-09-13T22:50:42.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49912334/in-form-hull-show-why-chelsea-fans-a-rough-ride-season",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-13T22:50:42.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "chelsea"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-3q2ixo",
-    "title": "Manchester derby reaction: City's 10-man master class, VAR questions, more",
-    "summary": "Manchester City outplayed their city rivals as Manchester United failed to take advantage of Phil Foden's early red card.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49929461/manchester-derby-reaction-city-united-var-haaland-mainoo-rashford",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49929461/manchester-derby-reaction-city-united-var-haaland-mainoo-rashford",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49929461/manchester-derby-reaction-city-united-var-haaland-mainoo-rashford",
-    "publishedAt": "2026-09-13T22:48:35.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 317,
-      "publishedAt": "2026-09-13T22:48:35.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49929461/manchester-derby-reaction-city-united-var-haaland-mainoo-rashford",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-13T22:48:35.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "manchester-united"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-2lpwx3",
-    "title": "Premier League VAR review: Wrongly awarded goal costs Man United",
-    "summary": "VAR often causes controversy, but how are decisions made? Our resident ref, Andy Davies, explains all.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49703019/premier-league-var-review-red-card-penalty-handball-goal-line-technology",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49703019/premier-league-var-review-red-card-penalty-handball-goal-line-technology",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49703019/premier-league-var-review-red-card-penalty-handball-goal-line-technology",
-    "publishedAt": "2026-09-13T22:48:35.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 317,
-      "publishedAt": "2026-09-13T22:48:35.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49703019/premier-league-var-review-red-card-penalty-handball-goal-line-technology",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-13T22:48:35.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mu0q0fhd-eyo4h8",
-    "title": "European football: Kane helps Bayern edge Elversberg, Sassuolo stun Juventus",
-    "summary": "Elversberg 1-2 Bayern; Sassuolo 3-2 Juventus\n\nBarcelona see off Levante, PSG end winless run\n\nHarry Kane scored his first Bundesliga goal of the season to help Bayern Munich edge to a 2-1 win at promoted Elversberg on Sunday. Handed the captain’s armband with skipper Manuel Neuer rested, Kane scored",
+    "id": "news-muiogx0u-d6dmvo",
+    "title": "Republic of Ireland players to wear black armbands after agreeing to play Israel",
+    "summary": "‘Majority’ of players vote for matches to go ahead\n\nOne player withdraws from squad citing ‘discomfort’\n\nThe Republic of Ireland will fulfil their fixture against Israel in Hungary on Sunday night, but only after lengthy deliberations between the players resulted in a “significant majority” voting t",
     "source": {
       "name": "The Guardian Football",
       "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/13/european-football-barcelona-bayern-munich-napoli-juventus",
+      "url": "https://www.theguardian.com/football/2026/sep/26/ireland-players-vote-to-go-ahead-with-nations-league-match-against-israel",
       "credibilityScore": 88
     },
     "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/13/european-football-barcelona-bayern-munich-napoli-juventus",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/26/ireland-players-vote-to-go-ahead-with-nations-league-match-against-israel",
     "image": null,
-    "category": "Bundesliga",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/13/european-football-barcelona-bayern-munich-napoli-juventus",
-    "publishedAt": "2026-09-13T22:47:47.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "category": "Transfers",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/26/ireland-players-vote-to-go-ahead-with-nations-league-match-against-israel",
+    "publishedAt": "2026-09-26T17:33:10.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 318,
-      "publishedAt": "2026-09-13T22:47:47.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "ageMinutes": 9,
+      "label": "9m ago",
+      "publishedAt": "2026-09-26T17:33:10.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "single_source",
@@ -876,10 +32,257 @@
           "id": "guardian-sport",
           "name": "The Guardian Football",
           "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/13/european-football-barcelona-bayern-munich-napoli-juventus",
+          "url": "https://www.theguardian.com/football/2026/sep/26/ireland-players-vote-to-go-ahead-with-nations-league-match-against-israel",
           "credibilityScore": 88,
-          "publishedAt": "2026-09-13T22:47:47.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "publishedAt": "2026-09-26T17:33:10.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 88,
+      "confidenceReasons": [
+        "Reported by The Guardian Football",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-3my1uq",
+    "title": "England v Spain: Nations League football – live",
+    "summary": "Nations League updates from the 7.45pm BST kick-off\n\nLive scoreboard | Follow us on Instagram and TikTok\n\nThomas Tuchel has pictured the scene. It comes after the final whistle has blown on England’s Nations League opener against Spain on Saturday night, the first post-World Cup fixture for both tea",
+    "source": {
+      "name": "The Guardian Football",
+      "type": "publication",
+      "url": "https://www.theguardian.com/football/live/2026/sep/26/england-v-spain-nations-league-football-live-score-updates",
+      "credibilityScore": 88
+    },
+    "sourceName": "The Guardian Football",
+    "sourceUrl": "https://www.theguardian.com/football/live/2026/sep/26/england-v-spain-nations-league-football-live-score-updates",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.theguardian.com/football/live/2026/sep/26/england-v-spain-nations-league-football-live-score-updates",
+    "publishedAt": "2026-09-26T17:28:33.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 14,
+      "label": "14m ago",
+      "publishedAt": "2026-09-26T17:28:33.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "guardian-sport",
+          "name": "The Guardian Football",
+          "type": "publication",
+          "url": "https://www.theguardian.com/football/live/2026/sep/26/england-v-spain-nations-league-football-live-score-updates",
+          "credibilityScore": 88,
+          "publishedAt": "2026-09-26T17:28:33.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 88,
+      "confidenceReasons": [
+        "Reported by The Guardian Football",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-uedf3a",
+    "title": "Gilmour catalyst, impressive Welsh, but same issue for Scotland?",
+    "summary": "BBC Sport Scotland picks out what we learned from Sebastien Pocognoli's first game in charge as Scotland drew with Slovenia.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T17:05:53.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 36,
+      "label": "36m ago",
+      "publishedAt": "2026-09-26T17:05:53.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-26T17:05:53.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-yjmlaf",
+    "title": "Should England try to emulate Spain or embrace Premier League 'chaos'?",
+    "summary": "Thomas Tuchel was hired to answer England's biggest question: How do you win?",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50018752/thomas-tuchel-england-dilemma-emulate-spain-embrace-premier-league-chaos",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50018752/thomas-tuchel-england-dilemma-emulate-spain-embrace-premier-league-chaos",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50018752/thomas-tuchel-england-dilemma-emulate-spain-embrace-premier-league-chaos",
+    "publishedAt": "2026-09-26T17:04:23.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 38,
+      "label": "38m ago",
+      "publishedAt": "2026-09-26T17:04:23.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50018752/thomas-tuchel-england-dilemma-emulate-spain-embrace-premier-league-chaos",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T17:04:23.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-n5q9kk",
+    "title": "Spain are reigning world and European champions. They're just getting started",
+    "summary": "Winning the next four tournaments -- two Nations Leagues, Euro 2028 and the 2030 World Cup -- is something Spain will be aiming for, and it's within their potential.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50012238/spain-reigning-fifa-world-cup-uefa-european-champions-just-getting-started",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50012238/spain-reigning-fifa-world-cup-uefa-european-champions-just-getting-started",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50012238/spain-reigning-fifa-world-cup-uefa-european-champions-just-getting-started",
+    "publishedAt": "2026-09-26T17:04:23.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 38,
+      "label": "38m ago",
+      "publishedAt": "2026-09-26T17:04:23.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50012238/spain-reigning-fifa-world-cup-uefa-european-champions-just-getting-started",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T17:04:23.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-89it7f",
+    "title": "WSL roundup: Greenwood maintains Manchester City’s 100% record",
+    "summary": "Defending champions win 1-0 at pointless Charlton\n\nAlex Greenwood fires in only goal from a free-kick\n\nManchester City maintained their perfect start to the Women’s Super League season with a 1-0 win at Charlton. Alex Greenwood scored a fine free-kick in the 36th minute, which proved enough to give ",
+    "source": {
+      "name": "The Guardian Football",
+      "type": "publication",
+      "url": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
+      "credibilityScore": 88
+    },
+    "sourceName": "The Guardian Football",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
+    "publishedAt": "2026-09-26T17:00:56.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 41,
+      "label": "41m ago",
+      "publishedAt": "2026-09-26T17:00:56.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "guardian-sport",
+          "name": "The Guardian Football",
+          "type": "publication",
+          "url": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
+          "credibilityScore": 88,
+          "publishedAt": "2026-09-26T17:00:56.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
       "confidenceScore": 88,
@@ -891,36 +294,633 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "barcelona",
-      "bayern-munich",
-      "psg",
-      "juventus"
+      "manchester-city"
     ]
   },
   {
-    "id": "news-mu0q0fhd-1dhxgt",
-    "title": "Intelligence & resilience key in statement win for Maresca's Man City - Murphy",
-    "summary": "Match of the Day pundit Danny Murphy explains how Manchester City beat Manchester United at Old Trafford despite being down to 10 men for most of the game.",
+    "id": "news-muiogx0u-b60nsj",
+    "title": "Top 50 USMNT players, ranked by club performance: Which Americans are in hot form?",
+    "summary": "Who are the best Americans as the new World Cup cycle begins? We rank USMNT players on club form: ESPN's Player Performance Index returns.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50016805/ranked-top-50-usmnt-players-world-based-club-form-2026",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50016805/ranked-top-50-usmnt-players-world-based-club-form-2026",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50016805/ranked-top-50-usmnt-players-world-based-club-form-2026",
+    "publishedAt": "2026-09-26T16:46:30.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 56,
+      "label": "56m ago",
+      "publishedAt": "2026-09-26T16:46:30.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50016805/ranked-top-50-usmnt-players-world-based-club-form-2026",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:46:30.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-s4essz",
+    "title": "Is Cavan Sullivan the next Michael Olise? Comps for USMNT's top young stars",
+    "summary": "With the USMNT welcoming a new class of debutantes during this international break, ESPN dives into the numbers of the United States' next prodigies.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50015083/is-cavan-sullivan-next-michael-olise-comparisons-united-states-top-young-stars",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50015083/is-cavan-sullivan-next-michael-olise-comparisons-united-states-top-young-stars",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50015083/is-cavan-sullivan-next-michael-olise-comparisons-united-states-top-young-stars",
+    "publishedAt": "2026-09-26T16:46:30.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 56,
+      "label": "56m ago",
+      "publishedAt": "2026-09-26T16:46:30.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50015083/is-cavan-sullivan-next-michael-olise-comparisons-united-states-top-young-stars",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:46:30.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-90wxva",
+    "title": "Sources: PL clubs seeking legal advice over City charges",
+    "summary": "Premier League clubs are seeking legal advice amid an expectation that Man City have been found guilty of hundreds of breaches of financial regulations, sources have told ESPN.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
+    "publishedAt": "2026-09-26T16:01:43.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 101,
+      "label": "1h ago",
+      "publishedAt": "2026-09-26T16:01:43.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:01:43.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city",
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-tgd3e6",
+    "title": "Mbappé to leave France camp after injury while scoring in Zidane's debut",
+    "summary": "Zinedine Zidane's first game in charge of France ended on a sour note as Kylian Mbappé was injured moments after scoring in a 1-0 Nations League win in Türkiye.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50029181/mbappe-exits-knee-injury-scoring-france-zidane-debut",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50029181/mbappe-exits-knee-injury-scoring-france-zidane-debut",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50029181/mbappe-exits-knee-injury-scoring-france-zidane-debut",
+    "publishedAt": "2026-09-26T16:01:43.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 101,
+      "label": "1h ago",
+      "publishedAt": "2026-09-26T16:01:43.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50029181/mbappe-exits-knee-injury-scoring-france-zidane-debut",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:01:43.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-me73g7",
+    "title": "City chairman on charges: 'Nothing has changed'",
+    "summary": "Manchester City chairman Khaldoon Al Mubarak has said \"nothing has changed\" regarding the club's ongoing legal battle with the Premier League.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50033305/man-city-chairman-club-premier-league-charges-case-changed",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50033305/man-city-chairman-club-premier-league-charges-case-changed",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50033305/man-city-chairman-club-premier-league-charges-case-changed",
+    "publishedAt": "2026-09-26T16:01:43.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 101,
+      "label": "1h ago",
+      "publishedAt": "2026-09-26T16:01:43.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50033305/man-city-chairman-club-premier-league-charges-case-changed",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:01:43.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-1kexet",
+    "title": "Rep. Ireland players vote to fulfil Israel matches",
+    "summary": "The Republic of Ireland's controversial Nations League fixtures against Israel will go ahead after players voted for the games to be played.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50032176/republic-ireland-players-vote-fulfill-nations-league-matches-israel",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50032176/republic-ireland-players-vote-fulfill-nations-league-matches-israel",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50032176/republic-ireland-players-vote-fulfill-nations-league-matches-israel",
+    "publishedAt": "2026-09-26T16:01:43.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 101,
+      "label": "1h ago",
+      "publishedAt": "2026-09-26T16:01:43.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50032176/republic-ireland-players-vote-fulfill-nations-league-matches-israel",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:01:43.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-p9ujvs",
+    "title": "Poch shares 'regret' over Balogun controversy, impact on USMNT",
+    "summary": "USMNT coach Mauricio Pochettino said he regrets not being more involved in the process of appealing Folarin Balogun's suspension at this summer's World Cup, adding that the incident changed the energy around his squad.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50028671/folarin-balogun-mauricio-pochettino-red-card-suspension-usa-world-cup",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50028671/folarin-balogun-mauricio-pochettino-red-card-suspension-usa-world-cup",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50028671/folarin-balogun-mauricio-pochettino-red-card-suspension-usa-world-cup",
+    "publishedAt": "2026-09-26T16:01:43.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 101,
+      "label": "1h ago",
+      "publishedAt": "2026-09-26T16:01:43.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50028671/folarin-balogun-mauricio-pochettino-red-card-suspension-usa-world-cup",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:01:43.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-6shano",
+    "title": "Fishlock breaks Rapinoe's Reign scoring record",
+    "summary": "Jess Fishlock claimed the Seattle Reign's all-time scoring record from Megan Rapinoe by netting a brace against the Boston Legacy on Friday.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50030971/jess-fishlock-sets-seattle-reign-scoring-record-two-goals-win-boston",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50030971/jess-fishlock-sets-seattle-reign-scoring-record-two-goals-win-boston",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50030971/jess-fishlock-sets-seattle-reign-scoring-record-two-goals-win-boston",
+    "publishedAt": "2026-09-26T16:01:43.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 101,
+      "label": "1h ago",
+      "publishedAt": "2026-09-26T16:01:43.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50030971/jess-fishlock-sets-seattle-reign-scoring-record-two-goals-win-boston",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:01:43.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-jn7md4",
+    "title": "Returning Mancini accepts fans' jeers as Italy beaten by Belgium",
+    "summary": "Six months on from failing to qualify for a third consecutive World Cup, four-time champions Italy are still struggling.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50029412/italy-vs-belgium-roberto-mancini-jeers-fans-nations-league",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50029412/italy-vs-belgium-roberto-mancini-jeers-fans-nations-league",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50029412/italy-vs-belgium-roberto-mancini-jeers-fans-nations-league",
+    "publishedAt": "2026-09-26T16:01:43.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 101,
+      "label": "1h ago",
+      "publishedAt": "2026-09-26T16:01:43.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50029412/italy-vs-belgium-roberto-mancini-jeers-fans-nations-league",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:01:43.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-9unv2e",
+    "title": "Rodri 'believes in innocence' of Man City, says success 'deserved'",
+    "summary": "Former Manchester City midfielder Rodri has said he \"believes in the innocence of the club\" after reports that City were set to be found guilty on most of the charges brought by the Premier League over alleged breaches of financial rules.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50029194/rodri-man-city-premier-league-charges-financial-breaches",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50029194/rodri-man-city-premier-league-charges-financial-breaches",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50029194/rodri-man-city-premier-league-charges-financial-breaches",
+    "publishedAt": "2026-09-26T16:01:43.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 101,
+      "label": "1h ago",
+      "publishedAt": "2026-09-26T16:01:43.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50029194/rodri-man-city-premier-league-charges-financial-breaches",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:01:43.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-rlltzw",
+    "title": "⚽ Transfer tiers: Which club has the most valuable players?",
+    "summary": "Which soccer players are actually worth £100m? Let's assess each team's stars, factoring in ability, positions, contracts and age.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50003864/which-club-most-players-worth-100m-plus",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50003864/which-club-most-players-worth-100m-plus",
+    "image": null,
+    "category": "Transfers",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50003864/which-club-most-players-worth-100m-plus",
+    "publishedAt": "2026-09-26T16:01:43.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 101,
+      "label": "1h ago",
+      "publishedAt": "2026-09-26T16:01:43.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50003864/which-club-most-players-worth-100m-plus",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:01:43.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-2nco91",
+    "title": "Man City verdict will leave a stain and stench on a Premier League era",
+    "summary": "Manchester City are expected to be found guilty of almost all 115 financial charges against them. It means an era of English soccer is now tarnished with multiple asterisks.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50032611/man-city-verdict-leave-stain-stench-premier-league-era",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50032611/man-city-verdict-leave-stain-stench-premier-league-era",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50032611/man-city-verdict-leave-stain-stench-premier-league-era",
+    "publishedAt": "2026-09-26T15:21:48.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 141,
+      "label": "2h ago",
+      "publishedAt": "2026-09-26T15:21:48.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50032611/man-city-verdict-leave-stain-stench-premier-league-era",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T15:21:48.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-pe948x",
+    "title": "Scotland rue missed chances in Slovenia draw",
+    "summary": "Sebastien Pocognoli's first match in charge of Scotland ends in a goalless draw against Slovenia as they are made to rue several missed chances in Ljubljana.",
     "source": {
       "name": "BBC Sport Football",
       "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cq6384g0pqyo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c6y9zzy79ewyo?at_medium=RSS&at_campaign=rss",
       "credibilityScore": 92
     },
     "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cq6384g0pqyo?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c6y9zzy79ewyo?at_medium=RSS&at_campaign=rss",
     "image": null,
     "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cq6384g0pqyo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T22:20:42.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/videos/c6y9zzy79ewyo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T15:19:39.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 345,
-      "publishedAt": "2026-09-13T22:20:42.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "very_fresh",
+      "ageMinutes": 143,
+      "label": "2h ago",
+      "publishedAt": "2026-09-26T15:19:39.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -929,10 +929,10 @@
           "id": "bbc-sport",
           "name": "BBC Sport Football",
           "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cq6384g0pqyo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/sport/football/videos/c6y9zzy79ewyo?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
-          "publishedAt": "2026-09-13T22:20:42.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "publishedAt": "2026-09-26T15:19:39.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
       "confidenceScore": 92,
@@ -945,137 +945,33 @@
       ],
       "verificationCount": 1
     },
-    "relatedTeams": [
-      "manchester-city",
-      "manchester-united"
-    ]
+    "relatedTeams": []
   },
   {
-    "id": "news-mu0q0fhd-tbkkpy",
-    "title": "Transfer rumors, news: Bayern eye move for Liverpool's Wirtz",
-    "summary": "Bayern Munich are ready to pounce to sign Liverpool midfielder Florian Wirtz if there is a chance. Transfer Talk has the latest.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49925331/transfer-rumors-news-chelsea-return-roma-star-manu-kone",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49925331/transfer-rumors-news-chelsea-return-roma-star-manu-kone",
-    "image": null,
-    "category": "Transfers",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49925331/transfer-rumors-news-chelsea-return-roma-star-manu-kone",
-    "publishedAt": "2026-09-13T22:06:59.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 359,
-      "publishedAt": "2026-09-13T22:06:59.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49925331/transfer-rumors-news-chelsea-return-roma-star-manu-kone",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-13T22:06:59.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool",
-      "bayern-munich"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-7kp8au",
-    "title": "The staggering numbers behind Premier League's spending power over Europe",
-    "summary": "Barcola's big move from PSG to Liverpool was a highlight of another summer transfer window in which the Premier League effectively subsidizes big European leagues such as Ligue 1.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49890784/summer-transfer-window-analysis-premier-league-laliga-ligue-1-gab-marcotti",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49890784/summer-transfer-window-analysis-premier-league-laliga-ligue-1-gab-marcotti",
-    "image": null,
-    "category": "Transfers",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49890784/summer-transfer-window-analysis-premier-league-laliga-ligue-1-gab-marcotti",
-    "publishedAt": "2026-09-13T22:06:59.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 359,
-      "publishedAt": "2026-09-13T22:06:59.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49890784/summer-transfer-window-analysis-premier-league-laliga-ligue-1-gab-marcotti",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-13T22:06:59.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool",
-      "psg"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-jkpm6k",
-    "title": "‘An error of judgement’: Pro Ref admits mistake in awarding Haaland’s derby winner",
-    "summary": "Officiating body announces it will review the incident\n\nUnhappy Carrick says error was ‘as obvious as it gets’\n\nPro Ref admitted Erling Haaland’s winner in Sunday’s Manchester derby should not have been allowed after the video assistant referee ruled Enzo Fernández was not interfering with play in t",
+    "id": "news-muiogx0u-sqtyei",
+    "title": "Pocognoli’s reign as Scotland coach begins with stalemate in Slovenia",
+    "summary": "Sébastien Pocognoli grimaced on Friday when recalling his debut as an international player for Belgium. Alessandro del Piero and Italy discovered favourable opposition when preparing for the 2006 World Cup. Pocognoli will also look back, in time, at his first game as the manager of Scotland.\nBlue sk",
     "source": {
       "name": "The Guardian Football",
       "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/13/michael-carrick-var-erling-haaland-manchester-derby",
+      "url": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
       "credibilityScore": 88
     },
     "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/13/michael-carrick-var-erling-haaland-manchester-derby",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
     "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/13/michael-carrick-var-erling-haaland-manchester-derby",
-    "publishedAt": "2026-09-13T21:31:19.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "category": "International Football",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
+    "publishedAt": "2026-09-26T15:19:01.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 394,
-      "publishedAt": "2026-09-13T21:31:19.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "very_fresh",
+      "ageMinutes": 143,
+      "label": "2h ago",
+      "publishedAt": "2026-09-26T15:19:01.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "single_source",
@@ -1084,10 +980,10 @@
           "id": "guardian-sport",
           "name": "The Guardian Football",
           "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/13/michael-carrick-var-erling-haaland-manchester-derby",
+          "url": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
           "credibilityScore": 88,
-          "publishedAt": "2026-09-13T21:31:19.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "publishedAt": "2026-09-26T15:19:01.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
       "confidenceScore": 88,
@@ -1103,79 +999,30 @@
     ]
   },
   {
-    "id": "news-mu0q0fhd-rg6tjy",
-    "title": "Arteta embraces perfect storm to play the victim in game of his own making | Barney Ronay",
-    "summary": "Refereeing is now an impossible job owing to the culture of micro-analysis the Arsenal manager has helped to create\nA gentleman is never rude unintentionally, only by design. Nobody really knows who said this first. But it could easily be a line from the Elite Football Manager’s Guide to Press Confe",
-    "source": {
-      "name": "The Guardian Football",
-      "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/13/mikel-arteta-arsenal-sunderland-premier-league",
-      "credibilityScore": 88
-    },
-    "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/13/mikel-arteta-arsenal-sunderland-premier-league",
-    "image": null,
-    "category": "Transfers",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/13/mikel-arteta-arsenal-sunderland-premier-league",
-    "publishedAt": "2026-09-13T20:35:23.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 450,
-      "publishedAt": "2026-09-13T20:35:23.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "guardian-sport",
-          "name": "The Guardian Football",
-          "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/13/mikel-arteta-arsenal-sunderland-premier-league",
-          "credibilityScore": 88,
-          "publishedAt": "2026-09-13T20:35:23.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 88,
-      "confidenceReasons": [
-        "Reported by The Guardian Football",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "arsenal"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-khb59q",
-    "title": "Refereeing body admits judgement error over Haaland derby winner",
-    "summary": "The Premier League refereeing body Pro Ref admits an error of judgement in awarding Erling Haaland's winner in the Manchester derby.",
+    "id": "news-muiogx0u-77ojk1",
+    "title": "Man City chairman confident club will prove innocence",
+    "summary": "Manchester City chairman Khaldoon Al Mubarak says he is still confident of proving the club's innocence after they were found guilty of breaking Premier League financial rules.",
     "source": {
       "name": "BBC Sport Football",
       "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c5ym9ky3rzxo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
       "credibilityScore": 92
     },
     "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c5ym9ky3rzxo?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
     "image": null,
     "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c5ym9ky3rzxo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T20:29:58.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T15:02:28.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 456,
-      "publishedAt": "2026-09-13T20:29:58.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "very_fresh",
+      "ageMinutes": 160,
+      "label": "2h ago",
+      "publishedAt": "2026-09-26T15:02:28.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -1184,10 +1031,63 @@
           "id": "bbc-sport",
           "name": "BBC Sport Football",
           "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c5ym9ky3rzxo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
-          "publishedAt": "2026-09-13T20:29:58.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "publishedAt": "2026-09-26T15:02:28.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-ku2bbq",
+    "title": "Republic of Ireland to wear black armbands for Israel game",
+    "summary": "Republic of Ireland players intend to wear black armbands \"in recognition of all lives lost in the [Gaza] conflict\" for match against Israel.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ckddvv5dn4eyo?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ckddvv5dn4eyo?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/ckddvv5dn4eyo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T14:58:44.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 164,
+      "label": "2h ago",
+      "publishedAt": "2026-09-26T14:58:44.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/ckddvv5dn4eyo?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-26T14:58:44.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
       "confidenceScore": 92,
@@ -1203,29 +1103,30 @@
     "relatedTeams": []
   },
   {
-    "id": "news-mu0q0fhd-nl8i69",
-    "title": "Bayern monitoring Wirtz - Monday's gossip",
-    "summary": "Florian Wirtz is being monitored by Bayern Munich, Bournemouth's Brazil forward Rayan could be a Liverpool target next summer and Borussia Dortmund rule out move for Jadon Sancho.",
+    "id": "news-muiogx0u-mra6pu",
+    "title": "Man City maintain winning start with narrow win over Charlton",
+    "summary": "Manchester City maintain their winning start to the Women's Super League as Alex Greenwood's 36th-minute free-kick gives them victory over Charlton.",
     "source": {
       "name": "BBC Sport Football",
       "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cr4v345pdq0o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
       "credibilityScore": 92
     },
     "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cr4v345pdq0o?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
     "image": null,
-    "category": "Transfers",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cr4v345pdq0o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T20:23:02.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T14:53:44.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 463,
-      "publishedAt": "2026-09-13T20:23:02.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "very_fresh",
+      "ageMinutes": 169,
+      "label": "2h ago",
+      "publishedAt": "2026-09-26T14:53:44.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -1234,10 +1135,10 @@
           "id": "bbc-sport",
           "name": "BBC Sport Football",
           "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cr4v345pdq0o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
-          "publishedAt": "2026-09-13T20:23:02.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "publishedAt": "2026-09-26T14:53:44.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
       "confidenceScore": 92,
@@ -1251,85 +1152,34 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "liverpool",
-      "bayern-munich",
-      "borussia-dortmund"
+      "manchester-city"
     ]
   },
   {
-    "id": "news-mu0q0fhd-q8uh8q",
-    "title": "Football Daily",
-    "summary": "Rick Edwards, Luke Edwards and Charlie Austin discuss the latest Premier League weekend.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sounds/play/p0p9gjr9?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0p9gjr9?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sounds/play/p0p9gjr9?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T20:23:00.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 463,
-      "publishedAt": "2026-09-13T20:23:00.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sounds/play/p0p9gjr9?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-13T20:23:00.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mu0q0fhd-0ejpp9",
-    "title": "Enzo Fernández’s fortitude shows Maresca was right to crave City reunion | Will Unwin",
-    "summary": "Some scoffed at £125m price tag, but the Argentinian did the work of two midfielders after Phil Foden’s red card\nEnzo Maresca does not pay the bills at Manchester City but he is ecstatic that those who do spent £125m for him to be reunited with Enzo Fernández. The manager and the midfielder were tog",
+    "id": "news-muiogx0u-9jjw6n",
+    "title": "Manchester City chair Al Mubarak insists ‘nothing has changed’ after guilty verdict",
+    "summary": "‘We have faced challenges together before and have prevailed’\n\nMaresca quotes Socrates on social media – ‘I know nothing’\n\nKhaldoon Al Mubarak, the Manchester City chair, has spoken for the first time since the club was found guilty on virtually all counts of breaching Premier League financial rules",
     "source": {
       "name": "The Guardian Football",
       "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/13/enzo-fernandez-enzo-maresca-manchester-city-reunion-united-derby",
+      "url": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
       "credibilityScore": 88
     },
     "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/13/enzo-fernandez-enzo-maresca-manchester-city-reunion-united-derby",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
     "image": null,
     "category": "Premier League",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/13/enzo-fernandez-enzo-maresca-manchester-city-reunion-united-derby",
-    "publishedAt": "2026-09-13T20:21:16.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
+    "publishedAt": "2026-09-26T14:52:09.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 464,
-      "publishedAt": "2026-09-13T20:21:16.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "very_fresh",
+      "ageMinutes": 170,
+      "label": "2h ago",
+      "publishedAt": "2026-09-26T14:52:09.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "single_source",
@@ -1338,10 +1188,10 @@
           "id": "guardian-sport",
           "name": "The Guardian Football",
           "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/13/enzo-fernandez-enzo-maresca-manchester-city-reunion-united-derby",
+          "url": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
           "credibilityScore": 88,
-          "publishedAt": "2026-09-13T20:21:16.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "publishedAt": "2026-09-26T14:52:09.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
       "confidenceScore": 88,
@@ -1357,46 +1207,47 @@
     ]
   },
   {
-    "id": "news-mu0q0fhd-0myqmm",
-    "title": "WSL roundup: Arsenal rue misses in Palace draw, Manchester City crush Villa",
-    "summary": "Gunners held at Emirates despite 30 attempts on goal\n\nCity win 4-1 at Aston Villa to extend perfect start\n\nArsenal were left to rue 30 missed chances after dropping points in a 0-0 draw against Crystal Palace at the Emirates Stadium.\nThe Gunners hit the target nine times and had almost 80% possessio",
+    "id": "news-muiogx0u-sgoww1",
+    "title": "Transfer rumors, news: Arsenal, Liverpool eye winger Kevin Schade",
+    "summary": "Arsenal and Liverpool are upping their interest in Brentford's Kevin Schade, while the rest of Europe chases center backs. Transfer Talk has the latest.",
     "source": {
-      "name": "The Guardian Football",
+      "name": "ESPN FC",
       "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/13/wsl-roundup-arsenal-crystal-palace-aston-villa-manchester-city",
-      "credibilityScore": 88
+      "url": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
+      "credibilityScore": 85
     },
-    "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/13/wsl-roundup-arsenal-crystal-palace-aston-villa-manchester-city",
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
     "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/13/wsl-roundup-arsenal-crystal-palace-aston-villa-manchester-city",
-    "publishedAt": "2026-09-13T19:58:52.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "category": "Transfers",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
+    "publishedAt": "2026-09-26T14:23:06.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 487,
-      "publishedAt": "2026-09-13T19:58:52.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "recent",
+      "ageMinutes": 199,
+      "label": "3h ago",
+      "publishedAt": "2026-09-26T14:23:06.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "single_source",
       "sources": [
         {
-          "id": "guardian-sport",
-          "name": "The Guardian Football",
+          "id": "espn-fc",
+          "name": "ESPN FC",
           "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/13/wsl-roundup-arsenal-crystal-palace-aston-villa-manchester-city",
-          "credibilityScore": 88,
-          "publishedAt": "2026-09-13T19:58:52.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "url": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T14:23:06.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
-      "confidenceScore": 88,
+      "confidenceScore": 85,
       "confidenceReasons": [
-        "Reported by The Guardian Football",
+        "Reported by ESPN FC",
         "Moderate source credibility"
       ],
       "confirmedBy": [],
@@ -1404,86 +1255,135 @@
     },
     "relatedTeams": [
       "arsenal",
-      "manchester-city"
+      "liverpool",
+      "inter-milan"
     ]
   },
   {
-    "id": "news-mu0q0fhd-k5a5ur",
-    "title": "Joint-worst start since 1992 and fan protests - Man Utd's day to forget",
-    "summary": "Manchester United fans protested inside and outside Old Trafford before Sunday's derby, then saw their team lose to 10-man Manchester City",
+    "id": "news-muiogx0u-2dj079",
+    "title": "Goals galore! Why Barça's start to season is best in Europe's top leagues for almost 100 years",
+    "summary": "Barcelona have begun the season on fire, scoring 36 goals in their first eight matches. How does that compare to the best starts for all time? (Spoiler: Very well.)",
     "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c624d3g15e9o?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50004145/why-barcelona-start-season-laliga-champions-league-best-europe-top-5-leagues-almost-100-years",
+      "credibilityScore": 85
     },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c624d3g15e9o?at_medium=RSS&at_campaign=rss",
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50004145/why-barcelona-start-season-laliga-champions-league-best-europe-top-5-leagues-almost-100-years",
     "image": null,
     "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c624d3g15e9o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T19:54:56.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50004145/why-barcelona-start-season-laliga-champions-league-best-europe-top-5-leagues-almost-100-years",
+    "publishedAt": "2026-09-26T14:22:50.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 491,
-      "publishedAt": "2026-09-13T19:54:56.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "recent",
+      "ageMinutes": 200,
+      "label": "3h ago",
+      "publishedAt": "2026-09-26T14:22:50.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
-      "level": "trusted_journalist",
+      "level": "single_source",
       "sources": [
         {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c624d3g15e9o?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-13T19:54:56.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50004145/why-barcelona-start-season-laliga-champions-league-best-europe-top-5-leagues-almost-100-years",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T14:22:50.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
-      "confidenceScore": 92,
+      "confidenceScore": 85,
       "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
+        "Reported by ESPN FC",
+        "Moderate source credibility"
       ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
+      "confirmedBy": [],
       "verificationCount": 1
     },
     "relatedTeams": [
-      "manchester-city",
-      "manchester-united"
+      "barcelona"
     ]
   },
   {
-    "id": "news-mu0q0fhd-uezoqu",
-    "title": "Twenty-five years in the waiting - Coventry's nightmare top-flight return",
-    "summary": "Coventry City's dream return to the Premier League is beginning to unravel after a fourth consecutive defeat - but can Frank Lampard turn it around?",
+    "id": "news-muiogx0u-s2i5ds",
+    "title": "Who's the striker leading Raphinha, Mbappé, Haaland in race for European Golden Shoe?",
+    "summary": "Raphinha may have started the season on fire, but there's a little-known striker who is ahead of the Barça star in the race for the European Golden Shoe.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50010819/european-golden-shoe-whos-leading-raphinha-mbappe-haaland",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50010819/european-golden-shoe-whos-leading-raphinha-mbappe-haaland",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50010819/european-golden-shoe-whos-leading-raphinha-mbappe-haaland",
+    "publishedAt": "2026-09-26T14:22:50.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 200,
+      "label": "3h ago",
+      "publishedAt": "2026-09-26T14:22:50.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50010819/european-golden-shoe-whos-leading-raphinha-mbappe-haaland",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T14:22:50.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-sbzm9f",
+    "title": "'Significant majority' of Republic of Ireland players voted to play Israel game",
+    "summary": "Football Association of Ireland chief executive David Courell confirms that the Republic of Ireland's Nations League match against Israel will go ahead on Sunday.",
     "source": {
       "name": "BBC Sport Football",
       "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c4g7pezw1mjo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c6x2zzpvpe9zo?at_medium=RSS&at_campaign=rss",
       "credibilityScore": 92
     },
     "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c4g7pezw1mjo?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c6x2zzpvpe9zo?at_medium=RSS&at_campaign=rss",
     "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c4g7pezw1mjo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T19:32:55.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "category": "Transfers",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/videos/c6x2zzpvpe9zo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T13:54:50.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 513,
-      "publishedAt": "2026-09-13T19:32:55.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "recent",
+      "ageMinutes": 228,
+      "label": "3h ago",
+      "publishedAt": "2026-09-26T13:54:50.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -1492,10 +1392,10 @@
           "id": "bbc-sport",
           "name": "BBC Sport Football",
           "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c4g7pezw1mjo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/sport/football/videos/c6x2zzpvpe9zo?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
-          "publishedAt": "2026-09-13T19:32:55.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "publishedAt": "2026-09-26T13:54:50.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
       "confidenceScore": 92,
@@ -1509,5 +1409,109 @@
       "verificationCount": 1
     },
     "relatedTeams": []
+  },
+  {
+    "id": "news-muiogx0u-4w70vi",
+    "title": "No Premier League appetite to strip Man City of titles - but threat remains",
+    "summary": "After being found guilty of the majority of the 115 charges for breaching Premier League, could Manchester city really be stripped of eight trophies?",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T13:26:40.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 256,
+      "label": "4h ago",
+      "publishedAt": "2026-09-26T13:26:40.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-26T13:26:40.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-cu0wr9",
+    "title": "Who is Liverpool's new sporting director Julian Ward and what does he need to do?",
+    "summary": "Julian Ward has been appointed as Liverpool's sporting director and he'll need to decide the futures of Virgil van Dijk and Alisson Becker, as well as targeting new faces.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50012731/who-liverpool-new-sporting-director-julian-ward-does-need-do",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50012731/who-liverpool-new-sporting-director-julian-ward-does-need-do",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50012731/who-liverpool-new-sporting-director-julian-ward-does-need-do",
+    "publishedAt": "2026-09-26T13:07:24.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 275,
+      "label": "4h ago",
+      "publishedAt": "2026-09-26T13:07:24.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50012731/who-liverpool-new-sporting-director-julian-ward-does-need-do",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T13:07:24.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool"
+    ]
   }
 ]

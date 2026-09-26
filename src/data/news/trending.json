@@ -1,28 +1,293 @@
 [
   {
-    "id": "news-mu0q0fhd-gghga2",
-    "title": "European football: Kane helps Bayern edge Elversberg, Sassuolo stun Juventus",
-    "summary": "Elversberg 1-2 Bayern; Sassuolo 3-2 Juventus\n\nBarcelona see off Levante, PSG end winless run\n\nHarry Kane scored his first Bundesliga goal of the season to help Bayern Munich edge to a 2-1 win at promoted Elversberg on Sunday. Handed the captain’s armband with skipper Manuel Neuer rested, Kane scored",
+    "id": "news-muiogx0u-vc8qx1",
+    "title": "Transfer rumors, news: Arsenal, Liverpool eye winger Kevin Schade",
+    "summary": "Arsenal and Liverpool are upping their interest in Brentford's Kevin Schade, while the rest of Europe chases center backs. Transfer Talk has the latest.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
+    "image": null,
+    "category": "Transfers",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
+    "publishedAt": "2026-09-26T14:23:06.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 199,
+      "label": "3h ago",
+      "publishedAt": "2026-09-26T14:23:06.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T14:23:06.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "arsenal",
+      "liverpool",
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-21svkk",
+    "title": "Man City chairman confident club will prove innocence",
+    "summary": "Manchester City chairman Khaldoon Al Mubarak says he is still confident of proving the club's innocence after they were found guilty of breaking Premier League financial rules.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T15:02:28.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 160,
+      "label": "2h ago",
+      "publishedAt": "2026-09-26T15:02:28.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-26T15:02:28.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-ti1yd0",
+    "title": "Man City maintain winning start with narrow win over Charlton",
+    "summary": "Manchester City maintain their winning start to the Women's Super League as Alex Greenwood's 36th-minute free-kick gives them victory over Charlton.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T14:53:44.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 169,
+      "label": "2h ago",
+      "publishedAt": "2026-09-26T14:53:44.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-26T14:53:44.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-qkr3pt",
+    "title": "Sources: PL clubs seeking legal advice over City charges",
+    "summary": "Premier League clubs are seeking legal advice amid an expectation that Man City have been found guilty of hundreds of breaches of financial regulations, sources have told ESPN.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
+    "publishedAt": "2026-09-26T16:01:43.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 101,
+      "label": "1h ago",
+      "publishedAt": "2026-09-26T16:01:43.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-26T16:01:43.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city",
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-jh5ysh",
+    "title": "No Premier League appetite to strip Man City of titles - but threat remains",
+    "summary": "After being found guilty of the majority of the 115 charges for breaching Premier League, could Manchester city really be stripped of eight trophies?",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T13:26:40.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 256,
+      "label": "4h ago",
+      "publishedAt": "2026-09-26T13:26:40.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-26T13:26:40.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-c1tw0d",
+    "title": "WSL roundup: Greenwood maintains Manchester City’s 100% record",
+    "summary": "Defending champions win 1-0 at pointless Charlton\n\nAlex Greenwood fires in only goal from a free-kick\n\nManchester City maintained their perfect start to the Women’s Super League season with a 1-0 win at Charlton. Alex Greenwood scored a fine free-kick in the 36th minute, which proved enough to give ",
     "source": {
       "name": "The Guardian Football",
       "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/13/european-football-barcelona-bayern-munich-napoli-juventus",
+      "url": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
       "credibilityScore": 88
     },
     "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/13/european-football-barcelona-bayern-munich-napoli-juventus",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
     "image": null,
-    "category": "Bundesliga",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/13/european-football-barcelona-bayern-munich-napoli-juventus",
-    "publishedAt": "2026-09-13T22:47:47.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "category": "Premier League",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
+    "publishedAt": "2026-09-26T17:00:56.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 318,
-      "publishedAt": "2026-09-13T22:47:47.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "very_fresh",
+      "ageMinutes": 41,
+      "label": "41m ago",
+      "publishedAt": "2026-09-26T17:00:56.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "single_source",
@@ -31,10 +296,10 @@
           "id": "guardian-sport",
           "name": "The Guardian Football",
           "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/13/european-football-barcelona-bayern-munich-napoli-juventus",
+          "url": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
           "credibilityScore": 88,
-          "publishedAt": "2026-09-13T22:47:47.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "publishedAt": "2026-09-26T17:00:56.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
       "confidenceScore": 88,
@@ -46,90 +311,34 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "barcelona",
-      "bayern-munich",
-      "psg",
-      "juventus"
+      "manchester-city"
     ]
   },
   {
-    "id": "news-mu0q0fhd-7dstnr",
-    "title": "Bayern monitoring Wirtz - Monday's gossip",
-    "summary": "Florian Wirtz is being monitored by Bayern Munich, Bournemouth's Brazil forward Rayan could be a Liverpool target next summer and Borussia Dortmund rule out move for Jadon Sancho.",
+    "id": "news-muiogx0u-b6h981",
+    "title": "Gilmour catalyst, impressive Welsh, but same issue for Scotland?",
+    "summary": "BBC Sport Scotland picks out what we learned from Sebastien Pocognoli's first game in charge as Scotland drew with Slovenia.",
     "source": {
       "name": "BBC Sport Football",
       "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cr4v345pdq0o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
       "credibilityScore": 92
     },
     "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cr4v345pdq0o?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Transfers",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cr4v345pdq0o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T20:23:02.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 463,
-      "publishedAt": "2026-09-13T20:23:02.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cr4v345pdq0o?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-13T20:23:02.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool",
-      "bayern-munich",
-      "borussia-dortmund"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-powtz4",
-    "title": "Intelligence & resilience key in statement win for Maresca's Man City - Murphy",
-    "summary": "Match of the Day pundit Danny Murphy explains how Manchester City beat Manchester United at Old Trafford despite being down to 10 men for most of the game.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cq6384g0pqyo?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cq6384g0pqyo?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
     "image": null,
     "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cq6384g0pqyo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T22:20:42.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T17:05:53.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 345,
-      "publishedAt": "2026-09-13T22:20:42.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "very_fresh",
+      "ageMinutes": 36,
+      "label": "36m ago",
+      "publishedAt": "2026-09-26T17:05:53.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -138,10 +347,10 @@
           "id": "bbc-sport",
           "name": "BBC Sport Football",
           "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cq6384g0pqyo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
-          "publishedAt": "2026-09-13T22:20:42.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "publishedAt": "2026-09-26T17:05:53.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
       "confidenceScore": 92,
@@ -154,376 +363,161 @@
       ],
       "verificationCount": 1
     },
-    "relatedTeams": [
-      "manchester-city",
-      "manchester-united"
-    ]
+    "relatedTeams": []
   },
   {
-    "id": "news-mu0q0fhd-8rrb7v",
-    "title": "Maresca fine with Foden red, Bruno should have been sent off too",
-    "summary": "Manchester City manager Enzo Maresca backed referee Michael Oliver's decision to send off Phil Foden in his team's 1-0 win against Manchester United, but said that Reds captain Bruno Fernandes should also have been shown a red card.",
+    "id": "news-muiogx0u-n8djan",
+    "title": "Pocognoli’s reign as Scotland coach begins with stalemate in Slovenia",
+    "summary": "Sébastien Pocognoli grimaced on Friday when recalling his debut as an international player for Belgium. Alessandro del Piero and Italy discovered favourable opposition when preparing for the 2006 World Cup. Pocognoli will also look back, in time, at his first game as the manager of Scotland.\nBlue sk",
     "source": {
-      "name": "ESPN FC",
+      "name": "The Guardian Football",
       "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49930019/maresca-fine-foden-red-bruno-sent-off",
-      "credibilityScore": 85
+      "url": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
+      "credibilityScore": 88
     },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49930019/maresca-fine-foden-red-bruno-sent-off",
+    "sourceName": "The Guardian Football",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
     "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49930019/maresca-fine-foden-red-bruno-sent-off",
-    "publishedAt": "2026-09-14T00:35:16.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "category": "International Football",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
+    "publishedAt": "2026-09-26T15:19:01.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 210,
-      "publishedAt": "2026-09-14T00:35:16.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "very_fresh",
+      "ageMinutes": 143,
+      "label": "2h ago",
+      "publishedAt": "2026-09-26T15:19:01.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "single_source",
       "sources": [
         {
-          "id": "espn-fc",
-          "name": "ESPN FC",
+          "id": "guardian-sport",
+          "name": "The Guardian Football",
           "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49930019/maresca-fine-foden-red-bruno-sent-off",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T00:35:16.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "url": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
+          "credibilityScore": 88,
+          "publishedAt": "2026-09-26T15:19:01.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
-      "confidenceScore": 85,
+      "confidenceScore": 88,
       "confidenceReasons": [
-        "Reported by ESPN FC",
+        "Reported by The Guardian Football",
         "Moderate source credibility"
       ],
       "confirmedBy": [],
       "verificationCount": 1
     },
     "relatedTeams": [
-      "manchester-city",
-      "manchester-united",
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-muiogx0u-54bw4l",
+    "title": "Ngumoha not in England squad to face Spain",
+    "summary": "Liverpool teenager Rio Ngumoha is not named in England's matchday squad for Saturday's Nations League opener against Spain.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cqn744el41d8o?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqn744el41d8o?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cqn744el41d8o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-26T10:27:29.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 435,
+      "label": "7h ago",
+      "publishedAt": "2026-09-26T10:27:29.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cqn744el41d8o?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-26T10:27:29.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
       "liverpool"
     ]
   },
   {
-    "id": "news-mu0q0fhd-3wvr0k",
-    "title": "Joint-worst start since 1992 and fan protests - Man Utd's day to forget",
-    "summary": "Manchester United fans protested inside and outside Old Trafford before Sunday's derby, then saw their team lose to 10-man Manchester City",
+    "id": "news-muiogx0u-4tsi5q",
+    "title": "Manchester City chair Al Mubarak insists ‘nothing has changed’ after guilty verdict",
+    "summary": "‘We have faced challenges together before and have prevailed’\n\nMaresca quotes Socrates on social media – ‘I know nothing’\n\nKhaldoon Al Mubarak, the Manchester City chair, has spoken for the first time since the club was found guilty on virtually all counts of breaching Premier League financial rules",
     "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c624d3g15e9o?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c624d3g15e9o?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c624d3g15e9o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T19:54:56.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 491,
-      "publishedAt": "2026-09-13T19:54:56.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c624d3g15e9o?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-13T19:54:56.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "manchester-united"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-qy6pbp",
-    "title": "Bayern Munich News: FC Bayern not chasing Manchester City star; Is Manchester United eyeing David Alaba?; Hansi Flick holds cards on future for one player; and MORE!",
-    "summary": "FC Bayern probably won’t make a big splash in January.",
-    "source": {
-      "name": "Bavarian Football Works",
+      "name": "The Guardian Football",
       "type": "publication",
-      "url": "https://www.bavarianfootballworks.com/transfer-rumors/254573/bayern-munich-manchester-city-united-fc-barcelona-alaba-flick-real-madrid-wolfsburg-liverpool-araujo-wirtz-fulham-augsburg-schalke-koln-werder-bremen",
-      "credibilityScore": 60
+      "url": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
+      "credibilityScore": 88
     },
-    "sourceName": "Bavarian Football Works",
-    "sourceUrl": "https://www.bavarianfootballworks.com/transfer-rumors/254573/bayern-munich-manchester-city-united-fc-barcelona-alaba-flick-real-madrid-wolfsburg-liverpool-araujo-wirtz-fulham-augsburg-schalke-koln-werder-bremen",
-    "image": "https://s.yimg.com/lo/mysterio/api/c16b067f58a8b0d9f456a8add7107ebdcc74cbfd67880da6c67b333908471c59/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2F26137dd89b8791f8fc51e1a7feb228ae.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.bavarianfootballworks.com/transfer-rumors/254573/bayern-munich-manchester-city-united-fc-barcelona-alaba-flick-real-madrid-wolfsburg-liverpool-araujo-wirtz-fulham-augsburg-schalke-koln-werder-bremen",
-    "publishedAt": "2026-09-13T04:00:00Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "UNVERIFIED",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 1446,
-      "publishedAt": "2026-09-13T04:00:00Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "unverified",
-      "sources": [
-        {
-          "id": "unknown",
-          "name": "Bavarian Football Works",
-          "type": "publication",
-          "url": "https://www.bavarianfootballworks.com/transfer-rumors/254573/bayern-munich-manchester-city-united-fc-barcelona-alaba-flick-real-madrid-wolfsburg-liverpool-araujo-wirtz-fulham-augsburg-schalke-koln-werder-bremen",
-          "credibilityScore": 60,
-          "publishedAt": "2026-09-13T04:00:00Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 60,
-      "confidenceReasons": [
-        "Reported by Bavarian Football Works",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "manchester-united",
-      "bayern-munich"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-978l9d",
-    "title": "Haaland scores controversial winner as Man City win derby despite Foden red",
-    "summary": "Erling Haaland's goal helps Manchester City win a highly controversial Manchester derby at rivals Manchester United despite playing with 10 men for more than 70 minutes.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/videos/cpd0j54xlyyo?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cpd0j54xlyyo?at_medium=RSS&at_campaign=rss",
+    "sourceName": "The Guardian Football",
+    "sourceUrl": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
     "image": null,
     "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/videos/cpd0j54xlyyo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T19:06:08.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
+    "originalUrl": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
+    "publishedAt": "2026-09-26T14:52:09.000Z",
+    "discoveredAt": "2026-09-26T17:42:49.844Z",
+    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 540,
-      "publishedAt": "2026-09-13T19:06:08.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/videos/cpd0j54xlyyo?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-13T19:06:08.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "manchester-united"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-ktxse5",
-    "title": "Fernandes and Foden should have been sent off - Maresca",
-    "summary": "Enzo Maresca believes both Phil Foden and Bruno Fernandes should have been sent off in Manchester City's derby victory against Manchester United.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/videos/cj061413lmqo?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cj061413lmqo?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/videos/cj061413lmqo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T18:26:24.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 579,
-      "publishedAt": "2026-09-13T18:26:24.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/videos/cj061413lmqo?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-13T18:26:24.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "manchester-united"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-yaidzs",
-    "title": "Carrick 'baffled' by decision to award controversial Man City goal",
-    "summary": "Manchester United manager Michael Carrick was unhappy with the match officials for the decision to award Erling Haaland's controversial goal in the Manchester derby.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/videos/ceq81nz02ddo?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/ceq81nz02ddo?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/videos/ceq81nz02ddo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-13T18:13:04.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 593,
-      "publishedAt": "2026-09-13T18:13:04.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/videos/ceq81nz02ddo?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-13T18:13:04.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "manchester-united"
-    ]
-  },
-  {
-    "id": "news-mu0q0fhd-t4hbv3",
-    "title": "Chelsea have woken up, and that's ominous for the WSL",
-    "summary": "Chelsea dropped points on the opening weekend but a 5-0 rout of Manchester United proved they are back on track.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/49925482/chelsea-woken-ominous-wsl-manchester-united",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49925482/chelsea-woken-ominous-wsl-manchester-united",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/49925482/chelsea-woken-ominous-wsl-manchester-united",
-    "publishedAt": "2026-09-14T02:08:06.000Z",
-    "discoveredAt": "2026-09-14T04:06:08.577Z",
-    "lastVerifiedAt": "2026-09-14T04:06:08.577Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 118,
-      "publishedAt": "2026-09-14T02:08:06.000Z",
-      "lastUpdated": "2026-09-14T04:06:08.577Z"
+      "status": "very_fresh",
+      "ageMinutes": 170,
+      "label": "2h ago",
+      "publishedAt": "2026-09-26T14:52:09.000Z",
+      "lastUpdated": "2026-09-26T17:42:49.844Z"
     },
     "verification": {
       "level": "single_source",
       "sources": [
         {
-          "id": "espn-fc",
-          "name": "ESPN FC",
+          "id": "guardian-sport",
+          "name": "The Guardian Football",
           "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/49925482/chelsea-woken-ominous-wsl-manchester-united",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-14T02:08:06.000Z",
-          "discoveredAt": "2026-09-14T04:06:08.577Z"
+          "url": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
+          "credibilityScore": 88,
+          "publishedAt": "2026-09-26T14:52:09.000Z",
+          "discoveredAt": "2026-09-26T17:42:49.844Z"
         }
       ],
-      "confidenceScore": 85,
+      "confidenceScore": 88,
       "confidenceReasons": [
-        "Reported by ESPN FC",
+        "Reported by The Guardian Football",
         "Moderate source credibility"
       ],
       "confirmedBy": [],
       "verificationCount": 1
     },
     "relatedTeams": [
-      "manchester-united",
-      "chelsea"
+      "manchester-city"
     ]
   }
 ]
