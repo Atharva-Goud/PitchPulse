@@ -88,6 +88,7 @@ export default function RootLayout({
               <div className="mx-auto max-w-7xl text-center text-sm text-[var(--text-muted)]">
                 <p>PitchPulse — Football intelligence. All in one place.</p>
                 <p className="mt-1">Data sourced from public APIs and official sources.</p>
+                <p className="mt-1">Made by Atharva Goud</p>
               </div>
             </footer>
           </div>
