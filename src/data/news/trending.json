@@ -1,29 +1,295 @@
 [
   {
-    "id": "news-muiogx0u-vc8qx1",
-    "title": "Transfer rumors, news: Arsenal, Liverpool eye winger Kevin Schade",
-    "summary": "Arsenal and Liverpool are upping their interest in Brentford's Kevin Schade, while the rest of Europe chases center backs. Transfer Talk has the latest.",
+    "id": "news-munwial7-3farmm",
+    "title": "Real Madrid considering Van Dijk - Wednesday's gossip",
+    "summary": "Real Madrid are waiting for Virgil van Dijk to become a free agent, Bayern Munich offer Michael Olise a long-term contract and are eyeing Barcelona's Jules Kounde.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c6g7kl592vlmo?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c6g7kl592vlmo?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Transfers",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c6g7kl592vlmo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-29T21:40:55.000Z",
+    "discoveredAt": "2026-09-30T09:26:41.647Z",
+    "lastVerifiedAt": "2026-09-30T09:26:41.647Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 705,
+      "label": "11h ago",
+      "publishedAt": "2026-09-29T21:40:55.000Z",
+      "lastUpdated": "2026-09-30T09:26:41.647Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c6g7kl592vlmo?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-29T21:40:55.000Z",
+          "discoveredAt": "2026-09-30T09:26:41.647Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "real-madrid",
+      "barcelona",
+      "bayern-munich"
+    ]
+  },
+  {
+    "id": "news-munwial7-9gsb4h",
+    "title": "Transfer rumors, news: Real Madrid eye Van Dijk on free transfer at end of season",
+    "summary": "Real Madrid are hoping they can sign Virgil van Dijk when his Liverpool contract expires at the end of the season. Transfer Talk has the latest.",
     "source": {
       "name": "ESPN FC",
       "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
+      "url": "https://www.espn.com/soccer/story/_/id/50065113/transfer-rumors-news-real-madrid-eye-liverpool-van-dijk-free-transfer-end-season",
       "credibilityScore": 85
     },
     "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50065113/transfer-rumors-news-real-madrid-eye-liverpool-van-dijk-free-transfer-end-season",
     "image": null,
     "category": "Transfers",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
-    "publishedAt": "2026-09-26T14:23:06.000Z",
-    "discoveredAt": "2026-09-26T17:42:49.844Z",
-    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50065113/transfer-rumors-news-real-madrid-eye-liverpool-van-dijk-free-transfer-end-season",
+    "publishedAt": "2026-09-30T09:15:56.000Z",
+    "discoveredAt": "2026-09-30T09:26:41.647Z",
+    "lastVerifiedAt": "2026-09-30T09:26:41.647Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 10,
+      "label": "10m ago",
+      "publishedAt": "2026-09-30T09:15:56.000Z",
+      "lastUpdated": "2026-09-30T09:26:41.647Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "espn-fc",
+          "name": "ESPN FC",
+          "type": "publication",
+          "url": "https://www.espn.com/soccer/story/_/id/50065113/transfer-rumors-news-real-madrid-eye-liverpool-van-dijk-free-transfer-end-season",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-30T09:15:56.000Z",
+          "discoveredAt": "2026-09-30T09:26:41.647Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by ESPN FC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool",
+      "real-madrid"
+    ]
+  },
+  {
+    "id": "news-munwial7-htxprr",
+    "title": "Hogh has no regrets over Celtic move - gossip",
+    "summary": "Celtic forward on joining Celtic, Rangers striker set for international bow and Dundee United man makes most of break.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c63eqg2wz7ndo?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c63eqg2wz7ndo?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Transfers",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c63eqg2wz7ndo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-30T06:35:41.000Z",
+    "discoveredAt": "2026-09-30T09:26:41.647Z",
+    "lastVerifiedAt": "2026-09-30T09:26:41.647Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 171,
+      "label": "2h ago",
+      "publishedAt": "2026-09-30T06:35:41.000Z",
+      "lastUpdated": "2026-09-30T09:26:41.647Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c63eqg2wz7ndo?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-30T06:35:41.000Z",
+          "discoveredAt": "2026-09-30T09:26:41.647Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-munwial7-zqy8to",
+    "title": "£1.2bn on transfers with £830m inflated in accounts - Man City's 'asterisk era'",
+    "summary": "BBC Sport analyses Manchester City's dominance of English football during the period in which they were breaching financial rules.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c9lyk46gekkeo?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c9lyk46gekkeo?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Transfers",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c9lyk46gekkeo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-30T06:26:34.000Z",
+    "discoveredAt": "2026-09-30T09:26:41.647Z",
+    "lastVerifiedAt": "2026-09-30T09:26:41.647Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 180,
+      "label": "3h ago",
+      "publishedAt": "2026-09-30T06:26:34.000Z",
+      "lastUpdated": "2026-09-30T09:26:41.647Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c9lyk46gekkeo?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-30T06:26:34.000Z",
+          "discoveredAt": "2026-09-30T09:26:41.647Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-munwial7-5ct3hz",
+    "title": "The part-timers who won three Wembley finals in a row",
+    "summary": "You probably knew Pep Guardiola's Manchester City won four League Cups on the bounce between 2018 and 2021 – but another side did the silverware hat-trick first.",
+    "source": {
+      "name": "BBC Sport Football",
+      "type": "official",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c6y4z21xelk4o?at_medium=RSS&at_campaign=rss",
+      "credibilityScore": 92
+    },
+    "sourceName": "BBC Sport Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c6y4z21xelk4o?at_medium=RSS&at_campaign=rss",
+    "image": null,
+    "category": "Premier League",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c6y4z21xelk4o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-30T06:07:28.000Z",
+    "discoveredAt": "2026-09-30T09:26:41.647Z",
+    "lastVerifiedAt": "2026-09-30T09:26:41.647Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
       "ageMinutes": 199,
       "label": "3h ago",
-      "publishedAt": "2026-09-26T14:23:06.000Z",
-      "lastUpdated": "2026-09-26T17:42:49.844Z"
+      "publishedAt": "2026-09-30T06:07:28.000Z",
+      "lastUpdated": "2026-09-30T09:26:41.647Z"
+    },
+    "verification": {
+      "level": "trusted_journalist",
+      "sources": [
+        {
+          "id": "bbc-sport",
+          "name": "BBC Sport Football",
+          "type": "official",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c6y4z21xelk4o?at_medium=RSS&at_campaign=rss",
+          "credibilityScore": 92,
+          "publishedAt": "2026-09-30T06:07:28.000Z",
+          "discoveredAt": "2026-09-30T09:26:41.647Z"
+        }
+      ],
+      "confidenceScore": 92,
+      "confidenceReasons": [
+        "Reported by BBC Sport Football",
+        "High source credibility"
+      ],
+      "confirmedBy": [
+        "BBC Sport Football"
+      ],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-munwial7-2i1hsr",
+    "title": "Liverpool can't afford to be without Isak, Gakpo ahead of daunting October fixture list",
+    "summary": "Between them, Cody Gakpo and Alexander Isak have scored five of Liverpool's seven league goals this season so their injuries during the international break could prove costly.",
+    "source": {
+      "name": "ESPN FC",
+      "type": "publication",
+      "url": "https://www.espn.com/soccer/story/_/id/50058399/liverpool-afford-isak-gakpo-ahead-daunting-october-fixture-list",
+      "credibilityScore": 85
+    },
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50058399/liverpool-afford-isak-gakpo-ahead-daunting-october-fixture-list",
+    "image": null,
+    "category": "International Football",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50058399/liverpool-afford-isak-gakpo-ahead-daunting-october-fixture-list",
+    "publishedAt": "2026-09-30T08:28:06.000Z",
+    "discoveredAt": "2026-09-30T09:26:41.647Z",
+    "lastVerifiedAt": "2026-09-30T09:26:41.647Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 58,
+      "label": "58m ago",
+      "publishedAt": "2026-09-30T08:28:06.000Z",
+      "lastUpdated": "2026-09-30T09:26:41.647Z"
     },
     "verification": {
       "level": "single_source",
@@ -32,10 +298,10 @@
           "id": "espn-fc",
           "name": "ESPN FC",
           "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/50031688/transfer-rumors-news-arsenal-liverpool-eye-winger-kevin-schade",
+          "url": "https://www.espn.com/soccer/story/_/id/50058399/liverpool-afford-isak-gakpo-ahead-daunting-october-fixture-list",
           "credibilityScore": 85,
-          "publishedAt": "2026-09-26T14:23:06.000Z",
-          "discoveredAt": "2026-09-26T17:42:49.844Z"
+          "publishedAt": "2026-09-30T08:28:06.000Z",
+          "discoveredAt": "2026-09-30T09:26:41.647Z"
         }
       ],
       "confidenceScore": 85,
@@ -47,194 +313,35 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "arsenal",
       "liverpool",
       "inter-milan"
     ]
   },
   {
-    "id": "news-muiogx0u-21svkk",
-    "title": "Man City chairman confident club will prove innocence",
-    "summary": "Manchester City chairman Khaldoon Al Mubarak says he is still confident of proving the club's innocence after they were found guilty of breaking Premier League financial rules.",
+    "id": "news-munwial7-fbf7xk",
+    "title": "How do teams deal with longer international window?",
+    "summary": "With the international window extended to four games, how do nations like Northern Ireland deal with the additional demands on players and staff?",
     "source": {
       "name": "BBC Sport Football",
       "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ckwyz97v042vo?at_medium=RSS&at_campaign=rss",
       "credibilityScore": 92
     },
     "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ckwyz97v042vo?at_medium=RSS&at_campaign=rss",
     "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-26T15:02:28.000Z",
-    "discoveredAt": "2026-09-26T17:42:49.844Z",
-    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 160,
-      "label": "2h ago",
-      "publishedAt": "2026-09-26T15:02:28.000Z",
-      "lastUpdated": "2026-09-26T17:42:49.844Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c6d944ylqkkeo?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-26T15:02:28.000Z",
-          "discoveredAt": "2026-09-26T17:42:49.844Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city"
-    ]
-  },
-  {
-    "id": "news-muiogx0u-ti1yd0",
-    "title": "Man City maintain winning start with narrow win over Charlton",
-    "summary": "Manchester City maintain their winning start to the Women's Super League as Alex Greenwood's 36th-minute free-kick gives them victory over Charlton.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-26T14:53:44.000Z",
-    "discoveredAt": "2026-09-26T17:42:49.844Z",
-    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 169,
-      "label": "2h ago",
-      "publishedAt": "2026-09-26T14:53:44.000Z",
-      "lastUpdated": "2026-09-26T17:42:49.844Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/videos/c6ly77de8p9po?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-26T14:53:44.000Z",
-          "discoveredAt": "2026-09-26T17:42:49.844Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city"
-    ]
-  },
-  {
-    "id": "news-muiogx0u-qkr3pt",
-    "title": "Sources: PL clubs seeking legal advice over City charges",
-    "summary": "Premier League clubs are seeking legal advice amid an expectation that Man City have been found guilty of hundreds of breaches of financial regulations, sources have told ESPN.",
-    "source": {
-      "name": "ESPN FC",
-      "type": "publication",
-      "url": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
-      "credibilityScore": 85
-    },
-    "sourceName": "ESPN FC",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
-    "publishedAt": "2026-09-26T16:01:43.000Z",
-    "discoveredAt": "2026-09-26T17:42:49.844Z",
-    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 101,
-      "label": "1h ago",
-      "publishedAt": "2026-09-26T16:01:43.000Z",
-      "lastUpdated": "2026-09-26T17:42:49.844Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "espn-fc",
-          "name": "ESPN FC",
-          "type": "publication",
-          "url": "https://www.espn.com/soccer/story/_/id/50032007/man-city-charges-115-premier-league-clubs-seeking-legal-advice-amid-expected-guilty-verdicts",
-          "credibilityScore": 85,
-          "publishedAt": "2026-09-26T16:01:43.000Z",
-          "discoveredAt": "2026-09-26T17:42:49.844Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by ESPN FC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-muiogx0u-jh5ysh",
-    "title": "No Premier League appetite to strip Man City of titles - but threat remains",
-    "summary": "After being found guilty of the majority of the 115 charges for breaching Premier League, could Manchester city really be stripped of eight trophies?",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-26T13:26:40.000Z",
-    "discoveredAt": "2026-09-26T17:42:49.844Z",
-    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "category": "Transfers",
+    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/ckwyz97v042vo?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-30T05:25:05.000Z",
+    "discoveredAt": "2026-09-30T09:26:41.647Z",
+    "lastVerifiedAt": "2026-09-30T09:26:41.647Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 256,
+      "ageMinutes": 241,
       "label": "4h ago",
-      "publishedAt": "2026-09-26T13:26:40.000Z",
-      "lastUpdated": "2026-09-26T17:42:49.844Z"
+      "publishedAt": "2026-09-30T05:25:05.000Z",
+      "lastUpdated": "2026-09-30T09:26:41.647Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -243,10 +350,10 @@
           "id": "bbc-sport",
           "name": "BBC Sport Football",
           "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cxyvzzj17682o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/sport/football/articles/ckwyz97v042vo?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
-          "publishedAt": "2026-09-26T13:26:40.000Z",
-          "discoveredAt": "2026-09-26T17:42:49.844Z"
+          "publishedAt": "2026-09-30T05:25:05.000Z",
+          "discoveredAt": "2026-09-30T09:26:41.647Z"
         }
       ],
       "confidenceScore": 92,
@@ -260,85 +367,34 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "manchester-city"
+      "inter-milan"
     ]
   },
   {
-    "id": "news-muiogx0u-c1tw0d",
-    "title": "WSL roundup: Greenwood maintains Manchester City’s 100% record",
-    "summary": "Defending champions win 1-0 at pointless Charlton\n\nAlex Greenwood fires in only goal from a free-kick\n\nManchester City maintained their perfect start to the Women’s Super League season with a 1-0 win at Charlton. Alex Greenwood scored a fine free-kick in the 36th minute, which proved enough to give ",
-    "source": {
-      "name": "The Guardian Football",
-      "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
-      "credibilityScore": 88
-    },
-    "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
-    "publishedAt": "2026-09-26T17:00:56.000Z",
-    "discoveredAt": "2026-09-26T17:42:49.844Z",
-    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 41,
-      "label": "41m ago",
-      "publishedAt": "2026-09-26T17:00:56.000Z",
-      "lastUpdated": "2026-09-26T17:42:49.844Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "guardian-sport",
-          "name": "The Guardian Football",
-          "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/26/wsl-roundup-greenwood-maintains-manchester-citys-100-record",
-          "credibilityScore": 88,
-          "publishedAt": "2026-09-26T17:00:56.000Z",
-          "discoveredAt": "2026-09-26T17:42:49.844Z"
-        }
-      ],
-      "confidenceScore": 88,
-      "confidenceReasons": [
-        "Reported by The Guardian Football",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city"
-    ]
-  },
-  {
-    "id": "news-muiogx0u-b6h981",
-    "title": "Gilmour catalyst, impressive Welsh, but same issue for Scotland?",
-    "summary": "BBC Sport Scotland picks out what we learned from Sebastien Pocognoli's first game in charge as Scotland drew with Slovenia.",
+    "id": "news-munwial7-cglkj1",
+    "title": "'Whole village' turns out for FA Cup row replay ",
+    "summary": "The controversial replay follows the FA ruling a referee had made a mistake in the initial match.",
     "source": {
       "name": "BBC Sport Football",
       "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/news/articles/cm17j4r2wez2o?at_medium=RSS&at_campaign=rss",
       "credibilityScore": 92
     },
     "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/news/articles/cm17j4r2wez2o?at_medium=RSS&at_campaign=rss",
     "image": null,
     "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-26T17:05:53.000Z",
-    "discoveredAt": "2026-09-26T17:42:49.844Z",
-    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "originalUrl": "https://www.bbc.co.uk/news/articles/cm17j4r2wez2o?at_medium=RSS&at_campaign=rss",
+    "publishedAt": "2026-09-30T08:48:26.000Z",
+    "discoveredAt": "2026-09-30T09:26:41.647Z",
+    "lastVerifiedAt": "2026-09-30T09:26:41.647Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 36,
-      "label": "36m ago",
-      "publishedAt": "2026-09-26T17:05:53.000Z",
-      "lastUpdated": "2026-09-26T17:42:49.844Z"
+      "ageMinutes": 38,
+      "label": "38m ago",
+      "publishedAt": "2026-09-30T08:48:26.000Z",
+      "lastUpdated": "2026-09-30T09:26:41.647Z"
     },
     "verification": {
       "level": "trusted_journalist",
@@ -347,10 +403,10 @@
           "id": "bbc-sport",
           "name": "BBC Sport Football",
           "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cqevwwnw10w9o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cm17j4r2wez2o?at_medium=RSS&at_campaign=rss",
           "credibilityScore": 92,
-          "publishedAt": "2026-09-26T17:05:53.000Z",
-          "discoveredAt": "2026-09-26T17:42:49.844Z"
+          "publishedAt": "2026-09-30T08:48:26.000Z",
+          "discoveredAt": "2026-09-30T09:26:41.647Z"
         }
       ],
       "confidenceScore": 92,
@@ -366,151 +422,98 @@
     "relatedTeams": []
   },
   {
-    "id": "news-muiogx0u-n8djan",
-    "title": "Pocognoli’s reign as Scotland coach begins with stalemate in Slovenia",
-    "summary": "Sébastien Pocognoli grimaced on Friday when recalling his debut as an international player for Belgium. Alessandro del Piero and Italy discovered favourable opposition when preparing for the 2006 World Cup. Pocognoli will also look back, in time, at his first game as the manager of Scotland.\nBlue sk",
+    "id": "news-munwial7-9eo6wx",
+    "title": "Hard to see how Man City recover from extraordinary guilty verdict",
+    "summary": "Tuesday's confirmation that Manchester City were found guilty by the Premier League on over 100 breaches of financial regulations has sent shockwaves through the sport. How do Man City survive this?",
     "source": {
-      "name": "The Guardian Football",
+      "name": "ESPN FC",
       "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
-      "credibilityScore": 88
+      "url": "https://www.espn.com/soccer/story/_/id/50060178/manchester-city-premier-league-guilty-verdict-accounting-gab-marcotti",
+      "credibilityScore": 85
     },
-    "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50060178/manchester-city-premier-league-guilty-verdict-accounting-gab-marcotti",
     "image": null,
-    "category": "International Football",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
-    "publishedAt": "2026-09-26T15:19:01.000Z",
-    "discoveredAt": "2026-09-26T17:42:49.844Z",
-    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "category": "Premier League",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50060178/manchester-city-premier-league-guilty-verdict-accounting-gab-marcotti",
+    "publishedAt": "2026-09-30T10:02:26.000Z",
+    "discoveredAt": "2026-09-30T09:26:41.647Z",
+    "lastVerifiedAt": "2026-09-30T09:26:41.647Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 143,
-      "label": "2h ago",
-      "publishedAt": "2026-09-26T15:19:01.000Z",
-      "lastUpdated": "2026-09-26T17:42:49.844Z"
+      "status": "breaking",
+      "ageMinutes": 0,
+      "label": "Just now",
+      "publishedAt": "2026-09-30T10:02:26.000Z",
+      "lastUpdated": "2026-09-30T09:26:41.647Z"
     },
     "verification": {
       "level": "single_source",
       "sources": [
         {
-          "id": "guardian-sport",
-          "name": "The Guardian Football",
+          "id": "espn-fc",
+          "name": "ESPN FC",
           "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/26/slovenia-scotland-nations-league-match-report",
-          "credibilityScore": 88,
-          "publishedAt": "2026-09-26T15:19:01.000Z",
-          "discoveredAt": "2026-09-26T17:42:49.844Z"
+          "url": "https://www.espn.com/soccer/story/_/id/50060178/manchester-city-premier-league-guilty-verdict-accounting-gab-marcotti",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-30T10:02:26.000Z",
+          "discoveredAt": "2026-09-30T09:26:41.647Z"
         }
       ],
-      "confidenceScore": 88,
+      "confidenceScore": 85,
       "confidenceReasons": [
-        "Reported by The Guardian Football",
+        "Reported by ESPN FC",
         "Moderate source credibility"
       ],
       "confirmedBy": [],
       "verificationCount": 1
     },
     "relatedTeams": [
-      "inter-milan"
+      "manchester-city"
     ]
   },
   {
-    "id": "news-muiogx0u-54bw4l",
-    "title": "Ngumoha not in England squad to face Spain",
-    "summary": "Liverpool teenager Rio Ngumoha is not named in England's matchday squad for Saturday's Nations League opener against Spain.",
+    "id": "news-munwial7-r3sfhe",
+    "title": "Man City's guilt the talk of the town around English soccer",
+    "summary": "The news that Man City were found guilty was the only topic of conversation around Manchester.",
     "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cqn744el41d8o?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqn744el41d8o?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "International Football",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/cqn744el41d8o?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-09-26T10:27:29.000Z",
-    "discoveredAt": "2026-09-26T17:42:49.844Z",
-    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 435,
-      "label": "7h ago",
-      "publishedAt": "2026-09-26T10:27:29.000Z",
-      "lastUpdated": "2026-09-26T17:42:49.844Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cqn744el41d8o?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-09-26T10:27:29.000Z",
-          "discoveredAt": "2026-09-26T17:42:49.844Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-muiogx0u-4tsi5q",
-    "title": "Manchester City chair Al Mubarak insists ‘nothing has changed’ after guilty verdict",
-    "summary": "‘We have faced challenges together before and have prevailed’\n\nMaresca quotes Socrates on social media – ‘I know nothing’\n\nKhaldoon Al Mubarak, the Manchester City chair, has spoken for the first time since the club was found guilty on virtually all counts of breaching Premier League financial rules",
-    "source": {
-      "name": "The Guardian Football",
+      "name": "ESPN FC",
       "type": "publication",
-      "url": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
-      "credibilityScore": 88
+      "url": "https://www.espn.com/soccer/story/_/id/50058634/manchester-city-guilty-premier-league-english-football-ripples",
+      "credibilityScore": 85
     },
-    "sourceName": "The Guardian Football",
-    "sourceUrl": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
+    "sourceName": "ESPN FC",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50058634/manchester-city-guilty-premier-league-english-football-ripples",
     "image": null,
     "category": "Premier League",
-    "originalUrl": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
-    "publishedAt": "2026-09-26T14:52:09.000Z",
-    "discoveredAt": "2026-09-26T17:42:49.844Z",
-    "lastVerifiedAt": "2026-09-26T17:42:49.844Z",
+    "originalUrl": "https://www.espn.com/soccer/story/_/id/50058634/manchester-city-guilty-premier-league-english-football-ripples",
+    "publishedAt": "2026-09-30T10:02:25.000Z",
+    "discoveredAt": "2026-09-30T09:26:41.647Z",
+    "lastVerifiedAt": "2026-09-30T09:26:41.647Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 170,
-      "label": "2h ago",
-      "publishedAt": "2026-09-26T14:52:09.000Z",
-      "lastUpdated": "2026-09-26T17:42:49.844Z"
+      "status": "breaking",
+      "ageMinutes": 0,
+      "label": "Just now",
+      "publishedAt": "2026-09-30T10:02:25.000Z",
+      "lastUpdated": "2026-09-30T09:26:41.647Z"
     },
     "verification": {
       "level": "single_source",
       "sources": [
         {
-          "id": "guardian-sport",
-          "name": "The Guardian Football",
+          "id": "espn-fc",
+          "name": "ESPN FC",
           "type": "publication",
-          "url": "https://www.theguardian.com/football/2026/sep/26/enzo-maresca-noel-gallagher-manchester-city-guilty-verdict",
-          "credibilityScore": 88,
-          "publishedAt": "2026-09-26T14:52:09.000Z",
-          "discoveredAt": "2026-09-26T17:42:49.844Z"
+          "url": "https://www.espn.com/soccer/story/_/id/50058634/manchester-city-guilty-premier-league-english-football-ripples",
+          "credibilityScore": 85,
+          "publishedAt": "2026-09-30T10:02:25.000Z",
+          "discoveredAt": "2026-09-30T09:26:41.647Z"
         }
       ],
-      "confidenceScore": 88,
+      "confidenceScore": 85,
       "confidenceReasons": [
-        "Reported by The Guardian Football",
+        "Reported by ESPN FC",
         "Moderate source credibility"
       ],
       "confirmedBy": [],
