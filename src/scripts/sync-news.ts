@@ -81,7 +81,7 @@ export function buildNewsOutput(
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 
-  const latest = sorted.slice(0, 30);
+  const latest = sorted.slice(0, 100);
   const trending = getTrending(sorted);
 
   return {
