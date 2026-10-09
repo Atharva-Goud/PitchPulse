@@ -211,8 +211,8 @@ const data = await response.json();
             <EmptyState type="news" message="No articles found for this category" />
           ) : (
             <>
-              {/* Responsive 4×4 grid: 4 cols desktop, 2 tablet, 1 mobile */}
-              <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+              {/* Responsive 3×3 grid: 3 cols desktop, 2 tablet, 1 mobile */}
+              <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 {filteredNews.map((article) => (
                   <NewsCard key={article.id} article={article} />
                 ))}
