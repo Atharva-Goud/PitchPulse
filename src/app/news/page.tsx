@@ -9,6 +9,8 @@ interface NewsPageData {
   latest: NewsArticle[];
   trending: NewsArticle[];
   categories: NewsCategory[];
+  hasMore: boolean;
+  total: number;
 }
 
 async function getNewsPageData(): Promise<NewsPageData> {
@@ -28,7 +30,12 @@ async function getNewsPageData(): Promise<NewsPageData> {
     getTrendingNewsSnapshot(),
   ]);
 
-  return { latest, trending, categories };
+  // Return first 60 articles for initial load (2 pages of 30)
+  const initialLimit = 60;
+  const initialLatest = latest.slice(0, initialLimit);
+  const hasMore = latest.length > initialLimit;
+
+  return { latest: initialLatest, trending, categories, hasMore, total: latest.length };
 }
 
 export default async function NewsPage() {

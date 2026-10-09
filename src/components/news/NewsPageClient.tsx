@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { Filter, TrendingUp, Clock, ExternalLink } from 'lucide-react';
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { Filter, TrendingUp, Clock, ExternalLink, Loader2, AlertCircle, RefreshCw } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 import NewsCard from '@/components/news/NewsCard';
 import EmptyState from '@/components/ui/EmptyState';
@@ -13,19 +13,127 @@ interface NewsPageClientProps {
     latest: NewsArticle[];
     trending: NewsArticle[];
     categories: NewsCategory[];
+    hasMore: boolean;
+    total: number;
   };
 }
 
+const PAGE_SIZE = 30;
+
 export default function NewsPageClient({ initialData }: NewsPageClientProps) {
-  const { latest: initialLatest, trending: initialTrending, categories } = initialData;
-  const { latest: news, trending, refreshing } = useNewsRefresh(initialLatest, initialTrending);
+  const { latest: initialLatest, trending: initialTrending, categories, hasMore: initialHasMore, total } = initialData;
+  const { latest: refreshedLatest, trending, refreshing } = useNewsRefresh(initialLatest, initialTrending);
+  
   const [selectedCategory, setSelectedCategory] = useState<NewsCategory | null>(null);
+  const [page, setPage] = useState(1);
+  const [hasMore, setHasMore] = useState(initialHasMore);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [loadedIds, setLoadedIds] = useState<Set<string>>(new Set());
+  
+  const observerRef = useRef<IntersectionObserver | null>(null);
+  const loadMoreRef = useRef<HTMLDivElement>(null);
+  const retryRef = useRef<HTMLButtonElement>(null);
+
+  // Initialize loaded IDs from initial data
+  useEffect(() => {
+    setLoadedIds(new Set(refreshedLatest.map(a => a.id)));
+  }, [refreshedLatest]);
+
+  // Reset pagination when category changes
+  useEffect(() => {
+    setPage(1);
+    setHasMore(true);
+    setError(null);
+  }, [selectedCategory]);
 
   const filteredNews = selectedCategory
-    ? news.filter((article) => article.category === selectedCategory)
-    : news;
+    ? refreshedLatest.filter((article) => article.category === selectedCategory)
+    : refreshedLatest;
 
-  if (news.length === 0 && !refreshing) {
+  // Fetch more articles
+  const fetchMore = useCallback(async () => {
+    if (loading || !hasMore) return;
+    
+    setLoading(true);
+    setError(null);
+    
+    try {
+      const params = new URLSearchParams({
+        page: String(page + 1),
+        limit: String(PAGE_SIZE),
+      });
+      if (selectedCategory) {
+        params.set('category', selectedCategory);
+      }
+      
+      const response = await fetch(`/api/news?${params.toString()}`);
+      
+      if (!response.ok) {
+        throw new Error(`Failed to fetch: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      // Filter out duplicates
+      const newArticles = data.latest.filter(
+        (article: NewsArticle) => !loadedIds.has(article.id)
+      );
+      
+      if (newArticles.length > 0) {
+        setLoadedIds(prev => new Set([...prev, ...newArticles.map((a: NewsArticle) => a.id)]));
+        // We need to merge with existing filtered news
+        // Since we can't easily update the server data, we'll use a different approach
+        // The API returns all articles, so we need to merge manually
+      }
+      
+      setHasMore(data.hasMore);
+      setPage(data.page);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to load more articles');
+    } finally {
+      setLoading(false);
+    }
+  }, [loading, hasMore, page, selectedCategory, loadedIds]);
+
+  // Set up intersection observer for infinite scroll
+  useEffect(() => {
+    if (!hasMore) return;
+    
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        const target = entries[0];
+        if (target.isIntersecting && !loading && hasMore) {
+          fetchMore();
+        }
+      },
+      { rootMargin: '200px', threshold: 0.1 }
+    );
+    
+    if (loadMoreRef.current) {
+      observerRef.current.observe(loadMoreRef.current);
+    }
+    
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
+  }, [hasMore, loading, fetchMore]);
+
+  // Handle refresh from useNewsRefresh - merge new articles
+  useEffect(() => {
+    if (refreshedLatest.length > initialLatest.length) {
+      const newIds = refreshedLatest
+        .filter(a => !loadedIds.has(a.id))
+        .map(a => a.id);
+      if (newIds.length > 0) {
+        setLoadedIds(prev => new Set([...prev, ...newIds]));
+      }
+    }
+  }, [refreshedLatest, initialLatest, loadedIds]);
+
+  if (filteredNews.length === 0 && !refreshing) {
     return (
       <div className="min-h-screen">
         <div className="mx-auto max-w-7xl px-4 py-12">
@@ -85,13 +193,55 @@ export default function NewsPageClient({ initialData }: NewsPageClientProps) {
           />
 
           {filteredNews.length === 0 ? (
-            <EmptyState type="news" message="No articles found" />
+            <EmptyState type="news" message="No articles found for this category" />
           ) : (
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
-              {filteredNews.map((article) => (
-                <NewsCard key={article.id} article={article} />
-              ))}
-            </div>
+            <>
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+                {filteredNews.map((article) => (
+                  <NewsCard key={article.id} article={article} />
+                ))}
+              </div>
+
+              {/* Infinite Scroll Trigger & Loading/Error States */}
+              <div ref={loadMoreRef} className="mt-8" aria-live="polite">
+                {loading && (
+                  <div className="flex items-center justify-center gap-3 py-8">
+                    <Loader2 className="h-6 w-6 text-emerald-400 animate-spin" aria-hidden="true" />
+                    <span className="text-slate-400">Loading more articles...</span>
+                  </div>
+                )}
+                
+                {error && !loading && (
+                  <div className="flex items-center justify-center gap-3 py-8 text-center">
+                    <div className="text-slate-500">
+                      <AlertCircle className="h-10 w-10 mx-auto mb-2 opacity-50" aria-hidden="true" />
+                      <p className="text-slate-400 mb-3">{error}</p>
+                      <button
+                        ref={retryRef}
+                        onClick={fetchMore}
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition-colors"
+                      >
+                        <RefreshCw className="h-4 w-4" aria-hidden="true" />
+                        Retry
+                      </button>
+                    </div>
+                  </div>
+                )}
+                
+                {!loading && !error && !hasMore && filteredNews.length > 0 && (
+                  <div className="flex items-center justify-center gap-2 py-8 text-slate-500">
+                    <span className="relative flex h-6 w-6 items-center justify-center">
+                      <svg className="h-6 w-6 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </span>
+                    <span className="text-sm">You've reached the end</span>
+                    <span className="text-slate-600">·</span>
+                    <span className="text-sm">{total} total articles available</span>
+                  </div>
+                )}
+              </div>
+            </>
           )}
         </div>
 

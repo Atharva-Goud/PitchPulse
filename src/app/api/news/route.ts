@@ -1,12 +1,17 @@
 import { NextResponse } from 'next/server';
 
 /**
- * News refresh endpoint.
+ * News refresh endpoint with pagination support.
  *
  * The only place in the app that touches the Node-only sync pipeline
  * (RSS / NewsAPI fetchers + sync-news.ts). Client pages call this instead of
  * importing the fetchers directly, so the client bundle never pulls in
  * `fs` modules.
+ *
+ * Supports pagination via query params:
+ * - page: page number (1-based, default 1)
+ * - limit: items per page (default 30, max 100)
+ * - category: filter by category
  *
  * A refresh runs in the background and is single-flight: concurrent callers
  * share one in-flight promise instead of hammering the news sources. When the
@@ -18,6 +23,8 @@ export const revalidate = 0;
 export const dynamic = 'force-dynamic';
 
 const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
+const DEFAULT_LIMIT = 30;
+const MAX_LIMIT = 100;
 
 type NewsData = { latest: unknown[]; trending: unknown[] };
 
@@ -66,22 +73,53 @@ async function runRefresh(): Promise<NewsData> {
   }
 }
 
-export async function GET() {
+function applyPagination<T>(items: T[], page: number, limit: number): { items: T[]; hasMore: boolean; total: number } {
+  const start = (page - 1) * limit;
+  const end = start + limit;
+  const paginatedItems = items.slice(start, end);
+  return {
+    items: paginatedItems,
+    hasMore: end < items.length,
+    total: items.length,
+  };
+}
+
+export async function GET(request: Request) {
   const now = Date.now();
+  const { searchParams } = new URL(request.url);
+  
+  const page = Math.max(1, parseInt(searchParams.get('page') || '1', 10));
+  const limit = Math.min(MAX_LIMIT, Math.max(1, parseInt(searchParams.get('limit') || String(DEFAULT_LIMIT), 10)));
+  const category = searchParams.get('category') || undefined;
 
   // Serve the cached refresh if it is still fresh.
   if (isFreshEnough(now) && refreshState) {
-    return NextResponse.json(refreshState);
+    let latest = refreshState.latest;
+    if (category) {
+      latest = latest.filter((article: any) => article.category === category);
+    }
+    const { items, hasMore, total } = applyPagination(latest, page, limit);
+    return NextResponse.json({ latest: items, trending: refreshState.trending, hasMore, total, page, limit });
   }
 
   // If a refresh is already in flight, share it.
   if (inFlight) {
     try {
       const data = await inFlight;
-      return NextResponse.json(data);
+      let latest = data.latest;
+      if (category) {
+        latest = latest.filter((article: any) => article.category === category);
+      }
+      const { items, hasMore, total } = applyPagination(latest, page, limit);
+      return NextResponse.json({ latest: items, trending: data.trending, hasMore, total, page, limit });
     } catch {
       const snapshot = await loadSnapshot();
-      return NextResponse.json(snapshot);
+      let latest = snapshot.latest;
+      if (category) {
+        latest = latest.filter((article: any) => article.category === category);
+      }
+      const { items, hasMore, total } = applyPagination(latest, page, limit);
+      return NextResponse.json({ latest: items, trending: snapshot.trending, hasMore, total, page, limit });
     }
   }
 
@@ -89,5 +127,11 @@ export async function GET() {
   // so the request is never blocked on the news sources.
   const snapshotData = refreshState || (await loadSnapshot());
   inFlight = runRefresh();
-  return NextResponse.json(snapshotData);
+  
+  let latest = snapshotData.latest;
+  if (category) {
+    latest = latest.filter((article: any) => article.category === category);
+  }
+  const { items, hasMore, total } = applyPagination(latest, page, limit);
+  return NextResponse.json({ latest: items, trending: snapshotData.trending, hasMore, total, page, limit });
 }
