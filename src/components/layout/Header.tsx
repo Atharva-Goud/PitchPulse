@@ -41,10 +41,9 @@ export default function Header() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const toggleBtnRef = useRef<HTMLButtonElement>(null);
 
-  // Close the mobile menu whenever the route changes or the viewport leaves
-  // mobile width. Focus returns to the toggle button automatically via the
-  // natural tab order once the menu unmounts.
+  // Close the mobile menu whenever the route changes
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [pathname]);
@@ -78,6 +77,7 @@ export default function Header() {
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         setMobileMenuOpen(false);
+        toggleBtnRef.current?.focus();
         return;
       }
       if (e.key !== 'Tab') return;
@@ -95,7 +95,6 @@ export default function Header() {
     return () => el.removeEventListener('keydown', onKeyDown);
   }, [mobileMenuOpen]);
 
-  // Check if a nav item is active (handles both exact and prefix matches)
   const isActive = (href: string) => {
     if (href === '/') return pathname === '/';
     return pathname === href || pathname.startsWith(href + '/');
@@ -153,7 +152,6 @@ export default function Header() {
                     >
                       {Icon && <Icon className="h-4 w-4" aria-hidden="true" />}
                       {item.label}
-                      {/* Active indicator underline */}
                       <span
                         className={`absolute bottom-0 left-1/2 h-0.5 w-0 transition-all duration-200 ease-out -translate-x-1/2 bg-[var(--primary)] ${
                           active ? 'w-full' : 'w-0'
@@ -177,6 +175,7 @@ export default function Header() {
               </button>
 
               <button
+                ref={toggleBtnRef}
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="btn-icon md:hidden"
                 aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
@@ -188,41 +187,41 @@ export default function Header() {
             </div>
           </div>
         </div>
-
-        {/* Mobile menu — slide-down, focus-trapped, closes on route change. */}
-        {mobileMenuOpen && (
-          <div
-            ref={mobileMenuRef}
-            id="mobile-menu"
-            role="navigation"
-            aria-label="Mobile navigation"
-            className="md:hidden border-t border-[var(--border-default)] bg-[var(--surface-1)]/95 backdrop-blur-xl"
-          >
-            <nav className="px-4 py-4 space-y-1">
-              {mobileNavItems.map((item, index) => {
-                const Icon = item.icon;
-                const active = isActive(item.href);
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={`flex items-center gap-3 px-3 py-3.5 text-base font-medium rounded-lg transition-colors min-h-[48px] ${
-                      active
-                        ? 'bg-[var(--primary)]/15 text-white'
-                        : 'text-[var(--text-secondary)] hover:text-white hover:bg-white/5'
-                    }`}
-                    aria-current={active ? 'page' : undefined}
-                  >
-                    {Icon && <Icon className="h-5 w-5" aria-hidden="true" />}
-                    {item.label}
-                  </Link>
-                );
-              })}
-            </nav>
-          </div>
-        )}
       </LiquidGlass>
+
+      {/* Mobile menu — rendered OUTSIDE LiquidGlass to avoid overflow:hidden clipping */}
+      {mobileMenuOpen && (
+        <div
+          ref={mobileMenuRef}
+          id="mobile-menu"
+          role="navigation"
+          aria-label="Mobile navigation"
+          className="fixed top-16 left-0 right-0 z-40 md:hidden border-b border-[var(--border-default)] bg-[var(--surface-1)]/95 backdrop-blur-xl shadow-lg"
+        >
+          <nav className="px-4 py-4 space-y-1">
+            {mobileNavItems.map((item) => {
+              const Icon = item.icon;
+              const active = isActive(item.href);
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`flex items-center gap-3 px-3 py-3.5 text-base font-medium rounded-lg transition-colors min-h-[48px] ${
+                    active
+                      ? 'bg-[var(--primary)]/15 text-white'
+                      : 'text-[var(--text-secondary)] hover:text-white hover:bg-white/5'
+                  }`}
+                  aria-current={active ? 'page' : undefined}
+                >
+                  {Icon && <Icon className="h-5 w-5" aria-hidden="true" />}
+                  {item.label}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
+      )}
 
       <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
