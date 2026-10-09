@@ -304,6 +304,21 @@ body {
   .stagger-7 { animation-delay: 0.35s; }
   .stagger-8 { animation-delay: 0.4s; }
 
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slideUp var(--motion-base) var(--ease-out);
+  }
+
   /* ---- Shared card primitive ---- */
   .card-base {
     @apply rounded-xl border border-[var(--border-default)] bg-[var(--surface-2)]/70 backdrop-blur-sm transition-colors duration-200;
