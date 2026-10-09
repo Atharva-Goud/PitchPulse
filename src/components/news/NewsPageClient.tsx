@@ -137,17 +137,6 @@ const data = await response.json();
     };
   }, [hasMore, loading, fetchMore]);
 
-  // Handle refresh from useNewsRefresh - merge new articles
-  useEffect(() => {
-    if (refreshedLatest.length > initialLatest.length) {
-      const newArticles = refreshedLatest.filter(a => !loadedIdsRef.current.has(a.id));
-      if (newArticles.length > 0) {
-        newArticles.forEach(a => loadedIdsRef.current.add(a.id));
-        setAdditionalArticles(prev => [...prev, ...newArticles]);
-      }
-    }
-  }, [refreshedLatest, initialLatest]);
-
   if (filteredNews.length === 0 && !refreshing) {
     return (
       <div className="min-h-screen">

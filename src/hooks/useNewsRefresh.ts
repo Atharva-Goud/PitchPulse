@@ -25,8 +25,20 @@ export function useNewsRefresh(initialLatest: NewsArticle[], initialTrending: Ne
       .then(r => (r.ok ? r.json() : Promise.reject(new Error('api/news ' + r.status))))
       .then((data: NewsData) => {
         if (cancelled) return;
-        if (Array.isArray(data.latest) && data.latest.length > 0) setLatest(data.latest);
-        if (Array.isArray(data.trending) && data.trending.length > 0) setTrending(data.trending);
+        if (Array.isArray(data.latest) && data.latest.length > 0) {
+          setLatest(prev => {
+            const existingIds = new Set(prev.map(a => a.id));
+            const newArticles = data.latest.filter(a => !existingIds.has(a.id));
+            return [...prev, ...newArticles];
+          });
+        }
+        if (Array.isArray(data.trending) && data.trending.length > 0) {
+          setTrending(prev => {
+            const existingIds = new Set(prev.map(a => a.id));
+            const newArticles = data.trending.filter(a => !existingIds.has(a.id));
+            return [...prev, ...newArticles];
+          });
+        }
       })
       .catch(error => {
         console.warn('useNewsRefresh: keeping snapshot, refresh failed:', error);
