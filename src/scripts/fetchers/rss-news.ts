@@ -1,6 +1,28 @@
 import Parser from 'rss-parser';
 import { config } from '../../config/app-config';
 
+/** Simple English detection - checks for common English words and absence of non-Latin scripts */
+function isLikelyEnglish(text: string): boolean {
+  if (!text || text.trim().length < 10) return false;
+  
+  // Check for non-Latin scripts (Cyrillic, Arabic, Chinese, etc.)
+  const nonLatinRegex = /[\u0400-\u04FF\u0600-\u06FF\u4E00-\u9FFF\u3040-\u309F\u30A0-\u30FF]/;
+  if (nonLatinRegex.test(text)) return false;
+  
+  // Count English common words
+  const englishWords = ['the', 'and', 'for', 'are', 'but', 'not', 'you', 'all', 'can', 'had', 'her', 'was', 'one', 'our', 'out', 'day', 'get', 'has', 'him', 'his', 'how', 'its', 'may', 'new', 'now', 'old', 'see', 'two', 'way', 'who', 'did', 'she', 'oil', 'sit', 'set', 'put', 'end', 'why', 'try', 'off', 'took', 'says'];
+  const lower = text.toLowerCase();
+  let englishCount = 0;
+  for (const word of englishWords) {
+    if (lower.includes(' ' + word + ' ') || lower.startsWith(word + ' ') || lower.endsWith(' ' + word)) {
+      englishCount++;
+    }
+  }
+  
+  // If we find at least 3 common English words in a reasonable length text, it's likely English
+  return englishCount >= 3;
+}
+
 export interface FetchedNewsItem {
   title: string;
   summary: string;
@@ -120,7 +142,12 @@ export async function fetchFromRSSFeed(
       });
     }
 
-    return items;
+    // Extra safety: filter to English-only articles
+    const englishItems = items.filter(i => isLikelyEnglish(`${i.title} ${i.summary}`));
+    if (englishItems.length !== items.length) {
+      console.log(`RSS ${feedName}: filtered ${items.length - englishItems.length} non-English articles`);
+    }
+    return englishItems;
   } catch (error) {
     console.error(`Failed to fetch RSS feed ${feedName}:`, error);
     return [];

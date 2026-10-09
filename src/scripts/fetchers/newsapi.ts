@@ -9,6 +9,28 @@ interface NewsAPIArticle {
   source: { id: string; name: string };
 }
 
+/** Simple English detection - checks for common English words and absence of non-Latin scripts */
+function isLikelyEnglish(text: string): boolean {
+  if (!text || text.trim().length < 10) return false;
+  
+  // Check for non-Latin scripts (Cyrillic, Arabic, Chinese, etc.)
+  const nonLatinRegex = /[\u0400-\u04FF\u0600-\u06FF\u4E00-\u9FFF\u3040-\u309F\u30A0-\u30FF]/;
+  if (nonLatinRegex.test(text)) return false;
+  
+  // Count English common words
+  const englishWords = ['the', 'and', 'for', 'are', 'but', 'not', 'you', 'all', 'can', 'had', 'her', 'was', 'one', 'our', 'out', 'day', 'get', 'has', 'him', 'his', 'how', 'its', 'may', 'new', 'now', 'old', 'see', 'two', 'way', 'who', 'did', 'she', 'oil', 'sit', 'set', 'put', 'end', 'why', 'try', 'off', 'took', 'says'];
+  const lower = text.toLowerCase();
+  let englishCount = 0;
+  for (const word of englishWords) {
+    if (lower.includes(' ' + word + ' ') || lower.startsWith(word + ' ') || lower.endsWith(' ' + word)) {
+      englishCount++;
+    }
+  }
+  
+  // If we find at least 3 common English words in a reasonable length text, it's likely English
+  return englishCount >= 3;
+}
+
 export async function fetchFromNewsAPI(query: string = 'football'): Promise<any[]> {
   if (!config.news.apiKey || config.news.apiKey === 'your_newsapi_key_here') {
     console.warn('NewsAPI key not configured.');
@@ -27,7 +49,7 @@ export async function fetchFromNewsAPI(query: string = 'football'): Promise<any[
     if (!res.ok) throw new Error(`NewsAPI error: ${res.status}`);
 
     const data = await res.json();
-    return (data.articles || []).map((a: NewsAPIArticle) => ({
+    const articles = (data.articles || []).map((a: NewsAPIArticle) => ({
       title: a.title,
       summary: a.description || a.title,
       source: a.source.name,
@@ -39,6 +61,13 @@ export async function fetchFromNewsAPI(query: string = 'football'): Promise<any[
       publishedAt: a.publishedAt,
       relatedTeams: detectTeams(`${a.title} ${a.description}`),
     }));
+    
+    // Filter to English-only articles
+    const englishArticles = articles.filter(a => isLikelyEnglish(`${a.title} ${a.summary}`));
+    if (englishArticles.length !== articles.length) {
+      console.log(`NewsAPI: filtered ${articles.length - englishArticles.length} non-English articles`);
+    }
+    return englishArticles;
   } catch (error) {
     console.error('Failed to fetch from NewsAPI:', error);
     return [];
