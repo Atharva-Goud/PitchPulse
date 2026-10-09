@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { Filter, TrendingUp, Clock, ExternalLink, Loader2, AlertCircle, RefreshCw } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 import NewsCard from '@/components/news/NewsCard';
@@ -19,48 +19,65 @@ interface NewsPageClientProps {
 }
 
 const PAGE_SIZE = 30;
+const INITIAL_LOAD = 60;
 
 export default function NewsPageClient({ initialData }: NewsPageClientProps) {
-  const { latest: initialLatest, trending: initialTrending, categories, hasMore: initialHasMore, total } = initialData;
+  const { latest: initialLatest, trending: initialTrending, categories, hasMore: initialHasMore, total: initialTotal } = initialData;
   const { latest: refreshedLatest, trending, refreshing } = useNewsRefresh(initialLatest, initialTrending);
   
   const [selectedCategory, setSelectedCategory] = useState<NewsCategory | null>(null);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(2);
   const [hasMore, setHasMore] = useState(initialHasMore);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [loadedIds, setLoadedIds] = useState<Set<string>>(new Set());
+  const [additionalArticles, setAdditionalArticles] = useState<NewsArticle[]>([]);
   
   const observerRef = useRef<IntersectionObserver | null>(null);
   const loadMoreRef = useRef<HTMLDivElement>(null);
   const retryRef = useRef<HTMLButtonElement>(null);
+  const isFetchingRef = useRef(false);
 
   // Initialize loaded IDs from initial data
+  const loadedIdsRef = useRef<Set<string>>(new Set());
   useEffect(() => {
-    setLoadedIds(new Set(refreshedLatest.map(a => a.id)));
+    loadedIdsRef.current = new Set(refreshedLatest.map(a => a.id));
   }, [refreshedLatest]);
 
   // Reset pagination when category changes
   useEffect(() => {
-    setPage(1);
-    setHasMore(true);
+    setPage(2);
+    setHasMore(initialHasMore);
     setError(null);
-  }, [selectedCategory]);
+    setAdditionalArticles([]);
+  }, [selectedCategory, initialHasMore]);
+
+  // Combine initial articles with additionally loaded ones
+  const allLoadedArticles = useMemo(() => {
+    const combined = [...refreshedLatest, ...additionalArticles];
+    // Deduplicate
+    const seen = new Set<string>();
+    return combined.filter(a => {
+      if (seen.has(a.id)) return false;
+      seen.add(a.id);
+      return true;
+    });
+  }, [refreshedLatest, additionalArticles]);
 
   const filteredNews = selectedCategory
-    ? refreshedLatest.filter((article) => article.category === selectedCategory)
-    : refreshedLatest;
+    ? allLoadedArticles.filter((article) => article.category === selectedCategory)
+    : allLoadedArticles;
 
   // Fetch more articles
   const fetchMore = useCallback(async () => {
-    if (loading || !hasMore) return;
+    if (isFetchingRef.current || !hasMore) return;
     
+    isFetchingRef.current = true;
     setLoading(true);
     setError(null);
     
     try {
       const params = new URLSearchParams({
-        page: String(page + 1),
+        page: String(page),
         limit: String(PAGE_SIZE),
       });
       if (selectedCategory) {
@@ -73,28 +90,27 @@ export default function NewsPageClient({ initialData }: NewsPageClientProps) {
         throw new Error(`Failed to fetch: ${response.status}`);
       }
       
-      const data = await response.json();
-      
-      // Filter out duplicates
-      const newArticles = data.latest.filter(
-        (article: NewsArticle) => !loadedIds.has(article.id)
-      );
-      
-      if (newArticles.length > 0) {
-        setLoadedIds(prev => new Set([...prev, ...newArticles.map((a: NewsArticle) => a.id)]));
-        // We need to merge with existing filtered news
-        // Since we can't easily update the server data, we'll use a different approach
-        // The API returns all articles, so we need to merge manually
-      }
-      
-      setHasMore(data.hasMore);
-      setPage(data.page);
+const data = await response.json();
+       
+       // Filter out duplicates
+       const newArticles = data.latest.filter(
+         (article: NewsArticle) => !loadedIdsRef.current.has(article.id)
+       );
+       
+       if (newArticles.length > 0) {
+         newArticles.forEach((a: NewsArticle) => loadedIdsRef.current.add(a.id));
+         setAdditionalArticles(prev => [...prev, ...newArticles]);
+       }
+       
+       setHasMore(data.hasMore);
+       setPage(data.page + 1);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load more articles');
     } finally {
       setLoading(false);
+      isFetchingRef.current = false;
     }
-  }, [loading, hasMore, page, selectedCategory, loadedIds]);
+  }, [hasMore, page, selectedCategory]);
 
   // Set up intersection observer for infinite scroll
   useEffect(() => {
@@ -124,14 +140,13 @@ export default function NewsPageClient({ initialData }: NewsPageClientProps) {
   // Handle refresh from useNewsRefresh - merge new articles
   useEffect(() => {
     if (refreshedLatest.length > initialLatest.length) {
-      const newIds = refreshedLatest
-        .filter(a => !loadedIds.has(a.id))
-        .map(a => a.id);
-      if (newIds.length > 0) {
-        setLoadedIds(prev => new Set([...prev, ...newIds]));
+      const newArticles = refreshedLatest.filter(a => !loadedIdsRef.current.has(a.id));
+      if (newArticles.length > 0) {
+        newArticles.forEach(a => loadedIdsRef.current.add(a.id));
+        setAdditionalArticles(prev => [...prev, ...newArticles]);
       }
     }
-  }, [refreshedLatest, initialLatest, loadedIds]);
+  }, [refreshedLatest, initialLatest]);
 
   if (filteredNews.length === 0 && !refreshing) {
     return (
@@ -196,7 +211,8 @@ export default function NewsPageClient({ initialData }: NewsPageClientProps) {
             <EmptyState type="news" message="No articles found for this category" />
           ) : (
             <>
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+              {/* Responsive 4×4 grid: 4 cols desktop, 2 tablet, 1 mobile */}
+              <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                 {filteredNews.map((article) => (
                   <NewsCard key={article.id} article={article} />
                 ))}
@@ -237,7 +253,7 @@ export default function NewsPageClient({ initialData }: NewsPageClientProps) {
                     </span>
                     <span className="text-sm">You've reached the end</span>
                     <span className="text-slate-600">·</span>
-                    <span className="text-sm">{total} total articles available</span>
+                    <span className="text-sm">{initialTotal} total articles available</span>
                   </div>
                 )}
               </div>

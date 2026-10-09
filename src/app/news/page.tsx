@@ -30,12 +30,16 @@ async function getNewsPageData(): Promise<NewsPageData> {
     getTrendingNewsSnapshot(),
   ]);
 
+  // Remove trending articles from latest to avoid duplicates
+  const trendingUrls = new Set(trending.map(a => a.sourceUrl));
+  const latestFiltered = latest.filter(a => !trendingUrls.has(a.sourceUrl));
+
   // Return first 60 articles for initial load (2 pages of 30)
   const initialLimit = 60;
-  const initialLatest = latest.slice(0, initialLimit);
-  const hasMore = latest.length > initialLimit;
+  const initialLatest = latestFiltered.slice(0, initialLimit);
+  const hasMore = latestFiltered.length > initialLimit;
 
-  return { latest: initialLatest, trending, categories, hasMore, total: latest.length };
+  return { latest: initialLatest, trending, categories, hasMore, total: latestFiltered.length };
 }
 
 export default async function NewsPage() {

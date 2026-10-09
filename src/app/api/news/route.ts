@@ -44,6 +44,13 @@ async function loadSnapshot(): Promise<NewsData> {
   return { latest: (latest as unknown[]) || [], trending: (trending as unknown[]) || [] };
 }
 
+function removeTrendingDuplicates(latest: unknown[], trending: unknown[]): unknown[] {
+  const trendingUrls = new Set(
+    (trending as Array<{ sourceUrl?: string }>).map(a => a.sourceUrl).filter(Boolean)
+  );
+  return (latest as Array<{ sourceUrl?: string }>).filter(a => a.sourceUrl && !trendingUrls.has(a.sourceUrl));
+}
+
 async function refreshOnce(): Promise<NewsData> {
   const { buildNewsOutput } = await import('@/scripts/sync-news');
   const { fetchAllNewsFeeds } = await import('@/scripts/fetchers/rss-news');
@@ -94,7 +101,7 @@ export async function GET(request: Request) {
 
   // Serve the cached refresh if it is still fresh.
   if (isFreshEnough(now) && refreshState) {
-    let latest = refreshState.latest;
+    let latest = removeTrendingDuplicates(refreshState.latest, refreshState.trending);
     if (category) {
       latest = latest.filter((article: any) => article.category === category);
     }
@@ -106,7 +113,7 @@ export async function GET(request: Request) {
   if (inFlight) {
     try {
       const data = await inFlight;
-      let latest = data.latest;
+      let latest = removeTrendingDuplicates(data.latest, data.trending);
       if (category) {
         latest = latest.filter((article: any) => article.category === category);
       }
@@ -114,7 +121,7 @@ export async function GET(request: Request) {
       return NextResponse.json({ latest: items, trending: data.trending, hasMore, total, page, limit });
     } catch {
       const snapshot = await loadSnapshot();
-      let latest = snapshot.latest;
+      let latest = removeTrendingDuplicates(snapshot.latest, snapshot.trending);
       if (category) {
         latest = latest.filter((article: any) => article.category === category);
       }
@@ -128,7 +135,7 @@ export async function GET(request: Request) {
   const snapshotData = refreshState || (await loadSnapshot());
   inFlight = runRefresh();
   
-  let latest = snapshotData.latest;
+  let latest = removeTrendingDuplicates(snapshotData.latest, snapshotData.trending);
   if (category) {
     latest = latest.filter((article: any) => article.category === category);
   }

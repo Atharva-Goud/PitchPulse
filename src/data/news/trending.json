@@ -1,6 +1,59 @@
 [
   {
-    "id": "news-mv0tkhi6-lpztch",
+    "id": "news-mv0u2icy-6yozcv",
+    "title": "Manchester United fans bring back banner mocking Man City after 115 charges verdict",
+    "summary": "Man United fans plan to mock Manchester City by bringing a banner back to Old Trafford after the Blues were found guilty of 114 of the 115 charges against them.",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-fans-bring-back-34740077",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-fans-bring-back-34740077",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34740153.ece/ALTERNATES/s615/1_GettyImages-96215137.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-fans-bring-back-34740077",
+    "publishedAt": "2026-10-09T10:22:11.000Z",
+    "discoveredAt": "2026-10-09T10:39:20.025Z",
+    "lastVerifiedAt": "2026-10-09T10:39:20.025Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 17,
+      "label": "17m ago",
+      "publishedAt": "2026-10-09T10:22:11.000Z",
+      "lastUpdated": "2026-10-09T10:39:20.025Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-fans-bring-back-34740077",
+          "credibilityScore": 78,
+          "publishedAt": "2026-10-09T10:22:11.000Z",
+          "discoveredAt": "2026-10-09T10:39:20.025Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city",
+      "manchester-united",
+      "chelsea"
+    ]
+  },
+  {
+    "id": "news-mv0u2icy-674f0q",
     "title": "Michael Carrick press conference LIVE reaction to Man City 115 verdict and Man United team news vs Tottenham",
     "summary": "Manchester United head coach Michael Carrick will address the media ahead of Saturday's clash with Tottenham Hotspur",
     "source": {
@@ -15,15 +68,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/michael-carrick-press-conference-live-34738835",
     "publishedAt": "2026-10-09T10:10:06.000Z",
-    "discoveredAt": "2026-10-09T10:25:18.728Z",
-    "lastVerifiedAt": "2026-10-09T10:25:18.728Z",
+    "discoveredAt": "2026-10-09T10:39:20.025Z",
+    "lastVerifiedAt": "2026-10-09T10:39:20.025Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "breaking",
-      "ageMinutes": 15,
-      "label": "15m ago",
+      "ageMinutes": 29,
+      "label": "29m ago",
       "publishedAt": "2026-10-09T10:10:06.000Z",
-      "lastUpdated": "2026-10-09T10:25:18.728Z"
+      "lastUpdated": "2026-10-09T10:39:20.025Z"
     },
     "verification": {
       "level": "single_source",
@@ -35,7 +88,7 @@
           "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/michael-carrick-press-conference-live-34738835",
           "credibilityScore": 78,
           "publishedAt": "2026-10-09T10:10:06.000Z",
-          "discoveredAt": "2026-10-09T10:25:18.728Z"
+          "discoveredAt": "2026-10-09T10:39:20.025Z"
         }
       ],
       "confidenceScore": 78,
@@ -53,7 +106,7 @@
     ]
   },
   {
-    "id": "news-mv0tkhi6-t59vbo",
+    "id": "news-mv0u2icy-z3gett",
     "title": " Manchester United vs Tottenham Hotspur is the battle of the sack race favourites but it's too early for either to go ",
     "summary": "As the Premier League’s big-name strugglers meet, it’s worth remembering that these are early days",
     "source": {
@@ -68,15 +121,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.fourfourtwo.com/person/coaches-managers/manchester-united-vs-tottenham-hotspur-is-the-battle-of-the-sack-race-favourites-its-too-early-for-either-to-go",
     "publishedAt": "2026-10-09T06:00:00.000Z",
-    "discoveredAt": "2026-10-09T10:25:18.728Z",
-    "lastVerifiedAt": "2026-10-09T10:25:18.728Z",
+    "discoveredAt": "2026-10-09T10:39:20.025Z",
+    "lastVerifiedAt": "2026-10-09T10:39:20.025Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 265,
+      "ageMinutes": 279,
       "label": "4h ago",
       "publishedAt": "2026-10-09T06:00:00.000Z",
-      "lastUpdated": "2026-10-09T10:25:18.728Z"
+      "lastUpdated": "2026-10-09T10:39:20.025Z"
     },
     "verification": {
       "level": "single_source",
@@ -88,7 +141,7 @@
           "url": "https://www.fourfourtwo.com/person/coaches-managers/manchester-united-vs-tottenham-hotspur-is-the-battle-of-the-sack-race-favourites-its-too-early-for-either-to-go",
           "credibilityScore": 85,
           "publishedAt": "2026-10-09T06:00:00.000Z",
-          "discoveredAt": "2026-10-09T10:25:18.728Z"
+          "discoveredAt": "2026-10-09T10:39:20.025Z"
         }
       ],
       "confidenceScore": 85,
@@ -105,7 +158,59 @@
     ]
   },
   {
-    "id": "news-mv0tkhi6-bnkmob",
+    "id": "news-mv0u2icy-ixjioq",
+    "title": "Enzo Maresca makes bold Man City appeal prediction and Anfield admission before Liverpool clash",
+    "summary": "Manchester City boss Enzo Maresca speaks to the media for the first time since the club were found guilty of 114 financial charges by the Premier League",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/enzo-maresca-makes-bold-man-34739600",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/enzo-maresca-makes-bold-man-34739600",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34740519.ece/ALTERNATES/s615/0_GettyImages-2298707520.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/enzo-maresca-makes-bold-man-34739600",
+    "publishedAt": "2026-10-09T10:27:10.000Z",
+    "discoveredAt": "2026-10-09T10:39:20.025Z",
+    "lastVerifiedAt": "2026-10-09T10:39:20.025Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 12,
+      "label": "12m ago",
+      "publishedAt": "2026-10-09T10:27:10.000Z",
+      "lastUpdated": "2026-10-09T10:39:20.025Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/enzo-maresca-makes-bold-man-34739600",
+          "credibilityScore": 80,
+          "publishedAt": "2026-10-09T10:27:10.000Z",
+          "discoveredAt": "2026-10-09T10:39:20.025Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city",
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mv0u2icy-r1mkq4",
     "title": "Erling Haaland issues statement ahead of Liverpool vs Man City as Premier League sanction nears",
     "summary": "Man City striker Erling Haaland has spoken ahead of the Premier League clash at Liverpool on Sunday after financial breaches confirmed",
     "source": {
@@ -120,15 +225,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/erling-haaland-issues-statement-ahead-34739279",
     "publishedAt": "2026-10-09T08:59:54.000Z",
-    "discoveredAt": "2026-10-09T10:25:18.728Z",
-    "lastVerifiedAt": "2026-10-09T10:25:18.728Z",
+    "discoveredAt": "2026-10-09T10:39:20.025Z",
+    "lastVerifiedAt": "2026-10-09T10:39:20.025Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 85,
+      "ageMinutes": 99,
       "label": "1h ago",
       "publishedAt": "2026-10-09T08:59:54.000Z",
-      "lastUpdated": "2026-10-09T10:25:18.728Z"
+      "lastUpdated": "2026-10-09T10:39:20.025Z"
     },
     "verification": {
       "level": "single_source",
@@ -140,7 +245,7 @@
           "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/erling-haaland-issues-statement-ahead-34739279",
           "credibilityScore": 80,
           "publishedAt": "2026-10-09T08:59:54.000Z",
-          "discoveredAt": "2026-10-09T10:25:18.728Z"
+          "discoveredAt": "2026-10-09T10:39:20.025Z"
         }
       ],
       "confidenceScore": 80,
@@ -157,7 +262,7 @@
     ]
   },
   {
-    "id": "news-mv0tkhi6-5wah6v",
+    "id": "news-mv0u2icy-59snjn",
     "title": "Lewis Koumas backed to answer Liverpool striker call after injury blow - 'The manager loves that'",
     "summary": "Lewis Koumas could be in line for a full Premier League debut against Man City as Alexander Isak and Cody Gakpo remain injury doubts for Liverpool",
     "source": {
@@ -172,15 +277,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/lewis-koumas-backed-answer-liverpool-34737713",
     "publishedAt": "2026-10-09T06:58:00.000Z",
-    "discoveredAt": "2026-10-09T10:25:18.728Z",
-    "lastVerifiedAt": "2026-10-09T10:25:18.728Z",
+    "discoveredAt": "2026-10-09T10:39:20.025Z",
+    "lastVerifiedAt": "2026-10-09T10:39:20.025Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 207,
+      "ageMinutes": 221,
       "label": "3h ago",
       "publishedAt": "2026-10-09T06:58:00.000Z",
-      "lastUpdated": "2026-10-09T10:25:18.728Z"
+      "lastUpdated": "2026-10-09T10:39:20.025Z"
     },
     "verification": {
       "level": "single_source",
@@ -192,7 +297,7 @@
           "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/lewis-koumas-backed-answer-liverpool-34737713",
           "credibilityScore": 80,
           "publishedAt": "2026-10-09T06:58:00.000Z",
-          "discoveredAt": "2026-10-09T10:25:18.728Z"
+          "discoveredAt": "2026-10-09T10:39:20.025Z"
         }
       ],
       "confidenceScore": 80,
@@ -209,7 +314,7 @@
     ]
   },
   {
-    "id": "news-mv0tkhi6-gbof8w",
+    "id": "news-mv0u2icy-sbgogi",
     "title": " Five of the best FPL captaincy options for Gameweek 6 as Fantasy Premier League managers face difficult choice ",
     "summary": "There is no clear winner for who the FPL captaincy should go to this weekend - which makes it all the more interesting",
     "source": {
@@ -224,15 +329,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.fourfourtwo.com/competition/five-of-the-best-fpl-captaincy-options-for-gameweek-6-as-fantasy-premier-league-managers-face-difficult-choice",
     "publishedAt": "2026-10-09T06:00:00.000Z",
-    "discoveredAt": "2026-10-09T10:25:18.728Z",
-    "lastVerifiedAt": "2026-10-09T10:25:18.728Z",
+    "discoveredAt": "2026-10-09T10:39:20.025Z",
+    "lastVerifiedAt": "2026-10-09T10:39:20.025Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 265,
+      "ageMinutes": 279,
       "label": "4h ago",
       "publishedAt": "2026-10-09T06:00:00.000Z",
-      "lastUpdated": "2026-10-09T10:25:18.728Z"
+      "lastUpdated": "2026-10-09T10:39:20.025Z"
     },
     "verification": {
       "level": "single_source",
@@ -244,7 +349,7 @@
           "url": "https://www.fourfourtwo.com/competition/five-of-the-best-fpl-captaincy-options-for-gameweek-6-as-fantasy-premier-league-managers-face-difficult-choice",
           "credibilityScore": 85,
           "publishedAt": "2026-10-09T06:00:00.000Z",
-          "discoveredAt": "2026-10-09T10:25:18.728Z"
+          "discoveredAt": "2026-10-09T10:39:20.025Z"
         }
       ],
       "confidenceScore": 85,
@@ -260,7 +365,7 @@
     ]
   },
   {
-    "id": "news-mv0tkhi6-50hs99",
+    "id": "news-mv0u2icy-cqymui",
     "title": "Paul Ince makes Man City punishment demand after guilty verdict as Liverpool wait - 'It's amazing'",
     "summary": "Former Liverpool captain Paul Ince has had his say on the ongoing Manchester City case after they were found guilty of breaching Premier League financial rules",
     "source": {
@@ -275,15 +380,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/paul-ince-makes-man-city-34730637",
     "publishedAt": "2026-10-09T05:00:00.000Z",
-    "discoveredAt": "2026-10-09T10:25:18.728Z",
-    "lastVerifiedAt": "2026-10-09T10:25:18.728Z",
+    "discoveredAt": "2026-10-09T10:39:20.025Z",
+    "lastVerifiedAt": "2026-10-09T10:39:20.025Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 325,
+      "ageMinutes": 339,
       "label": "5h ago",
       "publishedAt": "2026-10-09T05:00:00.000Z",
-      "lastUpdated": "2026-10-09T10:25:18.728Z"
+      "lastUpdated": "2026-10-09T10:39:20.025Z"
     },
     "verification": {
       "level": "single_source",
@@ -295,7 +400,7 @@
           "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/paul-ince-makes-man-city-34730637",
           "credibilityScore": 80,
           "publishedAt": "2026-10-09T05:00:00.000Z",
-          "discoveredAt": "2026-10-09T10:25:18.728Z"
+          "discoveredAt": "2026-10-09T10:39:20.025Z"
         }
       ],
       "confidenceScore": 80,
@@ -312,7 +417,7 @@
     ]
   },
   {
-    "id": "news-mv0tkhi6-2zyuga",
+    "id": "news-mv0u2icy-jbdp5g",
     "title": "Man City will discover how Liverpool fans feel - Anfield will be bubbling with 'righteous anger'",
     "summary": "Our Liverpool fans' jury look ahead to Sunday's massive Premier League match at Anfield against Manchester City",
     "source": {
@@ -327,15 +432,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/man-city-discover-how-liverpool-34733828",
     "publishedAt": "2026-10-09T04:00:00.000Z",
-    "discoveredAt": "2026-10-09T10:25:18.728Z",
-    "lastVerifiedAt": "2026-10-09T10:25:18.728Z",
+    "discoveredAt": "2026-10-09T10:39:20.025Z",
+    "lastVerifiedAt": "2026-10-09T10:39:20.025Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 385,
+      "ageMinutes": 399,
       "label": "6h ago",
       "publishedAt": "2026-10-09T04:00:00.000Z",
-      "lastUpdated": "2026-10-09T10:25:18.728Z"
+      "lastUpdated": "2026-10-09T10:39:20.025Z"
     },
     "verification": {
       "level": "single_source",
@@ -347,7 +452,7 @@
           "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/man-city-discover-how-liverpool-34733828",
           "credibilityScore": 80,
           "publishedAt": "2026-10-09T04:00:00.000Z",
-          "discoveredAt": "2026-10-09T10:25:18.728Z"
+          "discoveredAt": "2026-10-09T10:39:20.025Z"
         }
       ],
       "confidenceScore": 80,
@@ -364,7 +469,7 @@
     ]
   },
   {
-    "id": "news-mv0tkhi6-6qawxo",
+    "id": "news-mv0u2icy-t99r9t",
     "title": " How to watch Greece vs England for FREE: Live stream details for Lionesses' MUST WIN World Cup play-off ",
     "summary": "Here's how to watch Greece vs England Women in World Cup qualifying as they face off in Crete",
     "source": {
@@ -379,15 +484,15 @@
     "category": "International Football",
     "originalUrl": "https://www.fourfourtwo.com/competition/how-to-watch-greece-vs-england-for-free-live-stream-details-for-lionesses-must-win-world-cup-play-off",
     "publishedAt": "2026-10-09T09:33:41.000Z",
-    "discoveredAt": "2026-10-09T10:25:18.728Z",
-    "lastVerifiedAt": "2026-10-09T10:25:18.728Z",
+    "discoveredAt": "2026-10-09T10:39:20.025Z",
+    "lastVerifiedAt": "2026-10-09T10:39:20.025Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 51,
-      "label": "51m ago",
+      "ageMinutes": 65,
+      "label": "1h ago",
       "publishedAt": "2026-10-09T09:33:41.000Z",
-      "lastUpdated": "2026-10-09T10:25:18.728Z"
+      "lastUpdated": "2026-10-09T10:39:20.025Z"
     },
     "verification": {
       "level": "single_source",
@@ -399,7 +504,7 @@
           "url": "https://www.fourfourtwo.com/competition/how-to-watch-greece-vs-england-for-free-live-stream-details-for-lionesses-must-win-world-cup-play-off",
           "credibilityScore": 85,
           "publishedAt": "2026-10-09T09:33:41.000Z",
-          "discoveredAt": "2026-10-09T10:25:18.728Z"
+          "discoveredAt": "2026-10-09T10:39:20.025Z"
         }
       ],
       "confidenceScore": 85,
@@ -411,108 +516,5 @@
       "verificationCount": 1
     },
     "relatedTeams": []
-  },
-  {
-    "id": "news-mv0tkhi6-o3bibm",
-    "title": "Arne Slot lands new job four months after Liverpool exit as decision confirmed",
-    "summary": "Arne Slot is back in football, having outlined his plans following his Liverpool sacking",
-    "source": {
-      "name": "Liverpool Echo LFC",
-      "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/arne-slot-next-job-liverpool-34739418",
-      "credibilityScore": 80
-    },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/arne-slot-next-job-liverpool-34739418",
-    "image": "https://i2-prod.birminghammail.co.uk/incoming/article33183000.ece/ALTERNATES/s615/1_Liverpool-v-Leeds-United-Premier-League.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/arne-slot-next-job-liverpool-34739418",
-    "publishedAt": "2026-10-09T09:01:05.000Z",
-    "discoveredAt": "2026-10-09T10:25:18.728Z",
-    "lastVerifiedAt": "2026-10-09T10:25:18.728Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 84,
-      "label": "1h ago",
-      "publishedAt": "2026-10-09T09:01:05.000Z",
-      "lastUpdated": "2026-10-09T10:25:18.728Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/arne-slot-next-job-liverpool-34739418",
-          "credibilityScore": 80,
-          "publishedAt": "2026-10-09T09:01:05.000Z",
-          "discoveredAt": "2026-10-09T10:25:18.728Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-mv0tkhi6-2cazri",
-    "title": "What's changed at Man United, Cristiano Ronaldo problem and Solskjaer sacking - Mike Phelan interview",
-    "summary": "Mike Phelan worked with Michael Carrick at Manchester United when he was Ole Gunnar Solskjaer's No.2 and reflects on that time at the club and what he makes of Carrick now.",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/whats-changed-man-united-cristiano-34735881",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/whats-changed-man-united-cristiano-34735881",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34736933.ece/ALTERNATES/s615/0_premium-canvas-1791469910543.png",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/whats-changed-man-united-cristiano-34735881",
-    "publishedAt": "2026-10-09T05:00:00.000Z",
-    "discoveredAt": "2026-10-09T10:25:18.728Z",
-    "lastVerifiedAt": "2026-10-09T10:25:18.728Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 325,
-      "label": "5h ago",
-      "publishedAt": "2026-10-09T05:00:00.000Z",
-      "lastUpdated": "2026-10-09T10:25:18.728Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/whats-changed-man-united-cristiano-34735881",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-09T05:00:00.000Z",
-          "discoveredAt": "2026-10-09T10:25:18.728Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "inter-milan"
-    ]
   }
 ]

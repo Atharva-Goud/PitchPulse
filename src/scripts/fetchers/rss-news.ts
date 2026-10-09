@@ -12,6 +12,7 @@ export interface FetchedNewsItem {
   category: string;
   publishedAt: string;
   relatedTeams: string[];
+  language: string;
 }
 
 const teamKeywords: Record<string, string[]> = {
@@ -82,7 +83,8 @@ export async function fetchFromRSSFeed(
   feedId: string,
   feedUrl: string,
   feedName: string,
-  credibility: number
+  credibility: number,
+  language: string
 ): Promise<FetchedNewsItem[]> {
   try {
     const feed = await parser.parseURL(feedUrl);
@@ -114,6 +116,7 @@ export async function fetchFromRSSFeed(
         category: detectCategory(title, summary),
         publishedAt,
         relatedTeams: detectTeams(`${title} ${summary}`),
+        language,
       });
     }
 
@@ -128,12 +131,18 @@ export async function fetchAllNewsFeeds(): Promise<FetchedNewsItem[]> {
   const allItems: FetchedNewsItem[] = [];
 
   for (const feed of config.rss.feeds) {
+    // Only fetch English-language feeds
+    if (feed.language !== 'en') {
+      console.log(`Skipping non-English feed: ${feed.name} (${feed.language})`);
+      continue;
+    }
     console.log(`Fetching: ${feed.name}...`);
     const items = await fetchFromRSSFeed(
       feed.id,
       feed.url,
       feed.name,
-      feed.credibility
+      feed.credibility,
+      feed.language || 'en'
     );
     console.log(`  Found ${items.length} articles`);
     allItems.push(...items);
