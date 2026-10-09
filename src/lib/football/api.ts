@@ -22,7 +22,7 @@ if (typeof window !== 'undefined') {
 }
 
 // Global semaphore to limit concurrent API requests and avoid 429 rate limits
-const MAX_CONCURRENT_REQUESTS = 1;
+const MAX_CONCURRENT_REQUESTS = 3;
 let activeRequests = 0;
 const requestQueue: Array<() => void> = [];
 
@@ -34,7 +34,8 @@ async function acquireSlot(): Promise<void> {
   return new Promise(resolve => {
     requestQueue.push(() => {
       activeRequests++;
-      resolve();
+      // Small stagger between concurrent requests to be gentle on the API
+      setTimeout(resolve, 100);
     });
   });
 }
