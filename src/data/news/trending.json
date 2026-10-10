@@ -1,6 +1,58 @@
 [
   {
-    "id": "news-mv2ih0tv-tgee3v",
+    "id": "news-mv2vjnyh-2nlrti",
+    "title": " How to watch Real Madrid vs Villarreal for FREE: Live stream details for La Liga clash ",
+    "summary": "Here's how to watch Real Madrid vs Villarreal in La Liga for free from anywhere in the world as Jose Mourinho's side look to keep pace with FC Barcelona.",
+    "source": {
+      "name": "FourFourTwo",
+      "type": "publication",
+      "url": "https://www.fourfourtwo.com/competition/watch-real-madrid-vs-villarreal-la-liga-free",
+      "credibilityScore": 85
+    },
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/competition/watch-real-madrid-vs-villarreal-la-liga-free",
+    "image": "https://cdn.mos.cms.futurecdn.net/uZHcebnGEBLaiFPhsDEQiT-1920-80.png",
+    "category": "La Liga",
+    "originalUrl": "https://www.fourfourtwo.com/competition/watch-real-madrid-vs-villarreal-la-liga-free",
+    "publishedAt": "2026-10-10T15:00:00.000Z",
+    "discoveredAt": "2026-10-10T20:56:12.606Z",
+    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 356,
+      "label": "5h ago",
+      "publishedAt": "2026-10-10T15:00:00.000Z",
+      "lastUpdated": "2026-10-10T20:56:12.606Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
+          "type": "publication",
+          "url": "https://www.fourfourtwo.com/competition/watch-real-madrid-vs-villarreal-la-liga-free",
+          "credibilityScore": 85,
+          "publishedAt": "2026-10-10T15:00:00.000Z",
+          "discoveredAt": "2026-10-10T20:56:12.606Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by FourFourTwo",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "real-madrid",
+      "barcelona"
+    ]
+  },
+  {
+    "id": "news-mv2vjnyh-68eibm",
     "title": " Watch Manchester United vs Tottenham Hotspur: FREE streams ",
     "summary": "Here's how to watch Manchester United vs Tottenham Hotspur for free from anywhere in the world, as two under-pressure managers meet at Old Trafford.",
     "source": {
@@ -15,15 +67,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.fourfourtwo.com/competition/watch-manchester-united-vs-tottenham-hotspur-premier-league-2026-27-free",
     "publishedAt": "2026-10-10T12:00:00.000Z",
-    "discoveredAt": "2026-10-10T14:50:11.345Z",
-    "lastVerifiedAt": "2026-10-10T14:50:11.345Z",
+    "discoveredAt": "2026-10-10T20:56:12.606Z",
+    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 170,
-      "label": "2h ago",
+      "status": "recent",
+      "ageMinutes": 536,
+      "label": "8h ago",
       "publishedAt": "2026-10-10T12:00:00.000Z",
-      "lastUpdated": "2026-10-10T14:50:11.345Z"
+      "lastUpdated": "2026-10-10T20:56:12.606Z"
     },
     "verification": {
       "level": "single_source",
@@ -35,7 +87,7 @@
           "url": "https://www.fourfourtwo.com/competition/watch-manchester-united-vs-tottenham-hotspur-premier-league-2026-27-free",
           "credibilityScore": 85,
           "publishedAt": "2026-10-10T12:00:00.000Z",
-          "discoveredAt": "2026-10-10T14:50:11.345Z"
+          "discoveredAt": "2026-10-10T20:56:12.606Z"
         }
       ],
       "confidenceScore": 85,
@@ -52,7 +104,267 @@
     ]
   },
   {
-    "id": "news-mv2ih0tv-239lqf",
+    "id": "news-mv2vjnyh-czndto",
+    "title": "Michael Carrick admits he was 'hurt' by what Manchester United fans did vs Tottenham",
+    "summary": "Man Utd fans booed their team on several occasions during a flat and disappointing draw with Tottenham at Old Trafford.",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-admits-hurt-what-34747169",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-admits-hurt-what-34747169",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34747190.ece/ALTERNATES/s615/0_GettyImages-2298994498.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-admits-hurt-what-34747169",
+    "publishedAt": "2026-10-10T19:35:26.000Z",
+    "discoveredAt": "2026-10-10T20:56:12.606Z",
+    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 80,
+      "label": "1h ago",
+      "publishedAt": "2026-10-10T19:35:26.000Z",
+      "lastUpdated": "2026-10-10T20:56:12.606Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-admits-hurt-what-34747169",
+          "credibilityScore": 78,
+          "publishedAt": "2026-10-10T19:35:26.000Z",
+          "discoveredAt": "2026-10-10T20:56:12.606Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "tottenham"
+    ]
+  },
+  {
+    "id": "news-mv2vjnyh-xu5x2q",
+    "title": "Manchester United vs Tottenham highlights and reaction as Michael Carrick's side draw after red card",
+    "summary": "Man Utd drew 1-1 with Tottenham in the Premier League and you can recap what happened in the game below.",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34747067.ece/ALTERNATES/s615/0_GettyImages-2298984983.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
+    "publishedAt": "2026-10-10T19:16:06.000Z",
+    "discoveredAt": "2026-10-10T20:56:12.606Z",
+    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 100,
+      "label": "1h ago",
+      "publishedAt": "2026-10-10T19:16:06.000Z",
+      "lastUpdated": "2026-10-10T20:56:12.606Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
+          "credibilityScore": 78,
+          "publishedAt": "2026-10-10T19:16:06.000Z",
+          "discoveredAt": "2026-10-10T20:56:12.606Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "tottenham"
+    ]
+  },
+  {
+    "id": "news-mv2vjnyh-u9vhuk",
+    "title": "What Tottenham staff said spoke volumes about where Manchester United are under Michael Carrick",
+    "summary": "Man United failed to see out the game against Tottenham despite leading 1-0 with a man advantage at Old Trafford.",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/what-tottenham-staff-said-spoke-34746653",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/what-tottenham-staff-said-spoke-34746653",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34747140.ece/ALTERNATES/s615/1_GettyImages-2299554371.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/what-tottenham-staff-said-spoke-34746653",
+    "publishedAt": "2026-10-10T18:45:32.000Z",
+    "discoveredAt": "2026-10-10T20:56:12.606Z",
+    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 130,
+      "label": "2h ago",
+      "publishedAt": "2026-10-10T18:45:32.000Z",
+      "lastUpdated": "2026-10-10T20:56:12.606Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/what-tottenham-staff-said-spoke-34746653",
+          "credibilityScore": 78,
+          "publishedAt": "2026-10-10T18:45:32.000Z",
+          "discoveredAt": "2026-10-10T20:56:12.606Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "tottenham"
+    ]
+  },
+  {
+    "id": "news-mv2vjnyh-xqdwb4",
+    "title": "Manchester United player ratings vs Tottenham as Carlos Baleba good but three get 5/10",
+    "summary": "Man Utd looked to have weathered the Tottenham Hotspur storm to secure a much-needed Premier League win but they conceded late on at Old Trafford.",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-player-ratings-vs-34746648",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-player-ratings-vs-34746648",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34747075.ece/ALTERNATES/s615/1_GettyImages-2298984932.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-player-ratings-vs-34746648",
+    "publishedAt": "2026-10-10T18:26:52.000Z",
+    "discoveredAt": "2026-10-10T20:56:12.606Z",
+    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 149,
+      "label": "2h ago",
+      "publishedAt": "2026-10-10T18:26:52.000Z",
+      "lastUpdated": "2026-10-10T20:56:12.606Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-player-ratings-vs-34746648",
+          "credibilityScore": 78,
+          "publishedAt": "2026-10-10T18:26:52.000Z",
+          "discoveredAt": "2026-10-10T20:56:12.606Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "tottenham"
+    ]
+  },
+  {
+    "id": "news-mv2vjnyh-isw8q6",
+    "title": "Liverpool £157m investment now faces scrutiny as Andoni Iraola awaits statement",
+    "summary": "Liverpool entertain Manchester City in the Premier League on Sunday afternoon and cannot afford to be distracted by off-field events",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-157m-investment-now-faces-34746029",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-157m-investment-now-faces-34746029",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34746422.ece/ALTERNATES/s615/0_GettyImages-2299238957.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-157m-investment-now-faces-34746029",
+    "publishedAt": "2026-10-10T15:25:46.000Z",
+    "discoveredAt": "2026-10-10T20:56:12.606Z",
+    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 330,
+      "label": "5h ago",
+      "publishedAt": "2026-10-10T15:25:46.000Z",
+      "lastUpdated": "2026-10-10T20:56:12.606Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-157m-investment-now-faces-34746029",
+          "credibilityScore": 80,
+          "publishedAt": "2026-10-10T15:25:46.000Z",
+          "discoveredAt": "2026-10-10T20:56:12.606Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city",
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mv2vjnyh-0ukz6v",
     "title": "Man United could be set for transfer windfall as Real Madrid and Premier League clubs eye £25m man",
     "summary": "Scott McTominay left Manchester United for Napoli in the summer of 2024 after 22 years at Old Trafford, but is now being linked with a potential exit",
     "source": {
@@ -67,15 +379,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-scott-mctominay-transfer-34745382",
     "publishedAt": "2026-10-10T11:33:48.000Z",
-    "discoveredAt": "2026-10-10T14:50:11.345Z",
-    "lastVerifiedAt": "2026-10-10T14:50:11.345Z",
+    "discoveredAt": "2026-10-10T20:56:12.606Z",
+    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 196,
-      "label": "3h ago",
+      "ageMinutes": 562,
+      "label": "9h ago",
       "publishedAt": "2026-10-10T11:33:48.000Z",
-      "lastUpdated": "2026-10-10T14:50:11.345Z"
+      "lastUpdated": "2026-10-10T20:56:12.606Z"
     },
     "verification": {
       "level": "single_source",
@@ -87,7 +399,7 @@
           "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-scott-mctominay-transfer-34745382",
           "credibilityScore": 78,
           "publishedAt": "2026-10-10T11:33:48.000Z",
-          "discoveredAt": "2026-10-10T14:50:11.345Z"
+          "discoveredAt": "2026-10-10T20:56:12.606Z"
         }
       ],
       "confidenceScore": 78,
@@ -105,30 +417,30 @@
     ]
   },
   {
-    "id": "news-mv2ih0tv-osr6wl",
-    "title": "Manchester United vs Tottenham LIVE Premier League updates plus early team news and how to watch",
-    "summary": "Man Utd play Tottenham in the Premier League today and we'll bring you live updates from the game.",
+    "id": "news-mv2vjnyh-akq3gt",
+    "title": "Gary Neville spots Man Utd star's X-rated message to teammate after unwanted incident",
+    "summary": "Senne Lammens complained to his Manchester United team-mates as he struggled against Tottenham Hotspur at Old Trafford in the Premier League",
     "source": {
       "name": "Manchester Evening News MUFC",
       "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/manchester-united-tottenham-senne-lammens-34746955",
       "credibilityScore": 78
     },
     "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34746005.ece/ALTERNATES/s615/0_Untitled.jpg",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/manchester-united-tottenham-senne-lammens-34746955",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34746943.ece/ALTERNATES/s615/0_GettyImages-2299544634.jpg",
     "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
-    "publishedAt": "2026-10-10T14:36:52.000Z",
-    "discoveredAt": "2026-10-10T14:50:11.345Z",
-    "lastVerifiedAt": "2026-10-10T14:50:11.345Z",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/manchester-united-tottenham-senne-lammens-34746955",
+    "publishedAt": "2026-10-10T17:31:02.000Z",
+    "discoveredAt": "2026-10-10T20:56:12.606Z",
+    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 13,
-      "label": "13m ago",
-      "publishedAt": "2026-10-10T14:36:52.000Z",
-      "lastUpdated": "2026-10-10T14:50:11.345Z"
+      "status": "recent",
+      "ageMinutes": 205,
+      "label": "3h ago",
+      "publishedAt": "2026-10-10T17:31:02.000Z",
+      "lastUpdated": "2026-10-10T20:56:12.606Z"
     },
     "verification": {
       "level": "single_source",
@@ -137,10 +449,10 @@
           "id": "man-utd-men",
           "name": "Manchester Evening News MUFC",
           "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/manchester-united-tottenham-senne-lammens-34746955",
           "credibilityScore": 78,
-          "publishedAt": "2026-10-10T14:36:52.000Z",
-          "discoveredAt": "2026-10-10T14:50:11.345Z"
+          "publishedAt": "2026-10-10T17:31:02.000Z",
+          "discoveredAt": "2026-10-10T20:56:12.606Z"
         }
       ],
       "confidenceScore": 78,
@@ -157,365 +469,55 @@
     ]
   },
   {
-    "id": "news-mv2ih0tw-deas54",
-    "title": " Viktor Gyokeres still shouldn't start for Arsenal - even with Kai Havertz injured ",
-    "summary": "Arsenal striker Kai Havertz picked up a knock during the international break - but Mikel Arteta shouldn't use Viktor Gyokeres as his replacement",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/team/viktor-gyokeres-still-shouldnt-start-for-arsenal-even-with-kai-havertz-injured",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/team/viktor-gyokeres-still-shouldnt-start-for-arsenal-even-with-kai-havertz-injured",
-    "image": "https://cdn.mos.cms.futurecdn.net/4HNqAeCFBscucU3bE5SSfR-1920-80.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/team/viktor-gyokeres-still-shouldnt-start-for-arsenal-even-with-kai-havertz-injured",
-    "publishedAt": "2026-10-10T06:00:00.000Z",
-    "discoveredAt": "2026-10-10T14:50:11.345Z",
-    "lastVerifiedAt": "2026-10-10T14:50:11.345Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 530,
-      "label": "8h ago",
-      "publishedAt": "2026-10-10T06:00:00.000Z",
-      "lastUpdated": "2026-10-10T14:50:11.345Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/team/viktor-gyokeres-still-shouldnt-start-for-arsenal-even-with-kai-havertz-injured",
-          "credibilityScore": 85,
-          "publishedAt": "2026-10-10T06:00:00.000Z",
-          "discoveredAt": "2026-10-10T14:50:11.345Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "arsenal",
-      "inter-milan"
-    ]
-  },
-  {
-    "id": "news-mv2ih0tw-2rqi24",
-    "title": "What TV channel is Man United vs Tottenham? How to watch and live stream",
-    "summary": "Manchester United face fellow strugglers Tottenham on Saturday afternoon at Old Trafford",
+    "id": "news-mv2vjnyh-29nbi7",
+    "title": "Why Michael Carrick has made shock selection decision for Man United vs Tottenham",
+    "summary": "Leny Yoro looks set to start at right-back in Manchester United's clash with Tottenham in the Premier League.",
     "source": {
       "name": "Manchester Evening News MUFC",
       "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-tottenham-channel-stream-34735105",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-made-shock-selection-34746647",
       "credibilityScore": 78
     },
     "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-tottenham-channel-stream-34735105",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34647653.ece/ALTERNATES/s615/1_GettyImages-2295780172.jpg",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-made-shock-selection-34746647",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34465724.ece/ALTERNATES/s615/2_Screenshot-2026-08-15-190821.png",
     "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-tottenham-channel-stream-34735105",
-    "publishedAt": "2026-10-10T14:00:00.000Z",
-    "discoveredAt": "2026-10-10T14:50:11.345Z",
-    "lastVerifiedAt": "2026-10-10T14:50:11.345Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 50,
-      "label": "50m ago",
-      "publishedAt": "2026-10-10T14:00:00.000Z",
-      "lastUpdated": "2026-10-10T14:50:11.345Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-tottenham-channel-stream-34735105",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-10T14:00:00.000Z",
-          "discoveredAt": "2026-10-10T14:50:11.345Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "tottenham"
-    ]
-  },
-  {
-    "id": "news-mv2ih0tw-hcblqd",
-    "title": "Bradley Barcola drops Liverpool selection hint vs Man City and makes 'very different' admission",
-    "summary": "Liverpool £123million transfer signing Bradley Barcola has been speaking ahead of the Premier League clash against Manchester City",
-    "source": {
-      "name": "Liverpool Echo LFC",
-      "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/bradley-barcola-drops-liverpool-selection-34745551",
-      "credibilityScore": 80
-    },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/bradley-barcola-drops-liverpool-selection-34745551",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34745661.ece/ALTERNATES/s615/0_GettyImages-2299231759.jpg",
-    "category": "Transfers",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/bradley-barcola-drops-liverpool-selection-34745551",
-    "publishedAt": "2026-10-10T11:02:06.000Z",
-    "discoveredAt": "2026-10-10T14:50:11.345Z",
-    "lastVerifiedAt": "2026-10-10T14:50:11.345Z",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-made-shock-selection-34746647",
+    "publishedAt": "2026-10-10T16:12:21.000Z",
+    "discoveredAt": "2026-10-10T20:56:12.606Z",
+    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 228,
-      "label": "3h ago",
-      "publishedAt": "2026-10-10T11:02:06.000Z",
-      "lastUpdated": "2026-10-10T14:50:11.345Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/bradley-barcola-drops-liverpool-selection-34745551",
-          "credibilityScore": 80,
-          "publishedAt": "2026-10-10T11:02:06.000Z",
-          "discoveredAt": "2026-10-10T14:50:11.345Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-mv2ih0tw-o5gcux",
-    "title": " Watch Sunderland vs Brighton: Live Streams and TV Channels ",
-    "summary": "Here's how to watch Sunderland vs Brighton online from anywhere in the Premier League, as the Seagulls make the long trip north to the Stadium of Light.",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/competition/watch-sunderland-vs-brighton-premier-league-2026-27",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/competition/watch-sunderland-vs-brighton-premier-league-2026-27",
-    "image": "https://cdn.mos.cms.futurecdn.net/65DjfLxvNX7xmFpRBbMWVk-1920-80.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/competition/watch-sunderland-vs-brighton-premier-league-2026-27",
-    "publishedAt": "2026-10-10T11:00:00.000Z",
-    "discoveredAt": "2026-10-10T14:50:11.345Z",
-    "lastVerifiedAt": "2026-10-10T14:50:11.345Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 230,
-      "label": "3h ago",
-      "publishedAt": "2026-10-10T11:00:00.000Z",
-      "lastUpdated": "2026-10-10T14:50:11.345Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/competition/watch-sunderland-vs-brighton-premier-league-2026-27",
-          "credibilityScore": 85,
-          "publishedAt": "2026-10-10T11:00:00.000Z",
-          "discoveredAt": "2026-10-10T14:50:11.345Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "brighton"
-    ]
-  },
-  {
-    "id": "news-mv2ih0tw-6h3cx6",
-    "title": " Watch Chelsea vs Bournemouth: FREE Streams and TV Channels ",
-    "summary": "Here's how to watch Chelsea vs Bournemouth for free from anywhere, as Xabi Alonso's Blues host Marco Rose's winless Cherries in the Premier League.",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/competition/watch-chelsea-vs-bournemouth-premier-league-2026-27-free",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/competition/watch-chelsea-vs-bournemouth-premier-league-2026-27-free",
-    "image": "https://cdn.mos.cms.futurecdn.net/PPEDLD4RLAuVRFsmAksEjU-1920-80.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/competition/watch-chelsea-vs-bournemouth-premier-league-2026-27-free",
-    "publishedAt": "2026-10-10T11:00:00.000Z",
-    "discoveredAt": "2026-10-10T14:50:11.345Z",
-    "lastVerifiedAt": "2026-10-10T14:50:11.345Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 230,
-      "label": "3h ago",
-      "publishedAt": "2026-10-10T11:00:00.000Z",
-      "lastUpdated": "2026-10-10T14:50:11.345Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/competition/watch-chelsea-vs-bournemouth-premier-league-2026-27-free",
-          "credibilityScore": 85,
-          "publishedAt": "2026-10-10T11:00:00.000Z",
-          "discoveredAt": "2026-10-10T14:50:11.345Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "chelsea"
-    ]
-  },
-  {
-    "id": "news-mv2ih0tw-m44ujb",
-    "title": "I should be excited about going to Liverpool vs Man City but whole thing may be pointless",
-    "summary": "The Reds face Man City on Sunday in Enzo Maresca's side's first match since the club was found guilty of serious financial charges",
-    "source": {
-      "name": "Liverpool Echo LFC",
-      "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/should-excited-going-liverpool-vs-34739949",
-      "credibilityScore": 80
-    },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/should-excited-going-liverpool-vs-34739949",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34741146.ece/ALTERNATES/s615/0_InYourArea-Noticeboard.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/should-excited-going-liverpool-vs-34739949",
-    "publishedAt": "2026-10-10T10:40:36.000Z",
-    "discoveredAt": "2026-10-10T14:50:11.345Z",
-    "lastVerifiedAt": "2026-10-10T14:50:11.345Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 249,
+      "ageMinutes": 283,
       "label": "4h ago",
-      "publishedAt": "2026-10-10T10:40:36.000Z",
-      "lastUpdated": "2026-10-10T14:50:11.345Z"
+      "publishedAt": "2026-10-10T16:12:21.000Z",
+      "lastUpdated": "2026-10-10T20:56:12.606Z"
     },
     "verification": {
       "level": "single_source",
       "sources": [
         {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
           "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/should-excited-going-liverpool-vs-34739949",
-          "credibilityScore": 80,
-          "publishedAt": "2026-10-10T10:40:36.000Z",
-          "discoveredAt": "2026-10-10T14:50:11.345Z"
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-made-shock-selection-34746647",
+          "credibilityScore": 78,
+          "publishedAt": "2026-10-10T16:12:21.000Z",
+          "discoveredAt": "2026-10-10T20:56:12.606Z"
         }
       ],
-      "confidenceScore": 80,
+      "confidenceScore": 78,
       "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
+        "Reported by Manchester Evening News MUFC",
         "Moderate source credibility"
       ],
       "confirmedBy": [],
       "verificationCount": 1
     },
     "relatedTeams": [
-      "manchester-city",
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-mv2ih0tw-hh5789",
-    "title": "Jamie Carragher 'doesn't feel right' over Liverpool title claim and sends Man City owners warning",
-    "summary": "Liverpool legend Jamie Carragher has called for strict sanctions for Man City after Premier League rule breaches",
-    "source": {
-      "name": "Liverpool Echo LFC",
-      "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/jamie-carragher-doesnt-feel-right-34745335",
-      "credibilityScore": 80
-    },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/jamie-carragher-doesnt-feel-right-34745335",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34699772.ece/ALTERNATES/s615/1_JS365126271.jpg",
-    "category": "Transfers",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/jamie-carragher-doesnt-feel-right-34745335",
-    "publishedAt": "2026-10-10T09:47:42.000Z",
-    "discoveredAt": "2026-10-10T14:50:11.345Z",
-    "lastVerifiedAt": "2026-10-10T14:50:11.345Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 302,
-      "label": "5h ago",
-      "publishedAt": "2026-10-10T09:47:42.000Z",
-      "lastUpdated": "2026-10-10T14:50:11.345Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/jamie-carragher-doesnt-feel-right-34745335",
-          "credibilityScore": 80,
-          "publishedAt": "2026-10-10T09:47:42.000Z",
-          "discoveredAt": "2026-10-10T14:50:11.345Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "liverpool"
+      "manchester-united",
+      "tottenham"
     ]
   }
 ]
