@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface Props {
   src: string | null | undefined;
@@ -11,31 +11,57 @@ interface Props {
   priority?: boolean;
 }
 
+/**
+ * Image with a graceful placeholder.
+ *
+ * Visibility is based on the image's actual state rather than only the `load`
+ * event: React assigns `src` before attaching the load listener, so an image
+ * served from the browser cache can finish loading first and never fire
+ * `onLoad`, which used to leave the image stuck at opacity 0. Failing images
+ * fall back to the initials placeholder — never a broken-image icon — and each
+ * src is requested at most once.
+ */
 export default function Image({ src, alt, className = '', fill, sizes, priority }: Props) {
   const [hasError, setHasError] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const [resolvedSrc, setResolvedSrc] = useState<string | null>(null);
+  const [revealed, setRevealed] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  const resolvedSrc = hasError ? null : src && src.trim() ? src.trim() : null;
 
   useEffect(() => {
     setHasError(false);
-    setIsLoading(true);
-    setResolvedSrc(src || null);
+    setRevealed(false);
   }, [src]);
 
-  const handleLoad = () => {
-    setIsLoading(false);
-  };
+  useEffect(() => {
+    if (!resolvedSrc) {
+      setRevealed(true);
+      return;
+    }
+    setRevealed(false);
+    // Same race as the load event: React assigns `src` before attaching the
+    // error listener, so a fast failure (DNS, cached error) can be reported
+    // before React hears it. Check the image's own state instead of relying
+    // only on the event.
+    const frame = requestAnimationFrame(() => {
+      const el = imgRef.current;
+      if (!el || !el.complete) return;
+      if (el.naturalWidth > 0) {
+        setRevealed(true);
+      } else {
+        setHasError(true);
+      }
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [resolvedSrc]);
 
   const handleError = () => {
     setHasError(true);
-    setIsLoading(false);
   };
 
-  const validSrc = hasError ? null : resolvedSrc;
-
-  if (validSrc === null) {
+  if (resolvedSrc === null) {
     return (
-      <div 
+      <div
         className={`bg-slate-800 flex items-center justify-center ${className}`}
         style={fill ? { position: 'absolute', inset: 0 } : {}}
       >
@@ -48,14 +74,16 @@ export default function Image({ src, alt, className = '', fill, sizes, priority 
 
   return (
     <img
-      src={validSrc}
+      ref={imgRef}
+      src={resolvedSrc}
       alt={alt}
-      srcSet={priority ? `${validSrc}?w=400 400w, ${validSrc}?w=800 800w` : undefined}
+      srcSet={priority ? `${resolvedSrc}?w=400 400w, ${resolvedSrc}?w=800 800w` : undefined}
       sizes={sizes}
       loading={priority ? 'eager' : 'lazy'}
-     onError={handleError}
-      onLoad={handleLoad}
-      className={`${fill ? 'object-cover' : 'object-cover'} transition-opacity ${isLoading ? 'opacity-0' : 'opacity-100'} ${className}`}
+      decoding="async"
+      onError={handleError}
+      onLoad={() => setRevealed(true)}
+      className={`${fill ? 'object-cover' : 'object-cover'} transition-opacity ${revealed ? 'opacity-100' : 'opacity-0'} ${className}`}
     />
   );
 }
