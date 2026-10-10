@@ -129,8 +129,8 @@ export default function Header() {
         first?.focus();
       }
     };
-    el.addEventListener('keydown', onKeyDown);
-    return () => el.removeEventListener('keydown', onKeyDown);
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
   }, [mobileMenuOpen]);
 
   const isActive = (href: string) => {
@@ -170,7 +170,7 @@ export default function Header() {
               </Link>
 
               <nav
-                className="ml-8 flex items-center gap-1"
+                className="ml-8 hidden items-center gap-1 lg:flex"
                 role="navigation"
                 aria-label="Primary navigation"
               >
@@ -215,7 +215,7 @@ export default function Header() {
               <button
                 ref={toggleBtnRef}
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="btn-icon md:hidden"
+                className="btn-icon lg:hidden!"
                 aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={mobileMenuOpen}
                 aria-controls="mobile-menu"
@@ -234,7 +234,7 @@ export default function Header() {
           id="mobile-menu"
           role="navigation"
           aria-label="Mobile navigation"
-          className="fixed top-16 left-0 right-0 z-[100] md:hidden border-b border-[var(--border-default)] bg-[var(--surface-1)]/95 backdrop-blur-xl shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto animate-in"
+          className="fixed top-16 left-0 right-0 z-[100] lg:hidden border-b border-[var(--border-default)] bg-[var(--surface-1)]/95 backdrop-blur-xl shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto animate-in"
         >
           <nav className="px-4 py-4 space-y-1">
             {mobileNavItems.map((item) => {
