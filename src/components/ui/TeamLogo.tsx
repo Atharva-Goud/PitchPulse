@@ -3,10 +3,17 @@
 import { useEffect, useState } from 'react';
 import { getTeamInitials } from '@/lib/utils/teams';
 import { resolveLocalLogoPath } from '@/lib/utils/logo-mapping';
-import { Team } from '@/types';
+
+/** Loose team shape accepted by the resolver (API rows, standings rows, …). */
+interface TeamLike {
+  id?: string | null;
+  name?: string | null;
+  logo?: string | null;
+  shortName?: string | null;
+}
 
 interface Props {
-  team?: Team | null;
+  team?: TeamLike | null;
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   className?: string;
   accentColor?: string;
@@ -35,7 +42,7 @@ const sizeClasses = {
 export default function TeamLogo({ team, size = 'md', className = '', alt }: Props) {
   const localLogo = resolveLocalLogoPath(team);
   const apiLogo = typeof team?.logo === 'string' && team.logo.trim().length > 0 ? team.logo.trim() : null;
-  const initials = getTeamInitials(team?.name, team?.shortName);
+  const initials = getTeamInitials(team?.name ?? undefined, team?.shortName ?? undefined);
 
   const candidates = [localLogo, apiLogo].filter((c): c is string => !!c);
   const [candidateIndex, setCandidateIndex] = useState(0);
@@ -66,7 +73,7 @@ export default function TeamLogo({ team, size = 'md', className = '', alt }: Pro
   return (
     <span
       className={`relative inline-flex flex-shrink-0 items-center justify-center overflow-hidden rounded-full bg-slate-800 text-center font-bold tracking-tight text-slate-300 ${sizeClass} ${className}`}
-      title={team?.name}
+      title={team?.name ?? undefined}
     >
       {showFallback ? (
         <span className="leading-none">{initials}</span>

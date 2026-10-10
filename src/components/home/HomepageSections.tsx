@@ -5,11 +5,10 @@ import MatchCard from '@/components/football/MatchCard';
 import NewsCard from '@/components/news/NewsCard';
 import TransferCard from '@/components/transfers/TransferCard';
 import EmptyState from '@/components/ui/EmptyState';
-import FallbackImage from '@/components/ui/Image';
+import CompetitionLogo from '@/components/ui/CompetitionLogo';
 import FootballQuiz from '@/components/quiz/FootballQuiz';
 import Link from 'next/link';
 import type { NormalizedMatch } from '@/lib/football/types';
-import { resolveCompetitionLogoPath } from '@/lib/utils/logo-mapping';
 import type { NewsArticle, Transfer, Competition } from '@/types';
 
 interface HomepageSectionsProps {
@@ -124,7 +123,7 @@ export default function HomepageSections({ data }: HomepageSectionsProps) {
               >
                 <div className="flex flex-col items-center gap-3 text-center">
                   <div className="relative h-12 w-12 flex-shrink-0">
-                    <FallbackImage src={resolveCompetitionLogoPath(competition) || competition.logo} alt={competition.name} className="absolute inset-0" />
+                    <CompetitionLogo competition={competition} size={48} className="absolute inset-0" />
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-white group-hover:text-[var(--primary)] transition-colors">

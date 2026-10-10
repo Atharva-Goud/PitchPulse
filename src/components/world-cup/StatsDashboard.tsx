@@ -43,7 +43,7 @@ function ScorerTable({ leaders }: { leaders: PlayerLeader[] }) {
                 {leader.team ? (
                   <span className="flex items-center gap-2">
                     <TeamLogo
-                      team={{ id: leader.team.id, name: leader.team.name, shortName: leader.team.name, logo: leader.team.logo, country: '', league: '' }}
+                      team={{ id: leader.team.id, name: leader.team.name, logo: leader.team.logo }}
                       size="xs"
                       alt=""
                     />
@@ -88,7 +88,7 @@ function TeamStatsTable({ rows }: { rows: TeamStatRow[] }) {
               <td className="px-3 py-2.5">
                 <span className="flex items-center gap-2.5">
                   <TeamLogo
-                    team={{ id: row.team.id, name: row.team.name, shortName: row.team.name, logo: row.team.logo, country: '', league: '' }}
+                    team={{ id: row.team.id, name: row.team.name, logo: row.team.logo }}
                     size="sm"
                     alt=""
                   />

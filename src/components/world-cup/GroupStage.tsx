@@ -38,7 +38,7 @@ function GroupCard({ group }: { group: GroupTable }) {
                   <div className="flex items-center gap-2.5">
                     <span className="w-4 text-center text-xs text-[var(--text-muted)]">{i + 1}</span>
                     <TeamLogo
-                      team={{ id: row.team.id, name: row.team.name, shortName: row.team.name, logo: row.team.logo, country: '', league: '' }}
+                      team={{ id: row.team.id, name: row.team.name, logo: row.team.logo }}
                       size="sm"
                       alt=""
                     />

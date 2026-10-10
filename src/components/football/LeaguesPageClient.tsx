@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Trophy, ChevronRight, TrendingUp } from 'lucide-react';
 import TeamLogo from '@/components/football/TeamLogo';
-import { resolveCompetitionLogoPath } from '@/lib/utils/logo-mapping';
+import CompetitionLogo from '@/components/ui/CompetitionLogo';
 import type { ApiLeague } from '@/lib/football/standings';
 import { LoadingState, EmptyState } from '@/components/ui';
 
@@ -38,7 +38,6 @@ export default function LeaguesPageClient({ initialData }: LeaguesPageClientProp
           </h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {leaguesWithData.map((l) => {
-              const crest = resolveCompetitionLogoPath(l) || l.logo;
               return (
               <Link
                 key={l.slug}
@@ -46,12 +45,8 @@ export default function LeaguesPageClient({ initialData }: LeaguesPageClientProp
                 className="rounded-xl border border-white/10 bg-slate-900/60 p-5 hover:border-emerald-500/30 hover:bg-slate-900/80 transition-all duration-200 group"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform">
-                    {crest ? (
-                      <img src={crest} alt="" className="h-full w-full object-contain p-1" />
-                    ) : (
-                      <Trophy className="h-6 w-6 text-slate-500 group-hover:text-emerald-400 transition-colors" />
-                    )}
+                  <div className="flex-shrink-0 group-hover:scale-105 transition-transform">
+                    <CompetitionLogo competition={l} size={48} className="group-hover:border-emerald-500/30" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="font-semibold text-white truncate group-hover:text-emerald-400 transition-colors">
@@ -89,17 +84,10 @@ export default function LeaguesPageClient({ initialData }: LeaguesPageClientProp
           </h2>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {leaguesWithoutData.map((l) => {
-              const crest = resolveCompetitionLogoPath(l) || l.logo;
               return (
               <div key={l.slug} className="rounded-xl border border-white/10 bg-slate-900/40 p-4 opacity-60">
                 <div className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center overflow-hidden">
-                    {crest ? (
-                      <img src={crest} alt="" className="h-full w-full object-contain p-1" />
-                    ) : (
-                      <Trophy className="h-5 w-5 text-slate-500" />
-                    )}
-                  </div>
+                  <CompetitionLogo competition={l} size={40} />
                   <div className="flex-1 min-w-0">
                     <h3 className="font-medium text-slate-300 truncate">{l.name}</h3>
                     <p className="text-xs text-slate-500">{l.country}</p>

@@ -733,6 +733,8 @@ export interface CompetitionLogoMapping {
   competition: CompetitionKey;
   /** Verified alternative ids/names seen in data. */
   aliases?: string[];
+  /** Explicit filename stem override when it differs from the id. */
+  logoFile?: string;
 }
 
 export const COMPETITION_LOGO_MAPPINGS: CompetitionLogoMapping[] = [
@@ -742,9 +744,21 @@ export const COMPETITION_LOGO_MAPPINGS: CompetitionLogoMapping[] = [
   { id: 'nations-league', name: 'UEFA Nations League', competition: 'nations-league', aliases: ['UEFA Nations League', 'Nations League'] },
 ];
 
-/** Build the exact public path for a competition crest (extension-agnostic). */
-export function competitionLogoPathFor(entry: CompetitionLogoMapping): string {
-  return `${COMPETITION_PATHS[entry.competition]}/${entry.id}.svg`;
+/** Build the exact public path for a competition crest (extension-agnostic).
+ *
+ * Resolved against the generated manifest, so this only ever returns a file
+ * that actually exists — the previous `.svg` suffix produced paths like
+ * /assets/logos/uefa/champions-league/champions-league.svg that 404'd, because
+ * uploaded assets are PNG and those folders currently hold team crests only.
+ * Returns null when there is no local crest; callers fall back to the
+ * API-provided competition logo or a neutral icon. Never a guess. */
+export function competitionLogoPathFor(entry: CompetitionLogoMapping): string | null {
+  const stems = [entry.logoFile, entry.id, entry.name, ...(entry.aliases || [])];
+  for (const candidate of stems) {
+    const stem = toFindableStem(candidate);
+    if (stem && LOGO_ASSETS_BY_STEM[stem]) return LOGO_ASSETS_BY_STEM[stem].path;
+  }
+  return null;
 }
 
 const competitionIndex = new Map<string, CompetitionLogoMapping>();
