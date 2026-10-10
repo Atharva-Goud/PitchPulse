@@ -5,6 +5,7 @@ import { Transfer, TransferStatus } from '@/types';
 import TeamLogo from '@/components/ui/TeamLogo';
 import FallbackImage from '@/components/ui/Image';
 import { resolveImageUrl } from '@/lib/utils/image';
+import { useMounted } from '@/hooks/useMounted';
 
 interface Props {
   transfer: Transfer;
@@ -41,12 +42,16 @@ const statusConfig: Record<TransferStatus, { color: string; bgColor: string; ico
 
 // Transfer data is static (no live feed), so anything older than 30 days
 // is historical, not current. Label it so it isn't mistaken for fresh news.
-function isStaleTransfer(updatedAt: string): boolean {
+// Client-only: a prerendered verdict is computed at build time and would not
+// match the client render (hydration mismatch).
+function isStaleTransfer(updatedAt: string, mounted: boolean): boolean {
+  if (!mounted) return false;
   const ageMs = Date.now() - new Date(updatedAt).getTime();
   return ageMs > 30 * 24 * 60 * 60 * 1000;
 }
 
 export default function TransferCard({ transfer, variant = 'default' }: Props) {
+  const mounted = useMounted();
   const formatFee = (fee: number | null) => {
     if (!fee) return 'Undisclosed';
     if (fee >= 1000000) {
@@ -56,6 +61,7 @@ export default function TransferCard({ transfer, variant = 'default' }: Props) {
   };
 
   const formatDate = (dateString: string) => {
+    if (!mounted) return '';
     const date = new Date(dateString);
     const now = new Date();
     const diffMs = now.getTime() - date.getTime();
@@ -104,7 +110,7 @@ export default function TransferCard({ transfer, variant = 'default' }: Props) {
               {statusConfigItem.icon}
               {status}
             </span>
-            {isStaleTransfer(transfer.updatedAt) && (
+              {isStaleTransfer(transfer.updatedAt, mounted) && (
               <span className="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs bg-slate-700/60 text-slate-400">
                 <Clock className="h-3 w-3" aria-hidden="true" />
                 Historical

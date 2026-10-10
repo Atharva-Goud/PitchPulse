@@ -5,6 +5,7 @@ import { Clock, ExternalLink } from 'lucide-react';
 import { NewsArticle, SourceObject } from '@/types';
 import { resolveImageUrl, localNewsImage } from '@/lib/utils/image';
 import FallbackImage from '@/components/ui/Image';
+import { useMounted } from '@/hooks/useMounted';
 
 interface Props {
   article: NewsArticle;
@@ -31,9 +32,13 @@ function resolveArticleImage(article: NewsArticle): string | null {
 }
 
 export default function NewsCard({ article, variant = 'default' }: Props) {
+  const mounted = useMounted();
   const sourceName = getSourceName(article.source);
   const imageUrl = resolveArticleImage(article);
   const formatDate = (dateString: string) => {
+    // Rendered only after mount: a prerendered relative label is computed at
+    // build time and would not match the client render (hydration mismatch).
+    if (!mounted) return '';
     const date = new Date(dateString);
     const now = new Date();
     const diffMs = now.getTime() - date.getTime();

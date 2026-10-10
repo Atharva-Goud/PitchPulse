@@ -284,6 +284,24 @@ body {
     animation: animateIn var(--motion-base) var(--ease-out);
   }
 
+  /* Menu reveal — transform only, never opacity.
+     The mobile menu must be visible even if the document timeline is
+     frozen (background/occluded tab, throttled rendering): an
+     opacity-from-0 keyframe would leave it stuck invisible. */
+  .animate-menu-in {
+    animation: menuIn var(--motion-fast) var(--ease-out);
+  }
+
+  @keyframes menuIn {
+    from {
+      transform: translateY(-6px);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+
   @keyframes animateIn {
     from {
       opacity: 0;

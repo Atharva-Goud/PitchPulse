@@ -234,7 +234,7 @@ export default function Header() {
           id="mobile-menu"
           role="navigation"
           aria-label="Mobile navigation"
-          className="fixed top-16 left-0 right-0 z-[100] lg:hidden border-b border-[var(--border-default)] bg-[var(--surface-1)]/95 backdrop-blur-xl shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto animate-in"
+          className="fixed top-16 left-0 right-0 z-[100] lg:hidden border-b border-[var(--border-default)] bg-[var(--surface-1)]/95 backdrop-blur-xl shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto animate-menu-in"
         >
           <nav className="px-4 py-4 space-y-1">
             {mobileNavItems.map((item) => {
