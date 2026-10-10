@@ -36,6 +36,7 @@ const navItems = [
   { href: '/news', label: 'News' },
   { href: '/transfers', label: 'Transfers' },
   { href: '/quiz', label: 'Quiz' },
+  { href: '/world-cup-2026', label: 'World Cup 2026', icon: Trophy },
   { href: '/search', label: 'Search', icon: Search },
   { href: '/privacy', label: 'Privacy Policy' },
   { href: '/cookie-policy', label: 'Cookie Policy' },
@@ -52,6 +53,7 @@ const desktopNavItems = [
   { href: '/news', label: 'News' },
   { href: '/transfers', label: 'Transfers' },
   { href: '/quiz', label: 'Quiz' },
+  { href: '/world-cup-2026', label: 'World Cup 2026', icon: Trophy },
 ];
 
 // Mobile: all navigation items including legal pages (vertical layout)
@@ -64,6 +66,7 @@ const mobileNavItems = [
   { href: '/news', label: 'News' },
   { href: '/transfers', label: 'Transfers' },
   { href: '/quiz', label: 'Quiz' },
+  { href: '/world-cup-2026', label: 'World Cup 2026', icon: Trophy },
   { href: '/search', label: 'Search', icon: Search },
   { href: '/privacy', label: 'Privacy Policy' },
   { href: '/cookie-policy', label: 'Cookie Policy' },
@@ -231,7 +234,7 @@ export default function Header() {
           id="mobile-menu"
           role="navigation"
           aria-label="Mobile navigation"
-          className="fixed top-16 left-0 right-0 z-40 md:hidden border-b border-[var(--border-default)] bg-[var(--surface-1)]/95 backdrop-blur-xl shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto"
+          className="fixed top-16 left-0 right-0 z-[100] md:hidden border-b border-[var(--border-default)] bg-[var(--surface-1)]/95 backdrop-blur-xl shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto animate-in"
         >
           <nav className="px-4 py-4 space-y-1">
             {mobileNavItems.map((item) => {
