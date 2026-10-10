@@ -3,7 +3,7 @@ import { getLiveMatchList, getUpcomingMatchList, getRecentMatchList } from '@/li
 import MatchesPageClient from '@/components/football/MatchesPageClient';
 import type { NormalizedMatch } from '@/lib/football/types';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 interface MatchesPageData {
   live: NormalizedMatch[];

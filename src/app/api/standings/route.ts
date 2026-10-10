@@ -26,7 +26,7 @@ async function discoverLeagues(): Promise<LeagueMeta[]> {
   const { fetchAvailableLeaguesRaw } = await import('@/lib/football/api');
   const leagues = await fetchAvailableLeaguesRaw();
 
-  const results = leagues.map((l) => {
+  const results = leagues.map((l: any) => {
     const hasStandings = (l.coverage?.standingsGroups ?? 0) > 0 && (l.coverage?.hasData ?? false);
     return { slug: l.slug, name: l.name, country: l.country, hasStandings };
   });

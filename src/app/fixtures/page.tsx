@@ -4,7 +4,7 @@ import { getAllCompetitions, type CompetitionConfig } from '@/lib/football/compe
 import FixturesPageClient from '@/components/football/FixturesPageClient';
 import type { NormalizedMatch } from '@/lib/football/types';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 interface FixturesPageData {
   matches: NormalizedMatch[];

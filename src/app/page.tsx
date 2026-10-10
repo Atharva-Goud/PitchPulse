@@ -3,7 +3,7 @@ import { getHomepageData } from '@/lib/homepage-data';
 import HomepageHero from '@/components/home/HomepageHero';
 import HomepageSections from '@/components/home/HomepageSections';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 export default async function HomePage() {
   const data = await getHomepageData();

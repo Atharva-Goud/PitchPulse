@@ -9,6 +9,7 @@
  * actually exposes. Nothing about which leagues exist is hard-coded here.
  */
 
+import { unstable_cache as cache } from 'next/cache';
 import { fetchStandings, fetchAvailableLeagues, fetchFixtures, type ApiLeague, type ApiStanding, type ApiFixture } from '@/lib/football/api';
 
 export interface TeamRecord {
@@ -122,10 +123,10 @@ function calculateRecordsAndForm(
  * Returns an empty array when the API has no data for that league — the
  * caller is responsible for distinguishing "no data" from "API failure".
  */
-export async function getStandingsBySlug(
+export const getStandingsBySlug = cache(async (
   leagueSlug: string,
   season?: number
-): Promise<StandingRow[]> {
+): Promise<StandingRow[]> => {
   const [rawStandings, fixtures] = await Promise.all([
     fetchStandings(leagueSlug),
     fetchFixtures(leagueSlug, 'finished'),
@@ -168,7 +169,7 @@ export async function getStandingsBySlug(
     .sort((a, b) => a.rank - b.rank);
 
   return standingsWithRecords;
-}
+});
 
 /** Backwards-compatible alias used by the existing match pages. */
 export async function getStandings(
@@ -183,9 +184,9 @@ export async function getStandings(
  * source of truth for the league selector — no display names or slugs are
  * hard-coded in the UI.
  */
-export async function getAvailableLeagues(): Promise<ApiLeague[]> {
+export const getAvailableLeagues = cache(async (): Promise<ApiLeague[]> => {
   return fetchAvailableLeagues();
-}
+});
 
 /**
  * Seasons the worldcup26.ir API exposes for club competitions.

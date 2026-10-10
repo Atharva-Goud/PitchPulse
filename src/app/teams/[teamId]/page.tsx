@@ -45,7 +45,7 @@ async function getTeamPageData(teamId: string): Promise<TeamPageData> {
     if (slug) {
       try {
         const standings = await getStandingsBySlug(slug);
-        const teamStanding = standings.find(s => s.teamName === teamData.name || s.teamId === teamData.id);
+        const teamStanding = standings.find((s: any) => s.teamName === teamData.name || s.teamId === teamData.id);
         if (teamStanding) {
           standingsPosition = {
             rank: teamStanding.rank,

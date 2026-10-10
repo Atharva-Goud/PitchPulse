@@ -3,7 +3,7 @@ import { getTransferRumours, getConfirmedTransfers } from '@/lib/data/transfers'
 import TransfersPageClient from '@/components/transfers/TransfersPageClient';
 import type { Transfer, TransferStatus } from '@/types';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 300; // 5 minutes - static JSON
 
 interface TransfersPageData {
   rumours: Transfer[];

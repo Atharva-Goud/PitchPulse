@@ -15,6 +15,8 @@
  * it returns HTTP 429; we retry with exponential backoff.
  */
 
+import { unstable_cache as nextCache } from 'next/cache';
+
 export const FOOTBALL_API_BASE = process.env.NEXT_PUBLIC_FOOTBALL_API_URL || 'https://worldcup26.ir/get/soccer';
 
 if (typeof window !== 'undefined') {
@@ -472,7 +474,7 @@ export async function fetchLeagues(kind: 'club' | 'all' = 'club'): Promise<ApiLe
 /**
  * Fetch the available leagues from the API with full raw data including coverage.
  */
-export async function fetchAvailableLeaguesRaw(): Promise<Array<ApiLeague & { coverage: any }>> {
+export const fetchAvailableLeaguesRaw = nextCache(async (): Promise<Array<ApiLeague & { coverage: any }>> => {
   try {
     const data = await apiFetch('/leagues', { kind: 'club', available: 'true' });
     if (typeof window !== 'undefined') {
@@ -493,17 +495,17 @@ export async function fetchAvailableLeaguesRaw(): Promise<Array<ApiLeague & { co
     console.error('football-api: failed to fetch leagues:', error);
     return [];
   }
-}
+});
 
 /**
  * Fetch the available leagues from the API and return them as a slug → league
  * map. This is the single source of truth for which competitions can be
  * displayed — nothing is hard-coded here.
  */
-export async function fetchAvailableLeagues(): Promise<ApiLeague[]> {
+export const fetchAvailableLeagues = nextCache(async (): Promise<ApiLeague[]> => {
   const leagues = await fetchAvailableLeaguesRaw();
   return leagues.map(({ coverage, ...l }) => l);
-}
+});
 
 export async function fetchFixtures(
   league: string,
@@ -802,7 +804,7 @@ export function getLeagueSlug(key: CompetitionKey): string {
 export async function getAllLeagueSlugs(): Promise<string[]> {
   try {
     const leagues = await fetchAvailableLeaguesRaw();
-    const slugs = leagues.map(l => l.slug).filter(Boolean);
+    const slugs = leagues.map((l: { slug: string }) => l.slug).filter(Boolean);
     if (typeof window !== 'undefined') {
       console.log('[getAllLeagueSlugs] fetched', slugs.length, 'leagues:', slugs);
     }
@@ -848,12 +850,13 @@ export async function fetchClubs(league: string): Promise<ApiClub[]> {
   }
 }
 
-export async function fetchAllClubs(): Promise<ApiClub[]> {
+export const fetchAllClubs = nextCache(async (): Promise<ApiClub[]> => {
   const leagues = Object.values(COMPETITIONS);
-  const results: ApiClub[] = [];
-  for (const l of leagues) {
-    const clubs = await fetchClubs(l);
-    results.push(...clubs);
-  }
-  return results;
-}
+  const results = await Promise.all(
+    leagues.map(async (l) => {
+      const clubs = await fetchClubs(l);
+      return clubs;
+    })
+  );
+  return results.flat();
+});

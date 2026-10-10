@@ -3,7 +3,7 @@ import { getLatestNewsSnapshot, getTrendingNewsSnapshot } from '@/lib/data/news'
 import NewsPageClient from '@/components/news/NewsPageClient';
 import type { NewsArticle, NewsCategory } from '@/types';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 300; // 5 minutes - news sync runs every 6 hours
 
 interface NewsPageData {
   latest: NewsArticle[];

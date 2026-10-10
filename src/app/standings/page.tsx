@@ -4,7 +4,7 @@ import { getAvailableSeasons } from '@/lib/football/standings';
 import { getStandingsBySlug } from '@/lib/football/standings';
 import StandingsPageClient from '@/components/football/StandingsPageClient';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 interface LeagueMeta {
   slug: string;
@@ -24,7 +24,7 @@ async function getStandingsPageData(): Promise<StandingsPageData> {
     getAvailableSeasons(),
   ]);
 
-  const leagues: LeagueMeta[] = leaguesRaw.map((l) => {
+  const leagues: LeagueMeta[] = leaguesRaw.map((l: any) => {
     const hasStandings = (l.coverage?.standingsGroups ?? 0) > 0 && (l.coverage?.hasData ?? false);
     return { slug: l.slug, name: l.name, country: l.country, hasStandings };
   });

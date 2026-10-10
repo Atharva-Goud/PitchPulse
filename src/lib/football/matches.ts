@@ -7,6 +7,7 @@
  * and isolates the football API from the news system entirely.
  */
 
+import { unstable_cache as cache } from 'next/cache';
 import {
   fetchFixtures,
   COMPETITIONS,
@@ -67,9 +68,9 @@ function toNormalizable(f: ApiFixture): {
   };
 }
 
-export async function getLiveMatchList(
+export const getLiveMatchList = cache(async (
   competition?: CompetitionKey
-): Promise<NormalizedMatch[]> {
+): Promise<NormalizedMatch[]> => {
   let leagues: string[];
   if (competition) {
     const league = COMPETITIONS[competition];
@@ -81,18 +82,19 @@ export async function getLiveMatchList(
     console.log('[getLiveMatchList] querying', leagues.length, 'leagues:', leagues);
   }
 
-  const results: NormalizedMatch[] = [];
-  for (const l of leagues) {
-    const raw = await fetchFixtures(l, 'live');
-    results.push(...raw.map(f => normalizeApiFixture(toNormalizable(f))).filter(isLive));
-  }
-  return results;
-}
+  const results = await Promise.all(
+    leagues.map(async (l) => {
+      const raw = await fetchFixtures(l, 'live');
+      return raw.map(f => normalizeApiFixture(toNormalizable(f))).filter(isLive);
+    })
+  );
+  return results.flat();
+});
 
-export async function getUpcomingMatchList(
+export const getUpcomingMatchList = cache(async (
   competition?: CompetitionKey,
   days: number = 14
-): Promise<NormalizedMatch[]> {
+): Promise<NormalizedMatch[]> => {
   let leagues: string[];
   if (competition) {
     const league = COMPETITIONS[competition];
@@ -106,30 +108,28 @@ export async function getUpcomingMatchList(
 
   const now = Date.now();
   const horizon = now + days * 24 * 60 * 60 * 1000;
-  const results: NormalizedMatch[] = [];
 
-  for (const l of leagues) {
-    const raw = await fetchFixtures(l, 'all');
-    results.push(
-      ...raw
+  const results = await Promise.all(
+    leagues.map(async (l) => {
+      const raw = await fetchFixtures(l, 'all');
+      return raw
         .map(f => normalizeApiFixture(toNormalizable(f)))
         .filter(isScheduled)
         .filter(m => {
           const t = new Date(m.kickoff).getTime();
           return !isNaN(t) && t > now && t <= horizon;
-        })
-    );
-  }
+        });
+    })
+  );
 
-  return results.sort(
+  return results.flat().sort(
     (a, b) => new Date(a.kickoff).getTime() - new Date(b.kickoff).getTime()
   );
-}
-
-export async function getRecentMatchList(
+});
+export const getRecentMatchList = cache(async (
   competition?: CompetitionKey,
   limit: number = 20
-): Promise<NormalizedMatch[]> {
+): Promise<NormalizedMatch[]> => {
   let leagues: string[];
   if (competition) {
     const league = COMPETITIONS[competition];
@@ -141,21 +141,21 @@ export async function getRecentMatchList(
     console.log('[getRecentMatchList] querying', leagues.length, 'leagues:', leagues);
   }
 
-  const results: NormalizedMatch[] = [];
-  for (const l of leagues) {
-    const raw = await fetchFixtures(l, 'all');
-    results.push(
-      ...raw
+  const results = await Promise.all(
+    leagues.map(async (l) => {
+      const raw = await fetchFixtures(l, 'all');
+      return raw
         .map(f => normalizeApiFixture(toNormalizable(f)))
         .filter(isFinished)
-        .filter(m => new Date(m.kickoff).getTime() <= Date.now())
-    );
-  }
+        .filter(m => new Date(m.kickoff).getTime() <= Date.now());
+    })
+  );
 
   return results
+    .flat()
     .sort((a, b) => new Date(b.kickoff).getTime() - new Date(a.kickoff).getTime())
     .slice(0, limit);
-}
+});
 
 export async function getMatchById(id: string): Promise<NormalizedMatch | null> {
   const result = await getMatchWithLeague(id);

@@ -43,7 +43,7 @@ async function discoverLeagues(): Promise<LeagueWithLeader[]> {
   }
 
   const results = await Promise.all(
-    leagues.map(async (l) => {
+    leagues.map(async (l: any) => {
       let leader: LeagueWithLeader['leader'] = null;
       // Use coverage data from the leagues API to avoid extra requests
       const teamCount = l.coverage?.clubs ?? 0;

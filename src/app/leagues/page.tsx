@@ -3,7 +3,7 @@ import { fetchAvailableLeaguesRaw } from '@/lib/football/api';
 import { fetchStandings } from '@/lib/football/api';
 import LeaguesPageClient from '@/components/football/LeaguesPageClient';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 interface LeagueWithLeader {
   id: string;
@@ -28,7 +28,7 @@ async function getLeaguesPageData(): Promise<LeagueWithLeader[]> {
   }
 
   const results = await Promise.all(
-    leagues.map(async (l) => {
+    leagues.map(async (l: any) => {
       let leader: LeagueWithLeader['leader'] = null;
       const teamCount = l.coverage?.clubs ?? 0;
       const hasStandings = (l.coverage?.standingsGroups ?? 0) > 0 && (l.coverage?.hasData ?? false);

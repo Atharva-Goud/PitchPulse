@@ -24,9 +24,8 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    // Minimum display time lands in the intended 3–4s window; the 0.5s
-    // fade-out in GlobalLoader extends total visible time to ~3.5s.
-    const MIN_DISPLAY_MS = 3000;
+    // Minimum display time - reduced to 500ms for faster perceived performance
+    const MIN_DISPLAY_MS = 500;
 
     let settled = false;
 
@@ -36,9 +35,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       setReady(true);
     };
 
-    // Always enforce the minimum display time on initial load. This is the
-    // primary trigger; it guarantees the animation plays for the intended
-    // window regardless of how fast the document finishes loading.
+    // Always enforce the minimum display time on initial load
     const timer = window.setTimeout(markReady, MIN_DISPLAY_MS);
 
     // If the document is not yet fully loaded, also dismiss as soon as it
