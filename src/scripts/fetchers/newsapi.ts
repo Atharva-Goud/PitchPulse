@@ -60,7 +60,18 @@ export async function fetchFromNewsAPI(query: string = 'football'): Promise<any[
       category: detectCategory(a.title, a.description),
       publishedAt: a.publishedAt,
       relatedTeams: detectTeams(`${a.title} ${a.description}`),
-    }));
+    })) as Array<{
+      title: string;
+      summary: string;
+      source: string;
+      sourceId: string;
+      sourceUrl: string;
+      sourceCredibility: number;
+      image: string | null;
+      category: string;
+      publishedAt: string;
+      relatedTeams: string[];
+    }>;
     
     // Filter to English-only articles
     const englishArticles = articles.filter(a => isLikelyEnglish(`${a.title} ${a.summary}`));
