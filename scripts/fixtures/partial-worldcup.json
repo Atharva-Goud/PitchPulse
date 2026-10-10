@@ -1,0 +1,70 @@
+{
+  "name": "World Cup 2026 (partial fixture for edge-case tests)",
+  "matches": [
+    {
+      "num": 1,
+      "round": "Matchday 1",
+      "date": "2026-06-11",
+      "time": "13:00 UTC-6",
+      "team1": "Mexico",
+      "team2": "South Africa",
+      "score": { "ft": [2, 0], "ht": [1, 0] },
+      "goals1": [{ "name": "Julián Quiñones", "minute": "9" }, { "name": "Raúl Jiménez", "minute": "67", "penalty": true }],
+      "goals2": [],
+      "group": "Group A",
+      "ground": "Mexico City"
+    },
+    {
+      "num": 2,
+      "round": "Matchday 1",
+      "date": "2026-06-11",
+      "time": "13:00 UTC-6",
+      "team1": "South Korea",
+      "team2": "Czech Republic",
+      "group": "Group A",
+      "ground": "Los Angeles"
+    },
+    {
+      "num": 3,
+      "round": "Matchday 2",
+      "date": "2026-06-17",
+      "time": "12:00 UTC-6",
+      "team1": "South Africa",
+      "team2": "South Korea",
+      "score": { "ft": [1, 1], "ht": [0, 0] },
+      "group": "Group A",
+      "ground": "Mexico City"
+    },
+    {
+      "num": 101,
+      "round": "Round of 32",
+      "date": "2026-06-28",
+      "time": "12:00 UTC-6",
+      "team1": "Mexico",
+      "team2": "South Korea",
+      "score": { "ft": [1, 1], "ht": [0, 0], "et": [1, 1], "p": [4, 3] },
+      "group": null,
+      "ground": "Mexico City"
+    },
+    {
+      "num": 102,
+      "round": "Round of 32",
+      "date": "2026-06-28",
+      "time": "16:00 UTC-6",
+      "team1": "Czech Republic",
+      "team2": "South Africa",
+      "group": null,
+      "ground": "Houston"
+    },
+    {
+      "num": 103,
+      "round": "Round of 16",
+      "date": "2026-07-03",
+      "time": "16:00 UTC-6",
+      "team1": "Mexico",
+      "team2": "South Africa",
+      "group": null,
+      "ground": "Mexico City"
+    }
+  ]
+}

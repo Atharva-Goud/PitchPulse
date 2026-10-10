@@ -1,13 +1,13 @@
 'use client';
 
-import Link from 'next/link';
 import { useState } from 'react';
-import { Crown, Trophy } from 'lucide-react';
+import { Crown, MapPin, Trophy } from 'lucide-react';
+import { format } from 'date-fns';
 import TeamLogo from '@/components/ui/TeamLogo';
-import { Badge } from '@/components/ui';
+import { Badge, Card } from '@/components/ui';
 import DataUnavailablePanel from './DataUnavailablePanel';
-import type { BracketMatch, BracketRound, BracketTeam } from '@/lib/football/world-cup';
-import type { WorldCupData } from '@/lib/football/world-cup';
+import { KNOCKOUT_ROUNDS } from '@/lib/football/world-cup';
+import type { BracketMatch, BracketTeam, WorldCupData } from '@/lib/football/world-cup';
 
 interface Props {
   data: WorldCupData;
@@ -18,6 +18,8 @@ const STATUS_BADGE: Record<BracketMatch['status'], { variant: 'live' | 'finished
   post: { variant: 'finished', label: 'FT' },
   pre: { variant: 'upcoming', label: 'Scheduled' },
 };
+
+const ROUND_BY_ID = new Map(KNOCKOUT_ROUNDS.map((r) => [r.id, r]));
 
 function teamForLogo(team: BracketTeam | null) {
   if (!team) return null;
@@ -59,126 +61,107 @@ function TeamRow({ team, score, isWinner }: { team: BracketTeam | null; score: n
   );
 }
 
-function MatchCard({ match }: { match: BracketMatch }) {
+function MatchCard({ match, roundShort }: { match: BracketMatch; roundShort: string }) {
   const badge = STATUS_BADGE[match.status];
-  const body = (
-    <>
-      <div className="mb-1.5 flex items-center justify-between">
+  return (
+    <div className="w-full min-w-[228px] rounded-xl border border-[var(--border-default)] bg-[var(--surface-2)]/80 p-3 backdrop-blur-sm">
+      <div className="mb-1.5 flex items-center justify-between gap-2">
         <Badge variant={badge.variant} dot={match.status === 'in'}>
           {badge.label}
         </Badge>
-        <span className="text-[11px] font-medium uppercase tracking-wide text-[var(--text-muted)]">
-          {match.detail}
+        <span className="flex items-center gap-2 text-[11px] font-medium uppercase tracking-wide text-[var(--text-muted)]">
+          <span className="rounded bg-[var(--surface-3)] px-1.5 py-0.5 text-[10px]">{roundShort}</span>
+          {match.shootout ? <span className="text-[var(--warning)]">pens {match.shootout.home}-{match.shootout.away}</span> : null}
+          {match.detail === 'a.e.t.' ? <span className="text-[var(--warning)]">a.e.t.</span> : null}
         </span>
       </div>
       <TeamRow team={match.home} score={match.homeScore} isWinner={!!match.home?.winner} />
       <TeamRow team={match.away} score={match.awayScore} isWinner={!!match.away?.winner} />
-    </>
+      {match.kickoff || match.ground ? (
+        <p className="mt-1.5 flex items-center gap-1 text-[11px] text-[var(--text-muted)]">
+          <MapPin className="h-3 w-3 flex-shrink-0" aria-hidden="true" />
+          <span className="truncate">
+            {match.kickoff ? format(new Date(match.kickoff), 'EEE d MMM, HH:mm') : ''}
+            {match.kickoff && match.ground ? ' · ' : ''}
+            {match.ground ?? ''}
+          </span>
+        </p>
+      ) : null}
+    </div>
   );
+}
 
-  const className =
-    'block w-full min-w-[240px] rounded-xl border border-[var(--border-default)] bg-[var(--surface-2)]/80 p-3 backdrop-blur-sm transition-colors';
-  const interactive = match.href
-    ? 'hover:border-[var(--border-focus)]/40 hover:bg-[var(--surface-3)]/80 focus:outline-none focus:ring-2 focus:ring-[var(--border-focus)]/50'
-    : '';
-
-  if (match.href) {
-    return (
-      <Link href={match.href} className={`${className} ${interactive}`} aria-label={`Match: ${match.home?.name ?? 'TBD'} vs ${match.away?.name ?? 'TBD'}`}>
-        {body}
-      </Link>
-    );
-  }
+/** Elbow connector between a match pair and the match it feeds. */
+function Connector() {
   return (
-    <div className={`${className} opacity-80`} aria-disabled="true">
-      {body}
+    <div className="relative mx-2 hidden h-full w-6 flex-shrink-0 sm:block" aria-hidden="true">
+      <span className="absolute left-0 top-1/2 h-px w-6 -translate-y-1/2 bg-[var(--border-strong)]" />
+      <span className="absolute right-0 top-0 h-full w-px bg-[var(--border-strong)]" />
+      <span className="absolute right-0 top-1/2 h-px w-6 -translate-y-1/2 bg-[var(--border-strong)]" />
     </div>
   );
 }
 
 /**
- * Bracket columns with CSS elbow connectors.
+ * Recursive bracket subtree.
  *
- * Matches in a round are paired by index (2i, 2i+1 feed round+1 match i), so
- * each pair renders in a flex row: two stacked match cards, the vertical
- * connector spanning them, and the elbow into the next round's match card.
+ * Renders the match at the given id with its feeder matches nested to the
+ * left. Feeders come from each match's resolved `feederIds` (the match each
+ * participant actually won) — never from positional pairing, which
+ * verification showed does not match the published bracket order. A null
+ * feeder is left unresolved rather than guessed.
  */
-function BracketTree({ matches, next, depth }: { matches: BracketMatch[]; next?: BracketMatch; depth: number }) {
-  if (matches.length === 1) {
-    return (
-      <div className="flex items-center">
-        <MatchCard match={matches[0]} />
-        {next ? <Connector /> : null}
-      </div>
-    );
-  }
-
-  const pairs: BracketMatch[][] = [];
-  for (let i = 0; i < matches.length; i += 2) {
-    pairs.push([matches[i], matches[i + 1]].filter(Boolean));
-  }
+function SubBracket({ rounds, match }: { rounds: WorldCupData['rounds']; match: BracketMatch }) {
+  const roundShort = ROUND_BY_ID.get(match.round)?.short ?? match.round;
+  const feeders = (match.feederIds ?? [])
+    .map((id) => (id ? rounds.flatMap((r) => r.matches).find((m) => m.id === id) ?? null : null))
+    .filter((m): m is BracketMatch => m !== null);
 
   return (
-    <div className="flex flex-col justify-around">
-      {pairs.map((pair, i) => (
-        <div key={i} className="flex items-center py-2">
-          <div className="flex flex-col gap-2">
-            {pair.map((m) => (
-              <MatchCard key={m.id} match={m} />
-            ))}
-          </div>
-          <Connector />
-          {next ? <MatchCard match={next} /> : null}
+    <div className="flex items-center">
+      {feeders.length > 0 ? (
+        <div className="flex flex-col justify-around gap-2">
+          {feeders.map((feeder) => (
+            <SubBracket key={feeder.id} rounds={rounds} match={feeder} />
+          ))}
         </div>
-      ))}
-    </div>
-  );
-}
-
-function Connector() {
-  return (
-    <div className="relative mx-3 hidden h-full w-8 flex-shrink-0 sm:block" aria-hidden="true">
-      <span className="absolute left-0 top-1/2 h-px w-8 -translate-y-1/2 bg-[var(--border-strong)]" />
-      <span className="absolute right-0 top-0 h-full w-px bg-[var(--border-strong)]" />
-      <span className="absolute right-0 top-1/2 h-px w-8 -translate-y-1/2 bg-[var(--border-strong)]" />
+      ) : null}
+      <Connector />
+      <MatchCard match={match} roundShort={roundShort} />
     </div>
   );
 }
 
 export default function KnockoutBracket({ data }: Props) {
-  const [activeRound, setActiveRound] = useState<string>('all');
+  const [selectedRound, setSelectedRound] = useState<string>('all');
 
-  const brackets = data.rounds.filter((r) => r.matches.length > 0);
-
-  if (!data.source.available || brackets.length === 0) {
+  const rounds = data.rounds.filter((r) => r.matches.length > 0);
+  if (!data.source.available || rounds.length === 0) {
     return (
       <DataUnavailablePanel
         section="Knockout journey tree"
-        checkedSources={data.source.checkedSources}
-        requiredSources={[
-          '/{league}/fixtures  (knockout matches with teams, scores, status)',
-          'shootout details on competition details',
-        ]}
+        reason={data.source.reason}
+        sourceName={data.source.sourceName}
+        sourceUrl={data.source.sourceUrl}
       />
     );
   }
 
-  const rounds: BracketRound[] = data.rounds.filter((r) => r.matches.length > 0);
-  const finalMatch = rounds.find((r) => r.id === 'final')?.matches[0];
-  const champion = finalMatch && finalMatch.status === 'post'
-    ? finalMatch.home?.winner ? finalMatch.home : finalMatch.away?.winner ? finalMatch.away : null
-    : null;
+  const champion = data.champion;
+
+  const visibleRounds = selectedRound === 'all'
+    ? rounds
+    : rounds.filter((r) => r.id === selectedRound);
 
   return (
     <div className="space-y-6">
-      {/* Round filter chips (mobile friendly: the tree scrolls horizontally) */}
       <div className="flex flex-wrap gap-2">
         {[{ id: 'all', label: 'All rounds' }, ...rounds.map((r) => ({ id: r.id, label: r.label }))].map((r) => (
           <button
             key={r.id}
-            onClick={() => setActiveRound(r.id === 'all' ? 'all' : r.id)}
+            onClick={() => setSelectedRound(r.id)}
             className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors ${
-              activeRound === r.id
+              selectedRound === r.id
                 ? 'border-[var(--primary)]/50 bg-[var(--primary)]/15 text-white'
                 : 'border-[var(--border-default)] bg-[var(--surface-2)]/60 text-[var(--text-secondary)] hover:text-white'
             }`}
@@ -188,21 +171,39 @@ export default function KnockoutBracket({ data }: Props) {
         ))}
       </div>
 
-      <div className="overflow-x-auto pb-4">
-        <BracketTree matches={rounds[0].matches} depth={0} />
-      </div>
+      {selectedRound === 'all' ? (
+        <div className="overflow-x-auto pb-4">
+          {/* Root of the tree: the final. Feeders nest recursively to its left. */}
+          <SubBracket rounds={rounds} match={rounds.flatMap((r) => r.matches).find((m) => m.round === 'final')!} />
+        </div>
+      ) : (
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          {visibleRounds[0]?.matches.map((m) => (
+            <MatchCard key={m.id} match={m} roundShort={ROUND_BY_ID.get(m.round)?.short ?? m.round} />
+          ))}
+        </div>
+      )}
 
-      {/* Round labels + champion */}
+      {/* Round summary */}
       <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-6">
         {rounds.map((r) => (
-          <div key={r.id} className="rounded-lg border border-[var(--border-subtle)] bg-[var(--surface-1)]/60 px-3 py-2">
+          <button
+            key={r.id}
+            onClick={() => setSelectedRound(r.id)}
+            className={`rounded-lg border px-3 py-2 text-left transition-colors ${
+              selectedRound === r.id
+                ? 'border-[var(--primary)]/50 bg-[var(--primary)]/15'
+                : 'border-[var(--border-subtle)] bg-[var(--surface-1)]/60 hover:border-[var(--border-focus)]/30'
+            }`}
+          >
             <p className="text-xs font-semibold uppercase tracking-wide text-[var(--text-muted)]">{r.label}</p>
             <p className="text-sm text-white">{r.matches.length} matches</p>
-          </div>
+          </button>
         ))}
       </div>
 
-      <div className="rounded-xl border border-[var(--border-default)] bg-gradient-to-br from-[var(--primary)]/15 to-[var(--surface-2)]/70 p-6 text-center">
+      {/* Champion */}
+      <Card elevated className="border-[var(--primary)]/30 bg-gradient-to-br from-[var(--primary)]/15 to-[var(--surface-2)]/70 p-6 text-center">
         <Trophy className="mx-auto mb-3 h-8 w-8 text-[var(--primary)]" aria-hidden="true" />
         <h3 className="text-sm font-semibold uppercase tracking-wide text-[var(--text-muted)]">Champion</h3>
         {champion ? (
@@ -212,11 +213,14 @@ export default function KnockoutBracket({ data }: Props) {
               <Crown className="h-6 w-6 text-[var(--primary)]" aria-hidden="true" />
               {champion.name}
             </p>
+            <p className="text-xs text-[var(--text-secondary)]">
+              Winner of the final — derived from the match result in the dataset.
+            </p>
           </div>
         ) : (
           <p className="mt-3 text-lg text-[var(--text-secondary)]">To be determined</p>
         )}
-      </div>
+      </Card>
     </div>
   );
 }

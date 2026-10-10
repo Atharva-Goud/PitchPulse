@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { BarChart3, LayoutGrid, Trophy } from 'lucide-react';
+import { BarChart3, ExternalLink, LayoutGrid, Trophy } from 'lucide-react';
 import { Badge, Card } from '@/components/ui';
 import KnockoutBracket from './KnockoutBracket';
 import GroupStage from './GroupStage';
@@ -23,6 +23,7 @@ type TabId = (typeof TABS)[number]['id'];
 
 export default function WorldCupPageClient({ data }: Props) {
   const [tab, setTab] = useState<TabId>('bracket');
+  const { source } = data;
 
   return (
     <div className="space-y-6">
@@ -30,25 +31,38 @@ export default function WorldCupPageClient({ data }: Props) {
       <Card className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h2 className="text-base font-semibold text-white">Tournament data status</h2>
-          <p className="mt-1 max-w-2xl text-sm text-[var(--text-secondary)]">
-            {data.source.available
-              ? data.source.reason
-              : data.source.reason}
-          </p>
+          <p className="mt-1 max-w-2xl text-sm text-[var(--text-secondary)]">{source.reason}</p>
+          {source.completeness ? (
+            <p className="mt-1 text-xs text-[var(--text-muted)]">
+              {source.completeness.finishedMatches}/{source.completeness.totalMatches} matches with
+              results · {source.completeness.groupMatchesFinished}/
+              {source.completeness.groupMatchesTotal} group matches played
+              {source.completeness.finalDecided ? ' · champion decided' : ''}
+            </p>
+          ) : null}
         </div>
-        <Badge variant={data.source.available ? 'success' : 'warning'} dot>
-          {data.source.available ? 'Live source connected' : 'Source unavailable'}
-        </Badge>
+        <div className="flex flex-col items-start gap-2 sm:items-end">
+          <Badge variant={source.available ? 'success' : 'warning'} dot>
+            {source.available ? 'Dataset loaded' : 'Source unavailable'}
+          </Badge>
+          <a
+            href={source.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-xs font-medium text-emerald-400 hover:text-emerald-300"
+          >
+            {source.sourceName}
+            <ExternalLink className="h-3 w-3" aria-hidden="true" />
+          </a>
+        </div>
       </Card>
 
       {!data.source.available ? (
         <DataUnavailablePanel
           section="World Cup 2026 hub"
-          checkedSources={data.source.checkedSources}
-          requiredSources={[
-            'An international tournament league (e.g. fifa.world) exposed by the API',
-            'fixtures + standings + player/team statistics for that league',
-          ]}
+          reason={data.source.reason}
+          sourceName={data.source.sourceName}
+          sourceUrl={data.source.sourceUrl}
         />
       ) : null}
 
