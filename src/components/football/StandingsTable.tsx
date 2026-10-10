@@ -31,10 +31,14 @@ function formatRecordDetail(record: TeamRecord): string {
 export default function StandingsTable({ standings }: StandingsTableProps) {
   if (!standings || standings.length === 0) return null;
 
+  // A column is shown when the source actually provides that statistic, i.e.
+  // at least one row reports a non-zero value for it. Zero is real data — a
+  // team can genuinely be on 0 points or 0 goals — so requiring every row to
+  // be > 0 used to drop whole columns as soon as a single team sat on zero.
   const has = (key: keyof StandingRow): boolean =>
-    standings.every(row => {
+    standings.some(row => {
       const v = row[key];
-      return typeof v === 'number' && v > 0;
+      return typeof v === 'number' && v !== 0;
     });
 
   const showPlayed = has('played');
