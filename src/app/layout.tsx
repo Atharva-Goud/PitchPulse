@@ -5,7 +5,7 @@ import Header from '@/components/layout/Header';
 import AppShell from '@/components/layout/AppShell';
 import { BeamsBackground } from '@/components/ui/beams-background';
 import { CookieConsentProvider } from '@/context/CookieConsentContext';
-import CookieConsentBanner from '@/components/cookie-consent/CookieConsentBanner';
+import CookieConsentBanner, { CookieSettingsLink } from '@/components/cookie-consent/CookieConsentBanner';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -87,13 +87,23 @@ export default function RootLayout({
             <div className="relative z-10 flex flex-col min-h-screen">
               <Header />
               <main id="main-content" className="flex-1">{children}</main>
-              <footer className="border-t border-[var(--border-default)] bg-[var(--surface-0)]/80 py-8 px-4 backdrop-blur-sm">
-                <div className="mx-auto max-w-7xl text-center text-sm text-[var(--text-muted)]">
-                  <p>PitchPulse — Football intelligence. All in one place.</p>
-                  <p className="mt-1">Data sourced from public APIs and official sources.</p>
-                  <p className="mt-1">Made by Atharva Goud</p>
+<footer className="border-t border-[var(--border-default)] bg-[var(--surface-0)]/80 py-8 px-4 backdrop-blur-sm">
+              <div className="mx-auto max-w-7xl">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[var(--text-muted)]">
+                  <div className="text-center md:text-left">
+                    <p>PitchPulse — Football intelligence. All in one place.</p>
+                    <p className="mt-1">Data sourced from public APIs and official sources.</p>
+                    <p className="mt-1">Made by Atharva Goud</p>
+                  </div>
+                  <nav className="flex flex-wrap items-center justify-center gap-4" aria-label="Legal links">
+                    <a href="/privacy" className="hover:text-[var(--text-secondary)] transition-colors">Privacy Policy</a>
+                    <a href="/cookie-policy" className="hover:text-[var(--text-secondary)] transition-colors">Cookie Policy</a>
+                    <a href="/terms" className="hover:text-[var(--text-secondary)] transition-colors">Terms & Conditions</a>
+                    <CookieSettingsLink />
+                  </nav>
                 </div>
-              </footer>
+              </div>
+            </footer>
             </div>
           </AppShell>
           <CookieConsentBanner />

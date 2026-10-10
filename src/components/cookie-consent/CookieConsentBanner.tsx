@@ -4,9 +4,16 @@ import { useCookieConsent } from '@/context/CookieConsentContext';
 import { X, Cookie, Settings } from 'lucide-react';
 
 export default function CookieConsentBanner() {
-  const { acceptAll, rejectAll, acceptCategory, showBanner, setShowBanner } = useCookieConsent();
+  const { acceptAll, rejectAll, acceptCategory, showBanner, setShowBanner, consent } = useCookieConsent();
 
   if (!showBanner) return null;
+
+  const openSettings = () => {
+    // Re-show banner by clearing the dismissed flag
+    localStorage.removeItem('pitchpulse-banner-dismissed');
+    localStorage.removeItem('pitchpulse-cookie-consent');
+    setShowBanner(true);
+  };
 
   return (
     <div
@@ -68,5 +75,26 @@ export default function CookieConsentBanner() {
         </p>
       </div>
     </div>
+  );
+}
+
+export function CookieSettingsLink() {
+  const { setShowBanner } = useCookieConsent();
+  
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    localStorage.removeItem('pitchpulse-banner-dismissed');
+    localStorage.removeItem('pitchpulse-cookie-consent');
+    setShowBanner(true);
+  };
+
+  return (
+    <a
+      href="#"
+      onClick={handleClick}
+      className="underline hover:text-[var(--text-secondary)] transition-colors text-sm text-[var(--text-muted)]"
+    >
+      Cookie Settings
+    </a>
   );
 }
