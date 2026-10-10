@@ -13,10 +13,17 @@ import SearchModal from '@/components/search/SearchModal';
  *
  * Labels match the actual page headings so users never land on a page whose
  * title contradicts the nav item they clicked:
- *   /matches    -> "Matches"  (Match Centre: live, upcoming, results)
- *   /fixtures   -> "Fixtures" (upcoming schedule)
- *   /standings  -> "Standings" (league tables)
- *   /leagues    -> "Leagues" (discover all available competitions)
+ *   /matches        -> "Matches"       (Match Centre: live, upcoming, results)
+ *   /fixtures       -> "Fixtures"      (upcoming schedule)
+ *   /standings      -> "Standings"     (league tables)
+ *   /leagues        -> "Leagues"       (discover all available competitions)
+ *   /news           -> "News"
+ *   /transfers      -> "Transfers"
+ *   /quiz           -> "Quiz"
+ *   /search         -> "Search"
+ *   /privacy        -> "Privacy Policy"
+ *   /cookie-policy  -> "Cookie Policy"
+ *   /terms          -> "Terms & Conditions"
  *
  * Every href resolves to a real route; no dead links.
  */
@@ -29,11 +36,39 @@ const navItems = [
   { href: '/news', label: 'News' },
   { href: '/transfers', label: 'Transfers' },
   { href: '/quiz', label: 'Quiz' },
+  { href: '/search', label: 'Search', icon: Search },
+  { href: '/privacy', label: 'Privacy Policy' },
+  { href: '/cookie-policy', label: 'Cookie Policy' },
+  { href: '/terms', label: 'Terms & Conditions' },
 ];
 
-// All nav items shown on both desktop and mobile
-const desktopNavItems = navItems;
-const mobileNavItems = navItems;
+// Desktop: main navigation items (horizontal layout)
+const desktopNavItems = [
+  { href: '/', label: 'Home' },
+  { href: '/matches', label: 'Matches', icon: Activity },
+  { href: '/fixtures', label: 'Fixtures' },
+  { href: '/standings', label: 'Standings', icon: Trophy },
+  { href: '/leagues', label: 'Leagues', icon: Trophy },
+  { href: '/news', label: 'News' },
+  { href: '/transfers', label: 'Transfers' },
+  { href: '/quiz', label: 'Quiz' },
+];
+
+// Mobile: all navigation items including legal pages (vertical layout)
+const mobileNavItems = [
+  { href: '/', label: 'Home' },
+  { href: '/matches', label: 'Matches', icon: Activity },
+  { href: '/fixtures', label: 'Fixtures' },
+  { href: '/standings', label: 'Standings', icon: Trophy },
+  { href: '/leagues', label: 'Leagues', icon: Trophy },
+  { href: '/news', label: 'News' },
+  { href: '/transfers', label: 'Transfers' },
+  { href: '/quiz', label: 'Quiz' },
+  { href: '/search', label: 'Search', icon: Search },
+  { href: '/privacy', label: 'Privacy Policy' },
+  { href: '/cookie-policy', label: 'Cookie Policy' },
+  { href: '/terms', label: 'Terms & Conditions' },
+];
 
 export default function Header() {
   const pathname = usePathname();
@@ -196,7 +231,7 @@ export default function Header() {
           id="mobile-menu"
           role="navigation"
           aria-label="Mobile navigation"
-          className="fixed top-16 left-0 right-0 z-40 md:hidden border-b border-[var(--border-default)] bg-[var(--surface-1)]/95 backdrop-blur-xl shadow-lg"
+          className="fixed top-16 left-0 right-0 z-40 md:hidden border-b border-[var(--border-default)] bg-[var(--surface-1)]/95 backdrop-blur-xl shadow-lg max-h-[calc(100vh-4rem)] overflow-y-auto"
         >
           <nav className="px-4 py-4 space-y-1">
             {mobileNavItems.map((item) => {
