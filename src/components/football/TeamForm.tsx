@@ -49,6 +49,7 @@ export default function TeamForm({ matches, teamId, teamName, teamLogo, label }:
   const lastMatches = useMemo(() => {
     return teamMatches.map(m => ({
       opponent: m.homeTeam.id === teamId ? m.awayTeam.name : m.homeTeam.name,
+      opponentId: m.homeTeam.id === teamId ? m.awayTeam.id : m.homeTeam.id,
       opponentLogo: m.homeTeam.id === teamId ? m.awayTeam.logo : m.homeTeam.logo,
       isHome: m.homeTeam.id === teamId,
       score: getScoreForTeam(m, teamId),
@@ -62,7 +63,7 @@ export default function TeamForm({ matches, teamId, teamName, teamLogo, label }:
     return (
       <div className="rounded-xl border border-white/10 bg-slate-900/60 p-6">
         <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-          <TeamLogo team={{ name: teamName, logo: teamLogo }} size="sm" />
+          <TeamLogo team={{ id: teamId, name: teamName, logo: teamLogo }} size="sm" />
           <span>{label}</span>
         </h3>
         <p className="text-sm text-slate-400">No recent match data available.</p>
@@ -77,7 +78,7 @@ export default function TeamForm({ matches, teamId, teamName, teamLogo, label }:
   return (
     <div className="rounded-xl border border-white/10 bg-slate-900/60 p-6">
       <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-        <TeamLogo team={{ name: teamName, logo: teamLogo }} size="sm" />
+        <TeamLogo team={{ id: teamId, name: teamName, logo: teamLogo }} size="sm" />
         <span>{label}</span>
         <span className="ml-auto text-xs text-slate-500">Last 5</span>
       </h3>
@@ -102,7 +103,7 @@ export default function TeamForm({ matches, teamId, teamName, teamLogo, label }:
             }`}>
               {m.result || '?'}
             </span>
-            <TeamLogo team={{ name: m.opponent, logo: m.opponentLogo }} size="xs" />
+            <TeamLogo team={{ id: m.opponentId, name: m.opponent, logo: m.opponentLogo }} size="xs" />
             <span className="flex-1 text-white truncate">{m.opponent}</span>
             <span className="text-slate-400 font-mono tabular-nums w-16 text-right">{m.score}</span>
             <span className="text-xs text-slate-500 whitespace-nowrap">{m.competition}</span>

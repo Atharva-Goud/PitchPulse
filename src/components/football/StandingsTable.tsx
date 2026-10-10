@@ -99,7 +99,7 @@ export default function StandingsTable({ standings }: StandingsTableProps) {
                   </td>
                   <td className="px-4 py-3 sticky left-12 z-10 bg-slate-900/60 border-r border-white/10 min-w-[180px]">
                     <div className="flex items-center gap-3">
-                      <TeamLogo team={{ name: row.teamName, logo: row.teamLogo }} size="sm" />
+                      <TeamLogo team={{ id: row.teamId, name: row.teamName, logo: row.teamLogo }} size="sm" />
                       <span className={`font-medium text-white ${isChampions ? 'text-emerald-400' : ''}`}>{row.teamName}</span>
                       {note && (
                         <span

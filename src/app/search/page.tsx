@@ -75,8 +75,9 @@ export default function SearchPage() {
   };
 
   const getLogoSrc = (item: any): string | null => {
-    if (item.logo) return resolveTeamLogo(item);
-    if (item.image) return resolveTeamLogo(item);
+    const logo = resolveTeamLogo(item);
+    if (logo) return logo;
+    if (item.image) return item.image;
     return null;
   };
 

@@ -3,11 +3,12 @@
 import Link from 'next/link';
 import { Trophy, ChevronRight, TrendingUp } from 'lucide-react';
 import TeamLogo from '@/components/football/TeamLogo';
+import { resolveCompetitionLogoPath } from '@/lib/utils/logo-mapping';
 import type { ApiLeague } from '@/lib/football/standings';
 import { LoadingState, EmptyState } from '@/components/ui';
 
 interface LeagueWithLeader extends ApiLeague {
-  leader: { name: string; logo: string; points: number; goalDifference: number } | null;
+  leader: { id: string; name: string; logo: string; points: number; goalDifference: number } | null;
   teamCount: number;
 }
 
@@ -36,7 +37,9 @@ export default function LeaguesPageClient({ initialData }: LeaguesPageClientProp
             <span className="ml-auto text-sm text-slate-500">{leaguesWithData.length} leagues</span>
           </h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {leaguesWithData.map((l) => (
+            {leaguesWithData.map((l) => {
+              const crest = resolveCompetitionLogoPath(l) || l.logo;
+              return (
               <Link
                 key={l.slug}
                 href={`/standings?league=${l.slug}`}
@@ -44,8 +47,8 @@ export default function LeaguesPageClient({ initialData }: LeaguesPageClientProp
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform">
-                    {l.logo ? (
-                      <img src={l.logo} alt="" className="h-full w-full object-contain p-1" />
+                    {crest ? (
+                      <img src={crest} alt="" className="h-full w-full object-contain p-1" />
                     ) : (
                       <Trophy className="h-6 w-6 text-slate-500 group-hover:text-emerald-400 transition-colors" />
                     )}
@@ -57,7 +60,7 @@ export default function LeaguesPageClient({ initialData }: LeaguesPageClientProp
                     <p className="text-sm text-slate-400 mt-0.5">{l.country} · {l.teamCount} teams</p>
                     {l.leader && (
                       <div className="mt-3 flex items-center gap-3 pt-3 border-t border-white/5">
-                        <TeamLogo team={{ name: l.leader.name, logo: l.leader.logo }} size="xs" />
+                        <TeamLogo team={{ id: l.leader.id, name: l.leader.name, logo: l.leader.logo }} size="xs" />
                         <div className="flex-1 min-w-0">
                           <p className="text-sm font-medium text-white truncate">{l.leader.name}</p>
                           <p className="text-xs text-slate-400 flex items-center gap-1">
@@ -71,7 +74,8 @@ export default function LeaguesPageClient({ initialData }: LeaguesPageClientProp
                   </div>
                 </div>
               </Link>
-            ))}
+              );
+            })}
           </div>
         </section>
       )}
@@ -84,12 +88,14 @@ export default function LeaguesPageClient({ initialData }: LeaguesPageClientProp
             <span className="ml-auto text-sm text-slate-500">{leaguesWithoutData.length} leagues</span>
           </h2>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {leaguesWithoutData.map((l) => (
+            {leaguesWithoutData.map((l) => {
+              const crest = resolveCompetitionLogoPath(l) || l.logo;
+              return (
               <div key={l.slug} className="rounded-xl border border-white/10 bg-slate-900/40 p-4 opacity-60">
                 <div className="flex items-center gap-3">
                   <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center overflow-hidden">
-                    {l.logo ? (
-                      <img src={l.logo} alt="" className="h-full w-full object-contain p-1" />
+                    {crest ? (
+                      <img src={crest} alt="" className="h-full w-full object-contain p-1" />
                     ) : (
                       <Trophy className="h-5 w-5 text-slate-500" />
                     )}
@@ -100,7 +106,8 @@ export default function LeaguesPageClient({ initialData }: LeaguesPageClientProp
                   </div>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </section>
       )}

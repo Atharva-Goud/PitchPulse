@@ -11,7 +11,7 @@ interface LeagueWithLeader {
   slug: string;
   country: string;
   logo: string;
-  leader: { name: string; logo: string; points: number; goalDifference: number } | null;
+  leader: { id: string; name: string; logo: string; points: number; goalDifference: number } | null;
   teamCount: number;
 }
 
@@ -39,6 +39,7 @@ async function getLeaguesPageData(): Promise<LeagueWithLeader[]> {
           if (rows.length > 0) {
             const first = rows[0];
             leader = {
+              id: first.team.id,
               name: first.team.name,
               logo: first.team.logo,
               points: statValue(first.stats, 'points'),

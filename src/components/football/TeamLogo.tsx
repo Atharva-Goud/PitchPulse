@@ -1,9 +1,12 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { getTeamInitials, resolveTeamLogo } from '@/lib/utils/teams';
+import { getTeamInitials } from '@/lib/utils/teams';
+import { resolveLocalLogoPath } from '@/lib/utils/logo-mapping';
 
 interface TeamLike {
+  id?: string | null;
+  apiId?: string | null;
   name?: string;
   logo?: string | null;
   shortName?: string;
@@ -13,6 +16,7 @@ interface Props {
   team: TeamLike;
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   className?: string;
+  alt?: string;
 }
 
 const sizeClasses = {
@@ -26,22 +30,42 @@ const sizeClasses = {
 /**
  * Reusable team logo component.
  *
- * Handles valid logos, missing URLs, broken remote images, SVGs and
- * PNG/WebP images. The fallback is a clean, stable crest with team
- * initials so the layout never shifts or shows a broken image.
+ * Fallback chain, tried in order, with each step only reached when the previous
+ * one is unavailable or fails to load — so no broken-image icon ever appears and
+ * the layout never shifts:
+ *
+ *   1. Local logo from public/assets/logos/ when a real file matches
+ *   2. API-provided logo URL
+ *   3. Team initials badge (neutral placeholder)
  */
-export default function TeamLogo({ team, size = 'md', className = '' }: Props) {
-  const [hasError, setHasError] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const logo = resolveTeamLogo(team);
+export default function TeamLogo({ team, size = 'md', className = '', alt }: Props) {
+  const localLogo = resolveLocalLogoPath(team);
+  const apiLogo = typeof team?.logo === 'string' && team.logo.trim().length > 0 ? team.logo.trim() : null;
   const initials = getTeamInitials(team?.name, team?.shortName);
 
-  useEffect(() => {
-    setHasError(false);
-    setIsLoading(true);
-  }, [team?.name, logo]);
+  const candidates = [localLogo, apiLogo].filter((c): c is string => !!c);
+  const [candidateIndex, setCandidateIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const showFallback = hasError || !logo;
+  // Reset whenever the team identity or candidate list changes.
+  const teamKey = `${team?.id || ''}|${team?.name || ''}|${candidates.join(',')}`;
+
+  useEffect(() => {
+    setCandidateIndex(0);
+    setIsLoading(true);
+  }, [teamKey, candidates.join(',')]);
+
+  const current = candidates[Math.min(candidateIndex, candidates.length - 1)];
+  const showFallback = !current;
+
+  const handleError = () => {
+    if (candidateIndex + 1 < candidates.length) {
+      setCandidateIndex(candidateIndex + 1);
+    } else {
+      setIsLoading(false);
+    }
+  };
+
   const sizeClass = sizeClasses[size];
 
   return (
@@ -53,14 +77,12 @@ export default function TeamLogo({ team, size = 'md', className = '' }: Props) {
         <span className="leading-none">{initials}</span>
       ) : (
         <img
-          src={logo}
-          alt=""
+          src={current}
+          alt={alt ?? ''}
+          aria-hidden={alt ? undefined : true}
           loading="lazy"
           onLoad={() => setIsLoading(false)}
-          onError={() => {
-            setHasError(true);
-            setIsLoading(false);
-          }}
+          onError={handleError}
           className={`h-full w-full object-contain p-[10%] transition-opacity ${isLoading ? 'opacity-0' : 'opacity-100'}`}
         />
       )}

@@ -7,6 +7,8 @@
  * modifying the original data.
  */
 
+import { getLocalTeamLogoPath } from './team-logos';
+
 type TeamLike = {
   logo?: string | null;
   crest?: string | null;
@@ -15,36 +17,42 @@ type TeamLike = {
   badge?: string | null;
   name?: string;
   shortName?: string;
+  id?: string;
+  apiId?: string;
 } | null | undefined;
 
 /**
  * Resolve the best available logo URL from a team-like object.
+ *
+ * Looks for a matching local SVG first (public/assets/logos/), then the
+ * API-provided logo. The TeamLogo component re-checks the API logo at load
+ * time, so a missing local file degrades to the API logo instead of breaking.
  */
 export function getTeamLogo(source: TeamLike): string | null {
   if (!source) return null;
 
-  const candidates = [
-    source.logo,
-    source.crest,
-    source.logoUrl,
-    source.image,
-    source.badge,
-  ];
+  const apiLogo = firstString([source.logo, source.crest, source.logoUrl, source.image, source.badge]);
+  const localLogo = getLocalTeamLogoPath(source);
 
+  return localLogo ?? apiLogo;
+}
+
+function firstString(candidates: Array<string | null | undefined>): string | null {
   for (const candidate of candidates) {
     if (typeof candidate === 'string') {
       const trimmed = candidate.trim();
-      if (trimmed.length > 0) {
-        return trimmed;
-      }
+      if (trimmed.length > 0) return trimmed;
     }
   }
-
   return null;
 }
 
 /**
  * Normalize a raw logo URL string.
+ *
+ * Absolute http(s) URLs are canonicalized. Root-relative paths such as
+ * "/assets/logos/..." (our local SVG fallbacks) are passed through unchanged.
+ * Anything else (protocol-relative junk, javascript:, data:) is rejected.
  */
 export function normalizeTeamLogo(url: string | null | undefined): string | null {
   if (!url) return null;
@@ -54,6 +62,11 @@ export function normalizeTeamLogo(url: string | null | undefined): string | null
 
   if (trimmed.startsWith('//')) {
     return `https:${trimmed}`;
+  }
+
+  // Local bundled assets under public/ are valid logo sources.
+  if (trimmed.startsWith('/') && !trimmed.startsWith('//')) {
+    return trimmed;
   }
 
   try {
@@ -69,9 +82,11 @@ export function normalizeTeamLogo(url: string | null | undefined): string | null
 
 /**
  * Resolve and normalize a team logo URL in one step.
+ * This is the main entry point - tries API logo first, then local fallback.
  */
 export function resolveTeamLogo(source: TeamLike): string | null {
-  return normalizeTeamLogo(getTeamLogo(source));
+  const apiLogo = getTeamLogo(source);
+  return normalizeTeamLogo(apiLogo);
 }
 
 /**
