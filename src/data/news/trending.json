@@ -1,29 +1,186 @@
 [
   {
-    "id": "news-mv2vjnyh-2nlrti",
-    "title": " How to watch Real Madrid vs Villarreal for FREE: Live stream details for La Liga clash ",
-    "summary": "Here's how to watch Real Madrid vs Villarreal in La Liga for free from anywhere in the world as Jose Mourinho's side look to keep pace with FC Barcelona.",
+    "id": "news-mv68etl7-yg52lm",
+    "title": "Six players set to miss Atletico Madrid vs Man United after double injury blow",
+    "summary": "Manchester United face Atletico Madrid in the Champions League without half a dozen players after sustaining two injuries in the 1-1 draw with Tottenham Hotspur",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-atletico-madrid-34755358",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-atletico-madrid-34755358",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34755328.ece/ALTERNATES/s615/0_Manchester-United-Training-Session-And-Press-Conference-UEFA-Champions-League-202627-League-Phase.jpg",
+    "category": "Champions League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-atletico-madrid-34755358",
+    "publishedAt": "2026-10-13T04:00:00.000Z",
+    "discoveredAt": "2026-10-13T05:19:35.122Z",
+    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 79,
+      "label": "1h ago",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
+      "lastUpdated": "2026-10-13T05:19:35.122Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-atletico-madrid-34755358",
+          "credibilityScore": 78,
+          "publishedAt": "2026-10-13T04:00:00.000Z",
+          "discoveredAt": "2026-10-13T05:19:35.122Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "tottenham",
+      "atletico-madrid"
+    ]
+  },
+  {
+    "id": "news-mv68etl7-gh2kkp",
+    "title": "Manchester United thought they had found a star on their last visit to Atletico Madrid",
+    "summary": "Man Utd drew 1-1 with Atletico Madrid in the Champions League Round of 16 four years ago, but they lost the reverse leg.",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-thought-found-star-34740584",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-thought-found-star-34740584",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34742826.ece/ALTERNATES/s615/1_GettyImages-1238713650.jpg",
+    "category": "Champions League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-thought-found-star-34740584",
+    "publishedAt": "2026-10-13T05:00:00.000Z",
+    "discoveredAt": "2026-10-13T05:19:35.122Z",
+    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 19,
+      "label": "19m ago",
+      "publishedAt": "2026-10-13T05:00:00.000Z",
+      "lastUpdated": "2026-10-13T05:19:35.122Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-thought-found-star-34740584",
+          "credibilityScore": 78,
+          "publishedAt": "2026-10-13T05:00:00.000Z",
+          "discoveredAt": "2026-10-13T05:19:35.122Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "atletico-madrid"
+    ]
+  },
+  {
+    "id": "news-mv68etl7-kibdz8",
+    "title": "Man United latest: Frontrunners to sign JJ Gabriel emerge and ex-Chelsea boss 'shortlisted'",
+    "summary": "Manchester United news as JJ Gabriel edges closer to leaving Old Trafford and contact is reportedly made with a potential new manager",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-conte-gabriel-transfer-34754824",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-conte-gabriel-transfer-34754824",
+    "image": "https://i2-prod.birminghammail.co.uk/incoming/article34740231.ece/ALTERNATES/s615/1_Manchester-United-v-Crystal-Palace-FA-Youth-Cup.jpg",
+    "category": "Transfers",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-conte-gabriel-transfer-34754824",
+    "publishedAt": "2026-10-13T04:30:00.000Z",
+    "discoveredAt": "2026-10-13T05:19:35.122Z",
+    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 49,
+      "label": "49m ago",
+      "publishedAt": "2026-10-13T04:30:00.000Z",
+      "lastUpdated": "2026-10-13T05:19:35.122Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-conte-gabriel-transfer-34754824",
+          "credibilityScore": 78,
+          "publishedAt": "2026-10-13T04:30:00.000Z",
+          "discoveredAt": "2026-10-13T05:19:35.122Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "chelsea"
+    ]
+  },
+  {
+    "id": "news-mv68etl7-wo4w5n",
+    "title": " Quickfire Quiz 222: Can you answer 10 questions in 90 seconds? ",
+    "summary": "Tackle these 10 football trivia questions about Lamine Yamal, Croatia, nicknames and more!",
     "source": {
       "name": "FourFourTwo",
       "type": "publication",
-      "url": "https://www.fourfourtwo.com/competition/watch-real-madrid-vs-villarreal-la-liga-free",
+      "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-222",
       "credibilityScore": 85
     },
     "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/competition/watch-real-madrid-vs-villarreal-la-liga-free",
-    "image": "https://cdn.mos.cms.futurecdn.net/uZHcebnGEBLaiFPhsDEQiT-1920-80.png",
-    "category": "La Liga",
-    "originalUrl": "https://www.fourfourtwo.com/competition/watch-real-madrid-vs-villarreal-la-liga-free",
-    "publishedAt": "2026-10-10T15:00:00.000Z",
-    "discoveredAt": "2026-10-10T20:56:12.606Z",
-    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
+    "sourceUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-222",
+    "image": "https://cdn.mos.cms.futurecdn.net/Wr8FQLCbpdvErz3artTgPG-1920-80.png",
+    "category": "Premier League",
+    "originalUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-222",
+    "publishedAt": "2026-10-13T05:00:00.000Z",
+    "discoveredAt": "2026-10-13T05:19:35.122Z",
+    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "recent",
-      "ageMinutes": 356,
-      "label": "5h ago",
-      "publishedAt": "2026-10-10T15:00:00.000Z",
-      "lastUpdated": "2026-10-10T20:56:12.606Z"
+      "status": "breaking",
+      "ageMinutes": 19,
+      "label": "19m ago",
+      "publishedAt": "2026-10-13T05:00:00.000Z",
+      "lastUpdated": "2026-10-13T05:19:35.122Z"
     },
     "verification": {
       "level": "single_source",
@@ -32,10 +189,10 @@
           "id": "fourfourtwo",
           "name": "FourFourTwo",
           "type": "publication",
-          "url": "https://www.fourfourtwo.com/competition/watch-real-madrid-vs-villarreal-la-liga-free",
+          "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-222",
           "credibilityScore": 85,
-          "publishedAt": "2026-10-10T15:00:00.000Z",
-          "discoveredAt": "2026-10-10T20:56:12.606Z"
+          "publishedAt": "2026-10-13T05:00:00.000Z",
+          "discoveredAt": "2026-10-13T05:19:35.122Z"
         }
       ],
       "confidenceScore": 85,
@@ -46,296 +203,33 @@
       "confirmedBy": [],
       "verificationCount": 1
     },
-    "relatedTeams": [
-      "real-madrid",
-      "barcelona"
-    ]
+    "relatedTeams": []
   },
   {
-    "id": "news-mv2vjnyh-68eibm",
-    "title": " Watch Manchester United vs Tottenham Hotspur: FREE streams ",
-    "summary": "Here's how to watch Manchester United vs Tottenham Hotspur for free from anywhere in the world, as two under-pressure managers meet at Old Trafford.",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/competition/watch-manchester-united-vs-tottenham-hotspur-premier-league-2026-27-free",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/competition/watch-manchester-united-vs-tottenham-hotspur-premier-league-2026-27-free",
-    "image": "https://cdn.mos.cms.futurecdn.net/F8ZrUWbbrBBWB3TPdLL62U-1920-80.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/competition/watch-manchester-united-vs-tottenham-hotspur-premier-league-2026-27-free",
-    "publishedAt": "2026-10-10T12:00:00.000Z",
-    "discoveredAt": "2026-10-10T20:56:12.606Z",
-    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 536,
-      "label": "8h ago",
-      "publishedAt": "2026-10-10T12:00:00.000Z",
-      "lastUpdated": "2026-10-10T20:56:12.606Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/competition/watch-manchester-united-vs-tottenham-hotspur-premier-league-2026-27-free",
-          "credibilityScore": 85,
-          "publishedAt": "2026-10-10T12:00:00.000Z",
-          "discoveredAt": "2026-10-10T20:56:12.606Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "tottenham"
-    ]
-  },
-  {
-    "id": "news-mv2vjnyh-czndto",
-    "title": "Michael Carrick admits he was 'hurt' by what Manchester United fans did vs Tottenham",
-    "summary": "Man Utd fans booed their team on several occasions during a flat and disappointing draw with Tottenham at Old Trafford.",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-admits-hurt-what-34747169",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-admits-hurt-what-34747169",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34747190.ece/ALTERNATES/s615/0_GettyImages-2298994498.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-admits-hurt-what-34747169",
-    "publishedAt": "2026-10-10T19:35:26.000Z",
-    "discoveredAt": "2026-10-10T20:56:12.606Z",
-    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 80,
-      "label": "1h ago",
-      "publishedAt": "2026-10-10T19:35:26.000Z",
-      "lastUpdated": "2026-10-10T20:56:12.606Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-admits-hurt-what-34747169",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-10T19:35:26.000Z",
-          "discoveredAt": "2026-10-10T20:56:12.606Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "tottenham"
-    ]
-  },
-  {
-    "id": "news-mv2vjnyh-xu5x2q",
-    "title": "Manchester United vs Tottenham highlights and reaction as Michael Carrick's side draw after red card",
-    "summary": "Man Utd drew 1-1 with Tottenham in the Premier League and you can recap what happened in the game below.",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34747067.ece/ALTERNATES/s615/0_GettyImages-2298984983.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
-    "publishedAt": "2026-10-10T19:16:06.000Z",
-    "discoveredAt": "2026-10-10T20:56:12.606Z",
-    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 100,
-      "label": "1h ago",
-      "publishedAt": "2026-10-10T19:16:06.000Z",
-      "lastUpdated": "2026-10-10T20:56:12.606Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-vs-tottenham-live-34738871",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-10T19:16:06.000Z",
-          "discoveredAt": "2026-10-10T20:56:12.606Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "tottenham"
-    ]
-  },
-  {
-    "id": "news-mv2vjnyh-u9vhuk",
-    "title": "What Tottenham staff said spoke volumes about where Manchester United are under Michael Carrick",
-    "summary": "Man United failed to see out the game against Tottenham despite leading 1-0 with a man advantage at Old Trafford.",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/what-tottenham-staff-said-spoke-34746653",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/what-tottenham-staff-said-spoke-34746653",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34747140.ece/ALTERNATES/s615/1_GettyImages-2299554371.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/what-tottenham-staff-said-spoke-34746653",
-    "publishedAt": "2026-10-10T18:45:32.000Z",
-    "discoveredAt": "2026-10-10T20:56:12.606Z",
-    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 130,
-      "label": "2h ago",
-      "publishedAt": "2026-10-10T18:45:32.000Z",
-      "lastUpdated": "2026-10-10T20:56:12.606Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/what-tottenham-staff-said-spoke-34746653",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-10T18:45:32.000Z",
-          "discoveredAt": "2026-10-10T20:56:12.606Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "tottenham"
-    ]
-  },
-  {
-    "id": "news-mv2vjnyh-xqdwb4",
-    "title": "Manchester United player ratings vs Tottenham as Carlos Baleba good but three get 5/10",
-    "summary": "Man Utd looked to have weathered the Tottenham Hotspur storm to secure a much-needed Premier League win but they conceded late on at Old Trafford.",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-player-ratings-vs-34746648",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-player-ratings-vs-34746648",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34747075.ece/ALTERNATES/s615/1_GettyImages-2298984932.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-player-ratings-vs-34746648",
-    "publishedAt": "2026-10-10T18:26:52.000Z",
-    "discoveredAt": "2026-10-10T20:56:12.606Z",
-    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 149,
-      "label": "2h ago",
-      "publishedAt": "2026-10-10T18:26:52.000Z",
-      "lastUpdated": "2026-10-10T20:56:12.606Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-player-ratings-vs-34746648",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-10T18:26:52.000Z",
-          "discoveredAt": "2026-10-10T20:56:12.606Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "tottenham"
-    ]
-  },
-  {
-    "id": "news-mv2vjnyh-isw8q6",
-    "title": "Liverpool £157m investment now faces scrutiny as Andoni Iraola awaits statement",
-    "summary": "Liverpool entertain Manchester City in the Premier League on Sunday afternoon and cannot afford to be distracted by off-field events",
+    "id": "news-mv68etl7-13ak9w",
+    "title": "Florian Wirtz dropped? What to do with Liverpool star after Jamie Carragher doubles down",
+    "summary": "Liverpool legend Jamie Carragher says Andoni Iraola should drop Florian Wirtz from his starting XI, but do our writers agree?",
     "source": {
       "name": "Liverpool Echo LFC",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-157m-investment-now-faces-34746029",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/florian-wirtz-dropped-what-liverpool-34752818",
       "credibilityScore": 80
     },
     "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-157m-investment-now-faces-34746029",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34746422.ece/ALTERNATES/s615/0_GettyImages-2299238957.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-157m-investment-now-faces-34746029",
-    "publishedAt": "2026-10-10T15:25:46.000Z",
-    "discoveredAt": "2026-10-10T20:56:12.606Z",
-    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/florian-wirtz-dropped-what-liverpool-34752818",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34753016.ece/ALTERNATES/s615/0_imagemaker-2026-10-12T135359183.jpg",
+    "category": "Transfers",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/florian-wirtz-dropped-what-liverpool-34752818",
+    "publishedAt": "2026-10-13T05:00:00.000Z",
+    "discoveredAt": "2026-10-13T05:19:35.122Z",
+    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "recent",
-      "ageMinutes": 330,
-      "label": "5h ago",
-      "publishedAt": "2026-10-10T15:25:46.000Z",
-      "lastUpdated": "2026-10-10T20:56:12.606Z"
+      "status": "breaking",
+      "ageMinutes": 19,
+      "label": "19m ago",
+      "publishedAt": "2026-10-13T05:00:00.000Z",
+      "lastUpdated": "2026-10-13T05:19:35.122Z"
     },
     "verification": {
       "level": "single_source",
@@ -344,10 +238,10 @@
           "id": "liverpool-echo",
           "name": "Liverpool Echo LFC",
           "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-157m-investment-now-faces-34746029",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/florian-wirtz-dropped-what-liverpool-34752818",
           "credibilityScore": 80,
-          "publishedAt": "2026-10-10T15:25:46.000Z",
-          "discoveredAt": "2026-10-10T20:56:12.606Z"
+          "publishedAt": "2026-10-13T05:00:00.000Z",
+          "discoveredAt": "2026-10-13T05:19:35.122Z"
         }
       ],
       "confidenceScore": 80,
@@ -359,35 +253,85 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "manchester-city",
       "liverpool"
     ]
   },
   {
-    "id": "news-mv2vjnyh-0ukz6v",
-    "title": "Man United could be set for transfer windfall as Real Madrid and Premier League clubs eye £25m man",
-    "summary": "Scott McTominay left Manchester United for Napoli in the summer of 2024 after 22 years at Old Trafford, but is now being linked with a potential exit",
+    "id": "news-mv68etl7-olebto",
+    "title": "Liverpool's £100m men need to stand up - there's a different model Reds could follow if not",
+    "summary": "In the second part of his ECHO column, John Aldridge discusses Liverpool's recent recruitment and calls for more from big signings.",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpools-100m-men-need-stand-34755083",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpools-100m-men-need-stand-34755083",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34755072.ece/ALTERNATES/s615/0_premium-canvas-1791823999614.png",
+    "category": "Transfers",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpools-100m-men-need-stand-34755083",
+    "publishedAt": "2026-10-13T04:00:00.000Z",
+    "discoveredAt": "2026-10-13T05:19:35.122Z",
+    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 79,
+      "label": "1h ago",
+      "publishedAt": "2026-10-13T04:00:00.000Z",
+      "lastUpdated": "2026-10-13T05:19:35.122Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpools-100m-men-need-stand-34755083",
+          "credibilityScore": 80,
+          "publishedAt": "2026-10-13T04:00:00.000Z",
+          "discoveredAt": "2026-10-13T05:19:35.122Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mv68etl7-fommni",
+    "title": "JJ Gabriel set to leave Man United in January as one club 'believe deal is all secured'",
+    "summary": "JJ Gabriel's future at Manchester United is still uncertain amid interest from La Liga giants Real Madrid and Barcelona",
     "source": {
       "name": "Manchester Evening News MUFC",
       "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-scott-mctominay-transfer-34745382",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-manchester-united-madrid-34751664",
       "credibilityScore": 78
     },
     "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-scott-mctominay-transfer-34745382",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34745402.ece/ALTERNATES/s615/0_GettyImages-2299082584.jpg",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-manchester-united-madrid-34751664",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/football-news/article34751674.ece/ALTERNATES/s615/0_JS418293072.jpg",
     "category": "Transfers",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-scott-mctominay-transfer-34745382",
-    "publishedAt": "2026-10-10T11:33:48.000Z",
-    "discoveredAt": "2026-10-10T20:56:12.606Z",
-    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-manchester-united-madrid-34751664",
+    "publishedAt": "2026-10-12T11:09:46.000Z",
+    "discoveredAt": "2026-10-13T05:19:35.122Z",
+    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "recent",
-      "ageMinutes": 562,
-      "label": "9h ago",
-      "publishedAt": "2026-10-10T11:33:48.000Z",
-      "lastUpdated": "2026-10-10T20:56:12.606Z"
+      "status": "today",
+      "ageMinutes": 1090,
+      "label": "Earlier today",
+      "publishedAt": "2026-10-12T11:09:46.000Z",
+      "lastUpdated": "2026-10-13T05:19:35.122Z"
     },
     "verification": {
       "level": "single_source",
@@ -396,10 +340,10 @@
           "id": "man-utd-men",
           "name": "Manchester Evening News MUFC",
           "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-scott-mctominay-transfer-34745382",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-manchester-united-madrid-34751664",
           "credibilityScore": 78,
-          "publishedAt": "2026-10-10T11:33:48.000Z",
-          "discoveredAt": "2026-10-10T20:56:12.606Z"
+          "publishedAt": "2026-10-12T11:09:46.000Z",
+          "discoveredAt": "2026-10-13T05:19:35.122Z"
         }
       ],
       "confidenceScore": 78,
@@ -413,34 +357,35 @@
     "relatedTeams": [
       "manchester-united",
       "real-madrid",
-      "napoli"
+      "barcelona",
+      "inter-milan"
     ]
   },
   {
-    "id": "news-mv2vjnyh-akq3gt",
-    "title": "Gary Neville spots Man Utd star's X-rated message to teammate after unwanted incident",
-    "summary": "Senne Lammens complained to his Manchester United team-mates as he struggled against Tottenham Hotspur at Old Trafford in the Premier League",
+    "id": "news-mv68etl7-vzk10d",
+    "title": "Man United nightmare reduced Atletico Madrid icon to tears but he had no regrets",
+    "summary": "His loan spell at Old Trafford was one to forget, but he wouldn't change a thing",
     "source": {
       "name": "Manchester Evening News MUFC",
       "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/manchester-united-tottenham-senne-lammens-34746955",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-radamel-falcao-atletico-34751156",
       "credibilityScore": 78
     },
     "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/manchester-united-tottenham-senne-lammens-34746955",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34746943.ece/ALTERNATES/s615/0_GettyImages-2299544634.jpg",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-radamel-falcao-atletico-34751156",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34751235.ece/ALTERNATES/s615/0_GettyImages-460674200.jpg",
     "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/manchester-united-tottenham-senne-lammens-34746955",
-    "publishedAt": "2026-10-10T17:31:02.000Z",
-    "discoveredAt": "2026-10-10T20:56:12.606Z",
-    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-radamel-falcao-atletico-34751156",
+    "publishedAt": "2026-10-13T05:00:00.000Z",
+    "discoveredAt": "2026-10-13T05:19:35.122Z",
+    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "recent",
-      "ageMinutes": 205,
-      "label": "3h ago",
-      "publishedAt": "2026-10-10T17:31:02.000Z",
-      "lastUpdated": "2026-10-10T20:56:12.606Z"
+      "status": "breaking",
+      "ageMinutes": 19,
+      "label": "19m ago",
+      "publishedAt": "2026-10-13T05:00:00.000Z",
+      "lastUpdated": "2026-10-13T05:19:35.122Z"
     },
     "verification": {
       "level": "single_source",
@@ -449,10 +394,61 @@
           "id": "man-utd-men",
           "name": "Manchester Evening News MUFC",
           "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/manchester-united-tottenham-senne-lammens-34746955",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-radamel-falcao-atletico-34751156",
           "credibilityScore": 78,
-          "publishedAt": "2026-10-10T17:31:02.000Z",
-          "discoveredAt": "2026-10-10T20:56:12.606Z"
+          "publishedAt": "2026-10-13T05:00:00.000Z",
+          "discoveredAt": "2026-10-13T05:19:35.122Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "atletico-madrid"
+    ]
+  },
+  {
+    "id": "news-mv68etl7-gl4911",
+    "title": "Jamie Carragher points finger at two Man United stars for 'unacceptable' moment vs Tottenham",
+    "summary": "Manchester United have continued to receive brutal verdicts in the wake of their disappointing draw against Tottenham with Jamie Carragher the latest to take aim",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/carragher-man-united-baleba-mbeumo-34755446",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/carragher-man-united-baleba-mbeumo-34755446",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34755550.ece/ALTERNATES/s615/0_Jamie-Carragher.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/carragher-man-united-baleba-mbeumo-34755446",
+    "publishedAt": "2026-10-12T21:35:04.000Z",
+    "discoveredAt": "2026-10-13T05:19:35.122Z",
+    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 464,
+      "label": "7h ago",
+      "publishedAt": "2026-10-12T21:35:04.000Z",
+      "lastUpdated": "2026-10-13T05:19:35.122Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/carragher-man-united-baleba-mbeumo-34755446",
+          "credibilityScore": 78,
+          "publishedAt": "2026-10-12T21:35:04.000Z",
+          "discoveredAt": "2026-10-13T05:19:35.122Z"
         }
       ],
       "confidenceScore": 78,
@@ -469,30 +465,30 @@
     ]
   },
   {
-    "id": "news-mv2vjnyh-29nbi7",
-    "title": "Why Michael Carrick has made shock selection decision for Man United vs Tottenham",
-    "summary": "Leny Yoro looks set to start at right-back in Manchester United's clash with Tottenham in the Premier League.",
+    "id": "news-mv68etl7-2cahwy",
+    "title": "What Manchester United fans are talking about shows time is running out for Michael Carrick",
+    "summary": "Michael Carrick is fighting for his future after only eight games of the 2026/27 season and the Man Utd boss faces a week that could define his reign.",
     "source": {
       "name": "Manchester Evening News MUFC",
       "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-made-shock-selection-34746647",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/what-manchester-united-fans-talking-34749971",
       "credibilityScore": 78
     },
     "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-made-shock-selection-34746647",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34465724.ece/ALTERNATES/s615/2_Screenshot-2026-08-15-190821.png",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/what-manchester-united-fans-talking-34749971",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34755385.ece/ALTERNATES/s615/0_GettyImages-2299347702.jpg",
     "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-made-shock-selection-34746647",
-    "publishedAt": "2026-10-10T16:12:21.000Z",
-    "discoveredAt": "2026-10-10T20:56:12.606Z",
-    "lastVerifiedAt": "2026-10-10T20:56:12.606Z",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/what-manchester-united-fans-talking-34749971",
+    "publishedAt": "2026-10-13T03:30:00.000Z",
+    "discoveredAt": "2026-10-13T05:19:35.122Z",
+    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "recent",
-      "ageMinutes": 283,
-      "label": "4h ago",
-      "publishedAt": "2026-10-10T16:12:21.000Z",
-      "lastUpdated": "2026-10-10T20:56:12.606Z"
+      "status": "very_fresh",
+      "ageMinutes": 109,
+      "label": "1h ago",
+      "publishedAt": "2026-10-13T03:30:00.000Z",
+      "lastUpdated": "2026-10-13T05:19:35.122Z"
     },
     "verification": {
       "level": "single_source",
@@ -501,10 +497,10 @@
           "id": "man-utd-men",
           "name": "Manchester Evening News MUFC",
           "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-made-shock-selection-34746647",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/what-manchester-united-fans-talking-34749971",
           "credibilityScore": 78,
-          "publishedAt": "2026-10-10T16:12:21.000Z",
-          "discoveredAt": "2026-10-10T20:56:12.606Z"
+          "publishedAt": "2026-10-13T03:30:00.000Z",
+          "discoveredAt": "2026-10-13T05:19:35.122Z"
         }
       ],
       "confidenceScore": 78,
@@ -516,8 +512,7 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "manchester-united",
-      "tottenham"
+      "manchester-united"
     ]
   }
 ]
