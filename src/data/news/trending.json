@@ -1,134 +1,186 @@
 [
   {
-    "id": "news-mv68etl7-yg52lm",
-    "title": "Six players set to miss Atletico Madrid vs Man United after double injury blow",
-    "summary": "Manchester United face Atletico Madrid in the Champions League without half a dozen players after sustaining two injuries in the 1-1 draw with Tottenham Hotspur",
+    "id": "news-mvklsoov-nbrba8",
+    "title": "Liverpool latest: Chelsea transfer battle intensifies as Trent Alexander-Arnold tipped for move",
+    "summary": "Trent Alexander-Arnold has been backed for a Premier League return as Liverpool gear up for the winter transfer window",
     "source": {
-      "name": "Manchester Evening News MUFC",
+      "name": "Liverpool Echo LFC",
       "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-atletico-madrid-34755358",
-      "credibilityScore": 78
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-news-trent-camara-34803291",
+      "credibilityScore": 80
     },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-atletico-madrid-34755358",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34755328.ece/ALTERNATES/s615/0_Manchester-United-Training-Session-And-Press-Conference-UEFA-Champions-League-202627-League-Phase.jpg",
-    "category": "Champions League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-atletico-madrid-34755358",
-    "publishedAt": "2026-10-13T04:00:00.000Z",
-    "discoveredAt": "2026-10-13T05:19:35.122Z",
-    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 79,
-      "label": "1h ago",
-      "publishedAt": "2026-10-13T04:00:00.000Z",
-      "lastUpdated": "2026-10-13T05:19:35.122Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-atletico-madrid-34755358",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-13T04:00:00.000Z",
-          "discoveredAt": "2026-10-13T05:19:35.122Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "tottenham",
-      "atletico-madrid"
-    ]
-  },
-  {
-    "id": "news-mv68etl7-gh2kkp",
-    "title": "Manchester United thought they had found a star on their last visit to Atletico Madrid",
-    "summary": "Man Utd drew 1-1 with Atletico Madrid in the Champions League Round of 16 four years ago, but they lost the reverse leg.",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-thought-found-star-34740584",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-thought-found-star-34740584",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34742826.ece/ALTERNATES/s615/1_GettyImages-1238713650.jpg",
-    "category": "Champions League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-thought-found-star-34740584",
-    "publishedAt": "2026-10-13T05:00:00.000Z",
-    "discoveredAt": "2026-10-13T05:19:35.122Z",
-    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 19,
-      "label": "19m ago",
-      "publishedAt": "2026-10-13T05:00:00.000Z",
-      "lastUpdated": "2026-10-13T05:19:35.122Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-thought-found-star-34740584",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-13T05:00:00.000Z",
-          "discoveredAt": "2026-10-13T05:19:35.122Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "atletico-madrid"
-    ]
-  },
-  {
-    "id": "news-mv68etl7-kibdz8",
-    "title": "Man United latest: Frontrunners to sign JJ Gabriel emerge and ex-Chelsea boss 'shortlisted'",
-    "summary": "Manchester United news as JJ Gabriel edges closer to leaving Old Trafford and contact is reportedly made with a potential new manager",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-conte-gabriel-transfer-34754824",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-conte-gabriel-transfer-34754824",
-    "image": "https://i2-prod.birminghammail.co.uk/incoming/article34740231.ece/ALTERNATES/s615/1_Manchester-United-v-Crystal-Palace-FA-Youth-Cup.jpg",
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-news-trent-camara-34803291",
+    "image": "https://i2-prod.liverpoolecho.co.uk/sport/football/football-news/article34803290.ece/ALTERNATES/s615/0_Real-Madrid-v-Villarreal-CF-LaLiga-EA-Sports-202627.jpg",
     "category": "Transfers",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-conte-gabriel-transfer-34754824",
-    "publishedAt": "2026-10-13T04:30:00.000Z",
-    "discoveredAt": "2026-10-13T05:19:35.122Z",
-    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-news-trent-camara-34803291",
+    "publishedAt": "2026-10-23T05:00:00.000Z",
+    "discoveredAt": "2026-10-23T06:43:09.401Z",
+    "lastVerifiedAt": "2026-10-23T06:43:09.401Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 49,
-      "label": "49m ago",
-      "publishedAt": "2026-10-13T04:30:00.000Z",
-      "lastUpdated": "2026-10-13T05:19:35.122Z"
+      "ageMinutes": 103,
+      "label": "1h ago",
+      "publishedAt": "2026-10-23T05:00:00.000Z",
+      "lastUpdated": "2026-10-23T06:43:09.401Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-news-trent-camara-34803291",
+          "credibilityScore": 80,
+          "publishedAt": "2026-10-23T05:00:00.000Z",
+          "discoveredAt": "2026-10-23T06:43:09.401Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool",
+      "chelsea",
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-mvklsoov-elzo8p",
+    "title": "Why Rio Ngumoha could be Andoni Iraola's Liverpool trump card against red-hot Brighton",
+    "summary": "TACTICAL PREVIEW: Liverpool take on the league's best attack and defence on Sunday when Fabian Hurzeler's high-flying Seagulls come to town",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/rio-ngumoha-could-andoni-iraolas-34800431",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/rio-ngumoha-could-andoni-iraolas-34800431",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34801906.ece/ALTERNATES/s615/0_MKR_LECH_221026RioMainImage.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/rio-ngumoha-could-andoni-iraolas-34800431",
+    "publishedAt": "2026-10-23T05:00:00.000Z",
+    "discoveredAt": "2026-10-23T06:43:09.401Z",
+    "lastVerifiedAt": "2026-10-23T06:43:09.401Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 103,
+      "label": "1h ago",
+      "publishedAt": "2026-10-23T05:00:00.000Z",
+      "lastUpdated": "2026-10-23T06:43:09.401Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/rio-ngumoha-could-andoni-iraolas-34800431",
+          "credibilityScore": 80,
+          "publishedAt": "2026-10-23T05:00:00.000Z",
+          "discoveredAt": "2026-10-23T06:43:09.401Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool",
+      "brighton"
+    ]
+  },
+  {
+    "id": "news-mvklsoov-ka5iqi",
+    "title": "Andoni Iraola and Liverpool are passing more and more tests - now for another exciting one",
+    "summary": "Our Liverpool Jury look back at the Reds' 4-3 win over Villarreal on Tuesday night and ahead to the visit of Brighton this weekend",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-liverpool-passing-more-34804043",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-liverpool-passing-more-34804043",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34804048.ece/ALTERNATES/s615/0_GettyImages-2301202063.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-liverpool-passing-more-34804043",
+    "publishedAt": "2026-10-23T04:00:00.000Z",
+    "discoveredAt": "2026-10-23T06:43:09.401Z",
+    "lastVerifiedAt": "2026-10-23T06:43:09.401Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 163,
+      "label": "2h ago",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "lastUpdated": "2026-10-23T06:43:09.401Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-liverpool-passing-more-34804043",
+          "credibilityScore": 80,
+          "publishedAt": "2026-10-23T04:00:00.000Z",
+          "discoveredAt": "2026-10-23T06:43:09.401Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool",
+      "brighton"
+    ]
+  },
+  {
+    "id": "news-mvklsoov-qbffhr",
+    "title": "Eddie Howe decides Man United job stance after being named 'standout' candidate",
+    "summary": "Manchester United continue to be credited with an interest in former Newcastle United head coach Eddie Howe as Michael Carrick fights for his future at the club",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-eddie-howe-34804850",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-eddie-howe-34804850",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/football-news/article34804849.ece/ALTERNATES/s615/0_Fulham-v-Newcastle-United-Premier-League.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-eddie-howe-34804850",
+    "publishedAt": "2026-10-22T21:49:46.000Z",
+    "discoveredAt": "2026-10-23T06:43:09.401Z",
+    "lastVerifiedAt": "2026-10-23T06:43:09.401Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 533,
+      "label": "8h ago",
+      "publishedAt": "2026-10-22T21:49:46.000Z",
+      "lastUpdated": "2026-10-23T06:43:09.401Z"
     },
     "verification": {
       "level": "single_source",
@@ -137,10 +189,10 @@
           "id": "man-utd-men",
           "name": "Manchester Evening News MUFC",
           "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-conte-gabriel-transfer-34754824",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-eddie-howe-34804850",
           "credibilityScore": 78,
-          "publishedAt": "2026-10-13T04:30:00.000Z",
-          "discoveredAt": "2026-10-13T05:19:35.122Z"
+          "publishedAt": "2026-10-22T21:49:46.000Z",
+          "discoveredAt": "2026-10-23T06:43:09.401Z"
         }
       ],
       "confidenceScore": 78,
@@ -153,34 +205,35 @@
     },
     "relatedTeams": [
       "manchester-united",
-      "chelsea"
+      "inter-milan",
+      "newcastle"
     ]
   },
   {
-    "id": "news-mv68etl7-wo4w5n",
-    "title": " Quickfire Quiz 222: Can you answer 10 questions in 90 seconds? ",
-    "summary": "Tackle these 10 football trivia questions about Lamine Yamal, Croatia, nicknames and more!",
+    "id": "news-mvklsoov-iycyna",
+    "title": " Quickfire Quiz 230: Can you answer 10 questions in 90 seconds? ",
+    "summary": "Tackle these 10 football trivia questions about Mario Balotelli, trebles, sponsors and more!",
     "source": {
       "name": "FourFourTwo",
       "type": "publication",
-      "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-222",
+      "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-230",
       "credibilityScore": 85
     },
     "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-222",
-    "image": "https://cdn.mos.cms.futurecdn.net/Wr8FQLCbpdvErz3artTgPG-1920-80.png",
+    "sourceUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-230",
+    "image": "https://cdn.mos.cms.futurecdn.net/C6LjMegiKAUX4KNRXma6i4-1920-80.png",
     "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-222",
-    "publishedAt": "2026-10-13T05:00:00.000Z",
-    "discoveredAt": "2026-10-13T05:19:35.122Z",
-    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
+    "originalUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-230",
+    "publishedAt": "2026-10-23T05:00:00.000Z",
+    "discoveredAt": "2026-10-23T06:43:09.401Z",
+    "lastVerifiedAt": "2026-10-23T06:43:09.401Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 19,
-      "label": "19m ago",
-      "publishedAt": "2026-10-13T05:00:00.000Z",
-      "lastUpdated": "2026-10-13T05:19:35.122Z"
+      "status": "very_fresh",
+      "ageMinutes": 103,
+      "label": "1h ago",
+      "publishedAt": "2026-10-23T05:00:00.000Z",
+      "lastUpdated": "2026-10-23T06:43:09.401Z"
     },
     "verification": {
       "level": "single_source",
@@ -189,10 +242,10 @@
           "id": "fourfourtwo",
           "name": "FourFourTwo",
           "type": "publication",
-          "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-222",
+          "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-230",
           "credibilityScore": 85,
-          "publishedAt": "2026-10-13T05:00:00.000Z",
-          "discoveredAt": "2026-10-13T05:19:35.122Z"
+          "publishedAt": "2026-10-23T05:00:00.000Z",
+          "discoveredAt": "2026-10-23T06:43:09.401Z"
         }
       ],
       "confidenceScore": 85,
@@ -206,306 +259,99 @@
     "relatedTeams": []
   },
   {
-    "id": "news-mv68etl7-13ak9w",
-    "title": "Florian Wirtz dropped? What to do with Liverpool star after Jamie Carragher doubles down",
-    "summary": "Liverpool legend Jamie Carragher says Andoni Iraola should drop Florian Wirtz from his starting XI, but do our writers agree?",
+    "id": "news-mvklsoov-gjwp4u",
+    "title": " Trent Alexander-Arnold in line for surprise move back to the Premier League with Liverpool rivals ",
+    "summary": "Alexander-Arnold hasn't won over Jose Mourinho at Real Madrid and his big move is turning sour",
     "source": {
-      "name": "Liverpool Echo LFC",
+      "name": "FourFourTwo",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/florian-wirtz-dropped-what-liverpool-34752818",
-      "credibilityScore": 80
+      "url": "https://www.fourfourtwo.com/transfer/trent-alexander-arnold-in-line-for-surprise-move-back-to-the-premier-league-with-liverpool-rivals",
+      "credibilityScore": 85
     },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/florian-wirtz-dropped-what-liverpool-34752818",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34753016.ece/ALTERNATES/s615/0_imagemaker-2026-10-12T135359183.jpg",
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/transfer/trent-alexander-arnold-in-line-for-surprise-move-back-to-the-premier-league-with-liverpool-rivals",
+    "image": "https://cdn.mos.cms.futurecdn.net/YFRvEvzUP8R4pvo7YNnPZf-1920-80.jpg",
     "category": "Transfers",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/florian-wirtz-dropped-what-liverpool-34752818",
-    "publishedAt": "2026-10-13T05:00:00.000Z",
-    "discoveredAt": "2026-10-13T05:19:35.122Z",
-    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 19,
-      "label": "19m ago",
-      "publishedAt": "2026-10-13T05:00:00.000Z",
-      "lastUpdated": "2026-10-13T05:19:35.122Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/florian-wirtz-dropped-what-liverpool-34752818",
-          "credibilityScore": 80,
-          "publishedAt": "2026-10-13T05:00:00.000Z",
-          "discoveredAt": "2026-10-13T05:19:35.122Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-mv68etl7-olebto",
-    "title": "Liverpool's £100m men need to stand up - there's a different model Reds could follow if not",
-    "summary": "In the second part of his ECHO column, John Aldridge discusses Liverpool's recent recruitment and calls for more from big signings.",
-    "source": {
-      "name": "Liverpool Echo LFC",
-      "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpools-100m-men-need-stand-34755083",
-      "credibilityScore": 80
-    },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpools-100m-men-need-stand-34755083",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34755072.ece/ALTERNATES/s615/0_premium-canvas-1791823999614.png",
-    "category": "Transfers",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpools-100m-men-need-stand-34755083",
-    "publishedAt": "2026-10-13T04:00:00.000Z",
-    "discoveredAt": "2026-10-13T05:19:35.122Z",
-    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 79,
-      "label": "1h ago",
-      "publishedAt": "2026-10-13T04:00:00.000Z",
-      "lastUpdated": "2026-10-13T05:19:35.122Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpools-100m-men-need-stand-34755083",
-          "credibilityScore": 80,
-          "publishedAt": "2026-10-13T04:00:00.000Z",
-          "discoveredAt": "2026-10-13T05:19:35.122Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-mv68etl7-fommni",
-    "title": "JJ Gabriel set to leave Man United in January as one club 'believe deal is all secured'",
-    "summary": "JJ Gabriel's future at Manchester United is still uncertain amid interest from La Liga giants Real Madrid and Barcelona",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-manchester-united-madrid-34751664",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-manchester-united-madrid-34751664",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/football-news/article34751674.ece/ALTERNATES/s615/0_JS418293072.jpg",
-    "category": "Transfers",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-manchester-united-madrid-34751664",
-    "publishedAt": "2026-10-12T11:09:46.000Z",
-    "discoveredAt": "2026-10-13T05:19:35.122Z",
-    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
+    "originalUrl": "https://www.fourfourtwo.com/transfer/trent-alexander-arnold-in-line-for-surprise-move-back-to-the-premier-league-with-liverpool-rivals",
+    "publishedAt": "2026-10-22T15:00:00.000Z",
+    "discoveredAt": "2026-10-23T06:43:09.401Z",
+    "lastVerifiedAt": "2026-10-23T06:43:09.401Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "today",
-      "ageMinutes": 1090,
+      "ageMinutes": 943,
       "label": "Earlier today",
-      "publishedAt": "2026-10-12T11:09:46.000Z",
-      "lastUpdated": "2026-10-13T05:19:35.122Z"
+      "publishedAt": "2026-10-22T15:00:00.000Z",
+      "lastUpdated": "2026-10-23T06:43:09.401Z"
     },
     "verification": {
       "level": "single_source",
       "sources": [
         {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
           "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-manchester-united-madrid-34751664",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-12T11:09:46.000Z",
-          "discoveredAt": "2026-10-13T05:19:35.122Z"
+          "url": "https://www.fourfourtwo.com/transfer/trent-alexander-arnold-in-line-for-surprise-move-back-to-the-premier-league-with-liverpool-rivals",
+          "credibilityScore": 85,
+          "publishedAt": "2026-10-22T15:00:00.000Z",
+          "discoveredAt": "2026-10-23T06:43:09.401Z"
         }
       ],
-      "confidenceScore": 78,
+      "confidenceScore": 85,
       "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
+        "Reported by FourFourTwo",
         "Moderate source credibility"
       ],
       "confirmedBy": [],
       "verificationCount": 1
     },
     "relatedTeams": [
-      "manchester-united",
-      "real-madrid",
-      "barcelona",
-      "inter-milan"
+      "liverpool",
+      "real-madrid"
     ]
   },
   {
-    "id": "news-mv68etl7-vzk10d",
-    "title": "Man United nightmare reduced Atletico Madrid icon to tears but he had no regrets",
-    "summary": "His loan spell at Old Trafford was one to forget, but he wouldn't change a thing",
+    "id": "news-mvklsoov-rrrt5u",
+    "title": " Cesc Fabregas explains why Como invoked the mercy rule against Manchester United ",
+    "summary": "Man United were humiliated in the league phase of the Champions League and the Como boss says it could have been even worse",
     "source": {
-      "name": "Manchester Evening News MUFC",
+      "name": "FourFourTwo",
       "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-radamel-falcao-atletico-34751156",
-      "credibilityScore": 78
+      "url": "https://www.fourfourtwo.com/person/coaches-managers/cesc-fabregas-explains-why-como-invoked-the-mercy-rule-against-manchester-united",
+      "credibilityScore": 85
     },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-radamel-falcao-atletico-34751156",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34751235.ece/ALTERNATES/s615/0_GettyImages-460674200.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-radamel-falcao-atletico-34751156",
-    "publishedAt": "2026-10-13T05:00:00.000Z",
-    "discoveredAt": "2026-10-13T05:19:35.122Z",
-    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/person/coaches-managers/cesc-fabregas-explains-why-como-invoked-the-mercy-rule-against-manchester-united",
+    "image": "https://cdn.mos.cms.futurecdn.net/jX7wqgoqAmwUZM3QFPFD6C-1920-80.jpg",
+    "category": "Champions League",
+    "originalUrl": "https://www.fourfourtwo.com/person/coaches-managers/cesc-fabregas-explains-why-como-invoked-the-mercy-rule-against-manchester-united",
+    "publishedAt": "2026-10-22T17:00:00.000Z",
+    "discoveredAt": "2026-10-23T06:43:09.401Z",
+    "lastVerifiedAt": "2026-10-23T06:43:09.401Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 19,
-      "label": "19m ago",
-      "publishedAt": "2026-10-13T05:00:00.000Z",
-      "lastUpdated": "2026-10-13T05:19:35.122Z"
+      "status": "today",
+      "ageMinutes": 823,
+      "label": "Earlier today",
+      "publishedAt": "2026-10-22T17:00:00.000Z",
+      "lastUpdated": "2026-10-23T06:43:09.401Z"
     },
     "verification": {
       "level": "single_source",
       "sources": [
         {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
           "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-radamel-falcao-atletico-34751156",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-13T05:00:00.000Z",
-          "discoveredAt": "2026-10-13T05:19:35.122Z"
+          "url": "https://www.fourfourtwo.com/person/coaches-managers/cesc-fabregas-explains-why-como-invoked-the-mercy-rule-against-manchester-united",
+          "credibilityScore": 85,
+          "publishedAt": "2026-10-22T17:00:00.000Z",
+          "discoveredAt": "2026-10-23T06:43:09.401Z"
         }
       ],
-      "confidenceScore": 78,
+      "confidenceScore": 85,
       "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "atletico-madrid"
-    ]
-  },
-  {
-    "id": "news-mv68etl7-gl4911",
-    "title": "Jamie Carragher points finger at two Man United stars for 'unacceptable' moment vs Tottenham",
-    "summary": "Manchester United have continued to receive brutal verdicts in the wake of their disappointing draw against Tottenham with Jamie Carragher the latest to take aim",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/carragher-man-united-baleba-mbeumo-34755446",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/carragher-man-united-baleba-mbeumo-34755446",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34755550.ece/ALTERNATES/s615/0_Jamie-Carragher.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/carragher-man-united-baleba-mbeumo-34755446",
-    "publishedAt": "2026-10-12T21:35:04.000Z",
-    "discoveredAt": "2026-10-13T05:19:35.122Z",
-    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 464,
-      "label": "7h ago",
-      "publishedAt": "2026-10-12T21:35:04.000Z",
-      "lastUpdated": "2026-10-13T05:19:35.122Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/carragher-man-united-baleba-mbeumo-34755446",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-12T21:35:04.000Z",
-          "discoveredAt": "2026-10-13T05:19:35.122Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "tottenham"
-    ]
-  },
-  {
-    "id": "news-mv68etl7-2cahwy",
-    "title": "What Manchester United fans are talking about shows time is running out for Michael Carrick",
-    "summary": "Michael Carrick is fighting for his future after only eight games of the 2026/27 season and the Man Utd boss faces a week that could define his reign.",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/what-manchester-united-fans-talking-34749971",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/what-manchester-united-fans-talking-34749971",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34755385.ece/ALTERNATES/s615/0_GettyImages-2299347702.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/what-manchester-united-fans-talking-34749971",
-    "publishedAt": "2026-10-13T03:30:00.000Z",
-    "discoveredAt": "2026-10-13T05:19:35.122Z",
-    "lastVerifiedAt": "2026-10-13T05:19:35.122Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 109,
-      "label": "1h ago",
-      "publishedAt": "2026-10-13T03:30:00.000Z",
-      "lastUpdated": "2026-10-13T05:19:35.122Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/what-manchester-united-fans-talking-34749971",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-13T03:30:00.000Z",
-          "discoveredAt": "2026-10-13T05:19:35.122Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
+        "Reported by FourFourTwo",
         "Moderate source credibility"
       ],
       "confirmedBy": [],
@@ -513,6 +359,160 @@
     },
     "relatedTeams": [
       "manchester-united"
+    ]
+  },
+  {
+    "id": "news-mvklsoov-gaxhb2",
+    "title": " How to watch Bournemouth vs AC Milan: Live Streams ",
+    "summary": "Here's how to watch Bournemouth vs AC Milan online from anywhere as the red and blacks clash on the south coast.",
+    "source": {
+      "name": "FourFourTwo",
+      "type": "publication",
+      "url": "https://www.fourfourtwo.com/competition/watch-bournemouth-vs-ac-milan-europa-league-2026-27-free",
+      "credibilityScore": 85
+    },
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/competition/watch-bournemouth-vs-ac-milan-europa-league-2026-27-free",
+    "image": "https://cdn.mos.cms.futurecdn.net/xxSLirQYCVStMV2YUSYiLM-1920-80.png",
+    "category": "Premier League",
+    "originalUrl": "https://www.fourfourtwo.com/competition/watch-bournemouth-vs-ac-milan-europa-league-2026-27-free",
+    "publishedAt": "2026-10-22T16:00:00.000Z",
+    "discoveredAt": "2026-10-23T06:43:09.401Z",
+    "lastVerifiedAt": "2026-10-23T06:43:09.401Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "today",
+      "ageMinutes": 883,
+      "label": "Earlier today",
+      "publishedAt": "2026-10-22T16:00:00.000Z",
+      "lastUpdated": "2026-10-23T06:43:09.401Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
+          "type": "publication",
+          "url": "https://www.fourfourtwo.com/competition/watch-bournemouth-vs-ac-milan-europa-league-2026-27-free",
+          "credibilityScore": 85,
+          "publishedAt": "2026-10-22T16:00:00.000Z",
+          "discoveredAt": "2026-10-23T06:43:09.401Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by FourFourTwo",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "ac-milan"
+    ]
+  },
+  {
+    "id": "news-mvklsoov-czzech",
+    "title": " Manchester City legend Kyle Walker is gearing up for a painful move if his Premier League titles are stripped ",
+    "summary": "Man City have been found guilty of 114 Premier League charges, with their punishment and appeal both pending",
+    "source": {
+      "name": "FourFourTwo",
+      "type": "publication",
+      "url": "https://www.fourfourtwo.com/person/player/manchester-city-legend-kyle-walker-is-gearing-up-for-a-painful-response-if-his-premier-league-titles-are-stripped",
+      "credibilityScore": 85
+    },
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/person/player/manchester-city-legend-kyle-walker-is-gearing-up-for-a-painful-response-if-his-premier-league-titles-are-stripped",
+    "image": "https://cdn.mos.cms.futurecdn.net/W6Q5UNFR4QAmZN4jJWxzB6-1920-80.jpg",
+    "category": "Transfers",
+    "originalUrl": "https://www.fourfourtwo.com/person/player/manchester-city-legend-kyle-walker-is-gearing-up-for-a-painful-response-if-his-premier-league-titles-are-stripped",
+    "publishedAt": "2026-10-22T16:00:00.000Z",
+    "discoveredAt": "2026-10-23T06:43:09.401Z",
+    "lastVerifiedAt": "2026-10-23T06:43:09.401Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "today",
+      "ageMinutes": 883,
+      "label": "Earlier today",
+      "publishedAt": "2026-10-22T16:00:00.000Z",
+      "lastUpdated": "2026-10-23T06:43:09.401Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
+          "type": "publication",
+          "url": "https://www.fourfourtwo.com/person/player/manchester-city-legend-kyle-walker-is-gearing-up-for-a-painful-response-if-his-premier-league-titles-are-stripped",
+          "credibilityScore": 85,
+          "publishedAt": "2026-10-22T16:00:00.000Z",
+          "discoveredAt": "2026-10-23T06:43:09.401Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by FourFourTwo",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-mvklsoov-9v07zu",
+    "title": "Man United make Bruno Fernandes punishment decision after bombshell Como interview",
+    "summary": "Bruno Fernandes criticising Michael Carrick after Manchester United lost 4-1 to Como in the Champions League has led to calls for the club captain to be punished",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-bruno-fernandes-34804234",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-bruno-fernandes-34804234",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34804184.ece/ALTERNATES/s615/0_Como-1907-v-Manchester-United-UEFA-Champions-League-202627-League-Phase-MD3.jpg",
+    "category": "Champions League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-bruno-fernandes-34804234",
+    "publishedAt": "2026-10-22T16:22:56.000Z",
+    "discoveredAt": "2026-10-23T06:43:09.401Z",
+    "lastVerifiedAt": "2026-10-23T06:43:09.401Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "today",
+      "ageMinutes": 860,
+      "label": "Earlier today",
+      "publishedAt": "2026-10-22T16:22:56.000Z",
+      "lastUpdated": "2026-10-23T06:43:09.401Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-bruno-fernandes-34804234",
+          "credibilityScore": 78,
+          "publishedAt": "2026-10-22T16:22:56.000Z",
+          "discoveredAt": "2026-10-23T06:43:09.401Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "inter-milan"
     ]
   }
 ]
