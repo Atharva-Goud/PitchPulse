@@ -1,6 +1,7 @@
 import { Team } from '@/types';
 import { fetchAllClubs } from '@/lib/football/api';
 import { unstable_cache as cache } from 'next/cache';
+import teamsJson from '@/data/teams/teams.json';
 
 export const getAllTeams = cache(async (): Promise<Team[]> => {
   const clubs = await fetchAllClubs();
@@ -15,8 +16,11 @@ export const getAllTeams = cache(async (): Promise<Team[]> => {
 });
 
 export async function getTeamById(id: string): Promise<Team | null> {
-  const teams = await getAllTeams();
-  return teams.find((team): boolean => team.id === id) || null;
+  const teams = teamsJson as unknown as Team[];
+  const found = teams.find((team): boolean => team.id === id);
+  if (found) return found;
+  const apiTeams = await getAllTeams();
+  return apiTeams.find((team): boolean => team.id === id) || null;
 }
 
 export async function getTeamsByLeague(league: string): Promise<Team[]> {
