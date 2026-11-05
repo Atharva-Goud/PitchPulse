@@ -1,29 +1,29 @@
 [
   {
-    "id": "news-mvkmxe0r-67gpe3",
-    "title": "Liverpool latest: Chelsea transfer battle intensifies as Trent Alexander-Arnold tipped for move",
-    "summary": "Trent Alexander-Arnold has been backed for a Premier League return as Liverpool gear up for the winter transfer window",
+    "id": "news-mw3q4xbv-g86yzg",
+    "title": "Liverpool handed massive Ronald Araujo transfer boost after new agent meets with club chief",
+    "summary": "Liverpool have an option to sign Ronald Araujo permanently from Barcelona for £47m but the player still has to agree to such a move",
     "source": {
       "name": "Liverpool Echo LFC",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-news-trent-camara-34803291",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-araujo-transfer-barcelona-latest-34867582",
       "credibilityScore": 80
     },
     "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-news-trent-camara-34803291",
-    "image": "https://i2-prod.liverpoolecho.co.uk/sport/football/football-news/article34803290.ece/ALTERNATES/s615/0_Real-Madrid-v-Villarreal-CF-LaLiga-EA-Sports-202627.jpg",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-araujo-transfer-barcelona-latest-34867582",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34868288.ece/ALTERNATES/s615/0_GettyImages-2300122080.jpg",
     "category": "Transfers",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-news-trent-camara-34803291",
-    "publishedAt": "2026-10-23T05:00:00.000Z",
-    "discoveredAt": "2026-10-23T07:14:48.362Z",
-    "lastVerifiedAt": "2026-10-23T07:14:48.362Z",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-araujo-transfer-barcelona-latest-34867582",
+    "publishedAt": "2026-11-05T15:01:33.000Z",
+    "discoveredAt": "2026-11-05T15:52:15.014Z",
+    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 134,
-      "label": "2h ago",
-      "publishedAt": "2026-10-23T05:00:00.000Z",
-      "lastUpdated": "2026-10-23T07:14:48.362Z"
+      "ageMinutes": 50,
+      "label": "50m ago",
+      "publishedAt": "2026-11-05T15:01:33.000Z",
+      "lastUpdated": "2026-11-05T15:52:15.014Z"
     },
     "verification": {
       "level": "single_source",
@@ -32,10 +32,10 @@
           "id": "liverpool-echo",
           "name": "Liverpool Echo LFC",
           "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-news-trent-camara-34803291",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-araujo-transfer-barcelona-latest-34867582",
           "credibilityScore": 80,
-          "publishedAt": "2026-10-23T05:00:00.000Z",
-          "discoveredAt": "2026-10-23T07:14:48.362Z"
+          "publishedAt": "2026-11-05T15:01:33.000Z",
+          "discoveredAt": "2026-11-05T15:52:15.014Z"
         }
       ],
       "confidenceScore": 80,
@@ -48,192 +48,34 @@
     },
     "relatedTeams": [
       "liverpool",
-      "chelsea",
-      "inter-milan"
+      "barcelona"
     ]
   },
   {
-    "id": "news-mvkmxe0r-n88z6e",
-    "title": "Why Rio Ngumoha could be Andoni Iraola's Liverpool trump card against red-hot Brighton",
-    "summary": "TACTICAL PREVIEW: Liverpool take on the league's best attack and defence on Sunday when Fabian Hurzeler's high-flying Seagulls come to town",
+    "id": "news-mw3q4xbv-2hpobm",
+    "title": " Manchester United owners INEOS part with manager after five months, ahead of putting club up for sale ",
+    "summary": "Manchester United manager Michael Carrick might be looking over his shoulder at how things are going at Lausanne-Sport",
     "source": {
-      "name": "Liverpool Echo LFC",
+      "name": "FourFourTwo",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/rio-ngumoha-could-andoni-iraolas-34800431",
-      "credibilityScore": 80
+      "url": "https://www.fourfourtwo.com/team/manchester-united-owners-ineos-part-with-manager-after-five-months-ahead-of-putting-club-up-for-sale",
+      "credibilityScore": 85
     },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/rio-ngumoha-could-andoni-iraolas-34800431",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34801906.ece/ALTERNATES/s615/0_MKR_LECH_221026RioMainImage.jpg",
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/team/manchester-united-owners-ineos-part-with-manager-after-five-months-ahead-of-putting-club-up-for-sale",
+    "image": "https://cdn.mos.cms.futurecdn.net/WPDReQfbsbMQaqZQfuppsE-1920-80.jpg",
     "category": "Premier League",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/rio-ngumoha-could-andoni-iraolas-34800431",
-    "publishedAt": "2026-10-23T05:00:00.000Z",
-    "discoveredAt": "2026-10-23T07:14:48.362Z",
-    "lastVerifiedAt": "2026-10-23T07:14:48.362Z",
+    "originalUrl": "https://www.fourfourtwo.com/team/manchester-united-owners-ineos-part-with-manager-after-five-months-ahead-of-putting-club-up-for-sale",
+    "publishedAt": "2026-11-05T13:39:10.000Z",
+    "discoveredAt": "2026-11-05T15:52:15.014Z",
+    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 134,
+      "ageMinutes": 133,
       "label": "2h ago",
-      "publishedAt": "2026-10-23T05:00:00.000Z",
-      "lastUpdated": "2026-10-23T07:14:48.362Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/rio-ngumoha-could-andoni-iraolas-34800431",
-          "credibilityScore": 80,
-          "publishedAt": "2026-10-23T05:00:00.000Z",
-          "discoveredAt": "2026-10-23T07:14:48.362Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool",
-      "brighton"
-    ]
-  },
-  {
-    "id": "news-mvkmxe0r-54aux5",
-    "title": "Andoni Iraola and Liverpool are passing more and more tests - now for another exciting one",
-    "summary": "Our Liverpool Jury look back at the Reds' 4-3 win over Villarreal on Tuesday night and ahead to the visit of Brighton this weekend",
-    "source": {
-      "name": "Liverpool Echo LFC",
-      "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-liverpool-passing-more-34804043",
-      "credibilityScore": 80
-    },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-liverpool-passing-more-34804043",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34804048.ece/ALTERNATES/s615/0_GettyImages-2301202063.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-liverpool-passing-more-34804043",
-    "publishedAt": "2026-10-23T04:00:00.000Z",
-    "discoveredAt": "2026-10-23T07:14:48.362Z",
-    "lastVerifiedAt": "2026-10-23T07:14:48.362Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 194,
-      "label": "3h ago",
-      "publishedAt": "2026-10-23T04:00:00.000Z",
-      "lastUpdated": "2026-10-23T07:14:48.362Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-liverpool-passing-more-34804043",
-          "credibilityScore": 80,
-          "publishedAt": "2026-10-23T04:00:00.000Z",
-          "discoveredAt": "2026-10-23T07:14:48.362Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool",
-      "brighton"
-    ]
-  },
-  {
-    "id": "news-mvkmxe0r-hzzc68",
-    "title": "Eddie Howe decides Man United job stance after being named 'standout' candidate",
-    "summary": "Manchester United continue to be credited with an interest in former Newcastle United head coach Eddie Howe as Michael Carrick fights for his future at the club",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-eddie-howe-34804850",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-eddie-howe-34804850",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/football-news/article34804849.ece/ALTERNATES/s615/0_Fulham-v-Newcastle-United-Premier-League.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-eddie-howe-34804850",
-    "publishedAt": "2026-10-22T21:49:46.000Z",
-    "discoveredAt": "2026-10-23T07:14:48.362Z",
-    "lastVerifiedAt": "2026-10-23T07:14:48.362Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 565,
-      "label": "9h ago",
-      "publishedAt": "2026-10-22T21:49:46.000Z",
-      "lastUpdated": "2026-10-23T07:14:48.362Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/united-man-utd-eddie-howe-34804850",
-          "credibilityScore": 78,
-          "publishedAt": "2026-10-22T21:49:46.000Z",
-          "discoveredAt": "2026-10-23T07:14:48.362Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "inter-milan",
-      "newcastle"
-    ]
-  },
-  {
-    "id": "news-mvkmxe0r-ynvljc",
-    "title": " Friday Football Quiz, episode 138: Can you get 20 correct answers? ",
-    "summary": "What comes between Thursday Football Quiz and Saturday Football Quiz but actually exists?",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/quiz/friday-football-quiz-231026",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/quiz/friday-football-quiz-231026",
-    "image": "https://cdn.mos.cms.futurecdn.net/ePnC5zuEVzF6WMBCNVEiAm-1920-80.png",
-    "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/quiz/friday-football-quiz-231026",
-    "publishedAt": "2026-10-23T07:00:00.000Z",
-    "discoveredAt": "2026-10-23T07:14:48.362Z",
-    "lastVerifiedAt": "2026-10-23T07:14:48.362Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 14,
-      "label": "14m ago",
-      "publishedAt": "2026-10-23T07:00:00.000Z",
-      "lastUpdated": "2026-10-23T07:14:48.362Z"
+      "publishedAt": "2026-11-05T13:39:10.000Z",
+      "lastUpdated": "2026-11-05T15:52:15.014Z"
     },
     "verification": {
       "level": "single_source",
@@ -242,160 +84,10 @@
           "id": "fourfourtwo",
           "name": "FourFourTwo",
           "type": "publication",
-          "url": "https://www.fourfourtwo.com/quiz/friday-football-quiz-231026",
+          "url": "https://www.fourfourtwo.com/team/manchester-united-owners-ineos-part-with-manager-after-five-months-ahead-of-putting-club-up-for-sale",
           "credibilityScore": 85,
-          "publishedAt": "2026-10-23T07:00:00.000Z",
-          "discoveredAt": "2026-10-23T07:14:48.362Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mvkmxe0r-has3c1",
-    "title": " Quickfire Quiz 230: Can you answer 10 questions in 90 seconds? ",
-    "summary": "Tackle these 10 football trivia questions about Mario Balotelli, trebles, sponsors and more!",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-230",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-230",
-    "image": "https://cdn.mos.cms.futurecdn.net/C6LjMegiKAUX4KNRXma6i4-1920-80.png",
-    "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-230",
-    "publishedAt": "2026-10-23T05:00:00.000Z",
-    "discoveredAt": "2026-10-23T07:14:48.362Z",
-    "lastVerifiedAt": "2026-10-23T07:14:48.362Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 134,
-      "label": "2h ago",
-      "publishedAt": "2026-10-23T05:00:00.000Z",
-      "lastUpdated": "2026-10-23T07:14:48.362Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-230",
-          "credibilityScore": 85,
-          "publishedAt": "2026-10-23T05:00:00.000Z",
-          "discoveredAt": "2026-10-23T07:14:48.362Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": []
-  },
-  {
-    "id": "news-mvkmxe0r-1m6z67",
-    "title": " Trent Alexander-Arnold in line for surprise move back to the Premier League with Liverpool rivals ",
-    "summary": "Alexander-Arnold hasn't won over Jose Mourinho at Real Madrid and his big move is turning sour",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/transfer/trent-alexander-arnold-in-line-for-surprise-move-back-to-the-premier-league-with-liverpool-rivals",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/transfer/trent-alexander-arnold-in-line-for-surprise-move-back-to-the-premier-league-with-liverpool-rivals",
-    "image": "https://cdn.mos.cms.futurecdn.net/YFRvEvzUP8R4pvo7YNnPZf-1920-80.jpg",
-    "category": "Transfers",
-    "originalUrl": "https://www.fourfourtwo.com/transfer/trent-alexander-arnold-in-line-for-surprise-move-back-to-the-premier-league-with-liverpool-rivals",
-    "publishedAt": "2026-10-22T15:00:00.000Z",
-    "discoveredAt": "2026-10-23T07:14:48.362Z",
-    "lastVerifiedAt": "2026-10-23T07:14:48.362Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "today",
-      "ageMinutes": 974,
-      "label": "Earlier today",
-      "publishedAt": "2026-10-22T15:00:00.000Z",
-      "lastUpdated": "2026-10-23T07:14:48.362Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/transfer/trent-alexander-arnold-in-line-for-surprise-move-back-to-the-premier-league-with-liverpool-rivals",
-          "credibilityScore": 85,
-          "publishedAt": "2026-10-22T15:00:00.000Z",
-          "discoveredAt": "2026-10-23T07:14:48.362Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool",
-      "real-madrid"
-    ]
-  },
-  {
-    "id": "news-mvkmxe0r-owz1if",
-    "title": " Cesc Fabregas explains why Como invoked the mercy rule against Manchester United ",
-    "summary": "Man United were humiliated in the league phase of the Champions League and the Como boss says it could have been even worse",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/person/coaches-managers/cesc-fabregas-explains-why-como-invoked-the-mercy-rule-against-manchester-united",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/person/coaches-managers/cesc-fabregas-explains-why-como-invoked-the-mercy-rule-against-manchester-united",
-    "image": "https://cdn.mos.cms.futurecdn.net/jX7wqgoqAmwUZM3QFPFD6C-1920-80.jpg",
-    "category": "Champions League",
-    "originalUrl": "https://www.fourfourtwo.com/person/coaches-managers/cesc-fabregas-explains-why-como-invoked-the-mercy-rule-against-manchester-united",
-    "publishedAt": "2026-10-22T17:00:00.000Z",
-    "discoveredAt": "2026-10-23T07:14:48.362Z",
-    "lastVerifiedAt": "2026-10-23T07:14:48.362Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "today",
-      "ageMinutes": 854,
-      "label": "Earlier today",
-      "publishedAt": "2026-10-22T17:00:00.000Z",
-      "lastUpdated": "2026-10-23T07:14:48.362Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/person/coaches-managers/cesc-fabregas-explains-why-como-invoked-the-mercy-rule-against-manchester-united",
-          "credibilityScore": 85,
-          "publishedAt": "2026-10-22T17:00:00.000Z",
-          "discoveredAt": "2026-10-23T07:14:48.362Z"
+          "publishedAt": "2026-11-05T13:39:10.000Z",
+          "discoveredAt": "2026-11-05T15:52:15.014Z"
         }
       ],
       "confidenceScore": 85,
@@ -411,30 +103,30 @@
     ]
   },
   {
-    "id": "news-mvkmxe0r-ybmal6",
-    "title": " How to watch Bournemouth vs AC Milan: Live Streams ",
-    "summary": "Here's how to watch Bournemouth vs AC Milan online from anywhere as the red and blacks clash on the south coast.",
+    "id": "news-mw3q4xbv-pm91jv",
+    "title": " New Liverpool star has made himself undroppable and further damaged Arne Slot's Anfield legacy ",
+    "summary": "The Reds lost their way after the teenager’s withdrawal in Sunday’s defeat to Arsenal as the midfielder shone on his first ever Premier League start",
     "source": {
       "name": "FourFourTwo",
       "type": "publication",
-      "url": "https://www.fourfourtwo.com/competition/watch-bournemouth-vs-ac-milan-europa-league-2026-27-free",
+      "url": "https://www.fourfourtwo.com/person/player/new-liverpool-star-has-made-himself-undroppable-and-further-damaged-arne-slots-anfield-legacy",
       "credibilityScore": 85
     },
     "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/competition/watch-bournemouth-vs-ac-milan-europa-league-2026-27-free",
-    "image": "https://cdn.mos.cms.futurecdn.net/xxSLirQYCVStMV2YUSYiLM-1920-80.png",
+    "sourceUrl": "https://www.fourfourtwo.com/person/player/new-liverpool-star-has-made-himself-undroppable-and-further-damaged-arne-slots-anfield-legacy",
+    "image": "https://cdn.mos.cms.futurecdn.net/r6s9kgZnbuU8g3eZi4uys3-1920-80.jpg",
     "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/competition/watch-bournemouth-vs-ac-milan-europa-league-2026-27-free",
-    "publishedAt": "2026-10-22T16:00:00.000Z",
-    "discoveredAt": "2026-10-23T07:14:48.362Z",
-    "lastVerifiedAt": "2026-10-23T07:14:48.362Z",
+    "originalUrl": "https://www.fourfourtwo.com/person/player/new-liverpool-star-has-made-himself-undroppable-and-further-damaged-arne-slots-anfield-legacy",
+    "publishedAt": "2026-11-05T07:00:00.000Z",
+    "discoveredAt": "2026-11-05T15:52:15.014Z",
+    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "today",
-      "ageMinutes": 914,
-      "label": "Earlier today",
-      "publishedAt": "2026-10-22T16:00:00.000Z",
-      "lastUpdated": "2026-10-23T07:14:48.362Z"
+      "status": "recent",
+      "ageMinutes": 532,
+      "label": "8h ago",
+      "publishedAt": "2026-11-05T07:00:00.000Z",
+      "lastUpdated": "2026-11-05T15:52:15.014Z"
     },
     "verification": {
       "level": "single_source",
@@ -443,10 +135,10 @@
           "id": "fourfourtwo",
           "name": "FourFourTwo",
           "type": "publication",
-          "url": "https://www.fourfourtwo.com/competition/watch-bournemouth-vs-ac-milan-europa-league-2026-27-free",
+          "url": "https://www.fourfourtwo.com/person/player/new-liverpool-star-has-made-himself-undroppable-and-further-damaged-arne-slots-anfield-legacy",
           "credibilityScore": 85,
-          "publishedAt": "2026-10-22T16:00:00.000Z",
-          "discoveredAt": "2026-10-23T07:14:48.362Z"
+          "publishedAt": "2026-11-05T07:00:00.000Z",
+          "discoveredAt": "2026-11-05T15:52:15.014Z"
         }
       ],
       "confidenceScore": 85,
@@ -458,34 +150,87 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "ac-milan"
+      "arsenal",
+      "liverpool"
     ]
   },
   {
-    "id": "news-mvkmxe0r-7t32gk",
-    "title": " Manchester City legend Kyle Walker is gearing up for a painful move if his Premier League titles are stripped ",
-    "summary": "Man City have been found guilty of 114 Premier League charges, with their punishment and appeal both pending",
+    "id": "news-mw3q4xbv-74o2nf",
+    "title": "'He could manage Manchester United' - What next for Cristiano Ronaldo after Portugal retirement",
+    "summary": "Cristiano Ronaldo has retired from international football and one former Man Utd colleague believes he could return to the club one day.",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/he-could-manage-manchester-united-34867863",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/he-could-manage-manchester-united-34867863",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34868034.ece/ALTERNATES/s615/1_GettyImages-1339712611.jpg",
+    "category": "International Football",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/he-could-manage-manchester-united-34867863",
+    "publishedAt": "2026-11-05T14:29:03.000Z",
+    "discoveredAt": "2026-11-05T15:52:15.014Z",
+    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 83,
+      "label": "1h ago",
+      "publishedAt": "2026-11-05T14:29:03.000Z",
+      "lastUpdated": "2026-11-05T15:52:15.014Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/he-could-manage-manchester-united-34867863",
+          "credibilityScore": 78,
+          "publishedAt": "2026-11-05T14:29:03.000Z",
+          "discoveredAt": "2026-11-05T15:52:15.014Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-mw3q4xbv-xihiy0",
+    "title": " Cristiano Ronaldo can't face the embarrassment of being dropped, so he's quitting instead ",
+    "summary": "Cristiano Ronaldo international curtain call is a bitter affair and sorry stain on one of the greats' legacies",
     "source": {
       "name": "FourFourTwo",
       "type": "publication",
-      "url": "https://www.fourfourtwo.com/person/player/manchester-city-legend-kyle-walker-is-gearing-up-for-a-painful-response-if-his-premier-league-titles-are-stripped",
+      "url": "https://www.fourfourtwo.com/person/player/cristiano-ronaldo-cant-face-the-embarrassment-of-being-dropped-so-hes-quitting-instead",
       "credibilityScore": 85
     },
     "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/person/player/manchester-city-legend-kyle-walker-is-gearing-up-for-a-painful-response-if-his-premier-league-titles-are-stripped",
-    "image": "https://cdn.mos.cms.futurecdn.net/W6Q5UNFR4QAmZN4jJWxzB6-1920-80.jpg",
-    "category": "Transfers",
-    "originalUrl": "https://www.fourfourtwo.com/person/player/manchester-city-legend-kyle-walker-is-gearing-up-for-a-painful-response-if-his-premier-league-titles-are-stripped",
-    "publishedAt": "2026-10-22T16:00:00.000Z",
-    "discoveredAt": "2026-10-23T07:14:48.362Z",
-    "lastVerifiedAt": "2026-10-23T07:14:48.362Z",
+    "sourceUrl": "https://www.fourfourtwo.com/person/player/cristiano-ronaldo-cant-face-the-embarrassment-of-being-dropped-so-hes-quitting-instead",
+    "image": "https://cdn.mos.cms.futurecdn.net/7636yoYXCPyaBtSYwppi8D-1920-80.jpg",
+    "category": "International Football",
+    "originalUrl": "https://www.fourfourtwo.com/person/player/cristiano-ronaldo-cant-face-the-embarrassment-of-being-dropped-so-hes-quitting-instead",
+    "publishedAt": "2026-11-05T11:12:59.000Z",
+    "discoveredAt": "2026-11-05T15:52:15.014Z",
+    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "today",
-      "ageMinutes": 914,
-      "label": "Earlier today",
-      "publishedAt": "2026-10-22T16:00:00.000Z",
-      "lastUpdated": "2026-10-23T07:14:48.362Z"
+      "status": "recent",
+      "ageMinutes": 279,
+      "label": "4h ago",
+      "publishedAt": "2026-11-05T11:12:59.000Z",
+      "lastUpdated": "2026-11-05T15:52:15.014Z"
     },
     "verification": {
       "level": "single_source",
@@ -494,10 +239,10 @@
           "id": "fourfourtwo",
           "name": "FourFourTwo",
           "type": "publication",
-          "url": "https://www.fourfourtwo.com/person/player/manchester-city-legend-kyle-walker-is-gearing-up-for-a-painful-response-if-his-premier-league-titles-are-stripped",
+          "url": "https://www.fourfourtwo.com/person/player/cristiano-ronaldo-cant-face-the-embarrassment-of-being-dropped-so-hes-quitting-instead",
           "credibilityScore": 85,
-          "publishedAt": "2026-10-22T16:00:00.000Z",
-          "discoveredAt": "2026-10-23T07:14:48.362Z"
+          "publishedAt": "2026-11-05T11:12:59.000Z",
+          "discoveredAt": "2026-11-05T15:52:15.014Z"
         }
       ],
       "confidenceScore": 85,
@@ -509,7 +254,262 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "manchester-city"
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-mw3q4xbv-zm6u24",
+    "title": " 'A cheaper route into this Manchester United attack' Six of the best FPL differential options for Gameweek 10 ",
+    "summary": "FourFourTwo's dedicated FPL columnist, and one of the top players in the world, BigManBakar selects his best differentials for GW10",
+    "source": {
+      "name": "FourFourTwo",
+      "type": "publication",
+      "url": "https://www.fourfourtwo.com/competition/a-cheaper-route-into-this-manchester-united-attack-six-of-the-best-fpl-differential-options-for-gameweek-10",
+      "credibilityScore": 85
+    },
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/competition/a-cheaper-route-into-this-manchester-united-attack-six-of-the-best-fpl-differential-options-for-gameweek-10",
+    "image": "https://cdn.mos.cms.futurecdn.net/QFLqsGLzMytKNJbyu9TmrL-1920-80.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.fourfourtwo.com/competition/a-cheaper-route-into-this-manchester-united-attack-six-of-the-best-fpl-differential-options-for-gameweek-10",
+    "publishedAt": "2026-11-05T10:00:00.000Z",
+    "discoveredAt": "2026-11-05T15:52:15.014Z",
+    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 352,
+      "label": "5h ago",
+      "publishedAt": "2026-11-05T10:00:00.000Z",
+      "lastUpdated": "2026-11-05T15:52:15.014Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
+          "type": "publication",
+          "url": "https://www.fourfourtwo.com/competition/a-cheaper-route-into-this-manchester-united-attack-six-of-the-best-fpl-differential-options-for-gameweek-10",
+          "credibilityScore": 85,
+          "publishedAt": "2026-11-05T10:00:00.000Z",
+          "discoveredAt": "2026-11-05T15:52:15.014Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by FourFourTwo",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united"
+    ]
+  },
+  {
+    "id": "news-mw3q4xbv-qcrrwt",
+    "title": "Scott McTominay's furious rant as contract talks linger and Napoli stars clash - 'I'm angry'",
+    "summary": "Scott McTominay was furious after his Napoli side endured a nightmare evening in the Champions League against Porto",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/scott-mctominay-napoli-contract-angry-34868336",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/scott-mctominay-napoli-contract-angry-34868336",
+    "image": "https://i2-prod.birminghammail.co.uk/incoming/article34868215.ece/ALTERNATES/s615/2_Screenshot-2026-11-05-142227-1.jpg",
+    "category": "Transfers",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/scott-mctominay-napoli-contract-angry-34868336",
+    "publishedAt": "2026-11-05T15:45:09.000Z",
+    "discoveredAt": "2026-11-05T15:52:15.014Z",
+    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 7,
+      "label": "7m ago",
+      "publishedAt": "2026-11-05T15:45:09.000Z",
+      "lastUpdated": "2026-11-05T15:52:15.014Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/scott-mctominay-napoli-contract-angry-34868336",
+          "credibilityScore": 78,
+          "publishedAt": "2026-11-05T15:45:09.000Z",
+          "discoveredAt": "2026-11-05T15:52:15.014Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "napoli"
+    ]
+  },
+  {
+    "id": "news-mw3q4xbv-nd7z5m",
+    "title": "'A little worry' - Jamie Carragher says two Liverpool players highlight transfer spend problems",
+    "summary": "Jamie Carragher questions Liverpool's transfer decisions after Wednesday's 3-2 defeat to Fenerbahce in the Champions League",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/a-little-worry-jamie-carragher-34866373",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/a-little-worry-jamie-carragher-34866373",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34866378.ece/ALTERNATES/s615/0_carra12.png",
+    "category": "Transfers",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/a-little-worry-jamie-carragher-34866373",
+    "publishedAt": "2026-11-05T12:55:55.000Z",
+    "discoveredAt": "2026-11-05T15:52:15.014Z",
+    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 176,
+      "label": "2h ago",
+      "publishedAt": "2026-11-05T12:55:55.000Z",
+      "lastUpdated": "2026-11-05T15:52:15.014Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/a-little-worry-jamie-carragher-34866373",
+          "credibilityScore": 80,
+          "publishedAt": "2026-11-05T12:55:55.000Z",
+          "discoveredAt": "2026-11-05T15:52:15.014Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mw3q4xbv-4y5pka",
+    "title": "Liverpool fans race to get 50% off 26/27 home and away shirts as flash sale ends soon",
+    "summary": "Liverpool's 2026/27 home and away jerseys are half price at one retailer ahead of Black Friday",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-2027-shirt-deal-offer-34804057",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-2027-shirt-deal-offer-34804057",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34804251.ece/ALTERNATES/s615/0_Untitled-October-12-2026-at-110224-11jpeg.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-2027-shirt-deal-offer-34804057",
+    "publishedAt": "2026-11-05T12:01:00.000Z",
+    "discoveredAt": "2026-11-05T15:52:15.014Z",
+    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 231,
+      "label": "3h ago",
+      "publishedAt": "2026-11-05T12:01:00.000Z",
+      "lastUpdated": "2026-11-05T15:52:15.014Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-2027-shirt-deal-offer-34804057",
+          "credibilityScore": 80,
+          "publishedAt": "2026-11-05T12:01:00.000Z",
+          "discoveredAt": "2026-11-05T15:52:15.014Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mw3q4xbv-5zkwu5",
+    "title": "Trey Nyoni highlights Liverpool 'lesson' after Champions League setback - 'we had the game'",
+    "summary": "Liverpool teenager Trey Nyoni has been speaking after the Champions League loss at Fenerbahce on Wednesday evening",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-highlights-liverpool-lesson-34865801",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-highlights-liverpool-lesson-34865801",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34865831.ece/ALTERNATES/s615/2_Screenshot-2026-11-05-095235.png",
+    "category": "Champions League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-highlights-liverpool-lesson-34865801",
+    "publishedAt": "2026-11-05T11:11:55.000Z",
+    "discoveredAt": "2026-11-05T15:52:15.014Z",
+    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 280,
+      "label": "4h ago",
+      "publishedAt": "2026-11-05T11:11:55.000Z",
+      "lastUpdated": "2026-11-05T15:52:15.014Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-highlights-liverpool-lesson-34865801",
+          "credibilityScore": 80,
+          "publishedAt": "2026-11-05T11:11:55.000Z",
+          "discoveredAt": "2026-11-05T15:52:15.014Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool"
     ]
   }
 ]
