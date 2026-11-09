@@ -1,236 +1,29 @@
 [
   {
-    "id": "news-mw3q4xbv-g86yzg",
-    "title": "Liverpool handed massive Ronald Araujo transfer boost after new agent meets with club chief",
-    "summary": "Liverpool have an option to sign Ronald Araujo permanently from Barcelona for £47m but the player still has to agree to such a move",
+    "id": "news-mw9duu82-77ziwi",
+    "title": " Barcelona touchline bust-up shows Newcastle United got the better end of the Anthony Gordon deal ",
+    "summary": "Anthony Gordon isn't having it all his own way at Barcelona if his latest exchange with boss Hansi Flick is anything to go by",
     "source": {
-      "name": "Liverpool Echo LFC",
+      "name": "FourFourTwo",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-araujo-transfer-barcelona-latest-34867582",
-      "credibilityScore": 80
+      "url": "https://www.fourfourtwo.com/person/player/barcelona-touchline-bust-up-shows-newcastle-united-got-the-better-end-of-the-anthony-gordon-deal",
+      "credibilityScore": 85
     },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-araujo-transfer-barcelona-latest-34867582",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34868288.ece/ALTERNATES/s615/0_GettyImages-2300122080.jpg",
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/person/player/barcelona-touchline-bust-up-shows-newcastle-united-got-the-better-end-of-the-anthony-gordon-deal",
+    "image": "https://cdn.mos.cms.futurecdn.net/S93e9AgZ6LvqUdQQJKMSqb-1920-80.jpg",
     "category": "Transfers",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-araujo-transfer-barcelona-latest-34867582",
-    "publishedAt": "2026-11-05T15:01:33.000Z",
-    "discoveredAt": "2026-11-05T15:52:15.014Z",
-    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 50,
-      "label": "50m ago",
-      "publishedAt": "2026-11-05T15:01:33.000Z",
-      "lastUpdated": "2026-11-05T15:52:15.014Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-araujo-transfer-barcelona-latest-34867582",
-          "credibilityScore": 80,
-          "publishedAt": "2026-11-05T15:01:33.000Z",
-          "discoveredAt": "2026-11-05T15:52:15.014Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool",
-      "barcelona"
-    ]
-  },
-  {
-    "id": "news-mw3q4xbv-2hpobm",
-    "title": " Manchester United owners INEOS part with manager after five months, ahead of putting club up for sale ",
-    "summary": "Manchester United manager Michael Carrick might be looking over his shoulder at how things are going at Lausanne-Sport",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/team/manchester-united-owners-ineos-part-with-manager-after-five-months-ahead-of-putting-club-up-for-sale",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/team/manchester-united-owners-ineos-part-with-manager-after-five-months-ahead-of-putting-club-up-for-sale",
-    "image": "https://cdn.mos.cms.futurecdn.net/WPDReQfbsbMQaqZQfuppsE-1920-80.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/team/manchester-united-owners-ineos-part-with-manager-after-five-months-ahead-of-putting-club-up-for-sale",
-    "publishedAt": "2026-11-05T13:39:10.000Z",
-    "discoveredAt": "2026-11-05T15:52:15.014Z",
-    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 133,
-      "label": "2h ago",
-      "publishedAt": "2026-11-05T13:39:10.000Z",
-      "lastUpdated": "2026-11-05T15:52:15.014Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/team/manchester-united-owners-ineos-part-with-manager-after-five-months-ahead-of-putting-club-up-for-sale",
-          "credibilityScore": 85,
-          "publishedAt": "2026-11-05T13:39:10.000Z",
-          "discoveredAt": "2026-11-05T15:52:15.014Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united"
-    ]
-  },
-  {
-    "id": "news-mw3q4xbv-pm91jv",
-    "title": " New Liverpool star has made himself undroppable and further damaged Arne Slot's Anfield legacy ",
-    "summary": "The Reds lost their way after the teenager’s withdrawal in Sunday’s defeat to Arsenal as the midfielder shone on his first ever Premier League start",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/person/player/new-liverpool-star-has-made-himself-undroppable-and-further-damaged-arne-slots-anfield-legacy",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/person/player/new-liverpool-star-has-made-himself-undroppable-and-further-damaged-arne-slots-anfield-legacy",
-    "image": "https://cdn.mos.cms.futurecdn.net/r6s9kgZnbuU8g3eZi4uys3-1920-80.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/person/player/new-liverpool-star-has-made-himself-undroppable-and-further-damaged-arne-slots-anfield-legacy",
-    "publishedAt": "2026-11-05T07:00:00.000Z",
-    "discoveredAt": "2026-11-05T15:52:15.014Z",
-    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "originalUrl": "https://www.fourfourtwo.com/person/player/barcelona-touchline-bust-up-shows-newcastle-united-got-the-better-end-of-the-anthony-gordon-deal",
+    "publishedAt": "2026-11-09T10:42:08.000Z",
+    "discoveredAt": "2026-11-09T14:55:04.994Z",
+    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 532,
-      "label": "8h ago",
-      "publishedAt": "2026-11-05T07:00:00.000Z",
-      "lastUpdated": "2026-11-05T15:52:15.014Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/person/player/new-liverpool-star-has-made-himself-undroppable-and-further-damaged-arne-slots-anfield-legacy",
-          "credibilityScore": 85,
-          "publishedAt": "2026-11-05T07:00:00.000Z",
-          "discoveredAt": "2026-11-05T15:52:15.014Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "arsenal",
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-mw3q4xbv-74o2nf",
-    "title": "'He could manage Manchester United' - What next for Cristiano Ronaldo after Portugal retirement",
-    "summary": "Cristiano Ronaldo has retired from international football and one former Man Utd colleague believes he could return to the club one day.",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/he-could-manage-manchester-united-34867863",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/he-could-manage-manchester-united-34867863",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34868034.ece/ALTERNATES/s615/1_GettyImages-1339712611.jpg",
-    "category": "International Football",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/he-could-manage-manchester-united-34867863",
-    "publishedAt": "2026-11-05T14:29:03.000Z",
-    "discoveredAt": "2026-11-05T15:52:15.014Z",
-    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 83,
-      "label": "1h ago",
-      "publishedAt": "2026-11-05T14:29:03.000Z",
-      "lastUpdated": "2026-11-05T15:52:15.014Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/he-could-manage-manchester-united-34867863",
-          "credibilityScore": 78,
-          "publishedAt": "2026-11-05T14:29:03.000Z",
-          "discoveredAt": "2026-11-05T15:52:15.014Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "inter-milan"
-    ]
-  },
-  {
-    "id": "news-mw3q4xbv-xihiy0",
-    "title": " Cristiano Ronaldo can't face the embarrassment of being dropped, so he's quitting instead ",
-    "summary": "Cristiano Ronaldo international curtain call is a bitter affair and sorry stain on one of the greats' legacies",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/person/player/cristiano-ronaldo-cant-face-the-embarrassment-of-being-dropped-so-hes-quitting-instead",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/person/player/cristiano-ronaldo-cant-face-the-embarrassment-of-being-dropped-so-hes-quitting-instead",
-    "image": "https://cdn.mos.cms.futurecdn.net/7636yoYXCPyaBtSYwppi8D-1920-80.jpg",
-    "category": "International Football",
-    "originalUrl": "https://www.fourfourtwo.com/person/player/cristiano-ronaldo-cant-face-the-embarrassment-of-being-dropped-so-hes-quitting-instead",
-    "publishedAt": "2026-11-05T11:12:59.000Z",
-    "discoveredAt": "2026-11-05T15:52:15.014Z",
-    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 279,
+      "ageMinutes": 253,
       "label": "4h ago",
-      "publishedAt": "2026-11-05T11:12:59.000Z",
-      "lastUpdated": "2026-11-05T15:52:15.014Z"
+      "publishedAt": "2026-11-09T10:42:08.000Z",
+      "lastUpdated": "2026-11-09T14:55:04.994Z"
     },
     "verification": {
       "level": "single_source",
@@ -239,10 +32,10 @@
           "id": "fourfourtwo",
           "name": "FourFourTwo",
           "type": "publication",
-          "url": "https://www.fourfourtwo.com/person/player/cristiano-ronaldo-cant-face-the-embarrassment-of-being-dropped-so-hes-quitting-instead",
+          "url": "https://www.fourfourtwo.com/person/player/barcelona-touchline-bust-up-shows-newcastle-united-got-the-better-end-of-the-anthony-gordon-deal",
           "credibilityScore": 85,
-          "publishedAt": "2026-11-05T11:12:59.000Z",
-          "discoveredAt": "2026-11-05T15:52:15.014Z"
+          "publishedAt": "2026-11-09T10:42:08.000Z",
+          "discoveredAt": "2026-11-09T14:55:04.994Z"
         }
       ],
       "confidenceScore": 85,
@@ -254,34 +47,35 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "inter-milan"
+      "barcelona",
+      "newcastle"
     ]
   },
   {
-    "id": "news-mw3q4xbv-zm6u24",
-    "title": " 'A cheaper route into this Manchester United attack' Six of the best FPL differential options for Gameweek 10 ",
-    "summary": "FourFourTwo's dedicated FPL columnist, and one of the top players in the world, BigManBakar selects his best differentials for GW10",
+    "id": "news-mw9duu82-8dmd0f",
+    "title": " HENRY WINTER: Fabian Hurzeler's Brighton & Hove Albion are perfectly set up for success - on and off the pitch ",
+    "summary": "Why would Fabian Hurzeler ever leave Brighton & Hove Albion? The Seagulls continue to marvel, as the ascension continues in Sussex",
     "source": {
       "name": "FourFourTwo",
       "type": "publication",
-      "url": "https://www.fourfourtwo.com/competition/a-cheaper-route-into-this-manchester-united-attack-six-of-the-best-fpl-differential-options-for-gameweek-10",
+      "url": "https://www.fourfourtwo.com/team/henry-winter-fabian-hurzelers-brighton-and-hove-albion-are-perfectly-set-up-for-success-on-and-off-the-pitch",
       "credibilityScore": 85
     },
     "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/competition/a-cheaper-route-into-this-manchester-united-attack-six-of-the-best-fpl-differential-options-for-gameweek-10",
-    "image": "https://cdn.mos.cms.futurecdn.net/QFLqsGLzMytKNJbyu9TmrL-1920-80.jpg",
+    "sourceUrl": "https://www.fourfourtwo.com/team/henry-winter-fabian-hurzelers-brighton-and-hove-albion-are-perfectly-set-up-for-success-on-and-off-the-pitch",
+    "image": "https://cdn.mos.cms.futurecdn.net/tCXSyakYqKCLBPH7v4PrhL-1920-80.jpg",
     "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/competition/a-cheaper-route-into-this-manchester-united-attack-six-of-the-best-fpl-differential-options-for-gameweek-10",
-    "publishedAt": "2026-11-05T10:00:00.000Z",
-    "discoveredAt": "2026-11-05T15:52:15.014Z",
-    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "originalUrl": "https://www.fourfourtwo.com/team/henry-winter-fabian-hurzelers-brighton-and-hove-albion-are-perfectly-set-up-for-success-on-and-off-the-pitch",
+    "publishedAt": "2026-11-09T09:30:28.000Z",
+    "discoveredAt": "2026-11-09T14:55:04.994Z",
+    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 352,
+      "ageMinutes": 324,
       "label": "5h ago",
-      "publishedAt": "2026-11-05T10:00:00.000Z",
-      "lastUpdated": "2026-11-05T15:52:15.014Z"
+      "publishedAt": "2026-11-09T09:30:28.000Z",
+      "lastUpdated": "2026-11-09T14:55:04.994Z"
     },
     "verification": {
       "level": "single_source",
@@ -290,10 +84,10 @@
           "id": "fourfourtwo",
           "name": "FourFourTwo",
           "type": "publication",
-          "url": "https://www.fourfourtwo.com/competition/a-cheaper-route-into-this-manchester-united-attack-six-of-the-best-fpl-differential-options-for-gameweek-10",
+          "url": "https://www.fourfourtwo.com/team/henry-winter-fabian-hurzelers-brighton-and-hove-albion-are-perfectly-set-up-for-success-on-and-off-the-pitch",
           "credibilityScore": 85,
-          "publishedAt": "2026-11-05T10:00:00.000Z",
-          "discoveredAt": "2026-11-05T15:52:15.014Z"
+          "publishedAt": "2026-11-09T09:30:28.000Z",
+          "discoveredAt": "2026-11-09T14:55:04.994Z"
         }
       ],
       "confidenceScore": 85,
@@ -305,34 +99,188 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "manchester-united"
+      "inter-milan",
+      "brighton"
     ]
   },
   {
-    "id": "news-mw3q4xbv-qcrrwt",
-    "title": "Scott McTominay's furious rant as contract talks linger and Napoli stars clash - 'I'm angry'",
-    "summary": "Scott McTominay was furious after his Napoli side endured a nightmare evening in the Champions League against Porto",
+    "id": "news-mw9duu82-q6f8wi",
+    "title": " It’s not the mistakes and it’s not “desire and intensity” Manchester City STILL have a Rodri problem ",
+    "summary": "His absence remains keenly felt, with another transfer oversight at the club adding to the challenge they face without him",
+    "source": {
+      "name": "FourFourTwo",
+      "type": "publication",
+      "url": "https://www.fourfourtwo.com/tactic/its-not-the-mistakes-and-its-not-desire-and-intensity-manchester-city-still-have-a-rodri-problem",
+      "credibilityScore": 85
+    },
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/tactic/its-not-the-mistakes-and-its-not-desire-and-intensity-manchester-city-still-have-a-rodri-problem",
+    "image": "https://cdn.mos.cms.futurecdn.net/opaSb6wDtH5wTncAJe7xDg-1920-80.jpg",
+    "category": "Transfers",
+    "originalUrl": "https://www.fourfourtwo.com/tactic/its-not-the-mistakes-and-its-not-desire-and-intensity-manchester-city-still-have-a-rodri-problem",
+    "publishedAt": "2026-11-09T13:00:00.000Z",
+    "discoveredAt": "2026-11-09T14:55:04.994Z",
+    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 115,
+      "label": "1h ago",
+      "publishedAt": "2026-11-09T13:00:00.000Z",
+      "lastUpdated": "2026-11-09T14:55:04.994Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
+          "type": "publication",
+          "url": "https://www.fourfourtwo.com/tactic/its-not-the-mistakes-and-its-not-desire-and-intensity-manchester-city-still-have-a-rodri-problem",
+          "credibilityScore": 85,
+          "publishedAt": "2026-11-09T13:00:00.000Z",
+          "discoveredAt": "2026-11-09T14:55:04.994Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by FourFourTwo",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-city"
+    ]
+  },
+  {
+    "id": "news-mw9duu82-5o6d6e",
+    "title": " Arsenal set to complete THREE seismic deals before January: report ",
+    "summary": "Arsenal manager Mikel Arteta has been given a huge boost, as the Gunners' season rolls on",
+    "source": {
+      "name": "FourFourTwo",
+      "type": "publication",
+      "url": "https://www.fourfourtwo.com/transfer/arsenal-set-to-complete-three-seismic-deals-before-january-report",
+      "credibilityScore": 85
+    },
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/transfer/arsenal-set-to-complete-three-seismic-deals-before-january-report",
+    "image": "https://cdn.mos.cms.futurecdn.net/mjwAaD6ZCJub2nBPyuoNL5-1920-80.jpg",
+    "category": "Transfers",
+    "originalUrl": "https://www.fourfourtwo.com/transfer/arsenal-set-to-complete-three-seismic-deals-before-january-report",
+    "publishedAt": "2026-11-09T12:25:13.000Z",
+    "discoveredAt": "2026-11-09T14:55:04.994Z",
+    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 150,
+      "label": "2h ago",
+      "publishedAt": "2026-11-09T12:25:13.000Z",
+      "lastUpdated": "2026-11-09T14:55:04.994Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
+          "type": "publication",
+          "url": "https://www.fourfourtwo.com/transfer/arsenal-set-to-complete-three-seismic-deals-before-january-report",
+          "credibilityScore": 85,
+          "publishedAt": "2026-11-09T12:25:13.000Z",
+          "discoveredAt": "2026-11-09T14:55:04.994Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by FourFourTwo",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "arsenal"
+    ]
+  },
+  {
+    "id": "news-mw9duu82-xr68cn",
+    "title": "Alisson Becker makes Liverpool future clear as agent opens contract talks - 'My will is to stay'",
+    "summary": "Alisson Becker's Liverpool contract expires next summer - but the goalkeeper has now revealed he wants to extend his stay at Anfield",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/alisson-becker-makes-liverpool-future-34883631",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/alisson-becker-makes-liverpool-future-34883631",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34884275.ece/ALTERNATES/s615/0_GettyImages-2304139291-1.jpg",
+    "category": "Transfers",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/alisson-becker-makes-liverpool-future-34883631",
+    "publishedAt": "2026-11-09T12:00:00.000Z",
+    "discoveredAt": "2026-11-09T14:55:04.994Z",
+    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 175,
+      "label": "2h ago",
+      "publishedAt": "2026-11-09T12:00:00.000Z",
+      "lastUpdated": "2026-11-09T14:55:04.994Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/alisson-becker-makes-liverpool-future-34883631",
+          "credibilityScore": 80,
+          "publishedAt": "2026-11-09T12:00:00.000Z",
+          "discoveredAt": "2026-11-09T14:55:04.994Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mw9duu82-ig94et",
+    "title": "Diogo Dalot deserves better than being booed off by Manchester United fans",
+    "summary": "Man Utd fans sarcastically cheered Diogo Dalot off the pitch and booed him during the Aston Villa game on Sunday.",
     "source": {
       "name": "Manchester Evening News MUFC",
       "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/scott-mctominay-napoli-contract-angry-34868336",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/diogo-dalot-deserves-better-being-34882852",
       "credibilityScore": 78
     },
     "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/scott-mctominay-napoli-contract-angry-34868336",
-    "image": "https://i2-prod.birminghammail.co.uk/incoming/article34868215.ece/ALTERNATES/s615/2_Screenshot-2026-11-05-142227-1.jpg",
-    "category": "Transfers",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/scott-mctominay-napoli-contract-angry-34868336",
-    "publishedAt": "2026-11-05T15:45:09.000Z",
-    "discoveredAt": "2026-11-05T15:52:15.014Z",
-    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/diogo-dalot-deserves-better-being-34882852",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34882898.ece/ALTERNATES/s615/0_GettyImages-2304164974.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/diogo-dalot-deserves-better-being-34882852",
+    "publishedAt": "2026-11-09T14:00:00.000Z",
+    "discoveredAt": "2026-11-09T14:55:04.994Z",
+    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "breaking",
-      "ageMinutes": 7,
-      "label": "7m ago",
-      "publishedAt": "2026-11-05T15:45:09.000Z",
-      "lastUpdated": "2026-11-05T15:52:15.014Z"
+      "status": "very_fresh",
+      "ageMinutes": 55,
+      "label": "55m ago",
+      "publishedAt": "2026-11-09T14:00:00.000Z",
+      "lastUpdated": "2026-11-09T14:55:04.994Z"
     },
     "verification": {
       "level": "single_source",
@@ -341,10 +289,10 @@
           "id": "man-utd-men",
           "name": "Manchester Evening News MUFC",
           "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/scott-mctominay-napoli-contract-angry-34868336",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/diogo-dalot-deserves-better-being-34882852",
           "credibilityScore": 78,
-          "publishedAt": "2026-11-05T15:45:09.000Z",
-          "discoveredAt": "2026-11-05T15:52:15.014Z"
+          "publishedAt": "2026-11-09T14:00:00.000Z",
+          "discoveredAt": "2026-11-09T14:55:04.994Z"
         }
       ],
       "confidenceScore": 78,
@@ -356,85 +304,85 @@
       "verificationCount": 1
     },
     "relatedTeams": [
-      "napoli"
+      "manchester-united"
     ]
   },
   {
-    "id": "news-mw3q4xbv-nd7z5m",
-    "title": "'A little worry' - Jamie Carragher says two Liverpool players highlight transfer spend problems",
-    "summary": "Jamie Carragher questions Liverpool's transfer decisions after Wednesday's 3-2 defeat to Fenerbahce in the Champions League",
+    "id": "news-mw9duu82-m9y0fn",
+    "title": "Gary Neville lost for words as Man United icon points finger of blame - 'Can't go on'",
+    "summary": "Gary Neville has told Manchester United that the 'absolutely desperate' situation at Old Trafford 'just can't go on' after drawing 4-4 at home against Aston Villa",
     "source": {
-      "name": "Liverpool Echo LFC",
+      "name": "Manchester Evening News MUFC",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/a-little-worry-jamie-carragher-34866373",
-      "credibilityScore": 80
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-gary-neville-carrick-34885036",
+      "credibilityScore": 78
     },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/a-little-worry-jamie-carragher-34866373",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34866378.ece/ALTERNATES/s615/0_carra12.png",
-    "category": "Transfers",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/a-little-worry-jamie-carragher-34866373",
-    "publishedAt": "2026-11-05T12:55:55.000Z",
-    "discoveredAt": "2026-11-05T15:52:15.014Z",
-    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-gary-neville-carrick-34885036",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34885007.ece/ALTERNATES/s615/1_gary-neville-nbc.png",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-gary-neville-carrick-34885036",
+    "publishedAt": "2026-11-09T13:20:56.000Z",
+    "discoveredAt": "2026-11-09T14:55:04.994Z",
+    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 176,
-      "label": "2h ago",
-      "publishedAt": "2026-11-05T12:55:55.000Z",
-      "lastUpdated": "2026-11-05T15:52:15.014Z"
+      "ageMinutes": 94,
+      "label": "1h ago",
+      "publishedAt": "2026-11-09T13:20:56.000Z",
+      "lastUpdated": "2026-11-09T14:55:04.994Z"
     },
     "verification": {
       "level": "single_source",
       "sources": [
         {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
           "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/a-little-worry-jamie-carragher-34866373",
-          "credibilityScore": 80,
-          "publishedAt": "2026-11-05T12:55:55.000Z",
-          "discoveredAt": "2026-11-05T15:52:15.014Z"
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-gary-neville-carrick-34885036",
+          "credibilityScore": 78,
+          "publishedAt": "2026-11-09T13:20:56.000Z",
+          "discoveredAt": "2026-11-09T14:55:04.994Z"
         }
       ],
-      "confidenceScore": 80,
+      "confidenceScore": 78,
       "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
+        "Reported by Manchester Evening News MUFC",
         "Moderate source credibility"
       ],
       "confirmedBy": [],
       "verificationCount": 1
     },
     "relatedTeams": [
-      "liverpool"
+      "manchester-united"
     ]
   },
   {
-    "id": "news-mw3q4xbv-4y5pka",
-    "title": "Liverpool fans race to get 50% off 26/27 home and away shirts as flash sale ends soon",
-    "summary": "Liverpool's 2026/27 home and away jerseys are half price at one retailer ahead of Black Friday",
+    "id": "news-mw9duu82-j3pdcq",
+    "title": "Pierre Sage insists Crystal Palace 'deserved better' vs Liverpool as sack looms - 'They killed us'",
+    "summary": "Pierre Sage spoke after his Crystal Palace's side's defeat to Liverpool which looks set to cost the Frenchman his job",
     "source": {
       "name": "Liverpool Echo LFC",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-2027-shirt-deal-offer-34804057",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/pierre-sage-insists-crystal-palace-34882930",
       "credibilityScore": 80
     },
     "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-2027-shirt-deal-offer-34804057",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34804251.ece/ALTERNATES/s615/0_Untitled-October-12-2026-at-110224-11jpeg.jpg",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/pierre-sage-insists-crystal-palace-34882930",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34882945.ece/ALTERNATES/s615/0_GettyImages-2303762113.jpg",
     "category": "Premier League",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-2027-shirt-deal-offer-34804057",
-    "publishedAt": "2026-11-05T12:01:00.000Z",
-    "discoveredAt": "2026-11-05T15:52:15.014Z",
-    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/pierre-sage-insists-crystal-palace-34882930",
+    "publishedAt": "2026-11-09T10:43:00.000Z",
+    "discoveredAt": "2026-11-09T14:55:04.994Z",
+    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 231,
-      "label": "3h ago",
-      "publishedAt": "2026-11-05T12:01:00.000Z",
-      "lastUpdated": "2026-11-05T15:52:15.014Z"
+      "ageMinutes": 252,
+      "label": "4h ago",
+      "publishedAt": "2026-11-09T10:43:00.000Z",
+      "lastUpdated": "2026-11-09T14:55:04.994Z"
     },
     "verification": {
       "level": "single_source",
@@ -443,10 +391,10 @@
           "id": "liverpool-echo",
           "name": "Liverpool Echo LFC",
           "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-2027-shirt-deal-offer-34804057",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/pierre-sage-insists-crystal-palace-34882930",
           "credibilityScore": 80,
-          "publishedAt": "2026-11-05T12:01:00.000Z",
-          "discoveredAt": "2026-11-05T15:52:15.014Z"
+          "publishedAt": "2026-11-09T10:43:00.000Z",
+          "discoveredAt": "2026-11-09T14:55:04.994Z"
         }
       ],
       "confidenceScore": 80,
@@ -462,30 +410,30 @@
     ]
   },
   {
-    "id": "news-mw3q4xbv-5zkwu5",
-    "title": "Trey Nyoni highlights Liverpool 'lesson' after Champions League setback - 'we had the game'",
-    "summary": "Liverpool teenager Trey Nyoni has been speaking after the Champions League loss at Fenerbahce on Wednesday evening",
+    "id": "news-mw9duu82-l7yxs5",
+    "title": "National media deliver three-word Liverpool verdict and make Alexander Isak point",
+    "summary": "A look at how the national media reflected Liverpool's 3-1 win at Crystal Palace in the Premier League on Sunday",
     "source": {
       "name": "Liverpool Echo LFC",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-highlights-liverpool-lesson-34865801",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/national-media-deliver-three-word-34882842",
       "credibilityScore": 80
     },
     "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-highlights-liverpool-lesson-34865801",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34865831.ece/ALTERNATES/s615/2_Screenshot-2026-11-05-095235.png",
-    "category": "Champions League",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-highlights-liverpool-lesson-34865801",
-    "publishedAt": "2026-11-05T11:11:55.000Z",
-    "discoveredAt": "2026-11-05T15:52:15.014Z",
-    "lastVerifiedAt": "2026-11-05T15:52:15.014Z",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/national-media-deliver-three-word-34882842",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34883246.ece/ALTERNATES/s615/1_GettyImages-2303707047.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/national-media-deliver-three-word-34882842",
+    "publishedAt": "2026-11-09T10:03:00.000Z",
+    "discoveredAt": "2026-11-09T14:55:04.994Z",
+    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 280,
+      "ageMinutes": 292,
       "label": "4h ago",
-      "publishedAt": "2026-11-05T11:11:55.000Z",
-      "lastUpdated": "2026-11-05T15:52:15.014Z"
+      "publishedAt": "2026-11-09T10:03:00.000Z",
+      "lastUpdated": "2026-11-09T14:55:04.994Z"
     },
     "verification": {
       "level": "single_source",
@@ -494,10 +442,10 @@
           "id": "liverpool-echo",
           "name": "Liverpool Echo LFC",
           "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-highlights-liverpool-lesson-34865801",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/national-media-deliver-three-word-34882842",
           "credibilityScore": 80,
-          "publishedAt": "2026-11-05T11:11:55.000Z",
-          "discoveredAt": "2026-11-05T15:52:15.014Z"
+          "publishedAt": "2026-11-09T10:03:00.000Z",
+          "discoveredAt": "2026-11-09T14:55:04.994Z"
         }
       ],
       "confidenceScore": 80,
@@ -510,6 +458,57 @@
     },
     "relatedTeams": [
       "liverpool"
+    ]
+  },
+  {
+    "id": "news-mw9duu82-2i4mc7",
+    "title": "Unai Emery is flavour of the month but Michael Carrick embarrassed him in Man United vs Aston Villa",
+    "summary": "Aston Villa boss Unai Emery is popular amongst Man Utd executives and his stock is high at the moment, but Man Utd head coach Michael Carrick arguably got the better of him on Sunday.",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/unai-emery-flavour-month-michael-34884144",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/unai-emery-flavour-month-michael-34884144",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34884516.ece/ALTERNATES/s615/0_premium-canvas-1794225695469.png",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/unai-emery-flavour-month-michael-34884144",
+    "publishedAt": "2026-11-09T12:07:22.000Z",
+    "discoveredAt": "2026-11-09T14:55:04.994Z",
+    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 167,
+      "label": "2h ago",
+      "publishedAt": "2026-11-09T12:07:22.000Z",
+      "lastUpdated": "2026-11-09T14:55:04.994Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/unai-emery-flavour-month-michael-34884144",
+          "credibilityScore": 78,
+          "publishedAt": "2026-11-09T12:07:22.000Z",
+          "discoveredAt": "2026-11-09T14:55:04.994Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united"
     ]
   }
 ]
