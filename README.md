@@ -172,6 +172,73 @@ Deploy steps:
 
 Football data is fetched at runtime (no API key). Static data (news, transfers, teams) bundles with the build.
 
+## Automatic News Updation Plan
+
+News articles are synced to `src/data/news/latest.json` and `src/data/news/trending.json` via:
+
+```bash
+npm run sync:news
+```
+
+This fetches RSS feeds (BBC Sport, ESPN FC, The Guardian, etc.) plus NewsAPI (if `NEWS_API_KEY` is set), deduplicates by title, filters non-English articles, validates with Zod, and writes static JSON imported at build time.
+
+### Automation Options
+
+**1. GitHub Actions (recommended for production)**
+
+Add `.github/workflows/sync-news.yml` to run the sync on a schedule (e.g. every 6 hours) and commit the refreshed JSON:
+
+```yaml
+name: Sync News
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch:
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm run sync:news
+        env:
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/news/latest.json src/data/news/trending.json
+          git diff --quiet || git commit -m "chore: sync football news - refresh latest and trending articles"
+          git push
+```
+
+Add `NEWS_API_KEY` as a GitHub repository secret if you want NewsAPI coverage.
+
+**2. Local cron / Task Scheduler**
+
+On macOS/Linux, add a cron entry:
+
+```bash
+# every 6 hours
+0 */6 * * * cd /path/to/PitchPulse && npm run sync:news >> /tmp/pitchpulse-sync.log 2>&1
+```
+
+On Windows Task Scheduler, run `npm run sync:news` in the project directory on your desired cadence.
+
+**3. Manual**
+
+Run `npm run sync:news` whenever you want to refresh the news feed locally.
+
+### Notes
+
+- The sync reads `.env.local`; ensure it exists or set env vars before running.
+- News is bundled at build time, so after syncing you must redeploy (or rebuild) for new articles to appear.
+- Existing `latest.json`/`trending.json` are preserved if the fetch returns 0 results.
+- Do not commit `.env.local`; it is gitignored.
+
 ## Known Limitations
 
 - **Rate limiting** — worldcup26.ir returns 429 under load; client retries with exponential backoff (max 3 attempts)
