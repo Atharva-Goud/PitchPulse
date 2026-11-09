@@ -1,6 +1,111 @@
 [
   {
-    "id": "news-mw9duu82-77ziwi",
+    "id": "news-mw9o3mk0-7eslog",
+    "title": " Liverpool begin move for Bart Verbruggen: report ",
+    "summary": "Liverpool are planning their long-term future in goal, with the Brighton stopper linked",
+    "source": {
+      "name": "FourFourTwo",
+      "type": "publication",
+      "url": "https://www.fourfourtwo.com/transfer/liverpool-begin-move-for-bart-verbruggen-report",
+      "credibilityScore": 85
+    },
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/transfer/liverpool-begin-move-for-bart-verbruggen-report",
+    "image": "https://cdn.mos.cms.futurecdn.net/z7Shtw9gxqdcAZUKs7KVpF-1920-80.jpg",
+    "category": "Transfers",
+    "originalUrl": "https://www.fourfourtwo.com/transfer/liverpool-begin-move-for-bart-verbruggen-report",
+    "publishedAt": "2026-11-09T17:43:31.000Z",
+    "discoveredAt": "2026-11-09T19:41:51.085Z",
+    "lastVerifiedAt": "2026-11-09T19:41:51.085Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 118,
+      "label": "1h ago",
+      "publishedAt": "2026-11-09T17:43:31.000Z",
+      "lastUpdated": "2026-11-09T19:41:51.085Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
+          "type": "publication",
+          "url": "https://www.fourfourtwo.com/transfer/liverpool-begin-move-for-bart-verbruggen-report",
+          "credibilityScore": 85,
+          "publishedAt": "2026-11-09T17:43:31.000Z",
+          "discoveredAt": "2026-11-09T19:41:51.085Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by FourFourTwo",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool",
+      "brighton"
+    ]
+  },
+  {
+    "id": "news-mw9o3mk0-x1hiue",
+    "title": "For sure' - Florian Wirtz sets new Liverpool challenge starting with Man United visit",
+    "summary": "Florian Wirtz sets Liverpool a new challenge - starting with the visit of Manchester United after the international break",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/for-sure-florian-wirtz-sets-34883206",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/for-sure-florian-wirtz-sets-34883206",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34881865.ece/ALTERNATES/s615/0_GettyImages-2304130248jp.jpg",
+    "category": "International Football",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/for-sure-florian-wirtz-sets-34883206",
+    "publishedAt": "2026-11-09T16:58:00.000Z",
+    "discoveredAt": "2026-11-09T19:41:51.085Z",
+    "lastVerifiedAt": "2026-11-09T19:41:51.085Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 164,
+      "label": "2h ago",
+      "publishedAt": "2026-11-09T16:58:00.000Z",
+      "lastUpdated": "2026-11-09T19:41:51.085Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/for-sure-florian-wirtz-sets-34883206",
+          "credibilityScore": 80,
+          "publishedAt": "2026-11-09T16:58:00.000Z",
+          "discoveredAt": "2026-11-09T19:41:51.085Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "liverpool",
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-mw9o3mk0-1bj9uj",
     "title": " Barcelona touchline bust-up shows Newcastle United got the better end of the Anthony Gordon deal ",
     "summary": "Anthony Gordon isn't having it all his own way at Barcelona if his latest exchange with boss Hansi Flick is anything to go by",
     "source": {
@@ -15,15 +120,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.fourfourtwo.com/person/player/barcelona-touchline-bust-up-shows-newcastle-united-got-the-better-end-of-the-anthony-gordon-deal",
     "publishedAt": "2026-11-09T10:42:08.000Z",
-    "discoveredAt": "2026-11-09T14:55:04.994Z",
-    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
+    "discoveredAt": "2026-11-09T19:41:51.085Z",
+    "lastVerifiedAt": "2026-11-09T19:41:51.085Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 253,
-      "label": "4h ago",
+      "ageMinutes": 539,
+      "label": "8h ago",
       "publishedAt": "2026-11-09T10:42:08.000Z",
-      "lastUpdated": "2026-11-09T14:55:04.994Z"
+      "lastUpdated": "2026-11-09T19:41:51.085Z"
     },
     "verification": {
       "level": "single_source",
@@ -35,7 +140,7 @@
           "url": "https://www.fourfourtwo.com/person/player/barcelona-touchline-bust-up-shows-newcastle-united-got-the-better-end-of-the-anthony-gordon-deal",
           "credibilityScore": 85,
           "publishedAt": "2026-11-09T10:42:08.000Z",
-          "discoveredAt": "2026-11-09T14:55:04.994Z"
+          "discoveredAt": "2026-11-09T19:41:51.085Z"
         }
       ],
       "confidenceScore": 85,
@@ -52,7 +157,7 @@
     ]
   },
   {
-    "id": "news-mw9duu82-8dmd0f",
+    "id": "news-mw9o3mk0-9pyh4f",
     "title": " HENRY WINTER: Fabian Hurzeler's Brighton & Hove Albion are perfectly set up for success - on and off the pitch ",
     "summary": "Why would Fabian Hurzeler ever leave Brighton & Hove Albion? The Seagulls continue to marvel, as the ascension continues in Sussex",
     "source": {
@@ -67,15 +172,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.fourfourtwo.com/team/henry-winter-fabian-hurzelers-brighton-and-hove-albion-are-perfectly-set-up-for-success-on-and-off-the-pitch",
     "publishedAt": "2026-11-09T09:30:28.000Z",
-    "discoveredAt": "2026-11-09T14:55:04.994Z",
-    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
+    "discoveredAt": "2026-11-09T19:41:51.085Z",
+    "lastVerifiedAt": "2026-11-09T19:41:51.085Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 324,
-      "label": "5h ago",
+      "ageMinutes": 611,
+      "label": "10h ago",
       "publishedAt": "2026-11-09T09:30:28.000Z",
-      "lastUpdated": "2026-11-09T14:55:04.994Z"
+      "lastUpdated": "2026-11-09T19:41:51.085Z"
     },
     "verification": {
       "level": "single_source",
@@ -87,7 +192,7 @@
           "url": "https://www.fourfourtwo.com/team/henry-winter-fabian-hurzelers-brighton-and-hove-albion-are-perfectly-set-up-for-success-on-and-off-the-pitch",
           "credibilityScore": 85,
           "publishedAt": "2026-11-09T09:30:28.000Z",
-          "discoveredAt": "2026-11-09T14:55:04.994Z"
+          "discoveredAt": "2026-11-09T19:41:51.085Z"
         }
       ],
       "confidenceScore": 85,
@@ -104,7 +209,58 @@
     ]
   },
   {
-    "id": "news-mw9duu82-q6f8wi",
+    "id": "news-mw9o3mk0-ire8w9",
+    "title": " Manchester United are missing perfect new manager opportunity to avoid £30m bill ",
+    "summary": "Manchester United must buy Mauricio Pochettino out of his United States contract, even if it comes at an uncomfortable cost",
+    "source": {
+      "name": "FourFourTwo",
+      "type": "publication",
+      "url": "https://www.fourfourtwo.com/team/manchester-united-are-missing-perfect-new-manager-opportunity-to-avoid-gbp30m-bill",
+      "credibilityScore": 85
+    },
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/team/manchester-united-are-missing-perfect-new-manager-opportunity-to-avoid-gbp30m-bill",
+    "image": "https://cdn.mos.cms.futurecdn.net/yHd3QinwuRf3NZmrFdxM53-1920-80.jpg",
+    "category": "Transfers",
+    "originalUrl": "https://www.fourfourtwo.com/team/manchester-united-are-missing-perfect-new-manager-opportunity-to-avoid-gbp30m-bill",
+    "publishedAt": "2026-11-09T15:00:00.000Z",
+    "discoveredAt": "2026-11-09T19:41:51.085Z",
+    "lastVerifiedAt": "2026-11-09T19:41:51.085Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 282,
+      "label": "4h ago",
+      "publishedAt": "2026-11-09T15:00:00.000Z",
+      "lastUpdated": "2026-11-09T19:41:51.085Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
+          "type": "publication",
+          "url": "https://www.fourfourtwo.com/team/manchester-united-are-missing-perfect-new-manager-opportunity-to-avoid-gbp30m-bill",
+          "credibilityScore": 85,
+          "publishedAt": "2026-11-09T15:00:00.000Z",
+          "discoveredAt": "2026-11-09T19:41:51.085Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by FourFourTwo",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united"
+    ]
+  },
+  {
+    "id": "news-mw9o3mk0-ihj0yu",
     "title": " It’s not the mistakes and it’s not “desire and intensity” Manchester City STILL have a Rodri problem ",
     "summary": "His absence remains keenly felt, with another transfer oversight at the club adding to the challenge they face without him",
     "source": {
@@ -119,15 +275,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.fourfourtwo.com/tactic/its-not-the-mistakes-and-its-not-desire-and-intensity-manchester-city-still-have-a-rodri-problem",
     "publishedAt": "2026-11-09T13:00:00.000Z",
-    "discoveredAt": "2026-11-09T14:55:04.994Z",
-    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
+    "discoveredAt": "2026-11-09T19:41:51.085Z",
+    "lastVerifiedAt": "2026-11-09T19:41:51.085Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 115,
-      "label": "1h ago",
+      "status": "recent",
+      "ageMinutes": 402,
+      "label": "6h ago",
       "publishedAt": "2026-11-09T13:00:00.000Z",
-      "lastUpdated": "2026-11-09T14:55:04.994Z"
+      "lastUpdated": "2026-11-09T19:41:51.085Z"
     },
     "verification": {
       "level": "single_source",
@@ -139,7 +295,7 @@
           "url": "https://www.fourfourtwo.com/tactic/its-not-the-mistakes-and-its-not-desire-and-intensity-manchester-city-still-have-a-rodri-problem",
           "credibilityScore": 85,
           "publishedAt": "2026-11-09T13:00:00.000Z",
-          "discoveredAt": "2026-11-09T14:55:04.994Z"
+          "discoveredAt": "2026-11-09T19:41:51.085Z"
         }
       ],
       "confidenceScore": 85,
@@ -155,7 +311,7 @@
     ]
   },
   {
-    "id": "news-mw9duu82-5o6d6e",
+    "id": "news-mw9o3mk0-xk50du",
     "title": " Arsenal set to complete THREE seismic deals before January: report ",
     "summary": "Arsenal manager Mikel Arteta has been given a huge boost, as the Gunners' season rolls on",
     "source": {
@@ -170,15 +326,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.fourfourtwo.com/transfer/arsenal-set-to-complete-three-seismic-deals-before-january-report",
     "publishedAt": "2026-11-09T12:25:13.000Z",
-    "discoveredAt": "2026-11-09T14:55:04.994Z",
-    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
+    "discoveredAt": "2026-11-09T19:41:51.085Z",
+    "lastVerifiedAt": "2026-11-09T19:41:51.085Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 150,
-      "label": "2h ago",
+      "status": "recent",
+      "ageMinutes": 436,
+      "label": "7h ago",
       "publishedAt": "2026-11-09T12:25:13.000Z",
-      "lastUpdated": "2026-11-09T14:55:04.994Z"
+      "lastUpdated": "2026-11-09T19:41:51.085Z"
     },
     "verification": {
       "level": "single_source",
@@ -190,7 +346,7 @@
           "url": "https://www.fourfourtwo.com/transfer/arsenal-set-to-complete-three-seismic-deals-before-january-report",
           "credibilityScore": 85,
           "publishedAt": "2026-11-09T12:25:13.000Z",
-          "discoveredAt": "2026-11-09T14:55:04.994Z"
+          "discoveredAt": "2026-11-09T19:41:51.085Z"
         }
       ],
       "confidenceScore": 85,
@@ -206,30 +362,30 @@
     ]
   },
   {
-    "id": "news-mw9duu82-xr68cn",
-    "title": "Alisson Becker makes Liverpool future clear as agent opens contract talks - 'My will is to stay'",
-    "summary": "Alisson Becker's Liverpool contract expires next summer - but the goalkeeper has now revealed he wants to extend his stay at Anfield",
+    "id": "news-mw9o3mk0-q3j0vd",
+    "title": "Virgil van Dijk injury latest as official statement released after Liverpool skipper suffers fitness blow",
+    "summary": "Liverpool captain Virgil van Dijk has been ruled out of the Netherlands squad for their forthcoming UEFA Nations League matches",
     "source": {
       "name": "Liverpool Echo LFC",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/alisson-becker-makes-liverpool-future-34883631",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/virgil-van-dijk-injury-latest-34887126",
       "credibilityScore": 80
     },
     "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/alisson-becker-makes-liverpool-future-34883631",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34884275.ece/ALTERNATES/s615/0_GettyImages-2304139291-1.jpg",
-    "category": "Transfers",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/alisson-becker-makes-liverpool-future-34883631",
-    "publishedAt": "2026-11-09T12:00:00.000Z",
-    "discoveredAt": "2026-11-09T14:55:04.994Z",
-    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/virgil-van-dijk-injury-latest-34887126",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34887184.ece/ALTERNATES/s615/0_GettyImages-2304264577.jpg",
+    "category": "International Football",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/virgil-van-dijk-injury-latest-34887126",
+    "publishedAt": "2026-11-09T17:14:53.000Z",
+    "discoveredAt": "2026-11-09T19:41:51.085Z",
+    "lastVerifiedAt": "2026-11-09T19:41:51.085Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 175,
+      "ageMinutes": 147,
       "label": "2h ago",
-      "publishedAt": "2026-11-09T12:00:00.000Z",
-      "lastUpdated": "2026-11-09T14:55:04.994Z"
+      "publishedAt": "2026-11-09T17:14:53.000Z",
+      "lastUpdated": "2026-11-09T19:41:51.085Z"
     },
     "verification": {
       "level": "single_source",
@@ -238,10 +394,10 @@
           "id": "liverpool-echo",
           "name": "Liverpool Echo LFC",
           "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/alisson-becker-makes-liverpool-future-34883631",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/virgil-van-dijk-injury-latest-34887126",
           "credibilityScore": 80,
-          "publishedAt": "2026-11-09T12:00:00.000Z",
-          "discoveredAt": "2026-11-09T14:55:04.994Z"
+          "publishedAt": "2026-11-09T17:14:53.000Z",
+          "discoveredAt": "2026-11-09T19:41:51.085Z"
         }
       ],
       "confidenceScore": 80,
@@ -257,81 +413,30 @@
     ]
   },
   {
-    "id": "news-mw9duu82-ig94et",
-    "title": "Diogo Dalot deserves better than being booed off by Manchester United fans",
-    "summary": "Man Utd fans sarcastically cheered Diogo Dalot off the pitch and booed him during the Aston Villa game on Sunday.",
+    "id": "news-mw9o3mk0-93okv5",
+    "title": "Michael Carrick told 'those four get you sacked' as Man United relegation prediction made",
+    "summary": "Manchester United are in the Premier League bottom three following the 4-4 draw with Aston Villa, piling pressure onto Michael Carrick",
     "source": {
       "name": "Manchester Evening News MUFC",
       "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/diogo-dalot-deserves-better-being-34882852",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/michael-carrick-man-united-relegation-34887324",
       "credibilityScore": 78
     },
     "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/diogo-dalot-deserves-better-being-34882852",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34882898.ece/ALTERNATES/s615/0_GettyImages-2304164974.jpg",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/michael-carrick-man-united-relegation-34887324",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/football-news/article34887322.ece/ALTERNATES/s615/0_Manchester-United-v-Aston-Villa-FC-Premier-League-202627.jpg",
     "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/diogo-dalot-deserves-better-being-34882852",
-    "publishedAt": "2026-11-09T14:00:00.000Z",
-    "discoveredAt": "2026-11-09T14:55:04.994Z",
-    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/michael-carrick-man-united-relegation-34887324",
+    "publishedAt": "2026-11-09T18:32:00.000Z",
+    "discoveredAt": "2026-11-09T19:41:51.085Z",
+    "lastVerifiedAt": "2026-11-09T19:41:51.085Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 55,
-      "label": "55m ago",
-      "publishedAt": "2026-11-09T14:00:00.000Z",
-      "lastUpdated": "2026-11-09T14:55:04.994Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/diogo-dalot-deserves-better-being-34882852",
-          "credibilityScore": 78,
-          "publishedAt": "2026-11-09T14:00:00.000Z",
-          "discoveredAt": "2026-11-09T14:55:04.994Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united"
-    ]
-  },
-  {
-    "id": "news-mw9duu82-m9y0fn",
-    "title": "Gary Neville lost for words as Man United icon points finger of blame - 'Can't go on'",
-    "summary": "Gary Neville has told Manchester United that the 'absolutely desperate' situation at Old Trafford 'just can't go on' after drawing 4-4 at home against Aston Villa",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-gary-neville-carrick-34885036",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-gary-neville-carrick-34885036",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34885007.ece/ALTERNATES/s615/1_gary-neville-nbc.png",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-gary-neville-carrick-34885036",
-    "publishedAt": "2026-11-09T13:20:56.000Z",
-    "discoveredAt": "2026-11-09T14:55:04.994Z",
-    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 94,
+      "ageMinutes": 70,
       "label": "1h ago",
-      "publishedAt": "2026-11-09T13:20:56.000Z",
-      "lastUpdated": "2026-11-09T14:55:04.994Z"
+      "publishedAt": "2026-11-09T18:32:00.000Z",
+      "lastUpdated": "2026-11-09T19:41:51.085Z"
     },
     "verification": {
       "level": "single_source",
@@ -340,10 +445,10 @@
           "id": "man-utd-men",
           "name": "Manchester Evening News MUFC",
           "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-gary-neville-carrick-34885036",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/michael-carrick-man-united-relegation-34887324",
           "credibilityScore": 78,
-          "publishedAt": "2026-11-09T13:20:56.000Z",
-          "discoveredAt": "2026-11-09T14:55:04.994Z"
+          "publishedAt": "2026-11-09T18:32:00.000Z",
+          "discoveredAt": "2026-11-09T19:41:51.085Z"
         }
       ],
       "confidenceScore": 78,
@@ -359,30 +464,30 @@
     ]
   },
   {
-    "id": "news-mw9duu82-j3pdcq",
-    "title": "Pierre Sage insists Crystal Palace 'deserved better' vs Liverpool as sack looms - 'They killed us'",
-    "summary": "Pierre Sage spoke after his Crystal Palace's side's defeat to Liverpool which looks set to cost the Frenchman his job",
+    "id": "news-mw9o3mk0-dl1rdy",
+    "title": "Virgil van Dijk shows off new look as Liverpool fans praise 'boss' style",
+    "summary": "The Liverpool captain's update has garnered a lot of attention",
     "source": {
       "name": "Liverpool Echo LFC",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/pierre-sage-insists-crystal-palace-34882930",
+      "url": "https://www.liverpoolecho.co.uk/news/liverpool-news/virgil-van-dijk-shows-new-34886310",
       "credibilityScore": 80
     },
     "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/pierre-sage-insists-crystal-palace-34882930",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34882945.ece/ALTERNATES/s615/0_GettyImages-2303762113.jpg",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/news/liverpool-news/virgil-van-dijk-shows-new-34886310",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34886528.ece/ALTERNATES/s615/0_Crystal-Palace-FC-v-Liverpool-Premier-League-202627.jpg",
     "category": "Premier League",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/pierre-sage-insists-crystal-palace-34882930",
-    "publishedAt": "2026-11-09T10:43:00.000Z",
-    "discoveredAt": "2026-11-09T14:55:04.994Z",
-    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
+    "originalUrl": "https://www.liverpoolecho.co.uk/news/liverpool-news/virgil-van-dijk-shows-new-34886310",
+    "publishedAt": "2026-11-09T16:03:34.000Z",
+    "discoveredAt": "2026-11-09T19:41:51.085Z",
+    "lastVerifiedAt": "2026-11-09T19:41:51.085Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 252,
-      "label": "4h ago",
-      "publishedAt": "2026-11-09T10:43:00.000Z",
-      "lastUpdated": "2026-11-09T14:55:04.994Z"
+      "ageMinutes": 218,
+      "label": "3h ago",
+      "publishedAt": "2026-11-09T16:03:34.000Z",
+      "lastUpdated": "2026-11-09T19:41:51.085Z"
     },
     "verification": {
       "level": "single_source",
@@ -391,10 +496,10 @@
           "id": "liverpool-echo",
           "name": "Liverpool Echo LFC",
           "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/pierre-sage-insists-crystal-palace-34882930",
+          "url": "https://www.liverpoolecho.co.uk/news/liverpool-news/virgil-van-dijk-shows-new-34886310",
           "credibilityScore": 80,
-          "publishedAt": "2026-11-09T10:43:00.000Z",
-          "discoveredAt": "2026-11-09T14:55:04.994Z"
+          "publishedAt": "2026-11-09T16:03:34.000Z",
+          "discoveredAt": "2026-11-09T19:41:51.085Z"
         }
       ],
       "confidenceScore": 80,
@@ -407,108 +512,6 @@
     },
     "relatedTeams": [
       "liverpool"
-    ]
-  },
-  {
-    "id": "news-mw9duu82-l7yxs5",
-    "title": "National media deliver three-word Liverpool verdict and make Alexander Isak point",
-    "summary": "A look at how the national media reflected Liverpool's 3-1 win at Crystal Palace in the Premier League on Sunday",
-    "source": {
-      "name": "Liverpool Echo LFC",
-      "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/national-media-deliver-three-word-34882842",
-      "credibilityScore": 80
-    },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/national-media-deliver-three-word-34882842",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34883246.ece/ALTERNATES/s615/1_GettyImages-2303707047.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/national-media-deliver-three-word-34882842",
-    "publishedAt": "2026-11-09T10:03:00.000Z",
-    "discoveredAt": "2026-11-09T14:55:04.994Z",
-    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 292,
-      "label": "4h ago",
-      "publishedAt": "2026-11-09T10:03:00.000Z",
-      "lastUpdated": "2026-11-09T14:55:04.994Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/national-media-deliver-three-word-34882842",
-          "credibilityScore": 80,
-          "publishedAt": "2026-11-09T10:03:00.000Z",
-          "discoveredAt": "2026-11-09T14:55:04.994Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-mw9duu82-2i4mc7",
-    "title": "Unai Emery is flavour of the month but Michael Carrick embarrassed him in Man United vs Aston Villa",
-    "summary": "Aston Villa boss Unai Emery is popular amongst Man Utd executives and his stock is high at the moment, but Man Utd head coach Michael Carrick arguably got the better of him on Sunday.",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/unai-emery-flavour-month-michael-34884144",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/unai-emery-flavour-month-michael-34884144",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34884516.ece/ALTERNATES/s615/0_premium-canvas-1794225695469.png",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/unai-emery-flavour-month-michael-34884144",
-    "publishedAt": "2026-11-09T12:07:22.000Z",
-    "discoveredAt": "2026-11-09T14:55:04.994Z",
-    "lastVerifiedAt": "2026-11-09T14:55:04.994Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 167,
-      "label": "2h ago",
-      "publishedAt": "2026-11-09T12:07:22.000Z",
-      "lastUpdated": "2026-11-09T14:55:04.994Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/unai-emery-flavour-month-michael-34884144",
-          "credibilityScore": 78,
-          "publishedAt": "2026-11-09T12:07:22.000Z",
-          "discoveredAt": "2026-11-09T14:55:04.994Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united"
     ]
   }
 ]
