@@ -28,7 +28,7 @@ import {
  * Convert an ApiFixture (from api.ts) into the shape expected by
  * normalizeApiFixture in types.ts (homeTeam/awayTeam/kickoff).
  */
-function toNormalizable(f: ApiFixture): {
+export function toNormalizable(f: ApiFixture): {
   id: string;
   homeTeam: { id: string; name: string; logo: string; abbreviation?: string };
   awayTeam: { id: string; name: string; logo: string; abbreviation?: string };

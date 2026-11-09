@@ -381,8 +381,31 @@ export function resetApiRequestCount(): void {
 const cache = new Map<string, { data: any; expires: number }>();
 const CACHE_TTL = 30_000; // 30 seconds
 
+/** Deduplication cache for in-flight fetchFixtures calls.
+ *  Multiple components requesting the same league+status share one promise. */
+const fixturesInFlight = new Map<string, Promise<ApiFixture[]>>();
+
 function cacheKey(url: string): string {
   return url;
+}
+
+/** Deduplicated fixture fetch: concurrent callers for the same league+status share one promise. */
+async function fetchFixturesDeduped(league: string, status: string): Promise<ApiFixture[]> {
+  const key = `${league}:${status}`;
+  const inFlight = fixturesInFlight.get(key);
+  if (inFlight) return inFlight;
+
+  const promise = (async () => {
+    const data = await apiFetch('/' + league + '/fixtures', { status });
+    return (data.events || []).map(normalizeApiFixture);
+  })();
+
+  fixturesInFlight.set(key, promise);
+  try {
+    return await promise;
+  } finally {
+    fixturesInFlight.delete(key);
+  }
 }
 
 async function apiFetch(endpoint: string, params: Record<string, string> = {}): Promise<any> {
@@ -512,8 +535,7 @@ export async function fetchFixtures(
   status: 'all' | 'scheduled' | 'live' | 'finished' = 'all'
 ): Promise<ApiFixture[]> {
   try {
-    const data = await apiFetch('/' + league + '/fixtures', { status });
-    return (data.events || []).map(normalizeApiFixture);
+    return await fetchFixturesDeduped(league, status);
   } catch (error) {
     console.error('football-api: failed to fetch fixtures:', error);
     return [];

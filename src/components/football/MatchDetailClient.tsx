@@ -2,8 +2,6 @@
 
 import { useEffect, useState, useMemo } from 'react';
 import { Trophy, Clock, MapPin, Calendar, ArrowLeft, Zap, ShieldAlert, RefreshCw } from 'lucide-react';
-import { getMatchWithLeague, getRawFixtureById, getRecentMatchesByTeam } from '@/lib/football/matches';
-import { getCompetitionConfig, getCompetitionKeyFromSlug } from '@/lib/football/competitions';
 import {
   fetchMatchKeyEvents,
   fetchMatchEvents,
@@ -11,6 +9,9 @@ import {
   type ApiEvent,
   type CompetitionKey,
 } from '@/lib/football/api';
+import { normalizeApiFixture } from '@/lib/football/types';
+import { toNormalizable, getRecentMatchesByTeam } from '@/lib/football/matches';
+import { getCompetitionConfig, getCompetitionKeyFromSlug } from '@/lib/football/competitions';
 import TeamLogo from '@/components/football/TeamLogo';
 import MatchEvents from '@/components/football/MatchEvents';
 import MatchStatistics, { type TeamStatistic } from '@/components/football/MatchStatistics';
@@ -54,22 +55,28 @@ export default function MatchDetailClient({ params }: MatchDetailClientProps) {
         setLoading(true);
         setError(null);
         setEventsError(false);
-        const result = await getMatchWithLeague(matchId!);
-        if (!result) {
-          setError('Match not found');
+        const res = await fetch(`/api/matches/lookup?id=${encodeURIComponent(matchId!)}`);
+        if (!res.ok) {
+          if (res.status === 404) {
+            setError('Match not found');
+          } else {
+            setError('Unable to load match details. Please try again.');
+          }
           return;
         }
-        setMatch(result.match);
-        setLeagueSlug(result.league);
-        setLeagueKey(getCompetitionKeyFromSlug(result.league));
+        const data = await res.json();
+        const { fixture, league } = data;
+        const match = normalizeApiFixture(toNormalizable(fixture));
+        setMatch(match);
+        setLeagueSlug(league);
+        setLeagueKey(getCompetitionKeyFromSlug(league));
 
-        const [rawFixture, keyEvents, matchEvents, stats, homeRecent, awayRecent] = await Promise.all([
-          getRawFixtureById(matchId!),
-          fetchMatchKeyEvents(result.league, matchId!),
-          fetchMatchEvents(result.league, matchId!),
-          fetchMatchStatistics(result.league, matchId!),
-          getRecentMatchesByTeam(result.match.homeTeam.id, 5),
-          getRecentMatchesByTeam(result.match.awayTeam.id, 5),
+        const [keyEvents, matchEvents, stats, homeRecent, awayRecent] = await Promise.all([
+          fetchMatchKeyEvents(league, matchId!),
+          fetchMatchEvents(league, matchId!),
+          fetchMatchStatistics(league, matchId!),
+          getRecentMatchesByTeam(match.homeTeam.id, 5),
+          getRecentMatchesByTeam(match.awayTeam.id, 5),
         ]);
         setEvents(matchEvents.length > 0 ? matchEvents : keyEvents);
         setStatistics(stats);

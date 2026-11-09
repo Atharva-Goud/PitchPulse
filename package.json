@@ -9,7 +9,8 @@
     "lint": "eslint",
     "sync": "tsx src/scripts/run-sync.ts",
     "sync:news": "tsx src/scripts/run-sync.ts news",
-    "sync:matches": "tsx src/scripts/run-sync.ts matches"
+    "sync:matches": "tsx src/scripts/run-sync.ts matches",
+    "test": "vitest run"
   },
   "dependencies": {
     "cors": "^2.8.6",
@@ -30,10 +31,14 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^6.3.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
+    "jsdom": "^31.0.0",
     "tailwindcss": "^4",
     "tsx": "^4.23.13",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite": "^8.3.7",
+    "vitest": "^5.1.0"
   }
 }

@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { rateLimit } from '@/lib/security/rate-limit';
 
 /**
  * News refresh endpoint with pagination support.
@@ -92,9 +93,18 @@ function applyPagination<T>(items: T[], page: number, limit: number): { items: T
 }
 
 export async function GET(request: Request) {
+  // Rate limiting
+  const rl = rateLimit(request.headers);
+  if (!rl.allowed) {
+    return NextResponse.json(
+      { error: 'Too many requests', retryAfter: Math.ceil((rl.reset - Date.now()) / 1000) },
+      { status: 429 }
+    );
+  }
+
   const now = Date.now();
   const { searchParams } = new URL(request.url);
-  
+   
   const page = Math.max(1, parseInt(searchParams.get('page') || '1', 10));
   const limit = Math.min(MAX_LIMIT, Math.max(1, parseInt(searchParams.get('limit') || String(DEFAULT_LIMIT), 10)));
   const category = searchParams.get('category') || undefined;

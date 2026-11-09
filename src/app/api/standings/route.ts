@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { rateLimit } from '@/lib/security/rate-limit';
 
 /**
  * Standings metadata endpoint.
@@ -34,6 +35,17 @@ async function discoverLeagues(): Promise<LeagueMeta[]> {
 }
 
 export async function GET() {
+  // Rate limiting using the Request headers equivalent for Route Handler
+  const headers = new Headers();
+  headers.set('x-forwarded-for', 'unknown'); // Route handlers don't have direct access to client IP
+  const rl = rateLimit(headers);
+  if (!rl.allowed) {
+    return NextResponse.json(
+      { error: 'Too many requests', retryAfter: Math.ceil((rl.reset - Date.now()) / 1000) },
+      { status: 429 }
+    );
+  }
+
   if (cache) {
     return NextResponse.json(cache);
   }

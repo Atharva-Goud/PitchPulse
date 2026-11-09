@@ -117,7 +117,7 @@ export default function HomepageSections({ data }: HomepageSectionsProps) {
             {featuredCompetitions.map((competition, index) => (
               <Link
                 key={competition.id}
-                href={`/standings?competition=${competition.id}`}
+                href={`/standings?league=${competition.id}`}
                 className="group p-4 rounded-xl border border-[var(--border-default)] bg-[var(--surface-2)]/70 backdrop-blur-sm card-hover animate-in"
                 style={{ animationDelay: `${index * 0.03}s` }}
               >
