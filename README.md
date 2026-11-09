@@ -119,7 +119,8 @@ cp .env.local.example .env.local
 npm run dev
 
 # Optional: start local API proxy (port 3050) in a separate terminal
-# node local-api-server.js
+# Use this if you set NEXT_PUBLIC_FOOTBALL_API_URL=http://localhost:3050 in .env.local
+node local-api-server.js
 ```
 
 ## Environment Variables
@@ -129,10 +130,9 @@ npm run dev
 | `NEXT_PUBLIC_FOOTBALL_API_URL` | Football API base URL | No (defaults to `https://worldcup26.ir/get/soccer`; set to `http://localhost:3050` for local proxy) |
 | `NEWS_API_KEY` | NewsAPI key for news sync | No (sync only) |
 
-**Local:** `.env.local.example` includes `NEXT_PUBLIC_FOOTBALL_API_URL=https://worldcup26.ir/get/soccer`. Optionally override to `http://localhost:3050` if running the local proxy.
-**Production:** Set `NEXT_PUBLIC_FOOTBALL_API_URL=https://worldcup26.ir/get/soccer` (or your deployed proxy)
+**Local:** `.env.local.example` includes `NEXT_PUBLIC_FOOTBALL_API_URL=https://worldcup26.ir/get/soccer`. Optionally override to `http://localhost:3050` if running the local proxy. The `local-api-server.js` proxy is committed to the repository and can be run with `node local-api-server.js`.
 
-Never commit real API keys. `.env.local` is gitignored.
+**Production:** Set `NEXT_PUBLIC_FOOTBALL_API_URL=https://worldcup26.ir/get/soccer` (or your deployed proxy). **Do not set this to `http://localhost:3050` in production** — localhost does not exist in production and all football API calls will fail. A build-time warning is logged if this misconfiguration is detected.
 
 ## Data Sources
 
