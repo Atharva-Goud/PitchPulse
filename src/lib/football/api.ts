@@ -19,6 +19,17 @@ import { unstable_cache as nextCache } from 'next/cache';
 
 export const FOOTBALL_API_BASE = process.env.NEXT_PUBLIC_FOOTBALL_API_URL || 'https://worldcup26.ir/get/soccer';
 
+// Warn when localhost API URL is detected in a production build.
+// This prevents silent football-data failures if NEXT_PUBLIC_FOOTBALL_API_URL
+// is accidentally set to http://localhost:3050 in Vercel/Production env vars.
+if (process.env.NODE_ENV === 'production' && /https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?\//.test(FOOTBALL_API_BASE)) {
+  console.warn(
+    '[api.ts] WARNING: NEXT_PUBLIC_FOOTBALL_API_URL points to localhost (' +
+    FOOTBALL_API_BASE +
+    ') in a production build. Football API calls will fail. Set it to https://worldcup26.ir/get/soccer or your production proxy.'
+  );
+}
+
 if (typeof window !== 'undefined') {
   console.log('[api.ts] FOOTBALL_API_BASE:', FOOTBALL_API_BASE);
 }
