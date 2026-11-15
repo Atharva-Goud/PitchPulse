@@ -13,5 +13,4 @@ build.log
 tsc.log
 fixtures.json
 leagues.json
-local-api-server.js
 tsc_out.txt
