@@ -1,6 +1,57 @@
 [
   {
-    "id": "news-mwk9i1kq-95dqfu",
+    "id": "news-mwkb0tr6-s70hme",
+    "title": " How to watch Singapore vs Brazil: live stream international friendly for FREE ",
+    "summary": "Here's how to watch Singapore vs Brazil for free from anywhere in the world as the two countries face off at Singapore National Stadium in Kallang.",
+    "source": {
+      "name": "FourFourTwo",
+      "type": "publication",
+      "url": "https://www.fourfourtwo.com/competition/how-to-watch-singapore-vs-brazil-live-stream-international-friendly-for-free",
+      "credibilityScore": 85
+    },
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/competition/how-to-watch-singapore-vs-brazil-live-stream-international-friendly-for-free",
+    "image": "https://cdn.mos.cms.futurecdn.net/ThtW23k6AS8VJYSWgw6gDU-1920-80.png",
+    "category": "International Football",
+    "originalUrl": "https://www.fourfourtwo.com/competition/how-to-watch-singapore-vs-brazil-live-stream-international-friendly-for-free",
+    "publishedAt": "2026-11-17T06:00:00.000Z",
+    "discoveredAt": "2026-11-17T06:21:15.147Z",
+    "lastVerifiedAt": "2026-11-17T06:21:15.147Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 21,
+      "label": "21m ago",
+      "publishedAt": "2026-11-17T06:00:00.000Z",
+      "lastUpdated": "2026-11-17T06:21:15.147Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
+          "type": "publication",
+          "url": "https://www.fourfourtwo.com/competition/how-to-watch-singapore-vs-brazil-live-stream-international-friendly-for-free",
+          "credibilityScore": 85,
+          "publishedAt": "2026-11-17T06:00:00.000Z",
+          "discoveredAt": "2026-11-17T06:21:15.147Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by FourFourTwo",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "inter-milan"
+    ]
+  },
+  {
+    "id": "news-mwkb0tr6-m94clz",
     "title": "Liverpool midfield decision made vs Manchester United after injury concerns",
     "summary": "Our ECHO writers have taken a punt at who should be lining up in the engine room for Liverpool against Manchester United in the Premier League on Sunday",
     "source": {
@@ -15,15 +66,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-midfield-decision-made-vs-34917771",
     "publishedAt": "2026-11-17T05:00:00.000Z",
-    "discoveredAt": "2026-11-17T05:38:39.624Z",
-    "lastVerifiedAt": "2026-11-17T05:38:39.624Z",
+    "discoveredAt": "2026-11-17T06:21:15.147Z",
+    "lastVerifiedAt": "2026-11-17T06:21:15.147Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 38,
-      "label": "38m ago",
+      "ageMinutes": 81,
+      "label": "1h ago",
       "publishedAt": "2026-11-17T05:00:00.000Z",
-      "lastUpdated": "2026-11-17T05:38:39.624Z"
+      "lastUpdated": "2026-11-17T06:21:15.147Z"
     },
     "verification": {
       "level": "single_source",
@@ -35,7 +86,7 @@
           "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-midfield-decision-made-vs-34917771",
           "credibilityScore": 80,
           "publishedAt": "2026-11-17T05:00:00.000Z",
-          "discoveredAt": "2026-11-17T05:38:39.624Z"
+          "discoveredAt": "2026-11-17T06:21:15.147Z"
         }
       ],
       "confidenceScore": 80,
@@ -52,7 +103,107 @@
     ]
   },
   {
-    "id": "news-mwk9i1kq-q44xqb",
+    "id": "news-mwkb0tr6-phhqat",
+    "title": " Quickfire Quiz 247: Can you answer 10 questions in 90 seconds? ",
+    "summary": "Tackle these 10 football trivia questions about old grounds, losing finalists, World Cup goals and more!",
+    "source": {
+      "name": "FourFourTwo",
+      "type": "publication",
+      "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-247",
+      "credibilityScore": 85
+    },
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-247",
+    "image": "https://cdn.mos.cms.futurecdn.net/sE59uzJ3MHE3zNuQoWCSbd-1920-80.png",
+    "category": "International Football",
+    "originalUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-247",
+    "publishedAt": "2026-11-17T06:00:00.000Z",
+    "discoveredAt": "2026-11-17T06:21:15.147Z",
+    "lastVerifiedAt": "2026-11-17T06:21:15.147Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 21,
+      "label": "21m ago",
+      "publishedAt": "2026-11-17T06:00:00.000Z",
+      "lastUpdated": "2026-11-17T06:21:15.147Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
+          "type": "publication",
+          "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-247",
+          "credibilityScore": 85,
+          "publishedAt": "2026-11-17T06:00:00.000Z",
+          "discoveredAt": "2026-11-17T06:21:15.147Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by FourFourTwo",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mwkb0tr6-c4l30o",
+    "title": "Alexander Isak is red hot but Liverpool are risking being unfair to their No.9",
+    "summary": "The second part of John Aldridge's column looks at the form of Alexander Isak, Liverpool's top scorer so far this term",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/alexander-isak-red-hot-liverpool-34919596",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/alexander-isak-red-hot-liverpool-34919596",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34920553.ece/ALTERNATES/s615/0_premium-canvas-1794847625889.png",
+    "category": "Premier League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/alexander-isak-red-hot-liverpool-34919596",
+    "publishedAt": "2026-11-17T06:00:00.000Z",
+    "discoveredAt": "2026-11-17T06:21:15.147Z",
+    "lastVerifiedAt": "2026-11-17T06:21:15.147Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 21,
+      "label": "21m ago",
+      "publishedAt": "2026-11-17T06:00:00.000Z",
+      "lastUpdated": "2026-11-17T06:21:15.147Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/alexander-isak-red-hot-liverpool-34919596",
+          "credibilityScore": 80,
+          "publishedAt": "2026-11-17T06:00:00.000Z",
+          "discoveredAt": "2026-11-17T06:21:15.147Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mwkb0tr6-zso6k8",
     "title": "Man United news LIVE: Pochettino 'issues immediate ban' and set to make historic appointment",
     "summary": "Mauricio Pochettino has been appointed Manchester United boss but has yet to arrive at Old Trafford as the club prepares to face Liverpool at the weekend",
     "source": {
@@ -67,15 +218,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-news-live-pochettino-34915986",
     "publishedAt": "2026-11-16T23:09:03.000Z",
-    "discoveredAt": "2026-11-17T05:38:39.624Z",
-    "lastVerifiedAt": "2026-11-17T05:38:39.624Z",
+    "discoveredAt": "2026-11-17T06:21:15.147Z",
+    "lastVerifiedAt": "2026-11-17T06:21:15.147Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 389,
-      "label": "6h ago",
+      "ageMinutes": 432,
+      "label": "7h ago",
       "publishedAt": "2026-11-16T23:09:03.000Z",
-      "lastUpdated": "2026-11-17T05:38:39.624Z"
+      "lastUpdated": "2026-11-17T06:21:15.147Z"
     },
     "verification": {
       "level": "single_source",
@@ -87,7 +238,7 @@
           "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-news-live-pochettino-34915986",
           "credibilityScore": 78,
           "publishedAt": "2026-11-16T23:09:03.000Z",
-          "discoveredAt": "2026-11-17T05:38:39.624Z"
+          "discoveredAt": "2026-11-17T06:21:15.147Z"
         }
       ],
       "confidenceScore": 78,
@@ -104,7 +255,7 @@
     ]
   },
   {
-    "id": "news-mwk9i1kq-p78gze",
+    "id": "news-mwkb0tr6-r9q0l6",
     "title": "Manchester United's loan for 'future star striker' has become a nightmare",
     "summary": "Man Utd youngster Chido Obi was sent to the Netherlands to spend the season with relegation-threatened Willem II.",
     "source": {
@@ -119,15 +270,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-uniteds-loan-future-star-34917553",
     "publishedAt": "2026-11-17T05:00:00.000Z",
-    "discoveredAt": "2026-11-17T05:38:39.624Z",
-    "lastVerifiedAt": "2026-11-17T05:38:39.624Z",
+    "discoveredAt": "2026-11-17T06:21:15.147Z",
+    "lastVerifiedAt": "2026-11-17T06:21:15.147Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 38,
-      "label": "38m ago",
+      "ageMinutes": 81,
+      "label": "1h ago",
       "publishedAt": "2026-11-17T05:00:00.000Z",
-      "lastUpdated": "2026-11-17T05:38:39.624Z"
+      "lastUpdated": "2026-11-17T06:21:15.147Z"
     },
     "verification": {
       "level": "single_source",
@@ -139,7 +290,7 @@
           "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-uniteds-loan-future-star-34917553",
           "credibilityScore": 78,
           "publishedAt": "2026-11-17T05:00:00.000Z",
-          "discoveredAt": "2026-11-17T05:38:39.624Z"
+          "discoveredAt": "2026-11-17T06:21:15.147Z"
         }
       ],
       "confidenceScore": 78,
@@ -155,7 +306,7 @@
     ]
   },
   {
-    "id": "news-mwk9i1kq-yjntox",
+    "id": "news-mwkb0tr6-br3fxs",
     "title": "The vibrant and dynamic rebrand Mauricio Pochettino could kickstart at Manchester United",
     "summary": "Man United need a spark and Mauricio Pochettino can help provide it",
     "source": {
@@ -170,15 +321,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/vibrant-dynamic-rebrand-mauricio-pochettino-34920265",
     "publishedAt": "2026-11-17T04:00:00.000Z",
-    "discoveredAt": "2026-11-17T05:38:39.624Z",
-    "lastVerifiedAt": "2026-11-17T05:38:39.624Z",
+    "discoveredAt": "2026-11-17T06:21:15.147Z",
+    "lastVerifiedAt": "2026-11-17T06:21:15.147Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 98,
-      "label": "1h ago",
+      "ageMinutes": 141,
+      "label": "2h ago",
       "publishedAt": "2026-11-17T04:00:00.000Z",
-      "lastUpdated": "2026-11-17T05:38:39.624Z"
+      "lastUpdated": "2026-11-17T06:21:15.147Z"
     },
     "verification": {
       "level": "single_source",
@@ -190,7 +341,7 @@
           "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/vibrant-dynamic-rebrand-mauricio-pochettino-34920265",
           "credibilityScore": 78,
           "publishedAt": "2026-11-17T04:00:00.000Z",
-          "discoveredAt": "2026-11-17T05:38:39.624Z"
+          "discoveredAt": "2026-11-17T06:21:15.147Z"
         }
       ],
       "confidenceScore": 78,
@@ -206,7 +357,7 @@
     ]
   },
   {
-    "id": "news-mwk9i1kq-pfx3qn",
+    "id": "news-mwkb0tr6-wj0hrv",
     "title": " Tottenham report: Striker transfer is on, as Eli Junior Kroupi's future is decided ",
     "summary": "Tottenham Hotspur have interest in Eli Junior Kroupi - but the move for a striker is shaping up for January",
     "source": {
@@ -221,15 +372,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.fourfourtwo.com/transfer/tottenham-report-striker-transfer-is-on-as-eli-junior-kroupis-future-is-decided",
     "publishedAt": "2026-11-16T11:21:50.000Z",
-    "discoveredAt": "2026-11-17T05:38:39.624Z",
-    "lastVerifiedAt": "2026-11-17T05:38:39.624Z",
+    "discoveredAt": "2026-11-17T06:21:15.147Z",
+    "lastVerifiedAt": "2026-11-17T06:21:15.147Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "today",
-      "ageMinutes": 1096,
+      "ageMinutes": 1139,
       "label": "Earlier today",
       "publishedAt": "2026-11-16T11:21:50.000Z",
-      "lastUpdated": "2026-11-17T05:38:39.624Z"
+      "lastUpdated": "2026-11-17T06:21:15.147Z"
     },
     "verification": {
       "level": "single_source",
@@ -241,7 +392,7 @@
           "url": "https://www.fourfourtwo.com/transfer/tottenham-report-striker-transfer-is-on-as-eli-junior-kroupis-future-is-decided",
           "credibilityScore": 85,
           "publishedAt": "2026-11-16T11:21:50.000Z",
-          "discoveredAt": "2026-11-17T05:38:39.624Z"
+          "discoveredAt": "2026-11-17T06:21:15.147Z"
         }
       ],
       "confidenceScore": 85,
@@ -258,7 +409,7 @@
     ]
   },
   {
-    "id": "news-mwk9i1kq-ej9z16",
+    "id": "news-mwkb0tr6-6133v6",
     "title": " Manchester United are the Trigger's broom of English football - and Mauricio Pochettino won't fix a broken club ",
     "summary": "Manchester United are a ridiculous mix of previous eras: they should be competing already, yet they're starting all over again from scratch",
     "source": {
@@ -273,15 +424,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.fourfourtwo.com/team/manchester-united-are-the-triggers-broom-of-english-football-and-mauricio-pochettino-wont-fix-a-broken-club",
     "publishedAt": "2026-11-16T16:00:00.000Z",
-    "discoveredAt": "2026-11-17T05:38:39.624Z",
-    "lastVerifiedAt": "2026-11-17T05:38:39.624Z",
+    "discoveredAt": "2026-11-17T06:21:15.147Z",
+    "lastVerifiedAt": "2026-11-17T06:21:15.147Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "today",
-      "ageMinutes": 818,
+      "ageMinutes": 861,
       "label": "Earlier today",
       "publishedAt": "2026-11-16T16:00:00.000Z",
-      "lastUpdated": "2026-11-17T05:38:39.624Z"
+      "lastUpdated": "2026-11-17T06:21:15.147Z"
     },
     "verification": {
       "level": "single_source",
@@ -293,7 +444,7 @@
           "url": "https://www.fourfourtwo.com/team/manchester-united-are-the-triggers-broom-of-english-football-and-mauricio-pochettino-wont-fix-a-broken-club",
           "credibilityScore": 85,
           "publishedAt": "2026-11-16T16:00:00.000Z",
-          "discoveredAt": "2026-11-17T05:38:39.624Z"
+          "discoveredAt": "2026-11-17T06:21:15.147Z"
         }
       ],
       "confidenceScore": 85,
@@ -309,7 +460,7 @@
     ]
   },
   {
-    "id": "news-mwk9i1kq-8pmt56",
+    "id": "news-mwkb0tr6-mroo4r",
     "title": "Liverpool can make Manchester United their perfect visitors and restore Fortress Anfield",
     "summary": "The first part of John Aldridge's ECHO column assesses Sunday's visit from Manchester United and why Fortress Anfield needs restoring",
     "source": {
@@ -324,15 +475,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-can-make-manchester-united-34919403",
     "publishedAt": "2026-11-16T15:49:10.000Z",
-    "discoveredAt": "2026-11-17T05:38:39.624Z",
-    "lastVerifiedAt": "2026-11-17T05:38:39.624Z",
+    "discoveredAt": "2026-11-17T06:21:15.147Z",
+    "lastVerifiedAt": "2026-11-17T06:21:15.147Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "today",
-      "ageMinutes": 829,
+      "ageMinutes": 872,
       "label": "Earlier today",
       "publishedAt": "2026-11-16T15:49:10.000Z",
-      "lastUpdated": "2026-11-17T05:38:39.624Z"
+      "lastUpdated": "2026-11-17T06:21:15.147Z"
     },
     "verification": {
       "level": "single_source",
@@ -344,7 +495,7 @@
           "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-can-make-manchester-united-34919403",
           "credibilityScore": 80,
           "publishedAt": "2026-11-16T15:49:10.000Z",
-          "discoveredAt": "2026-11-17T05:38:39.624Z"
+          "discoveredAt": "2026-11-17T06:21:15.147Z"
         }
       ],
       "confidenceScore": 80,
@@ -358,167 +509,6 @@
     "relatedTeams": [
       "manchester-united",
       "liverpool"
-    ]
-  },
-  {
-    "id": "news-mwk9i1kq-0nlkdq",
-    "title": "JJ Gabriel signs lucrative new deal as Man United fans stunned by update",
-    "summary": "JJ Gabriel appears all set to leave Manchester United but the teenage prodigy has left fans shocked after penning a new deal",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-man-utd-contract-34921563",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-man-utd-contract-34921563",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34673927.ece/ALTERNATES/s615/1_GettyImages-2276373760.jpg",
-    "category": "Transfers",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-man-utd-contract-34921563",
-    "publishedAt": "2026-11-16T22:06:58.000Z",
-    "discoveredAt": "2026-11-17T05:38:39.624Z",
-    "lastVerifiedAt": "2026-11-17T05:38:39.624Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 451,
-      "label": "7h ago",
-      "publishedAt": "2026-11-16T22:06:58.000Z",
-      "lastUpdated": "2026-11-17T05:38:39.624Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-man-utd-contract-34921563",
-          "credibilityScore": 78,
-          "publishedAt": "2026-11-16T22:06:58.000Z",
-          "discoveredAt": "2026-11-17T05:38:39.624Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united"
-    ]
-  },
-  {
-    "id": "news-mwk9i1kq-orytfl",
-    "title": "Man Utd to resurrect Hall interest - Tuesday's gossip",
-    "summary": "Manchester United may struggle to prise defender Lewis Hall from Newcastle, Arsenal midfielder Martin Zubimendi is pondering his future, Chelsea eye a double swoop for Barcelona duo, plus more.",
-    "source": {
-      "name": "BBC Sport Football",
-      "type": "official",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c6d91x7nz85jo?at_medium=RSS&at_campaign=rss",
-      "credibilityScore": 92
-    },
-    "sourceName": "BBC Sport Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c6d91x7nz85jo?at_medium=RSS&at_campaign=rss",
-    "image": null,
-    "category": "Premier League",
-    "originalUrl": "https://www.bbc.co.uk/sport/football/articles/c6d91x7nz85jo?at_medium=RSS&at_campaign=rss",
-    "publishedAt": "2026-11-16T22:06:32.000Z",
-    "discoveredAt": "2026-11-17T05:38:39.624Z",
-    "lastVerifiedAt": "2026-11-17T05:38:39.624Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 452,
-      "label": "7h ago",
-      "publishedAt": "2026-11-16T22:06:32.000Z",
-      "lastUpdated": "2026-11-17T05:38:39.624Z"
-    },
-    "verification": {
-      "level": "trusted_journalist",
-      "sources": [
-        {
-          "id": "bbc-sport",
-          "name": "BBC Sport Football",
-          "type": "official",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c6d91x7nz85jo?at_medium=RSS&at_campaign=rss",
-          "credibilityScore": 92,
-          "publishedAt": "2026-11-16T22:06:32.000Z",
-          "discoveredAt": "2026-11-17T05:38:39.624Z"
-        }
-      ],
-      "confidenceScore": 92,
-      "confidenceReasons": [
-        "Reported by BBC Sport Football",
-        "High source credibility"
-      ],
-      "confirmedBy": [
-        "BBC Sport Football"
-      ],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "arsenal",
-      "manchester-united",
-      "chelsea",
-      "barcelona",
-      "inter-milan",
-      "newcastle"
-    ]
-  },
-  {
-    "id": "news-mwk9i1kq-z16sdo",
-    "title": "Manchester United just received a huge boost during the international break",
-    "summary": "Senne Lammens was at fault as Man Utd conceded two early goals against Aston Villa last time out, but he looks to have put his shaky recent form behind him.",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-just-received-huge-34917502",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-just-received-huge-34917502",
-    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34917812.ece/ALTERNATES/s615/1_GettyImages-2304779156.jpg",
-    "category": "International Football",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-just-received-huge-34917502",
-    "publishedAt": "2026-11-16T13:15:35.000Z",
-    "discoveredAt": "2026-11-17T05:38:39.624Z",
-    "lastVerifiedAt": "2026-11-17T05:38:39.624Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "today",
-      "ageMinutes": 983,
-      "label": "Earlier today",
-      "publishedAt": "2026-11-16T13:15:35.000Z",
-      "lastUpdated": "2026-11-17T05:38:39.624Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/manchester-united-just-received-huge-34917502",
-          "credibilityScore": 78,
-          "publishedAt": "2026-11-16T13:15:35.000Z",
-          "discoveredAt": "2026-11-17T05:38:39.624Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "inter-milan"
     ]
   }
 ]
