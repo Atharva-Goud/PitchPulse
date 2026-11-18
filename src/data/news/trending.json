@@ -1,6 +1,6 @@
 [
   {
-    "id": "news-mwmhybdj-57ge6c",
+    "id": "news-mwmk5lw4-5foq7f",
     "title": " Manchester United approached forgotten Chelsea player as manager - and it wasn't Cesc Fabregas: report ",
     "summary": "Manchester United had a long list of prospective new managers before settling on Mauricio Pochettino",
     "source": {
@@ -15,15 +15,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.fourfourtwo.com/person/coaches-managers/manchester-united-approached-forgotten-chelsea-player-as-manager-and-it-wasnt-cesc-fabregas-report",
     "publishedAt": "2026-11-18T13:03:13.000Z",
-    "discoveredAt": "2026-11-18T19:10:46.081Z",
-    "lastVerifiedAt": "2026-11-18T19:10:46.081Z",
+    "discoveredAt": "2026-11-18T20:12:26.115Z",
+    "lastVerifiedAt": "2026-11-18T20:12:26.115Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 367,
-      "label": "6h ago",
+      "ageMinutes": 429,
+      "label": "7h ago",
       "publishedAt": "2026-11-18T13:03:13.000Z",
-      "lastUpdated": "2026-11-18T19:10:46.081Z"
+      "lastUpdated": "2026-11-18T20:12:26.115Z"
     },
     "verification": {
       "level": "single_source",
@@ -35,7 +35,7 @@
           "url": "https://www.fourfourtwo.com/person/coaches-managers/manchester-united-approached-forgotten-chelsea-player-as-manager-and-it-wasnt-cesc-fabregas-report",
           "credibilityScore": 85,
           "publishedAt": "2026-11-18T13:03:13.000Z",
-          "discoveredAt": "2026-11-18T19:10:46.081Z"
+          "discoveredAt": "2026-11-18T20:12:26.115Z"
         }
       ],
       "confidenceScore": 85,
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "id": "news-mwmhybdj-elmjz8",
+    "id": "news-mwmk5lw4-j0isms",
     "title": " ‘It’s that Glaswegian way’: Leon Osman explains why David Moyes was the ultimate fit for Everton ",
     "summary": "The former Toffees midfielder reflects on how his old boss understood the fabric of Liverpool - and why his Everton legacy goes far beyond silverware.",
     "source": {
@@ -67,15 +67,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.fourfourtwo.com/person/its-that-glaswegian-way-leon-osman-explains-why-david-moyes-was-the-ultimate-fit-for-everton",
     "publishedAt": "2026-11-18T18:00:00.000Z",
-    "discoveredAt": "2026-11-18T19:10:46.081Z",
-    "lastVerifiedAt": "2026-11-18T19:10:46.081Z",
+    "discoveredAt": "2026-11-18T20:12:26.115Z",
+    "lastVerifiedAt": "2026-11-18T20:12:26.115Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 70,
-      "label": "1h ago",
+      "ageMinutes": 132,
+      "label": "2h ago",
       "publishedAt": "2026-11-18T18:00:00.000Z",
-      "lastUpdated": "2026-11-18T19:10:46.081Z"
+      "lastUpdated": "2026-11-18T20:12:26.115Z"
     },
     "verification": {
       "level": "single_source",
@@ -87,7 +87,7 @@
           "url": "https://www.fourfourtwo.com/person/its-that-glaswegian-way-leon-osman-explains-why-david-moyes-was-the-ultimate-fit-for-everton",
           "credibilityScore": 85,
           "publishedAt": "2026-11-18T18:00:00.000Z",
-          "discoveredAt": "2026-11-18T19:10:46.081Z"
+          "discoveredAt": "2026-11-18T20:12:26.115Z"
         }
       ],
       "confidenceScore": 85,
@@ -103,7 +103,59 @@
     ]
   },
   {
-    "id": "news-mwmhybdj-l4c8db",
+    "id": "news-mwmk5lw4-eo0o0x",
+    "title": "JJ Gabriel sparks concern in Spain with ex-Man United star on verge of joining new club",
+    "summary": "JJ Gabriel looks set to join Real Madrid after controversially announcing his departure from Manchester United.",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-man-united-spain-34932994",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-man-united-spain-34932994",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34933004.ece/ALTERNATES/s615/0_GettyImages-2288574556.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-man-united-spain-34932994",
+    "publishedAt": "2026-11-18T19:44:13.000Z",
+    "discoveredAt": "2026-11-18T20:12:26.115Z",
+    "lastVerifiedAt": "2026-11-18T20:12:26.115Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "breaking",
+      "ageMinutes": 28,
+      "label": "28m ago",
+      "publishedAt": "2026-11-18T19:44:13.000Z",
+      "lastUpdated": "2026-11-18T20:12:26.115Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/jj-gabriel-man-united-spain-34932994",
+          "credibilityScore": 78,
+          "publishedAt": "2026-11-18T19:44:13.000Z",
+          "discoveredAt": "2026-11-18T20:12:26.115Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "real-madrid"
+    ]
+  },
+  {
+    "id": "news-mwmk5lw4-let8kn",
     "title": "Ex-Everton star claims Bradley Barcola has one thing stopping him from winning Ballon d’Or",
     "summary": "Morgan Schneiderlin, the former Manchester United, Everton and France midfielder, has been speaking about two of his compatriots at Liverpool, Bradley Barcola and Hugo Ekitike",
     "source": {
@@ -118,15 +170,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/ex-everton-star-claims-bradley-34930863",
     "publishedAt": "2026-11-18T15:28:00.000Z",
-    "discoveredAt": "2026-11-18T19:10:46.081Z",
-    "lastVerifiedAt": "2026-11-18T19:10:46.081Z",
+    "discoveredAt": "2026-11-18T20:12:26.115Z",
+    "lastVerifiedAt": "2026-11-18T20:12:26.115Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 222,
-      "label": "3h ago",
+      "ageMinutes": 284,
+      "label": "4h ago",
       "publishedAt": "2026-11-18T15:28:00.000Z",
-      "lastUpdated": "2026-11-18T19:10:46.081Z"
+      "lastUpdated": "2026-11-18T20:12:26.115Z"
     },
     "verification": {
       "level": "single_source",
@@ -138,7 +190,7 @@
           "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/ex-everton-star-claims-bradley-34930863",
           "credibilityScore": 80,
           "publishedAt": "2026-11-18T15:28:00.000Z",
-          "discoveredAt": "2026-11-18T19:10:46.081Z"
+          "discoveredAt": "2026-11-18T20:12:26.115Z"
         }
       ],
       "confidenceScore": 80,
@@ -155,7 +207,7 @@
     ]
   },
   {
-    "id": "news-mwmhybdj-vmj6l8",
+    "id": "news-mwmk5lw4-pexomm",
     "title": " Surprise Manchester United star's exit set to be first transfer of the Mauricio Pochettino era: report ",
     "summary": "New Manchester United manager Mauricio Pochettino is starting his to-do list with a shock departure",
     "source": {
@@ -170,15 +222,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.fourfourtwo.com/person/coaches-managers/surprise-manchester-united-stars-exit-set-to-be-first-transfer-of-the-mauricio-pochettino-era-report",
     "publishedAt": "2026-11-18T15:00:00.000Z",
-    "discoveredAt": "2026-11-18T19:10:46.081Z",
-    "lastVerifiedAt": "2026-11-18T19:10:46.081Z",
+    "discoveredAt": "2026-11-18T20:12:26.115Z",
+    "lastVerifiedAt": "2026-11-18T20:12:26.115Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 250,
-      "label": "4h ago",
+      "ageMinutes": 312,
+      "label": "5h ago",
       "publishedAt": "2026-11-18T15:00:00.000Z",
-      "lastUpdated": "2026-11-18T19:10:46.081Z"
+      "lastUpdated": "2026-11-18T20:12:26.115Z"
     },
     "verification": {
       "level": "single_source",
@@ -190,7 +242,7 @@
           "url": "https://www.fourfourtwo.com/person/coaches-managers/surprise-manchester-united-stars-exit-set-to-be-first-transfer-of-the-mauricio-pochettino-era-report",
           "credibilityScore": 85,
           "publishedAt": "2026-11-18T15:00:00.000Z",
-          "discoveredAt": "2026-11-18T19:10:46.081Z"
+          "discoveredAt": "2026-11-18T20:12:26.115Z"
         }
       ],
       "confidenceScore": 85,
@@ -206,7 +258,7 @@
     ]
   },
   {
-    "id": "news-mwmhybdj-9vbvzy",
+    "id": "news-mwmk5lw4-nc4n4n",
     "title": "Man United news LIVE: Mauricio Pochettino’s threat to Man City as exit leaves squad ‘stunned’",
     "summary": "All the latest Manchester United updates as we get them with Mauricio Pochettino jetting in to officially take charge",
     "source": {
@@ -221,15 +273,15 @@
     "category": "Premier League",
     "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-live-mauricio-pochettino-34927669",
     "publishedAt": "2026-11-18T15:34:50.000Z",
-    "discoveredAt": "2026-11-18T19:10:46.081Z",
-    "lastVerifiedAt": "2026-11-18T19:10:46.081Z",
+    "discoveredAt": "2026-11-18T20:12:26.115Z",
+    "lastVerifiedAt": "2026-11-18T20:12:26.115Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 216,
-      "label": "3h ago",
+      "ageMinutes": 277,
+      "label": "4h ago",
       "publishedAt": "2026-11-18T15:34:50.000Z",
-      "lastUpdated": "2026-11-18T19:10:46.081Z"
+      "lastUpdated": "2026-11-18T20:12:26.115Z"
     },
     "verification": {
       "level": "single_source",
@@ -241,7 +293,7 @@
           "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-live-mauricio-pochettino-34927669",
           "credibilityScore": 78,
           "publishedAt": "2026-11-18T15:34:50.000Z",
-          "discoveredAt": "2026-11-18T19:10:46.081Z"
+          "discoveredAt": "2026-11-18T20:12:26.115Z"
         }
       ],
       "confidenceScore": 78,
@@ -258,7 +310,7 @@
     ]
   },
   {
-    "id": "news-mwmhybdj-g1wjq0",
+    "id": "news-mwmk5lw4-4d77ki",
     "title": " Manchester United dressing room remains worryingly fragile - why Mauricio Pochettino has a huge job on his hands ",
     "summary": "With one win in 10 Premier League games this season, is it any wonder Man United players are feeling the pressure?",
     "source": {
@@ -273,15 +325,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.fourfourtwo.com/person/coaches-managers/manchester-united-dressing-room-remains-worryingly-fragile-why-mauricio-pochettino-has-a-huge-job-on-his-hands",
     "publishedAt": "2026-11-18T12:44:01.000Z",
-    "discoveredAt": "2026-11-18T19:10:46.081Z",
-    "lastVerifiedAt": "2026-11-18T19:10:46.081Z",
+    "discoveredAt": "2026-11-18T20:12:26.115Z",
+    "lastVerifiedAt": "2026-11-18T20:12:26.115Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 386,
-      "label": "6h ago",
+      "ageMinutes": 448,
+      "label": "7h ago",
       "publishedAt": "2026-11-18T12:44:01.000Z",
-      "lastUpdated": "2026-11-18T19:10:46.081Z"
+      "lastUpdated": "2026-11-18T20:12:26.115Z"
     },
     "verification": {
       "level": "single_source",
@@ -293,7 +345,7 @@
           "url": "https://www.fourfourtwo.com/person/coaches-managers/manchester-united-dressing-room-remains-worryingly-fragile-why-mauricio-pochettino-has-a-huge-job-on-his-hands",
           "credibilityScore": 85,
           "publishedAt": "2026-11-18T12:44:01.000Z",
-          "discoveredAt": "2026-11-18T19:10:46.081Z"
+          "discoveredAt": "2026-11-18T20:12:26.115Z"
         }
       ],
       "confidenceScore": 85,
@@ -309,7 +361,7 @@
     ]
   },
   {
-    "id": "news-mwmhybdj-qjmvsh",
+    "id": "news-mwmk5lw4-fsyr2t",
     "title": " Arsenal to make 'unpopular decisions' over contract renewal situation: report ",
     "summary": "Arsenal are in the midst of tying down key players - and not every decision they make will go down well with fans",
     "source": {
@@ -324,15 +376,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.fourfourtwo.com/transfer/arsenal-to-make-unpopular-decisions-over-contract-renewal-situation-report",
     "publishedAt": "2026-11-18T11:31:50.000Z",
-    "discoveredAt": "2026-11-18T19:10:46.081Z",
-    "lastVerifiedAt": "2026-11-18T19:10:46.081Z",
+    "discoveredAt": "2026-11-18T20:12:26.115Z",
+    "lastVerifiedAt": "2026-11-18T20:12:26.115Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 459,
-      "label": "7h ago",
+      "ageMinutes": 520,
+      "label": "8h ago",
       "publishedAt": "2026-11-18T11:31:50.000Z",
-      "lastUpdated": "2026-11-18T19:10:46.081Z"
+      "lastUpdated": "2026-11-18T20:12:26.115Z"
     },
     "verification": {
       "level": "single_source",
@@ -344,7 +396,7 @@
           "url": "https://www.fourfourtwo.com/transfer/arsenal-to-make-unpopular-decisions-over-contract-renewal-situation-report",
           "credibilityScore": 85,
           "publishedAt": "2026-11-18T11:31:50.000Z",
-          "discoveredAt": "2026-11-18T19:10:46.081Z"
+          "discoveredAt": "2026-11-18T20:12:26.115Z"
         }
       ],
       "confidenceScore": 85,
@@ -360,7 +412,7 @@
     ]
   },
   {
-    "id": "news-mwmhybdj-46luhb",
+    "id": "news-mwmk5lw4-r5jise",
     "title": "Liverpool signed the best young player in the world in a club-record deal",
     "summary": "A number of Liverpool players were named in FourFourTwo’s Top 100 Young Players of 2001. However, 25 years on, the list has not aged well...",
     "source": {
@@ -375,15 +427,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-signed-best-young-player-34932240",
     "publishedAt": "2026-11-18T17:28:00.000Z",
-    "discoveredAt": "2026-11-18T19:10:46.081Z",
-    "lastVerifiedAt": "2026-11-18T19:10:46.081Z",
+    "discoveredAt": "2026-11-18T20:12:26.115Z",
+    "lastVerifiedAt": "2026-11-18T20:12:26.115Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 102,
-      "label": "1h ago",
+      "ageMinutes": 164,
+      "label": "2h ago",
       "publishedAt": "2026-11-18T17:28:00.000Z",
-      "lastUpdated": "2026-11-18T19:10:46.081Z"
+      "lastUpdated": "2026-11-18T20:12:26.115Z"
     },
     "verification": {
       "level": "single_source",
@@ -395,7 +447,7 @@
           "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-signed-best-young-player-34932240",
           "credibilityScore": 80,
           "publishedAt": "2026-11-18T17:28:00.000Z",
-          "discoveredAt": "2026-11-18T19:10:46.081Z"
+          "discoveredAt": "2026-11-18T20:12:26.115Z"
         }
       ],
       "confidenceScore": 80,
@@ -411,7 +463,7 @@
     ]
   },
   {
-    "id": "news-mwmhybdj-2tr7nj",
+    "id": "news-mwmk5lw5-4kb6ij",
     "title": " New Sealand: The former naval fort once had a national team managed by Julian Dicks, now they're relaunching... ",
     "summary": "Sign up for £7.99 to earn an international cap",
     "source": {
@@ -426,15 +478,15 @@
     "category": "Transfers",
     "originalUrl": "https://www.fourfourtwo.com/team/new-sealand-the-former-naval-fort-once-had-a-national-team-managed-by-julian-dicks-now-theyre-relaunching",
     "publishedAt": "2026-11-18T11:01:01.000Z",
-    "discoveredAt": "2026-11-18T19:10:46.081Z",
-    "lastVerifiedAt": "2026-11-18T19:10:46.081Z",
+    "discoveredAt": "2026-11-18T20:12:26.115Z",
+    "lastVerifiedAt": "2026-11-18T20:12:26.115Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "recent",
-      "ageMinutes": 489,
-      "label": "8h ago",
+      "ageMinutes": 551,
+      "label": "9h ago",
       "publishedAt": "2026-11-18T11:01:01.000Z",
-      "lastUpdated": "2026-11-18T19:10:46.081Z"
+      "lastUpdated": "2026-11-18T20:12:26.115Z"
     },
     "verification": {
       "level": "single_source",
@@ -446,7 +498,7 @@
           "url": "https://www.fourfourtwo.com/team/new-sealand-the-former-naval-fort-once-had-a-national-team-managed-by-julian-dicks-now-theyre-relaunching",
           "credibilityScore": 85,
           "publishedAt": "2026-11-18T11:01:01.000Z",
-          "discoveredAt": "2026-11-18T19:10:46.081Z"
+          "discoveredAt": "2026-11-18T20:12:26.115Z"
         }
       ],
       "confidenceScore": 85,
@@ -459,58 +511,6 @@
     },
     "relatedTeams": [
       "inter-milan"
-    ]
-  },
-  {
-    "id": "news-mwmhybdj-upw3xw",
-    "title": "Liverpool get major injury boosts as long-term absentees return to training",
-    "summary": "Conor Bradley and Giovanni Leoni have returned to first-team training after long injury lay-offs while Dominik Szoboszlai has once again proved his fitness ahead of Liverpool's big match with Manchester United",
-    "source": {
-      "name": "Liverpool Echo LFC",
-      "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-major-injury-boosts-long-34928622",
-      "credibilityScore": 80
-    },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-major-injury-boosts-long-34928622",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34773742.ece/ALTERNATES/s615/1_GettyImages-2241649953.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-major-injury-boosts-long-34928622",
-    "publishedAt": "2026-11-18T10:49:59.000Z",
-    "discoveredAt": "2026-11-18T19:10:46.081Z",
-    "lastVerifiedAt": "2026-11-18T19:10:46.081Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 500,
-      "label": "8h ago",
-      "publishedAt": "2026-11-18T10:49:59.000Z",
-      "lastUpdated": "2026-11-18T19:10:46.081Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-major-injury-boosts-long-34928622",
-          "credibilityScore": 80,
-          "publishedAt": "2026-11-18T10:49:59.000Z",
-          "discoveredAt": "2026-11-18T19:10:46.081Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united",
-      "liverpool"
     ]
   }
 ]
