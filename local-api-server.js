@@ -38,4 +38,3 @@ app.listen(PORT, () => {
   console.log(`Local football API proxy running on http://localhost:${PORT}`);
   console.log(`Proxying to ${EXTERNAL_API_BASE}`);
 });
-EOF

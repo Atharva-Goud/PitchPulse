@@ -86,7 +86,7 @@ export async function fetchLiveMatches(): Promise<FootballMatch[]> {
   try {
     const matches: FootballMatch[] = [];
     for (const league of LEAGUE_SLUGS) {
-      const data = await apiFetch('/' + league + '/fixtures', { status: 'in' });
+      const data = await apiFetch('/' + league + '/fixtures', { status: 'live' });
       const events = data.events || [];
       matches.push(...events.map(normalizeEvent, league));
     }
