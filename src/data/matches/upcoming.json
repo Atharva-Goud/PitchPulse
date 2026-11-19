@@ -1,1 +1,84 @@
-[]
+[
+  {
+    "id": "match-9003",
+    "competition": {
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "Premier League",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-49",
+      "name": "Chelsea",
+      "shortName": "CHE",
+      "logo": "https://media.api-sports.io/football/teams/49.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "awayTeam": {
+      "id": "team-65",
+      "name": "Liverpool",
+      "shortName": "LIV",
+      "logo": "https://media.api-sports.io/football/teams/65.png",
+      "country": "Unknown",
+      "league": "Premier League"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "SCHEDULED",
+    "kickoff": "2026-11-19T13:27:38.667Z",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-11-19T10:27:38.669Z"
+    },
+    "lastUpdated": "2026-11-19T10:27:38.669Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  },
+  {
+    "id": "match-9004",
+    "competition": {
+      "id": "league-140",
+      "name": "La Liga",
+      "shortName": "La Liga",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "country": "Spain",
+      "type": "league"
+    },
+    "homeTeam": {
+      "id": "team-530",
+      "name": "Atletico Madrid",
+      "shortName": "ATL",
+      "logo": "https://media.api-sports.io/football/teams/530.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "awayTeam": {
+      "id": "team-558",
+      "name": "Sevilla",
+      "shortName": "SEV",
+      "logo": "https://media.api-sports.io/football/teams/558.png",
+      "country": "Unknown",
+      "league": "La Liga"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "SCHEDULED",
+    "kickoff": "2026-11-19T13:27:38.667Z",
+    "freshness": {
+      "status": "fresh",
+      "ageMinutes": 0,
+      "lastUpdated": "2026-11-19T10:27:38.669Z"
+    },
+    "lastUpdated": "2026-11-19T10:27:38.669Z",
+    "source": {
+      "provider": "API-Football",
+      "type": "football_api"
+    }
+  }
+]

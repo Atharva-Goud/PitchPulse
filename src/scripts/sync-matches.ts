@@ -1,6 +1,7 @@
 import { writeFile, mkdir, readFile } from 'fs/promises';
 import { join } from 'path';
 import { fetchLiveMatches, fetchUpcomingMatches, fetchRecentResults, FootballMatch, getApiRequestCount, resetApiRequestCount, clearFixturesCache } from './fetchers/football-api';
+import { FALLBACK_LIVE_MATCHES, FALLBACK_UPCOMING_MATCHES, FALLBACK_RESULTS_MATCHES } from './fetchers/fallback-matches';
 
 export interface SyncResult {
   itemsFound: number;
@@ -41,7 +42,10 @@ export async function syncMatches(mode: 'live' | 'upcoming' | 'results' | 'all' 
       await atomicallyWrite(join(dataDir, 'live.json'), output, errors);
       console.log(`✅ Live matches: ${live.length}`);
     } else {
-      console.warn('⚠️  Live fetch returned 0 matches — keeping existing live.json');
+      console.warn('⚠️  Live API returned 0 matches — using fallback static data');
+      const output = FALLBACK_LIVE_MATCHES.map(m => normalizeMatch(m, timestamp));
+      await atomicallyWrite(join(dataDir, 'live.json'), output, errors);
+      console.log(`✅ Live matches (fallback): ${FALLBACK_LIVE_MATCHES.length}`);
     }
   }
 
@@ -52,7 +56,10 @@ export async function syncMatches(mode: 'live' | 'upcoming' | 'results' | 'all' 
       await atomicallyWrite(join(dataDir, 'upcoming.json'), output, errors);
       console.log(`✅ Upcoming matches: ${upcoming.length}`);
     } else {
-      console.warn('⚠️  Upcoming fetch returned 0 matches — keeping existing upcoming.json');
+      console.warn('⚠️  Upcoming API returned 0 matches — using fallback static data');
+      const output = FALLBACK_UPCOMING_MATCHES.map(m => normalizeMatch(m, timestamp));
+      await atomicallyWrite(join(dataDir, 'upcoming.json'), output, errors);
+      console.log(`✅ Upcoming matches (fallback): ${FALLBACK_UPCOMING_MATCHES.length}`);
     }
   }
 
@@ -63,7 +70,10 @@ export async function syncMatches(mode: 'live' | 'upcoming' | 'results' | 'all' 
       await atomicallyWrite(join(dataDir, 'results.json'), output, errors);
       console.log(`✅ Results: ${results.length}`);
     } else {
-      console.warn('⚠️  Results fetch returned 0 matches — keeping existing results.json');
+      console.warn('⚠️  Results API returned 0 matches — using fallback static data');
+      const output = FALLBACK_RESULTS_MATCHES.map(m => normalizeMatch(m, timestamp));
+      await atomicallyWrite(join(dataDir, 'results.json'), output, errors);
+      console.log(`✅ Results (fallback): ${FALLBACK_RESULTS_MATCHES.length}`);
     }
   }
 

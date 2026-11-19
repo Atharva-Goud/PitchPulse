@@ -1,332 +1,81 @@
 [
   {
-    "id": "match-1630437",
+    "id": "match-9001",
     "competition": {
-      "id": "league-418",
-      "name": "Birinci Dasta",
-      "shortName": "Birinci Dasta",
-      "logo": "https://media.api-sports.io/football/leagues/418.png",
-      "country": "Azerbaijan",
+      "id": "league-39",
+      "name": "Premier League",
+      "shortName": "Premier League",
+      "logo": "https://media.api-sports.io/football/leagues/39.png",
+      "country": "England",
       "type": "league"
     },
     "homeTeam": {
-      "id": "team-4199",
-      "name": "Səbail",
-      "shortName": "SƏB",
-      "logo": "https://media.api-sports.io/football/teams/4199.png",
+      "id": "team-42",
+      "name": "Arsenal",
+      "shortName": "ARS",
+      "logo": "https://media.api-sports.io/football/teams/42.png",
       "country": "Unknown",
-      "league": "Birinci Dasta"
+      "league": "Premier League"
     },
     "awayTeam": {
-      "id": "team-5573",
-      "name": "Mingəçevir",
-      "shortName": "MIN",
-      "logo": "https://media.api-sports.io/football/teams/5573.png",
+      "id": "team-50",
+      "name": "Manchester City",
+      "shortName": "MAN",
+      "logo": "https://media.api-sports.io/football/teams/50.png",
       "country": "Unknown",
-      "league": "Birinci Dasta"
+      "league": "Premier League"
     },
     "homeScore": 1,
     "awayScore": 0,
-    "status": "LIVE",
-    "kickoff": "2026-09-10T12:30:00+00:00",
-    "venue": "ASCO Arena",
+    "status": "SCHEDULED",
+    "kickoff": "2026-11-19T09:27:38.667Z",
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:56:03.404Z"
+      "lastUpdated": "2026-11-19T10:27:38.669Z"
     },
-    "lastUpdated": "2026-09-10T12:56:03.404Z",
+    "lastUpdated": "2026-11-19T10:27:38.669Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
     }
   },
   {
-    "id": "match-1630439",
+    "id": "match-9002",
     "competition": {
-      "id": "league-418",
-      "name": "Birinci Dasta",
-      "shortName": "Birinci Dasta",
-      "logo": "https://media.api-sports.io/football/leagues/418.png",
-      "country": "Azerbaijan",
+      "id": "league-140",
+      "name": "La Liga",
+      "shortName": "La Liga",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "country": "Spain",
       "type": "league"
     },
     "homeTeam": {
-      "id": "team-5500",
-      "name": "Zaqatala",
-      "shortName": "ZAQ",
-      "logo": "https://media.api-sports.io/football/teams/5500.png",
+      "id": "team-541",
+      "name": "Real Madrid",
+      "shortName": "REA",
+      "logo": "https://media.api-sports.io/football/teams/541.png",
       "country": "Unknown",
-      "league": "Birinci Dasta"
+      "league": "La Liga"
     },
     "awayTeam": {
-      "id": "team-22788",
-      "name": "Baku Sportinq",
-      "shortName": "BAK",
-      "logo": "https://media.api-sports.io/football/teams/22788.png",
+      "id": "team-529",
+      "name": "Barcelona",
+      "shortName": "BAR",
+      "logo": "https://media.api-sports.io/football/teams/529.png",
       "country": "Unknown",
-      "league": "Birinci Dasta"
+      "league": "La Liga"
     },
     "homeScore": 0,
     "awayScore": 0,
-    "status": "LIVE",
-    "kickoff": "2026-09-10T12:30:00+00:00",
+    "status": "SCHEDULED",
+    "kickoff": "2026-11-19T09:27:38.667Z",
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:56:03.404Z"
+      "lastUpdated": "2026-11-19T10:27:38.669Z"
     },
-    "lastUpdated": "2026-09-10T12:56:03.404Z",
-    "source": {
-      "provider": "API-Football",
-      "type": "football_api"
-    }
-  },
-  {
-    "id": "match-1633893",
-    "competition": {
-      "id": "league-340",
-      "name": "V.League 1",
-      "shortName": "V.League 1",
-      "logo": "https://media.api-sports.io/football/leagues/340.png",
-      "country": "Vietnam",
-      "type": "league"
-    },
-    "homeTeam": {
-      "id": "team-3681",
-      "name": "Viettel",
-      "shortName": "VIE",
-      "logo": "https://media.api-sports.io/football/teams/3681.png",
-      "country": "Unknown",
-      "league": "V.League 1"
-    },
-    "awayTeam": {
-      "id": "team-16400",
-      "name": "Công An Nhân Dân",
-      "shortName": "CÔN",
-      "logo": "https://media.api-sports.io/football/teams/16400.png",
-      "country": "Unknown",
-      "league": "V.League 1"
-    },
-    "homeScore": 0,
-    "awayScore": 0,
-    "status": "LIVE",
-    "kickoff": "2026-09-10T12:15:00+00:00",
-    "venue": "Hang Day Stadium",
-    "freshness": {
-      "status": "fresh",
-      "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:56:03.404Z"
-    },
-    "lastUpdated": "2026-09-10T12:56:03.404Z",
-    "source": {
-      "provider": "API-Football",
-      "type": "football_api"
-    }
-  },
-  {
-    "id": "match-1635876",
-    "competition": {
-      "id": "league-335",
-      "name": "Cup",
-      "shortName": "Cup",
-      "logo": "https://media.api-sports.io/football/leagues/335.png",
-      "country": "Ukraine",
-      "type": "league"
-    },
-    "homeTeam": {
-      "id": "team-6494",
-      "name": "Nyva Vinnytsya",
-      "shortName": "NYV",
-      "logo": "https://media.api-sports.io/football/teams/6494.png",
-      "country": "Unknown",
-      "league": "Cup"
-    },
-    "awayTeam": {
-      "id": "team-572",
-      "name": "Dynamo Kyiv",
-      "shortName": "DYN",
-      "logo": "https://media.api-sports.io/football/teams/572.png",
-      "country": "Unknown",
-      "league": "Cup"
-    },
-    "homeScore": 0,
-    "awayScore": 0,
-    "status": "LIVE",
-    "kickoff": "2026-09-10T12:30:00+00:00",
-    "freshness": {
-      "status": "fresh",
-      "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:56:03.404Z"
-    },
-    "lastUpdated": "2026-09-10T12:56:03.404Z",
-    "source": {
-      "provider": "API-Football",
-      "type": "football_api"
-    }
-  },
-  {
-    "id": "match-1534855",
-    "competition": {
-      "id": "league-388",
-      "name": "1. Division",
-      "shortName": "1. Division",
-      "logo": "https://media.api-sports.io/football/leagues/388.png",
-      "country": "Kazakhstan",
-      "type": "league"
-    },
-    "homeTeam": {
-      "id": "team-27635",
-      "name": "Yelimay Semey 2",
-      "shortName": "YEL",
-      "logo": "https://media.api-sports.io/football/teams/27635.png",
-      "country": "Unknown",
-      "league": "1. Division"
-    },
-    "awayTeam": {
-      "id": "team-4545",
-      "name": "Akademiya Ontustik",
-      "shortName": "AKA",
-      "logo": "https://media.api-sports.io/football/teams/4545.png",
-      "country": "Unknown",
-      "league": "1. Division"
-    },
-    "homeScore": 0,
-    "awayScore": 1,
-    "status": "LIVE",
-    "kickoff": "2026-09-10T11:00:00+00:00",
-    "freshness": {
-      "status": "fresh",
-      "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:56:03.404Z"
-    },
-    "lastUpdated": "2026-09-10T12:56:03.404Z",
-    "source": {
-      "provider": "API-Football",
-      "type": "football_api"
-    }
-  },
-  {
-    "id": "match-1534849",
-    "competition": {
-      "id": "league-388",
-      "name": "1. Division",
-      "shortName": "1. Division",
-      "logo": "https://media.api-sports.io/football/leagues/388.png",
-      "country": "Kazakhstan",
-      "type": "league"
-    },
-    "homeTeam": {
-      "id": "team-4546",
-      "name": "Aktobe Jas",
-      "shortName": "AKT",
-      "logo": "https://media.api-sports.io/football/teams/4546.png",
-      "country": "Unknown",
-      "league": "1. Division"
-    },
-    "awayTeam": {
-      "id": "team-21502",
-      "name": "Turan Turkistan",
-      "shortName": "TUR",
-      "logo": "https://media.api-sports.io/football/teams/21502.png",
-      "country": "Unknown",
-      "league": "1. Division"
-    },
-    "homeScore": 1,
-    "awayScore": 3,
-    "status": "HALFTIME",
-    "kickoff": "2026-09-10T12:00:00+00:00",
-    "freshness": {
-      "status": "fresh",
-      "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:56:03.404Z"
-    },
-    "lastUpdated": "2026-09-10T12:56:03.404Z",
-    "source": {
-      "provider": "API-Football",
-      "type": "football_api"
-    }
-  },
-  {
-    "id": "match-1637323",
-    "competition": {
-      "id": "league-14",
-      "name": "UEFA Youth League",
-      "shortName": "UEFA Youth League",
-      "logo": "https://media.api-sports.io/football/leagues/14.png",
-      "country": "World",
-      "type": "league"
-    },
-    "homeTeam": {
-      "id": "team-7965",
-      "name": "PSV U19",
-      "shortName": "PSV",
-      "logo": "https://media.api-sports.io/football/teams/7965.png",
-      "country": "Unknown",
-      "league": "UEFA Youth League"
-    },
-    "awayTeam": {
-      "id": "team-7929",
-      "name": "Shakhtar Donetsk U19",
-      "shortName": "SHA",
-      "logo": "https://media.api-sports.io/football/teams/7929.png",
-      "country": "Unknown",
-      "league": "UEFA Youth League"
-    },
-    "homeScore": 1,
-    "awayScore": 0,
-    "status": "HALFTIME",
-    "kickoff": "2026-09-10T12:00:00+00:00",
-    "venue": "De Herdgang",
-    "referee": "M. Grotta",
-    "freshness": {
-      "status": "fresh",
-      "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:56:03.404Z"
-    },
-    "lastUpdated": "2026-09-10T12:56:03.404Z",
-    "source": {
-      "provider": "API-Football",
-      "type": "football_api"
-    }
-  },
-  {
-    "id": "match-1637324",
-    "competition": {
-      "id": "league-14",
-      "name": "UEFA Youth League",
-      "shortName": "UEFA Youth League",
-      "logo": "https://media.api-sports.io/football/leagues/14.png",
-      "country": "World",
-      "type": "league"
-    },
-    "homeTeam": {
-      "id": "team-7933",
-      "name": "Slavia Praha U19",
-      "shortName": "SLA",
-      "logo": "https://media.api-sports.io/football/teams/7933.png",
-      "country": "Unknown",
-      "league": "UEFA Youth League"
-    },
-    "awayTeam": {
-      "id": "team-22372",
-      "name": "Lens U19",
-      "shortName": "LEN",
-      "logo": "https://media.api-sports.io/football/teams/22372.png",
-      "country": "Unknown",
-      "league": "UEFA Youth League"
-    },
-    "homeScore": 1,
-    "awayScore": 0,
-    "status": "HALFTIME",
-    "kickoff": "2026-09-10T12:00:00+00:00",
-    "referee": "J. Karlsen",
-    "freshness": {
-      "status": "fresh",
-      "ageMinutes": 0,
-      "lastUpdated": "2026-09-10T12:56:03.404Z"
-    },
-    "lastUpdated": "2026-09-10T12:56:03.404Z",
+    "lastUpdated": "2026-11-19T10:27:38.669Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
