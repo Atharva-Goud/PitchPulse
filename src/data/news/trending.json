@@ -1,286 +1,29 @@
 [
   {
-    "id": "news-mwnesp4g-qxh4jf",
-    "title": " Manchester United’s fitness levels are like that of a Sunday league team - no wonder they appointed Mauricio Pochettino ",
-    "summary": "Fitness is the aim, and Pochettino is the master of the game",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/person/player/manchester-uniteds-fitness-levels-are-like-that-of-a-sunday-league-team-no-wonder-they-appointed-mauricio-pochettino",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/person/player/manchester-uniteds-fitness-levels-are-like-that-of-a-sunday-league-team-no-wonder-they-appointed-mauricio-pochettino",
-    "image": "https://cdn.mos.cms.futurecdn.net/nCPXtJDRh3yYwDxh7SMVei-1920-80.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/person/player/manchester-uniteds-fitness-levels-are-like-that-of-a-sunday-league-team-no-wonder-they-appointed-mauricio-pochettino",
-    "publishedAt": "2026-11-19T10:09:17.000Z",
-    "discoveredAt": "2026-11-19T10:30:10.375Z",
-    "lastVerifiedAt": "2026-11-19T10:30:10.375Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "breaking",
-      "ageMinutes": 21,
-      "label": "21m ago",
-      "publishedAt": "2026-11-19T10:09:17.000Z",
-      "lastUpdated": "2026-11-19T10:30:10.375Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/person/player/manchester-uniteds-fitness-levels-are-like-that-of-a-sunday-league-team-no-wonder-they-appointed-mauricio-pochettino",
-          "credibilityScore": 85,
-          "publishedAt": "2026-11-19T10:09:17.000Z",
-          "discoveredAt": "2026-11-19T10:30:10.375Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-united"
-    ]
-  },
-  {
-    "id": "news-mwnesp4g-da9gh1",
-    "title": "Liverpool get Ronald Araujo transfer green light from Barcelona - 'I'm happy for him' ",
-    "summary": "Barcelona sporting director Deco speaks on the possibility of selling Ronald Araujo to Liverpool permanently for £47m next summer",
+    "id": "news-mwszytoc-lr8fs6",
+    "title": "Mauricio Pochettino points finger at Jeremy Jacquet and slams Liverpool red card - 'very, very low'",
+    "summary": "Manchester United boss Mauricio Pochettino has spoken after the Premier League clash at Liverpool on Sunday afternoon",
     "source": {
       "name": "Liverpool Echo LFC",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-ronald-araujo-transfer-green-34934068",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/mauricio-pochettino-points-finger-jeremy-34949959",
       "credibilityScore": 80
     },
     "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-ronald-araujo-transfer-green-34934068",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34887210.ece/ALTERNATES/s615/0_Crystal-Palace-FC-v-Liverpool-Premier-League-202627.jpg",
-    "category": "Transfers",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-ronald-araujo-transfer-green-34934068",
-    "publishedAt": "2026-11-19T09:23:31.000Z",
-    "discoveredAt": "2026-11-19T10:30:10.375Z",
-    "lastVerifiedAt": "2026-11-19T10:30:10.375Z",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/mauricio-pochettino-points-finger-jeremy-34949959",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34951450.ece/ALTERNATES/s615/0_GettyImages-2306375717.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/mauricio-pochettino-points-finger-jeremy-34949959",
+    "publishedAt": "2026-11-23T06:00:00.000Z",
+    "discoveredAt": "2026-11-23T08:21:40.396Z",
+    "lastVerifiedAt": "2026-11-23T08:21:40.396Z",
     "dataStatus": "FRESH",
     "freshness": {
       "status": "very_fresh",
-      "ageMinutes": 66,
-      "label": "1h ago",
-      "publishedAt": "2026-11-19T09:23:31.000Z",
-      "lastUpdated": "2026-11-19T10:30:10.375Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/transfer-news/liverpool-ronald-araujo-transfer-green-34934068",
-          "credibilityScore": 80,
-          "publishedAt": "2026-11-19T09:23:31.000Z",
-          "discoveredAt": "2026-11-19T10:30:10.375Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool",
-      "barcelona"
-    ]
-  },
-  {
-    "id": "news-mwnesp4g-e7iqlg",
-    "title": " Why Dominik Szoboszlai and Ryan Gravenberch face a fight for their Liverpool futures under Andoni Iraola ",
-    "summary": "Liverpool's midfield needs Trey Nyoni, but it might upset a few",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/team/why-dominik-szoboszlai-and-ryan-gravenberch-face-a-fight-for-their-liverpool-futures-under-andoni-iraola",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/team/why-dominik-szoboszlai-and-ryan-gravenberch-face-a-fight-for-their-liverpool-futures-under-andoni-iraola",
-    "image": "https://cdn.mos.cms.futurecdn.net/yRPnBVXJ7Jb24JjGvnkeCg-1920-80.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/team/why-dominik-szoboszlai-and-ryan-gravenberch-face-a-fight-for-their-liverpool-futures-under-andoni-iraola",
-    "publishedAt": "2026-11-19T07:00:00.000Z",
-    "discoveredAt": "2026-11-19T10:30:10.375Z",
-    "lastVerifiedAt": "2026-11-19T10:30:10.375Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 210,
-      "label": "3h ago",
-      "publishedAt": "2026-11-19T07:00:00.000Z",
-      "lastUpdated": "2026-11-19T10:30:10.375Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/team/why-dominik-szoboszlai-and-ryan-gravenberch-face-a-fight-for-their-liverpool-futures-under-andoni-iraola",
-          "credibilityScore": 85,
-          "publishedAt": "2026-11-19T07:00:00.000Z",
-          "discoveredAt": "2026-11-19T10:30:10.375Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-mwnesp4g-o2qxtv",
-    "title": " Quickfire Quiz 249: Can you answer 10 questions in 90 seconds? ",
-    "summary": "Tackle these 10 football trivia questions about Lucy Bronze, missing sponsors, international gaffers and more!",
-    "source": {
-      "name": "FourFourTwo",
-      "type": "publication",
-      "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-249",
-      "credibilityScore": 85
-    },
-    "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-249",
-    "image": "https://cdn.mos.cms.futurecdn.net/P9RpEyboig3AtwBKzNMfpQ-1920-80.png",
-    "category": "International Football",
-    "originalUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-249",
-    "publishedAt": "2026-11-19T06:00:00.000Z",
-    "discoveredAt": "2026-11-19T10:30:10.375Z",
-    "lastVerifiedAt": "2026-11-19T10:30:10.375Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 270,
-      "label": "4h ago",
-      "publishedAt": "2026-11-19T06:00:00.000Z",
-      "lastUpdated": "2026-11-19T10:30:10.375Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "fourfourtwo",
-          "name": "FourFourTwo",
-          "type": "publication",
-          "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-249",
-          "credibilityScore": 85,
-          "publishedAt": "2026-11-19T06:00:00.000Z",
-          "discoveredAt": "2026-11-19T10:30:10.375Z"
-        }
-      ],
-      "confidenceScore": 85,
-      "confidenceReasons": [
-        "Reported by FourFourTwo",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "inter-milan"
-    ]
-  },
-  {
-    "id": "news-mwnesp4g-qhzos0",
-    "title": "Man United news: Mauricio Pochettino’s threat to Man City as exit leaves squad ‘stunned’",
-    "summary": "All the latest Manchester United updates as we get them with Mauricio Pochettino jetting in to officially take charge",
-    "source": {
-      "name": "Manchester Evening News MUFC",
-      "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-live-mauricio-pochettino-34927669",
-      "credibilityScore": 78
-    },
-    "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-live-mauricio-pochettino-34927669",
-    "image": "https://i2-prod.birminghammail.co.uk/incoming/article34931517.ece/ALTERNATES/s615/0_Mauricio-Pochettino-First-Day-at-Manchester-United.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-live-mauricio-pochettino-34927669",
-    "publishedAt": "2026-11-19T07:46:27.000Z",
-    "discoveredAt": "2026-11-19T10:30:10.375Z",
-    "lastVerifiedAt": "2026-11-19T10:30:10.375Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 163,
+      "ageMinutes": 141,
       "label": "2h ago",
-      "publishedAt": "2026-11-19T07:46:27.000Z",
-      "lastUpdated": "2026-11-19T10:30:10.375Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "man-utd-men",
-          "name": "Manchester Evening News MUFC",
-          "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-live-mauricio-pochettino-34927669",
-          "credibilityScore": 78,
-          "publishedAt": "2026-11-19T07:46:27.000Z",
-          "discoveredAt": "2026-11-19T10:30:10.375Z"
-        }
-      ],
-      "confidenceScore": 78,
-      "confidenceReasons": [
-        "Reported by Manchester Evening News MUFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "manchester-city",
-      "manchester-united"
-    ]
-  },
-  {
-    "id": "news-mwnesp4g-ogx6xs",
-    "title": "13 players could miss Liverpool vs Man United as injury updates imminent",
-    "summary": "A look at the players who are doubtful and who will be sidelined for Sunday's huge Premier League clash between Liverpool and Manchester United at Anfield",
-    "source": {
-      "name": "Liverpool Echo LFC",
-      "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/13-players-could-miss-liverpool-34933423",
-      "credibilityScore": 80
-    },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/13-players-could-miss-liverpool-34933423",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34933467.ece/ALTERNATES/s615/0_GettyImages-2292194364.jpg",
-    "category": "Premier League",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/13-players-could-miss-liverpool-34933423",
-    "publishedAt": "2026-11-19T05:00:00.000Z",
-    "discoveredAt": "2026-11-19T10:30:10.375Z",
-    "lastVerifiedAt": "2026-11-19T10:30:10.375Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 330,
-      "label": "5h ago",
-      "publishedAt": "2026-11-19T05:00:00.000Z",
-      "lastUpdated": "2026-11-19T10:30:10.375Z"
+      "publishedAt": "2026-11-23T06:00:00.000Z",
+      "lastUpdated": "2026-11-23T08:21:40.396Z"
     },
     "verification": {
       "level": "single_source",
@@ -289,10 +32,10 @@
           "id": "liverpool-echo",
           "name": "Liverpool Echo LFC",
           "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/13-players-could-miss-liverpool-34933423",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/mauricio-pochettino-points-finger-jeremy-34949959",
           "credibilityScore": 80,
-          "publishedAt": "2026-11-19T05:00:00.000Z",
-          "discoveredAt": "2026-11-19T10:30:10.375Z"
+          "publishedAt": "2026-11-23T06:00:00.000Z",
+          "discoveredAt": "2026-11-23T08:21:40.396Z"
         }
       ],
       "confidenceScore": 80,
@@ -309,30 +52,186 @@
     ]
   },
   {
-    "id": "news-mwnesp4g-qv4gu0",
-    "title": " Quiz! Who wore these England shirts? ",
-    "summary": "Can you identify the players who made these shirts and numbers famous?",
+    "id": "news-mwszytoc-8nfalm",
+    "title": "Liverpool have got the Florian Wirtz they paid for but another £100m man continues to baffle",
+    "summary": "Ian Doyle with the talking points from Liverpool's Premier League clash at home to Manchester United on Sunday afternoon",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-florian-wirtz-paid-another-34949868",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-florian-wirtz-paid-another-34949868",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34951460.ece/ALTERNATES/s615/0_GettyImages-2306390839.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-florian-wirtz-paid-another-34949868",
+    "publishedAt": "2026-11-23T05:00:00.000Z",
+    "discoveredAt": "2026-11-23T08:21:40.396Z",
+    "lastVerifiedAt": "2026-11-23T08:21:40.396Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 201,
+      "label": "3h ago",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "lastUpdated": "2026-11-23T08:21:40.396Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-florian-wirtz-paid-another-34949868",
+          "credibilityScore": 80,
+          "publishedAt": "2026-11-23T05:00:00.000Z",
+          "discoveredAt": "2026-11-23T08:21:40.396Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mwszytoc-1ey5au",
+    "title": "Liverpool transfer meeting about Man Utd star as Gary Neville sticks the boot in",
+    "summary": "Manchester United thought they had pulled off the heist of the century when they beat Liverpool to a particular signing during the summer of 2024, but they've just left Anfield with their tail between their legs.",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-meeting-man-utd-34951452",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-meeting-man-utd-34951452",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34951454.ece/ALTERNATES/s615/0_GettyImages-2305852753.jpg",
+    "category": "Transfers",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-meeting-man-utd-34951452",
+    "publishedAt": "2026-11-23T05:00:00.000Z",
+    "discoveredAt": "2026-11-23T08:21:40.396Z",
+    "lastVerifiedAt": "2026-11-23T08:21:40.396Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 201,
+      "label": "3h ago",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "lastUpdated": "2026-11-23T08:21:40.396Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/liverpool-transfer-meeting-man-utd-34951452",
+          "credibilityScore": 80,
+          "publishedAt": "2026-11-23T05:00:00.000Z",
+          "discoveredAt": "2026-11-23T08:21:40.396Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mwszytoc-u4sk21",
+    "title": "Mauricio Pochettino must show his ruthless side with one Manchester United player",
+    "summary": "Mauricio Pochettino took charge of his first Man Utd game against Liverpool on Sunday and the Reds were hammered 4-0 at Anfield.",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/mauricio-pochettino-must-show-ruthless-34950311",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/mauricio-pochettino-must-show-ruthless-34950311",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/sport/football/article34950844.ece/ALTERNATES/s615/1_GettyImages-2305887561.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/mauricio-pochettino-must-show-ruthless-34950311",
+    "publishedAt": "2026-11-23T05:00:00.000Z",
+    "discoveredAt": "2026-11-23T08:21:40.396Z",
+    "lastVerifiedAt": "2026-11-23T08:21:40.396Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "recent",
+      "ageMinutes": 201,
+      "label": "3h ago",
+      "publishedAt": "2026-11-23T05:00:00.000Z",
+      "lastUpdated": "2026-11-23T08:21:40.396Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/mauricio-pochettino-must-show-ruthless-34950311",
+          "credibilityScore": 78,
+          "publishedAt": "2026-11-23T05:00:00.000Z",
+          "discoveredAt": "2026-11-23T08:21:40.396Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mwszytoc-1qfwq1",
+    "title": " Quiz! Which clubs link these groups of famous footballers? ",
+    "summary": "10 quartets of players. Can you name the clubs that connect them?",
     "source": {
       "name": "FourFourTwo",
       "type": "publication",
-      "url": "https://www.fourfourtwo.com/quiz/quiz-who-wore-these-england-shirts",
+      "url": "https://www.fourfourtwo.com/quiz/quiz-which-clubs-link-these-groups-of-famous-footballers",
       "credibilityScore": 85
     },
     "sourceName": "FourFourTwo",
-    "sourceUrl": "https://www.fourfourtwo.com/quiz/quiz-who-wore-these-england-shirts",
-    "image": "https://cdn.mos.cms.futurecdn.net/bDxd6ez4rNUrN3Rewkdnck-1920-80.jpg",
+    "sourceUrl": "https://www.fourfourtwo.com/quiz/quiz-which-clubs-link-these-groups-of-famous-footballers",
+    "image": "https://cdn.mos.cms.futurecdn.net/VZtC7dZMcx786gb64ZtQkD-1920-80.jpg",
     "category": "Premier League",
-    "originalUrl": "https://www.fourfourtwo.com/quiz/quiz-who-wore-these-england-shirts",
-    "publishedAt": "2026-11-19T08:00:00.000Z",
-    "discoveredAt": "2026-11-19T10:30:10.375Z",
-    "lastVerifiedAt": "2026-11-19T10:30:10.375Z",
+    "originalUrl": "https://www.fourfourtwo.com/quiz/quiz-which-clubs-link-these-groups-of-famous-footballers",
+    "publishedAt": "2026-11-23T08:00:00.000Z",
+    "discoveredAt": "2026-11-23T08:21:40.396Z",
+    "lastVerifiedAt": "2026-11-23T08:21:40.396Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 150,
-      "label": "2h ago",
-      "publishedAt": "2026-11-19T08:00:00.000Z",
-      "lastUpdated": "2026-11-19T10:30:10.375Z"
+      "status": "breaking",
+      "ageMinutes": 21,
+      "label": "21m ago",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "lastUpdated": "2026-11-23T08:21:40.396Z"
     },
     "verification": {
       "level": "single_source",
@@ -341,10 +240,10 @@
           "id": "fourfourtwo",
           "name": "FourFourTwo",
           "type": "publication",
-          "url": "https://www.fourfourtwo.com/quiz/quiz-who-wore-these-england-shirts",
+          "url": "https://www.fourfourtwo.com/quiz/quiz-which-clubs-link-these-groups-of-famous-footballers",
           "credibilityScore": 85,
-          "publishedAt": "2026-11-19T08:00:00.000Z",
-          "discoveredAt": "2026-11-19T10:30:10.375Z"
+          "publishedAt": "2026-11-23T08:00:00.000Z",
+          "discoveredAt": "2026-11-23T08:21:40.396Z"
         }
       ],
       "confidenceScore": 85,
@@ -358,81 +257,30 @@
     "relatedTeams": []
   },
   {
-    "id": "news-mwnesp4g-uz7s33",
-    "title": "Andoni Iraola warned against £100m Liverpool transfer for player he knows well - 'I don't see'",
-    "summary": "Liverpool have been one of the clubs linked with a £100m move for Bournemouth and England midfielder Alex Scott",
-    "source": {
-      "name": "Liverpool Echo LFC",
-      "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-warned-against-100m-34931353",
-      "credibilityScore": 80
-    },
-    "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-warned-against-100m-34931353",
-    "image": "https://i2-prod.liverpool.com/incoming/article34805684.ece/ALTERNATES/s615/1_Alex-Scott.jpg",
-    "category": "Transfers",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-warned-against-100m-34931353",
-    "publishedAt": "2026-11-19T07:00:00.000Z",
-    "discoveredAt": "2026-11-19T10:30:10.375Z",
-    "lastVerifiedAt": "2026-11-19T10:30:10.375Z",
-    "dataStatus": "FRESH",
-    "freshness": {
-      "status": "recent",
-      "ageMinutes": 210,
-      "label": "3h ago",
-      "publishedAt": "2026-11-19T07:00:00.000Z",
-      "lastUpdated": "2026-11-19T10:30:10.375Z"
-    },
-    "verification": {
-      "level": "single_source",
-      "sources": [
-        {
-          "id": "liverpool-echo",
-          "name": "Liverpool Echo LFC",
-          "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-warned-against-100m-34931353",
-          "credibilityScore": 80,
-          "publishedAt": "2026-11-19T07:00:00.000Z",
-          "discoveredAt": "2026-11-19T10:30:10.375Z"
-        }
-      ],
-      "confidenceScore": 80,
-      "confidenceReasons": [
-        "Reported by Liverpool Echo LFC",
-        "Moderate source credibility"
-      ],
-      "confirmedBy": [],
-      "verificationCount": 1
-    },
-    "relatedTeams": [
-      "liverpool"
-    ]
-  },
-  {
-    "id": "news-mwnesp4g-ealrrn",
-    "title": "Wayne Rooney told Man United to 'release' son Kai if one condition is met",
-    "summary": "Kai Rooney is following in his father’s footsteps at Manchester United, but Wayne Rooney has discussed the challenges he’s faced along the way",
+    "id": "news-mwszytoc-5jl2kq",
+    "title": "What Mauricio Pochettino said to the referee immediately after Man United defeat to Liverpool",
+    "summary": "Leny Yoro was controversially sent off for Manchester United against Liverpool as Mauricio Pochettino's reign got off to a horror start.",
     "source": {
       "name": "Manchester Evening News MUFC",
       "type": "publication",
-      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/wayne-rooney-man-united-kai-34933867",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/what-mauricio-pochettino-said-referee-34951079",
       "credibilityScore": 78
     },
     "sourceName": "Manchester Evening News MUFC",
-    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/wayne-rooney-man-united-kai-34933867",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34272334.ece/ALTERNATES/s615/3_CaptureJPG.jpg",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/what-mauricio-pochettino-said-referee-34951079",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34950792.ece/ALTERNATES/s615/0_GettyImages-2306363852.jpg",
     "category": "Premier League",
-    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/wayne-rooney-man-united-kai-34933867",
-    "publishedAt": "2026-11-19T08:25:31.000Z",
-    "discoveredAt": "2026-11-19T10:30:10.375Z",
-    "lastVerifiedAt": "2026-11-19T10:30:10.375Z",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/what-mauricio-pochettino-said-referee-34951079",
+    "publishedAt": "2026-11-23T04:00:00.000Z",
+    "discoveredAt": "2026-11-23T08:21:40.396Z",
+    "lastVerifiedAt": "2026-11-23T08:21:40.396Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "very_fresh",
-      "ageMinutes": 124,
-      "label": "2h ago",
-      "publishedAt": "2026-11-19T08:25:31.000Z",
-      "lastUpdated": "2026-11-19T10:30:10.375Z"
+      "status": "recent",
+      "ageMinutes": 261,
+      "label": "4h ago",
+      "publishedAt": "2026-11-23T04:00:00.000Z",
+      "lastUpdated": "2026-11-23T08:21:40.396Z"
     },
     "verification": {
       "level": "single_source",
@@ -441,10 +289,111 @@
           "id": "man-utd-men",
           "name": "Manchester Evening News MUFC",
           "type": "publication",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/wayne-rooney-man-united-kai-34933867",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/what-mauricio-pochettino-said-referee-34951079",
           "credibilityScore": 78,
-          "publishedAt": "2026-11-19T08:25:31.000Z",
-          "discoveredAt": "2026-11-19T10:30:10.375Z"
+          "publishedAt": "2026-11-23T04:00:00.000Z",
+          "discoveredAt": "2026-11-23T08:21:40.396Z"
+        }
+      ],
+      "confidenceScore": 78,
+      "confidenceReasons": [
+        "Reported by Manchester Evening News MUFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mwszytoc-tmnc6y",
+    "title": " Quickfire Quiz 251: Can you answer 10 questions in 90 seconds? ",
+    "summary": "Tackle these 10 football trivia questions about outstanding strikers, cup sponsors, English stadiums and more!",
+    "source": {
+      "name": "FourFourTwo",
+      "type": "publication",
+      "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-251",
+      "credibilityScore": 85
+    },
+    "sourceName": "FourFourTwo",
+    "sourceUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-251",
+    "image": "https://cdn.mos.cms.futurecdn.net/PQNaRsGuoroDARqkyRzdTA-1920-80.png",
+    "category": "Premier League",
+    "originalUrl": "https://www.fourfourtwo.com/quiz/quickfire-quiz-251",
+    "publishedAt": "2026-11-23T06:00:00.000Z",
+    "discoveredAt": "2026-11-23T08:21:40.396Z",
+    "lastVerifiedAt": "2026-11-23T08:21:40.396Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 141,
+      "label": "2h ago",
+      "publishedAt": "2026-11-23T06:00:00.000Z",
+      "lastUpdated": "2026-11-23T08:21:40.396Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "fourfourtwo",
+          "name": "FourFourTwo",
+          "type": "publication",
+          "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-251",
+          "credibilityScore": 85,
+          "publishedAt": "2026-11-23T06:00:00.000Z",
+          "discoveredAt": "2026-11-23T08:21:40.396Z"
+        }
+      ],
+      "confidenceScore": 85,
+      "confidenceReasons": [
+        "Reported by FourFourTwo",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": []
+  },
+  {
+    "id": "news-mwszytoc-2uv2m5",
+    "title": "Man United transfer news LIVE: Mauricio Pochettino eyes £84m target as contract talks begin",
+    "summary": "Mauricio Pochettino's reign at Manchester United has begun in the worst possible way and the January transfer window cannot come soon enough",
+    "source": {
+      "name": "Manchester Evening News MUFC",
+      "type": "publication",
+      "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-transfers-pochettino-live-34951682",
+      "credibilityScore": 78
+    },
+    "sourceName": "Manchester Evening News MUFC",
+    "sourceUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-transfers-pochettino-live-34951682",
+    "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article34951677.ece/ALTERNATES/s615/0_GettyImages-2306404065.jpg",
+    "category": "Transfers",
+    "originalUrl": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-transfers-pochettino-live-34951682",
+    "publishedAt": "2026-11-23T07:37:43.000Z",
+    "discoveredAt": "2026-11-23T08:21:40.396Z",
+    "lastVerifiedAt": "2026-11-23T08:21:40.396Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "very_fresh",
+      "ageMinutes": 44,
+      "label": "44m ago",
+      "publishedAt": "2026-11-23T07:37:43.000Z",
+      "lastUpdated": "2026-11-23T08:21:40.396Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "man-utd-men",
+          "name": "Manchester Evening News MUFC",
+          "type": "publication",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-united-transfers-pochettino-live-34951682",
+          "credibilityScore": 78,
+          "publishedAt": "2026-11-23T07:37:43.000Z",
+          "discoveredAt": "2026-11-23T08:21:40.396Z"
         }
       ],
       "confidenceScore": 78,
@@ -460,30 +409,30 @@
     ]
   },
   {
-    "id": "news-mwnesp4g-u5rikw",
-    "title": "Trey Nyoni explains why he chose Liverpool and three players who have helped him the most",
-    "summary": "Liverpool midfielder Trey Nyoni opens up on why he opted for a move to Anfield in 2023 and his development into a key first-team squad member",
+    "id": "news-mwszytoc-3c7764",
+    "title": "Andoni Iraola explains Liverpool celebration and rubbishes Mauricio Pochettino claim",
+    "summary": "Liverpool boss Andoni Iraola has spoken after the Premier League clash at home to Manchester United on Sunday afternoon",
     "source": {
       "name": "Liverpool Echo LFC",
       "type": "publication",
-      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-explains-chose-liverpool-34929558",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-explains-liverpool-celebration-34949876",
       "credibilityScore": 80
     },
     "sourceName": "Liverpool Echo LFC",
-    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-explains-chose-liverpool-34929558",
-    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34929566.ece/ALTERNATES/s615/0_nyoni2.png",
-    "category": "Transfers",
-    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-explains-chose-liverpool-34929558",
-    "publishedAt": "2026-11-19T06:00:00.000Z",
-    "discoveredAt": "2026-11-19T10:30:10.375Z",
-    "lastVerifiedAt": "2026-11-19T10:30:10.375Z",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-explains-liverpool-celebration-34949876",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34951209.ece/ALTERNATES/s615/0_GettyImages-2306375737.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-explains-liverpool-celebration-34949876",
+    "publishedAt": "2026-11-22T19:59:01.000Z",
+    "discoveredAt": "2026-11-23T08:21:40.396Z",
+    "lastVerifiedAt": "2026-11-23T08:21:40.396Z",
     "dataStatus": "FRESH",
     "freshness": {
-      "status": "recent",
-      "ageMinutes": 270,
-      "label": "4h ago",
-      "publishedAt": "2026-11-19T06:00:00.000Z",
-      "lastUpdated": "2026-11-19T10:30:10.375Z"
+      "status": "today",
+      "ageMinutes": 742,
+      "label": "Earlier today",
+      "publishedAt": "2026-11-22T19:59:01.000Z",
+      "lastUpdated": "2026-11-23T08:21:40.396Z"
     },
     "verification": {
       "level": "single_source",
@@ -492,10 +441,10 @@
           "id": "liverpool-echo",
           "name": "Liverpool Echo LFC",
           "type": "publication",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-explains-chose-liverpool-34929558",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/andoni-iraola-explains-liverpool-celebration-34949876",
           "credibilityScore": 80,
-          "publishedAt": "2026-11-19T06:00:00.000Z",
-          "discoveredAt": "2026-11-19T10:30:10.375Z"
+          "publishedAt": "2026-11-22T19:59:01.000Z",
+          "discoveredAt": "2026-11-23T08:21:40.396Z"
         }
       ],
       "confidenceScore": 80,
@@ -507,6 +456,59 @@
       "verificationCount": 1
     },
     "relatedTeams": [
+      "manchester-united",
+      "liverpool"
+    ]
+  },
+  {
+    "id": "news-mwszytoc-ijhhs6",
+    "title": "Kobbie Mainoo and Bruno Fernandes make Man United red card claims after Liverpool humiliation",
+    "summary": "The Manchester United midfielders were insistent Leny Yoro should not have been sent off for his eighth-minute foul on Alexander Isak in Liverpool's 4-0 win at Anfield",
+    "source": {
+      "name": "Liverpool Echo LFC",
+      "type": "publication",
+      "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/kobbie-mainoo-bruno-fernandes-make-34951177",
+      "credibilityScore": 80
+    },
+    "sourceName": "Liverpool Echo LFC",
+    "sourceUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/kobbie-mainoo-bruno-fernandes-make-34951177",
+    "image": "https://i2-prod.liverpoolecho.co.uk/incoming/article34951190.ece/ALTERNATES/s615/0_GettyImages-2305901069.jpg",
+    "category": "Premier League",
+    "originalUrl": "https://www.liverpoolecho.co.uk/sport/football/football-news/kobbie-mainoo-bruno-fernandes-make-34951177",
+    "publishedAt": "2026-11-22T19:46:43.000Z",
+    "discoveredAt": "2026-11-23T08:21:40.396Z",
+    "lastVerifiedAt": "2026-11-23T08:21:40.396Z",
+    "dataStatus": "FRESH",
+    "freshness": {
+      "status": "today",
+      "ageMinutes": 755,
+      "label": "Earlier today",
+      "publishedAt": "2026-11-22T19:46:43.000Z",
+      "lastUpdated": "2026-11-23T08:21:40.396Z"
+    },
+    "verification": {
+      "level": "single_source",
+      "sources": [
+        {
+          "id": "liverpool-echo",
+          "name": "Liverpool Echo LFC",
+          "type": "publication",
+          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/kobbie-mainoo-bruno-fernandes-make-34951177",
+          "credibilityScore": 80,
+          "publishedAt": "2026-11-22T19:46:43.000Z",
+          "discoveredAt": "2026-11-23T08:21:40.396Z"
+        }
+      ],
+      "confidenceScore": 80,
+      "confidenceReasons": [
+        "Reported by Liverpool Echo LFC",
+        "Moderate source credibility"
+      ],
+      "confirmedBy": [],
+      "verificationCount": 1
+    },
+    "relatedTeams": [
+      "manchester-united",
       "liverpool"
     ]
   }
