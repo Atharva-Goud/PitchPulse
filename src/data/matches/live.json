@@ -28,13 +28,13 @@
     "homeScore": 1,
     "awayScore": 0,
     "status": "SCHEDULED",
-    "kickoff": "2026-11-23T08:18:14.277Z",
+    "kickoff": "2026-11-25T08:16:08.993Z",
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-11-23T09:18:14.280Z"
+      "lastUpdated": "2026-11-25T09:16:08.995Z"
     },
-    "lastUpdated": "2026-11-23T09:18:14.280Z",
+    "lastUpdated": "2026-11-25T09:16:08.995Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
@@ -69,13 +69,13 @@
     "homeScore": 0,
     "awayScore": 0,
     "status": "SCHEDULED",
-    "kickoff": "2026-11-23T08:18:14.277Z",
+    "kickoff": "2026-11-25T08:16:08.993Z",
     "freshness": {
       "status": "fresh",
       "ageMinutes": 0,
-      "lastUpdated": "2026-11-23T09:18:14.280Z"
+      "lastUpdated": "2026-11-25T09:16:08.995Z"
     },
-    "lastUpdated": "2026-11-23T09:18:14.280Z",
+    "lastUpdated": "2026-11-25T09:16:08.995Z",
     "source": {
       "provider": "API-Football",
       "type": "football_api"
